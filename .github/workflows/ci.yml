@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Markdown lint
+        run: npx --yes [email protected] '**/*.md'
+      - name: JSON parse
+        run: |
+          for f in $(find . -name '*.json' -not -path './node_modules/*'); do
+            node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" \
+              && echo "  + $f" \
+              || { echo "  ! $f"; exit 1; }
+          done
