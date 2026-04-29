@@ -1,0 +1,12 @@
+{
+  "runtime_event_id": "kye:rte:acme.example:01JYRTE0000000000000000000",
+  "actor_entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "acting_on_behalf_of_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+  "resource_entity_id": "kye:ent:acme.example:document:01JYDOC0000000000000000000",
+  "action": "document.render",
+  "delegation_id": "kye:del:acme.example:01JYABC0000000000000000000",
+  "policy_decision_id": "kye:pdc:acme.example:01JYPDC0000000000000000000",
+  "outcome": "executed",
+  "occurred_at": "2026-04-15T12:30:01Z",
+  "recorded_at": "2026-04-15T12:30:01Z"
+}
