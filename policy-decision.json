@@ -1,0 +1,17 @@
+{
+  "policy_decision_id": "kye:pdc:acme.example:01JYPDC0000000000000000000",
+  "decision": "allow_with_constraints",
+  "reasons": [
+    "actor_active",
+    "delegation_valid",
+    "scope_match"
+  ],
+  "obligations": [
+    "audit.emit",
+    "redaction.required"
+  ],
+  "stop_conditions": [
+    "delegation_revoked"
+  ],
+  "created_at": "2026-04-15T12:30:00Z"
+}
