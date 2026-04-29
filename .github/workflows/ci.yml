@@ -12,13 +12,15 @@ permissions:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
+      - name: Install markdownlint-cli
+        run: npm install -g [email protected]
       - name: Markdown lint
-        run: npx --yes [email protected] --config .markdownlint.json '**/*.md'
+        run: markdownlint --config .markdownlint.json '**/*.md'
       - name: JSON parse
         run: |
           for f in $(find . -name '*.json' -not -path './node_modules/*'); do
