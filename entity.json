@@ -1,0 +1,19 @@
+{
+  "entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "trust_domain_id": "kye:td:acme.example",
+  "entity_type": "ai_agent",
+  "display_name": "Acme Procurement Agent",
+  "status": "active",
+  "lifecycle_state": "active",
+  "classification": {
+    "risk_level": "medium",
+    "sector_tags": ["finance"],
+    "data_classes": ["internal", "financial_data"]
+  },
+  "labels": {
+    "team": "finance-ops",
+    "environment": "prod"
+  },
+  "created_at": "2026-04-01T10:00:00Z",
+  "updated_at": "2026-04-15T12:30:00Z"
+}
