@@ -15,12 +15,11 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: '22' }
-      - name: Install markdownlint-cli
-        run: npm install -g [email protected]
       - name: Markdown lint
-        run: markdownlint --config .markdownlint.json '**/*.md'
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: '**/*.md'
+          config: '.markdownlint.json'
       - name: JSON parse
         run: |
           for f in $(find . -name '*.json' -not -path './node_modules/*'); do
