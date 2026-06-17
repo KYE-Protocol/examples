@@ -1,0 +1,60 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:roadmap-ai-governance-financial-services-2026-q3",
+  "series": "roadmap_to_ai_governance",
+  "format": "playbook",
+  "sector": "financial-services",
+  "audience": "ciso",
+  "cadence": "quarterly",
+  "edition": "2026-Q3",
+  "title": "Roadmap to AI Governance for Financial Services — Q3 2026 Edition",
+  "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
+  "topic_id": "kye:research-topic:ai-governance-financial-services-q3",
+  "tier": "paid",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:ai-governance-financial-services:2026-q3",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "Ac7BmPsRzOTX+JDz8VVPap4Q0BlCxQBLRj/ZREd6xQYK+wId3iQOCWAoTqBUtDNGUJV2AKqkd3k7/gLN38N1BA=="
+  },
+  "citations": [
+    {
+      "claim": "The EU AI Act classifies AI systems used for creditworthiness assessment of natural persons as high-risk, imposing risk-management, data-governance, logging and human-oversight obligations on financial-services deployers.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-03T09:00:00Z",
+      "publisher": "Official Journal of the European Union"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework (AI RMF 1.0) organises trustworthy-AI practice into four functions — Govern, Map, Measure, Manage — that financial institutions adapt as the backbone of an AI governance programme.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_at": "2026-06-03T09:00:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "The UK PRA and FCA supervisory approach treats AI and machine-learning model risk within existing model-risk-management and senior-management-accountability expectations, requiring firms to evidence governance, validation and ongoing monitoring.",
+      "source_url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks",
+      "retrieved_at": "2026-06-03T09:00:00Z",
+      "publisher": "Bank of England — Prudential Regulation Authority"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-30T08:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": true
+  },
+  "status": "published"
+}

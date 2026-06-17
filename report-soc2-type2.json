@@ -1,0 +1,64 @@
+{
+  "schema_id": "kye.report.v1",
+  "report_id": "kye:report:soc2_type2:acme:2026Q2",
+  "tenant_id": "kye:tenant:acme",
+  "report_kind": "soc2_type2",
+  "framework": "soc_2",
+  "period_start": "2026-04-01T00:00:00Z",
+  "period_end":   "2026-07-01T00:00:00Z",
+  "body": {
+    "findings": [
+      {
+        "finding_id": "kye:report:soc2_type2:acme:2026Q2:f1",
+        "headline":   "Trust Services Criteria CC1–CC8 conformant across the observation period with zero exceptions",
+        "verdict":    "conformant",
+        "rationale":  "Every privileged decision over the 91-day window emitted a §0.3 envelope to the per-tenant hash-linked audit chain (12,847 events). Every event verified offline via the published assembler_kid pubkey. WORM triggers blocked all 0 attempted mutations on the audit_chain_entries, decisions, risk_assessments, and data_classification_assignments tables.",
+        "evidence_refs": [
+          "kye:audit:acme:2026-04-01T00:00:00.000Z:00001",
+          "kye:audit:acme:2026-05-15T13:24:11.082Z:06419",
+          "kye:audit:acme:2026-06-30T23:59:48.715Z:12847"
+        ]
+      },
+      {
+        "finding_id": "kye:report:soc2_type2:acme:2026Q2:f2",
+        "headline":   "Logical-access controls (CC6.1, CC6.2, CC6.3) attested by entitlement-gate enforcement on every public-perimeter route",
+        "verdict":    "conformant",
+        "rationale":  "Static-graph CI gate proves all 52 HTTP-perimeter workers invoke requireEntitlement(); zero ungated routes for the observation period. Invoice-paid hard gate enforced on every privileged operation.",
+        "evidence_refs": [
+          "kye:audit:acme:2026-04-15T08:11:00.000Z:01142"
+        ]
+      },
+      {
+        "finding_id": "kye:report:soc2_type2:acme:2026Q2:f3",
+        "headline":   "Change-management (CC8.1) attested by signed manifest publication + Replay-Proof per release",
+        "verdict":    "conformant",
+        "rationale":  "Every release to public/main carried a signed Compiled Authority Bundle whose Replay-Proof was re-derived by the conformance runner from the public-key registry alone.",
+        "evidence_refs": []
+      }
+    ],
+    "controls": [
+      { "control_id": "soc2_cc1.1", "status": "pass", "evidence_refs": [], "attested_at": "2026-07-01T00:00:00Z" },
+      { "control_id": "soc2_cc6.1", "status": "pass", "evidence_refs": ["kye:audit:acme:2026-04-15T08:11:00.000Z:01142"], "attested_at": "2026-07-01T00:00:00Z" },
+      { "control_id": "soc2_cc6.2", "status": "pass", "evidence_refs": [], "attested_at": "2026-07-01T00:00:00Z" },
+      { "control_id": "soc2_cc6.3", "status": "pass", "evidence_refs": [], "attested_at": "2026-07-01T00:00:00Z" },
+      { "control_id": "soc2_cc7.2", "status": "pass", "evidence_refs": [], "attested_at": "2026-07-01T00:00:00Z" },
+      { "control_id": "soc2_cc8.1", "status": "pass", "evidence_refs": [], "attested_at": "2026-07-01T00:00:00Z" }
+    ],
+    "evidence_refs": [
+      "kye:audit:acme:2026-04-01T00:00:00.000Z:00001",
+      "kye:audit:acme:2026-04-15T08:11:00.000Z:01142",
+      "kye:audit:acme:2026-05-15T13:24:11.082Z:06419",
+      "kye:audit:acme:2026-06-30T23:59:48.715Z:12847"
+    ]
+  },
+  "summary": {
+    "finding_count":      3,
+    "controls_pass":      6,
+    "controls_fail":      0,
+    "controls_exception": 0,
+    "headline_verdict":   "conformant"
+  },
+  "assembler_kid": "kye:kid:acme:reporting-engine",
+  "sealed_at":     "2026-07-01T00:00:00Z",
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

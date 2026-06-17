@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.notice.v1.json",
+  "schema": "kye.notice.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/38-COMMS-RAIL.md",
+  "notes": [
+    "Illustrative kye.notice.v1 instance. The canonical full registry lives at internal"
+  ],
+  "notices": [
+    {
+      "id": "kye:notice:example",
+      "kind": "banner",
+      "severity": "info",
+      "message": "Illustrative notice.",
+      "surface": "example"
+    }
+  ]
+}

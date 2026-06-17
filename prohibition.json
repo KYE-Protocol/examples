@@ -1,0 +1,17 @@
+{
+  "schema_version": "kye.prohibition.v1",
+  "prohibition_id": "kye:prohibition:agent_execute_payment_without_approval",
+  "subject_entity_id": "kye:agent:finance_agent_001",
+  "prohibited_capability": "payment.execute",
+  "condition": {
+    "approval_event_missing": true,
+    "environment": "production"
+  },
+  "effect": {
+    "decision": "prohibited",
+    "reason_code": "prohibited_action_without_approval",
+    "quarantine_request": true,
+    "generate_evidence_pack": true
+  },
+  "status": "active"
+}

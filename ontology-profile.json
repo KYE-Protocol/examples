@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.ontology_profile.v1",
+  "profile_id": "kye:profile:ontology",
+  "display_name": "KYE Ontology Profile™",
+  "category": "semantic_authority",
+  "version": "1.0.0",
+  "description": "Defines semantic relationships between KYE entities, authorities, capabilities, scopes, states, decisions, evidence, profiles, connectors and sectors.",
+  "required_kye_profiles": [
+    "kye.core.v1",
+    "kye.authority.v1",
+    "kye.capability.v1",
+    "kye.state.v1",
+    "kye.evidence.v1",
+    "kye.graph.v1"
+  ],
+  "recommended_kye_profiles": [
+    "kye.discoverability.v1",
+    "kye.continuity.v1"
+  ],
+  "ontology_domains": [
+    "entity", "authority", "capability", "scope", "state", "decision",
+    "evidence", "continuity", "discoverability", "connector", "sector",
+    "certification"
+  ],
+  "supported_serializations": ["json", "json_ld", "rdf_optional", "owl_optional"],
+  "access_model": "policy_filtered",
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

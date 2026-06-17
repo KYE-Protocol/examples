@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/compromise-report.json",
+  "compromise_report_id": "kye:compromise:custody.acme.eu:2026-05-04_signer_anomaly_001",
+  "subject_entity_id": "kye:agent:custody.acme.eu:desk-a:signer",
+  "kind": "agent_compromise",
+  "severity": "high",
+  "reason_code": "anomalous_signing_pattern",
+  "evidence_refs": [
+    "kye:audit:custody.acme.eu:event:01HX7K1Z3F7Q9V8L2P4M5T6Y0W",
+    "kye:audit:custody.acme.eu:event:01HX7K2A2D8R3W6N1B5C8E0V4X",
+    "kye:evidence-pack:custody.acme.eu:soc_anomaly_2026-05-04_001"
+  ],
+  "reported_by": "kye:service:custody.acme.eu:soc:anomaly_detector",
+  "reported_at": "2026-05-04T02:14:00Z",
+  "auto_actions": [
+    "suspend_authority",
+    "stop_agent",
+    "quarantine_entity",
+    "open_recovery_request",
+    "publish_signal"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "request_id": "req-01HXY7Q8SOVEREIGN0AI0EXAMPLE0001",
+  "decision": "allow_with_constraints",
+  "decision_id": "kye:decision:gov.example:01HXY7Q800SOVDEC0000000000000001",
+  "reason_code": "statutory.basis.match",
+  "actor_entity_id": "kye:ent:gov.example:civil_servant:jdoe-12345",
+  "actor_role": "civil_servant",
+  "principal_entity_id": "kye:ent:gov.example:citizen:01HXY7Q800CITIZEN0000000000000001",
+  "agency_ref": "kye:ent:gov.example:public_agency:benefits-agency",
+  "statutory_basis": "Social Security Act §73(2) — eligibility-assessment authority for benefits casework",
+  "consent_basis": {
+    "consent_id": "kye:consent:gov.example:01HXY7Q800CONSENT0000000000000001",
+    "consent_state": "active"
+  },
+  "data_classes_in_scope": ["public", "internal", "confidential"],
+  "model_binding": {
+    "model_entity_id": "kye:ent:gov.example:model:eligibility-classifier-v3",
+    "model_risk_state": "normal"
+  },
+  "obligations": [
+    { "type": "audit.emit",          "value": "decision_id" },
+    { "type": "human.oversight.gate", "value": "before-final-decision" },
+    { "type": "evidence.attach",     "value": "eligibility-eval-payload" },
+    { "type": "external.send.block", "value": "true" }
+  ],
+  "decided_at": "2026-05-07T08:42:18.034Z"
+}

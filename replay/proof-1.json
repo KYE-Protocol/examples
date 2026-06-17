@@ -1,0 +1,13 @@
+{
+  "id": "kye:replay-proof:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "version": 1,
+  "seal_ref": "kye:replay-seal:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "claimed_decision_map_ref": "kye:decision-map:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "claimed_decision_map_hash": "sha256:7e8f9012345678abcdef0123456789abcdef0102030405060708091011121314",
+  "recomputed_decision_map_hash": "sha256:7e8f9012345678abcdef0123456789abcdef0102030405060708091011121314",
+  "equivalent": true,
+  "diff_ref": null,
+  "signed_by": "kye:ent:acme-bank:engine:replay",
+  "signed_at": "2026-04-16T09:14:02Z",
+  "signature": "sig:cose:replay:MEUCIQDi6Dw9E1x6U2vX8eC0aQ5dK7hT"
+}

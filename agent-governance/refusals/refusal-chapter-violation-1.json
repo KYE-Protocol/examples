@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "d6155b12-e96f-4d8e-af51-6f9d65c31b8f",
+  "refused_at": "2026-05-27T11:31:05Z",
+  "chapter_ref": "§7",
+  "reason_summary": "Parent prompt asked to register a new per-sector subdomain estate-planning.kyeprotocol.com under public/site/_redirects. §7 Subdomain locks the apex / www / app / admin / dev / sandbox set; new per-sector subdomains are forbidden — sector surfaces live at apex /products/<sector>/ + sandbox.kyeprotocol.com/<sector>/ + app.kyeprotocol.com/<short>/ per §49 §9. Refusing the subdomain addition.",
+  "remediation_hint": "Re-dispatch with the §49 §9 three-surface pattern: write public/site/products/estate-planning/ (apex page), public/sandbox/estate-planning/ (sandbox demo), and public/app/estate/ (app workspace). The per-sector enforcer at scripts/gates/estate-product-canonical.mjs verifies the three-surface bijection."
+}

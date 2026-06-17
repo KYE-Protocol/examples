@@ -1,0 +1,26 @@
+{
+  "schema": "kye.engagement.application.v1",
+  "application_id": "2a4d9e51-1b2c-4d3e-9f6a-cd35c59f5012",
+  "engagement_type": "trainer",
+  "applicant": {
+    "org_name": "Caldera Learning GmbH",
+    "contact_email": "instructors@caldera-learning.example",
+    "contact_name": "Mira Petrova",
+    "jurisdiction": "DE",
+    "website": "https://caldera-learning.example"
+  },
+  "requested_sku": "KYE-TRAINER-SILVER",
+  "submitted_at": "2026-05-26T10:02:00Z",
+  "obligations_acknowledged": [
+    "kye:obligation:trainer:certification-renewal",
+    "kye:obligation:trainer:exam-administration",
+    "kye:obligation:trainer:learner-attestation",
+    "kye:obligation:trainer:material-currency"
+  ],
+  "notes": "Three certified instructors on staff; we run quarterly cohorts across DACH region.",
+  "source": "direct",
+  "consent_marketing": false,
+  "consent_followup": true,
+  "ip_hash": "a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3",
+  "ua_hash": "8c7b6a5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b"
+}

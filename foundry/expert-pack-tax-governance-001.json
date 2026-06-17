@@ -1,0 +1,62 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:tax-governance:v1",
+  "partner_id": "kye:foundry-applicant:tax-governance-reference-partner",
+  "pack_name": "KYE Tax Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "tax-governance",
+  "bound_sector_pack_refs": ["kye:sector-pack:tax-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:tax-governance"],
+  "bound_dictionary_refs": ["kye:dictionary:tax-governance"],
+  "bound_framework_refs": [
+    "kye:framework:irs-circular-230",
+    "kye:framework:oecd-pillar-two",
+    "kye:framework:eu-dac",
+    "kye:framework:uk-mtd",
+    "kye:framework:sox-404",
+    "kye:framework:aicpa-ssts"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:tax-governance:2026-06-07",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-07T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-tax-governance-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:tax-governance:2026-06-07",
+  "claim_set": [
+    {
+      "claim_id": "named-preparer-authority",
+      "claim_text": "Every AI-generated tax position, filing, or advice that moves toward a consequential action MUST map to a recorded named-preparer authority decision — the agent, the position artefact, the intended consequential action, and the named preparer / signing professional under whose authority it proceeds. Positions lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "due-diligence",
+      "claim_text": "Before an AI-generated tax position proceeds to a consequential action it MUST carry a recorded preparer due-diligence result — competence, reasonable-basis / substantial-authority, and a reportable-arrangement / disclosure screen (DAC6 hallmarks, OECD Pillar Two / GIR) where applicable. An unscreened, low-confidence, or undisclosed reportable position is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-generated tax position that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs and pinned source authorities, the due-diligence result relied on, and the named-preparer authority outcome — audit-grade, SOX §404-aligned data-integrity provenance verifiable offline, satisfying UK MTD digital links and OECD Pillar Two GIR lineage.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "signoff-gate",
+      "claim_text": "An AI-generated tax position MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — the preparer-of-record, the engagement partner, or a designated responsible tax officer — records sign-off. Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-generated tax position/filing/advice may proceed to a consequential action and PROVES the basis. KYE does not compute tax, determine the correct tax treatment, run the tax engine, or judge whether a position is correct.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-07T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

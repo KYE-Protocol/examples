@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.engagement.event.v1",
+  "event_id": "kye:event:governed-agents-in-regulated-finance-2026-06",
+  "title": "Governed Agents in Regulated Finance",
+  "kind": "webinar",
+  "mode": "online",
+  "starts_at": "2026-06-18T15:00:00Z",
+  "ends_at": "2026-06-18T16:00:00Z",
+  "timezone": "Europe/London",
+  "registration_url": "https://lu.ma/kye-governed-agents-finance",
+  "summary": "How authority finality and evidence packs change the audit conversation for agentic AI in banking.",
+  "audience": ["ciso", "regulator", "builder"],
+  "sector": "financial-services",
+  "jurisdiction": "uk",
+  "status": "upcoming"
+}

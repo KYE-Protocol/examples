@@ -1,0 +1,21 @@
+{
+  "id": "kye:payment-authority:bot-01-monthly",
+  "tenant_id": "kye:tenant:acme-health",
+  "authority_id": "kye:payment-authority:bot-01-monthly",
+  "wallet_id": "kye:wallet:caseworker-bot-01-purchase-card",
+  "delegatee_entity_id": "kye:agent:caseworker-bot-01",
+  "amount_cap": {
+    "currency": "CAD",
+    "max_monthly": 500
+  },
+  "not_after": "2026-08-22T12:00:00Z",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

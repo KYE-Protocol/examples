@@ -1,0 +1,53 @@
+{
+  "mapping_id": "kye:policy_clause_mapping:northbank:acceptable-use-policy-v3.gdpr",
+  "document_asset_ref": "kye:document_asset:northbank:acceptable-use-policy-v3",
+  "trust_domain_id": "northbank",
+  "target_framework_slug": "gdpr",
+  "engine_version": "1.0.0",
+  "generated_at": "2026-06-10T09:30:05Z",
+  "clauses": [
+    {
+      "clause_id": "c1",
+      "heading": "1. Purpose limitation — personal data processed only for declared purposes.",
+      "text_sha256": "2d626f9eeb0d19b3fb0b50b1cec8010d500ca0f3a59a754be85829ea46929d0c",
+      "obligation_matches": [
+        { "requirement_id": "gdpr.A5.1.b", "match_kind": "citation", "score": 0.95 }
+      ]
+    },
+    {
+      "clause_id": "c2",
+      "heading": "2. Data subject access — requests fulfilled within 30 days per GDPR Art. 15.",
+      "text_sha256": "bb4200defac396efaf7acd3849ff205caea7939c041d6343dbe76eba07dd6fab",
+      "obligation_matches": [
+        { "requirement_id": "gdpr.A15", "match_kind": "citation", "score": 0.98 }
+      ]
+    },
+    {
+      "clause_id": "c3",
+      "heading": "3. Records of processing — maintained per GDPR Art. 30.",
+      "text_sha256": "bb4da665e60905ad51d764c04bbeed2b4e3c4d14f9b2fab357a1305455791964",
+      "obligation_matches": [
+        { "requirement_id": "gdpr.A30", "match_kind": "citation", "score": 0.97 }
+      ]
+    },
+    {
+      "clause_id": "c4",
+      "heading": "4. Office snack policy — unrelated operational clause.",
+      "text_sha256": "5fe3ef6c9d34207b96000a188555bbbc1dfce74c9bddf7b0e826371bc26a6a76",
+      "obligation_matches": []
+    }
+  ],
+  "coverage": {
+    "total_clauses": 4,
+    "mapped_clauses": 3,
+    "unmatched_clauses": 1,
+    "total_obligations": 7,
+    "obligations_with_clause": 3,
+    "obligations_without_clause": [
+      "gdpr.A17",
+      "gdpr.A20",
+      "gdpr.A25.1",
+      "gdpr.A28"
+    ]
+  }
+}

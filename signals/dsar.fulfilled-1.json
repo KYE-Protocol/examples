@@ -1,0 +1,7 @@
+{
+  "dsar_id": "kye:dsar:acme.com:dsar-20260514-001",
+  "subject_entity_id": "kye:ent:acme.com:person:bob",
+  "outcome": "fulfilled",
+  "fulfilled_at": "2026-05-28T12:00:00Z",
+  "evidence_ref": "kye:evidence-pack:acme.com:dsar:pack-20260514-dsar-001"
+}

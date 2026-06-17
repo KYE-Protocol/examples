@@ -1,0 +1,84 @@
+{
+  "schema_version": "kye.continuity_context.v1",
+  "continuity_id": "kye:continuity:001",
+  "request_id": "req_123",
+  "correlation_id": "kye:corr:agent_purchase_001",
+  "actor_entity_id": "kye:entity:agent:shopping_agent_456",
+  "principal_entity_id": "kye:entity:person:customer_123",
+  "acting_on_behalf_of": "kye:entity:person:customer_123",
+  "capability_id": "kye:capability:card_purchase",
+  "authority_grant_id": "kye:authority:grant:purchase_001",
+  "original_intent": {
+    "intent_id": "kye:intent:001",
+    "intent_type": "purchase_assistance",
+    "declared_goal": "Buy a phone charger under £40",
+    "declared_by": "kye:entity:person:customer_123",
+    "constraints": [
+      "trusted merchant",
+      "no subscription",
+      "delivery within 3 days",
+      "maximum amount GBP 40"
+    ],
+    "created_at": "2026-05-06T12:00:00Z"
+  },
+  "interpreted_intent": {
+    "interpreted_by": "kye:entity:agent:shopping_agent_456",
+    "interpreted_goal": "Purchase electronics accessory",
+    "confidence": 0.92,
+    "material_drift_detected": false,
+    "interpretation_notes": "Agent interpreted charger as electronics accessory within purchase constraints."
+  },
+  "authority_binding": {
+    "scope_matched": true,
+    "capability_matched": true,
+    "delegation_chain_valid": true,
+    "authority_state": "active",
+    "approval_required": false
+  },
+  "state_snapshot": {
+    "actor_state": "active",
+    "principal_state": "active",
+    "credential_state": "valid",
+    "capability_state": "active",
+    "risk_state": "normal",
+    "recovery_state": "none"
+  },
+  "pressure_context": {
+    "urgency_level": "normal",
+    "user_pressure_detected": false,
+    "external_coercion_signal": "not_detected",
+    "social_engineering_signal": "not_detected"
+  },
+  "incentive_context": {
+    "agent_optimisation_goal": "minimise_cost_within_constraints",
+    "commercial_incentive_detected": false,
+    "affiliate_or_commission_present": false,
+    "conflict_of_interest_detected": false
+  },
+  "execution_context": {
+    "requested_action": "purchase.prepare",
+    "merchant_id": "merchant:example_retailer",
+    "basket_hash": "sha256:c0ffee0bb5deedc0ffee0bb5deedc0ffee0bb5deedc0ffee0bb5deedc0ffee01",
+    "amount": {
+      "value": 34.99,
+      "currency": "GBP"
+    },
+    "execution_state": "pending"
+  },
+  "continuity_result": {
+    "status": "preserved",
+    "reason_code": "intent_authority_scope_state_aligned",
+    "material_drift_detected": false,
+    "human_review_required": false
+  },
+  "decision_map_id": "kye:decision-map:continuity_001",
+  "evidence_pack_ref": "kye:evidence-pack:continuity_001",
+  "meaning_continuity": {
+    "meaning_continuity_id": "kye:meaning-continuity:001",
+    "status": "meaning_preserved",
+    "meaning_score": 0.94,
+    "material_drift_detected": false,
+    "recommended_decision": "route_to_admissibility"
+  },
+  "created_at": "2026-05-06T12:03:00Z"
+}

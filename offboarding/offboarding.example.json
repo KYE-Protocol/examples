@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.offboarding_flow.v1.json",
+  "schema": "kye.offboarding_flow.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/22-ONBOARDING.md",
+  "notes": ["Illustrative kye.offboarding_flow.v1 instance. Canonical full registry: internal"],
+  "flows": [
+    { "id": "kye:offboarding:example", "subject_kind": "tenant", "steps": [ { "step_id": "1", "action": "data_export" } ] }
+  ]
+}

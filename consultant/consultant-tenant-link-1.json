@@ -1,0 +1,16 @@
+{
+  "schema": "kye.consultant_tenant_link.v1",
+  "id": "kye:consultant-tenant-link:01HZN4LINK-vance-acme-bank",
+  "consultant_id": "kye:consultant:acme-trust-partners-eleanor-vance",
+  "tenant_id": "kye:tenant:acme-bank",
+  "attestation_at": "2026-02-03T09:00:00Z",
+  "scope": "operate",
+  "consent_record_id": "kye:consent-acceptance:01HZN4CONSENT-acme-bank-cro-vance",
+  "revoked_at": null,
+  "revoked_by": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-tenant-link-issuer-2026-02",
+    "value_b64": "MEUCIQDxC4cTenantLinkVanceAcmeBankSignatureMockBytesForFixtureValidationOnly=="
+  }
+}

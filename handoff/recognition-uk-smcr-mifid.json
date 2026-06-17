@@ -1,0 +1,14 @@
+{
+  "schema": "kye.jurisdiction_framework_recognition.v1",
+  "recognition_id": "kye:jfr:uk-smcr-mifid",
+  "source_jurisdiction": "uk",
+  "target_jurisdiction": "eu",
+  "source_framework": "UK_SMCR",
+  "target_framework": "EU_MIFID_II",
+  "recognition_type": "deference",
+  "legal_basis": "FCA-ESMA supervisory cooperation MoU; senior-management responsibility crosswalk",
+  "bidirectional": false,
+  "status": "active",
+  "effective_from": "2026-05-31",
+  "review_cadence_days": 180
+}

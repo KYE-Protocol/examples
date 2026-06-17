@@ -1,0 +1,53 @@
+{
+  "schema_version": "kye.connector.evidence_import.v1",
+  "import_id": "kye:import:acme-bank.vanta-export.2026-05-20",
+  "tenant_id": "kye:tenant:acme-bank",
+  "source_tool": "vanta",
+  "imported_at": "2026-05-20T15:10:00Z",
+  "row_count": 5,
+  "items": [
+    {
+      "kind": "control",
+      "control_id": "CC6.1",
+      "framework": "soc_2",
+      "name": "Logical access — least privilege",
+      "description": "Access to systems and data is restricted to authorised users on a least-privilege basis.",
+      "status": "pass",
+      "owner": "kye:ent:acme-bank.ciso"
+    },
+    {
+      "kind": "obligation",
+      "obligation_id": "gdpr-art-30",
+      "framework": "gdpr",
+      "citation": "GDPR Art. 30",
+      "text": "Maintain a record of processing activities under the controller's responsibility.",
+      "control_refs": ["CC6.1"]
+    },
+    {
+      "kind": "evidence_item",
+      "evidence_id": "kye:evidence:acme-bank.okta-access-review.q2",
+      "control_ref": "CC6.1",
+      "evidence_kind": "attestation",
+      "title": "Q2 quarterly access review — Okta production tenant",
+      "collected_at": "2026-04-30T17:00:00Z",
+      "source_uri": "https://acme-bank.vanta.com/evidence/okta-access-review-q2",
+      "content_sha256": "9f2c1a7b4e0d6385a1c2f4b8d9e0a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2"
+    },
+    {
+      "kind": "ai_system",
+      "system_id": "kye:agent:acme-bank.supplier-payment-agent.v3",
+      "name": "Supplier Payment Agent",
+      "risk_tier": "high",
+      "owner": "kye:ent:acme-bank.payments-lead",
+      "lifecycle_stage": "production",
+      "framework_refs": ["eu_ai_act", "dora"]
+    }
+  ],
+  "errors": [
+    {
+      "row_index": 4,
+      "reason": "no recognised mapping for source column 'Control Owner Email'; row skipped",
+      "raw": { "Control": "", "Status": "n/a", "Control Owner Email": "unknown@acme-bank.com" }
+    }
+  ]
+}

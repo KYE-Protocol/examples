@@ -1,0 +1,75 @@
+{
+  "schema_version": "kye.assurance_card.v1",
+  "assurance_card_id": "kye:assurance-card:finance_agent_001",
+  "subject_entity_id": "kye:agent:finance_agent_001",
+  "subject_type": "ai_agent",
+  "display_name": "Finance Payment Preparation Agent",
+  "owner_entity_id": "kye:user:finance_owner_001",
+  "accountable_entity_id": "kye:org:acme_ltd",
+  "lifecycle_state": "pilot",
+  "risk_tier": "high",
+  "intended_use": {
+    "summary": "Prepare supplier payments and reconcile invoices for human approval.",
+    "permitted_uses": ["invoice.read", "payment.prepare", "supplier.notify"],
+    "prohibited_uses": ["payment.execute", "contract.sign", "credential.rotate"]
+  },
+  "authority_model": {
+    "entity_authority_record_ref": "kye:authority-record:finance_agent_001",
+    "authority_grants": ["kye:authority:grant:payment_prepare_001"],
+    "required_gates": ["kye:gate:payment_execute", "kye:gate:external_send"],
+    "commit_boundaries": ["kye:commit-boundary:payment_execution"]
+  },
+  "human_involvement": {
+    "human_involvement_plan_ref": "kye:human-involvement-plan:finance_payment_high_risk",
+    "review_path_ref": "kye:review-path:finance_payment_high_risk",
+    "human_approval_required": true,
+    "approval_thresholds": [
+      {
+        "capability": "payment.prepare",
+        "requires_review_above": { "value": 1000, "currency": "GBP" }
+      }
+    ]
+  },
+  "provenance": {
+    "provenance_evidence_ref": "kye:provenance:finance_agent_001",
+    "model_refs": [],
+    "dataset_refs": [],
+    "tool_refs": ["kye:tool:invoice_parser", "kye:tool:banking_api_adapter"],
+    "supplier_refs": [],
+    "licensing_refs": []
+  },
+  "performance_and_limitations": {
+    "known_limitations": [
+      "Cannot execute payments",
+      "Requires human review for new beneficiaries"
+    ],
+    "evaluation_refs": ["kye:evaluation:finance_agent_eval_001"]
+  },
+  "evidence": {
+    "evidence_pack_refs": [
+      "kye:evidence-pack:readiness_001",
+      "kye:evidence-pack:pilot_decision_001"
+    ],
+    "decision_map_refs": ["kye:decision-map:finance_agent_001"],
+    "audit_refs": ["kye:audit:finance_agent_001"],
+    "adoption_evidence_pack_refs": ["kye:evidence-pack:adoption_001"]
+  },
+  "review": {
+    "review_cycle_ref": "kye:assurance-review-cycle:finance_agent_001",
+    "last_reviewed_at": "2026-05-09T12:00:00Z",
+    "next_review_due": "2026-06-09T12:00:00Z",
+    "review_frequency": "monthly",
+    "review_triggers": [
+      "scope_change", "new_capability", "incident",
+      "risk_state_change", "model_update", "authority_change"
+    ]
+  },
+  "decommissioning": {
+    "required": true,
+    "plan_ref": "kye:decommissioning-plan:finance_agent_001"
+  },
+  "status": "published",
+  "audit_chain_ref": "kye:audit:chain:0xabc123",
+  "created_at": "2026-05-09T12:00:00Z",
+  "updated_at": "2026-05-09T12:00:00Z"
+}

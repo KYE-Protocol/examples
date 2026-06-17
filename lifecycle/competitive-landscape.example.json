@@ -1,0 +1,115 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.competitive_landscape.v1.json",
+  "schema": "kye.competitive_landscape.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/00-INDEX.md §0.16 + §0.18 · constitution/39-LEARN-RAIL.md",
+  "notes": [
+    "Data SOURCE for the lifecycle-vs-players comparison on public/site/agentic-governance-lifecycle.html.",
+    "Narrative player-by-category prose is canonically owned by public/site/learn/articles/players-in-ai-governance.html (the four camps) and public/site/analyst-briefing/competitive-landscape.html (the altitude argument). This registry maps named players onto lifecycle STAGES — the cut neither narrative page makes — and links back to them rather than re-describing.",
+    "Every public_positioning claim is sourced from the cited source_url (the vendor's own public site). Factual only.",
+    "covers_stage_ids[] is capped at three per the schema: external players cover a slice; KYE (kye_self) spans all ten — that contrast is the visual."
+  ],
+  "stage_ids": [
+    "kye:agentic-governance-lifecycle:stage:intent",
+    "kye:agentic-governance-lifecycle:stage:action-admissibility",
+    "kye:agentic-governance-lifecycle:stage:authority-resolution",
+    "kye:agentic-governance-lifecycle:stage:delegation-scope",
+    "kye:agentic-governance-lifecycle:stage:execution-control",
+    "kye:agentic-governance-lifecycle:stage:evidence-pack",
+    "kye:agentic-governance-lifecycle:stage:authority-finality",
+    "kye:agentic-governance-lifecycle:stage:reality-coupling",
+    "kye:agentic-governance-lifecycle:stage:contestability",
+    "kye:agentic-governance-lifecycle:stage:renewal-revocation"
+  ],
+  "kye_self": {
+    "name": "KYE Protocol",
+    "covers_stage_ids": [
+      "kye:agentic-governance-lifecycle:stage:intent",
+      "kye:agentic-governance-lifecycle:stage:action-admissibility",
+      "kye:agentic-governance-lifecycle:stage:authority-resolution",
+      "kye:agentic-governance-lifecycle:stage:delegation-scope",
+      "kye:agentic-governance-lifecycle:stage:execution-control",
+      "kye:agentic-governance-lifecycle:stage:evidence-pack",
+      "kye:agentic-governance-lifecycle:stage:authority-finality",
+      "kye:agentic-governance-lifecycle:stage:reality-coupling",
+      "kye:agentic-governance-lifecycle:stage:contestability",
+      "kye:agentic-governance-lifecycle:stage:renewal-revocation"
+    ],
+    "source_url": "https://kyeprotocol.com/agentic-governance-lifecycle.html"
+  },
+  "players": [
+    {
+      "id": "kye:competitive-landscape:player:datadog",
+      "name": "Datadog",
+      "vendors": ["Datadog"],
+      "category": "observability",
+      "source_url": "https://www.datadoghq.com/product/llm-observability/",
+      "public_positioning": "Datadog LLM Observability monitors, troubleshoots and evaluates LLM applications in production — tracing, quality and performance metrics for model and agent behaviour.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:execution-control"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:arize",
+      "name": "Arize AI",
+      "vendors": ["Arize AI"],
+      "category": "model-eval",
+      "source_url": "https://arize.com/llm-evaluation/",
+      "public_positioning": "Arize positions itself as an AI observability and LLM evaluation platform for tracing, evaluating and troubleshooting agents and model performance in production.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:execution-control", "kye:agentic-governance-lifecycle:stage:reality-coupling"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:robust-intelligence",
+      "name": "Robust Intelligence (Cisco AI Defense)",
+      "vendors": ["Robust Intelligence", "Cisco AI Defense"],
+      "category": "model-eval",
+      "source_url": "https://www.cisco.com/site/us/en/products/security/ai-defense/index.html",
+      "public_positioning": "Cisco AI Defense (incorporating Robust Intelligence) publicly describes automated AI validation and runtime safety for models and applications — algorithmic red-teaming and guardrails.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:action-admissibility"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:credo-ai",
+      "name": "Credo AI",
+      "vendors": ["Credo AI"],
+      "category": "grc",
+      "source_url": "https://www.credo.ai/product",
+      "public_positioning": "Credo AI publicly positions an AI governance platform for use-case registration, policy management and regulatory framework mapping (EU AI Act, ISO 42001, NIST AI RMF).",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:intent"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:onetrust",
+      "name": "OneTrust",
+      "vendors": ["OneTrust"],
+      "category": "grc",
+      "source_url": "https://www.onetrust.com/products/ai-governance/",
+      "public_positioning": "OneTrust AI Governance publicly offers an AI inventory, risk assessment and policy management workflow for cataloguing and governing AI systems against regulatory requirements.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:intent", "kye:agentic-governance-lifecycle:stage:evidence-pack"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:cerbos",
+      "name": "Cerbos",
+      "vendors": ["Cerbos"],
+      "category": "policy-authoring",
+      "source_url": "https://www.cerbos.dev/product-cerbos-pdp",
+      "public_positioning": "Cerbos publicly describes a stateless, decoupled authorization (PDP) layer that evaluates policy-as-code to allow or deny actions on resources, including for AI agents.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:authority-resolution", "kye:agentic-governance-lifecycle:stage:execution-control"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:temporal",
+      "name": "Temporal",
+      "vendors": ["Temporal"],
+      "category": "enforcement-gateway",
+      "source_url": "https://temporal.io/product",
+      "public_positioning": "Temporal publicly offers a durable execution platform that orchestrates and enforces reliable, recoverable workflow state transitions — the enforcement layer KYE decides admissibility for.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:execution-control", "kye:agentic-governance-lifecycle:stage:renewal-revocation"]
+    },
+    {
+      "id": "kye:competitive-landscape:player:lakera",
+      "name": "Lakera",
+      "vendors": ["Lakera"],
+      "category": "pre-authorization-admissibility",
+      "source_url": "https://www.lakera.ai/lakera-guard",
+      "public_positioning": "Lakera Guard publicly screens prompts and agent inputs for injection, jailbreak and data-leak risk — an input-admissibility signal that feeds, but does not replace, an authority decision.",
+      "covers_stage_ids": ["kye:agentic-governance-lifecycle:stage:action-admissibility"]
+    }
+  ]
+}

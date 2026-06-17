@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:mcp-agent-runtime",
+  "slug": "mcp-agent-runtime",
+  "display_name": "KYE MCP / Agent Runtime Profile™",
+  "layer": "runtime",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "How MCP tool calls + agent-to-agent delegation are evaluated. Every tool call MUST pass through the Runtime Gateway with a binding envelope (§52) declaring purpose, scope, allow-list, and constitutional acknowledgement.",
+  "required_objects": ["Actor", "Authority", "Scope", "Decision", "Evidence"],
+  "required_engines": ["kye:engine:mcp-gateway", "kye:engine:agent-binding"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

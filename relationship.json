@@ -1,0 +1,12 @@
+{
+  "relationship_id": "kye:rel:acme.example:owned_by:01JYREL0000000000000000000",
+  "source_entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "relationship_type": "owned_by",
+  "target_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+  "evidence_refs": [
+    "kye:cred:acme.example:kye_entity_passport:01JYCRED0000000000000000"
+  ],
+  "confidence": 100,
+  "valid_from": "2026-04-01T00:00:00Z",
+  "status": "active"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:high-assurance",
+  "slug": "high-assurance",
+  "display_name": "KYE High-Assurance Profile™",
+  "layer": "domain",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "Banking-grade + critical-infrastructure-grade hardening: stricter floors, dual-channel sign-off on irreversibles, hardware-rooted signing, WORM audit retention, mTLS-only transport, HSM-backed key custody. Every irreversible action MUST be accountable_for'd to a named human Principal (ontology dictionary term — §29 §4).",
+  "required_objects": ["Authority", "Evidence"],
+  "required_engines": ["kye:engine:dual-channel-signoff", "kye:engine:hsm-signing"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

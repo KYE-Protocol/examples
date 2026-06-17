@@ -1,0 +1,19 @@
+{
+  "schema": "kye.engagement.approval.v1",
+  "decision_id": "5b8e0c63-3d4e-4f5a-8b7c-ef46d68f6023",
+  "application_id": "1f3c8b40-0a1f-4f5b-9c4e-bd24b48f4f01",
+  "engagement_type": "partner",
+  "decision": "approved",
+  "approver_id": "kye:ent:kyeprotocol.com:org:partnerships-admin",
+  "decided_at": "2026-05-26T13:48:00Z",
+  "obligations_accepted": [
+    "kye:obligation:partner:nda",
+    "kye:obligation:partner:accurate-representation",
+    "kye:obligation:partner:deal-registration",
+    "kye:obligation:partner:lead-time-enterprise",
+    "kye:obligation:partner:training-currency"
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:partnership-approval:1f3c8b40-0a1f-4f5b-9c4e-bd24b48f4f01",
+  "reason": "Strong FS book of business, existing DORA practice, references checked.",
+  "channel": "admin_panel"
+}

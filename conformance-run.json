@@ -1,0 +1,24 @@
+{
+  "schema_version": "kye.conformance_run.v1",
+  "run_id": "kye:conformance-run:acme.example:001",
+  "implementation_id": "kye:implementation:acme.example:agent-runtime",
+  "implementation_name": "Acme Agent Runtime",
+  "implementation_version": "2.4.1",
+  "test_suite_version": "kye-conformance-1.0.0",
+  "profiles_under_test": [
+    "kye.core.v1.0",
+    "kye.authority.v1.0",
+    "kye.capability.v1.0"
+  ],
+  "started_at":   "2026-05-06T09:00:00Z",
+  "completed_at": "2026-05-06T09:08:42Z",
+  "result": "passed",
+  "summary": {
+    "tests_total": 37,
+    "tests_passed": 37,
+    "tests_failed": 0,
+    "warnings": 0
+  },
+  "findings": [],
+  "evidence_pack_ref": "kye:evidence-pack:acme.example:conformance-001"
+}

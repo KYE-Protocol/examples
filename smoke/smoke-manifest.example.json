@@ -1,0 +1,54 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.smoke_manifest.v1.json",
+  "schema": "kye.smoke_manifest.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/13-RESILIENCE-LOOP.md",
+  "notes": [
+    "Illustrative kye.smoke_manifest.v1 instance. The canonical full registry lives at internal"
+  ],
+  "host_map": {
+    "site": "kyeprotocol.com"
+  },
+  "surface_classes": [
+    {
+      "class_id": "kye:smoke:class:site",
+      "label": "Marketing site",
+      "description": "Example surface class.",
+      "source_registry": "internal",
+      "selector": { "kind": "page-manifest-surface", "surface": "site" },
+      "probe_contract": {
+        "expect_http": 200,
+        "positive_content_tokens": ["data-kye-header"],
+        "negative_content_tokens": ["Download Protocol v0.1"],
+        "require_chrome_mounted": true,
+        "chrome_token": "data-kye-header",
+        "require_light_default": true,
+        "forbid_mask_tokens": true,
+        "require_canonical_og": false
+      }
+    },
+    {
+      "class_id": "kye:smoke:class:sdk-domain",
+      "label": "Sibling SDK product apexes",
+      "description": "Example registry-array / live-only class that IS a page-manifest surface — covers_page_manifest_surface closes the §0.9 coverage contract without a parallel page-manifest-surface class (§0).",
+      "source_registry": "internal",
+      "covers_page_manifest_surface": "sdk-domains",
+      "selector": {
+        "kind": "registry-array",
+        "array_key": "sdk_apex_pages",
+        "surface_field": "path",
+        "resolution": "manifest-row"
+      },
+      "probe_contract": {
+        "expect_http": 200,
+        "positive_content_tokens": ["<title"],
+        "negative_content_tokens": [],
+        "require_chrome_mounted": false,
+        "require_light_default": true,
+        "forbid_mask_tokens": true,
+        "require_canonical_og": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "entity_id": "kye:agent:acme.com:runtime:billing-agent-02",
+  "entity_class": "agent",
+  "trust_domain": "acme.com",
+  "deletion_reason": "Deprecated and replaced by billing-agent-03. Operator-initiated tombstone.",
+  "deleted_by": "kye:ent:acme.com:person:alice"
+}

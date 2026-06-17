@@ -1,0 +1,23 @@
+{
+  "schema_version": "kye.ci.failure.classified.v1",
+  "classification_id": "kye:ci_classification:01HZAA22-classify",
+  "workflow_run_id": "26397327752",
+  "workflow_name": "CI",
+  "head_sha": "0f0b0d9c",
+  "branch": "claude/wave-i-quota-enforcement-and-audit",
+  "failing_step": "Unit tests (vitest)",
+  "classified_at": "2026-05-25T11:06:49Z",
+  "pattern_id": "transient-network-flake",
+  "category": "transient-flake",
+  "confidence": 0.85,
+  "log_evidence_lines": [
+    "FAIL  src/__tests__/agent-native.test.ts",
+    "  AssertionError [ERR_ASSERTION]: ECONNRESET",
+    "  at Object.<anonymous> (src/__tests__/agent-native.test.ts:42:7)"
+  ],
+  "remediator": {
+    "action": "none",
+    "execution_mode": "none",
+    "max_attempts_per_sha": 3
+  }
+}

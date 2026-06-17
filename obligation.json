@@ -1,0 +1,26 @@
+{
+  "schema_version": "kye.obligation.v1",
+  "obligation_id": "kye:obligation:approval_before_execution",
+  "obligation_type": "pre_execution_approval",
+  "owed_by_entity_id": "kye:agent:finance_agent_001",
+  "owed_to_entity_id": "kye:org:acme_ltd",
+  "trigger_event": "payment.prepare.completed",
+  "required_action": "request_approval",
+  "deadline": {
+    "type": "before_action",
+    "before_capability": "payment.execute"
+  },
+  "state": "pending",
+  "satisfaction_conditions": [
+    "approval_event_recorded",
+    "approver_authority_valid",
+    "approval_evidence_pack_generated"
+  ],
+  "breach_effect": {
+    "decision": "deny",
+    "reason_code": "obligation_not_satisfied",
+    "generate_evidence_pack": true
+  },
+  "evidence_refs": [],
+  "created_at": "2026-05-09T12:00:00Z"
+}

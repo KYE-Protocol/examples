@@ -1,0 +1,44 @@
+{
+  "schema_version": "kye.rule_pack_listing.v1",
+  "listing_id": "kye:listing:pension.uk.tpr",
+  "rule_pack_id": "kye:rule-pack:pension",
+  "version": "1.0.0",
+  "display_name": "UK Pension Trustees — TPR Code of Practice 12",
+  "tagline": "Single Code of Practice (CoP 12): cyber resilience, scheme cyber security, ICT governance for pension trustees.",
+  "long_description": "Implements The Pensions Regulator's General Code (formerly CoP 12) cyber + governance controls for UK pension schemes. Tracks evidence under SYSC-equivalent obligations, enforces incident-reporting cadences, and produces an annual trustee-board attestation pack.",
+  "publisher": {
+    "entity_id": "kye:org:kye-protocol",
+    "display_name": "KYE Protocol",
+    "tier": "first-party-kye",
+    "verified": true
+  },
+  "categories": ["compliance", "sector"],
+  "applies_to_sectors": ["pension", "financial-services"],
+  "applies_to_regimes": ["TPR"],
+  "applies_to_jurisdictions": ["GB"],
+  "pricing_model": {
+    "model": "annual",
+    "currency": "GBP",
+    "price_minor_units": 1800000,
+    "stripe_price_id": "price_PensionUkAnnual2026"
+  },
+  "verification": {
+    "conformance_pack_run_id": "kye:conformance-run:pension-2026-05-15",
+    "conformance_passed": true,
+    "fixtures_passed": 11,
+    "fixtures_total": 11,
+    "signature": {
+      "alg": "EdDSA",
+      "kid": "kye:key:marketplace-signer-001",
+      "value_b64": "MEUCIQD2K3rJ5gS5kP3bwdFhR5EqDo4i2V5ucuEl8c3v5T8OvlNnE1rK0AB6h1M7i7l2K4g4C8hJ0M3D7q1cT2r6sV9wX"
+    },
+    "verified_at": "2026-05-15T08:00:00Z",
+    "verified_by_entity_id": "kye:org:kye-protocol"
+  },
+  "entitlements": { "support_tier": "standard" },
+  "reviews_summary": { "count": 2, "avg_rating": 4.5 },
+  "telemetry": { "installs": 3, "active_tenants": 3, "evaluations_last_30d": 120000 },
+  "status": "active",
+  "created_at": "2026-04-01T00:00:00Z",
+  "updated_at": "2026-05-15T08:00:00Z"
+}

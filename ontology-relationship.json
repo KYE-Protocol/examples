@@ -1,0 +1,22 @@
+{
+  "schema_version": "kye.ontology_relationship.v1",
+  "relationship_id": "kye:ontology:relationship:001",
+  "subject_term_id": "kye:term:entity:ai_agent",
+  "predicate": "uses_capability",
+  "object_term_id": "kye:term:capability:tool_invocation",
+  "relationship_type": "semantic_rule",
+  "definition": "An AI agent may hold a tool-invocation capability only through an authority grant, capability manifest, and active state.",
+  "constraints": {
+    "requires_authority_grant": true,
+    "requires_capability_manifest": true,
+    "requires_state_check": true
+  },
+  "evidence_requirements": [
+    "authority_grant",
+    "capability_manifest",
+    "state_snapshot",
+    "policy_decision"
+  ],
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "kye.intent_trace.v1",
+  "intent_trace_id": "kye:intent-trace:001",
+  "principal_entity_id": "kye:entity:person:customer_123",
+  "actor_entity_id": "kye:entity:agent:shopping_agent_456",
+  "trace_stages": [
+    {
+      "stage": "signal_received",
+      "description": "Customer asked the agent to buy a phone charger under £40.",
+      "timestamp": "2026-05-06T12:00:00Z",
+      "evidence_ref": "kye:evidence:intent_signal_001"
+    },
+    {
+      "stage": "intent_interpreted",
+      "description": "Agent interpreted the request as electronics accessory purchase.",
+      "timestamp": "2026-05-06T12:00:05Z",
+      "evidence_ref": "kye:evidence:intent_interpretation_001"
+    },
+    {
+      "stage": "authority_checked",
+      "description": "KYE checked the purchase authority grant and scope.",
+      "timestamp": "2026-05-06T12:00:06Z",
+      "evidence_ref": "kye:evidence:authority_check_001"
+    },
+    {
+      "stage": "decision_created",
+      "description": "KYE decision returned allow.",
+      "timestamp": "2026-05-06T12:00:07Z",
+      "evidence_ref": "kye:evidence:decision_001"
+    },
+    {
+      "stage": "execution_prepared",
+      "description": "Agent prepared checkout but payment was not yet executed.",
+      "timestamp": "2026-05-06T12:00:09Z",
+      "evidence_ref": "kye:evidence:checkout_prepare_001"
+    }
+  ],
+  "continuity_status": "preserved",
+  "drift_events": [],
+  "audit_ref": "kye:audit:intent_trace_001"
+}

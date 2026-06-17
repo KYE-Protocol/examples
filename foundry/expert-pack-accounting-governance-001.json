@@ -1,0 +1,62 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:accounting-governance:v1",
+  "partner_id": "kye:foundry-applicant:accounting-governance-reference-partner",
+  "pack_name": "KYE Accounting Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "accounting-governance",
+  "bound_sector_pack_refs": ["kye:sector-pack:accounting-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:accounting-governance"],
+  "bound_dictionary_refs": ["kye:dictionary:accounting-governance"],
+  "bound_framework_refs": [
+    "kye:framework:companies-act-2006",
+    "kye:framework:uk-gaap-frs102",
+    "kye:framework:isa-uk",
+    "kye:framework:frc-ethical-standard",
+    "kye:framework:sox-404",
+    "kye:framework:uk-mtd"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:accounting-governance:2026-06-08",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-08T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-accounting-governance-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:accounting-governance:2026-06-08",
+  "claim_set": [
+    {
+      "claim_id": "named-authority",
+      "claim_text": "Every AI-generated financial entry, statement, or filing that moves toward a consequential action MUST map to a recorded named-authority decision — the agent, the entry / statement / filing artefact, the intended consequential action, and the named accountant / director under whose authority it proceeds. Entries lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "due-diligence",
+      "claim_text": "Before an AI-generated entry proceeds to a consequential action it MUST carry a recorded due-diligence result — competence, recognition-and-measurement / true-and-fair basis, and an accounting-records-adequacy / fraud-risk screen (Companies Act 2006 s.386; ISA (UK) 240 / 315) where applicable. An unscreened, low-confidence, or records-deficient entry is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-generated entry that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs and pinned source data, the recognition / measurement basis applied, the due-diligence result relied on, and the named-authority outcome — audit-grade, SOX §404-aligned data-integrity provenance verifiable offline, satisfying Companies Act 2006 s.386 records adequacy and UK MTD digital record-keeping.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "signoff-gate",
+      "claim_text": "An AI-generated entry MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — the accountant-of-record, the engagement partner, or a responsible finance director — records sign-off. The irreversible Companies House statutory filing additionally requires §36 two-person sign-off (the preparing accountant AND an approving director). Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-generated financial entry/statement/filing may proceed to a consequential action and PROVES the basis. KYE does not compute the numbers, prepare the accounts, run the accounting engine, or judge whether the accounts are correct.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-08T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:capability_state:apollo-research-example",
+  "layer": "capability_state",
+  "direction": "in",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "model_eval_lab",
+  "attestation_requirement": "required_inbound",
+  "transport": "https_pull",
+  "known_partners": [
+    { "partner_slug": "apollo-research", "partner_name": "Apollo Research", "adapter_status": "declared", "url": "https://www.apolloresearch.ai" }
+  ],
+  "adopted_at": "2026-05-30"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:partner-consultant-boutique",
+  "name": "Boutique Consulting Partner",
+  "summary": "Turn-key bundle for a boutique compliance consultancy under §49 partner channel (T1 tier). Channel-only pack: compliance-evidence + transparency rule packs, consultants + partners GovernedUI modules, partner-channel comms.",
+  "target_audience": {
+    "sector": "partner",
+    "role": "consultant-boutique",
+    "jurisdiction": "global",
+    "tier": "boutique"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:compliance-evidence",
+      "kye:rule-pack:transparency",
+      "kye:rule-pack:action-admissibility"
+    ],
+    "sector_pack_ids": [],
+    "dictionary_ids": [
+      "kye:dictionary:report-frameworks",
+      "kye:dictionary:reason_codes",
+      "kye:dictionary:regulators"
+    ],
+    "comms_template_ids": [
+      "consultant-lead.routing.v1",
+      "consultant-lead.applicant-ack.v1",
+      "engage-access.admin-alert.v1",
+      "engage-access.applicant-confirmation.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.consultants.v1",
+      "kye.governedui.module.partners.v1",
+      "kye.governedui.module.evidence_timeline.v1"
+    ],
+    "purposes_preconfigured": [
+      "service_delivery",
+      "regulatory_compliance",
+      "audit_trail"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 14,
+  "prerequisites": [
+    "Approved §49 partner application (engagement_type=partner, tier=T1)",
+    "Partner obligations acknowledged"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-PARTNER-T1",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "partner-rail-owner",
+    "consultant-rail-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

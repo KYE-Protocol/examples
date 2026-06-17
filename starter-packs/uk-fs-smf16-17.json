@@ -1,0 +1,65 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:uk-fs-smf16-17",
+  "name": "UK Tier-1 Bank Compliance / MLRO Function (SMF16 + SMF17)",
+  "summary": "Turn-key bundle for the combined SMF16 (Compliance Oversight) and SMF17 (MLRO) functions at a UK Tier-1 bank. Activates the SM&CR + transparency rule packs, the UK FS SM&CR sector pack, comms templates for regulator-bound disclosures, and pre-configured purposes for compliance and DSAR response.",
+  "target_audience": {
+    "sector": "financial-services",
+    "role": "smf16-17",
+    "jurisdiction": "GB",
+    "tier": "tier-1-bank"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:sm-cr",
+      "kye:rule-pack:financial-services",
+      "kye:rule-pack:transparency",
+      "kye:rule-pack:dsar-handling",
+      "kye:rule-pack:compliance-evidence"
+    ],
+    "sector_pack_ids": [
+      "kye:sector-pack:financial-services",
+      "kye:sector-pack:uk-financial-services-sm-cr"
+    ],
+    "dictionary_ids": [
+      "kye:dictionary:regulators",
+      "kye:dictionary:reason_codes",
+      "kye:dictionary:privacy_reason_codes",
+      "kye:dictionary:jurisdictions",
+      "kye:dictionary:report-frameworks"
+    ],
+    "comms_template_ids": [
+      "dsar.received.v1",
+      "dsar.admin-alert.v1",
+      "audit-pilot.admin-alert.v1",
+      "onboarding-agent.pilot-approved.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.evidence_timeline.v1",
+      "kye.governedui.module.approval_queue.v1",
+      "kye.governedui.module.authority_scope.v1"
+    ],
+    "purposes_preconfigured": [
+      "regulatory_compliance",
+      "fraud_prevention",
+      "dsar_response",
+      "audit_trail"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 21,
+  "prerequisites": [
+    "Signed pilot SOW under KYE-FCA-PILOT-001 or KYE-FINSERV-UK-ANNUAL-001",
+    "SMF16 + SMF17 Statements of Responsibilities on file",
+    "MI feed for AML alerts wired to the Evidence Gateway"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-FINSERV-UK-ANNUAL-001",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "uk-financial-services-rail-owner",
+    "onboarding-agent-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_id": "kye.data_classification_assignment.v1",
+  "assignment_id": "kye:classification-assignment:acme-pii-customer-table-2026-05-17",
+  "tenant_id": "kye:tenant:acme-bank",
+  "asset_id": "kye:data-asset:acme-bank-customer-master",
+  "classification": "restricted",
+  "classifier_kid": "kye:kid:acme-data-classification-agent-2026-q2",
+  "rationale": "Customer master table contains PII. The classification engine and the detection-rule corpus are part of the patent track; this example shows only the canonical envelope a downstream consumer receives.",
+  "detection_method": "regex_scan",
+  "derived_from": {
+    "sector_template_id": "kye:profile:fs-customer-master-template"
+  },
+  "effective_at": "2026-05-17T11:30:00Z",
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA==",
+  "evidence_pack_id": null
+}

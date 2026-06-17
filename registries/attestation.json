@@ -1,0 +1,17 @@
+{
+  "id": "kye:attestation:acme-health-self-2026-05-24",
+  "tenant_id": "kye:tenant:acme-health",
+  "attestation_id": "kye:attestation:acme-health-self-2026-05-24",
+  "subject_entity_id": "kye:trust-domain:acme-health",
+  "claim": "PIPEDA-compliant data processing posture verified",
+  "not_after": "2027-05-24T12:00:00Z",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "kye:decision-map:platform.s52-phase3.01HFCA7Q8RW2N1M4V5KZ3X9Y7P0",
+  "version": 1,
+  "decision_id": "kye:decision:platform.s52-phase3.01HFCA7Q8RW2N1M4V5KZ3X9Y7P0",
+  "nodes": [
+    {
+      "id": "in.request",
+      "type": "input",
+      "label": "§52 Phase 3 retroactive-analysis purpose request",
+      "payload_ref": "kye:purpose-req:platform:01HFCA7Q8RW2N1M4V5KZ3X9Y7P0",
+      "payload_hash": "sha256:7c1b2a3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+      "signature": "sig:cose:in.request:MEUCIQEm7Nr2A1u3O4qP5sV6tW7xY8zA"
+    },
+    {
+      "id": "in.binding-manifest-phase2",
+      "type": "input",
+      "label": "§52 Phase 2 binding manifest (6 patterns post-Phase-2)",
+      "payload_ref": "internal#phase2",
+      "payload_hash": "sha256:8d2c3b4e5f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2",
+      "signature": "sig:cose:in.binding:MEUCIQEn8Os3B2v4P5rQ6tW7uX8yZ9aB"
+    },
+    {
+      "id": "in.mcp-allow-list-manifest-phase2",
+      "type": "input",
+      "label": "§52 Phase 2 MCP allow-list manifest (5 patterns)",
+      "payload_ref": "internal",
+      "payload_hash": "sha256:9e3d4c5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b",
+      "signature": "sig:cose:in.mcp-manifest:MEUCIQEoP4t5C3w6Q7sR8uV9wX0aY1bC"
+    },
+    {
+      "id": "in.harness-transcript-corpus",
+      "type": "input",
+      "label": "Corpus of past subagent transcripts at /root/.claude/projects/**/subagents/agent-*.jsonl",
+      "payload_ref": "harness-state:claude-code:subagents",
+      "payload_hash": "sha256:af4e5d6071829a3b4c5d6e7f8091a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3",
+      "signature": "sig:cose:in.harness:MEUCIQEpQ5u6D4x7R8sS9vW0xY1bZ2cD"
+    },
+    {
+      "id": "rule.retroactive-monotonicity",
+      "type": "rule",
+      "label": "Past-violation count is monotonically non-increasing — new dispatches MUST NOT exceed baseline (§52 §6 Phase 3)",
+      "payload_hash": "sha256:b05f6e718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d",
+      "signature": "sig:cose:rule.monotonicity:MEUCIQEqR6v7E5y8S9tT0wX1yZ2cA3dE"
+    },
+    {
+      "id": "rule.anonymise-by-default",
+      "type": "rule",
+      "label": "Committed artefacts MUST be anonymised — no raw transcript content in repo (§33 IP/OSS)",
+      "payload_hash": "sha256:c1607f8293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e",
+      "signature": "sig:cose:rule.anonymise:MEUCIQErS7w8F6z9T0uU1xY2zA3dB4eF"
+    },
+    {
+      "id": "rule.decay-deadline-90d",
+      "type": "rule",
+      "label": "Baseline carries 90-day decay deadline — past that date ANY remaining violation = §52 §6 violation (mirrors §45 decay pattern)",
+      "payload_hash": "sha256:d2718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f",
+      "signature": "sig:cose:rule.decay:MEUCIQEsT8x9G70AU1vV2yZ3aB4eC5fG"
+    },
+    {
+      "id": "obl.emit-retroactive-audit-schema",
+      "type": "obligation",
+      "label": "Emit internal",
+      "payload_hash": "sha256:e38293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60",
+      "signature": "sig:cose:obl.schema:MEUCIQEtU9y0H81BV2wW3zA4bC5fD6gH"
+    },
+    {
+      "id": "obl.emit-retroactive-audit-script",
+      "type": "obligation",
+      "label": "Emit scripts/agent-governance/retroactive-audit.mjs (scanner with --scan/--write/--check/--anonymise flags)",
+      "payload_hash": "sha256:f493a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071",
+      "signature": "sig:cose:obl.script:MEUCIQEuV0z1I92CW3xX4aB5cD6gE7hI"
+    },
+    {
+      "id": "obl.emit-retroactive-audit-baseline",
+      "type": "obligation",
+      "label": "Emit internal (honest baseline against current harness state)",
+      "payload_hash": "sha256:05a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f607182",
+      "signature": "sig:cose:obl.baseline:MEUCIQEvW1a2J03DX4yY5bC6dE7hF8iJ"
+    },
+    {
+      "id": "obl.emit-retroactive-audit-gate",
+      "type": "obligation",
+      "label": "Emit scripts/gates/retroactive-audit-coverage.mjs + wire into npm test chain",
+      "payload_hash": "sha256:16b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293",
+      "signature": "sig:cose:obl.gate:MEUCIQEwX2b3K14EY5zZ6cD7eF8iG9jK"
+    },
+    {
+      "id": "obl.amend-chapter-phase3-closure",
+      "type": "obligation",
+      "label": "Amend constitution/52-DELEGATED-AGENT-BINDING.md with §X Phase 3 closure sub-section + lock Phase 3 in §6 rollout table",
+      "payload_hash": "sha256:27c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304",
+      "signature": "sig:cose:obl.chapter:MEUCIQExY3c4L25FZ6aA7dE8fG9jH0kL"
+    },
+    {
+      "id": "obl.register-self-description",
+      "type": "obligation",
+      "label": "Register the new gate under §52 subject in internal",
+      "payload_hash": "sha256:38d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a405",
+      "signature": "sig:cose:obl.self-desc:MEUCIQEyZ4d5M36G07bB8eF9gH0kI1lM"
+    },
+    {
+      "id": "out.decision",
+      "type": "output",
+      "label": "Allow — §52 Phase 3 retroactive-analysis closure ratified",
+      "payload_hash": "sha256:49e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a40516",
+      "signature": "sig:cose:out.decision:MEUCIQEzA5e6N47H18cC9fG0hI1lJ2mN"
+    }
+  ],
+  "edges": [
+    { "from": "in.request",                          "to": "rule.retroactive-monotonicity",   "kind": "feeds" },
+    { "from": "in.binding-manifest-phase2",          "to": "rule.retroactive-monotonicity",   "kind": "feeds" },
+    { "from": "in.mcp-allow-list-manifest-phase2",   "to": "rule.retroactive-monotonicity",   "kind": "feeds" },
+    { "from": "in.harness-transcript-corpus",        "to": "rule.retroactive-monotonicity",   "kind": "feeds" },
+    { "from": "in.harness-transcript-corpus",        "to": "rule.anonymise-by-default",       "kind": "feeds" },
+    { "from": "in.request",                          "to": "rule.decay-deadline-90d",         "kind": "feeds" },
+    { "from": "rule.retroactive-monotonicity",       "to": "obl.emit-retroactive-audit-schema",   "kind": "triggers" },
+    { "from": "rule.retroactive-monotonicity",       "to": "obl.emit-retroactive-audit-script",   "kind": "triggers" },
+    { "from": "rule.retroactive-monotonicity",       "to": "obl.emit-retroactive-audit-baseline", "kind": "triggers" },
+    { "from": "rule.retroactive-monotonicity",       "to": "obl.emit-retroactive-audit-gate",     "kind": "triggers" },
+    { "from": "rule.anonymise-by-default",           "to": "obl.emit-retroactive-audit-script",   "kind": "triggers" },
+    { "from": "rule.anonymise-by-default",           "to": "obl.emit-retroactive-audit-baseline", "kind": "triggers" },
+    { "from": "rule.decay-deadline-90d",             "to": "obl.emit-retroactive-audit-baseline", "kind": "triggers" },
+    { "from": "rule.retroactive-monotonicity",       "to": "obl.amend-chapter-phase3-closure",    "kind": "triggers" },
+    { "from": "rule.retroactive-monotonicity",       "to": "obl.register-self-description",       "kind": "triggers" },
+    { "from": "obl.emit-retroactive-audit-schema",   "to": "out.decision", "kind": "satisfies" },
+    { "from": "obl.emit-retroactive-audit-script",   "to": "out.decision", "kind": "satisfies" },
+    { "from": "obl.emit-retroactive-audit-baseline", "to": "out.decision", "kind": "satisfies" },
+    { "from": "obl.emit-retroactive-audit-gate",     "to": "out.decision", "kind": "satisfies" },
+    { "from": "obl.amend-chapter-phase3-closure",    "to": "out.decision", "kind": "satisfies" },
+    { "from": "obl.register-self-description",       "to": "out.decision", "kind": "satisfies" }
+  ],
+  "output_node_id": "out.decision",
+  "created_at": "2026-05-27T20:30:02Z"
+}

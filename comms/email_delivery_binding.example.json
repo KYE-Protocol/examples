@@ -1,0 +1,58 @@
+{
+  "schema": "kye.email_delivery_binding.v1",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:email-delivery-binding-example",
+  "adopted_at": "2026-05-30",
+  "constitution_ref": "constitution/38-COMMS-RAIL.md",
+  "description": "Illustrative fixture for kye.email_delivery_binding.v1. Shows three representative bindings: a realtime payment-failed template, a transactional applicant confirmation, and a bulk-notification operational admin-alert. The canonical (full) manifest lives at internal",
+  "bindings": [
+    {
+      "template_id": "commercial-lifecycle.payment-failed.card-declined.v1",
+      "provider": "cf-email",
+      "provider_id": "cf-email.primary",
+      "sender_worker_id": "kye:worker:kye-comms-engine-worker",
+      "downstream_delivery_worker": "kye-mail-sender",
+      "sla": {
+        "max_latency_p50_seconds": 5,
+        "max_latency_p99_seconds": 30,
+        "max_retries": 2,
+        "sla_class": "realtime"
+      },
+      "from_address_class": "transactional",
+      "audit_emission": true,
+      "dlq_topic": "kye-comms-dlq"
+    },
+    {
+      "template_id": "foundry.applicant-confirmation.v1",
+      "provider": "cf-email",
+      "provider_id": "cf-email.primary",
+      "sender_worker_id": "kye:worker:kye-comms-engine-worker",
+      "downstream_delivery_worker": "kye-mail-sender",
+      "sla": {
+        "max_latency_p50_seconds": 30,
+        "max_latency_p99_seconds": 300,
+        "max_retries": 3,
+        "sla_class": "transactional"
+      },
+      "from_address_class": "transactional",
+      "audit_emission": true,
+      "dlq_topic": "kye-comms-dlq"
+    },
+    {
+      "template_id": "persona-intake.admin-alert.v1",
+      "provider": "cf-email",
+      "provider_id": "cf-email.primary",
+      "sender_worker_id": "kye:worker:kye-comms-engine-worker",
+      "downstream_delivery_worker": "kye-mail-sender",
+      "sla": {
+        "max_latency_p50_seconds": 300,
+        "max_latency_p99_seconds": 1800,
+        "max_retries": 3,
+        "sla_class": "bulk-notification"
+      },
+      "from_address_class": "notification",
+      "audit_emission": true,
+      "dlq_topic": "kye-comms-dlq"
+    }
+  ]
+}

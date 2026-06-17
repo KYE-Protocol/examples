@@ -1,0 +1,24 @@
+{
+  "id": "evt_1QSTRIPECUS002000000",
+  "object": "event",
+  "api_version": "2024-11-20.acacia",
+  "created": 1747304062,
+  "livemode": false,
+  "type": "customer.updated",
+  "data": {
+    "object": {
+      "id": "cus_1QACMEBANKABCDEF",
+      "object": "customer",
+      "email": "[email protected]",
+      "name": "ACME Bank plc",
+      "metadata": {
+        "kye_customer_kyeid": "kye:ent:bank.acme",
+        "kye_tenant_id": "kye:tenant:acme-bank"
+      }
+    },
+    "previous_attributes": {
+      "email": "[email protected]"
+    }
+  },
+  "request": { "id": "req_1QREQACMEUPDATE", "idempotency_key": null }
+}

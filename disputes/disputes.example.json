@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.dispute.v1.json",
+  "schema": "kye.dispute.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/21-DELEGATED-AUDITABILITY.md",
+  "notes": ["Illustrative kye.dispute.v1 instance. Canonical full registry: internal"],
+  "disputes": [
+    { "id": "kye:dispute:example", "state": "raised", "contested_kind": "decision", "jurisdiction": "uk", "raised_at": "2026-05-31T00:00:00Z" }
+  ]
+}

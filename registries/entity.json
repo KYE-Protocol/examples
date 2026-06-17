@@ -1,0 +1,18 @@
+{
+  "id": "kye:agent:caseworker-bot-01",
+  "tenant_id": "kye:tenant:acme-health",
+  "class": "agent",
+  "trust_domain_id": "kye:trust-domain:acme-health",
+  "lifecycle_state": "active",
+  "classification": "internal",
+  "jurisdiction_canonical": "canada",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

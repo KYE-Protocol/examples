@@ -1,0 +1,16 @@
+{
+  "type": "https://kye.dev/errors/scope_attenuation_violation",
+  "title": "Scope attenuation violation",
+  "status": 403,
+  "detail": "Child scope kye:scp:acme.example:01JYCHILD0000000000000XZ attempts to permit allowed_actions outside the parent scope kye:scp:acme.example:01JYPARENT00000000000XZ.",
+  "instance": "/v1/runtime/authorize",
+  "reason_code": "scope_attenuation_violation",
+  "correlation_id": "kye:cor:acme.example:01JYCOR000000000000000XZ",
+  "policy_decision_id": "kye:pdc:acme.example:01JYPDC000000000000000XZ",
+  "audit_event_id": "kye:aud:acme.example:01JYAUDPDC000000000000XZ",
+  "see_also": [
+    "https://kye.dev/errors/scope_attenuation_violation",
+    "https://kye-protocol.github.io/whitepaper.html#model"
+  ],
+  "obligations_violated": []
+}

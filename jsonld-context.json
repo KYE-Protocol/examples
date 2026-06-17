@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "kye": "https://kye-protocol.github.io/ns#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Entity":          "kye:Entity",
+    "Actor":           "kye:Actor",
+    "Principal":       "kye:Principal",
+    "Authority":       "kye:Authority",
+    "Delegation":      "kye:Delegation",
+    "Capability":      "kye:Capability",
+    "Scope":           "kye:Scope",
+    "State":           "kye:State",
+    "Decision":        "kye:Decision",
+    "Evidence":        "kye:Evidence",
+    "Continuity":      "kye:Continuity",
+    "Discoverability": "kye:Discoverability",
+    "Connector":       "kye:Connector",
+
+    "actsOnBehalfOf":   { "@id": "kye:actsOnBehalfOf",   "@type": "@id" },
+    "hasAuthority":     { "@id": "kye:hasAuthority",     "@type": "@id" },
+    "usesCapability":   { "@id": "kye:usesCapability",   "@type": "@id" },
+    "constrainedBy":    { "@id": "kye:constrainedBy",    "@type": "@id" },
+    "evidencedBy":      { "@id": "kye:evidencedBy",      "@type": "@id" },
+    "requires":         { "@id": "kye:requires",         "@type": "@id" },
+    "revokes":          { "@id": "kye:revokes",          "@type": "@id" },
+    "supersedes":       { "@id": "kye:supersedes",       "@type": "@id" },
+    "equivalentTo":     { "@id": "kye:equivalentTo",     "@type": "@id" },
+    "relatedNotIdentical": { "@id": "kye:relatedNotIdentical", "@type": "@id" },
+    "notEquivalentTo":  { "@id": "kye:notEquivalentTo",  "@type": "@id" },
+
+    "term_id":          "@id",
+    "label":            "schema:name",
+    "definition":       "schema:description",
+    "domain":           "kye:domain",
+    "preferred_name":   "kye:preferredName",
+    "aliases":          "schema:alternateName",
+    "status":           "kye:status",
+    "created_at":       { "@id": "schema:dateCreated",  "@type": "xsd:dateTime" },
+    "updated_at":       { "@id": "schema:dateModified", "@type": "xsd:dateTime" }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_comment": "Example Phase2DeferralBody. This is the HTTP 501 response shape the Wave-AE Phase 2 Worker returns for every declared endpoint. Per §0.2 it is a contract waypoint, not a stub: it carries a documented decay deadline + a constitutional-reference list + the §0.3 envelopes that were emitted before the response. The canonical phrase is 'endpoint contract declared; persistence layer due 2026-08-27 (§16 Phase-2 deferral)' — the prohibited phrase from §0.2 is intentionally not used.",
+  "error": "wave_ae_phase2_contract_waypoint",
+  "deferral": "endpoint contract declared; persistence layer due 2026-08-27 (§16 Phase-2 deferral)",
+  "contract_status": "declared",
+  "decay_deadline": "2026-08-27",
+  "constitution_refs": ["§0.2", "§16", "§33", "§49 §9"],
+  "openapi_operation_id": "ep_createMatter",
+  "emitted_envelopes": [
+    "kye.purpose.request.v1",
+    "kye.purpose.admissibility.v1",
+    "kye.evidence.decision_map.v1",
+    "kye.compliance.attestation.v1"
+  ]
+}

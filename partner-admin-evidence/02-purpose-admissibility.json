@@ -1,0 +1,18 @@
+{
+  "schema": "kye.purpose.admissibility.v1",
+  "id": "kye:admissibility:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB",
+  "purpose_request_id": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB",
+  "decided_at": "2026-05-28T13:45:15Z",
+  "decider": "kye:engine:purpose-permission-pdp",
+  "verdict": "admit",
+  "scope_checks": [
+    { "check": "actor_has_role_owner", "outcome": "pass", "evidence_ref": "clerk:user:owner-ops@kyeprotocol.com:public_metadata.role==owner" },
+    { "check": "purpose_class_in_actor_grant", "outcome": "pass", "evidence_ref": "kye:purpose:kye-protocol:owner-ops:partner-revoke-2026q2" },
+    { "check": "second_approver_distinct_from_performer", "outcome": "pass", "evidence_ref": "owner+program@kyeprotocol.com != owner+ops@kyeprotocol.com" },
+    { "check": "reason_meets_minimum_length", "outcome": "pass", "evidence_ref": "reason_text.length >= 20" },
+    { "check": "partner_row_exists", "outcome": "pass", "evidence_ref": "kye_partner_registry.partner_entities.id == kye:partner:legacy-consulting-llp.9d1c4b" },
+    { "check": "partner_currently_active", "outcome": "pass", "evidence_ref": "partner_entities.status == 'active'" }
+  ],
+  "expires_at": "2026-05-28T13:50:15Z",
+  "policy_version": "kye-purpose-pdp/2026-05-12-v1.4.0"
+}

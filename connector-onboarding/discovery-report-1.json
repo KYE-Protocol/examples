@@ -1,0 +1,36 @@
+{
+  "schema": "kye.connector.discovery_report.v1",
+  "id": "kye:connector-discovery-report:e3f5a1b9c2d7e8f4",
+  "version": 1,
+  "connector_onboarding_ref": "kye:connector-onboarding:9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e",
+  "issued_at": "2026-04-01T10:00:00Z",
+  "signed_by": "kye:agent:connector-onboarding",
+  "capabilities": [
+    { "capability": "authenticate_user", "status": "verified" },
+    { "capability": "issue_token",       "status": "verified" },
+    { "capability": "lookup_groups",     "status": "verified" },
+    { "capability": "oidc_id_token",     "status": "verified" },
+    { "capability": "revoke_token",      "status": "verified" },
+    { "capability": "saml_assert",       "status": "missing", "detail": "expected capability for this connector kind" }
+  ],
+  "oauth_scopes": [
+    { "capability": "email",            "status": "verified" },
+    { "capability": "okta:groups:read", "status": "verified" },
+    { "capability": "openid",           "status": "verified" },
+    { "capability": "profile",          "status": "verified" }
+  ],
+  "api_surface": [
+    { "capability": "https://example.okta.com/oauth2/v1/authorize", "status": "verified" },
+    { "capability": "https://example.okta.com/oauth2/v1/token",     "status": "verified" }
+  ],
+  "security_posture": {
+    "tls_ok": true,
+    "cert_pinning_ok": true,
+    "mTLS_ok": true,
+    "fips_140_3_ok": true,
+    "audit_logging_ok": true,
+    "issues": []
+  },
+  "overall": "ready_for_review",
+  "score": 95
+}

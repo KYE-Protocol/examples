@@ -1,0 +1,25 @@
+{
+  "schema_version": "kye.taxonomy_term.v1",
+  "taxonomy_id": "kye:taxonomy:capability_type",
+  "term_id": "kye:term:capability_type:payment_action",
+  "key": "payment_action",
+  "label": "Payment Action",
+  "description": "A capability that prepares, initiates, approves, executes, reverses, or reconciles a payment.",
+  "parent_term": "kye:term:capability_type:financial_action",
+  "risk_default": "high",
+  "side_effect_default": "move_money",
+  "requires_authority": true,
+  "requires_audit": true,
+  "requires_human_approval_default": true,
+  "profiles": [
+    "kye.profile.payments.v1",
+    "kye.profile.financial_services.v1"
+  ],
+  "compliance_refs": [
+    "EU_AI_ACT:high_risk_ai_system",
+    "PSD3:strong_customer_authentication",
+    "DORA:operational_resilience_critical_function"
+  ],
+  "version": "1.0.0",
+  "status": "active"
+}

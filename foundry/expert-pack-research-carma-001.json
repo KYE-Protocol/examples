@@ -1,0 +1,63 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:research-publishing-runtime-authority:v1",
+  "partner_id": "kye:foundry-applicant:research-publishing-reference-partner",
+  "pack_name": "KYE Publishing Authority Track Reference Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "research-publishing",
+  "bound_sector_pack_refs": [],
+  "bound_dictionary_refs": [
+    "kye:dictionary:research-series",
+    "kye:dictionary:report-format",
+    "kye:dictionary:research-cadence"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:nist-ai-rmf",
+    "kye:framework:eu-ai-act",
+    "kye:framework:nist-800-207",
+    "kye:framework:iso-iec-42001"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:research-publishing-runtime-authority:2026-06-03",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-03T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-research-publishing-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:research-publishing-runtime-authority:2026-06-03",
+  "claim_set": [
+    {
+      "claim_id": "every-claim-pinned",
+      "claim_text": "Every claim in a co-authored governed edition resolves to a cited public source pinned into the sealed evidence pack (the §62 Veracity / §13 no-hallucination rule).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "replay-verifiable-edition",
+      "claim_text": "Each published edition is a kye.research_report.v1 instance sealed with Ed25519 over the published JWKS, verifiable from public keys alone with no vendor cooperation.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "one-render-many-targets",
+      "claim_text": "A governed edition renders once to web, email, and PDF through the canonical deterministic-render machinery; the Track ships no parallel renderer (§0).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "authority-not-outcomes",
+      "claim_text": "The Pack represents KYE as governing the provenance and authority of a research action, never the outcome it asserts — KYE governs actions and authorities, not outcomes, diagnoses, or results.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "in-scope-participants-only",
+      "claim_text": "Co-authoring is limited to strong research participants in scope of §62 (university, research institute, lab, think-tank, standards body, academic press); games and trade-book publishing are out of scope.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-03T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

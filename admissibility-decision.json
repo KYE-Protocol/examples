@@ -1,0 +1,32 @@
+{
+  "schema_version": "kye.admissibility_decision.v1",
+  "admissibility_decision_id": "kye:admissibility-decision:001",
+  "proposed_action_id": "kye:proposed-action:001",
+  "decision": "admit",
+  "reason_code": "proposed_action_admissible",
+  "checked_dimensions": {
+    "intent_present": true,
+    "intent_clear": true,
+    "principal_resolved": true,
+    "actor_resolved": true,
+    "accountable_owner_known": true,
+    "capability_known": true,
+    "resource_known": true,
+    "data_source_allowed": true,
+    "prohibited_action_class": false,
+    "continuity_preserved": true,
+    "formal_rule_block": false,
+    "evidence_ready": true,
+    "jurisdiction_supported": true,
+    "risk_state_acceptable": true
+  },
+  "next_step": "route_to_authority_check",
+  "obligations": [
+    "emit_admissibility_event",
+    "bind_to_authority_decision",
+    "include_in_evidence_pack"
+  ],
+  "evidence_ref": "kye:admissibility-evidence:001",
+  "audit_chain_ref": "kye:audit:chain:0xadm123",
+  "decided_at": "2026-05-10T12:00:02Z"
+}

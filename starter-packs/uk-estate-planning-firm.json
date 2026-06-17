@@ -1,0 +1,66 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:uk-estate-planning-firm",
+  "name": "UK Estate Planning — Multi-Partner Firm",
+  "summary": "Turn-key bundle for a multi-partner UK estate-planning firm. Adds partners-of-record approval flow on top of the solo pack, plus the partners GovernedUI module and rate-limit + custody rule packs for matter-volume governance.",
+  "target_audience": {
+    "sector": "legal",
+    "role": "firm-partner",
+    "jurisdiction": "GB",
+    "tier": "boutique-to-mid"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:action-admissibility",
+      "kye:rule-pack:custody",
+      "kye:rule-pack:rate-limit",
+      "kye:rule-pack:compliance-evidence",
+      "kye:rule-pack:transparency"
+    ],
+    "sector_pack_ids": [
+      "kye:sector-pack:legal"
+    ],
+    "dictionary_ids": [
+      "kye:dictionary:estate-clause",
+      "kye:dictionary:estate-rule-vocab",
+      "kye:dictionary:estate-fact-find-vocab",
+      "kye:dictionary:regulators",
+      "kye:dictionary:stakeholders"
+    ],
+    "comms_template_ids": [
+      "onboarding-agent.pilot-approved.v1",
+      "audit-pilot.admin-alert.v1",
+      "audit-pilot.applicant-confirmation.v1",
+      "expert-review.brief.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.action_approval.v1",
+      "kye.governedui.module.approval_queue.v1",
+      "kye.governedui.module.evidence_timeline.v1",
+      "kye.governedui.module.partners.v1",
+      "kye.governedui.module.critical_point_review.v1"
+    ],
+    "purposes_preconfigured": [
+      "service_delivery",
+      "regulatory_compliance",
+      "audit_trail",
+      "fraud_prevention"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 21,
+  "prerequisites": [
+    "Signed engagement under KYE-PILOT-ESTATE-002",
+    "Firm-wide SSO + role mapping (senior partner / partner / associate)",
+    "STEP / SRA membership verified for at least one approving partner"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-PILOT-ESTATE-002",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "estate-planning-rail-owner",
+    "legal-rail-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

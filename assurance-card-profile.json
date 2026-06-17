@@ -1,0 +1,25 @@
+{
+  "schema_version": "kye.assurance_card_profile.v1",
+  "profile_id": "kye:profile:assurance_card",
+  "display_name": "KYE Assurance Card Profile™",
+  "category": "lifecycle_assurance",
+  "version": "1.0.0",
+  "description": "Lifecycle assurance layer that turns KYE™ runtime evidence into a living assurance record per delegated entity.",
+  "required_kye_profiles": [
+    "kye.core.v1", "kye.authority.v1", "kye.capability.v1",
+    "kye.state.v1", "kye.evidence.v1", "kye.operating_model.v1"
+  ],
+  "recommended_kye_profiles": [
+    "kye.discoverability.v1", "kye.continuity.v1", "kye.ontology.v1"
+  ],
+  "required_objects": [
+    "KYEAssuranceCard", "KYEHumanInvolvementPlan", "KYEProvenanceEvidence",
+    "KYEAssuranceReviewCycle", "KYEDecommissioningPlan"
+  ],
+  "lifecycle_stages": [
+    "design", "pilot", "deploy", "monitor", "incident_review",
+    "scope_change_review", "retention_review", "decommission"
+  ],
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

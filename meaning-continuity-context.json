@@ -1,0 +1,85 @@
+{
+  "schema_version": "kye.meaning_continuity_context.v1",
+  "meaning_continuity_id": "kye:meaning-continuity:001",
+  "continuity_id": "kye:continuity:001",
+  "proposed_action_id": "kye:proposed-action:001",
+  "actor_entity_id": "kye:entity:agent:shopping_agent_456",
+  "principal_entity_id": "kye:entity:person:customer_123",
+  "original_meaning": {
+    "source_intent_id": "kye:intent:001",
+    "declared_meaning": "Buy a phone charger under GBP 40 without subscription, recurring payment, or unsafe merchant.",
+    "material_constraints": [
+      "maximum_amount_gbp_40",
+      "no_subscription",
+      "trusted_merchant",
+      "delivery_within_3_days"
+    ],
+    "meaning_owner_entity_id": "kye:entity:person:customer_123"
+  },
+  "interpreted_meaning": {
+    "interpreted_by_entity_id": "kye:entity:agent:shopping_agent_456",
+    "interpreted_summary": "Purchase an electronics accessory under GBP 40.",
+    "retained_constraints": [
+      "maximum_amount_gbp_40",
+      "trusted_merchant"
+    ],
+    "lost_constraints": [
+      "no_subscription"
+    ],
+    "added_assumptions": [
+      "electronics_accessory_category_allowed"
+    ],
+    "interpretation_confidence": 0.88
+  },
+  "memory_context": {
+    "memory_used": true,
+    "memory_refs": ["kye:memory:shopping_preferences_001"],
+    "memory_state": "current",
+    "memory_conflict_detected": false,
+    "memory_summary": "Customer previously preferred low-cost electronics accessories from trusted merchants."
+  },
+  "context_snapshot": {
+    "context_refs": [
+      "kye:context:merchant_policy_001",
+      "kye:context:user_purchase_policy_001"
+    ],
+    "context_state": "current",
+    "context_lost": false,
+    "context_changed_since_intent": false
+  },
+  "incentive_context": {
+    "commercial_incentive_detected": false,
+    "affiliate_incentive_detected": false,
+    "optimisation_goal": "minimise_cost_within_constraints",
+    "incentive_conflict_detected": false
+  },
+  "timing_context": {
+    "created_at": "2026-05-10T12:00:00Z",
+    "evaluated_at": "2026-05-10T12:00:05Z",
+    "delay_changed_meaning": false,
+    "state_changed_since_intent": false,
+    "time_sensitivity": "normal"
+  },
+  "handoff_context": {
+    "handoff_count": 2,
+    "handoff_chain": [
+      "user_instruction",
+      "shopping_agent_interpretation",
+      "checkout_tool_request"
+    ],
+    "handoff_boundary_risk": "medium",
+    "handoff_drift_detected": true
+  },
+  "meaning_continuity_result": {
+    "status": "meaning_degraded",
+    "meaning_score": 0.72,
+    "material_drift_detected": true,
+    "reason_codes": [
+      "constraint_lost",
+      "handoff_boundary_drift"
+    ],
+    "recommended_decision": "require_reconfirmation"
+  },
+  "evidence_refs": ["kye:evidence:meaning_continuity_001"],
+  "created_at": "2026-05-10T12:00:06Z"
+}

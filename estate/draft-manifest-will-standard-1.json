@@ -1,0 +1,17 @@
+{
+  "schema": "kye.estate.draft_manifest.v1",
+  "draft_manifest_id": "kye:estate:draft_manifest:demo-tenant:dm-2026-05-27-001",
+  "matter_id": "kye:estate:matter:demo-tenant:matter-2026-05-27-001",
+  "fact_find_id": "kye:estate:fact_find:demo-tenant:ff-2026-05-27-001",
+  "fact_find_version": 1,
+  "input_hash": "sha256:9098dab3e2cb1ecfbbaf95a8e858c079c34b8f13a8add4796534aeba548a6a61",
+  "rule_set_version": "1.0.0",
+  "clause_library_version": "1.0.0",
+  "template_version": "1.0.0",
+  "drafting_profile_version": "1.0.0",
+  "draft_output_hash": "sha256:f6b6e5e554ced22c6d7700b6faadb202a3e1e556625cb422f1b629d5770bd3fd",
+  "ai_assistance_used": false,
+  "human_reviewer_required": false,
+  "authority_status": "draft_only",
+  "timestamp": "2026-05-27T09:42:15Z"
+}

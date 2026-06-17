@@ -1,0 +1,16 @@
+{
+  "schema": "kye.dashboard.event.v1",
+  "event_id": "kye:dashboard-event:acme-m-2026-05-30T14-23-20-000Z-c44d",
+  "tenant_id": "kye:tenant:org_2vAcMeBank",
+  "subscription_id": "kye:dashboard-subscription:acme-2026-05-30T14-22-08Z-7af31c",
+  "event_class": "metric_tick",
+  "emitted_at": "2026-05-30T14:23:20.000Z",
+  "payload": {
+    "component": "worker_api",
+    "tick_at": "2026-05-30T14:23:20.000Z",
+    "p50_ms": 18.4,
+    "p99_ms": 142.7,
+    "error_rate": 0.0008,
+    "status": "ok"
+  }
+}

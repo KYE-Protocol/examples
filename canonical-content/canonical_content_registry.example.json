@@ -1,0 +1,32 @@
+{
+  "schema": "kye.canonical_content_registry.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-05-30T00:00:00Z",
+  "constitution_ref": "constitution/00-INDEX.md §0.12",
+  "notes": [
+    "Minimum-shape fixture for the §0.12 canonical-content registry envelope. Validates against internal"
+  ],
+  "concepts": [
+    {
+      "concept_id": "federated-directory-query",
+      "display_name": "Federated Directory Query",
+      "trademark": "Federated Directory Query™",
+      "canonical_surface": "public/site/directory.html",
+      "canonical_chapter": "constitution/17-DIRECTORY-SEARCH.md",
+      "concept_class": "capability",
+      "inline_mention_max_sentences": 1,
+      "prose_aliases": ["federated lookup", "federated query"],
+      "introduced": "2026-05-30",
+      "owners": ["ceo"]
+    },
+    {
+      "concept_id": "evidence-pack",
+      "display_name": "Evidence Pack",
+      "trademark": "Evidence Pack™",
+      "canonical_surface": "public/site/evidence-pack.html",
+      "concept_class": "primitive",
+      "introduced": "2026-05-30",
+      "owners": ["ceo"]
+    }
+  ]
+}

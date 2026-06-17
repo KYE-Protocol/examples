@@ -1,0 +1,12 @@
+{
+  "entity_id": "kye:agent:acme.com:runtime:billing-agent-01",
+  "machine_id": "kye:state-machine:kye.agent.lifecycle.v1",
+  "from_state": "proposed",
+  "to_state": "pilot",
+  "transition_id": "kye:state-transition:kye.agent.lifecycle.v1:proposed-to-pilot",
+  "evidence_refs": [
+    "kye:evidence-pack:acme.com:onboarding:pack-20260514-001"
+  ],
+  "actor": "kye:ent:acme.com:person:alice",
+  "reason": "Pilot approval granted by operating model review board."
+}

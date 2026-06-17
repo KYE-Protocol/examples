@@ -1,0 +1,23 @@
+{
+  "schema": "kye.handoff_policy.v1",
+  "policy_id": "kye:handoff-policy:travel-rule-transfer",
+  "act_type": "travel-rule-transfer",
+  "admissible_recognition_types": [
+    "equivalence",
+    "mutual-recognition",
+    "adequacy"
+  ],
+  "mandatory_controls": [
+    "FATF_R16.ORIGINATOR_BENEFICIARY_DATA",
+    "FATF_R16.SANCTIONS_SCREENING"
+  ],
+  "default_on_no_recognition": "refuse",
+  "signature_suite_ref": "kye:sig-suite:ed25519-hsm-2026-05",
+  "dual_channel_signoff_required": true,
+  "constitution_ref": "constitution/57-CROSS-JURISDICTION-HANDOFF.md",
+  "review_cadence_days": 180,
+  "owners": [
+    "ceo",
+    "compliance-lead"
+  ]
+}

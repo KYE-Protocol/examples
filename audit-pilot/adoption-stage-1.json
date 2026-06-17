@@ -1,0 +1,19 @@
+{
+  "schema": "kye.assurance.adoption_stage.v1",
+  "id": "kye:adoption-stage:acme-bank.payments-agent.observe.001",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "stage": "observe",
+  "entered_at": "2026-05-12T09:00:00Z",
+  "previous_stage_id": null,
+  "rolled_back_from": null,
+  "exit_criteria": {
+    "minimum_observed_actions": 500,
+    "minimum_authority_gaps_closed": 0
+  },
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.adoption-stage.eu-prod.2026",
+    "value_b64": "Y2I3OTFhMTRiOWZjZTdjYmM0YmM0NjNjODg5MTk0ZGEyN2I3MjEwNTQyNzQxYjE5ZGY1MTJlZGI2YTAyYzVjMA"
+  }
+}

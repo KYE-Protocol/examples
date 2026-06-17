@@ -1,0 +1,42 @@
+{
+  "schema_version": "kye.discovery_result.v1",
+  "query_id": "kye:discovery-query:001",
+  "result_id": "kye:discovery-result:001",
+  "decision": "allow",
+  "reason_code": "discovery_policy_matched",
+  "results": [
+    {
+      "result_type": "authority_path",
+      "actor_entity_id": "kye:agent:shopping_agent_456",
+      "principal_entity_id": "kye:person:customer_123",
+      "capability_id": "kye:capability:card_purchase",
+      "authority_grant_id": "kye:authority:grant:purchase_001",
+      "state": {
+        "actor_state": "active",
+        "authority_state": "active",
+        "capability_state": "active",
+        "risk_state": "normal"
+      },
+      "scope_summary": {
+        "max_amount": {
+          "value": 50,
+          "currency": "GBP"
+        },
+        "requires_approval_above": {
+          "value": 25,
+          "currency": "GBP"
+        }
+      },
+      "evidence_refs": [
+        "kye:evidence-pack:authority_grant_001"
+      ],
+      "redactions": [
+        "payment_instrument_ref_masked"
+      ]
+    }
+  ],
+  "result_count": 1,
+  "masked": true,
+  "audit_event_id": "kye:audit:discovery_001",
+  "generated_at": "2026-05-06T12:00:02Z"
+}

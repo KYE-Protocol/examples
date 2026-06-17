@@ -1,0 +1,100 @@
+{
+  "schema": "kye.partner_taxonomy.v1",
+  "registry_id": "kye:registry:partner-taxonomy",
+  "version": "1.1.0",
+  "adopted_at": "2026-06-01",
+  "constitution_ref": "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md",
+  "disclosure_policy_ref": "constitution/00-INDEX.md#0.19",
+  "partner_types": [
+    {
+      "partner_type_id": "kye:partner-type:reseller",
+      "display_name": "Reseller",
+      "specializes_engagement_type": "partner",
+      "specialization_slug": "reseller",
+      "definition": "A partner who resells KYE Protocol™ subscriptions to its own customer base under a wholesale margin. The reseller transacts the sale and provides first-line commercial support; KYE provides the product and the conformance track.",
+      "commercial_model": "resell-bundle",
+      "partner_fees": {
+        "certification_fee_tier": "per-org",
+        "platform_fee": "annual",
+        "annual_license": "none",
+        "fee_schedule_ref": "internal#/engagement_skus",
+        "integration_fee": "none"
+      },
+      "revenue_model": {
+        "type": "margin_pct",
+        "default_value": "25%",
+        "range": "20-30%",
+        "wholesale_disclosure": "private"
+      },
+      "commitments": {
+        "deposit_required": false,
+        "deposit_credited_back": false,
+        "named_resources": true,
+        "certification_required": true,
+        "minimum_commit": "minimum annual revenue commitment + at least one certified individual",
+        "exclusivity": null
+      },
+      "tiers": [],
+      "legal_terms_ref": "internal",
+      "disclosure_class": "contract-not-internals",
+      "badge": {
+        "badge_label": "KYE-Certified Reseller",
+        "badge_state_machine": "draft -> certified -> suspended <-> revoked",
+        "state_machine_ref": "constitution/54-SECTOR-PACK-FOUNDRY.md#7",
+        "conformance_gate": "test:partner-taxonomy-canonical",
+        "revocation_triggers": [
+          "conformance-failure",
+          "disclosure-breach-0-19",
+          "no-governance-compete-breach"
+        ],
+        "renders_only_in_state": "certified",
+        "mark_license_clause_ref": "kye:obligation:partner-reseller:mark-license"
+      }
+    },
+    {
+      "partner_type_id": "kye:partner-type:connector-technology",
+      "display_name": "Connector / Technology Partner",
+      "specializes_engagement_type": "partner",
+      "specialization_slug": "operational-runtime-connector",
+      "definition": "A technology vendor whose product (e.g. an operational database, IAM provider, policy engine) ships a documented KYE™ integration profile and is co-sold into regulated buyers. KYE governs; the connector executes at runtime. Examples include operational-runtime substrates such as MonkDB.",
+      "commercial_model": "co-sell",
+      "partner_fees": {
+        "certification_fee_tier": "none",
+        "platform_fee": "none",
+        "annual_license": "none",
+        "fee_schedule_ref": "internal",
+        "integration_fee": "none"
+      },
+      "revenue_model": {
+        "type": "wholesale_per_tenant",
+        "default_value": "Model B — per-tenant governance-license wholesale, OR co-sell revenue-share on joint deals",
+        "range": "per-tenant wholesale, closed-registration",
+        "wholesale_disclosure": "private"
+      },
+      "commitments": {
+        "deposit_required": true,
+        "deposit_credited_back": true,
+        "named_resources": true,
+        "certification_required": false,
+        "minimum_commit": "mutual PoC investment (deposit credited back on conversion); maintained integration profile",
+        "exclusivity": null
+      },
+      "tiers": [],
+      "legal_terms_ref": "internal",
+      "disclosure_class": "contract-not-internals",
+      "badge": {
+        "badge_label": "KYE-Certified Operational Runtime Partner",
+        "badge_state_machine": "draft -> certified -> suspended <-> revoked",
+        "state_machine_ref": "constitution/54-SECTOR-PACK-FOUNDRY.md#7",
+        "conformance_gate": "test:integration-canonical",
+        "revocation_triggers": [
+          "conformance-failure",
+          "disclosure-breach-0-19",
+          "no-governance-compete-breach"
+        ],
+        "renders_only_in_state": "certified",
+        "mark_license_clause_ref": "kye:obligation:partner-connector:mark-license"
+      }
+    }
+  ]
+}

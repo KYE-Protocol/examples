@@ -1,0 +1,19 @@
+{
+  "schema": "kye.density_heatmap.v1",
+  "tenant_id": "kye:tenant:org_2vAcMeBank",
+  "window_start": "2026-05-23T00:00:00Z",
+  "window_end": "2026-05-30T00:00:00Z",
+  "total_count": 1284,
+  "max_cell_count": 86,
+  "cells": [
+    { "day_of_week": 1, "hour_of_day": 9, "count": 42, "allow_count": 38, "deny_count": 1, "review_count": 3 },
+    { "day_of_week": 1, "hour_of_day": 10, "count": 71, "allow_count": 65, "deny_count": 2, "review_count": 4 },
+    { "day_of_week": 1, "hour_of_day": 11, "count": 86, "allow_count": 80, "deny_count": 2, "review_count": 4 },
+    { "day_of_week": 1, "hour_of_day": 14, "count": 74, "allow_count": 68, "deny_count": 1, "review_count": 5 },
+    { "day_of_week": 2, "hour_of_day": 10, "count": 55, "allow_count": 52, "deny_count": 0, "review_count": 3 },
+    { "day_of_week": 2, "hour_of_day": 14, "count": 63, "allow_count": 60, "deny_count": 1, "review_count": 2 },
+    { "day_of_week": 3, "hour_of_day": 11, "count": 70, "allow_count": 67, "deny_count": 1, "review_count": 2 },
+    { "day_of_week": 4, "hour_of_day": 10, "count": 58, "allow_count": 54, "deny_count": 1, "review_count": 3 },
+    { "day_of_week": 5, "hour_of_day": 14, "count": 47, "allow_count": 44, "deny_count": 0, "review_count": 3 }
+  ]
+}

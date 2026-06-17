@@ -1,0 +1,22 @@
+{
+  "schema_version": "kye.entity.model_endpoint.v1",
+  "id": "kye:endpoint:acme.prod.claude-3-5-sonnet.20260515",
+  "tenant_id": "kye:tenant:acme",
+  "workspace_id": "kye:wsp:acme.prod",
+  "model_id": "kye:model:acme.claude-3-5-sonnet.v20260512",
+  "provider": "kye:extapp:acme.anthropic",
+  "deployment_url": "https://api.anthropic.com/v1/messages",
+  "version": "endpoint-20260515-a",
+  "policy_set_id": "kye:pol:acme.prod.runtime-gateway.v3",
+  "evaluation_profile_id": "kye:eval_profile:acme.prod.banking-grade.v2",
+  "audit_stream_id": "kye:audstream:acme.prod.splunk-siem",
+  "trust_domain_id": "kye:dom:acme.eu",
+  "state": "active",
+  "labels": {
+    "env": "prod",
+    "region": "eu-west-1",
+    "tenant_class": "tier-1-bank"
+  },
+  "created_at": "2026-05-15T11:00:00Z",
+  "updated_at": "2026-05-15T11:00:00Z"
+}

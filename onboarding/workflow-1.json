@@ -1,0 +1,40 @@
+{
+  "schema": "kye.onboarding.workflow.v1",
+  "id": "kye:onboarding-workflow:acme-bank.payments-agent.q3-2026",
+  "version": 1,
+  "pilot_application_ref": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "customer": "kye:ent:acme-bank.legal-uk",
+  "current_stage": "first_evidence_pack",
+  "history": [
+    "kye:onboarding-transition:acme-bank.payments-agent.q3-2026.0001",
+    "kye:onboarding-transition:acme-bank.payments-agent.q3-2026.0002"
+  ],
+  "approvers": [
+    { "role": "owner", "kyeid": "kye:ent:kye-protocol.operator.eu-onboarding" },
+    { "role": "customer_signer", "kyeid": "kye:ent:acme-bank.ciso" }
+  ],
+  "scheduled_kickoff": "2026-05-13T15:00:00Z",
+  "target_workflows": [
+    "supplier_payment_agent",
+    "procurement_copilot"
+  ],
+  "stack_bindings": [
+    "kye:stack-binding:acme-bank.okta-prod",
+    "kye:stack-binding:acme-bank.kong-api-gateway",
+    "kye:stack-binding:acme-bank.temporal-workflow",
+    "kye:stack-binding:acme-bank.splunk-siem"
+  ],
+  "operating_model_ref": "kye:operating-model:acme-bank.payments-agent.q3-2026",
+  "operating_model_template": "banking-customer-onboarding",
+  "first_observed_action_ref": "kye:observed-action:acme-bank.payments-agent.0001",
+  "first_shadow_evaluation_ref": "kye:shadow-eval:acme-bank.payments-agent.0001",
+  "first_authority_gap_ref": "kye:authority-gap:acme-bank.payments-agent.0001",
+  "first_evidence_pack_ref": "kye:evp:acme-bank.payments-agent.q3-2026.first",
+  "kickoff_brief_ref": null,
+  "tenant_kyeid": "kye:tenant:acme-bank",
+  "consent_acceptance_ref": "kye:consent:pilot-apply.2026-05-12.a3f9b1",
+  "stalled_reason": null,
+  "rejected_reason": null,
+  "created_at": "2026-05-12T08:58:01Z",
+  "updated_at": "2026-05-12T13:42:09Z"
+}

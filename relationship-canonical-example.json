@@ -1,0 +1,17 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:industry__framework:banking__dora",
+  "relationship_type": "regulates",
+  "source_class": "industry",
+  "source_id": "banking",
+  "target_class": "framework",
+  "target_id": "dora",
+  "cardinality": "many-to-many",
+  "bidirectional": false,
+  "weight": 0.95,
+  "evidence_basis": "DORA (Reg. 2022/2554) is binding on EU credit institutions from 2025-01-17.",
+  "effective_from": "2026-05-30",
+  "owners": ["KYE Compliance Authority"],
+  "status": "active",
+  "notes": "Top-level example fixture for the §56 schema. The full multi-instance example set lives under public/examples/relationships/."
+}

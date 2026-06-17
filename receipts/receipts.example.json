@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.receipt.v1.json",
+  "schema": "kye.receipt.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/23-BILLING-METERING.md",
+  "notes": ["Illustrative kye.receipt.v1 instance. Canonical full registry: internal"],
+  "receipts": [
+    { "id": "kye:receipt:example", "kind": "payment", "currency": "GBP", "amount_minor": 100000, "issued_at": "2026-05-31T00:00:00Z" }
+  ]
+}

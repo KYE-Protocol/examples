@@ -1,0 +1,12 @@
+{
+  "schema": "kye.subagent.silent.v1",
+  "subagent_id": "agent-01JXCD2YZ4QPM3R7A2BNVW9G0F",
+  "parent_task_id": "task-7c4e9f12-aa39-4b6c-9e2a-1f0d2b8e44a1",
+  "parent_session_id": "01JXCD0PQR5HZK8M4VTSN2X3WB",
+  "last_transcript_write": "2026-05-27T13:14:02Z",
+  "silent_minutes": 22,
+  "observed_at": "2026-05-27T13:36:11Z",
+  "transcript_path": "/root/.claude/projects/01JXCD0PQR5HZK8M4VTSN2X3WB/subagents/agent-01JXCD2YZ4QPM3R7A2BNVW9G0F.jsonl",
+  "completion_envelope_seen": false,
+  "notes": "Subagent dispatched for content-author task on /products/estate-planning-authority/. Transcript stopped writing 22 minutes ago; no kye.agent.completion.v1 envelope observed under _diagnostics/agent-governance/. §48 L3 ingest surfaced this as ⚠ SUBAGENT-SILENT on session resume so the parent agent can grep the tail and decide whether to wait, kill, or re-dispatch."
+}

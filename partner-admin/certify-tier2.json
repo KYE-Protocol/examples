@@ -1,0 +1,13 @@
+{
+  "schema": "kye.partner_admin_action.v1",
+  "action_id": "kye:partner-admin-action:b39d04e2-7c41-4f9b-8a25-5d6e7f8091a2",
+  "partner_id": "kye:partner:helios-systems-emea.4e9f2a",
+  "action_type": "certify",
+  "tier": "T2",
+  "reason": "Tier-2 promotion: 4 certified individuals on staff (3 KYE Implementer, 1 KYE Authority); 6 reference deployments live across financial-services + healthcare sectors; assurance audit 2026-Q1 clean (zero blockers); Compliance Card current to 2026-05-15.",
+  "performer_id": "owner+program@kyeprotocol.com",
+  "second_approver_id": "owner+architecture@kyeprotocol.com",
+  "evidence_pack_id": "kye:evidence-pack:2026-05-28-partner-certify-helios-001",
+  "attestation_id": "kye:compliance-attestation:2026-05-28-partner-certify-helios-001",
+  "performed_at": "2026-05-28T11:02:08Z"
+}

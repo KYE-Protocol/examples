@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:noyb-rights-evidence-2026-06",
+  "series": "roadmap_to_ai_governance",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "counsel",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "The noyb question: proving rights, consent and contestability at execution time — June 2026",
+  "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
+  "topic_id": "kye:research-topic:noyb-rights-evidence",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:noyb-rights-evidence:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "9/c1TVkmFdKpwCrATajePaQS/fa2k52oomdgigzDBNnqj69H2rkMjVxV2gTPNxoJ9iQTgqH2wkv2WUHl+5szDg=="
+  },
+  "citations": [
+    {
+      "claim": "noyb (None of Your Business), the European digital-rights NGO founded by Max Schrems, enforces data-protection rights through strategic litigation, standard-setting cases and complaints — pressing organisations to demonstrate, not merely assert, that they complied.",
+      "source_url": "https://noyb.eu/en/project/how-we-work",
+      "retrieved_at": "2026-06-14T00:00:00Z",
+      "publisher": "noyb — European Center for Digital Rights. Cited as a digital-rights enforcement actor, not as a statement of law."
+    },
+    {
+      "claim": "The GDPR gives data subjects enforceable rights — access (Article 15), rectification (16), objection (21) and the right not to be subject to a solely-automated decision with legal or similarly significant effect (22) — exercisable against the controller.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "retrieved_at": "2026-06-14T00:00:00Z",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2016/679, GDPR)"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-14T12:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.edge.arbiter-decision.v1.json",
+  "decision": "permit",
+  "safety_floor": null,
+  "reason_code": "kye.edge.decision.permitted_within_bundle",
+  "obligations": [
+    { "obligation_urn": "kye:obligation:emit-audit-event",        "status": "emitted" },
+    { "obligation_urn": "kye:obligation:append-offline-evidence", "status": "emitted" }
+  ],
+  "evidence_hash": "sha256-aB2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9t0U1v2",
+  "audit_event": {
+    "event_id": "kye:event:edge-decision-9z01",
+    "ts_iso":   "2026-05-14T18:15:00Z",
+    "actor":    "kye:principal:fleet-alpha-7",
+    "action":   "kye:action:payment.send",
+    "subject":  "kye:entity:order:9z",
+    "bundle_id":"kye:edge-bundle:tier1-bank:b6989088-5a30-4c6a-a8e2-97d936463920",
+    "facts":    { "amount_eur": 18000, "currency": "EUR", "counterparty.country": "DE" }
+  },
+  "deterministic_seed": "9c4b7e2af8d6c1303a572f4b9e0c1c8a"
+}

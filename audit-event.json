@@ -1,0 +1,21 @@
+{
+  "audit_event_id": "kye:aud:acme.example:01JYAUD0000000000000000000",
+  "event_type": "runtime.authorized",
+  "entity_refs": [
+    "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+    "kye:ent:acme.example:business:01JYACME000000000000000000",
+    "kye:ent:acme.example:document_template:01JYTPL0000000000000000000"
+  ],
+  "runtime_event_id": "kye:rte:acme.example:01JYRTE0000000000000000000",
+  "policy_decision_id": "kye:pdc:acme.example:01JYPDC0000000000000000000",
+  "delegation_id": "kye:del:acme.example:01JYABC0000000000000000000",
+  "causation_id": "trc_01JYTRC",
+  "correlation_id": "cor_01JYCOR",
+  "event_sequence": 41423,
+  "occurred_at": "2026-04-15T12:30:01Z",
+  "observed_at": "2026-04-15T12:30:01Z",
+  "recorded_at": "2026-04-15T12:30:01Z",
+  "previous_event_hash": "sha256:0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a",
+  "event_hash": "sha256:b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+  "signature": "jws:eyJhbGciOiJFUzI1NiJ9.<elided>"
+}

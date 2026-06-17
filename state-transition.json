@@ -1,0 +1,13 @@
+{
+  "transition_id": "kye:transition:01JYSTATE",
+  "entity_id": "kye:ent:acme.example:ai_agent:01JYAGENT",
+  "dimension": "authority_state",
+  "from_state": "active",
+  "to_state": "requires_approval",
+  "reason_code": "compromise_reported",
+  "initiated_by": "kye:ent:acme.example:person:01JYSECADMIN",
+  "approved_by": ["kye:ent:acme.example:person:01JYINCRESP"],
+  "effective_at": "2026-05-05T11:01:00Z",
+  "evidence_refs": ["kye:compromise:01JYCOMP"],
+  "audit_hash": "sha384:5566778899"
+}

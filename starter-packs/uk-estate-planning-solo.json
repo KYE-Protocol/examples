@@ -1,0 +1,57 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:uk-estate-planning-solo",
+  "name": "UK Estate Planning — Solo Practitioner",
+  "summary": "Turn-key bundle for a solo UK estate-planning practitioner under §49 sector specialisation. Activates the legal sector pack, action-admissibility checks for AI-drafted clauses, estate-rule and estate-clause dictionaries, and comms for the bounded estate-planning engagement flow.",
+  "target_audience": {
+    "sector": "legal",
+    "role": "solo-practitioner",
+    "jurisdiction": "GB",
+    "tier": "solo"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:action-admissibility",
+      "kye:rule-pack:compliance-evidence",
+      "kye:rule-pack:transparency"
+    ],
+    "sector_pack_ids": [
+      "kye:sector-pack:legal"
+    ],
+    "dictionary_ids": [
+      "kye:dictionary:estate-clause",
+      "kye:dictionary:estate-rule-vocab",
+      "kye:dictionary:estate-fact-find-vocab",
+      "kye:dictionary:regulators"
+    ],
+    "comms_template_ids": [
+      "onboarding-agent.pilot-approved.v1",
+      "audit-pilot.applicant-confirmation.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.action_approval.v1",
+      "kye.governedui.module.evidence_timeline.v1",
+      "kye.governedui.module.critical_point_review.v1"
+    ],
+    "purposes_preconfigured": [
+      "service_delivery",
+      "regulatory_compliance",
+      "audit_trail"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 14,
+  "prerequisites": [
+    "Signed engagement under KYE-PILOT-ESTATE-001",
+    "STEP / SRA membership verified"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-PILOT-ESTATE-001",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "estate-planning-rail-owner",
+    "legal-rail-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

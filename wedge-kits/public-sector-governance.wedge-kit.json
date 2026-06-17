@@ -1,0 +1,49 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.wedge_kit.v1.json",
+  "schema": "kye.wedge_kit.v1",
+  "wedge_kit_id": "kye:wedge-kit:public-sector-governance",
+  "product_id": "public-sector-governance",
+  "display_name": "KYE Public Sector Governance Wedge Kit",
+  "constitution_ref": "constitution/68-SECTOR-PRODUCT-RAIL.md",
+  "components": {
+    "diagnostic": {
+      "engine_ref": [
+        "constitution/68-SECTOR-PRODUCT-RAIL.md"
+      ],
+      "surface_path": "public/site/diagnostic.html",
+      "status": "shipped"
+    },
+    "briefing": {
+      "engine_ref": [
+        "constitution/39-LEARN-RAIL.md",
+        "constitution/62-GOVERNED-RESEARCH-RAIL.md"
+      ],
+      "surface_path": "public/site/foundry/public-sector-governance-pack.html",
+      "status": "shipped"
+    },
+    "program_brief": {
+      "engine_ref": [
+        "constitution/13-RESILIENCE-LOOP.md"
+      ],
+      "surface_path": "N/A: the program_brief is a report-template KIND (kye:report-template:program-brief) in the report-templates registry; its public render is a Phase-2 governed export, not a static page.",
+      "status": "deferred"
+    },
+    "pilot": {
+      "engine_ref": [
+        "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md",
+        "constitution/26-COMMERCIAL.md"
+      ],
+      "surface_path": "public/site/foundry/public-sector-governance-pack.html",
+      "status": "shipped"
+    },
+    "badge": {
+      "engine_ref": [
+        "constitution/19-WIDGETS-EXPANDED.md",
+        "constitution/09-WIDGETS.md"
+      ],
+      "surface_path": "public/widgets/index.html",
+      "status": "shipped"
+    }
+  },
+  "status": "shipped"
+}

@@ -1,0 +1,10 @@
+{
+  "pack_id": "kye:evidence-pack:acme.com:audit:pack-20260514-001",
+  "entity_id": "kye:agent:acme.com:runtime:billing-agent-01",
+  "artefact_count": 42,
+  "coverage_period": {
+    "from": "2026-05-01T00:00:00Z",
+    "to":   "2026-05-14T23:59:59Z"
+  },
+  "assembled_at": "2026-05-14T12:00:00Z"
+}

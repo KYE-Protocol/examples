@@ -1,0 +1,40 @@
+{
+  "schema": "kye.assurance.audit_replay_report.v1",
+  "id": "kye:audit-replay-report:8a4f1e9c0d5b2378",
+  "version": 1,
+  "issued_at": "2026-04-30T22:15:00Z",
+  "signed_by": "kye:agent:audit-replay-orchestrator",
+  "batch_id": "diagnostic-divergent-set",
+  "total_packs": 4,
+  "equivalent_packs": 1,
+  "divergent_packs": 3,
+  "divergence_rate": 0.75,
+  "per_rule_bundle": [
+    {
+      "rule_bundle_id": "kye:rules:experimental-v0",
+      "total_packs": 4,
+      "equivalent_packs": 1,
+      "divergent_packs": 3,
+      "divergence_rate": 0.75
+    }
+  ],
+  "per_tenant": [
+    {
+      "tenant_id": "kye:tenant:internal-test",
+      "total_packs": 4,
+      "equivalent_packs": 1,
+      "divergent_packs": 3
+    }
+  ],
+  "divergent_pack_ids": [
+    "kye:evp:internal-test.exp.001",
+    "kye:evp:internal-test.exp.002",
+    "kye:evp:internal-test.exp.004"
+  ],
+  "content_hash": "8a4f1e9c0d5b2378b6e3f2a1c4d5b6a7e8f9d0c1b2a3e4d5c6b7a8e9d0c1b2a3",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:audit-replay-2026-05",
+    "value_b64": "QURpdmVyZ2VudFNldEFydGVmYWN0U2lnbmF0dXJlU3RyaW5nVGhyZWVfM18zXzNfMw"
+  }
+}

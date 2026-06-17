@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.icon.v1.json",
+  "schema": "kye.icon.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/24-DESIGN-DICTIONARY.md",
+  "notes": [
+    "Illustrative kye.icon.v1 instance. The canonical full registry lives at internal"
+  ],
+  "icons": [
+    {
+      "id": "kye:icon:example",
+      "glyph": "star",
+      "role": "example",
+      "source": "material_symbols"
+    }
+  ]
+}

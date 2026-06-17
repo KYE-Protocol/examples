@@ -1,0 +1,29 @@
+{
+  "schema": "kye.model_governance_catalog.v1",
+  "registry_id": "kye:registry:model-governance",
+  "display_name": "KYE Model Governance Bindings™",
+  "constitution_ref": "constitution/67-MODEL-GOVERNANCE-RAIL.md",
+  "scope_disclaimer": "A binding certifies an artifact's provenance and governance posture — that it is identified, licensed, mapped to obligations, and evidenced. It does NOT certify the model's capability, safety, fairness, or accuracy.",
+  "bindings": [
+    {
+      "schema": "kye.model_governance_binding.v1",
+      "binding_id": "kye:model-governance:example-open-llm",
+      "display_name": "Example open-weights LLM governance binding",
+      "artifact_kind": "model",
+      "source": "huggingface",
+      "source_repo": "example-org/example-open-llm-70b",
+      "model_ref": "kye:model:example-open-llm-70b",
+      "governance_posture": "declared",
+      "framework_refs": ["eu-ai-act", "iso-42001"],
+      "ai_bom": {
+        "parent_model_ref": "kye:model:example-base-llm",
+        "dataset_refs": ["kye:dataset:example-public-corpus"],
+        "weights_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "license": "apache-2.0"
+      },
+      "scope_disclaimer": "Provenance and governance posture only — not a capability, safety, or fairness claim.",
+      "status": "draft",
+      "adopted_at": "2026-06-05"
+    }
+  ]
+}

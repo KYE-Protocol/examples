@@ -1,0 +1,46 @@
+{
+  "schema_version": "kye.decommissioning_plan.v1",
+  "plan_id": "kye:decommissioning-plan:finance_agent_001",
+  "assurance_card_ref": "kye:assurance-card:finance_agent_001",
+  "retention": {
+    "evidence_retention_window": "P7Y",
+    "audit_retention_window": "P7Y",
+    "data_retention_window": "P3Y"
+  },
+  "off_boarding_steps": [
+    {
+      "step_id": "01_revoke_authority",
+      "action": "revoke_authority",
+      "owner_role": "ai_governance_lead",
+      "evidence_required": ["revocation_event", "decision_map"]
+    },
+    {
+      "step_id": "02_quarantine_credentials",
+      "action": "quarantine_credentials",
+      "owner_role": "security_admin",
+      "evidence_required": ["state_snapshot"]
+    },
+    {
+      "step_id": "03_archive_evidence",
+      "action": "archive_evidence",
+      "owner_role": "ai_governance_lead",
+      "evidence_required": ["evidence_pack", "audit_ref"]
+    },
+    {
+      "step_id": "04_update_catalog",
+      "action": "update_catalog",
+      "owner_role": "ai_governance_lead",
+      "evidence_required": ["catalog_update_event"]
+    }
+  ],
+  "cascade_revocation": {
+    "enabled": true,
+    "scope": "entity_and_descendants"
+  },
+  "evidence_archival": {
+    "archive_location": "kye:archive:tenant_acme_ltd",
+    "archive_method": "signed_bundle",
+    "archive_signature_key_id": "kye:key:archive_signing_001"
+  },
+  "status": "active"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.dictionary.v1",
+  "dictionary_id": "kye:dictionary:example",
+  "display_name": "KYE Example Dictionary",
+  "version": "1.0.0",
+  "description": "Minimal valid example of the kye.dictionary.v1 envelope. Real instances: jurisdictions.json, regulators.json, connectors.json, cross-border-lawful-bases.json — each one specialises this shape with its own term set.",
+  "domain": "taxonomy",
+  "status": "active",
+  "publisher": { "entity_id": "kye:org:kye_protocol", "display_name": "KYE Protocol Ltd" },
+  "terms": [
+    { "term": "alpha", "definition": "Alpha example term." },
+    { "term": "beta",  "definition": "Beta example term."  }
+  ]
+}

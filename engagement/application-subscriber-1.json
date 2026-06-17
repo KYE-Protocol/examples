@@ -1,0 +1,31 @@
+{
+  "schema": "kye.engagement.application.v1",
+  "application_id": "7f1c0a92-4e63-4a18-9b2d-5c8e1f3a7d04",
+  "engagement_type": "subscriber",
+  "applicant": {
+    "org_name": "Meridian Trust Bank plc",
+    "contact_email": "ciso-office@meridian-trust.example",
+    "contact_name": "Dana Whitfield",
+    "jurisdiction": "GB",
+    "website": "https://meridian-trust.example"
+  },
+  "requested_sku": "KYE-RESEARCH-SUB-NONE",
+  "submitted_at": "2026-06-03T09:14:00Z",
+  "obligations_acknowledged": [
+    "kye:obligation:subscriber:marketing-consent",
+    "kye:obligation:subscriber:one-click-unsubscribe",
+    "kye:obligation:subscriber:preference-honoured"
+  ],
+  "report_preferences": {
+    "series": ["roadmap_to_ai_governance"],
+    "sectors": ["financial-services"],
+    "audiences": ["ciso"],
+    "cadences": ["quarterly", "monthly"]
+  },
+  "notes": "Subscribing to the Roadmap to AI Governance editions for financial services; quarterly flagship plus the monthly deep-dive.",
+  "source": "direct",
+  "consent_marketing": true,
+  "consent_followup": true,
+  "ip_hash": "c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5",
+  "ua_hash": "9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e"
+}

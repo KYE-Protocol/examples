@@ -1,0 +1,18 @@
+{
+  "schema": "kye.connector.stack_binding.v1",
+  "id": "kye:stack-binding:acme-bank.kong-api-gateway",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "stack_type": "api_gateway",
+  "mode": "read_only",
+  "endpoint_ref": "https://gateway.acme-bank.internal/admin/v3/events",
+  "credential_kid": "kye:key:acme-bank.kms.binding.kong.2026",
+  "bound_at": "2026-05-12T08:59:30Z",
+  "rotated_at": null,
+  "unbound_at": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:acme-bank.binding-signer.2026",
+    "value_b64": "OWJhZjMwMzQwNjFlYzNjM2I1ZGViMDQwMDNkMjE4MmIxYzg4MzNiMTM2OTRkMDVhYjE2YWVhNmEyZWE5YzM4Yw"
+  }
+}

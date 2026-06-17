@@ -1,0 +1,48 @@
+{
+  "schema_version": "kye.runtime_decision.v1",
+  "decision_id": "kye:decision:acme.20260515.001",
+  "tenant_id": "kye:tenant:acme-bank",
+  "decided_at": "2026-05-15T09:42:12.418Z",
+  "verdict": "require_human_approval",
+  "matched_rules": [
+    {
+      "rule_id": "kye:rule:financial-services.watchlist-hit-blocks-outbound",
+      "rule_pack_id": "kye:rule-pack:financial-services",
+      "reason_code": "kye:reason:counterparty.sanctions_match",
+      "priority": 10
+    },
+    {
+      "rule_id": "kye:rule:financial-services.high-value-payment-requires-approval",
+      "rule_pack_id": "kye:rule-pack:financial-services",
+      "reason_code": "kye:reason:payment.high_value_threshold",
+      "priority": 20
+    }
+  ],
+  "reasons": [
+    {
+      "reason_code": "kye:reason:counterparty.sanctions_match",
+      "definition": "Counterparty appears on a consolidated financial sanctions list above the configured match-score threshold.",
+      "severity": "critical"
+    },
+    {
+      "reason_code": "kye:reason:payment.high_value_threshold",
+      "definition": "Outbound payment exceeds tenant-configured high-value threshold and requires an additional approval.",
+      "severity": "high"
+    }
+  ],
+  "evidence_required": true,
+  "approval_routing": {
+    "queue": "kye:queue:acme-bank.aml-senior-officer",
+    "sla_hours": 4,
+    "required_approvers": 1
+  },
+  "engine": {
+    "name": "kye-rules-gateway",
+    "version": "1.0.0"
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:acme-bank-runtime-001",
+    "value_b64": "MEUCIQDsBmAD2dO2gL9XsaBeN1BmZm0e8R2rapAh4Z9r1P5LrhKjA7mG5wX2c6H3e3h8G0c0y4dF6I9z1b8N4m1O2p3qS4rT"
+  }
+}

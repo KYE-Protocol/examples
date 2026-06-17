@@ -1,0 +1,44 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:platform:s52-phase3-2026-05-27",
+  "emitted_at": "2026-05-27T20:30:03Z",
+  "emitter": "kye:engine:reconciliation-engine:v1.2-build-9c1e7af0",
+  "framework_refs": [
+    "constitution/52-DELEGATED-AGENT-BINDING.md",
+    "constitution/00-INDEX.md#0.3",
+    "constitution/33-IP-OSS-LINE.md",
+    "constitution/45-SELF-DESCRIPTION.md",
+    "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+    "constitution/41-ERROR-HORIZONS.md"
+  ],
+  "subject": "s52-phase3-retroactive-analysis-2026-05-27",
+  "mode": "static",
+  "run_id": "run_s52_phase3_2026_05_27_01HFCA7Q8RW2N1M4V5KZ3X9Y7P0",
+  "envelope_report_hash": "c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "new_schemas_registered": 1,
+    "new_scripts_authored": 2,
+    "new_gates_wired_into_test_chain": 1,
+    "baseline_artefacts_emitted": 1,
+    "evidence_chain_fixtures_emitted": 4,
+    "self_binding_governance_envelope_emitted": true,
+    "baseline_transcripts_scanned": 43,
+    "baseline_paths_outside_scope": 515,
+    "baseline_mcp_calls_outside_allow_list": 12,
+    "baseline_decay_deadline": "2026-08-25",
+    "anonymisation_default": "on",
+    "phase4_deferred_items": [
+      "harness-level-mcp-intercept-hook",
+      "agent-id-stamping-on-transcript-emission"
+    ]
+  },
+  "blocking_reconcilers": [
+    { "id": "delegated-agent-binding-coverage", "verdict": "OK" },
+    { "id": "agent-envelope-vs-scope",          "verdict": "OK" },
+    { "id": "retroactive-audit-coverage",       "verdict": "OK" },
+    { "id": "machine-readable-coverage",        "verdict": "OK" },
+    { "id": "self-description",                 "verdict": "OK" }
+  ]
+}

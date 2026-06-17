@@ -1,0 +1,63 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:investment-decision-authority:v1",
+  "partner_id": "kye:foundry-applicant:investment-decision-authority-reference-partner",
+  "pack_name": "KYE Investment Decision Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "investment-decision-authority",
+  "bound_sector_pack_refs": ["kye:sector-pack:investment-decision-authority"],
+  "bound_rule_pack_refs": ["kye:rule-pack:investment-decision-authority"],
+  "bound_dictionary_refs": ["kye:dictionary:investment-decision-authority"],
+  "bound_framework_refs": [
+    "kye:framework:investment-mandate-ips",
+    "kye:framework:mifid-ii",
+    "kye:framework:fca-cobs",
+    "kye:framework:sec-ia-fiduciary",
+    "kye:framework:aifmd-ucits",
+    "kye:framework:osfi-e-23",
+    "kye:framework:sox-404"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:investment-decision-authority:2026-06-09",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-09T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-investment-decision-authority-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:investment-decision-authority:2026-06-09",
+  "claim_set": [
+    {
+      "claim_id": "named-authority",
+      "claim_text": "Every AI-assisted investment decision or action that moves toward a consequential action MUST map to a recorded named-authority decision — the agent, the decision / recommendation artefact, the intended consequential action, and the named portfolio manager / investment committee under whose authority it proceeds. Decisions lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "mandate-check",
+      "claim_text": "Before an AI-assisted decision proceeds to a consequential action it MUST carry a recorded mandate-check result — within the recorded investment mandate / IPS (permitted investments + concentration / liquidity / risk limits) and the applicable suitability / best-interest basis (MiFID II Art. 25/27; FCA COBS 9/11; SEC duty of care; AIFMD/UCITS limits). An out-of-mandate, limit-breaching, or unassessed decision is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-assisted decision that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs and pinned source data (including any AI investment-workbench vendor's evidence-backed output consumed as an INPUT, referenced never reproduced), the mandate-check result, the suitability basis, and the named-authority outcome — audit-grade, MiFID II / FCA COBS / SEC 204-2 / AIFMD-aligned provenance verifiable offline.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "committee-signoff",
+      "claim_text": "An AI-assisted decision MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — the responsible portfolio manager, the head of investment, or the investment committee — records sign-off. The irreversible investment committee approval additionally requires §36 two-person sign-off (the recommending portfolio manager AND an approving committee member / CIO). Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-assisted investment decision/action is within mandate, authorised, evidenced, contestable, and final at the action boundary and PROVES the basis. KYE does not produce investment intelligence, judge whether a thesis is correct, render any view on alpha / returns / suitability of outcome, and is not an investment adviser. The evidence-backed output of an AI investment-workbench vendor is an INPUT to KYE's decision-map; KYE never reproduces their research.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-09T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

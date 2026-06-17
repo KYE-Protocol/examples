@@ -1,0 +1,24 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.lifecycle.v1.json",
+  "schema": "kye.lifecycle.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/27-COMMERCIAL-LIFECYCLE.md",
+  "notes": [
+    "Illustrative kye.lifecycle.v1 instance. The canonical full registry lives at internal"
+  ],
+  "lifecycles": [
+    {
+      "id": "kye:lifecycle:example",
+      "subject_class": "authority",
+      "states": [
+        "start",
+        "end"
+      ],
+      "terminal_states": [
+        "end"
+      ],
+      "description": "Illustrative lifecycle."
+    }
+  ]
+}

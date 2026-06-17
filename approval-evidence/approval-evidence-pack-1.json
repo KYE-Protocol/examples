@@ -1,0 +1,20 @@
+{
+  "schema": "kye.approval_evidence_pack.v1",
+  "id": "kye:approval-evidence-pack:payment-agent-scope-expansion.2026-05-14",
+  "version": 1,
+  "approval_brief_id":     "kye:approval-brief:payment-agent-scope-expansion.2026-05-14",
+  "knowledge_snapshot_id": "kye:approver-knowledge-snapshot:payment-agent-scope-expansion.cro.2026-05-14",
+  "consequence_map_id":    "kye:consequence-map:payment-agent-scope-expansion.2026-05-14",
+  "approval_decision_id":  "kye:approval-decision:payment-agent-scope-expansion.2026-05-14",
+  "supporting_scenario_runs": [
+    "kye:scenario-run:payment-agent-scope-expansion.2026-05-14"
+  ],
+  "sealed_at": "2026-05-14T11:05:00Z",
+  "sealed_by": "kye:agent:approval-evidence-sealer",
+  "content_hash": "f1e2d3c4b5a697887766554433221100ff9988aabbccddeeff00112233445566",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:approval-evidence-2026-05",
+    "value_b64": "TG9yZW1hcHByb3ZhbEV2aWRlbmNlUGFja1NpZ25hdHVyZUV4YW1wbGVfMQ"
+  }
+}

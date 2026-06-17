@@ -1,0 +1,44 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:2026-05-28-partner-revoke-legacy-001",
+  "emitted_at": "2026-05-28T13:45:31Z",
+  "emitter": "kye:engine:partner-admin-console:/api/v1/admin/partners/[id]/revoke",
+  "framework_refs": [
+    "constitution/10-PARTNER.md §8.1",
+    "constitution/00-INDEX.md §0.3",
+    "constitution/00-INDEX.md §0.4",
+    "constitution/30-AUDIT-WORM-RETENTION.md §1",
+    "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md §3",
+    "SOC2 CC1.4",
+    "ISO 27001 A.5.19",
+    "DORA Art. 28"
+  ],
+  "subject": "kye:partner:legacy-consulting-llp.9d1c4b",
+  "mode": "live",
+  "run_id": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f",
+  "envelope_report_hash": "a7c92d1e4b6f8a0d3c5e7f9a1b3d5e7f9c1a3b5d7e9f1a3c5b7d9e1f3a5c7b9d",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "action_type": "revoke",
+    "tier_before": "T1",
+    "tier_after": null,
+    "status_before": "active",
+    "status_after": "offboarding",
+    "dual_approval": {
+      "performer_id": "owner+ops@kyeprotocol.com",
+      "second_approver_id": "owner+program@kyeprotocol.com",
+      "distinct": true
+    },
+    "audit_chain_writes": [
+      "audit_events: 1 row (kye.partner_admin_action.v1)",
+      "kye_partner_admin_actions: 1 row (worm-protected)",
+      "evidence_packs: 1 row referencing this attestation_id"
+    ]
+  },
+  "blocking_reconcilers": [
+    { "id": "partner-programme-alive", "verdict": "OK" },
+    { "id": "partner-admin-surface-coverage", "verdict": "OK" },
+    { "id": "audit-worm-enforced", "verdict": "OK" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/break-glass-grant.json",
+  "grant_id": "kye:bg_grant:custody.acme.eu:01HX7K2P9D5T6V3M8N4Q1Y8R2W",
+  "actor_entity_id": "kye:human:custody.acme.eu:on_call:lead-001",
+  "scope_id": "kye:scope:custody.acme.eu:recovery:read_evidence_freeze_positions_rekey",
+  "reason_code": "recovery.break_glass_required",
+  "justification_text": "02:14 UTC anomaly detector flagged unusual signing pattern from trading agent kye:agent:custody.acme.eu:desk-a:signer; on-call lead Maria Roussel granted break-glass to read evidence, freeze positions, and rotate keys before the next settlement cycle.",
+  "approvers": [
+    "kye:human:custody.acme.eu:head_of_custody:director-001",
+    "kye:human:custody.acme.eu:soc_lead:lead-002"
+  ],
+  "valid_from": "2026-05-04T02:18:00Z",
+  "valid_until": "2026-05-04T06:18:00Z",
+  "max_duration_minutes": 240,
+  "issued_by": "kye:trust_domain:custody.acme.eu",
+  "post_hoc_review_required": true,
+  "post_hoc_review_deadline": "2026-05-11T06:18:00Z",
+  "evidence_pack_id": "kye:evidence-pack:custody.acme.eu:break_glass_2026-05-04_001"
+}

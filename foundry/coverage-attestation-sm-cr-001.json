@@ -1,0 +1,34 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-sm-cr-coverage:2026-05-30",
+  "emitted_at": "2026-05-30T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "UK_SMCR",
+    "UK_FCA_AI_Jan_2026",
+    "UK_FCA_Conduct",
+    "UK_PRA_SS"
+  ],
+  "subject": "kye:powered-pack:uk-financial-services-sm-cr:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-sm-cr-001-coverage-2026-05-30",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:uk-financial-services-sm-cr:v1",
+    "claim_count": 5,
+    "bound_rule_packs": ["kye:rule-pack:sm-cr", "kye:rule-pack:financial-services"],
+    "bound_dictionaries": ["kye:dictionary:sm-cr"],
+    "bound_sector_packs": ["kye:sector-pack:uk-financial-services-sm-cr"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical",       "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical",          "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical",       "verdict": "OK", "drift": 0 }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "kye.obligation_registry.v1",
+  "registry_id": "kye:registry:obligations",
+  "display_name": "KYE Obligation Registry™",
+  "generator": "scripts/build-obligation-registry.mjs",
+  "constitution_ref": "constitution/64-OBLIGATION-AUTHORITY-RAIL.md",
+  "obligation_count": 2,
+  "source_manifest_count": 1,
+  "engagement_type_counts": { "partner": 2 },
+  "severity_counts": { "critical": 1, "major": 1 },
+  "framework_bound_count": 1,
+  "unmapped_anchor_count": 0,
+  "obligations": [
+    {
+      "obligation_id": "kye:obligation:partner-connector:dpa-and-processing-boundary",
+      "engagement_type": "partner",
+      "specialization": "operational-runtime-connector",
+      "source_manifest": "engagement/obligations/connector.json",
+      "verifiable_by": "document-upload",
+      "frequency": "once",
+      "severity": "critical",
+      "regulatory_anchor": "GDPR Art. 28(3); UK GDPR Art. 28",
+      "framework_refs": ["gdpr"]
+    },
+    {
+      "obligation_id": "kye:obligation:partner-connector:ip-boundary",
+      "engagement_type": "partner",
+      "specialization": "operational-runtime-connector",
+      "source_manifest": "engagement/obligations/connector.json",
+      "verifiable_by": "self-attestation",
+      "frequency": "continuous",
+      "severity": "major",
+      "framework_refs": []
+    }
+  ]
+}

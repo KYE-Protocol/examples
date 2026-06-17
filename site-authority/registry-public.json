@@ -1,0 +1,463 @@
+{
+  "registry_id": "kye:registry:site-authority",
+  "schema_version": "kye.site_authority_record.v1",
+  "title": "KYE Site Authority Registry™",
+  "description": "Public §17 Directory projection of disclosed site authority + evidence posture, keyed by the canonical site UUID. §0.25/§70 honesty bar: records assert evidenced/governed/disclosed/authority-exists — never a truth score. Scores are computed by the ONE canonical scorer (scripts/lib/site-authority-score.mjs) over OBSERVABLE signals. Privacy-by-design.",
+  "scorer_version": "site-authority/1.0.0",
+  "records": [
+    {
+      "schema_version": "kye.site_authority_record.v1",
+      "site_uuid": "kye:site:kyeprotocol-com:web:root",
+      "domain": "kyeprotocol.com",
+      "owner_entity": {
+        "display_name": "KYE Protocol",
+        "kyeid": "kye:org:kyeprotocol:operator:root",
+        "jurisdiction": [
+          "GB"
+        ]
+      },
+      "score": {
+        "schema_version": "kye.site_authority_score.v1",
+        "mode": "verified",
+        "domain": "kyeprotocol.com",
+        "score": 100,
+        "band": "authoritative",
+        "dimension_scores": {
+          "content_authority": {
+            "score": 100,
+            "signals_present": 4,
+            "signals_total": 4,
+            "present": [
+              "schema_org",
+              "author_metadata",
+              "canonical_urls",
+              "jsonld_org"
+            ]
+          },
+          "publishing_evidence": {
+            "score": 100,
+            "signals_present": 3,
+            "signals_total": 3,
+            "present": [
+              "cited_evidence",
+              "evidence_index",
+              "replay_proof"
+            ]
+          },
+          "agent_readiness": {
+            "score": 100,
+            "signals_present": 4,
+            "signals_total": 4,
+            "present": [
+              "llms_txt",
+              "robots_txt",
+              "sitemap",
+              "ai_disclosure"
+            ]
+          },
+          "change_governance": {
+            "score": 100,
+            "signals_present": 3,
+            "signals_total": 3,
+            "present": [
+              "change_feed",
+              "last_modified",
+              "version_pin"
+            ]
+          },
+          "action_authority": {
+            "score": 100,
+            "signals_present": 3,
+            "signals_total": 3,
+            "present": [
+              "agent_endpoint",
+              "well_known",
+              "auth_contract"
+            ]
+          },
+          "trust_registry": {
+            "score": 100,
+            "signals_present": 2,
+            "signals_total": 2,
+            "present": [
+              "registry_member",
+              "badge_present"
+            ]
+          }
+        },
+        "gaps": [],
+        "signals_evaluated": 19,
+        "scorer_version": "site-authority/1.0.0"
+      },
+      "dimension_scores": {
+        "content_authority": 100,
+        "publishing_evidence": 100,
+        "agent_readiness": 100,
+        "change_governance": 100,
+        "action_authority": 100,
+        "trust_registry": 100
+      },
+      "covered_pages": 172,
+      "covered_claims": 97,
+      "evidence_links": [
+        {
+          "kind": "llms_txt",
+          "url": "https://kyeprotocol.com/llms.txt"
+        },
+        {
+          "kind": "well_known",
+          "url": "https://kyeprotocol.com/.well-known/mcp"
+        },
+        {
+          "kind": "replay_proof",
+          "url": "https://kyeprotocol.com/trust/self-audit-jwks.json"
+        },
+        {
+          "kind": "evidence_pack",
+          "url": "https://kyeprotocol.com/trust/self-audit/"
+        }
+      ],
+      "change_history": [
+        {
+          "at": "2026-06-10T00:00:00Z",
+          "composite_score": 100,
+          "change": "published Evidence Pack + replay-proof JWKS; agent endpoint disclosed at /.well-known/mcp",
+          "evidence_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json"
+        }
+      ],
+      "badge_status": "active",
+      "observed_vs_verified": "verified",
+      "registered_at": "2026-06-10T00:00:00Z",
+      "expires_at": "2026-09-08T00:00:00Z",
+      "last_verified_at": "2026-06-10T00:00:00Z"
+    },
+    {
+      "schema_version": "kye.site_authority_record.v1",
+      "site_uuid": "kye:site:sandbox-kyeprotocol-com:web:root",
+      "domain": "sandbox.kyeprotocol.com",
+      "owner_entity": {
+        "display_name": "KYE Protocol — Sandbox",
+        "kyeid": "kye:org:kyeprotocol:operator:sandbox",
+        "jurisdiction": [
+          "GB"
+        ]
+      },
+      "score": {
+        "schema_version": "kye.site_authority_score.v1",
+        "mode": "verified",
+        "domain": "sandbox.kyeprotocol.com",
+        "score": 49,
+        "band": "developing",
+        "dimension_scores": {
+          "content_authority": {
+            "score": 50,
+            "signals_present": 2,
+            "signals_total": 4,
+            "present": [
+              "schema_org",
+              "canonical_urls"
+            ]
+          },
+          "publishing_evidence": {
+            "score": 0,
+            "signals_present": 0,
+            "signals_total": 3,
+            "present": []
+          },
+          "agent_readiness": {
+            "score": 75,
+            "signals_present": 3,
+            "signals_total": 4,
+            "present": [
+              "llms_txt",
+              "robots_txt",
+              "sitemap"
+            ]
+          },
+          "change_governance": {
+            "score": 33,
+            "signals_present": 1,
+            "signals_total": 3,
+            "present": [
+              "last_modified"
+            ]
+          },
+          "action_authority": {
+            "score": 33,
+            "signals_present": 1,
+            "signals_total": 3,
+            "present": [
+              "well_known"
+            ]
+          },
+          "trust_registry": {
+            "score": 100,
+            "signals_present": 2,
+            "signals_total": 2,
+            "present": [
+              "registry_member",
+              "badge_present"
+            ]
+          }
+        },
+        "gaps": [
+          {
+            "dimension": "content_authority",
+            "signal": "author_metadata",
+            "message": "Missing: author / publisher identity is machine-readable in page metadata."
+          },
+          {
+            "dimension": "content_authority",
+            "signal": "jsonld_org",
+            "message": "Missing: an Organization JSON-LD block names the operating entity."
+          },
+          {
+            "dimension": "publishing_evidence",
+            "signal": "cited_evidence",
+            "message": "Missing: published claims carry cited, fetchable evidence (not bare assertions)."
+          },
+          {
+            "dimension": "publishing_evidence",
+            "signal": "evidence_index",
+            "message": "Missing: a machine-readable evidence index / Evidence Pack surface is published."
+          },
+          {
+            "dimension": "publishing_evidence",
+            "signal": "replay_proof",
+            "message": "Missing: a replay-provable seal lets a reader verify the posture from published keys alone."
+          },
+          {
+            "dimension": "agent_readiness",
+            "signal": "ai_disclosure",
+            "message": "Missing: an AI-disclosure / AI-usage tag discloses how AI is used on the site."
+          },
+          {
+            "dimension": "change_governance",
+            "signal": "change_feed",
+            "message": "Missing: a change feed / changelog discloses how site authority changes over time."
+          },
+          {
+            "dimension": "change_governance",
+            "signal": "version_pin",
+            "message": "Missing: content / policy versions are pinned so changes are attributable."
+          },
+          {
+            "dimension": "action_authority",
+            "signal": "agent_endpoint",
+            "message": "Missing: an MCP / agent endpoint (e.g. /.well-known/mcp) is disclosed for governed agent action."
+          },
+          {
+            "dimension": "action_authority",
+            "signal": "auth_contract",
+            "message": "Missing: an action / authorization contract is published for agent-initiated actions."
+          }
+        ],
+        "signals_evaluated": 19,
+        "scorer_version": "site-authority/1.0.0"
+      },
+      "dimension_scores": {
+        "content_authority": 50,
+        "publishing_evidence": 0,
+        "agent_readiness": 75,
+        "change_governance": 33,
+        "action_authority": 33,
+        "trust_registry": 100
+      },
+      "covered_pages": 24,
+      "covered_claims": 0,
+      "evidence_links": [
+        {
+          "kind": "llms_txt",
+          "url": "https://sandbox.kyeprotocol.com/llms.txt"
+        },
+        {
+          "kind": "well_known",
+          "url": "https://sandbox.kyeprotocol.com/.well-known/mcp"
+        }
+      ],
+      "change_history": [
+        {
+          "at": "2026-06-10T00:00:00Z",
+          "composite_score": 49,
+          "change": "registered; published llms.txt + sitemap; Evidence Pack not yet disclosed"
+        }
+      ],
+      "badge_status": "active",
+      "observed_vs_verified": "verified",
+      "registered_at": "2026-06-10T00:00:00Z",
+      "expires_at": "2026-09-08T00:00:00Z",
+      "last_verified_at": "2026-06-10T00:00:00Z"
+    },
+    {
+      "schema_version": "kye.site_authority_record.v1",
+      "site_uuid": "kye:site:status-kyeprotocol-com:web:root",
+      "domain": "status.kyeprotocol.com",
+      "owner_entity": {
+        "display_name": "KYE Protocol — Status",
+        "kyeid": "kye:org:kyeprotocol:operator:status",
+        "jurisdiction": [
+          "GB"
+        ]
+      },
+      "score": {
+        "schema_version": "kye.site_authority_score.v1",
+        "mode": "verified",
+        "domain": "status.kyeprotocol.com",
+        "score": 22,
+        "band": "foundational",
+        "dimension_scores": {
+          "content_authority": {
+            "score": 0,
+            "signals_present": 0,
+            "signals_total": 4,
+            "present": []
+          },
+          "publishing_evidence": {
+            "score": 0,
+            "signals_present": 0,
+            "signals_total": 3,
+            "present": []
+          },
+          "agent_readiness": {
+            "score": 50,
+            "signals_present": 2,
+            "signals_total": 4,
+            "present": [
+              "robots_txt",
+              "sitemap"
+            ]
+          },
+          "change_governance": {
+            "score": 33,
+            "signals_present": 1,
+            "signals_total": 3,
+            "present": [
+              "last_modified"
+            ]
+          },
+          "action_authority": {
+            "score": 0,
+            "signals_present": 0,
+            "signals_total": 3,
+            "present": []
+          },
+          "trust_registry": {
+            "score": 50,
+            "signals_present": 1,
+            "signals_total": 2,
+            "present": [
+              "registry_member"
+            ]
+          }
+        },
+        "gaps": [
+          {
+            "dimension": "content_authority",
+            "signal": "schema_org",
+            "message": "Missing: structured schema.org metadata is published so agents can resolve entities, authorship, and provenance."
+          },
+          {
+            "dimension": "content_authority",
+            "signal": "author_metadata",
+            "message": "Missing: author / publisher identity is machine-readable in page metadata."
+          },
+          {
+            "dimension": "content_authority",
+            "signal": "canonical_urls",
+            "message": "Missing: canonical URLs are declared so authority resolves to one source per page."
+          },
+          {
+            "dimension": "content_authority",
+            "signal": "jsonld_org",
+            "message": "Missing: an Organization JSON-LD block names the operating entity."
+          },
+          {
+            "dimension": "publishing_evidence",
+            "signal": "cited_evidence",
+            "message": "Missing: published claims carry cited, fetchable evidence (not bare assertions)."
+          },
+          {
+            "dimension": "publishing_evidence",
+            "signal": "evidence_index",
+            "message": "Missing: a machine-readable evidence index / Evidence Pack surface is published."
+          },
+          {
+            "dimension": "publishing_evidence",
+            "signal": "replay_proof",
+            "message": "Missing: a replay-provable seal lets a reader verify the posture from published keys alone."
+          },
+          {
+            "dimension": "agent_readiness",
+            "signal": "llms_txt",
+            "message": "Missing: an llms.txt is published so AI agents have a declared entry contract."
+          },
+          {
+            "dimension": "agent_readiness",
+            "signal": "ai_disclosure",
+            "message": "Missing: an AI-disclosure / AI-usage tag discloses how AI is used on the site."
+          },
+          {
+            "dimension": "change_governance",
+            "signal": "change_feed",
+            "message": "Missing: a change feed / changelog discloses how site authority changes over time."
+          },
+          {
+            "dimension": "change_governance",
+            "signal": "version_pin",
+            "message": "Missing: content / policy versions are pinned so changes are attributable."
+          },
+          {
+            "dimension": "action_authority",
+            "signal": "agent_endpoint",
+            "message": "Missing: an MCP / agent endpoint (e.g. /.well-known/mcp) is disclosed for governed agent action."
+          },
+          {
+            "dimension": "action_authority",
+            "signal": "well_known",
+            "message": "Missing: a /.well-known declaration advertises the site's machine contracts."
+          },
+          {
+            "dimension": "action_authority",
+            "signal": "auth_contract",
+            "message": "Missing: an action / authorization contract is published for agent-initiated actions."
+          },
+          {
+            "dimension": "trust_registry",
+            "signal": "badge_present",
+            "message": "Missing: the embeddable Site Authority badge links the site to its public registry record."
+          }
+        ],
+        "signals_evaluated": 19,
+        "scorer_version": "site-authority/1.0.0"
+      },
+      "dimension_scores": {
+        "content_authority": 0,
+        "publishing_evidence": 0,
+        "agent_readiness": 50,
+        "change_governance": 33,
+        "action_authority": 0,
+        "trust_registry": 50
+      },
+      "covered_pages": 6,
+      "covered_claims": 0,
+      "evidence_links": [
+        {
+          "kind": "change_feed",
+          "url": "https://status.kyeprotocol.com/sitemap.xml"
+        }
+      ],
+      "change_history": [
+        {
+          "at": "2026-06-10T00:00:00Z",
+          "composite_score": 22,
+          "change": "registered; baseline crawl posture disclosed (robots + sitemap)"
+        }
+      ],
+      "badge_status": "active",
+      "observed_vs_verified": "verified",
+      "registered_at": "2026-06-10T00:00:00Z",
+      "expires_at": "2026-09-08T00:00:00Z",
+      "last_verified_at": "2026-06-10T00:00:00Z"
+    }
+  ]
+}

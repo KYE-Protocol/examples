@@ -1,0 +1,22 @@
+{
+  "schema": "kye.kit.run_retrospective.v1",
+  "run_id": "kye:kit:run:kye-pr-loop-0001",
+  "workflow_id": "kye:kit:workflow:kye-pr-loop",
+  "score": 4,
+  "summary": "Build + gates + review + merge completed; one human-gate wait and one gate flake were the main friction.",
+  "duration_seconds": 5400,
+  "friction_points": [
+    {
+      "friction_class": "human_gate_wait",
+      "node_id": "review",
+      "detail": "PR review approval waited ~40 minutes for the single approver to be available.",
+      "severity": "low"
+    },
+    {
+      "friction_class": "gate_flake",
+      "node_id": "gates",
+      "detail": "One network-dependent advisory check flaked on first run and passed on retry.",
+      "severity": "medium"
+    }
+  ]
+}

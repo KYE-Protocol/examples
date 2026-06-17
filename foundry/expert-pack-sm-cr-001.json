@@ -1,0 +1,67 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:uk-financial-services-sm-cr:v1",
+  "partner_id": "kye:foundry-applicant:sm-cr-reference-partner",
+  "pack_name": "KYE Senior Manager Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "uk-financial-services-sm-cr",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:uk-financial-services-sm-cr"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:sm-cr",
+    "kye:rule-pack:financial-services"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:sm-cr"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:uk-smcr",
+    "kye:framework:uk-fca-ai-jan-2026",
+    "kye:framework:uk-fca-conduct",
+    "kye:framework:uk-pra-ss"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:uk-financial-services-sm-cr:2026-05-30",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-30T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-sm-cr-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:uk-financial-services-sm-cr:2026-05-30",
+  "claim_set": [
+    {
+      "claim_id": "smf-authority-mapping",
+      "claim_text": "Every AI-assisted material decision in scope of the Pack maps to a named Senior Manager Function (SMF1, SMF3, SMF18, or SMF24) via the canonical KYE Authority Register.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "reasonable-steps-evidence-pack",
+      "claim_text": "Each material AI decision emits a signed, replay-derivable reasonable-steps Evidence Pack binding the SMF, SoR clause discharged, delegation chain, and Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "fca-jan-2026-six-triggers",
+      "claim_text": "The Pack covers the six FCA Jan 2026 material-AI-decision triggers (customer outcome, vulnerable-customer treatment, pricing, complaints handling, suitability, product governance).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "conduct-rule-breach-evidence",
+      "claim_text": "Conduct Rule breaches (CR1-CR5 and SC1-SC4) meeting the FCA SUP 15.3 materiality threshold emit a conduct-incident Evidence Pack routed dual-channel to SMF + compliance.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "quarterly-attestation-cadence",
+      "claim_text": "Designated SMFs co-sign a quarterly kye.compliance.attestation.v1 envelope covering their AI-assisted decision register and Conduct Rule breach disposition.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-30T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

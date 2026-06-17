@@ -1,0 +1,19 @@
+{
+  "schema": "kye.harness_adapter.v1",
+  "adapter_id": "kye:harness-adapter:claude-code-generic",
+  "tool_call_id": "toolu_02DEF456",
+  "agent_id": "general-purpose-content-author",
+  "parent_task": "b2c3d4e5-f6a7-8901-bcde-f01234567891",
+  "tool_name": "mcp__2dc6ae19-c258-4c9b-89de-eb3d52b6304c__d1_database_query",
+  "tool_type": "mcp",
+  "hook_phase": "pre",
+  "admit_verdict": "DENY",
+  "mcp_allow_list_checked": true,
+  "mcp_allow_list_verdict": "denied_not_in_list",
+  "context_admissibility_verdict": null,
+  "evidence_pack_ref": null,
+  "refusal_ref": "kye:harness-adapt:refusal:b2c3d4e5-toolu_02DEF456",
+  "emitted_at": "2026-06-08T12:01:00.000Z",
+  "harness_shape": "claude-code",
+  "notes": "Pre-hook DENY: Cloudflare D1 MCP server is not in the content-author allow-list."
+}

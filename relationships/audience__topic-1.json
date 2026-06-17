@@ -1,0 +1,15 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:audience__topic:ciso__agent-governance",
+  "relationship_type": "consumes",
+  "source_class": "audience",
+  "source_id": "ciso",
+  "target_class": "topic",
+  "target_id": "agent-governance",
+  "cardinality": "many-to-many",
+  "bidirectional": true,
+  "evidence_basis": "§0.17 Multidirectional Taxonomy worked example — CISO audience consumes agent-governance topic content; reverse edge in topic__audience.json.",
+  "effective_from": "2026-05-30",
+  "owners": ["KYE Taxonomy Authority"],
+  "status": "active"
+}

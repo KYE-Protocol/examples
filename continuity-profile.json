@@ -1,0 +1,57 @@
+{
+  "schema_version": "kye.continuity_profile.v1",
+  "profile_id": "kye:profile:continuity",
+  "display_name": "KYE Continuity Profile™",
+  "category": "delegated_agency_governance",
+  "version": "1.1.0",
+  "description": "Defines continuity checks between intent, interpretation, delegated authority, state, decision, execution and evidence. v1.1.0 adds meaning_continuity as a required module via the KYE Meaning Continuity Profile™ sub-profile.",
+  "required_kye_profiles": [
+    "kye.core.v1",
+    "kye.authority.v1",
+    "kye.state.v1",
+    "kye.capability.v1",
+    "kye.evidence.v1",
+    "kye.graph.v1",
+    "kye.signals.v1"
+  ],
+  "required_objects": [
+    "KYEEntity",
+    "KYEAuthorityGrant",
+    "KYEDelegation",
+    "KYEScope",
+    "KYEStateSnapshot",
+    "KYECapabilityManifest",
+    "KYEPolicyDecision",
+    "KYEAuditEvent",
+    "KYEEvidencePack",
+    "KYEContinuityContext",
+    "KYEIntentTrace",
+    "KYEContinuityDecision",
+    "KYEMeaningContinuityContext",
+    "KYEHandoffTrace",
+    "KYEMeaningDriftEvent",
+    "KYEMeaningContinuityDecision"
+  ],
+  "modules": [
+    "intent_continuity",
+    "meaning_continuity",
+    "context_continuity",
+    "memory_continuity",
+    "incentive_continuity",
+    "timing_continuity",
+    "handoff_continuity",
+    "state_continuity",
+    "execution_continuity"
+  ],
+  "decision_types": [
+    "continuity_preserved",
+    "continuity_degraded",
+    "continuity_broken",
+    "require_human_review",
+    "require_reconfirmation",
+    "deny",
+    "quarantine"
+  ],
+  "risk_level": "high",
+  "status": "active"
+}

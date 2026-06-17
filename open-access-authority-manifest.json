@@ -1,0 +1,32 @@
+{
+  "schema_version": "kye.open_access_authority_manifest.v1",
+  "manifest_id": "kye:registry:open-access-authority",
+  "display_name": "KYE Open Access Authority™ — access-admissibility product spec",
+  "version": "1.0.0",
+  "adopted_at": "2026-06-11",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md + constitution/52-DELEGATED-AGENT-BINDING.md + constitution/17-DIRECTORY-SEARCH.md",
+  "description": "Illustrative instance of the KYE Open Access Authority™ manifest: the five access verbs, resource classes, the admissibility decision flow, and the Resource Authority Badge™ states. Every verdict is a Purpose-Permission admissibility decision scoped to an access action — not a separate decision engine.",
+  "boundary": {
+    "oaa": "The agent-to-resource access projection of the admissibility decision.",
+    "non_competition": "KYE governs whether an agent may access a resource; it does not run the agent or route its traffic."
+  },
+  "access_action_kinds": ["access", "rely-upon", "invoke", "cite", "transact"],
+  "resource_classes": ["api", "mcp-server", "website", "dataset", "service", "marketplace", "knowledge-base"],
+  "decision_flow": [
+    { "step": "identify-principal", "binding": "Resolve the requesting agent to exactly one principal in one tenant." },
+    { "step": "resolve-rights", "binding": "What delegation does the principal hold over this resource class?" },
+    { "step": "resolve-jurisdiction", "binding": "Which jurisdiction governs the principal-and-resource pair; cross-border handoff." },
+    { "step": "evaluate-admissibility", "binding": "Admissibility verdict: allow / deny / allow-with-notice / consent / minimisation." },
+    { "step": "emit-evidence", "binding": "Evidence Pack plus attestation; Replay-Proof from public keys alone." }
+  ],
+  "resource_authority_badge": {
+    "states": ["badge-unverified", "badge-asserted", "badge-evidenced", "badge-suspended"],
+    "transitions": [
+      { "from": "badge-unverified", "to": "badge-asserted", "on": "resource owner declares access terms" },
+      { "from": "badge-asserted", "to": "badge-evidenced", "on": "access decisions emit Evidence Packs and are replay-verifiable" },
+      { "from": "badge-evidenced", "to": "badge-suspended", "on": "rights/jurisdiction change or upstream revocation" },
+      { "from": "badge-suspended", "to": "badge-evidenced", "on": "re-assessment passes" }
+    ]
+  },
+  "skus": ["KYE-OAA-BADGE-001", "KYE-OAA-STANDARD-001", "KYE-OAA-ENTERPRISE-001"]
+}

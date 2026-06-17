@@ -1,0 +1,18 @@
+{
+  "schema": "kye.billing.bps_event.v1",
+  "event_id": "kye:bps-event:acme-bank.payment-1234",
+  "version": 1,
+  "action_kyeid": "kye:action:acme-bank.payment.1234",
+  "action_class": "payments",
+  "transaction_value_pence": 8000000,
+  "bps_rate": 3,
+  "computed_fee_pence": 2400,
+  "capped_at_pence": 5000,
+  "floored_at_pence": 500,
+  "final_fee_pence": 2400,
+  "currency": "GBP",
+  "jurisdiction": "GB",
+  "recorded_at": "2026-05-12T14:22:08Z",
+  "customer_kyeid": "kye:ent:bank.acme",
+  "tenant_id": "kye:tenant:acme-bank"
+}

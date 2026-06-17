@@ -1,0 +1,31 @@
+{
+  "schema": "kye.framework_requirement_registry.v1",
+  "framework": "haarf",
+  "framework_version": "1.0",
+  "display_name": "HAARF — Healthcare AI Agents Regulatory Framework",
+  "marketing_aliases": ["HAARF", "Healthcare AI Agents Regulatory Framework"],
+  "total_requirements": 279,
+  "source": "medrxiv 10.64898/2026.04.09.26350519v1",
+  "task_force": "Task Force for AI Agents in Healthcare",
+  "license": "CC-BY-SA-4.0",
+  "category_counts": {
+    "C1 Unified Risk & Lifecycle Assessment": 30,
+    "C2 Model Passport & Provenance": 34,
+    "C3 Cybersecurity for AI Agents": 35,
+    "C4 Human Oversight & Accountability": 38,
+    "C5 Agent Registration & Identity": 30,
+    "C6 Autonomy Governance": 35,
+    "C7 Bias, Equity & Fairness": 35,
+    "C8 Tool Use & Integration Security": 42
+  },
+  "files": [
+    "C1-risk-lifecycle.json",
+    "C2-model-passport.json",
+    "C3-cybersecurity.json",
+    "C4-human-oversight.json",
+    "C5-agent-registration.json",
+    "C6-autonomy-governance.json",
+    "C7-bias-equity.json",
+    "C8-tool-integration.json"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.startup_program.v1.json",
+  "schema": "kye.startup_program.v1",
+  "tier_id": "kye:startup-program:seed",
+  "display_name": "KYE for Startups™ — Seed / Pre-Seed",
+  "credit_value_usd": 5000,
+  "duration_months": 12,
+  "eligibility": {
+    "raised_ceiling_usd": 3000000,
+    "age_max_years": 3,
+    "employee_max": 25
+  },
+  "sku_ref": "KYE-STARTUP-SEED-001",
+  "cost_to_serve_ref": "kye:cost-to-serve:eu-ai-act",
+  "obligations_ref": "kye:obligation-manifest:pilot:startup-program",
+  "credit_scope": "Metered KYE governance usage only (Purpose Permission™ admissibility checks, Evidence Pack™ sealing, Replay-Proof™, audit-chain WORM appends). Never third-party costs (the startup's own Cloudflare account, Stripe fees, or LLM bills).",
+  "non_transferable": true,
+  "constitution_ref": "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md §9",
+  "status": "active"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "kye:model-influence-envelope:tenant-acme:2026-05-28T18:23:00Z:a0b1c2d3",
+  "version": 1,
+  "decision_id": "kye:decision:tenant-acme:procurement:2026-05-28T18:23:00Z:a0b1c2d3",
+  "model_id": "anthropic/claude-opus-4-8",
+  "system_prompt_hash": "sha256:1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b",
+  "system_prompt_version": "4.2.1",
+  "rag_corpus_refs": [
+    {
+      "corpus_id": "policy-handbook:procurement",
+      "corpus_snapshot_hash": "sha256:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2",
+      "retrieved_doc_hashes": [
+        "sha256:c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3",
+        "sha256:d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4"
+      ]
+    },
+    {
+      "corpus_id": "kb:supplier-master",
+      "corpus_snapshot_hash": "sha256:e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5",
+      "retrieved_doc_hashes": [
+        "sha256:f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6"
+      ]
+    }
+  ],
+  "fine_tune_adapter_ref": null,
+  "tool_manifest_hash": "sha256:a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7",
+  "ambient_context_hash": "sha256:b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8",
+  "influence_drift_check": {
+    "previous_envelope_hash": "sha256:c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9",
+    "drift_detected": false,
+    "drift_reasons": []
+  },
+  "captured_at": "2026-05-28T18:23:00.412Z",
+  "signature": {
+    "alg": "EdDSA",
+    "value": "MEYCIQDvQ4z0nD5yRk7p1c4e9QlYj5VqXxY3kT0Q6Pl1Nx2aHwIhANxW4nF8JqKj2xZ0B3eR6l5pVqLgYxZcF7oRgK4dQrTp",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

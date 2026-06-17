@@ -1,0 +1,8 @@
+{
+  "dsar_id": "kye:dsar:acme.com:dsar-20260514-001",
+  "subject_entity_id": "kye:ent:acme.com:person:bob",
+  "request_type": "access",
+  "requested_at": "2026-05-14T08:00:00Z",
+  "due_by": "2026-06-13T08:00:00Z",
+  "jurisdiction": "GB"
+}

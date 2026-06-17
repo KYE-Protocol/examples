@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:billing.kyeprotocol.com:01J4P9O00Y6ZZAABBCCCCCCCCCC",
+  "event_class": "kye.billing.invoice.issued",
+  "occurred_at": "2026-06-01T00:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:billing.kyeprotocol.com",
+    "trust_domain": "billing.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9O00Y6ZZAABBCCCCCCCCCC",
+  "severity": "info",
+  "payload": {
+    "invoice_id": "kye:invoice:billing.kyeprotocol.com:2026-05-NEWCO",
+    "invoice_number": "INV-2026-05-NEWCO-0001",
+    "billed_tenant_id": "kye:tenant:newco.example",
+    "period_start": "2026-05-01T00:00:00Z",
+    "period_end": "2026-05-31T23:59:59Z",
+    "currency": "EUR",
+    "subtotal_minor_units": 24800,
+    "tax_minor_units": 5208,
+    "total_minor_units": 30008,
+    "due_at": "2026-06-15T00:00:00Z",
+    "line_items": [
+      { "sku": "platform-base", "qty": 1, "unit_minor_units": 24800, "description": "Platform Growth — May 2026" }
+    ]
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "889900aabbccddeeff11223344556677889900aabbccddeefff001122334455a",
+    "ts": "1748736000"
+  }
+}

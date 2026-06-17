@@ -1,0 +1,11 @@
+{
+  "id": "kye:purpose-req:platform:01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
+  "actor": "kye:ent:agent-architecture-s50-phase4",
+  "purpose": "kye:purpose-class:platform.content-graph.phase4-extension",
+  "action": "ship-audience-landings-and-enriched-search-index",
+  "resource": "kye:res:platform:constitution:50-content-graph-discoverability:phase4",
+  "data_classes": ["constitution.amendment", "site.derived.audience-landings", "site.assets.derived-search-index"],
+  "requested_at": "2026-05-27T13:00:00Z",
+  "claimed_grant_id": "kye:purpose:platform:architecture:constitutional-amendment-2026q2",
+  "tool_call_hash": "sha256:1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f"
+}

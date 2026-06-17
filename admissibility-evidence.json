@@ -1,0 +1,41 @@
+{
+  "schema_version": "kye.admissibility_evidence.v1",
+  "evidence_id": "kye:admissibility-evidence:001",
+  "admissibility_decision_id": "kye:admissibility-decision:001",
+  "proposed_action_id": "kye:proposed-action:001",
+  "inputs_consulted": {
+    "intent_ref": "kye:intent:001",
+    "interpreted_intent_ref": "kye:intent-interpretation:001",
+    "ontology_terms_consulted": [
+      "kye:term:capability:card_purchase",
+      "kye:term:scope:amount_limit"
+    ],
+    "formal_rules_consulted": [
+      "kye:rule:shopping_agent_amount_threshold"
+    ],
+    "continuity_signals_consulted": [
+      "kye.intent.declared",
+      "kye.intent.interpreted"
+    ],
+    "risk_signals_consulted": [
+      "kye.risk.normal"
+    ]
+  },
+  "checked_inadmissibility_classes": [
+    "invalid_intent", "ambiguous_intent", "out_of_scope_proposal",
+    "prohibited_action_class", "disallowed_data_source",
+    "inadmissible_evidence", "unsafe_tool_path", "coercion_signal",
+    "incentive_conflict", "continuity_break", "policy_ineligible_action",
+    "missing_authority_context", "missing_principal",
+    "missing_accountable_owner", "unsupported_jurisdiction"
+  ],
+  "matched_inadmissibility_classes": [],
+  "hash": "sha256:...",
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:admission_signing_001",
+    "signature": "..."
+  },
+  "audit_chain_ref": "kye:audit:chain:0xadm123",
+  "generated_at": "2026-05-10T12:00:02Z"
+}

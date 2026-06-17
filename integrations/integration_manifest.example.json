@@ -1,0 +1,49 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.integration_manifest.v1.json",
+  "schema_version": "1.0.0",
+  "manifest_id": "kye:manifest:integrations-example",
+  "adopted_at": "2026-05-30",
+  "description": "Reference fixture for kye.integration_manifest.v1. Shows two minimal-but-complete integration entries (one outbound payment, one inbound KMS signer) covering every required field across both representative categories. Validates against the schema in CI.",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md §11",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "Example fixture parallels the live manifest publication policy."
+  },
+  "integrations": [
+    {
+      "id": "kye:integration:example-stripe",
+      "name": "Stripe (example)",
+      "provider": "Stripe, Inc.",
+      "category": "payment",
+      "dictionary_term": "stripe",
+      "workers_using": ["kye:worker:commercial-lifecycle-worker"],
+      "endpoints_provided": ["POST /v1/webhooks/stripe"],
+      "outbound_endpoints_called": ["https://api.stripe.com"],
+      "required_for_surfaces": ["app"],
+      "secrets_required": ["STRIPE_API_KEY", "STRIPE_WEBHOOK_SECRET"],
+      "rate_limit_quota": { "limit": 100, "period": "second", "burst": 25 },
+      "cost_model": { "pricing_model": "per_event" },
+      "circuit_breaker_config": { "failure_threshold": 5, "window_seconds": 60, "cooldown_seconds": 30, "half_open_probe": true },
+      "fallback_behavior": "queue_for_retry",
+      "data_residency_constraints": ["us", "eu"],
+      "status": "active"
+    },
+    {
+      "id": "kye:integration:example-aws-kms",
+      "name": "AWS KMS (example)",
+      "provider": "Amazon Web Services",
+      "category": "kms",
+      "dictionary_term": "aws-kms",
+      "workers_using": ["kye:worker:authority-proof-bundle-worker"],
+      "endpoints_provided": [],
+      "outbound_endpoints_called": ["https://kms.us-east-1.amazonaws.com"],
+      "required_for_surfaces": ["app"],
+      "secrets_required": ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_KMS_KEY_ARN"],
+      "rate_limit_quota": { "limit": 1200, "period": "second" },
+      "cost_model": { "pricing_model": "per_signature", "unit_cost_usd": 0.00003 },
+      "fallback_behavior": "switch_to_alternate_provider",
+      "data_residency_constraints": ["us", "eu"],
+      "status": "active"
+    }
+  ]
+}

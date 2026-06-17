@@ -1,0 +1,27 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:billing.kyeprotocol.com:01JBL7SUB002000000000000002",
+  "event_class": "kye.billing.subscription.updated",
+  "occurred_at": "2026-05-15T10:14:22Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme-bank",
+    "trust_domain": "acme-bank.example"
+  },
+  "delivery_id": "dlv_01JBL7SUB002000000000000002",
+  "severity": "info",
+  "payload": {
+    "subscription_id": "kye:subscription:acme-bank-2026",
+    "stripe_subscription_id": "sub_1QABCDEFGHIJKLMN",
+    "changes": {
+      "agents_governed": { "from": 240, "to": 312 },
+      "workflows_count": { "from": 18, "to": 22 }
+    },
+    "effective_at": "2026-05-15T10:14:22Z"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "5a82e9d0c4f1487bbccdeeff00112233445566778899aabbccddeeff00112233",
+    "ts": "1747304062"
+  }
+}

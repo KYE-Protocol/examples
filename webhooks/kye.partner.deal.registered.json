@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:partner.kyeprotocol.com:01J4P9I00S0TTUUVVWWWWWWWWWW",
+  "event_class": "kye.partner.deal.registered",
+  "occurred_at": "2026-05-12T11:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:partner.kyeprotocol.com",
+    "trust_domain": "partner.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9I00S0TTUUVVWWWWWWWWWW",
+  "severity": "info",
+  "payload": {
+    "deal_id": "kye:partner-deal:partner.kyeprotocol.com:01J4P9I00S0T",
+    "partner_entity_id": "kye:ent:contoso.example:business:contoso",
+    "end_customer_entity_id": "kye:ent:globex.example:business:globex",
+    "registered_at": "2026-05-12T11:00:00Z",
+    "expected_close": "2026-09-30",
+    "annual_contract_value_minor_units": 480000,
+    "currency": "EUR",
+    "stage": "proposal",
+    "protected_until": "2026-08-12T11:00:00Z"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "23344556677889900aabbccddeeff11223344556677889900aabbccddeefff001",
+    "ts": "1747047600"
+  }
+}

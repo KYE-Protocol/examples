@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:edge-governance",
+  "slug": "edge-governance",
+  "display_name": "KYE Edge Governance Profile™",
+  "layer": "runtime",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "Disconnected / degraded / restricted operation. Compiled Authority Bundle + Edge Arbiter + Safety Floor + Offline Evidence Log. Implementations MUST degrade to a deterministic safety floor when central PDP is unreachable.",
+  "required_objects": ["Authority", "Evidence", "Decision"],
+  "required_engines": ["kye:engine:edge-arbiter", "kye:engine:offline-evidence-log"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

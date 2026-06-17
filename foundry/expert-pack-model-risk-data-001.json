@@ -1,0 +1,64 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:model-risk-data-governance:v1",
+  "partner_id": "kye:foundry-applicant:model-risk-data-governance-reference-partner",
+  "pack_name": "KYE Model & Risk-Data Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "model-risk-data-governance",
+  "bound_sector_pack_refs": ["kye:sector-pack:model-risk-data-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:model-risk-data-governance"],
+  "bound_dictionary_refs": ["kye:dictionary:model-risk-data-governance"],
+  "bound_framework_refs": [
+    "kye:framework:fed-sr-11-7",
+    "kye:framework:pra-ss1-23",
+    "kye:framework:bcbs-239"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:model-risk-data-governance:2026-06-11",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-11T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-model-risk-data-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:model-risk-data-governance:2026-06-11",
+  "claim_set": [
+    {
+      "claim_id": "model-use-authority",
+      "claim_text": "Every model-driven output that moves toward a consequential decision — a credit decision, a limit change, a pricing commitment, a risk number filed in a report — MUST resolve to a model register entry carrying a CURRENT validated status, with the use WITHIN the model's approved scope, under a recorded named-authority decision. A lapsed validation, an out-of-scope use, or a missing register entry is refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "model-change-authority",
+      "claim_text": "Every model version change — re-estimation, recalibration, parameter override, AI/ML retrain, or production model swap — takes effect for consequential use only under a recorded named-authority decision binding the model identifier, the from/to versions, the change rationale, the revalidation outcome or interim-use restriction, and the named model owner / model risk officer under whose authority the change proceeds. The silent-recalibration failure mode is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "risk-report-lineage-capture",
+      "claim_text": "Every risk report that proceeds to filing, distribution, or consequential reliance MUST be bound to its data-lineage evidence chain — the source data assets aggregated, every transformation with actor and timestamp, the embedded model outputs by model_id + version, and the integrity hash of the report as assembled — so BCBS 239 Principle 3 accuracy/integrity, Principle 4 completeness, and Principle 6 adaptability are provable when a supervisor asks where a number came from.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "model-decision-provenance-pin",
+      "claim_text": "Every model-driven number, classification, or recommendation that proceeds to a consequential decision MUST emit a signed, replay-derivable provenance pin binding the model identifier, the exact model version that produced the output, the validation reference in force at the moment of use, the inputs, and the named-authority outcome — so no untraceable model output ever proceeds. An output whose model version or validation reference does not resolve against the model register is refused and never proceeds.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "portfolio-action-policy-conformance",
+      "claim_text": "Every portfolio restructuring action a model-driven recommendation moves toward MUST satisfy the declared regulatory and internal-policy obligations bound to that action class AND record the basis — which obligations were checked, the policy versions in force, the recommendation's provenance pin, and the named authority under which the action proceeds. An action without a recorded conformance basis is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE of model-driven decisions and risk-data flows and PROVES it for the supervisor — which model version produced the number, who validated and approved the model, whether the decision was within model-approved bounds, and whether the risk-report's data lineage is provable. KYE does NOT build or validate quantitative models, compute capital or liquidity ratios, judge model quality, or advise on portfolio composition. This is not investment advice.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-11T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

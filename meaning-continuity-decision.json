@@ -1,0 +1,31 @@
+{
+  "schema_version": "kye.meaning_continuity_decision.v1",
+  "decision_id": "kye:decision:meaning-continuity_001",
+  "meaning_continuity_id": "kye:meaning-continuity:001",
+  "decision": "require_reconfirmation",
+  "reason_code": "meaning_drift_detected",
+  "checked_dimensions": {
+    "intent_preserved": true,
+    "constraints_preserved": false,
+    "context_preserved": true,
+    "memory_consistent": true,
+    "incentives_aligned": true,
+    "timing_stable": true,
+    "handoff_integrity": "degraded",
+    "state_transition_safe": true
+  },
+  "meaning_score": {
+    "score": 0.72,
+    "scale": "0_to_1",
+    "interpretation": "meaning_degraded"
+  },
+  "required_next_step": "principal_reconfirmation",
+  "obligations": [
+    "pause_admission",
+    "request_reconfirmation",
+    "emit_meaning_drift_event",
+    "include_in_evidence_pack"
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:meaning-continuity_001",
+  "decided_at": "2026-05-10T12:00:07Z"
+}

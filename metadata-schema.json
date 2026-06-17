@@ -1,0 +1,70 @@
+{
+  "schema_version": "kye.metadata_schema.v1",
+  "metadata_schema_id": "kye:metadata-schema:financial_services.v1",
+  "name": "Financial Services Metadata Schema",
+  "description": "Required metadata for AI agents, capabilities, and resources operating in regulated financial-services contexts.",
+  "applies_to_node_types": ["ai_agent", "capability", "resource", "authority_grant"],
+  "fields": [
+    {
+      "name": "sector",
+      "kind": "taxonomy_term",
+      "taxonomy_id": "kye:taxonomy:sector",
+      "required": true,
+      "default": "financial_services",
+      "description": "Sector classification. MUST resolve to a registered KYETaxonomyTerm under the sector taxonomy."
+    },
+    {
+      "name": "jurisdiction",
+      "kind": "taxonomy_term",
+      "taxonomy_id": "kye:taxonomy:jurisdiction",
+      "required": true,
+      "description": "ISO-3166 jurisdiction. Drives PSD3 vs FFIEC vs MAS vs RBI evidence routing."
+    },
+    {
+      "name": "data_classes",
+      "kind": "list",
+      "required": true,
+      "description": "Array of registered data_class taxonomy terms (financial, personal_data, special_category, regulated, public)."
+    },
+    {
+      "name": "ai_risk_class",
+      "kind": "taxonomy_term",
+      "taxonomy_id": "kye:taxonomy:risk_state",
+      "required": true,
+      "description": "EU AI Act risk classification. high_risk drives KYE-EUAIACT-003 obligations."
+    },
+    {
+      "name": "criticality",
+      "kind": "string",
+      "required": true,
+      "description": "Operational criticality tier (tier_1 / tier_2 / tier_3) — drives DORA Article 6 critical-function evidence."
+    },
+    {
+      "name": "business_owner_entity_id",
+      "kind": "urn",
+      "required": true
+    },
+    {
+      "name": "evidence_required",
+      "kind": "boolean",
+      "required": true,
+      "default": true
+    }
+  ],
+  "compliance_framework_refs": [
+    "EU_AI_ACT",
+    "ISO_42001",
+    "SOC2",
+    "ISO_27001",
+    "PCI_DSS",
+    "PSD3",
+    "DORA"
+  ],
+  "profile_refs": [
+    "kye.profile.financial_services.v1",
+    "kye.profile.payments.v1",
+    "kye.profile.payments-eu.v1"
+  ],
+  "version": "1.0.0",
+  "status": "active"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.reality_anchor.v1",
+  "anchor_id": "kye:anchor:acme:supplier-risk-registry",
+  "anchor_type": "risk_context",
+  "display_name": "ACME Supplier Risk Registry",
+  "description": "Authoritative registry of supplier risk ratings used to ground supplier-facing automated actions (payment release, contract renewal, onboarding step approval).",
+  "authority": {
+    "owner_entity_id": "kye:entity:acme:procurement-office",
+    "jurisdiction": "GB"
+  },
+  "freshness_contract": {
+    "max_staleness_seconds": 86400,
+    "expected_refresh_seconds": 3600,
+    "stale_runtime_effect": "require_revalidation"
+  },
+  "grounds_actions": [
+    "kye.action:supplier_payment_release",
+    "kye.action:supplier_onboarding_step_approve",
+    "kye.action:contract_auto_renew"
+  ],
+  "grounds_profiles": [
+    "kye.reality_coupling_profile.v1"
+  ],
+  "source": {
+    "kind": "api",
+    "uri": "https://procurement.acme.example/api/v1/suppliers/risk",
+    "credential_ref": "kye:credential:acme:procurement-readonly"
+  },
+  "tags": ["supplier", "risk", "procurement"],
+  "status": "active",
+  "created_at": "2026-05-14T09:00:00Z",
+  "updated_at": "2026-05-14T09:00:00Z"
+}

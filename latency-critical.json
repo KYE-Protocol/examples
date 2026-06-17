@@ -1,0 +1,23 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.latency_critical_registry.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:latency-critical",
+  "adopted_at": "2026-05-30",
+  "description": "Example fixture mirroring the canonical latency-critical endpoint registry. Used by the §0.15 event-native-coverage gate as the schema-conformance witness. The real registry lives at internal",
+  "constitution_ref": "constitution/00-INDEX.md#section-0-15-event-native",
+  "publication_rule": { "policy": "public", "rationale": "Example fixture." },
+  "counts": { "total": 1 },
+  "endpoints": [
+    {
+      "endpoint_id": "kye:endpoint:pdp:decide",
+      "path": "/v1/pdp/decide",
+      "method": "POST",
+      "rationale": "PDP admissibility check sits on the synchronous request path of every privileged action.",
+      "latency_budget_p95_ms": 50,
+      "owning_worker": "kye:worker:pdp-decide",
+      "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md#section-3",
+      "callers": ["every privileged middleware in internal**"],
+      "downstream_event_class": "kye.purpose.admissibility.v1"
+    }
+  ]
+}

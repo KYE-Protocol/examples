@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:machine_state:nitro-enclave-example",
+  "layer": "machine_state",
+  "direction": "in",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "compute_attestation",
+  "attestation_requirement": "required_inbound",
+  "transport": "https_pull",
+  "known_partners": [
+    { "partner_slug": "nitro-enclaves", "partner_name": "AWS Nitro Enclaves", "adapter_status": "declared", "url": "https://aws.amazon.com/ec2/nitro/nitro-enclaves/" }
+  ],
+  "adopted_at": "2026-05-30"
+}

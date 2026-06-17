@@ -1,0 +1,17 @@
+{
+  "schema": "kye.estate.drafting_engine_failover.v1",
+  "failover_id": "kye:estate:drafting_failover:firm-meridian:failover-2026-05-27-001",
+  "decided_at": "2026-05-27T14:15:08Z",
+  "decided_by": "kye:engine:estate-drafting-failover-controller:v1",
+  "matter_id": "kye:estate:matter:firm-meridian:matter-2026-05-27-001",
+  "trigger": {
+    "kind": "engine-wedged-timeout",
+    "detail": "drafting engine /draft endpoint timed out 3 consecutive requests (45s each); health-probe lane fired",
+    "expected_artefact_sha256": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01",
+    "actual_artefact_sha256": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01"
+  },
+  "failover_mode": "block-and-hold",
+  "evidence_pack_ref": "kye:evidence-pack:platform:spof-phase2-drafting-block-and-hold-2026-05-27",
+  "verdict": "completed",
+  "notes": "Default mode — matter held at fact_find_complete. Adviser was notified via §38 Comms Engine ('Your matter is held safely; we will resume automatically'). No draft produced. Controller will poll engine health-probe + re-issue the drafting request once engine recovers; no manual intervention needed."
+}

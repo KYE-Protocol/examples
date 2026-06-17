@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:biopharma-pharmacovigilance:v1",
+  "partner_id": "kye:foundry-applicant:biopharma-pharmacovigilance-reference-partner",
+  "pack_name": "KYE Biopharma Pharmacovigilance Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "biopharma-pharmacovigilance",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:biopharma-pharmacovigilance"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:biopharma-pharmacovigilance"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:biopharma-pharmacovigilance"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:ema-gvp",
+    "kye:framework:mhra",
+    "kye:framework:fda-21cfr11",
+    "kye:framework:ich-e6r3-gcp"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:biopharma-pharmacovigilance:2026-05-31",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-31T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-biopharma-pharmacovigilance-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:biopharma-pharmacovigilance:2026-05-31",
+  "claim_set": [
+    {
+      "claim_id": "icsr-causality-qppv-signoff",
+      "claim_text": "Every AI-assisted Individual Case Safety Report causality assessment MUST map to a named Qualified Person for Pharmacovigilance with the prescribed authority before the case is finalised. ICSRs lacking QPPV sign-off are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "signal-detection-evidence-pack",
+      "claim_text": "Every material AI-assisted safety-signal detection or signal-validation decision MUST emit a signed, replay-derivable Evidence Pack binding owner identity, the GVP module obligation discharged, and the Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "electronic-record-part11-integrity",
+      "claim_text": "Every AI-assisted action that creates, modifies, or signs a GxP electronic record MUST satisfy FDA 21 CFR Part 11 integrity controls — an attributable electronic signature bound to the record and a tamper-evident audit trail.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "gcp-protocol-deviation-authority",
+      "claim_text": "Every AI-assisted clinical-trial action that accepts, classifies, or remediates a protocol deviation MUST map to a named investigator or sponsor delegate with the prescribed authority under ICH E6(R3) Good Clinical Practice.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

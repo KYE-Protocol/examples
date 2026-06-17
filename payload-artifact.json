@@ -1,0 +1,41 @@
+{
+  "schema_version": "kye.payload_artifact.v1",
+  "payload_id": "kye:payload:req_01HX0YK7ME2TCJ7G4ZWB3X1Y8M",
+  "artifact_type": "payload",
+  "payload_type": "capability_invocation_request",
+  "state": "verified",
+  "actor_entity_id": "kye:agent:acme.example:finance-agent-007",
+  "principal_entity_id": "kye:org:acme.example",
+  "acting_on_behalf_of": "kye:org:acme.example",
+  "capability_id": "kye:capability:acme.example:skill:invoice-reconciliation",
+  "capability_version": "1.2.3",
+  "requested_action": "invoice.reconcile.prepare",
+  "resource": {
+    "resource_type": "invoice_batch",
+    "resource_id": "batch_789"
+  },
+  "integrity": {
+    "payload_hash": "kye-hash:1:01HXKYEPAYLOADHASHEXAMPLEABCDEF",
+    "canonicalization": "jcs-rfc8785",
+    "signature_algorithm": "ed25519",
+    "signature": "kye-sig:1:01HXKYESIGEXAMPLE000000000000000",
+    "signed_by_credential_id": "kye:credential:acme.example:agent-key-001",
+    "payload_hash_valid": true
+  },
+  "freshness": {
+    "nonce": "nonce_abc123def456",
+    "issued_at": "2026-05-05T21:00:00Z",
+    "expires_at": "2026-05-05T21:05:00Z",
+    "replay_protection": true,
+    "nonce_reused": false
+  },
+  "decision_binding": {
+    "decision_id": "kye:decision:acme.example:987",
+    "decision": "allow",
+    "reason_code": "authority_scope_state_capability_matched"
+  },
+  "audit": {
+    "audit_event_id": "kye:audit:acme.example:evt_001",
+    "evidence_pack_ref": "kye:evidence-pack:acme.example:payload_001"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:aml-financial-crimes:v1",
+  "partner_id": "kye:foundry-applicant:aml-financial-crimes-reference-partner",
+  "pack_name": "KYE AML & Financial-Crimes Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "aml-financial-crimes",
+  "bound_sector_pack_refs": ["kye:sector-pack:aml-financial-crimes"],
+  "bound_rule_pack_refs": ["kye:rule-pack:aml-financial-crimes"],
+  "bound_dictionary_refs": ["kye:dictionary:aml-financial-crimes"],
+  "bound_framework_refs": [
+    "kye:framework:fatf-40-recommendations",
+    "kye:framework:eu-6amld",
+    "kye:framework:us-bsa-fincen",
+    "kye:framework:wolfsberg-principles"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:aml-financial-crimes:2026-06-09",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    { "state": "draft", "at": "2026-06-09T12:00:00Z", "reason_ref": "kye:foundry:application:reference-template-aml-financial-crimes-001" }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:aml-financial-crimes:2026-06-09",
+  "claim_set": [
+    { "claim_id": "named-authority", "claim_text": "Every AI-assisted AML action that moves toward a consequential action MUST map to a recorded named-authority decision — the agent, the AML artefact (alert, screening hit, SAR/STR draft, onboarding case), the intended consequential action, and the named compliance officer / MLRO / BSA officer under whose authority it proceeds. Actions lacking a recorded authority decision are refused at the action-admissibility gate.", "approval_state": "draft" },
+    { "claim_id": "due-diligence", "claim_text": "Before an AI-assisted AML action proceeds to a consequential action it MUST carry a recorded due-diligence result — a CDD / KYC determination (FATF R.10; FinCEN CDD Rule), a screening determination (sanctions / PEP / adverse-media match assessment), and a risk determination (FATF R.1) where applicable. An unscreened, low-confidence, or due-diligence-deficient action is refused.", "approval_state": "draft" },
+    { "claim_id": "provenance-pin", "claim_text": "Every AI-assisted AML action that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the screened lists and list versions / pinned source data, the due-diligence result relied on, and the named-authority outcome — audit-grade, examiner-verifiable provenance verifiable offline, satisfying FATF R.11 and FinCEN / BSA record-keeping (31 CFR Chapter X).", "approval_state": "draft" },
+    { "claim_id": "signoff-gate", "claim_text": "An AI-assisted AML action MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — the compliance officer, the MLRO / nominated officer, or the BSA officer — records sign-off. The SAR/STR filing additionally requires §36 two-person sign-off (the drafting analyst AND an approving MLRO / BSA officer). Unreviewed AI-driven consequential actions are refused and routed dual-channel.", "approval_state": "draft" },
+    { "claim_id": "honest-scope", "claim_text": "KYE governs WHETHER an AI-assisted AML action may proceed at the action boundary and PROVES the basis. KYE does not run transaction-monitoring models, does not decide whether a transaction is truly money-laundering, and does not replace the institution's AML program.", "approval_state": "draft" }
+  ],
+  "effective_from": "2026-06-09T12:00:00Z",
+  "signature": { "alg": "ed25519", "key_id": "kid-kye-foundry-2026-06", "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY" }
+}

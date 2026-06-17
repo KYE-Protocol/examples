@@ -1,0 +1,10 @@
+{
+  "root_entity": "kye:ent:acme.com:org:compromised-subsidiary",
+  "cascaded_entities": [
+    "kye:agent:acme.com:runtime:subsidiary-agent-01",
+    "kye:agent:acme.com:runtime:subsidiary-agent-02",
+    "kye:ent:acme.com:connector:subsidiary-connector-01"
+  ],
+  "cascade_id": "kye:cascade:acme.com:rev-cascade-20260514-001",
+  "completed_at": "2026-05-14T16:00:00Z"
+}

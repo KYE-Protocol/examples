@@ -1,0 +1,28 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/metering-event.json",
+  "metering_event_id": "kye:metering_event:bank-z.eu:2026-05-08T12:00:00.001Z:01HX",
+  "schema_version": "kye.metering_event.v1",
+  "principal_entity_id": "kye:business:bank-z.eu:corp:acme-treasury-gmbh",
+  "actor_entity_id": "kye:agent:bank-z.eu:retail:shopping-bot",
+  "tenant_id": "tenant_acme",
+  "metric_name": "authorize_decision",
+  "quantity": 1,
+  "unit": "decision",
+  "policy_decision_id": "kye:decision:01HX0002",
+  "capability_id": "kye:capability:payment_action:card_purchase",
+  "audit_event_id": "kye:audit:event:01HX0010",
+  "occurred_at": "2026-05-08T12:00:00Z",
+  "idempotency_key": "kye:idem:dec:01HX0002",
+  "correlation_id": "kye:corr:agent_purchase_001",
+  "external_meter_provider": "stripe",
+  "external_meter_id": "mevt_1ABCdefGhIjKlmNOpQrStUvWxY",
+  "rate_at_event_time": {
+    "amount": 5,
+    "currency": "GBP",
+    "per_unit": "decision"
+  },
+  "metadata": {
+    "cost_centre": "CC-EU-PAYMENTS-01",
+    "stripe_customer_id": "cus_1ABCdefGhIjKlmNOpQrSt"
+  }
+}

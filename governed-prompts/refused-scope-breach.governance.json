@@ -1,0 +1,25 @@
+{
+  "schema": "kye.prompt.governance.v1",
+  "prompt_governance_id": "kye:prompt-gov:refused-scope-breach-001",
+  "agent_id": "kye:agent:support-bot",
+  "purpose_id": "kye:purpose:customer-support",
+  "scope": [
+    "read:faq"
+  ],
+  "target_model": "claude-opus-4",
+  "prompt_class": "data-extraction",
+  "prompt_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "attached_pii_categories": [
+    "account_number"
+  ],
+  "attached_kye_refs": [
+    "kye:entity:tenant-acme"
+  ],
+  "emitted_at": "2026-05-31T12:00:00Z",
+  "integration_ref": "kye:prompt-integration:mcp-intercept",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-prompt-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PROMPT-GOV-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:partner.kyeprotocol.com:01J4P9G00Q8RRSSTTUUUUUUUUUU",
+  "event_class": "kye.partner.certification.awarded",
+  "occurred_at": "2026-05-12T10:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:partner.kyeprotocol.com",
+    "trust_domain": "partner.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9G00Q8RRSSTTUUUUUUUUUU",
+  "severity": "info",
+  "payload": {
+    "certification_id": "kye:cert:partner.kyeprotocol.com:01J4P9G00Q8R",
+    "partner_entity_id": "kye:ent:contoso.example:business:contoso",
+    "track": "kye-implementation-partner-v1",
+    "level": "Implementer",
+    "awarded_at": "2026-05-12T10:00:00Z",
+    "valid_until": "2027-05-12T10:00:00Z",
+    "evidence_pack_id": "kye:evidence-pack:partner.kyeprotocol.com:01J4P9G00Q8R",
+    "assessors": [
+      "kye:ent:partner.kyeprotocol.com:assessor:01J4P0AAAA",
+      "kye:ent:partner.kyeprotocol.com:assessor:01J4P0BBBB"
+    ]
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "0223344556677889900aabbccddeeff11223344556677889900aabbccddeefff",
+    "ts": "1747044000"
+  }
+}

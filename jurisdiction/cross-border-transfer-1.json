@@ -1,0 +1,20 @@
+{
+  "id": "kye:cross-border-transfer:acme-health:20260524T120100Z",
+  "version": 1,
+  "tenant_id": "kye:tenant:acme-health",
+  "from": "canada",
+  "to": ["us"],
+  "lawful_basis": "standard_contractual_clauses",
+  "basis_ref": "kye:document:scc-eu-2021-914-mod2-acme-2026-05-12",
+  "decision_id": "kye:decision-map:acme-health:dx-2026-05-24-9c3a",
+  "subject_jurisdiction_canonical": "canada",
+  "subject_pii_class": "patient_data",
+  "at": "2026-05-24T12:01:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

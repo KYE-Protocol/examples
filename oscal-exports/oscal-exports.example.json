@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.oscal_export.v1.json",
+  "schema": "kye.oscal_export.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+  "notes": ["Illustrative kye.oscal_export.v1 instance. Canonical full registry: internal"],
+  "exports": [
+    { "id": "kye:oscal-export:example", "oscal_model": "component_definition", "oscal_version": "1.1.2", "source_registry": "internal" }
+  ]
+}

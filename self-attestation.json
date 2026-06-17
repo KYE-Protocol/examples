@@ -1,0 +1,32 @@
+{
+  "schema_version": "kye.self_attestation.v1",
+  "attestation_id": "kye:self-attestation:acme.example:agent-runtime:2026-05",
+  "organisation_entity_id": "kye:org:acme.example",
+  "implementation_name": "Acme Agent Runtime",
+  "implementation_version": "2.4.1",
+  "attestation_type": "self_attested_conformance",
+  "kye_versions": {
+    "core":               "1.0.0",
+    "authority_profile":  "1.0.0",
+    "capability_profile": "1.0.0",
+    "evidence_profile":   "1.0.0"
+  },
+  "claims": [
+    { "claim": "supports_kye_entity_schema",            "status": "true" },
+    { "claim": "supports_state_aware_authority_decisions","status": "true" },
+    { "claim": "emits_canonical_audit_events",          "status": "true" },
+    { "claim": "generates_decision_maps",               "status": "true" },
+    { "claim": "supports_evidence_pack_export",         "status": "true" }
+  ],
+  "self_audit_run_ref": "kye:self-audit:acme.example:run_001",
+  "evidence_pack_ref":  "kye:evidence-pack:acme.example:self-attestation-001",
+  "signed_by": "kye:user:acme.example:security-officer-001",
+  "signature": {
+    "algorithm": "ed25519",
+    "signature": "kye-sig:1:01HXKYESELFATTESTSIG0000000000000",
+    "signed_by_credential_id": "kye:credential:acme.example:security-officer-key"
+  },
+  "status": "signed",
+  "issued_at":  "2026-05-06T10:30:00Z",
+  "expires_at": "2026-08-06T10:30:00Z"
+}

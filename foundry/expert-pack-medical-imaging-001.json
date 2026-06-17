@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:medical-imaging:v1",
+  "partner_id": "kye:foundry-applicant:medical-imaging-reference-partner",
+  "pack_name": "KYE Medical Imaging Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "medical-imaging",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:medical-imaging"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:medical-imaging"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:medical-imaging"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:mhra-samd",
+    "kye:framework:mhra-mdr",
+    "kye:framework:eu-ai-act",
+    "kye:framework:uk-gdpr"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:medical-imaging:2026-06-06",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-06T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-medical-imaging-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:medical-imaging:2026-06-06",
+  "claim_set": [
+    {
+      "claim_id": "radiologist-signoff",
+      "claim_text": "Every AI-flagged or AI-interpreted imaging finding MUST map to a named radiologist or reporting clinician with the prescribed authority before it enters the diagnostic record. Findings lacking named-clinician sign-off are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "interpretation-evidence-pack",
+      "claim_text": "Every material AI-assisted image-interpretation decision MUST emit a signed, replay-derivable Evidence Pack binding owner identity, the model and version that produced the finding, the clinical obligation discharged, and the Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "samd-change-control",
+      "claim_text": "Every change to the model, algorithm, or version of a deployed imaging Software as a Medical Device MUST be authorised under a Predetermined Change Control Plan with named authority and supporting evidence before rollout.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "phi-minimisation",
+      "claim_text": "Every AI-assisted access to imaging personal data (including DICOM studies and embedded identifiers) MUST be purpose-scoped and minimised to what the declared clinical purpose requires.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-06T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

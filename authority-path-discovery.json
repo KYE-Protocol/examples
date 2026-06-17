@@ -1,0 +1,21 @@
+{
+  "schema_version": "kye.authority_path_discovery.v1",
+  "path_id": "kye:authority-path:001",
+  "actor_entity_id": "kye:agent:finance_agent_001",
+  "principal_entity_id": "kye:org:acme_ltd",
+  "requested_action": "payment.prepare",
+  "capability_id": "kye:capability:payment.prepare",
+  "path": [
+    { "node_type": "principal", "ref": "kye:org:acme_ltd" },
+    { "node_type": "delegation", "ref": "kye:delegation:finance_team_to_agent" },
+    { "node_type": "actor", "ref": "kye:agent:finance_agent_001" },
+    { "node_type": "capability", "ref": "kye:capability:payment.prepare" },
+    { "node_type": "authority_grant", "ref": "kye:authority:grant:payment_prepare_001" }
+  ],
+  "path_state": "valid",
+  "risk_summary": {
+    "risk_state": "elevated",
+    "warnings": ["authority_expires_within_7_days"]
+  },
+  "evidence_refs": ["kye:evidence-pack:authority_path_001"]
+}

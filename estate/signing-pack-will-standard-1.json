@@ -1,0 +1,26 @@
+{
+  "schema": "kye.estate.signing_pack.v1",
+  "signing_pack_id": "kye:estate:signing_pack:demo-tenant:sp-2026-05-27-001",
+  "matter_id": "kye:estate:matter:demo-tenant:matter-2026-05-27-001",
+  "issued_at": "2026-05-27T11:15:00Z",
+  "issued_by": "kye:actor:demo-tenant:manager-david",
+  "documents": [
+    { "document_id": "kye:estate:document:demo-tenant:doc-will-001", "document_kind": "will", "render_format": "pdf-a-2b", "render_hash": "sha256:1c9c2f134654b9e06296521b402f8a045578da9b1cfb09065bca4b14dae9082e", "page_count": 6 },
+    { "document_id": "kye:estate:document:demo-tenant:doc-execution-instructions-001", "document_kind": "execution_instructions", "render_format": "pdf-a-2b", "render_hash": "sha256:449421024f0efe8de02dcb9f44aba96119dc8a0d18946d84f30429eacb7056a7", "page_count": 2 },
+    { "document_id": "kye:estate:document:demo-tenant:doc-disclosure-summary-001", "document_kind": "disclosure_summary", "render_format": "pdf-a-2b", "render_hash": "sha256:053c1f7c3b48eb378e564fa0267d2c1c310fb16baffb79fc8df1bef8f382f8b7", "page_count": 1 }
+  ],
+  "binding_chain": {
+    "fact_find_id": "kye:estate:fact_find:demo-tenant:ff-2026-05-27-001",
+    "draft_manifest_id": "kye:estate:draft_manifest:demo-tenant:dm-2026-05-27-001",
+    "case_check_id": "kye:estate:case_check:demo-tenant:cc-2026-05-27-001",
+    "boundary_decision_id": "kye:estate:boundary_decision:demo-tenant:bd-2026-05-27-001"
+  },
+  "disclosures": [
+    { "disclosure_kind": "ai_assistance_disclosure", "text": "An AI Case Checker reviewed this draft for arithmetic, jurisdiction, and capacity consistency. The drafting itself was produced deterministically from the bound rule set and clause library — no AI authoring contributed to the will text. The checker raised one amber finding which was resolved by adviser amendment and confirmed by manager review prior to issuance." },
+    { "disclosure_kind": "scope_of_advice_disclosure", "text": "This will was prepared on the basis of the fact-find recorded under the bound binding_chain.fact_find_id. The adviser has not been instructed on, and this will does not address, lifetime tax planning, business succession, foreign-asset disposition, or trust structuring beyond standard residuary provisions." },
+    { "disclosure_kind": "fee_disclosure", "text": "Fees for this matter are set out in the engagement letter dated 2026-05-20 and were accepted at instruction." },
+    { "disclosure_kind": "complaints_handling_disclosure", "text": "Complaints about this advice may be raised first with the firm's Complaints Officer and, if unresolved within eight weeks, escalated to the Legal Ombudsman (or, where the matter is SRA-regulated, to the Solicitors Regulation Authority)." },
+    { "disclosure_kind": "data_processing_disclosure", "text": "Personal data collected for this matter is processed under UK GDPR Art. 6(1)(b) (contract) and Art. 6(1)(c) (legal obligation). Retention follows the firm's published retention schedule." }
+  ],
+  "execution_requirements": { "jurisdiction": "GB-EAW", "witness_count": 2, "attestation_clause_present": true, "certificate_provider_required": false }
+}

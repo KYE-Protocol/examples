@@ -1,0 +1,36 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-litigation-evidence-discovery-coverage:2026-06-10",
+  "emitted_at": "2026-06-10T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "FRCP_EDISCOVERY",
+    "FRE_AUTHENTICATION",
+    "SEDONA_PRINCIPLES",
+    "UK_CPR_PD57AD",
+    "EU_EVIDENCE_REGULATION"
+  ],
+  "subject": "kye:powered-pack:litigation-evidence-discovery:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-litigation-evidence-discovery-001-coverage-2026-06-10",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:litigation-evidence-discovery:v1",
+    "claim_count": 6,
+    "bound_rule_packs": ["kye:rule-pack:litigation-evidence-discovery"],
+    "bound_dictionaries": ["kye:dictionary:litigation-evidence-discovery"],
+    "bound_sector_packs": ["kye:sector-pack:litigation-evidence-discovery"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "litigation-evidence-discovery-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

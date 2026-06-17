@@ -1,0 +1,26 @@
+{
+  "schema": "kye.decision.shadow_evaluation.v1",
+  "id": "kye:shadow-eval:demo.payment-prepare.001.eval",
+  "version": 1,
+  "observed_action_id": "kye:observed-action:demo.payment-prepare.001",
+  "mode": "shadow",
+  "simulated_decision": "simulated_requires_approval",
+  "reasoning": [
+    { "engine": "entity",    "check": "actor_in_registry",                  "passed": true,  "detail": "supplier-payment-agent.v1 attested" },
+    { "engine": "authority", "check": "actor_holds_active_grant",           "passed": false, "detail": "no KYE Authority Grant for this agent + action pair" },
+    { "engine": "purpose",   "check": "claimed_purpose_in_taxonomy",        "passed": false, "detail": "supplier_payment_prepare not bound to an active Purpose Permission" },
+    { "engine": "scope",     "check": "amount_within_scope_threshold",      "passed": false, "detail": "amount 950 GBP exceeds 500 GBP unattended ceiling" },
+    { "engine": "rules",     "check": "four_eyes_required_above_500_gbp",   "passed": false, "detail": "rule R-DM-PAY-04 requires dual control" },
+    { "engine": "decision",  "check": "admissible_outcome",                 "passed": false, "detail": "admissible outcome is requires_approval" }
+  ],
+  "engines_run": ["entity", "authority", "purpose", "scope", "rules", "decision"],
+  "evaluated_at": "2026-05-12T11:00:00.200Z",
+  "production_action_blocked": false,
+  "would_have_blocked": true,
+  "decision_map_ref": "kye:decision-map:demo.payment-prepare.001",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:demo.shadow-eval.2026",
+    "value_b64": "ZGVtb19zaGFkb3dfZXZhbHVhdGlvbl9zaWduYXR1cmVfcGF5bWVudF9wcmVwYXJlX3BsYWNlaG9sZGVy"
+  }
+}

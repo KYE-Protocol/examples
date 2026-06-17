@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/state-model.json",
+  "entity_state": "active",
+  "authority_state": "active",
+  "delegation_state": "active",
+  "credential_state": "active",
+  "recovery_state": "none",
+  "risk_state": "normal"
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "kye.rule_pack_listing.v1",
+  "listing_id": "kye:listing:transparency.foundational",
+  "rule_pack_id": "kye:rule-pack:transparency",
+  "version": "1.0.0",
+  "display_name": "Transparency Statements — Foundational",
+  "tagline": "Disclose AI use to data subjects at the moment of decision. Maps to GDPR Art 13/14, EU AI Act Art 52, CCPA §1798.100(c).",
+  "long_description": "Generates signed kye.transparency.statement.v1 receipts before any privileged automated decision is communicated to a data subject. Captures: which system decided, which data was used, what the lawful basis is, how to contest, and how long the decision is retained.",
+  "publisher": {
+    "entity_id": "kye:org:kye-protocol",
+    "display_name": "KYE Protocol",
+    "tier": "first-party-kye",
+    "verified": true
+  },
+  "categories": ["compliance"],
+  "applies_to_regimes": ["GDPR", "EU_AI_ACT", "CCPA"],
+  "applies_to_jurisdictions": ["EU", "GB", "US"],
+  "pricing_model": { "model": "free" },
+  "verification": {
+    "conformance_pack_run_id": "kye:conformance-run:transparency-2026-05-15",
+    "conformance_passed": true,
+    "fixtures_passed": 12,
+    "fixtures_total": 12,
+    "signature": {
+      "alg": "EdDSA",
+      "kid": "kye:key:marketplace-signer-001",
+      "value_b64": "MEUCIQD1J2qI4fR4jO2avcEgQ4DpCn3h1U4tbtDk7b2u4S7NukMmD0qJ9zA5g0L6h6k1J3f3B7gI9L2C6p0bS1q5rU8vW"
+    },
+    "verified_at": "2026-05-15T08:00:00Z",
+    "verified_by_entity_id": "kye:org:kye-protocol"
+  },
+  "entitlements": { "support_tier": "community" },
+  "reviews_summary": { "count": 14, "avg_rating": 4.7 },
+  "telemetry": { "installs": 84, "active_tenants": 79, "evaluations_last_30d": 8400000 },
+  "status": "active",
+  "created_at": "2026-02-01T00:00:00Z",
+  "updated_at": "2026-05-15T08:00:00Z"
+}

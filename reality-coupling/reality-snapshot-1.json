@@ -1,0 +1,38 @@
+{
+  "schema_version": "kye.reality_snapshot.v1",
+  "snapshot_id": "kye:snapshot:acme:supplier-risk-registry:2026-05-14T12-30-00Z",
+  "anchor_id": "kye:anchor:acme:supplier-risk-registry",
+  "anchor_type": "risk_context",
+  "sampled_at": "2026-05-14T12:30:00Z",
+  "valid_until": "2026-05-14T13:30:00Z",
+  "source_version": "registry@2026-05-14T12-30Z",
+  "content_hash": "sha256:b2c1d3e4f5a6978899aabbccddeeff001122334455667788990011223344aabb",
+  "content_summary": {
+    "supplier_count": 1247,
+    "high_risk_count": 18,
+    "newly_flagged_since_last_snapshot": 2
+  },
+  "freshness": {
+    "age_seconds": 120,
+    "is_stale": false,
+    "max_staleness_seconds": 86400
+  },
+  "observations": [
+    {
+      "key": "supplier:kye:entity:acme:supplier:northwind-ltd:risk_rating",
+      "value": "high",
+      "as_of": "2026-05-14T12:28:00Z"
+    },
+    {
+      "key": "supplier:kye:entity:acme:supplier:northwind-ltd:sanctions_hit",
+      "value": false,
+      "as_of": "2026-05-14T12:28:00Z"
+    }
+  ],
+  "tags": ["supplier", "hourly-refresh"],
+  "signature": {
+    "alg": "ed25519",
+    "kid": "kye:key:acme:procurement-registry-2026-q2",
+    "sig": "base64:MEUCIQDexampleSignaturePayloadOnlyNotReal=="
+  }
+}

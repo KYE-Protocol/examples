@@ -1,0 +1,36 @@
+{
+  "schema": "kye.execution_layers.v1",
+  "manifest_id": "kye:execution-layers-manifest:example-2026-05-30",
+  "adopted_at": "2026-05-30",
+  "constitution_ref": "constitution/55-EXECUTION-LAYERS-ARCHITECTURE.md",
+  "layers": [
+    { "layer_id": "sensing", "ordinal": 1, "name": "Sensing Layer", "definition": "Observability of model invocations, tool calls, drift signals. Third-party platforms own this layer.", "kye_role": "consumes", "integration_partner_classes": ["observability_platform"], "anti_dilution_clause": "KYE is NOT an observability platform; KYE CONSUMES sensed events." },
+    { "layer_id": "capability_state", "ordinal": 2, "name": "Capability State Layer", "definition": "Model evaluations, red-team results, capability monitoring. Specialist evaluation labs own this layer.", "kye_role": "consumes", "integration_partner_classes": ["model_eval_lab"], "anti_dilution_clause": "KYE is NOT a model evaluation company; KYE CONSUMES capability profiles." },
+    { "layer_id": "influence_state", "ordinal": 3, "name": "Influence State Layer", "definition": "Distinguishes rubber-stamp from substantive human review.", "kye_role": "owns", "integration_partner_classes": ["influence_state_capture"], "owned_primitive_refs": ["kye:owned-primitive:ai-influence-state"], "anti_dilution_clause": "KYE OWNS AI Influence State." },
+    { "layer_id": "machine_state", "ordinal": 4, "name": "Machine State Layer", "definition": "Compute governance and hardware attestation. Hardware vendors own this layer.", "kye_role": "consumes", "integration_partner_classes": ["compute_attestation"], "anti_dilution_clause": "KYE is NOT a compute-governance platform; KYE CONSUMES hardware attestations." },
+    { "layer_id": "policy_evolution", "ordinal": 5, "name": "Policy Evolution Layer", "definition": "Governance bodies author and version policy. KYE preserves the version graph.", "kye_role": "integrates", "integration_partner_classes": ["policy_authoring_body"], "anti_dilution_clause": "KYE is NOT a policy-authoring platform; KYE PRESERVES and VERSIONS policy." },
+    { "layer_id": "learning_feedback", "ordinal": 6, "name": "Learning / Feedback Layer", "definition": "Recurring-failure detection. KYE produces the structured feedback signal.", "kye_role": "produces", "integration_partner_classes": ["feedback_aggregator"], "anti_dilution_clause": "KYE is NOT a learning platform; KYE PRODUCES recurring-failure feedback." },
+    { "layer_id": "response_enforcement", "ordinal": 7, "name": "Response / Enforcement Layer", "definition": "API gateways, payment rails, workflow engines. KYE decides; they enforce.", "kye_role": "decides_others_enforce", "integration_partner_classes": ["enforcement_gateway"], "owned_primitive_refs": ["kye:owned-primitive:action-admissibility", "kye:owned-primitive:authority-resolution"], "anti_dilution_clause": "KYE is NOT a gateway, payment rail, or workflow engine; KYE DECIDES and the enforcement layer ENFORCES." },
+    { "layer_id": "appeal_contestability", "ordinal": 8, "name": "Appeal / Contestability Layer", "definition": "Mechanism for affected parties to contest agentic decisions.", "kye_role": "provides_substrate", "integration_partner_classes": ["dispute_ui"], "anti_dilution_clause": "KYE is NOT a dispute-resolution product; KYE PROVIDES the Evidence and Replay substrate." },
+    { "layer_id": "liability_accountability", "ordinal": 9, "name": "Liability / Accountability Mapping Layer", "definition": "Legal accountability frameworks; SMCR-style named-person regimes.", "kye_role": "provides_substrate", "integration_partner_classes": ["legal_accountability_framework"], "anti_dilution_clause": "KYE is NOT a legal accountability framework; KYE PROVIDES the named-person evidence substrate." },
+    { "layer_id": "assurance_certification", "ordinal": 10, "name": "Assurance / Certification Layer", "definition": "Periodic third-party assurance of operating controls. KYE OWNS via KYE Seal.", "kye_role": "owns", "integration_partner_classes": ["assurance_certification_body"], "owned_primitive_refs": ["kye:owned-primitive:kye-seal", "kye:owned-primitive:evidence-finality"], "anti_dilution_clause": "KYE OWNS the Assurance Layer via KYE Seal." }
+  ],
+  "owned_primitives": [
+    { "primitive_id": "kye:owned-primitive:authority-resolution", "name": "Authority Resolution", "layer_id": "response_enforcement", "canonical_schema_ref": "internal" },
+    { "primitive_id": "kye:owned-primitive:ai-influence-state", "name": "AI Influence State", "layer_id": "influence_state", "canonical_schema_ref": "internal" },
+    { "primitive_id": "kye:owned-primitive:kye-seal", "name": "KYE Seal", "layer_id": "assurance_certification", "canonical_schema_ref": "internal" }
+  ],
+  "anti_dilution_clauses": [
+    { "clause_id": "kye:anti-dilution:not-observability", "text": "KYE is NOT an observability platform." },
+    { "clause_id": "kye:anti-dilution:not-model-eval", "text": "KYE is NOT a model evaluation company." },
+    { "clause_id": "kye:anti-dilution:not-compute-governance", "text": "KYE is NOT a compute-governance platform." },
+    { "clause_id": "kye:anti-dilution:not-grc", "text": "KYE is NOT a GRC tool." },
+    { "clause_id": "kye:anti-dilution:not-dispute", "text": "KYE is NOT a dispute resolution system." },
+    { "clause_id": "kye:anti-dilution:not-legal-framework", "text": "KYE is NOT a legal accountability framework." }
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "example-signature-base64url-placeholder-2026-05-30-execution-layers",
+    "signer_kid": "kye:signer:protocol-root:2026-q2"
+  }
+}

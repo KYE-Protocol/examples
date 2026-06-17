@@ -1,0 +1,17 @@
+{
+  "id": "kye:payment-proof-bundle:bot-01-2026-05-24-001",
+  "tenant_id": "kye:tenant:acme-health",
+  "bundle_id": "kye:payment-proof-bundle:bot-01-2026-05-24-001",
+  "intent_id": "kye:payment-intent:bot-01-2026-05-24-001",
+  "evidence_pack_id": "kye:evidence-pack:acme-health:px-2026-05-24-7f1b",
+  "replay_proof_id": "kye:replay-proof:px-2026-05-24-7f1b",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

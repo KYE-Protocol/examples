@@ -1,0 +1,20 @@
+{
+  "schema": "kye.authority.gap.v1",
+  "id": "kye:authority-gap:demo.missing-grant.001",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:demo.financial-services.q2-2026",
+  "observed_action_id": "kye:observed-action:demo.payment-prepare.001",
+  "shadow_evaluation_id": "kye:shadow-eval:demo.payment-prepare.001.eval",
+  "gap_class": "missing_authority_grant",
+  "severity": "high",
+  "description": "Agent supplier-payment-agent.v1 prepared a 950 GBP supplier payment with no unrevoked KYE Authority Grant binding the iam payments-prepare role to this agent. The same gap recurred 12 times across the 60-day observe window.",
+  "recommended_guard_id": "kye:guard-recommendation:demo.authority-gate.payments.001",
+  "evidence_pack_ref": "kye:evidence-pack:demo.payment-prepare.001",
+  "detected_at": "2026-05-12T11:00:00.400Z",
+  "closed_at": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:demo.authority-gap.2026",
+    "value_b64": "ZGVtb19hdXRob3JpdHlfZ2FwX3NpZ25hdHVyZV9wbGFjZWhvbGRlcl9taXNzaW5nX2dyYW50XzAwMQ"
+  }
+}

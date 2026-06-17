@@ -1,0 +1,13 @@
+{
+  "schema_version": "kye.authority_discovery_manifest.v1",
+  "manifest_id": "kye:registry:authority-discovery",
+  "display_name": "KYE Authority Discovery™ — assessment spec",
+  "version": "1.0.0",
+  "adopted_at": "2026-06-11",
+  "constitution_ref": "constitution/39-LEARN-RAIL.md + constitution/68-SECTOR-PRODUCT-RAIL.md",
+  "description": "Illustrative instance: the four authority-sprawl scores computed across an actor estate. Inventory only — Authority Discovery never enforces.",
+  "scores": ["authority-sprawl-score", "delegation-risk-score", "jurisdiction-exposure-score", "evidence-gap-score"],
+  "actor_classes": ["employee", "contractor", "agent", "copilot", "rag-system", "vendor", "workflow", "external-api"],
+  "sprawl_findings": ["orphaned-authority", "expired-authority", "over-broad-grant", "cross-border-unrailed", "evidence-absent"],
+  "skus": ["KYE-AUTHDISC-FREE-001"]
+}

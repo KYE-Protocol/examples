@@ -1,0 +1,101 @@
+{
+  "schema": "kye.authority_risk_signal.v1",
+  "signal_id": "kye:authority-risk-signal:56c078f35fec8f7462a984efc1d84821",
+  "tenant": "acme",
+  "trust_domain_id": "kye:trust-domain:acme",
+  "window": {
+    "start": "2026-06-10T00:00:00Z",
+    "end": "2026-06-11T00:00:00Z"
+  },
+  "generated_at": "2026-06-11T00:00:09Z",
+  "counts": {
+    "denials": 3,
+    "escalations": 2,
+    "unauthorised_attempts": 1,
+    "authority_drift": 1,
+    "evidence_gaps": 1,
+    "finality_suspensions": 1,
+    "revocations": 1
+  },
+  "top_event_refs": [
+    {
+      "audit_ref": "kye:audit:acme:ars-rv1",
+      "event_class": "revocations",
+      "severity": "critical",
+      "occurred_at": "2026-06-10T21:37:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-fs1",
+      "event_class": "finality_suspensions",
+      "severity": "high",
+      "occurred_at": "2026-06-10T19:20:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-es2",
+      "event_class": "escalations",
+      "severity": "high",
+      "occurred_at": "2026-06-10T15:55:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-ua1",
+      "event_class": "unauthorised_attempts",
+      "severity": "high",
+      "occurred_at": "2026-06-10T09:31:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-d1",
+      "event_class": "denials",
+      "severity": "high",
+      "occurred_at": "2026-06-10T02:14:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-ad1",
+      "event_class": "authority_drift",
+      "severity": "medium",
+      "occurred_at": "2026-06-10T13:02:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-es1",
+      "event_class": "escalations",
+      "severity": "medium",
+      "occurred_at": "2026-06-10T08:22:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-d2",
+      "event_class": "denials",
+      "severity": "medium",
+      "occurred_at": "2026-06-10T06:41:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-eg1",
+      "event_class": "evidence_gaps",
+      "severity": "low",
+      "occurred_at": "2026-06-10T17:48:00Z"
+    },
+    {
+      "audit_ref": "kye:audit:acme:ars-d3",
+      "event_class": "denials",
+      "severity": "low",
+      "occurred_at": "2026-06-10T11:09:00Z"
+    }
+  ],
+  "severity_mix": {
+    "low": 2,
+    "medium": 3,
+    "high": 4,
+    "critical": 1
+  },
+  "cadence": "daily",
+  "boundary": "KYE emits the authority-risk signal; the board / insurer / risk platform prices the exposure. This is not financial-risk quantification or advice.",
+  "jwks_ref": "/trust/self-audit-jwks.json",
+  "complements": [
+    "§21",
+    "§34",
+    "§13"
+  ],
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:authority-risk-signal-fixture-2026-06",
+    "signature_b64": "wBoBd6U0SuYeBQG4DGeRCKrRBphmglCUreFwAqiwCnXGreOeeMd7I2YCp2mEROSAHMf/bKNme0LIVI9qCpJ2BQ=="
+  }
+}

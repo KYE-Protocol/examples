@@ -1,0 +1,25 @@
+{
+  "id": "kye:jurisdiction-attestation:tenant-acme:2026-05-24",
+  "version": 1,
+  "tenant_id": "kye:tenant:acme-health",
+  "home_jurisdiction_canonical": "canada",
+  "processing_jurisdictions_canonical": ["canada", "us"],
+  "documented_cross_border_bases": [
+    {
+      "basis": "standard_contractual_clauses",
+      "from": "canada",
+      "to": ["us"],
+      "basis_ref": "kye:document:scc-eu-2021-914-mod2-acme-2026-05-12"
+    }
+  ],
+  "attested_at": "2026-05-24T12:00:00Z",
+  "not_after": "2027-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ],
+  "constitution_ref": "constitution/31-DATA-GOVERNANCE-PACK.md"
+}

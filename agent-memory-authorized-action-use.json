@@ -1,0 +1,52 @@
+{
+  "schema_id": "kye.agent_memory.v1",
+  "memory_id": "kye:agent-memory:acme-payments-agent-payee-preference-2026-06-03",
+  "tenant_id": "kye:tenant:acme-bank",
+  "agent_id": "kye:agent:payments-assistant",
+  "principal_id": "kye:principal:acme-customer-daniel-okoro",
+  "conversation_id": "support-2026-06-03T09:12:00Z-daniel-okoro",
+  "memory_class": "long_term",
+  "content": {
+    "stated_preference": "Customer authorised recurring rent payment to a named payee on the 1st of each month.",
+    "payee_alias": "landlord-monthly-rent",
+    "authority_anchor": "kye:authority-grant:acme-customer-daniel-okoro-standing-instruction-2026-06"
+  },
+  "classification": "restricted",
+  "retention_until": "2031-06-03T09:12:00Z",
+  "memory_source": "human_provided",
+  "created_by": "kye:principal:acme-customer-daniel-okoro",
+  "last_verified_at": "2026-06-03T09:12:00Z",
+  "consent_basis": "explicit_consent",
+  "scope": {
+    "tenant_bound": true,
+    "principal_bound": true,
+    "cross_agent_allowed": false,
+    "cross_org_allowed": false,
+    "purpose_tags": ["standing_instruction", "payment_execution"]
+  },
+  "provenance_ref": "kye:provenance:acme-payments-agent-consent-2026-06-03",
+  "content_hash": "sha256:1a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f80a",
+  "caller_kid": "kye:kid:payments-assistant-2026-q2",
+  "created_at": "2026-06-03T09:12:14Z",
+  "superseded_at": null,
+  "superseded_by": null,
+  "conflicting_memory_ids": [],
+  "ai_specific_notice": {
+    "notice_version": "2026-06",
+    "purpose_stated": "Remember a standing payment instruction so the payments agent can execute the recurring transfer on the customer's behalf.",
+    "data_categories": ["payment_instruction", "payee_alias", "authority_grant_reference"],
+    "model_function": "autonomous-action",
+    "opt_out_route": "Cancel the standing instruction in the banking app or submit a DSAR to withdraw and erase.",
+    "notice_ref": null,
+    "served_at": "2026-06-03T09:12:09Z"
+  },
+  "withdrawal_route": {
+    "channel": "self_service",
+    "dsar_ref": null,
+    "rights_disclosure_ref": "kye:rights-disclosure:memory-authority-rail",
+    "instructions": "Cancel the standing instruction from the banking app's recurring-payments screen, or submit a DSAR for erasure."
+  },
+  "use_type": "action",
+  "use_admissibility_ref": "kye:evidence-pack:acme-payments-agent-memory-use-2026-06-03T09-30-00Z",
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

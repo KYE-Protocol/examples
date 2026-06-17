@@ -1,0 +1,18 @@
+{
+  "schema_version": "kye.discovery_audit_event.v1",
+  "audit_event_id": "kye:audit:discovery_001",
+  "event_type": "kye.discovery.query_performed",
+  "query_id": "kye:discovery-query:001",
+  "requested_by_entity_id": "kye:user:security_admin_001",
+  "tenant_id": "tenant_acme",
+  "purpose": "security_review",
+  "query_type": "authority_path_search",
+  "result_count": 1,
+  "sensitive_fields_masked": true,
+  "policy_id": "kye:policy:discovery:security-admin",
+  "decision": "allow",
+  "reason_code": "discovery_policy_matched",
+  "timestamp": "2026-05-06T12:00:02Z",
+  "hash": "sha384:c0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffee",
+  "previous_hash": "sha384:beadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeadedbeaded"
+}

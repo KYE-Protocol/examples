@@ -1,0 +1,28 @@
+{
+  "schema": "kye.pricing_disclosure.v1",
+  "sku_id": "KYE-PARTNER-T0",
+  "pricing_envelope_ref": "kye.commercial.value_based_pricing.v1#/envelopes/by-sku/KYE-PARTNER-T0",
+  "pricing_model": "custom",
+  "currency": "GBP",
+  "internal_price_band": {
+    "floor": 500000,
+    "ceiling": 5000000,
+    "default": 1500000
+  },
+  "public_disclosure": {
+    "mode": "contact-for-pricing"
+  },
+  "negotiable": false,
+  "commission_split": {
+    "kye_pct_kye_sourced": 80,
+    "partner_pct_kye_sourced": 20,
+    "kye_pct_partner_sourced": 50,
+    "partner_pct_partner_sourced": 50,
+    "strategic_terms_ref": "internal#/strategic-deal-override"
+  },
+  "effective_from": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "review_cadence_days": 30,
+  "owners": ["ceo", "partner-channel-lead"],
+  "rationale": "Tier-1 / Custom Strategic Partner row per §26 §12 + §49. Bespoke pricing disclosed under NDA after scoping call. Canonical public phrase: 'Contact for pricing'. Hard floor; ceiling negotiated per deal."
+}

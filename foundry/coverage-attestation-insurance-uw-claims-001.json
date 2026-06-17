@@ -1,0 +1,36 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-insurance-underwriting-claims-coverage:2026-06-10",
+  "emitted_at": "2026-06-10T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "NAIC_MODEL_BULLETIN_AI",
+    "COLORADO_SB21_169",
+    "EU_AI_ACT_INSURANCE",
+    "NYDFS_INSURANCE_CIRCULAR_AI",
+    "GDPR_AUTOMATED_DECISION"
+  ],
+  "subject": "kye:powered-pack:insurance-underwriting-claims:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-insurance-uw-claims-001-coverage-2026-06-10",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:insurance-underwriting-claims:v1",
+    "claim_count": 6,
+    "bound_rule_packs": ["kye:rule-pack:insurance-underwriting-claims"],
+    "bound_dictionaries": ["kye:dictionary:insurance-underwriting-claims"],
+    "bound_sector_packs": ["kye:sector-pack:insurance-underwriting-claims"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "insurance-authority-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

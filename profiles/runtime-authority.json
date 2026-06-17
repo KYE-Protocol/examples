@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:runtime-authority",
+  "slug": "runtime-authority",
+  "display_name": "KYE Runtime Authority Profile™",
+  "layer": "runtime",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "How actions are evaluated at the Runtime Gateway — the seven-question contract (§0.3). Every privileged action MUST flow through the gateway and produce a Decision Map referencing an Authority Grant + Scope + Purpose. Every Decision is authorised_by exactly one Authority and scoped_to a Scope (ontology dictionary terms — §29 §4).",
+  "required_objects": ["Decision", "Authority", "Scope", "Purpose"],
+  "required_engines": ["kye:engine:runtime-gateway"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

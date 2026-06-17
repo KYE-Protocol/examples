@@ -1,0 +1,58 @@
+{
+  "schema_version": "kye.compliance_card.v1",
+  "card_id": "kye:card:acme.eu:agent:fx-router:v3.2.1",
+  "subject": {
+    "entity_id": "kye:agent:acme.eu:treasury:fx-router",
+    "name": "Acme Treasury FX Router",
+    "class": "ai_agent",
+    "version": "3.2.1",
+    "model_family": "Treasury-LLM-v3",
+    "trust_domain": "acme.eu"
+  },
+  "issuer": {
+    "entity_id": "kye:trust:acme.eu",
+    "trust_domain": "acme.eu",
+    "public_key": "ed25519:7f3aabe2c8c8a1f2e3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6"
+  },
+  "issued_at": "2026-05-04T14:22:00Z",
+  "expires_at": "2026-08-04T14:22:00Z",
+  "authority": {
+    "delegation_chain": [
+      "kye:human:acme.eu:cfo:gabrielle-koch",
+      "kye:human:acme.eu:treasurer-emea:luis-bauer",
+      "kye:agent:acme.eu:treasury:fx-router"
+    ],
+    "capability_profile": "pep",
+    "scope_summary": "USD <= $5M / EU + US corridors / no first-time beneficiaries",
+    "freshness_seconds": 240
+  },
+  "frameworks": [
+    { "framework_id": "psd3",     "framework_label": "PSD3",         "controls_satisfied": 12, "controls_total": 12 },
+    { "framework_id": "dora",     "framework_label": "DORA",         "controls_satisfied": 18, "controls_total": 18 },
+    { "framework_id": "euaiact",  "framework_label": "EU AI Act",    "controls_satisfied": 10, "controls_total": 10 },
+    { "framework_id": "iso27001", "framework_label": "ISO 27001",    "controls_satisfied": 47, "controls_total": 47 },
+    { "framework_id": "soc2",     "framework_label": "SOC 2",        "controls_satisfied": 64, "controls_total": 64 }
+  ],
+  "freshness": {
+    "audit_chain": 96,
+    "self_audit": 88,
+    "replay_test": 100,
+    "signal_bus_uptime": 99
+  },
+  "recovery": {
+    "break_glass_profile": "evidence-replay",
+    "open_recoveries": 0,
+    "last_fire_drill": "2026-04-22"
+  },
+  "attestation": {
+    "conformance_level": "L3_conformant",
+    "self_attested_at": "2026-05-04T14:22:00Z",
+    "self_tested_runs": "38 / 38 fixtures pass",
+    "certification_id": "kye:cert:acme.eu:fx-router:2026-q2"
+  },
+  "signature": {
+    "alg": "ed25519",
+    "value": "REPLACE_WITH_DETACHED_SIGNATURE_OVER_CANONICALISED_PAYLOAD",
+    "key_id": "kye:trust:acme.eu#key-2026"
+  }
+}

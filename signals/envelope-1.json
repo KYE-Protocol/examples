@@ -1,0 +1,27 @@
+{
+  "schema_version": "kye.signal.envelope.v1",
+  "signal_id": "kye:sig:acme.com:entity-engine:01HZ9RTEST000000000000001",
+  "signal_type": "entity.created",
+  "tenant_id": "kye:ent:acme.com:org:acme-corp",
+  "workspace_id": null,
+  "emitted_at": "2026-05-14T10:00:00Z",
+  "emitter": "kye:agent:acme.com:runtime:entity-engine-v1",
+  "payload": {
+    "entity_id": "kye:agent:acme.com:runtime:billing-agent-01",
+    "entity_class": "agent",
+    "trust_domain": "acme.com",
+    "snapshot": {
+      "schema_version": "kye.entity.agent.v1",
+      "kyeid": "kye:agent:acme.com:runtime:billing-agent-01",
+      "class": "agent",
+      "lifecycle_state": "proposed"
+    }
+  },
+  "signature": {
+    "alg": "ed25519",
+    "kid": "kye:key:acme.com:signing:dispatcher-2026-01",
+    "value_b64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "delivery_attempts": 0,
+  "idempotency_key": "entity-engine:01HZ9RTEST000000000000001"
+}

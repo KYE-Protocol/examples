@@ -1,0 +1,31 @@
+{
+  "schema_version": "kye.formal_rules_profile.v1",
+  "profile_id": "kye:profile:formal_rules",
+  "display_name": "KYE Formal Rules Profile™",
+  "category": "rights_obligations_governance",
+  "version": "1.0.0",
+  "description": "Defines permissions, obligations, prohibitions, powers, exceptions and governance meta-rules for delegated authority systems.",
+  "required_kye_profiles": [
+    "kye.core.v1", "kye.identity.v1", "kye.authority.v1", "kye.scope.v1",
+    "kye.state.v1", "kye.decision.v1", "kye.evidence.v1"
+  ],
+  "recommended_kye_profiles": [
+    "kye.ontology.v1", "kye.discoverability.v1", "kye.continuity.v1", "kye.operating_model.v1"
+  ],
+  "required_objects": [
+    "KYEFormalRule", "KYEPermission", "KYEObligation", "KYEProhibition",
+    "KYEPower", "KYEException", "KYEGovernanceRule",
+    "KYERuleConflict", "KYERuleProof", "KYEObligationState"
+  ],
+  "rule_families": [
+    "permission", "obligation", "prohibition", "power",
+    "immunity", "exception", "meta_governance"
+  ],
+  "decision_outputs": [
+    "allow", "deny", "prohibited", "require_approval", "require_step_up", "quarantine",
+    "obligation_created", "obligation_satisfied", "obligation_breached",
+    "override_required", "human_review_required", "evidence_required"
+  ],
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

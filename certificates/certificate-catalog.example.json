@@ -1,0 +1,24 @@
+{
+  "schema": "kye.certificate_catalog.v1",
+  "registry_id": "kye:registry:certificates",
+  "display_name": "KYE Certificate Programs™",
+  "constitution_ref": "constitution/66-CERTIFICATES-RAIL.md",
+  "programs": [
+    {
+      "program_id": "kye:certificate:agentic-governance-builder",
+      "name": "KYE Agentic Governance Builder Certificate",
+      "summary": "The practitioner credential for people who build and operate governed AI agents on KYE Protocol.",
+      "kind": "practitioner",
+      "tiers": ["Associate", "Builder", "Builder · Compliance Automation"],
+      "issuer": "kye:org:kye_protocol",
+      "framework_refs": ["eu-ai-act", "nist-ai-rmf", "iso-42001"],
+      "pricing": "paid",
+      "renewal_period_months": 24,
+      "verifiable_by": "exam",
+      "record_schema_ref": "kye.consultant_certification.v1",
+      "audience": "developer",
+      "status": "draft",
+      "adopted_at": "2026-06-05"
+    }
+  ]
+}

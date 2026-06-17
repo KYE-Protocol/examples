@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.invoice.v1.json",
+  "schema": "kye.invoice.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/23-BILLING-METERING.md",
+  "notes": ["Illustrative kye.invoice.v1 instance. Canonical full registry: internal"],
+  "invoices": [
+    { "id": "kye:invoice:example", "status": "open", "currency": "USD", "amount_minor": 500000, "issued_at": "2026-05-31T00:00:00Z" }
+  ]
+}

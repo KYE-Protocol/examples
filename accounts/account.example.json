@@ -1,0 +1,14 @@
+{
+  "account_id": "kye:account:01HZAA22-acme",
+  "tenant_id": "kye:tenant:acme-payments",
+  "email": "ciso@acme-payments.example",
+  "organisation": "Acme Payments Ltd",
+  "source": "claude-code-plugin",
+  "api_key_prefix": "kye_pk_a1b2c3d4",
+  "state": "pending_verification",
+  "created_at": "2026-05-25T10:00:00Z",
+  "free_tier_quotas": {
+    "diagnostic_seals_per_month": 3
+  },
+  "accept_terms": true
+}

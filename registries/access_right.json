@@ -1,0 +1,16 @@
+{
+  "id": "kye:access-right:caseworker-to-bot-send-email",
+  "tenant_id": "kye:tenant:acme-health",
+  "delegation_id": "kye:delegation:caseworker-to-bot-2026-05-24",
+  "action_class": "send_customer_email",
+  "resource_scope": "customer_account:9631119",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

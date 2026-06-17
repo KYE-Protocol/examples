@@ -1,0 +1,57 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:ai-solutions-framework-authority:v1",
+  "partner_id": "kye:foundry-applicant:ai-solutions-framework-authority-reference-partner",
+  "pack_name": "KYE AI Solutions Framework Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "ai-solutions-framework-authority",
+  "bound_sector_pack_refs": ["kye:sector-pack:ai-solutions-framework-authority"],
+  "bound_rule_pack_refs": ["kye:rule-pack:ai-solutions-framework-authority"],
+  "bound_dictionary_refs": ["kye:dictionary:ai-solutions-framework-authority"],
+  "bound_framework_refs": [
+    "kye:framework:ai-solutions-framework"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:ai-solutions-framework-authority:2026-06-09",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-09T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-ai-solutions-framework-authority-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:ai-solutions-framework-authority:2026-06-09",
+  "claim_set": [
+    {
+      "claim_id": "named-authority",
+      "claim_text": "Every AI-supported decision or agent action that moves toward a consequential action MUST map to a recorded named-authority approval — the agent, the decision artefact, the intended consequential action, and the named human authority under whose approval it proceeds. Actions lacking a recorded approval are refused at the action-admissibility gate. Maps the AI Solutions Framework approval-workflow + accountability safeguards.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "attestation",
+      "claim_text": "Before an AI-supported action proceeds it MUST carry a recorded due-diligence / risk attestation — a risk-tier determination plus a competence / control-applicability screen. An unscreened, low-confidence, or attestation-deficient action is refused. Maps the AI Solutions Framework attestation safeguard.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "human-oversight-gate",
+      "claim_text": "An AI-supported action MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer records sign-off at the human-oversight stage gate; high-impact actions configured for two-person review require §36 two-person sign-off. Unreviewed AI-driven consequential actions are refused and routed dual-channel. Maps the AI Solutions Framework human-oversight / stage-gate safeguard.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "exception-register",
+      "claim_text": "Any deviation from, or override of, an AI control MUST be recorded as a signed, replay-provable exception binding the deviation, its justification, and the approving authority before the action proceeds. An override not recorded as an exception is refused. Maps the AI Solutions Framework exception-register safeguard.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs ONLY the runtime-authority-resolvable subset of the AI Solutions Framework and PROVES the basis. KYE does not author the governance policy, run the risk committee, maintain the AI inventory, deliver the training, or verify the deploy-time infrastructure posture. The infrastructure-posture / CSPM safeguards are ceded to an external posture layer KYE COMPLEMENTS — an AI-adoption programme needs BOTH a posture layer AND a runtime authority+evidence layer. Coverage is never inflated to 100%.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-09T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

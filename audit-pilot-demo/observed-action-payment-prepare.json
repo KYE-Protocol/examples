@@ -1,0 +1,29 @@
+{
+  "schema": "kye.evidence.observed_action.v1",
+  "id": "kye:observed-action:demo.payment-prepare.001",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:demo.financial-services.q2-2026",
+  "actor": "kye:agent:demo.supplier-payment-agent.v1",
+  "on_behalf_of": "kye:ent:demo.finance-ops",
+  "action": "payment.prepare",
+  "target": {
+    "type": "invoice",
+    "ref": "inv_123",
+    "data_classes": ["financial.payments", "vendor.invoice"]
+  },
+  "claimed_authority": {
+    "source": "iam_role",
+    "ref": "iam:role:payments-prepare",
+    "issuer": "iam:org:demo"
+  },
+  "claimed_purpose": "supplier_payment_prepare",
+  "observed_at": "2026-05-12T11:00:00Z",
+  "stack_binding": "kye:stack-binding:demo.api-gateway",
+  "request_fingerprint": "fp_demo_001231aabbcc",
+  "production_action_blocked": false,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:demo.stack-binding.2026",
+    "value_b64": "ZGVtb19vYnNlcnZlZF9hY3Rpb25fc2lnbmF0dXJlX3BheW1lbnRfcHJlcGFyZV9wbGFjZWhvbGRlcg"
+  }
+}

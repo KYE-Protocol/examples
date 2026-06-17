@@ -1,0 +1,10 @@
+{
+  "incident_id": "kye:incident:acme.com:sec:inc-20260514-001",
+  "severity": "high",
+  "title": "Capability overreach detected on billing-agent-01 — possible privilege escalation attempt",
+  "entity_refs": [
+    "kye:agent:acme.com:runtime:billing-agent-01"
+  ],
+  "opened_at": "2026-05-14T10:11:00Z",
+  "opened_by": "kye:agent:acme.com:runtime:incident-detector-v1"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "kye:decision-map:platform.spof-phase2.01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
+  "version": 1,
+  "decision_id": "kye:decision:platform.spof-phase2.01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
+  "nodes": [
+    {
+      "id": "in.request",
+      "type": "input",
+      "label": "§51 Phase 2 closure purpose request",
+      "payload_ref": "kye:purpose-req:platform:01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
+      "payload_hash": "sha256:a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01",
+      "signature": "sig:cose:in.request:MEUCIQDr5Yq8Z3p1M4nP0wT2sH7vC9bL"
+    },
+    {
+      "id": "in.spof-registry-current",
+      "type": "input",
+      "label": "Pre-closure SPOF registry (none=4)",
+      "payload_ref": "internal#pre-phase2",
+      "payload_hash": "sha256:b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef0102",
+      "signature": "sig:cose:in.spof-registry-current:MEUCIQDb8Wp2X4q9N5oQ1xV3tJ8wD0aM"
+    },
+    {
+      "id": "in.constitutional-amendment-draft",
+      "type": "input",
+      "label": "Draft §51 §8 Phase 2 Closures",
+      "payload_ref": "constitution/51-NO-SPOF.md#phase2-closures-2026-05-27",
+      "payload_hash": "sha256:c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203",
+      "signature": "sig:cose:in.amendment:MEUCIQDc9Xr3Y5r0O6pR2yW4uK9xE1bN"
+    },
+    {
+      "id": "rule.banking-grade-admissibility",
+      "type": "rule",
+      "label": "Closure must be banking-grade contract-deployable",
+      "payload_hash": "sha256:d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01020304",
+      "signature": "sig:cose:rule.banking:MEUCIQDd0Ys4Z6s1P7qS3zX5vL0yF2cO"
+    },
+    {
+      "id": "rule.no-new-spof-introduced",
+      "type": "rule",
+      "label": "§51 §0 invariant — no new single-vendor dependency",
+      "payload_hash": "sha256:e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef0102030405",
+      "signature": "sig:cose:rule.no-new-spof:MEUCIQDe1Zt5A7t2Q8rT4aY6wM1zG3dP"
+    },
+    {
+      "id": "obl.emit-cohort-manifest",
+      "type": "obligation",
+      "label": "Emit multisig-cohort-manifest.json",
+      "payload_hash": "sha256:f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203040506",
+      "signature": "sig:cose:obl.cohort-manifest:MEUCIQDf2au6B8u3R9sU5bZ7xN2aH4eQ"
+    },
+    {
+      "id": "obl.emit-deploy-manifest",
+      "type": "obligation",
+      "label": "Emit multi-vendor-deploy-manifest.json",
+      "payload_hash": "sha256:0718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01020304050607",
+      "signature": "sig:cose:obl.deploy-manifest:MEUCIQDg3bv7C9v4S0tV6cA8yO3bI5fR"
+    },
+    {
+      "id": "obl.emit-drafting-failover-manifest",
+      "type": "obligation",
+      "label": "Emit drafting-failover-manifest.json",
+      "payload_hash": "sha256:18293a4b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708",
+      "signature": "sig:cose:obl.drafting-manifest:MEUCIQDh4cw8D0w5T1uW7dB9zP4cJ6gS"
+    },
+    {
+      "id": "obl.lift-spof-rows",
+      "type": "obligation",
+      "label": "Lift 3 SPOF rows from none → partial in registry.json",
+      "payload_hash": "sha256:8293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203040506070809",
+      "signature": "sig:cose:obl.spof-lift:MEUCIQDi5dx9E1x6U2vX8eC0aQ5dK7hT"
+    },
+    {
+      "id": "out.decision",
+      "type": "output",
+      "label": "Allow — §51 Phase 2 closure ratified",
+      "payload_hash": "sha256:293a4b5c6d7e8f9012345678abcdef0123456789abcdef01020304050607080910",
+      "signature": "sig:cose:out.decision:MEUCIQDj6ey0F2y7V3wY9fD1bR6eL8iU"
+    }
+  ],
+  "edges": [
+    { "from": "in.request",                       "to": "rule.banking-grade-admissibility", "kind": "feeds" },
+    { "from": "in.spof-registry-current",         "to": "rule.banking-grade-admissibility", "kind": "feeds" },
+    { "from": "in.constitutional-amendment-draft","to": "rule.banking-grade-admissibility", "kind": "feeds" },
+    { "from": "in.constitutional-amendment-draft","to": "rule.no-new-spof-introduced",      "kind": "feeds" },
+    { "from": "rule.banking-grade-admissibility", "to": "obl.emit-cohort-manifest",         "kind": "triggers" },
+    { "from": "rule.banking-grade-admissibility", "to": "obl.emit-deploy-manifest",         "kind": "triggers" },
+    { "from": "rule.banking-grade-admissibility", "to": "obl.emit-drafting-failover-manifest","kind": "triggers" },
+    { "from": "rule.no-new-spof-introduced",      "to": "obl.lift-spof-rows",               "kind": "triggers" },
+    { "from": "obl.emit-cohort-manifest",         "to": "out.decision",                     "kind": "satisfies" },
+    { "from": "obl.emit-deploy-manifest",         "to": "out.decision",                     "kind": "satisfies" },
+    { "from": "obl.emit-drafting-failover-manifest","to": "out.decision",                   "kind": "satisfies" },
+    { "from": "obl.lift-spof-rows",               "to": "out.decision",                     "kind": "satisfies" }
+  ],
+  "output_node_id": "out.decision",
+  "created_at": "2026-05-27T10:00:02Z"
+}

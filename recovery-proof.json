@@ -1,0 +1,37 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/recovery-proof.json",
+  "recovery_proof_id": "kye:recovery_proof:01HXY7Q8RECOVERY3PROOF8EXAMPLE001",
+  "recovery_request_id": "kye:recovery_request:01HXY7Q8REQUEST7000000000000000001",
+  "recovery_decision_id": "kye:recovery_decision:01HXY7Q8DECISION700000000000000001",
+  "subject_entity_id": "kye:ent:acme.example:ai_agent:01HXY7Q800000000000000000000000001",
+  "evidence_refs": [
+    "kye:prf:acme.example:01HXY7Q800EVIDENCE0000000000000001",
+    "kye:prf:acme.example:01HXY7Q800EVIDENCE0000000000000002"
+  ],
+  "approver_refs": [
+    "kye:ent:acme.example:person:approver-01"
+  ],
+  "previous_keys_revoked": [
+    "kye:key:acme.example:ed25519:revoked-2026-04-01"
+  ],
+  "new_keys_issued": [
+    "kye:key:acme.example:ed25519:issued-2026-05-07"
+  ],
+  "authority_diff": {
+    "restored": ["kye:acr:acme.example:treasury.read"],
+    "reduced":  ["kye:acr:acme.example:treasury.write:limited-1k-eur-daily"],
+    "removed":  ["kye:acr:acme.example:break-glass.payments-execute"]
+  },
+  "audit_event_ids": [
+    "kye:aud:acme.example:01HXY7Q800AUDIT00000000000000001A",
+    "kye:aud:acme.example:01HXY7Q800AUDIT00000000000000002B"
+  ],
+  "bundle_hash": "sha256:7f1a8e0bd5e2c8a3f4b1d6e7c8a9b0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7",
+  "transparency_receipt_id": "kye:trn:acme.example:01HXY7Q800TRN0000000000000000001",
+  "created_at": "2026-05-07T08:30:00Z",
+  "signature": {
+    "kid": "kye:key:acme.example:ed25519:issuer-2026-q2",
+    "alg": "EdDSA",
+    "signature_b64": "MEUCIQDxample0SignatureBase64Encoded00000000000000000000Example=="
+  }
+}

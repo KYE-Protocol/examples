@@ -1,0 +1,276 @@
+{
+  "schema": "kye.authority_controls.v1",
+  "registry_id": "kye:authority-controls:canonical-v1",
+  "version": "1.0",
+  "issued_at": "2026-05-29T00:00:00Z",
+  "effective_from": "2026-05-29",
+  "constitution_refs": [
+    "constitution/12-PURPOSE-PERMISSION.md",
+    "constitution/13-RESILIENCE-LOOP.md",
+    "constitution/21-DELEGATED-AUDITABILITY.md",
+    "constitution/30-AUDIT-WORM-RETENTION.md",
+    "constitution/36-GOVERNEDUI.md",
+    "constitution/52-DELEGATED-AGENT-BINDING.md"
+  ],
+  "controls": [
+    {
+      "control_id": "KAC-1",
+      "title": "Entity Registry",
+      "category": "entity",
+      "description": "Every principal, grantee, agent, and counterparty acting in the system carries a verified KYE entity record with a stable URN and an authoritative root-of-trust. Anonymous parties cannot mint authority.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/entity.json",
+        "https://kyeprotocol.com/schemas/kye.governedui.entity_passport.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "kye-pdp"
+      ],
+      "binding_constitution_refs": [
+        "constitution/14-AGENTS-AND-ENGINES.md"
+      ],
+      "adg_crosswalk": ["ADG/Identity surface", "ADG/MC-1"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-2",
+      "title": "Delegation Envelope",
+      "category": "delegation",
+      "description": "Every act-on-behalf-of relationship is recorded as a signed, time-bounded Purpose Permission grant — principal, grantee, purpose, scope, restrictions, not_before, not_after, signature. No implicit delegation.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.purpose.grant.v1.json",
+        "https://kyeprotocol.com/schemas/kye.delegation.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "kye-pdp"
+      ],
+      "binding_constitution_refs": [
+        "constitution/12-PURPOSE-PERMISSION.md"
+      ],
+      "adg_crosswalk": ["ADG/Delegation surface", "ADG/MC-2"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-3",
+      "title": "Chain of Authority Map",
+      "category": "authority-chain",
+      "description": "For every cross-organisation delegation, the full federated chain — root principal through every intermediary — is signed and replayable. Cross-org acts cannot float free of their root.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.federation.cross_org_delegation.v1.json",
+        "https://kyeprotocol.com/schemas/kye.delegation_chain.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/12-PURPOSE-PERMISSION.md",
+        "constitution/21-DELEGATED-AUDITABILITY.md"
+      ],
+      "adg_crosswalk": ["ADG/Agentic orchestration", "ADG/MC-3"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-4",
+      "title": "Tool & MCP Authority Register",
+      "category": "tool-mcp",
+      "description": "Every tool and MCP server the agent may call is enumerated in a signed register with trust tier, permitted agents, permitted actions, data-access scope, write permissions, and per-invocation evidence requirements. Unregistered tool calls are refused.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.tool_mcp_register.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "kye-pdp"
+      ],
+      "binding_constitution_refs": [
+        "constitution/15-MCP-AND-SDK.md",
+        "constitution/52-DELEGATED-AGENT-BINDING.md"
+      ],
+      "adg_crosswalk": ["ADG/MC-7 Tools & MCP Register"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-5",
+      "title": "Action Admissibility Gate",
+      "category": "admissibility",
+      "description": "Before any side-effect the system runs a pure-function admissibility check matching the requested action against an active grant. Same inputs, same decision, replayable from public keys alone.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "kye-pdp"
+      ],
+      "binding_constitution_refs": [
+        "constitution/12-PURPOSE-PERMISSION.md"
+      ],
+      "adg_crosswalk": ["ADG/Admissibility floor", "ADG/MC-5"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-6",
+      "title": "Runtime Policy Resolution",
+      "category": "policy",
+      "description": "Every authority decision is bound to the exact policy artefact that produced it — schema, rule pack, framework clause — so the resolved decision graph for any action is reproducible at any time.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.evidence.decision_map.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/13-RESILIENCE-LOOP.md"
+      ],
+      "adg_crosswalk": ["ADG/Policy resolution", "ADG/MC-6"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-7",
+      "title": "Evidence Capture at T=0",
+      "category": "evidence",
+      "description": "The evidence pack for every privileged action is sealed at the instant the action takes place — not after the fact. Late-binding evidence is rejected by the WORM tier.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/13-RESILIENCE-LOOP.md",
+        "constitution/30-AUDIT-WORM-RETENTION.md"
+      ],
+      "adg_crosswalk": ["ADG/Runtime monitoring", "ADG/MC-9"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-8",
+      "title": "Replay Proof",
+      "category": "replay",
+      "description": "From the public keys alone any auditor can reconstruct the exact decision chain and re-derive the admissibility verdict bit-for-bit. The trace-replay spec is signed and survives key rotation.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.evidence.trace_replay_spec.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/13-RESILIENCE-LOOP.md",
+        "constitution/21-DELEGATED-AUDITABILITY.md"
+      ],
+      "adg_crosswalk": ["ADG/Forensic replay", "ADG/MC-10"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-9",
+      "title": "Authority Finality Record",
+      "category": "finality",
+      "description": "When an action completes the protocol records six bound fields — principal, grantee, purpose, scope, signature, attestation — making the authority chain provably terminal. Authority Finality is the floor of A3.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.estate.authority_finality.v1.json",
+        "https://kyeprotocol.com/schemas/kye.risk.authority_register.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/13-RESILIENCE-LOOP.md"
+      ],
+      "adg_crosswalk": ["ADG/Decision rights", "ADG/MC-11"],
+      "autonomy_tiers_required": ["A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-10",
+      "title": "Revocation and Expiry Control",
+      "category": "revocation",
+      "description": "Every grant carries a not_after and a revocation channel. Admissibility checks consult the revocation register on every request — a revoked grant cannot authorise an action even if it is otherwise in-scope.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.purpose.grant.v1.json",
+        "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/12-PURPOSE-PERMISSION.md"
+      ],
+      "adg_crosswalk": ["ADG/Lifecycle control", "ADG/MC-8"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-11",
+      "title": "Human Oversight and Escalation",
+      "category": "oversight",
+      "description": "Pre-declared critical-point reviews lift the relevant action into the GovernedUI surface where the named decision-owner must approve before the agent proceeds. The escalation channel is signed and audited.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.governedui.critical_point_review.v1.json",
+        "https://kyeprotocol.com/schemas/kye.governedui.approval.v1.json",
+        "https://kyeprotocol.com/schemas/kye.governedui.action_proposal.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/36-GOVERNEDUI.md"
+      ],
+      "adg_crosswalk": ["ADG/Human oversight", "ADG/MC-12"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    },
+    {
+      "control_id": "KAC-12",
+      "title": "KYE Seal — Assurance Record",
+      "category": "certification",
+      "description": "A periodic compliance attestation envelope binds the operating control set to the named regulatory frameworks for the attestation window. The seal is renewable, revocable, and externally verifiable.",
+      "binding_schemas": [
+        "https://kyeprotocol.com/schemas/kye.compliance.attestation.v1.json",
+        "https://kyeprotocol.com/schemas/kye.attestation.v1.json"
+      ],
+      "binding_engines": [
+        "internal",
+        "internal"
+      ],
+      "binding_constitution_refs": [
+        "constitution/00-INDEX.md",
+        "constitution/21-DELEGATED-AUDITABILITY.md"
+      ],
+      "adg_crosswalk": ["ADG/Assurance record", "ADG/Board reporting"],
+      "autonomy_tiers_required": ["A2", "A3"],
+      "mandatory_for_kye_powered_badge": true,
+      "effective_from": "2026-05-29"
+    }
+  ],
+  "signature": {
+    "alg": "ed25519",
+    "value": "kac-canonical-v1-2026-05-29-ed25519-anchor-signature-placeholder-resolved-by-signing-engine",
+    "key_id": "kye:signing-key:kac-registry-2026"
+  }
+}

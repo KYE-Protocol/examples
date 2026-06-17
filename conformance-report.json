@@ -1,0 +1,60 @@
+{
+  "report_id": "kye:rpt:vendorA.example:01JYRPT000000000000000XZ",
+  "issued_at": "2026-05-05T13:00:00Z",
+  "subject": {
+    "gateway_url": "https://gateway.vendora.example",
+    "vendor": "VendorA",
+    "release": "1.0.7",
+    "deployment_topology": "saas",
+    "kye_version_advertised": "1.0",
+    "kye_profiles_advertised": [
+      "core",
+      "pdp",
+      "pep",
+      "pep",
+      "evidence-replay"
+    ]
+  },
+  "conformance_pack_version": "1.0.0",
+  "kye_version": "1.0",
+  "tier_claimed": "tier-1-bank",
+  "fixtures": [
+    {
+      "fixture_id": "registration/01",
+      "name": "Register an ai_agent and confirm immutable block",
+      "category": "core",
+      "outcome": "pass",
+      "duration_ms": 12,
+      "started_at": "2026-05-05T12:59:41Z"
+    },
+    {
+      "fixture_id": "stop-cascade/01",
+      "name": "Entity stop signal forces deny on subsequent authorize",
+      "category": "core",
+      "outcome": "pass",
+      "duration_ms": 47,
+      "started_at": "2026-05-05T12:59:42Z"
+    },
+    {
+      "fixture_id": "capability-grant-cascade/01",
+      "name": "Stop entity revokes its capability grants",
+      "category": "capability",
+      "outcome": "pass",
+      "duration_ms": 19
+    }
+  ],
+  "summary": {
+    "total": 37,
+    "passed": 37,
+    "failed": 0,
+    "skipped": 0,
+    "started_at": "2026-05-05T12:59:00Z",
+    "ended_at": "2026-05-05T13:00:00Z",
+    "wall_clock_ms": 60000
+  },
+  "verdict": {
+    "status": "conformant",
+    "narrative": "All 37 v1.0 fixtures pass; tier-1-bank latency targets met (authorize p99 = 38 ms, cascade p99 = 142 ms).",
+    "tier_claim_validated": true
+  }
+}

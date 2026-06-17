@@ -1,0 +1,10 @@
+{
+  "schema": "kye.engagement.obligation.v1",
+  "obligation_id": "kye:obligation:partner:nda",
+  "engagement_type": "partner",
+  "clause": "Partner shall execute and uphold the KYE Mutual NDA covering all non-public materials, customer data, roadmap disclosures, and pre-release SDK access shared during the engagement.",
+  "verifiable_by": "document-upload",
+  "frequency": "once",
+  "severity": "critical",
+  "regulatory_anchor": "Common-law confidentiality"
+}

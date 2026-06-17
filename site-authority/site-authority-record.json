@@ -1,0 +1,126 @@
+{
+  "schema_version": "kye.site_authority_record.v1",
+  "site_uuid": "kye:site:kyeprotocol-com:web:root",
+  "domain": "kyeprotocol.com",
+  "owner_entity": {
+    "display_name": "KYE Protocol",
+    "kyeid": "kye:org:kyeprotocol:operator:root",
+    "jurisdiction": [
+      "GB"
+    ]
+  },
+  "score": {
+    "schema_version": "kye.site_authority_score.v1",
+    "mode": "verified",
+    "domain": "kyeprotocol.com",
+    "score": 100,
+    "band": "authoritative",
+    "dimension_scores": {
+      "content_authority": {
+        "score": 100,
+        "signals_present": 4,
+        "signals_total": 4,
+        "present": [
+          "schema_org",
+          "author_metadata",
+          "canonical_urls",
+          "jsonld_org"
+        ]
+      },
+      "publishing_evidence": {
+        "score": 100,
+        "signals_present": 3,
+        "signals_total": 3,
+        "present": [
+          "cited_evidence",
+          "evidence_index",
+          "replay_proof"
+        ]
+      },
+      "agent_readiness": {
+        "score": 100,
+        "signals_present": 4,
+        "signals_total": 4,
+        "present": [
+          "llms_txt",
+          "robots_txt",
+          "sitemap",
+          "ai_disclosure"
+        ]
+      },
+      "change_governance": {
+        "score": 100,
+        "signals_present": 3,
+        "signals_total": 3,
+        "present": [
+          "change_feed",
+          "last_modified",
+          "version_pin"
+        ]
+      },
+      "action_authority": {
+        "score": 100,
+        "signals_present": 3,
+        "signals_total": 3,
+        "present": [
+          "agent_endpoint",
+          "well_known",
+          "auth_contract"
+        ]
+      },
+      "trust_registry": {
+        "score": 100,
+        "signals_present": 2,
+        "signals_total": 2,
+        "present": [
+          "registry_member",
+          "badge_present"
+        ]
+      }
+    },
+    "gaps": [],
+    "signals_evaluated": 19,
+    "scorer_version": "site-authority/1.0.0"
+  },
+  "dimension_scores": {
+    "content_authority": 100,
+    "publishing_evidence": 100,
+    "agent_readiness": 100,
+    "change_governance": 100,
+    "action_authority": 100,
+    "trust_registry": 100
+  },
+  "covered_pages": 172,
+  "covered_claims": 97,
+  "evidence_links": [
+    {
+      "kind": "llms_txt",
+      "url": "https://kyeprotocol.com/llms.txt"
+    },
+    {
+      "kind": "well_known",
+      "url": "https://kyeprotocol.com/.well-known/mcp"
+    },
+    {
+      "kind": "replay_proof",
+      "url": "https://kyeprotocol.com/trust/self-audit-jwks.json"
+    },
+    {
+      "kind": "evidence_pack",
+      "url": "https://kyeprotocol.com/trust/self-audit/"
+    }
+  ],
+  "change_history": [
+    {
+      "at": "2026-06-10T00:00:00Z",
+      "composite_score": 100,
+      "change": "published Evidence Pack + replay-proof JWKS; agent endpoint disclosed at /.well-known/mcp",
+      "evidence_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json"
+    }
+  ],
+  "badge_status": "active",
+  "observed_vs_verified": "verified",
+  "registered_at": "2026-06-10T00:00:00Z",
+  "expires_at": "2026-09-08T00:00:00Z",
+  "last_verified_at": "2026-06-10T00:00:00Z"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "kye.review_path.v1",
+  "review_path_id": "kye:review-path:finance_payment_high_risk",
+  "display_name": "High-Risk Finance Payment Review Path",
+  "applies_to": {
+    "risk_tiers": ["high", "critical"],
+    "capabilities": ["payment.execute", "supplier.notify"]
+  },
+  "review_steps": [
+    {
+      "step_id": "finance_manager_approval",
+      "required_role": "finance_manager",
+      "decision_options": ["approve", "deny", "request_changes"],
+      "sla_minutes": 1440
+    },
+    {
+      "step_id": "security_review_if_new_beneficiary",
+      "required_role": "security_admin",
+      "condition": "new_beneficiary_detected",
+      "decision_options": ["approve", "deny", "quarantine"],
+      "sla_minutes": 1440
+    }
+  ],
+  "evidence_requirements": [
+    "reviewer_identity",
+    "approval_reason_code",
+    "timestamp",
+    "state_snapshot",
+    "decision_map"
+  ],
+  "status": "active"
+}

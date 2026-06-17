@@ -1,0 +1,13 @@
+{
+  "schema": "kye.partner_admin_action.v1",
+  "action_id": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f",
+  "partner_id": "kye:partner:legacy-consulting-llp.9d1c4b",
+  "action_type": "revoke",
+  "tier": null,
+  "reason": "Q1 2026 quarterly attestation cycle missed (due 2026-05-01, no submission received as of 2026-05-28). Partner contacted twice (2026-05-08, 2026-05-22) — no response. Per Partner Agreement section 6.3, lapsed-attestation revocation is automatic after 27 days; manual revocation here closes the loop before the auto-job fires.",
+  "performer_id": "owner+ops@kyeprotocol.com",
+  "second_approver_id": "owner+program@kyeprotocol.com",
+  "evidence_pack_id": "kye:evidence-pack:2026-05-28-partner-revoke-legacy-001",
+  "attestation_id": "kye:compliance-attestation:2026-05-28-partner-revoke-legacy-001",
+  "performed_at": "2026-05-28T13:45:31Z"
+}

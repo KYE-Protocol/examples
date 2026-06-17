@@ -1,0 +1,21 @@
+{
+  "payment_authority_id": "kye:payauth:acme.example:01JYAUTH000000000000000000",
+  "actor_entity_id": "kye:ent:acme.example:ai_agent:01JYPROCUREBOT000000000000",
+  "subject_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+  "wallet_entity_id": "kye:ent:acme.example:wallet:01JYWALLET00000000000000",
+  "basis": "explicit_delegation",
+  "allowed_actions": [
+    "payment.initiate",
+    "invoice.pay"
+  ],
+  "forbidden_actions": [
+    "payment.approve",
+    "wallet.withdraw",
+    "beneficiary.create"
+  ],
+  "scope_id": "kye:scp:acme.example:payment-ops-gbp00000000",
+  "status": "active",
+  "revocable": true,
+  "valid_from": "2026-04-25T00:00:00Z",
+  "valid_until": "2026-12-31T23:59:59Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "evt_1QSTRIPESUB001000000",
+  "object": "event",
+  "api_version": "2024-11-20.acacia",
+  "created": 1747304062,
+  "livemode": false,
+  "type": "customer.subscription.updated",
+  "data": {
+    "object": {
+      "id": "sub_1QABCDEFGHIJKLMN",
+      "object": "subscription",
+      "customer": "cus_1QACMEBANKABCDEF",
+      "status": "active",
+      "current_period_start": 1746057600,
+      "current_period_end": 1748736000,
+      "items": {
+        "object": "list",
+        "data": [
+          {
+            "id": "si_1QPLATFORMREG",
+            "object": "subscription_item",
+            "price": { "id": "price_platform_fee_regulated", "currency": "gbp", "unit_amount": 2916667, "recurring": { "interval": "month" } },
+            "quantity": 1
+          }
+        ]
+      },
+      "metadata": {
+        "kye_customer_kyeid": "kye:ent:bank.acme",
+        "kye_tenant_id": "kye:tenant:acme-bank",
+        "kye_plan_tier": "regulated"
+      }
+    },
+    "previous_attributes": {
+      "metadata": { "kye_agents_governed": "240", "kye_workflows_count": "18" }
+    }
+  },
+  "request": { "id": "req_1QREQUESTABCDEF", "idempotency_key": null }
+}

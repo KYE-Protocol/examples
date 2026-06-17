@@ -1,0 +1,120 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.agentic_governance_lifecycle.v1.json",
+  "schema": "kye.agentic_governance_lifecycle.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/00-INDEX.md §0.9 + §0.16 + §0.18",
+  "canonical_signed_state_page": "public/site/authority-lifecycle.html",
+  "notes": [
+    "PROJECTION registry (§0.9/§0.18). The flagship page public/site/agentic-governance-lifecycle.html renders FROM this file.",
+    "Non-collision with kye.lifecycle.v1: that registry owns generalised STATE MACHINES (ordered states); authority-lifecycle.html owns the on-the-wire signed-state sequence. This spine is the CONCERN-LEVEL map binding each governance concern to its existing canonical page + schema + engine. No state-machine is redefined here.",
+    "§0.16 boundary verbs are non-negotiable at the integration boundary: Contestability ENABLES (KYE provides Evidence Pack + Replay Proof substrate; it does NOT adjudicate disputes), Renewal/Revocation EMITS (the enforcement rail acts on a KYE-decided revocation). These mirror internal anti_dilution_clauses kye:anti-dilution:not-dispute and kye:anti-dilution:not-payment-rail.",
+    "Contestability is the only stage whose canonical content surface is this flagship page (orphan concept resolved per §0.12 — registered in internal as agentic-governance-lifecycle-contestability). Every other stage links to a pre-existing canonical surface."
+  ],
+  "stages": [
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:intent",
+      "ordinal": 1,
+      "name": "Intent",
+      "boundary_verb": "DECIDES",
+      "summary": "A principal declares a purpose-scoped intent before any action. KYE binds the intent to a Purpose Permission grant so the act inherits a standing rule, not an ad-hoc allowance.",
+      "canonical_page": "constitution/12-PURPOSE-PERMISSION.md",
+      "schema": "internal",
+      "engine": "kye:engine:purpose-scope"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:action-admissibility",
+      "ordinal": 2,
+      "name": "Action Admissibility",
+      "trademark": "Action Admissibility™",
+      "boundary_verb": "DECIDES",
+      "summary": "Before any authority or formal-rule check runs, KYE decides whether the proposed action is admissible into the authority pipeline at all — six decision values, one canonical gate.",
+      "canonical_page": "public/site/action-admissibility.html",
+      "schema": "internal",
+      "engine": "kye:engine:rules"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:authority-resolution",
+      "ordinal": 3,
+      "name": "Authority Resolution",
+      "boundary_verb": "OWNS",
+      "summary": "KYE resolves the chain of authority behind the act — which grant, from which principal, attenuated through which delegation — to a single authoritative answer at the point of action.",
+      "canonical_page": "public/site/execution-architecture.html",
+      "schema": "internal",
+      "engine": "kye:engine:authority"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:delegation-scope",
+      "ordinal": 4,
+      "name": "Delegation and Scope",
+      "boundary_verb": "OWNS",
+      "summary": "KYE attenuates authority down the delegation chain and pins the scope each hop may spend. An agent cannot exceed the scope its delegation envelope grants.",
+      "canonical_page": "public/site/glossary.html#delegation",
+      "schema": "internal",
+      "engine": "kye:engine:purpose-scope"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:execution-control",
+      "ordinal": 5,
+      "name": "Execution Control",
+      "boundary_verb": "DECIDES",
+      "summary": "At the gateway, KYE issues the verdict that admits or denies the action and records the Decision Map that links inputs to outcome — the runtime control point the act passes through.",
+      "canonical_page": "public/site/execution-architecture.html",
+      "schema": "internal",
+      "engine": "kye:engine:decision"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:evidence-pack",
+      "ordinal": 6,
+      "name": "Evidence Pack",
+      "trademark": "Evidence Pack™",
+      "boundary_verb": "EMITS",
+      "summary": "KYE seals the signed, replayable Evidence Pack — audit-chain entries, Decision Maps, signatures and the public-key set an auditor verifies offline from public keys alone.",
+      "canonical_page": "public/site/evidence-pack.html",
+      "schema": "internal",
+      "engine": "kye:engine:evidence"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:authority-finality",
+      "ordinal": 7,
+      "name": "Authority Finality",
+      "trademark": "Authority Finality™",
+      "boundary_verb": "OWNS",
+      "summary": "KYE resolves the act to finality — a sealed, signed, non-repudiable end state. Every act has authority; every authority has finality. This is the property KYE owns end-to-end.",
+      "canonical_page": "public/site/authority-lifecycle.html",
+      "schema": "internal",
+      "engine": "kye:engine:replay"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:reality-coupling",
+      "ordinal": 8,
+      "name": "Reality Coupling",
+      "trademark": "Reality Coupling™",
+      "boundary_verb": "DECIDES",
+      "summary": "KYE detects stable drift — when a still-locally-valid authority has decoupled from the reality it was granted against — and decides whether the act must be revalidated against fresh ground truth.",
+      "canonical_page": "public/site/solutions/reality-coupling.html",
+      "schema": "internal",
+      "engine": "kye:engine:state"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:contestability",
+      "ordinal": 9,
+      "name": "Contestability",
+      "boundary_verb": "ENABLES",
+      "summary": "KYE ENABLES contestability by providing the Evidence Pack and Replay Proof substrate any third party re-derives from public keys alone. KYE is not a dispute-resolution adjudicator — it makes the contest evidentiary, not opinion.",
+      "canonical_page": "public/site/agentic-governance-lifecycle.html#contestability",
+      "schema": "internal",
+      "engine": "kye:engine:evidence"
+    },
+    {
+      "id": "kye:agentic-governance-lifecycle:stage:renewal-revocation",
+      "ordinal": 10,
+      "name": "Renewal and Revocation",
+      "boundary_verb": "EMITS",
+      "summary": "KYE decides and EMITS the revocation; the enforcement rail acts on it. Revocations propagate recursively down delegation chains and expiries trigger automatic state transitions after finality.",
+      "canonical_page": "public/site/authority-lifecycle.html#lifecycle",
+      "schema": "internal",
+      "engine": "kye:engine:authority"
+    }
+  ]
+}

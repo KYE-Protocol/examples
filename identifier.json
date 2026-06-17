@@ -1,0 +1,11 @@
+{
+  "identifier_id": "kye:idn:acme.example:email:01JYIDN0000000000000000000",
+  "entity_id": "kye:ent:acme.example:person:01JYCFO0000000000000000000",
+  "identifier_type": "email",
+  "value_hash": "sha256:9b71d224bd62f3785d96d46ad3ea3d73319bfbc2890caadae2dff72519673ca72",
+  "display_hint": "c***@acme.example",
+  "verified": true,
+  "verification_basis": "domain_dns_proof",
+  "status": "active",
+  "created_at": "2026-04-01T10:00:00Z"
+}

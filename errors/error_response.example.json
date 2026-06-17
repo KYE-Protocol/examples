@@ -1,0 +1,111 @@
+{
+  "auth": {
+    "type": "https://kye.dev/errors/http_401",
+    "title": "Authentication credential missing or invalid.",
+    "status": 401,
+    "detail": "Bearer token presented to POST /v1/runtime/authorize failed signature verification.",
+    "instance": "/v1/runtime/authorize",
+    "reason_code": "http_401",
+    "category": "auth",
+    "request_id": "req_01JYREQ000000000000000001",
+    "occurred_at": "2026-05-30T10:14:22.123Z",
+    "trace_id": "0af7651916cd43dd8448eb211c80319c",
+    "support_url": "https://kyeprotocol.com/errors/http_401",
+    "correlation_id": "kye:cor:acme.example:01JYCOR000000000000000XZ"
+  },
+  "validation": {
+    "type": "https://kye.dev/errors/http_400",
+    "title": "Request payload failed schema validation.",
+    "status": 400,
+    "detail": "2 field(s) failed validation; see field_errors for details.",
+    "instance": "/v1/onboarding/applications",
+    "reason_code": "http_400",
+    "category": "validation",
+    "request_id": "req_01JYREQ000000000000000002",
+    "occurred_at": "2026-05-30T10:15:01.000Z",
+    "support_url": "https://kyeprotocol.com/errors/http_400",
+    "field_errors": [
+      { "field": "/applicant/email", "code": "format_email", "message": "Not a valid email address." },
+      { "field": "/applicant/jurisdiction", "code": "enum_unknown", "message": "Jurisdiction 'XX' is not in the authorised set." }
+    ]
+  },
+  "authority": {
+    "type": "https://kye.dev/errors/kye_purpose_denied",
+    "title": "Purpose Engine returned ADMISSIBILITY=DENY for the bounded purpose.",
+    "status": 403,
+    "detail": "Scope kye:scp:acme.example:01JYCHILD0000000000000XZ attempts to permit actions outside the bounded purpose.",
+    "instance": "/v1/runtime/authorize",
+    "reason_code": "kye_purpose_denied",
+    "category": "authority",
+    "request_id": "req_01JYREQ000000000000000003",
+    "occurred_at": "2026-05-30T10:16:42.000Z",
+    "support_url": "https://kyeprotocol.com/errors/kye_purpose_denied",
+    "policy_decision_id": "kye:pdc:acme.example:01JYPDC000000000000000XZ",
+    "audit_event_id": "kye:aud:acme.example:01JYAUDPDC000000000000XZ"
+  },
+  "rate_limit": {
+    "type": "https://kye.dev/errors/http_429",
+    "title": "Rate limit exceeded; honour Retry-After header.",
+    "status": 429,
+    "detail": "Tenant rate envelope exhausted (60 requests/minute). Resumes at 2026-05-30T10:18:00Z.",
+    "instance": "/v1/directory/search",
+    "reason_code": "http_429",
+    "category": "rate_limit",
+    "request_id": "req_01JYREQ000000000000000004",
+    "occurred_at": "2026-05-30T10:17:38.000Z",
+    "retry_after_seconds": 22,
+    "support_url": "https://kyeprotocol.com/errors/http_429"
+  },
+  "dependency": {
+    "type": "https://kye.dev/errors/kye_evidence_seal_unavailable",
+    "title": "Evidence Engine could not write to KYE_EVIDENCE_R2; request rejected per §0.4.",
+    "status": 503,
+    "detail": "R2 binding KYE_EVIDENCE_R2 returned 503 after 3 retries. Request rejected to preserve the banking-grade invariant 'no privileged action without sealed evidence'.",
+    "instance": "/v1/operating-model/sign",
+    "reason_code": "kye_evidence_seal_unavailable",
+    "category": "dependency",
+    "request_id": "req_01JYREQ000000000000000005",
+    "occurred_at": "2026-05-30T10:18:11.000Z",
+    "retry_after_seconds": 30,
+    "support_url": "https://kyeprotocol.com/errors/kye_evidence_seal_unavailable"
+  },
+  "internal": {
+    "type": "https://kye.dev/errors/http_500",
+    "title": "Unhandled exception; investigated by Audit Pilot™.",
+    "status": 500,
+    "detail": "Internal server error. The incident ID is request_id; please include it in any support request.",
+    "instance": "/v1/admissibility/decide",
+    "reason_code": "http_500",
+    "category": "internal",
+    "request_id": "req_01JYREQ000000000000000006",
+    "occurred_at": "2026-05-30T10:19:00.000Z",
+    "trace_id": "1bf7e63da16ce41bd9559fd322c81399",
+    "support_url": "https://kyeprotocol.com/errors/http_500",
+    "audit_event_id": "kye:aud:acme.example:01JYAUDERR000000000000XZ"
+  },
+  "capacity": {
+    "type": "https://kye.dev/errors/kye_kill_switch_engaged",
+    "title": "Engine kill-switch is engaged; admin must clear before requests resume.",
+    "status": 503,
+    "detail": "Drafting Engine kill-switch was engaged at 2026-05-30T09:42:11Z. Requests are rejected at the edge until cleared in the Admin Console.",
+    "instance": "/v1/estate/matters/{id}/draft",
+    "reason_code": "kye_kill_switch_engaged",
+    "category": "capacity",
+    "request_id": "req_01JYREQ000000000000000007",
+    "occurred_at": "2026-05-30T10:20:55.000Z",
+    "retry_after_seconds": 600,
+    "support_url": "https://kyeprotocol.com/errors/kye_kill_switch_engaged"
+  },
+  "deprecated": {
+    "type": "https://kye.dev/errors/http_410",
+    "title": "Subject permanently removed.",
+    "status": 410,
+    "detail": "Subject kye:subject:acme.example:01JYSUB000000000000000XZ was erased on 2026-05-15 under a DSAR request and is permanently gone.",
+    "instance": "/v1/subjects/kye:subject:acme.example:01JYSUB000000000000000XZ",
+    "reason_code": "http_410",
+    "category": "deprecated",
+    "request_id": "req_01JYREQ000000000000000008",
+    "occurred_at": "2026-05-30T10:21:33.000Z",
+    "support_url": "https://kyeprotocol.com/errors/http_410"
+  }
+}

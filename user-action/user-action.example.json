@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.user_action.v1.json",
+  "schema": "kye.user_action.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/02-INFORMATION-ARCHITECTURE.md",
+  "notes": [
+    "Illustrative kye.user_action.v1 instance. The canonical full registry lives at internal"
+  ],
+  "actions": [
+    {
+      "id": "kye:user-action:example",
+      "label": "Example",
+      "kind": "cta",
+      "target": "example"
+    }
+  ]
+}

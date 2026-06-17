@@ -1,0 +1,31 @@
+{
+  "id": "evt_1QSTRIPEINV001000000",
+  "object": "event",
+  "api_version": "2024-11-20.acacia",
+  "created": 1748907715,
+  "livemode": false,
+  "type": "invoice.payment_succeeded",
+  "data": {
+    "object": {
+      "id": "in_1QABCDEFGHIJKLMN",
+      "object": "invoice",
+      "customer": "cus_1QACMEBANKABCDEF",
+      "subscription": "sub_1QABCDEFGHIJKLMN",
+      "status": "paid",
+      "amount_paid": 5695190,
+      "amount_due": 5695190,
+      "subtotal": 4745992,
+      "tax": 949198,
+      "total": 5695190,
+      "currency": "gbp",
+      "period_start": 1746057600,
+      "period_end": 1748736000,
+      "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1Q/test_x",
+      "metadata": {
+        "kye_customer_kyeid": "kye:ent:bank.acme",
+        "kye_tenant_id": "kye:tenant:acme-bank"
+      }
+    }
+  },
+  "request": { "id": null, "idempotency_key": null }
+}

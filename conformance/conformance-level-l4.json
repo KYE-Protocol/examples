@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.conformance_level.v1",
+  "declaration_id": "kye:conformance-level:acme-bank-prod",
+  "deployment": {
+    "tenant_id": "kye:tenant:acme-bank",
+    "trust_domain": "acme-bank.example",
+    "environment": "production",
+    "deployment_label": "Acme Bank payments gateway (eu-west)"
+  },
+  "achieved_level": "L4",
+  "levels_satisfied": ["L1", "L2", "L3", "L4"],
+  "capabilities": [
+    { "capability_id": "schema-validation", "level": "L1", "status": "satisfied", "evidence_ref": "kye:conformance-run:acme-bank-2026-06-01" },
+    { "capability_id": "id-format-conformance", "level": "L1", "status": "satisfied", "evidence_ref": "kye:conformance-run:acme-bank-2026-06-01" },
+    { "capability_id": "entity-resolution", "level": "L2", "status": "satisfied", "evidence_ref": "kye:evidence:acme-bank:resolve-trace" },
+    { "capability_id": "delegation-chain-capture", "level": "L2", "status": "satisfied", "evidence_ref": "kye:evidence:acme-bank:delegation-chain" },
+    { "capability_id": "admissibility-enforced-pre-action", "level": "L3", "status": "satisfied", "evidence_ref": "kye:evidence:acme-bank:admissibility-decision" },
+    { "capability_id": "deterministic-finality", "level": "L4", "status": "satisfied", "evidence_ref": "kye:evidence:acme-bank:finality-seal" },
+    { "capability_id": "replay-proof-from-public-keys", "level": "L4", "status": "satisfied", "evidence_ref": "kye:replay-proof:acme-bank:2026-06-01" }
+  ],
+  "gateway_stages": ["resolve", "admissibility", "decision", "evidence"],
+  "slo_posture": {
+    "tier": "tier-1-bank",
+    "p99_ms": 47,
+    "target_rps": 1200
+  },
+  "attestation_ref": "kye:attestation:acme-bank:conformance-level-2026-06-01",
+  "evaluated_at": "2026-06-01T09:30:00Z"
+}

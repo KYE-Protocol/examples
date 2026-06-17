@@ -1,0 +1,23 @@
+{
+  "schema": "kye.reconciliation.verdict.v1",
+  "verdict_id": "3c2b1a0d-9e8f-4d7c-8b6a-5e4f3c2b1a0d",
+  "epoch_unix_ms": 1747661696789,
+  "reconciler_set_id": "kye-reconcilers-v1-22",
+  "reconciler_versions": [
+    {"name": "queue-bijection",                       "version": "1.0.0"},
+    {"name": "schema-canonical-bijection",            "version": "1.0.0"},
+    {"name": "rule-pack-canonical",                   "version": "1.0.0"},
+    {"name": "openapi-functions-bijection",           "version": "1.0.0"},
+    {"name": "event-emission-coverage",               "version": "1.0.0"},
+    {"name": "governance-engine-deployed-vs-declared","version": "1.0.0"},
+    {"name": "compliance-attestation-coverage",       "version": "1.0.0"}
+  ],
+  "declared_state_hash":      "sha384:1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a",
+  "deployed_state_probe_hash":"sha384:8e6c0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b",
+  "bijection_status": "complete",
+  "drift_class_counts": {},
+  "signature_alg": "ed25519",
+  "signature_kid": "kye:key:prod:reconciliation-signer:2026-05",
+  "signature_value_b64": "MEUCIQDgXJyL0qF8xN2k3J9pV6tR1mWqEzH7sB4cD6vN8yA3KwIgZmKpL5rN9oS3xT2vU8wXyZ1qR4hP7nM5eD0aF6cB8gE",
+  "canonical_envelope_hash": "sha384:a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a"
+}

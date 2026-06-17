@@ -1,0 +1,53 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-eu-ai-act-coverage:2026-05-31",
+  "emitted_at": "2026-05-31T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/59-FRAMEWORK-INGESTION.md §6",
+    "EU_AI_ACT",
+    "ISO_IEC_42001",
+    "NIST_AI_RMF"
+  ],
+  "subject": "kye:powered-pack:eu-ai-act:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-eu-ai-act-001-coverage-2026-05-31",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:eu-ai-act:v1",
+    "claim_count": 4,
+    "bound_rule_packs": [
+      "kye:rule-pack:eu_ai_act"
+    ],
+    "bound_dictionaries": [
+      "kye:dictionary:eu-ai-act-foundry"
+    ],
+    "bound_sector_packs": [
+      "kye:sector-pack:eu-ai-act"
+    ],
+    "ingestion_run_ref": "kye:ingestion-run:eu-ai-act-001",
+    "expert_approval_count": 2,
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts + replay-proof ingestion provenance",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    {
+      "id": "framework-ingestion-canonical",
+      "verdict": "OK",
+      "drift": 0
+    },
+    {
+      "id": "foundry-rail-canonical",
+      "verdict": "OK",
+      "drift": 0
+    },
+    {
+      "id": "rule-pack-canonical",
+      "verdict": "OK",
+      "drift": 0
+    }
+  ]
+}

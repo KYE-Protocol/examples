@@ -1,0 +1,59 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:partner-audit-firm-tier1",
+  "name": "Tier-1 Audit Firm Partner",
+  "summary": "Turn-key bundle for a Tier-1 audit firm (Big-4 or equivalent) operating under §49 partner channel as an Independent auditor. Channel-only pack: no sector pack; ships rule packs for compliance-evidence + transparency + federation + action-admissibility, plus the auditors GovernedUI module and partner-channel comms.",
+  "target_audience": {
+    "sector": "partner",
+    "role": "audit-firm-tier1",
+    "jurisdiction": "global",
+    "tier": "tier-1"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:compliance-evidence",
+      "kye:rule-pack:transparency",
+      "kye:rule-pack:federation",
+      "kye:rule-pack:action-admissibility"
+    ],
+    "sector_pack_ids": [],
+    "dictionary_ids": [
+      "kye:dictionary:report-frameworks",
+      "kye:dictionary:regulators",
+      "kye:dictionary:reason_codes",
+      "kye:dictionary:jurisdictions"
+    ],
+    "comms_template_ids": [
+      "persona-intake.admin-alert.v1",
+      "persona-intake.applicant-confirmation.v1",
+      "engage-access.admin-alert.v1",
+      "engage-access.applicant-confirmation.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.auditors.v1",
+      "kye.governedui.module.partners.v1",
+      "kye.governedui.module.evidence_timeline.v1",
+      "kye.governedui.module.approval_queue.v1"
+    ],
+    "purposes_preconfigured": [
+      "regulatory_compliance",
+      "audit_trail"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 30,
+  "prerequisites": [
+    "Approved §49 partner application (engagement_type=auditor)",
+    "Independent-auditor obligations acknowledged",
+    "Firm-side reviewer roster on file"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-AUDITOR-INDEPENDENT",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "partner-rail-owner",
+    "auditor-rail-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

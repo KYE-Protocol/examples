@@ -1,0 +1,17 @@
+{
+  "dispatch_id": "kye:comms:email:8a5e7c19-2f4b-4cba-9a8e-3d2e1f0c7b6a",
+  "template_id": "persona-intake.admin-alert.v1",
+  "channel": "email",
+  "category": "operational",
+  "to_hashes": ["7f4f8a1c2b9e3d6a5c4b8e7d1a2f3c4b5d6e7a8b9c0d1e2f3a4b5c6d7e8f9a0b"],
+  "rendered_subject_hash": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b",
+  "rendered_body_hash": "0f1e2d3c4b5a6987a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1",
+  "link_ids": ["link.admin.persona-intake-queue"],
+  "provider_id": "resend.primary",
+  "provider_response_id": "msg_7d9c2f4a-8b3e-4c1d-9e7f-5a6b8c2d1e0f",
+  "requested_at": "2026-05-19T17:30:00Z",
+  "dispatched_at": "2026-05-19T17:30:01Z",
+  "tenant_id": "kye:tenant:platform",
+  "idempotency_key": "intake:trainer:abc-123:admin-alert",
+  "audit_chain_ref": "kye:audit:comms:email:8a5e7c19-2f4b-4cba-9a8e-3d2e1f0c7b6a"
+}

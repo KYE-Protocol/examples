@@ -1,0 +1,63 @@
+{
+  "schema": "kye.framework_mapping.v1",
+  "framework_id": "kye:framework:eu-ai-act",
+  "framework_slug": "eu-ai-act",
+  "produced_by": "kye:ingestion-run:eu-ai-act-001",
+  "produced_at": "2026-06-08T00:00:00Z",
+  "deterministic": true,
+  "mappings": [
+    {
+      "requirement_ref": "Art. 9",
+      "label": "Risk-management system",
+      "state": "enforced",
+      "kye_artefacts": [
+        "Purpose Permission™",
+        "Authority Gate"
+      ]
+    },
+    {
+      "requirement_ref": "Art. 10",
+      "label": "Data & data governance",
+      "state": "enforced",
+      "kye_artefacts": [
+        "Purpose Permission™",
+        "WORM audit hash-chain"
+      ]
+    },
+    {
+      "requirement_ref": "Art. 12",
+      "label": "Record-keeping & traceability",
+      "state": "enforced",
+      "kye_artefacts": [
+        "WORM audit hash-chain",
+        "Decision replay"
+      ]
+    },
+    {
+      "requirement_ref": "Art. 14",
+      "label": "Human oversight",
+      "state": "enforced",
+      "kye_artefacts": [
+        "WebAuthn step-up",
+        "Authority Gate"
+      ]
+    },
+    {
+      "requirement_ref": "Art. 13",
+      "label": "Transparency & provision of information",
+      "state": "designed",
+      "kye_artefacts": [
+        "Decision Map™ signing (JWS-detached)",
+        "Evidence Pack™ signing (COSE-Sign1)"
+      ],
+      "note": "Transparency receipts are emitted today; the detached signatures that make them verifiable downstream are in build."
+    },
+    {
+      "requirement_ref": "Art. 11",
+      "label": "Annex IV technical documentation",
+      "state": "out-of-scope",
+      "kye_artefacts": [],
+      "note": "KYE™ produces operational evidence; the static Annex IV technical-documentation file is authored separately."
+    }
+  ]
+}

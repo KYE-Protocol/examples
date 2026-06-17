@@ -1,0 +1,84 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.cost_to_serve.v1.json",
+  "schema": "kye.cost_to_serve.v1",
+  "cost_model_id": "kye:cost-to-serve:public-sector-governance",
+  "product_id": "public-sector-governance",
+  "display_name": "KYE Public Sector Governance",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md",
+  "edge_cost_factors": [
+    {
+      "factor": "workers_invocation",
+      "monthly_volume": 300000,
+      "driver": "PDP admissibility + evidence-pack + replay-seal + comms + reconcile handlers (§12/§13/§34/§38)"
+    },
+    {
+      "factor": "d1_row_read",
+      "monthly_volume": 1000000,
+      "driver": "authority bundle + entity + policy-point + audit lookups per governed action (§25/§30)"
+    },
+    {
+      "factor": "d1_row_write",
+      "monthly_volume": 400000,
+      "driver": "WORM audit appends + decision-map + evidence rows (§30 append-only)"
+    },
+    {
+      "factor": "kv_read",
+      "monthly_volume": 200000,
+      "driver": "feature-flag + compiled-authority-bundle cold reads (§25)"
+    },
+    {
+      "factor": "kv_write",
+      "monthly_volume": 10000,
+      "driver": "bundle/cache invalidation writes"
+    },
+    {
+      "factor": "r2_storage_gb_month",
+      "monthly_volume": 5,
+      "driver": "evidence-pack + replay-proof object storage (§13/§30 Object Lock)"
+    },
+    {
+      "factor": "r2_class_a_op",
+      "monthly_volume": 75000,
+      "driver": "evidence-pack sealing PutObject (§30 WORM)"
+    },
+    {
+      "factor": "r2_class_b_op",
+      "monthly_volume": 25000,
+      "driver": "replay-verification GetObject (§13)"
+    },
+    {
+      "factor": "queues_operation",
+      "monthly_volume": 200000,
+      "driver": "comms + streaming-log + reconciliation fan-out (§35/§38/§34)"
+    },
+    {
+      "factor": "vectorize_query",
+      "monthly_volume": 38400000,
+      "driver": "directory + semantic search retrieval (§17)"
+    },
+    {
+      "factor": "vectorize_stored_dimension_month",
+      "monthly_volume": 76800000,
+      "driver": "directory/search vector index storage (§17)"
+    }
+  ],
+  "usage_profile": {
+    "tenant_tier": "medium",
+    "monthly_governed_actions": 50000,
+    "assumptions": [
+      "~6 worker invocations per governed action (PDP + evidence-pack + replay-seal + comms + reconcile)",
+      "~8 D1 row-writes per action (WORM append-only audit, §30)",
+      "~1.5 R2 Class-A ops per action (evidence-pack sealing under Object Lock)",
+      "external LLM token cost is a pass-through outside the edge cost-to-serve scope"
+    ]
+  },
+  "computed_cost_to_serve": {
+    "monthly_usd": 1.181284,
+    "per_action_usd": 0.0000236257
+  },
+  "pricing_floor": {
+    "markup_multiple": 10,
+    "floor_monthly_usd": 11.81284
+  },
+  "notes": "Inference runs on an external LLM API (not Workers AI) — ai_inference_neuron volume omitted; the external token cost is a per-action pass-through outside the edge cost-to-serve scope. Vectorize drives §17 directory/policy search."
+}

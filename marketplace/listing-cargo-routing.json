@@ -1,0 +1,44 @@
+{
+  "schema_version": "kye.rule_pack_listing.v1",
+  "listing_id": "kye:listing:cargo-routing.global",
+  "rule_pack_id": "kye:rule-pack:cargo-routing",
+  "version": "1.0.0",
+  "display_name": "Cargo Routing — Sanctions + Hazardous Materials",
+  "tagline": "Blocks sanctioned-waters transits, hazmat-without-permit shipments, and high-value uninsured cargo.",
+  "long_description": "Demonstrates the 'one protocol, many sectors' portability moat: same Rules Gateway™ evaluator, same canonical schemas as the financial-services pack — just different rule inputs. Reads cargo.route, cargo.hazmat_class, cargo.value_usd, and cargo.insurance_status from the action context; emits deny / quarantine / require_human_approval verdicts with canonical reason codes.",
+  "publisher": {
+    "entity_id": "kye:org:kye-protocol",
+    "display_name": "KYE Protocol",
+    "tier": "first-party-kye",
+    "verified": true
+  },
+  "categories": ["sector"],
+  "applies_to_sectors": ["logistics", "maritime", "cargo"],
+  "applies_to_regimes": ["UN_SANCTIONS", "OFAC", "EU_SANCTIONS"],
+  "applies_to_jurisdictions": ["GLOBAL"],
+  "pricing_model": {
+    "model": "annual",
+    "currency": "USD",
+    "price_minor_units": 2400000,
+    "stripe_price_id": "price_CargoAnnual2026"
+  },
+  "verification": {
+    "conformance_pack_run_id": "kye:conformance-run:cargo-2026-05-12",
+    "conformance_passed": true,
+    "fixtures_passed": 6,
+    "fixtures_total": 6,
+    "signature": {
+      "alg": "EdDSA",
+      "kid": "kye:key:marketplace-signer-001",
+      "value_b64": "MEUCIQDyG9nF1cO1fK8WrZAdM0AlYl9d7Q1qZnZg3Y8q0O4KqhJhZ6lF4vW1b5G2d2g7F9b9x3cE5H8y0a7M3l0N1o2pR"
+    },
+    "verified_at": "2026-05-12T10:00:00Z",
+    "verified_by_entity_id": "kye:org:kye-protocol"
+  },
+  "entitlements": { "max_evaluations_per_month": 1000000, "support_tier": "standard" },
+  "reviews_summary": { "count": 3, "avg_rating": 4.7 },
+  "telemetry": { "installs": 4, "active_tenants": 4, "evaluations_last_30d": 84000 },
+  "status": "active",
+  "created_at": "2026-05-12T00:00:00Z",
+  "updated_at": "2026-05-12T10:00:00Z"
+}

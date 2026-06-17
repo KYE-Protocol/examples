@@ -1,0 +1,52 @@
+{
+  "schema_version": "kye.reality_coupling_check.v1",
+  "check_id": "kye:coupling-check:acme:2026-05-14:a4f1",
+  "action_id": "kye:action:acme:supplier_payment_release:inv-90213",
+  "actor_entity_id": "kye:agent:acme:ap-automation-bot",
+  "principal_entity_id": "kye:entity:acme:finance-office",
+  "purpose_grant_id": "kye:purpose:acme:ap-release-routine",
+  "evaluated_at": "2026-05-14T12:30:15Z",
+  "pipeline_node": "n_reality_coupling",
+  "anchors_consulted": [
+    {
+      "anchor_id": "kye:anchor:acme:supplier-risk-registry",
+      "anchor_type": "risk_context",
+      "snapshot_id": "kye:snapshot:acme:supplier-risk-registry:2026-05-14T12-30-00Z",
+      "snapshot_sampled_at": "2026-05-14T12:30:00Z",
+      "is_fresh": true,
+      "anchor_outcome": "stale"
+    },
+    {
+      "anchor_id": "kye:anchor:acme:sanctions-list",
+      "anchor_type": "external_source_of_truth",
+      "snapshot_id": "kye:snapshot:acme:sanctions-list:2026-05-14T12-15-00Z",
+      "snapshot_sampled_at": "2026-05-14T12:15:00Z",
+      "is_fresh": true,
+      "anchor_outcome": "coupled"
+    }
+  ],
+  "assumptions": [
+    {
+      "key": "supplier_risk_rating_at_authorization",
+      "stated_value": "low",
+      "valid_until": "2026-05-14T18:00:00Z",
+      "is_expired": false
+    }
+  ],
+  "coupling_result": "decoupling_detected",
+  "runtime_effect": "require_human_review",
+  "severity": "high",
+  "reason_codes": [
+    "supplier_risk_uplift_since_authorization",
+    "verified_but_stale_assumption"
+  ],
+  "drift_event_id": "kye:drift:acme:2026-05-14:a4f1",
+  "snapshot_refs": [
+    "kye:snapshot:acme:supplier-risk-registry:2026-05-14T12-30-00Z",
+    "kye:snapshot:acme:sanctions-list:2026-05-14T12-15-00Z"
+  ],
+  "evidence_refs": [
+    "kye:evidence:acme:ap-release:inv-90213"
+  ],
+  "notes": "Action is locally valid (authority, purpose, scope all verified) but the supplier risk-context anchor reports the supplier was uplifted to high-risk after the purpose-grant was issued. Routing to human review."
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "kye.remediation.proposed.v1",
+  "proposal_id": "kye:remediation_proposal:01HZAA22-stuck-pages-fix",
+  "classification_id": "kye:ci_classification:01HZAA22-stuck-pages",
+  "proposed_at": "2026-05-25T12:00:00Z",
+  "remediator_action": "cc-auto-remediate-stuck-pages",
+  "planned_mutations": [
+    {
+      "kind": "cf-api-call",
+      "summary": "Remove stuck custom-domain binding from kyeprotocol Pages project",
+      "endpoint": "https://api.cloudflare.com/client/v4/accounts/{account}/pages/projects/kyeprotocol/domains/kyeprotocol.com",
+      "method": "DELETE"
+    },
+    {
+      "kind": "cf-api-call",
+      "summary": "Re-bind custom domain to kyeprotocol Pages project",
+      "endpoint": "https://api.cloudflare.com/client/v4/accounts/{account}/pages/projects/kyeprotocol/domains",
+      "method": "POST",
+      "body_redacted": { "name": "kyeprotocol.com" }
+    },
+    {
+      "kind": "cf-api-call",
+      "summary": "Purge edge cache for the apex zone",
+      "endpoint": "https://api.cloudflare.com/client/v4/zones/{zone}/purge_cache",
+      "method": "POST",
+      "body_redacted": { "purge_everything": true }
+    }
+  ],
+  "blast_radius": "apex",
+  "rollback_plan": {
+    "available": true,
+    "steps": [
+      "If the re-bind POST fails, the prior DELETE leaves the domain unbound until manual intervention.",
+      "Operator runs: wrangler pages project domain add kyeprotocol kyeprotocol.com",
+      "Or: re-issue the POST manually via curl from the runbook."
+    ]
+  },
+  "approval_required": true,
+  "approval_issue_url": "https://github.com/KYE-Protocol/app/issues/999"
+}

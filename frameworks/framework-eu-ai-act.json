@@ -1,0 +1,29 @@
+{
+  "schema": "kye.framework.v1",
+  "framework_id": "kye:framework:eu-ai-act",
+  "slug": "eu-ai-act",
+  "name": "EU AI Act — Artificial Intelligence Regulation",
+  "short_name": "EU AI Act",
+  "regime": "EU legal instrument",
+  "version": "Regulation (EU) 2024/1689",
+  "jurisdiction": "eu",
+  "category": "ai-governance",
+  "mapping_state": "ingested",
+  "sources": [
+    {
+      "kind": "celex",
+      "ref": "EU AI Act — Artificial Intelligence Regulation — Regulation (EU) 2024/1689"
+    }
+  ],
+  "label_map_key": "eu-ai-act",
+  "ingestion_provenance": "kye:ingestion-run:eu-ai-act-001",
+  "fan_out": {
+    "sector_packs": [
+      "N/A: covered by §54 foundry expert-pack KYE-FOUNDRY-PACK-EU-AI-ACT-001"
+    ],
+    "research_axis": "ai-governance",
+    "skus": [
+      "N/A: framework mapping is platform-wide, not a single SKU"
+    ]
+  }
+}

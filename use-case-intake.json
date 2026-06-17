@@ -1,0 +1,27 @@
+{
+  "schema_version": "kye.use_case_intake.v1",
+  "use_case_id": "kye:use-case:ai_finance_worker_001",
+  "title": "AI Finance Worker",
+  "description": "AI worker that prepares supplier payments and reconciles invoices.",
+  "requesting_team": {
+    "team_id": "finance",
+    "owner_entity_id": "kye:user:finance_owner_001"
+  },
+  "business_objective": "Reduce manual supplier payment preparation and invoice reconciliation workload.",
+  "actor_type": "ai_agent",
+  "expected_actions": [
+    "invoice.read",
+    "payment.prepare",
+    "supplier.notify"
+  ],
+  "systems_touched": ["erp", "banking_api", "email", "document_store"],
+  "data_classes": ["financial", "supplier_data", "personal_data"],
+  "external_effects": ["supplier_notification", "payment_preparation"],
+  "commit_actions": ["payment.execute", "external_email.send"],
+  "initial_risk_assessment": {
+    "risk_tier": "high",
+    "reason_codes": ["financial_data", "payment_related", "external_effect_possible"]
+  },
+  "status": "submitted",
+  "created_at": "2026-05-09T12:00:00Z"
+}

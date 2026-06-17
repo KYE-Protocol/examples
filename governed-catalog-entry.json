@@ -1,0 +1,32 @@
+{
+  "schema_version": "kye.governed_catalog_entry.v1",
+  "catalog_entry_id": "kye:catalog:agent:finance_agent_001",
+  "entity_id": "kye:agent:finance_agent_001",
+  "entry_type": "ai_agent",
+  "display_name": "Finance Payment Preparation Agent",
+  "owner_entity_id": "kye:user:finance_owner_001",
+  "purpose": "Prepare supplier payments and reconcile invoices.",
+  "lifecycle_state": "pilot",
+  "risk_tier": "high",
+  "supported_profiles": [
+    "kye:profile:payment",
+    "kye:profile:operating_model",
+    "kye:profile:discoverability",
+    "kye:profile:continuity"
+  ],
+  "capabilities": ["invoice.read", "payment.prepare", "supplier.notify"],
+  "authority_record_ref": "kye:authority-record:finance_agent_001",
+  "certification_status": "self_attested",
+  "evidence_status": "evidence_pack_available",
+  "visibility": {
+    "visibility_level": "tenant_private",
+    "discoverable_by": [
+      "role:tenant_admin",
+      "role:security_admin",
+      "role:auditor",
+      "role:finance_manager"
+    ]
+  },
+  "access_request_path": "kye:review-path:finance_agent_access",
+  "updated_at": "2026-05-09T12:00:00Z"
+}

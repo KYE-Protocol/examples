@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.training_module.v1.json",
+  "schema": "kye.training_module.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/39-LEARN-RAIL.md",
+  "notes": [
+    "Illustrative kye.training_module.v1 instance. The canonical full registry lives at internal"
+  ],
+  "training_modules": [
+    {
+      "id": "kye:training:example",
+      "name": "Example",
+      "kind": "article",
+      "surface": "public/site/learn/articles/example.html",
+      "description": "Illustrative module."
+    }
+  ]
+}

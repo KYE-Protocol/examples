@@ -1,0 +1,37 @@
+{
+  "schema_version": "kye.entity_authority_record.v1",
+  "record_id": "kye:authority-record:finance_agent_001",
+  "entity_id": "kye:agent:finance_agent_001",
+  "entity_type": "ai_agent",
+  "display_name": "Finance Payment Preparation Agent",
+  "owner_entity_id": "kye:user:finance_owner_001",
+  "accountable_entity_id": "kye:org:acme_ltd",
+  "purpose": "Prepare supplier payments and reconcile invoices for human approval.",
+  "lifecycle_state": "pilot",
+  "risk_tier": "high",
+  "approved_capabilities": ["invoice.read", "payment.prepare", "supplier.notify"],
+  "prohibited_capabilities": ["payment.execute", "contract.sign", "credential.rotate"],
+  "authority_grants": ["kye:authority:grant:payment_prepare_001"],
+  "required_gates": ["kye:gate:payment_execute", "kye:gate:external_send"],
+  "commit_boundaries": [
+    "kye:commit-boundary:payment_execution",
+    "kye:commit-boundary:external_message_send"
+  ],
+  "state": {
+    "entity_state": "active",
+    "credential_state": "valid",
+    "risk_state": "elevated",
+    "certification_state": "self_attested"
+  },
+  "evidence_refs": ["kye:evidence-pack:readiness_001"],
+  "review": {
+    "last_reviewed_at": "2026-05-09T12:00:00Z",
+    "next_review_due": "2026-06-09T12:00:00Z",
+    "review_frequency": "monthly"
+  },
+  "revocation": {
+    "revocable": true,
+    "cascade_revocation_required": true,
+    "revocation_signal_events": ["kye.authority.revoked", "kye.entity.suspended"]
+  }
+}

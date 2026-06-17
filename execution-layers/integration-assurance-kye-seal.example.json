@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:assurance_certification:kye-seal-example",
+  "layer": "assurance_certification",
+  "direction": "bidirectional",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "assurance_certification_body",
+  "attestation_requirement": "required_both",
+  "transport": "queue",
+  "known_partners": [
+    { "partner_slug": "kye-native", "partner_name": "KYE Seal™ (native owner)", "adapter_status": "shipping" }
+  ],
+  "adopted_at": "2026-05-30"
+}

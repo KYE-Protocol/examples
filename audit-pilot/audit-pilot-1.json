@@ -1,0 +1,39 @@
+{
+  "schema": "kye.assurance.audit_pilot.v1",
+  "id": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "version": 1,
+  "customer": "kye:ent:acme-bank.legal-uk",
+  "scope": {
+    "agents_observed": [
+      "kye:agent:acme-bank.supplier-payment-agent.v3",
+      "kye:agent:acme-bank.procurement-copilot.v1"
+    ],
+    "stacks_bound": [
+      "kye:stack-binding:acme-bank.okta-prod",
+      "kye:stack-binding:acme-bank.kong-api-gateway",
+      "kye:stack-binding:acme-bank.temporal-workflow",
+      "kye:stack-binding:acme-bank.splunk-siem"
+    ],
+    "data_classes": ["financial.payments", "vendor.invoice", "vendor.master"],
+    "duration_days": 60
+  },
+  "stage": "observe",
+  "started_at": "2026-05-12T09:00:00Z",
+  "ends_at": "2026-07-11T09:00:00Z",
+  "consent": {
+    "accepted_clauses": ["tos", "privacy", "aup", "authority", "dpa"],
+    "policy_version_hash": "f3a1c0b7d29e4561",
+    "ip_hash": "9b8a7c6d5e4f3210112233445566778899aabbccddeeff0011223344556677",
+    "ua_hash": "1122334455667788991122334455667788991122334455667788991122334455",
+    "accepted_at": "2026-05-12T08:42:17Z"
+  },
+  "qualified_at": "2026-05-12T08:55:00Z",
+  "qualified_by": "kye:ent:kye-protocol.operator.eu-onboarding",
+  "signed_by": "kye:ent:acme-bank.ciso",
+  "signed_at": "2026-05-12T08:58:00Z",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:acme-bank.ciso.2026",
+    "value_b64": "Mzg5MTk5N2RmYjQzMjVjMzZkYWE3OTI5MzZmYTBlYWE3NjMzMjU5N2EwZTcxYTNjMmI5MWYwOTI4MGY3MGZmZA"
+  }
+}

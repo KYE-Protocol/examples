@@ -1,0 +1,23 @@
+{
+  "schema": "kye.spof_registry.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-27T00:00:00Z",
+  "constitution_ref": "constitution/51-NO-SPOF.md",
+  "notes": [
+    "Illustrative example of the §51 SPOF registry envelope shape. The canonical instance lives at internal"
+  ],
+  "entries": [
+    {
+      "component_id": "example-vendor-binding",
+      "depends_on": "example-vendor",
+      "failure_mode": "if example-vendor goes down, the illustrated component cannot serve requests",
+      "fallback_status": "partial",
+      "fallback_ref": "internal",
+      "criticality": "privileged-action",
+      "severity_class": "S2",
+      "decay_deadline": "2026-08-25",
+      "review_owner": "Architecture",
+      "notes": "Illustrative entry only — see internal for the canonical registry."
+    }
+  ]
+}

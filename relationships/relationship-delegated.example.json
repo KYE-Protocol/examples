@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:agent__workflow:onboarding-agent__customer-intake-workflow",
+  "relationship_type": "delegated-to",
+  "source_class": "agent",
+  "source_id": "onboarding-agent",
+  "target_class": "workflow",
+  "target_id": "customer-intake-workflow",
+  "cardinality": "many-to-many",
+  "bidirectional": false,
+  "weight": 1.00,
+  "evidence_basis": "§22 onboarding-agent executes the customer-intake workflow end-to-end.",
+  "effective_from": "2026-05-30",
+  "owners": ["KYE Runtime Authority"],
+  "status": "active"
+}

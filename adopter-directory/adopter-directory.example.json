@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.adopter_directory.v1.json",
+  "schema": "kye.adopter_directory.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/17-DIRECTORY-SEARCH.md",
+  "public_consent_required": true,
+  "notes": ["Illustrative kye.adopter_directory.v1 instance showing one consented adopter. Canonical registry (seeded empty): internal"],
+  "adopters": [
+    { "id": "kye:adopter:example", "display_name": "Example Consented Adopter", "tier": "pilot", "public_consent": true, "consent_recorded_at": "2026-05-31T00:00:00Z" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "evt_1QSTRIPEINV002000000",
+  "object": "event",
+  "api_version": "2024-11-20.acacia",
+  "created": 1749348000,
+  "livemode": false,
+  "type": "invoice.payment_failed",
+  "data": {
+    "object": {
+      "id": "in_1QPIEDPIPERABCDEF",
+      "object": "invoice",
+      "customer": "cus_1QPIEDPIPERABC",
+      "subscription": "sub_1QPIEDPIPERABCDEF",
+      "status": "open",
+      "amount_due": 250000,
+      "amount_paid": 0,
+      "currency": "gbp",
+      "attempt_count": 2,
+      "next_payment_attempt": 1749607200,
+      "last_finalization_error": { "code": "card_declined", "message": "Your card was declined." },
+      "metadata": {
+        "kye_customer_kyeid": "kye:ent:pied.piper",
+        "kye_tenant_id": "kye:tenant:pied-piper"
+      }
+    }
+  },
+  "request": { "id": null, "idempotency_key": null }
+}

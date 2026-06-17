@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.edge.safety-floor.v1.json",
+  "selected_value": "buffer_only",
+  "trigger_condition": "network_loss",
+  "ts_iso": "2026-05-14T18:32:14Z",
+  "bundle_id": "kye:edge-bundle:tier1-bank:b6989088-5a30-4c6a-a8e2-97d936463920",
+  "device_id": "kye:device:payment-fleet-alpha",
+  "notes": "Edge Arbiter lost connectivity to the control plane mid-action; falling back to buffer_only per safety_floor.network_loss. Evidence will replay on reconnect."
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.policy_point.v1.json",
+  "schema": "kye.policy_point.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md",
+  "notes": [
+    "Illustrative kye.policy_point.v1 instance. The canonical full registry lives at internal"
+  ],
+  "policy_points": [
+    {
+      "id": "kye:policy-point:example-pep",
+      "kind": "pep",
+      "name": "Example PEP",
+      "binds_to": "internal",
+      "description": "Illustrative enforcement point."
+    }
+  ]
+}

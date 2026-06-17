@@ -1,0 +1,35 @@
+{
+  "schema_version": "kye.meaning_drift_event.v1",
+  "meaning_drift_event_id": "kye:meaning-drift:001",
+  "meaning_continuity_id": "kye:meaning-continuity:001",
+  "continuity_id": "kye:continuity:001",
+  "drift_type": "constraint_loss",
+  "severity": "medium",
+  "detected_at": "2026-05-10T12:00:06Z",
+  "actor_entity_id": "kye:entity:agent:shopping_agent_456",
+  "principal_entity_id": "kye:entity:person:customer_123",
+  "description": "The no-subscription constraint was lost during interpretation from user intent to agent action.",
+  "affected_dimensions": [
+    "meaning_continuity",
+    "intent_continuity",
+    "scope_continuity"
+  ],
+  "original_meaning_fragment": {
+    "constraint": "no_subscription"
+  },
+  "observed_meaning_fragment": {
+    "constraint_present": false
+  },
+  "recommended_decision": "require_reconfirmation",
+  "recommended_obligations": [
+    "notify_principal",
+    "request_clarification",
+    "prevent_commit_until_reconfirmed",
+    "generate_evidence_pack"
+  ],
+  "evidence_refs": [
+    "kye:evidence:intent_001",
+    "kye:evidence:interpretation_001",
+    "kye:evidence:meaning_continuity_001"
+  ]
+}

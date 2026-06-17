@@ -1,0 +1,39 @@
+{
+  "id": "kye:evidence-pack:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "version": 1,
+  "decision_id": "kye:decision:mercy-health:clinical-knowledge:2026-06-03T08:41:12Z:a0b1c2d3",
+  "decision_map_ref": "kye:decision-map:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "inputs_blob_ref": "blob:cid:bafybeihq7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v1w",
+  "signed_state": {
+    "state_hash": "sha256:f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203040506",
+    "state_ref": "blob:cid:bafybeigstate7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v",
+    "signer": "kye:ent:mercy-health:engine:state-snapshot",
+    "signed_at": "2026-06-03T08:41:13Z",
+    "signature": "sig:cose:state:MEUCIQDf3At6B8u3R9sU5bZ7xN2aH4eQ"
+  },
+  "signals": [
+    {
+      "id": "cited-source.anticoag-guideline-2025.section-4.2",
+      "source": "kye:ent:mercy-health:corpus:clinical-guidelines:anticoag-2025-v3",
+      "payload_hash": "sha256:1718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01020304050607",
+      "observed_at": "2026-06-03T08:41:13Z"
+    },
+    {
+      "id": "cited-source.renal-dosing-formulary.entry-871",
+      "source": "kye:ent:mercy-health:corpus:formulary:renal-dosing-2026-q2",
+      "payload_hash": "sha256:18293a4b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708",
+      "observed_at": "2026-06-03T08:41:13Z"
+    }
+  ],
+  "signatures": [
+    {
+      "signer": "kye:ent:mercy-health:engine:admissibility",
+      "signature": "sig:cose:engine:MEUCIQDg4Bu7C9v4S0tV6cA8yO3bI5fR",
+      "signed_at": "2026-06-03T08:41:14Z"
+    }
+  ],
+  "replay_seal_ref": "kye:replay-seal:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "created_at": "2026-06-03T08:41:14Z",
+  "jurisdictions": ["us"],
+  "subject_jurisdiction_canonical": "us"
+}

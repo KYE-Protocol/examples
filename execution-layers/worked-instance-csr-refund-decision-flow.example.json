@@ -1,0 +1,70 @@
+{
+  "schema": "kye.execution_layers.worked_instance.v1",
+  "instance_id": "kye:worked-instance:csr-refund-2026-05-30",
+  "scenario": "Customer-service AI agent recommends a £47 goodwill refund for a delivery delay; CSR formally approves. Walks every one of the 10 execution-stack layers, showing what each layer contributes and where KYE sits.",
+  "decision_id": "kye:decision:customer-service-refund-2026-05-30-0001",
+  "layers": [
+    {
+      "layer_id": "sensing",
+      "what_happened": "Datadog captures the agent's LLM invocation latency (847ms), the tool calls (lookup_order, lookup_returns_policy, calculate_goodwill_max), and the resulting structured recommendation payload.",
+      "kye_role": "consumes",
+      "kye_action": "Pulls the structured tool-call trace as kye.evidence.tool_call.v1 via the sensing integration adapter."
+    },
+    {
+      "layer_id": "capability_state",
+      "what_happened": "The agent's underlying model has a capability profile (kye.model.capability_profile.v1) declared at deploy time by Apollo Research, including a refund-decision sub-eval at 94.2% / 5.1% false-positive (over-refund).",
+      "kye_role": "consumes",
+      "kye_action": "Asserts the capability profile is in-window at decision time (declared_at within 90-day attestation horizon)."
+    },
+    {
+      "layer_id": "influence_state",
+      "what_happened": "Native KYE captures: formal_authority_holder=human, actual_influence_estimate=rubber_stamped, human_review_depth=cursory (1.8s on screen vs. 4.0s readability threshold), human_override_available=true, affected_party_informed=false.",
+      "kye_role": "owns",
+      "kye_action": "Emits kye.ai_influence_state.v1 envelope; flags rubber-stamp pattern; emits kye.resilience.signal.v1 to the Learning layer."
+    },
+    {
+      "layer_id": "machine_state",
+      "what_happened": "Agent runtime emits an AWS Nitro Enclave attestation document — the LLM call traversed a TEE-bound enclave with attested code-hash and PCR measurements.",
+      "kye_role": "consumes",
+      "kye_action": "Validates the attestation document via the Machine State Adapter™ and binds the attested code-hash into the decision-bound Evidence Pack™."
+    },
+    {
+      "layer_id": "policy_evolution",
+      "what_happened": "Customer's refund policy is version v3.7 (adopted 2026-05-15, supersedes v3.6 effective 2026-05-15 00:00 UTC).",
+      "kye_role": "integrates",
+      "kye_action": "Binds policy_version=v3.7 into the kye.replay.context_seal.v1 envelope so the decision can be replayed against the policy state at decision time, not the policy state at audit time."
+    },
+    {
+      "layer_id": "learning_feedback",
+      "what_happened": "KYE detects the rubber-stamp pattern is the 17th occurrence this week in the london-am shift batch.",
+      "kye_role": "produces",
+      "kye_action": "Emits kye.resilience.signal.v1 to the customer's MRM team via the feedback_aggregator integration; UI flag raised in operator dashboard."
+    },
+    {
+      "layer_id": "response_enforcement",
+      "what_happened": "Stripe payment rail receives the £47 refund instruction.",
+      "kye_role": "decides_others_enforce",
+      "kye_action": "Emits the kye.admissibility_decision.v1 envelope (decision=admit, reason_code=policy_admit_within_goodwill_max, evidence_ref=...). Stripe carries out the credit. KYE does not move money; KYE decides whether moving the money is admissible."
+    },
+    {
+      "layer_id": "appeal_contestability",
+      "what_happened": "Three weeks later the customer disputes the refund amount.",
+      "kye_role": "provides_substrate",
+      "kye_action": "Serves the bound Evidence Pack™ (decision_id → policy_version, capability_profile, influence_state, attested code-hash, full tool-call trace) and a derivable Replay Proof™ to the customer's case-management UI."
+    },
+    {
+      "layer_id": "liability_accountability",
+      "what_happened": "Customer's SM&CR SMF1 reviews the recurring rubber-stamp pattern in the quarterly accountability report.",
+      "kye_role": "provides_substrate",
+      "kye_action": "Provides the named-person reasonable-steps Evidence Pack™ — the SMF1 sees what authority was delegated to which agent, what was rubber-stamped vs. substantively reviewed, what corrective signal KYE emitted to MRM."
+    },
+    {
+      "layer_id": "assurance_certification",
+      "what_happened": "Quarterly KYE Seal™ window closes 2026-06-30.",
+      "kye_role": "owns",
+      "kye_action": "Emits kye.compliance.attestation.v1 binding the operating control set (including the rubber-stamp detection signal and its MRM-team consumption) to the customer's declared frameworks (ISO/IEC 42001, NIST AI RMF, EU AI Act high-risk)."
+    }
+  ],
+  "key_insight": "KYE never moves the money (Stripe does), never owns the dispute UI (the case-management product does), never authors the SM&CR regime (the UK statute does), never runs the TEE (AWS does), never grades the model (Apollo does), never streams the trace (Datadog does). KYE OWNS Authority Resolution (decided this was admissible) + Evidence Finality (the pack is derivable from public keys alone) and INTEGRATES with the eight adjacent layers.",
+  "captured_at": "2026-05-30T08:42:17Z"
+}

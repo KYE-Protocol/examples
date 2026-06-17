@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.panel.v1.json",
+  "schema": "kye.panel.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/08-APPS-DASHBOARDS.md",
+  "notes": [
+    "Illustrative kye.panel.v1 instance. The canonical full registry lives at internal"
+  ],
+  "panels": [
+    {
+      "id": "kye:panel:example",
+      "name": "Example Panel",
+      "viz_kind": "line",
+      "data_source": "kye.example.v1",
+      "description": "Illustrative panel."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "actor": {
+    "entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+    "entity_type": "ai_agent"
+  },
+  "principal": {
+    "entity_id": "kye:ent:acme.example:workload:01JYWORKLOAD0000000000000"
+  },
+  "acting_on_behalf_of": {
+    "subject_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+    "delegation_id": "kye:del:acme.example:01JYABC0000000000000000000"
+  },
+  "resource": {
+    "resource_entity_id": "kye:ent:acme.example:document_template:01JYTPL0000000000000000000",
+    "resource_owner_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000"
+  },
+  "action": "document.render",
+  "requested_scope": {
+    "scope_id": "kye:scp:acme.example:01JYFINANCE000000000000000",
+    "constraints": {
+      "workspace": "finance",
+      "environment": "prod",
+      "jurisdiction": "GB"
+    }
+  },
+  "credentials": [
+    "kye:cred:acme.example:kye_agent_passport:01JYCRED0000000000000000"
+  ],
+  "attestations": [
+    "kye:att:acme.example:workload_attestation:01JYATT0000000000000000"
+  ],
+  "context": {
+    "source_system": "billing-core",
+    "ip_class": "trusted",
+    "autonomy_mode": "constrained"
+  }
+}

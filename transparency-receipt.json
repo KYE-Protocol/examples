@@ -1,0 +1,15 @@
+{
+  "receipt_id": "kye:rcp:acme.example:01JYRCPT000000000000000000",
+  "statement_id": "kye:stmt:acme.example:01JYSTMT00000000000000000",
+  "transparency_service_id": "kye:ts:acme.example:main",
+  "inclusion_proof": {
+    "tree_size": 1234,
+    "leaf_hash": "sha256:e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1",
+    "proof_nodes": [
+      "sha256:f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1",
+      "sha256:f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2"
+    ]
+  },
+  "issued_at": "2026-04-15T12:30:04Z",
+  "signature": "cose:<elided>"
+}

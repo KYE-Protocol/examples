@@ -1,0 +1,15 @@
+{
+  "schema": "kye.consultant_certification.v1",
+  "id": "kye:consultant-certification:01HZN4PARTNER-eleanor-vance-2026",
+  "consultant_id": "kye:consultant:acme-trust-partners-eleanor-vance",
+  "level": "partner",
+  "awarded_at": "2026-01-20T11:00:00Z",
+  "expires_at": "2027-01-20T11:00:00Z",
+  "awarded_by": "kye:certifier:kye-protocol-partner-programme",
+  "evidence_pack_id": "kye:evidence-pack:01HZN4P-cert-vance-partner-2026",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-partner-issuer-2026-01",
+    "value_b64": "MEUCIQDxC4cVance2026PartnerCertSignatureMockBytesForFixtureValidationOnly=="
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "kye:decision-map:platform.s52-phase2.01HFC9YM4QZ7N8T0WX5XKLR9P4R",
+  "version": 1,
+  "decision_id": "kye:decision:platform.s52-phase2.01HFC9YM4QZ7N8T0WX5XKLR9P4R",
+  "nodes": [
+    {
+      "id": "in.request",
+      "type": "input",
+      "label": "§52 Phase 2 runtime-binding purpose request",
+      "payload_ref": "kye:purpose-req:platform:01HFC9YM4QZ7N8T0WX5XKLR9P4R",
+      "payload_hash": "sha256:1a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081",
+      "signature": "sig:cose:in.request:MEUCIQEa5Bq8Z3p1M4nP0wT2sH7vC9bL"
+    },
+    {
+      "id": "in.phase1-binding-manifest",
+      "type": "input",
+      "label": "§52 Phase 1 binding manifest (4 patterns pre-Phase-2)",
+      "payload_ref": "internal#pre-phase2",
+      "payload_hash": "sha256:2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2",
+      "signature": "sig:cose:in.phase1-manifest:MEUCIQEb6Cr9A4q2N5oQ1xV3tJ8wD0aM"
+    },
+    {
+      "id": "in.mcp-allow-list-manifest-draft",
+      "type": "input",
+      "label": "Draft kye.agent.mcp_allow_list.v1 manifest (5 patterns)",
+      "payload_ref": "internal",
+      "payload_hash": "sha256:3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3",
+      "signature": "sig:cose:in.mcp-manifest:MEUCIQEc7Ds0B5r3O6pR2yW4uK9xE1bN"
+    },
+    {
+      "id": "rule.subset-not-superset",
+      "type": "rule",
+      "label": "Per-dispatch mcp_allow_list[] MUST be a subset of manifest entry (§52 §4)",
+      "payload_hash": "sha256:4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4",
+      "signature": "sig:cose:rule.subset:MEUCIQEd8Et1C6s4P7qS3zX5vL0yF2cO"
+    },
+    {
+      "id": "rule.empty-list-safe-baseline",
+      "type": "rule",
+      "label": "Empty allowed_mcp_servers[] is the safe baseline; non-empty requires written purpose_justification",
+      "payload_hash": "sha256:5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5",
+      "signature": "sig:cose:rule.empty-baseline:MEUCIQEe9Fu2D7t5Q8rT4aY6wM1zG3dP"
+    },
+    {
+      "id": "rule.preflight-and-postflight",
+      "type": "rule",
+      "label": "Both pre-flight (preflight.mjs) AND post-flight (agent-envelope-vs-scope.mjs) checks ship in Phase 2",
+      "payload_hash": "sha256:6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6",
+      "signature": "sig:cose:rule.dual-check:MEUCIQEfA0Gv3E8u6R9sU5bZ7xN2aH4eQ"
+    },
+    {
+      "id": "obl.emit-mcp-allow-list-manifest",
+      "type": "obligation",
+      "label": "Emit internal",
+      "payload_hash": "sha256:70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6f7",
+      "signature": "sig:cose:obl.mcp-manifest:MEUCIQEgB1Hw4F9v7S0tV6cA8yO3bI5fR"
+    },
+    {
+      "id": "obl.emit-mcp-allow-list-schema",
+      "type": "obligation",
+      "label": "Emit internal",
+      "payload_hash": "sha256:819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6f708",
+      "signature": "sig:cose:obl.mcp-schema:MEUCIQEhC2Ix5G0w8T1uW7dB9zP4cJ6gS"
+    },
+    {
+      "id": "obl.emit-preflight-script",
+      "type": "obligation",
+      "label": "Emit scripts/agent-governance/preflight.mjs",
+      "payload_hash": "sha256:9a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6f70819",
+      "signature": "sig:cose:obl.preflight:MEUCIQEiD3Jy6H1x9U2vX8eC0aQ5dK7hT"
+    },
+    {
+      "id": "obl.emit-post-flight-gate",
+      "type": "obligation",
+      "label": "Emit scripts/gates/agent-envelope-vs-scope.mjs (wired into npm test)",
+      "payload_hash": "sha256:a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6f70819a",
+      "signature": "sig:cose:obl.gate:MEUCIQEjE4Kz7I2y0V3wY9fD1bR6eL8iU"
+    },
+    {
+      "id": "obl.register-self-description",
+      "type": "obligation",
+      "label": "Register new gate under §52 subject in enforcement-map.json",
+      "payload_hash": "sha256:b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6f70819a2b",
+      "signature": "sig:cose:obl.self-desc:MEUCIQEkF5L08J3z1W4xZ0gE2cS7fM9jV"
+    },
+    {
+      "id": "out.decision",
+      "type": "output",
+      "label": "Allow — §52 Phase 2 runtime-binding contracts ratified",
+      "payload_hash": "sha256:c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081a2b3c4d5e6f70819a2b3c",
+      "signature": "sig:cose:out.decision:MEUCIQElG6M19K405X5y1AhF3dT8gN0kW"
+    }
+  ],
+  "edges": [
+    { "from": "in.request",                       "to": "rule.subset-not-superset",           "kind": "feeds" },
+    { "from": "in.phase1-binding-manifest",       "to": "rule.subset-not-superset",           "kind": "feeds" },
+    { "from": "in.mcp-allow-list-manifest-draft", "to": "rule.subset-not-superset",           "kind": "feeds" },
+    { "from": "in.mcp-allow-list-manifest-draft", "to": "rule.empty-list-safe-baseline",      "kind": "feeds" },
+    { "from": "in.request",                       "to": "rule.preflight-and-postflight",      "kind": "feeds" },
+    { "from": "rule.subset-not-superset",         "to": "obl.emit-mcp-allow-list-manifest",   "kind": "triggers" },
+    { "from": "rule.subset-not-superset",         "to": "obl.emit-mcp-allow-list-schema",     "kind": "triggers" },
+    { "from": "rule.empty-list-safe-baseline",    "to": "obl.emit-mcp-allow-list-manifest",   "kind": "triggers" },
+    { "from": "rule.preflight-and-postflight",    "to": "obl.emit-preflight-script",          "kind": "triggers" },
+    { "from": "rule.preflight-and-postflight",    "to": "obl.emit-post-flight-gate",          "kind": "triggers" },
+    { "from": "rule.preflight-and-postflight",    "to": "obl.register-self-description",      "kind": "triggers" },
+    { "from": "obl.emit-mcp-allow-list-manifest", "to": "out.decision",                       "kind": "satisfies" },
+    { "from": "obl.emit-mcp-allow-list-schema",   "to": "out.decision",                       "kind": "satisfies" },
+    { "from": "obl.emit-preflight-script",        "to": "out.decision",                       "kind": "satisfies" },
+    { "from": "obl.emit-post-flight-gate",        "to": "out.decision",                       "kind": "satisfies" },
+    { "from": "obl.register-self-description",    "to": "out.decision",                       "kind": "satisfies" }
+  ],
+  "output_node_id": "out.decision",
+  "created_at": "2026-05-27T11:00:02Z"
+}

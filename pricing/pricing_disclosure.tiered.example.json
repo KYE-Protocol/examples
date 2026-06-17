@@ -1,0 +1,45 @@
+{
+  "schema": "kye.pricing_disclosure.v1",
+  "sku_id": "KYE-FOUNDRY-BUILD",
+  "pricing_envelope_ref": "kye.commercial.value_based_pricing.v1#/envelopes/by-sku/KYE-FOUNDRY-BUILD",
+  "pricing_model": "tiered",
+  "currency": "GBP",
+  "internal_price_band": {
+    "floor": 25000,
+    "ceiling": 75000,
+    "default": 45000
+  },
+  "public_disclosure": {
+    "mode": "hidden"
+  },
+  "tier_overrides": [
+    {
+      "tier_name": "scout",
+      "internal_price_band": { "floor": 5000, "ceiling": 15000, "default": 10000 },
+      "public_disclosure_mode": "hidden"
+    },
+    {
+      "tier_name": "build",
+      "internal_price_band": { "floor": 25000, "ceiling": 75000, "default": 45000 },
+      "public_disclosure_mode": "hidden"
+    },
+    {
+      "tier_name": "venture",
+      "internal_price_band": { "floor": 100000, "ceiling": 250000, "default": 175000 },
+      "public_disclosure_mode": "contact-for-pricing"
+    }
+  ],
+  "negotiable": true,
+  "commission_split": {
+    "kye_pct_kye_sourced": 70,
+    "partner_pct_kye_sourced": 30,
+    "kye_pct_partner_sourced": 60,
+    "partner_pct_partner_sourced": 40,
+    "strategic_terms_ref": "kye.foundry.revenue_share.v1#/strategic-deal-override"
+  },
+  "effective_from": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "review_cadence_days": 90,
+  "owners": ["ceo", "partner-channel-lead"],
+  "rationale": "Foundry partner-channel tiered SKU per §54. Three tiers (SCOUT/BUILD/VENTURE) with progressive price bands. VENTURE is Tier-1 / Custom; SCOUT/BUILD are hidden default."
+}

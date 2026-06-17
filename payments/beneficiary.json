@@ -1,0 +1,9 @@
+{
+  "beneficiary_id": "kye:ent:acme.example:beneficiary:01JYBEN000000000000000000",
+  "entity_id": "kye:ent:acme.example:beneficiary:01JYBEN000000000000000000",
+  "beneficiary_class": "vendor",
+  "approval_status": "approved",
+  "jurisdiction": "GB",
+  "rail_types": ["bank_transfer"],
+  "bank_account_reference_entity_id": "kye:ent:acme.example:bank_account_reference:01JYBAR0000000000000"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "kye.certification_record.v1",
+  "certification_id": "kye:cert:authority:acme.example:agent-runtime-2.4.1:2026",
+  "organisation_entity_id": "kye:org:acme.example",
+  "product_name": "Acme Agent Runtime",
+  "product_version": "2.4.1",
+  "certification_level": "kye_authority_conformant",
+  "profiles": [
+    "kye.core.v1.0",
+    "kye.authority.v1.0",
+    "kye.capability.v1.0"
+  ],
+  "protocol_version": "kye.core.v1.0",
+  "test_suite_version": "kye-conformance-1.0.0",
+  "conformance_run_ref": "kye:conformance-run:acme.example:001",
+  "evidence_pack_ref": "kye:evidence-pack:acme.example:certification-001",
+  "implementation_declaration": {
+    "supports_runtime_authorize": true,
+    "supports_decision_map": true,
+    "supports_evidence_pack_export": true,
+    "policy_engine": "rego"
+  },
+  "badge_id": "kye:badge:authority-conformant:acme.example:agent-runtime-2.4.1",
+  "badge_url": "https://registry.kye.dev/badges/kye-cert-authority-acme-agent-runtime-2-4-1.svg",
+  "verification_url": "https://registry.kye.dev/certifications/kye-cert-authority-acme-agent-runtime-2-4-1",
+  "registry_listing_url": "https://registry.kye.dev/certifications/acme-agent-runtime-2-4-1",
+  "status": "active",
+  "issued_at": "2026-05-06T00:00:00Z",
+  "expires_at": "2027-05-06T00:00:00Z",
+  "signature": {
+    "algorithm": "ed25519",
+    "signature": "kye-sig:1:01HXKYECERTSIG000000000000000000",
+    "signed_by_credential_id": "kye:credential:kye-protocol:registry-key-2026"
+  }
+}

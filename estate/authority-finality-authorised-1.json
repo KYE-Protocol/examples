@@ -1,0 +1,16 @@
+{
+  "schema": "kye.estate.authority_finality.v1",
+  "authority_finality_id": "kye:estate:authority_finality:demo-tenant:af-2026-05-27-001",
+  "matter_id": "kye:estate:matter:demo-tenant:matter-2026-05-27-001",
+  "decided_at": "2026-05-27T11:30:00Z",
+  "decided_by": "kye:actor:demo-tenant:manager-david",
+  "outcome": "authorised_final",
+  "lifecycle_state": "entitlement_active",
+  "binding_chain": {
+    "fact_find_id": "kye:estate:fact_find:demo-tenant:ff-2026-05-27-001",
+    "draft_manifest_id": "kye:estate:draft_manifest:demo-tenant:dm-2026-05-27-001",
+    "boundary_decision_id": "kye:estate:boundary_decision:demo-tenant:bd-2026-05-27-001",
+    "signing_pack_id": "kye:estate:signing_pack:demo-tenant:sp-2026-05-27-001"
+  },
+  "rationale": "Manager review completed. Adviser amendment resolved the amber share-substitution finding by adding a per-stirpes clause. Signing pack issued; lifecycle state advanced to entitlement_active for matter execution and storage."
+}

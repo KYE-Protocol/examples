@@ -1,0 +1,104 @@
+{
+  "id": "kye:decision-map:platform.s50-phase4.01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
+  "version": 1,
+  "decision_id": "kye:decision:platform.s50-phase4.01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
+  "nodes": [
+    {
+      "id": "in.request",
+      "type": "input",
+      "label": "§50 Phase 4 extension purpose request",
+      "payload_ref": "kye:purpose-req:platform:01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
+      "payload_hash": "sha256:1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+      "signature": "sig:cose:in.request:MEUCIQDp7Aq9Z3p2N5oR1xW3uK0yE1bM"
+    },
+    {
+      "id": "in.page-manifest",
+      "type": "input",
+      "label": "Phase 1+2 canonical page-manifest.json (371 pages, 183 discoverable)",
+      "payload_ref": "internal",
+      "payload_hash": "sha256:2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a",
+      "signature": "sig:cose:in.manifest:MEUCIQDp7Br0Y6r1O7pT2zX5wL0yF2cN"
+    },
+    {
+      "id": "in.derived-search-index-v10",
+      "type": "input",
+      "label": "Phase 3 derived-search-index.json (schema 1.0; 172 records, snippet only)",
+      "payload_ref": "public/site/assets/derived-search-index.json@phase3",
+      "payload_hash": "sha256:3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
+      "signature": "sig:cose:in.search:MEUCIQDp7Cs1Z7s2P8qU3aY6xM1zG3dO"
+    },
+    {
+      "id": "rule.zero-competing-systems",
+      "type": "rule",
+      "label": "§0 — Zero Competing Systems: extend the existing search-derivation engine in place; never author a parallel landings/search system.",
+      "payload_hash": "sha256:4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c",
+      "signature": "sig:cose:rule.zero-competing:MEUCIQDp7Dt2A8t3Q9rV4bZ7yN2aH4eP"
+    },
+    {
+      "id": "rule.derivation-not-curation",
+      "type": "rule",
+      "label": "§50 §3 — every consumer surface is a *query* over the canonical graph; hand-curating the audience-landings list would re-introduce the very competing-system §50 §1 eliminated.",
+      "payload_hash": "sha256:5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d",
+      "signature": "sig:cose:rule.derivation:MEUCIQDp7Eu3B9u4R0sW5cA8zO3bI5fQ"
+    },
+    {
+      "id": "rule.no-stub-introduced",
+      "type": "rule",
+      "label": "§0.2 — every shipped surface is production-grade. Each per-audience landing carries an honest, audience-specific value proposition (single source of truth: AUDIENCE_VALUE_PROPS in the builder, mirrored in §3.6).",
+      "payload_hash": "sha256:6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e",
+      "signature": "sig:cose:rule.no-stub:MEUCIQDp7Fv4C0v5S1tX6dB9aP4cJ6gR"
+    },
+    {
+      "id": "obl.ship-audience-landings",
+      "type": "obligation",
+      "label": "Ship scripts/build-audience-landings.mjs + 11 generated public/site/for/<audience>.html pages.",
+      "payload_hash": "sha256:7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f",
+      "signature": "sig:cose:obl.landings:MEUCIQDp7Gw5D1w6T2uY7eC0bQ5dK7hS"
+    },
+    {
+      "id": "obl.extend-search-index",
+      "type": "obligation",
+      "label": "Extend scripts/build-derived-search.mjs in place to add sections[] + related[] + weight per record; bump schema_version 1.0 → 1.1.",
+      "payload_hash": "sha256:8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a",
+      "signature": "sig:cose:obl.search-extend:MEUCIQDp7Hx6E2x7U3vZ8fD1cR6eL8iT"
+    },
+    {
+      "id": "obl.add-structural-gates",
+      "type": "obligation",
+      "label": "Wire test:audience-landings-fresh + test:audience-landing-coverage + test:derived-search-index-shape into the npm test chain.",
+      "payload_hash": "sha256:9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+      "signature": "sig:cose:obl.gates:MEUCIQDp7Iy7F3y8V4wA9gE2dS7fM9jU"
+    },
+    {
+      "id": "obl.amend-chapter",
+      "type": "obligation",
+      "label": "Amend constitution/50 with §3.5 Phase-4 closures + §3.6 per-audience value-prop table + Phase 4 row in §7 phased rollout + 6 new canonical Locks pointers.",
+      "payload_hash": "sha256:a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1",
+      "signature": "sig:cose:obl.amend:MEUCIQDp7Jz8G4z9W5xB0hF3eT8gN0kV"
+    },
+    {
+      "id": "out.decision",
+      "type": "output",
+      "label": "Allow — §50 Phase 4 extension ratified",
+      "payload_hash": "sha256:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2",
+      "signature": "sig:cose:out.decision:MEUCIQDp7Ka9H5a0X6yC1iG4fU9hO1lW"
+    }
+  ],
+  "edges": [
+    { "from": "in.request",                          "to": "rule.zero-competing-systems", "kind": "feeds" },
+    { "from": "in.page-manifest",                    "to": "rule.derivation-not-curation","kind": "feeds" },
+    { "from": "in.derived-search-index-v10",         "to": "rule.zero-competing-systems", "kind": "feeds" },
+    { "from": "in.request",                          "to": "rule.no-stub-introduced",     "kind": "feeds" },
+    { "from": "rule.zero-competing-systems",         "to": "obl.extend-search-index",     "kind": "triggers" },
+    { "from": "rule.derivation-not-curation",        "to": "obl.ship-audience-landings",  "kind": "triggers" },
+    { "from": "rule.no-stub-introduced",             "to": "obl.ship-audience-landings",  "kind": "triggers" },
+    { "from": "rule.derivation-not-curation",        "to": "obl.add-structural-gates",    "kind": "triggers" },
+    { "from": "rule.zero-competing-systems",         "to": "obl.amend-chapter",           "kind": "triggers" },
+    { "from": "obl.ship-audience-landings",          "to": "out.decision",                "kind": "satisfies" },
+    { "from": "obl.extend-search-index",             "to": "out.decision",                "kind": "satisfies" },
+    { "from": "obl.add-structural-gates",            "to": "out.decision",                "kind": "satisfies" },
+    { "from": "obl.amend-chapter",                   "to": "out.decision",                "kind": "satisfies" }
+  ],
+  "output_node_id": "out.decision",
+  "created_at": "2026-05-27T13:00:02Z"
+}

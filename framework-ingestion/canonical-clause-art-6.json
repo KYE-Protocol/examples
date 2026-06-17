@@ -1,0 +1,10 @@
+{
+  "schema": "kye.canonical_clause.v1",
+  "clause_id": "kye:clause:eu-ai-act-art-6",
+  "document_id": "kye:framework-doc:eu-ai-act",
+  "clause_path": "Art.6",
+  "obligation_type": "risk-classification",
+  "text_hash": "0959bb6811b9b3ecfe1bcbe27613471447d6244a15879d13ea7814733e40c27e",
+  "summary": "Classification rules for high-risk AI systems",
+  "cross_refs": []
+}

@@ -1,0 +1,27 @@
+{
+  "asset_id":   "kye:data_asset:st-marys-nhs:meds.patient_timeline_stream",
+  "owner":      "kye:org:st-marys-nhs",
+  "asset_kind": "stream",
+  "location": {
+    "system":       "cloudflare:r2",
+    "address":      "meds-timelines/st-marys-nhs/cohort-cardio-2026",
+    "jurisdiction": "GB"
+  },
+  "classification": "special_category_data",
+  "pii_inventory": [
+    { "field": "patient_ref",   "pii_type": "national_id",    "redaction_strategy": "tokenise" },
+    { "field": "date_of_birth", "pii_type": "date_of_birth",  "redaction_strategy": "preserve_only_for_subject" }
+  ],
+  "labels": {
+    "meds-substrate":         "true",
+    "meds-event-kinds":       "diagnosis,lab_result,medication,imaging,procedure",
+    "meds-code-systems":      "loinc,snomed,icd10",
+    "meds-identifiability":   "pseudonymised",
+    "clinical-pack-binding":  "kye:rule-pack:clinical-data-use",
+    "regulator-domain":       "MHRA-UK_GDPR"
+  },
+  "default_retention_days":  3650,
+  "data_subject_ref_field":  "patient_ref",
+  "lineage_parents":         [],
+  "registered_at":           "2026-06-06T09:00:00Z"
+}

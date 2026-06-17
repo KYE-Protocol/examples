@@ -1,0 +1,28 @@
+{
+  "schema_version": "kye.compliance_mapping.v1",
+  "framework": "EU_AI_ACT",
+  "framework_version": "Regulation (EU) 2024/1689",
+  "control_ref": "AIA_HIGH_RISK_LOGGING",
+  "control_title": "High-risk system record-keeping",
+  "control_summary": "Article 12 record-keeping obligation for high-risk AI systems.",
+  "kye_controls": [
+    "kye.audit.runtime_decision",
+    "kye.capability.invocation_event",
+    "kye.entity.state_transition",
+    "kye.authority.grant",
+    "kye.human_oversight.approval_gate"
+  ],
+  "evidence_events": [
+    "kye.validation.performed",
+    "kye.capability.invocation_allowed",
+    "kye.capability.invocation_denied",
+    "kye.authority.revoked"
+  ],
+  "evidence_pack": "kye:evidence-pack:eu-ai-act-high-risk",
+  "kye_profiles_required": ["core", "pep", "pep", "pdp"],
+  "policy_bundle_refs": ["kye.policy.aia.high_risk_logging"],
+  "applicable_sector_profiles": ["pep", "pep", "pep"],
+  "applies_to_entity_types": ["ai_system", "ai_agent", "high_risk_workflow"],
+  "retention_minimum_days": 180,
+  "notes": "Logs MUST be retained for the lifetime of the system plus the provider's record-keeping obligation under Article 18."
+}

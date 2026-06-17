@@ -1,0 +1,30 @@
+{
+  "schema_version": "kye.assurance_review_cycle.v1",
+  "cycle_id": "kye:assurance-review-cycle:finance_agent_001",
+  "assurance_card_ref": "kye:assurance-card:finance_agent_001",
+  "scheduled_frequency": "monthly",
+  "next_review_due": "2026-06-09T12:00:00Z",
+  "review_triggers": [
+    "scheduled", "scope_change", "new_capability", "incident",
+    "risk_state_change", "model_update", "authority_change",
+    "supplier_change", "licence_change", "retention"
+  ],
+  "reviewer_roles": ["ai_governance_lead", "finance_manager", "security_admin"],
+  "evidence_captured_per_review": [
+    "reviewer_identity", "decision", "reason_code", "timestamp",
+    "state_snapshot", "decision_map", "evidence_pack"
+  ],
+  "completed_reviews": [
+    {
+      "review_id": "kye:review:001",
+      "reviewed_at": "2026-05-09T12:00:00Z",
+      "trigger": "scheduled",
+      "reviewer_role": "ai_governance_lead",
+      "outcome": "approved",
+      "reason_code": "pilot_ready_with_controls",
+      "evidence_ref": "kye:evidence-pack:review_001"
+    }
+  ],
+  "status": "active",
+  "audit_chain_ref": "kye:audit:chain:0xdef789"
+}

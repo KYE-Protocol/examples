@@ -1,0 +1,24 @@
+{
+  "schema": "kye.agent.governance.v1",
+  "agent_id": "general-purpose-content-author",
+  "parent_task": "2f0b1e88-0c1d-4b9a-9e51-3f9d65c31b8f",
+  "dispatched_at": "2026-05-27T09:14:22Z",
+  "purpose": "Author the §52 chapter file and §52 binding manifest under the declared write_paths; never touch internal or public/ marketing surfaces.",
+  "scope": {
+    "read_paths": [
+      "constitution/**",
+      "internal**",
+      "internal**",
+      "scripts/gates/**",
+      "package.json"
+    ],
+    "write_paths": [
+      "constitution/52-DELEGATED-AGENT-BINDING.md",
+      "internal"
+    ]
+  },
+  "mcp_allow_list": [],
+  "constitutional_acknowledgement": ["§0", "§0.2", "§0.3", "§33", "§43", "§45", "§52"],
+  "binding_manifest_ref": "internal#general-purpose-content-author",
+  "notes": "Illustrative emission shape. The agent_id maps to a task-pattern in the binding manifest; the scope here is the per-task tightening of that default."
+}

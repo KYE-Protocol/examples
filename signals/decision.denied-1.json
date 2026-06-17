@@ -1,0 +1,15 @@
+{
+  "decision_id": "kye:decision:acme.com:pdp:dec-20260514-002",
+  "entity_id": "kye:agent:acme.com:runtime:billing-agent-01",
+  "action": "capability:payment-execute",
+  "deny_reasons": [
+    {
+      "code": "capability_not_granted",
+      "detail": "Agent does not hold capability kye:capability:acme.com:payments:payment-execute. Request an authority grant first."
+    }
+  ],
+  "policy_refs": [
+    "kye:policy:acme.com:payments:payment-policy-v1"
+  ],
+  "decided_at": "2026-05-14T10:06:00Z"
+}

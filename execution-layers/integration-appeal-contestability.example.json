@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:appeal_contestability:customer-case-mgmt-example",
+  "layer": "appeal_contestability",
+  "direction": "out",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "dispute_ui",
+  "attestation_requirement": "required_outbound",
+  "transport": "https_pull",
+  "known_partners": [
+    { "partner_slug": "customer-case-mgmt", "partner_name": "Customer case-management UI", "adapter_status": "shipping" }
+  ],
+  "adopted_at": "2026-05-30"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:bio-chem-governance:v1",
+  "partner_id": "kye:foundry-applicant:bio-chem-governance-reference-partner",
+  "pack_name": "KYE AI Bio-Chem Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "bio-chem-governance",
+  "bound_sector_pack_refs": ["kye:sector-pack:bio-chem-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:bio-chem-governance"],
+  "bound_dictionary_refs": ["kye:dictionary:bio-chem-governance"],
+  "bound_framework_refs": [
+    "kye:framework:us-eo-14110",
+    "kye:framework:nucleic-acid-synthesis-screening",
+    "kye:framework:australia-group",
+    "kye:framework:cwc-bwc",
+    "kye:framework:fda-ema"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:bio-chem-governance:2026-06-07",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-07T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-bio-chem-governance-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:bio-chem-governance:2026-06-07",
+  "claim_set": [
+    {
+      "claim_id": "synthesis-admissibility",
+      "claim_text": "Every AI-generated biological sequence or chemical structure that moves toward synthesis, order placement, or a wet-lab / regulated stage MUST map to a recorded synthesis-admissibility decision — the agent, the design artefact, the intended consequential action, and the authority under which it proceeds. Designs lacking a recorded admissibility decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "dual-use-screening",
+      "claim_text": "Before an AI-generated sequence or molecule proceeds to a consequential action it MUST carry a recorded dual-use screening result — a sequence-of-concern screen (IBBIS Common Mechanism / IGSC Harmonized Screening Protocol) for nucleic-acid designs, and a controlled-substance / dual-use-list screen (Australia Group, CWC Schedules 1/2/3, BWC prohibited agents) for chemical and biological designs. A flagged or unscreened design is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-generated design that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs and pinned reference data, the screening result relied on, and the synthesis-admissibility outcome — GxP-grade data-integrity provenance verifiable offline.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "oversight-gate",
+      "claim_text": "An AI-generated design MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — an institutional biosafety committee (IBC), a chemical-safety authority, or a designated responsible person — records oversight sign-off. Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-generated sequence/molecule/protocol may proceed to a consequential action and PROVES the basis. KYE does not fold proteins, design molecules, run the screening pipeline, or judge the scientific validity of a design.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-07T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

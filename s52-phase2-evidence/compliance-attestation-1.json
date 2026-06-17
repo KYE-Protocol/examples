@@ -1,0 +1,40 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:platform:s52-phase2-2026-05-27",
+  "emitted_at": "2026-05-27T11:00:03Z",
+  "emitter": "kye:engine:reconciliation-engine:v1.2-build-9c1e7af0",
+  "framework_refs": [
+    "constitution/52-DELEGATED-AGENT-BINDING.md",
+    "constitution/00-INDEX.md#0.3",
+    "constitution/45-SELF-DESCRIPTION.md",
+    "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+    "constitution/27-COMMERCIAL-LIFECYCLE.md"
+  ],
+  "subject": "s52-phase2-runtime-binding-2026-05-27",
+  "mode": "static",
+  "run_id": "run_s52_phase2_2026_05_27_01HFC9YM4QZ7N8T0WX5XKLR9P4R",
+  "envelope_report_hash": "b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef0102",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "new_schemas_registered": 1,
+    "new_manifests_registered": 1,
+    "new_scripts_authored": 2,
+    "new_gates_wired_into_test_chain": 1,
+    "binding_manifest_patterns_after_phase2": 6,
+    "mcp_allow_list_manifest_patterns": 5,
+    "refusal_fixture_categories_covered": 3,
+    "evidence_chain_fixtures_emitted": 4,
+    "self_binding_governance_envelope_emitted": true,
+    "phase3_deferred_items": [
+      "retroactive-transcript-analysis",
+      "harness-level-mcp-intercept-hook"
+    ]
+  },
+  "blocking_reconcilers": [
+    { "id": "delegated-agent-binding-coverage", "verdict": "OK" },
+    { "id": "agent-envelope-vs-scope",          "verdict": "OK" },
+    { "id": "machine-readable-coverage",        "verdict": "OK" },
+    { "id": "self-description",                 "verdict": "OK" }
+  ]
+}

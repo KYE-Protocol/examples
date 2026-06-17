@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:sensing:datadog-example",
+  "layer": "sensing",
+  "direction": "in",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "observability_platform",
+  "attestation_requirement": "advisory",
+  "transport": "https_webhook",
+  "known_partners": [
+    { "partner_slug": "datadog", "partner_name": "Datadog", "adapter_status": "declared", "url": "https://www.datadoghq.com" }
+  ],
+  "adopted_at": "2026-05-30"
+}

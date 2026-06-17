@@ -1,0 +1,24 @@
+{
+  "schema_version": "kye.rule_proof.v1",
+  "proof_id": "kye:rule-proof:payment_agent_001",
+  "rule_set_id": "kye:ruleset:payment_agent_controls",
+  "proof_status": "passed_with_warnings",
+  "checked_properties": {
+    "no_permission_prohibition_conflict": true,
+    "obligations_have_satisfaction_paths": true,
+    "all_commit_boundaries_have_gates": true,
+    "all_high_risk_actions_have_evidence": true,
+    "revocation_path_exists": true,
+    "no_circular_delegation": true,
+    "no_unbounded_obligations": true,
+    "all_overrides_have_governance_rule": true
+  },
+  "warnings": [
+    {
+      "reason_code": "authority_expires_within_7_days",
+      "message": "Payment preparation authority expires within seven days."
+    }
+  ],
+  "conflict_refs": [],
+  "generated_at": "2026-05-09T12:00:00Z"
+}

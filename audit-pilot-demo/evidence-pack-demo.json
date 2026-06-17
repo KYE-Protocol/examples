@@ -1,0 +1,19 @@
+{
+  "schema": "kye.audit_pilot.demo_bundle.v1",
+  "id": "kye:evidence-pack:demo.payment-prepare.001",
+  "version": 1,
+  "title": "Delegated Auditability — Supplier Payment Demo Pack",
+  "description": "A read-only bundle of one Observed Action, its Shadow Evaluation, the detected Authority Gap and the recommended Guard. Designed to be rendered by the Evidence Pack viewer on /evidence-pack-demo.html. Not part of the validate-schemas.js mapping — every linked file is individually schema-validated.",
+  "pilot_id": "kye:audit-pilot:demo.financial-services.q2-2026",
+  "observed_action_ref":   "./observed-action-payment-prepare.json",
+  "shadow_evaluation_ref": "./shadow-evaluation-payment-prepare.json",
+  "authority_gap_ref":     "./authority-gap-001.json",
+  "guard_recommendation_ref": "./guard-recommendation-001.json",
+  "created_at": "2026-05-12T11:30:00Z",
+  "signed_by": "kye:ent:kye-protocol.evidence-gateway.eu-prod.2026",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:demo.evidence-gateway.2026",
+    "value_b64": "ZGVtb19idW5kbGVfc2lnbmF0dXJlX3BsYWNlaG9sZGVyXzAwMV9wYXltZW50X3ByZXBhcmVfc3VwcGxpZXI"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "kye.billing.meter_event.v1",
+  "event_id": "kye:meter-event:acme-bank.2026-05-12T13.0001",
+  "version": 1,
+  "customer_kyeid": "kye:ent:bank.acme",
+  "meter_class": "shadow_observation",
+  "count": 1,
+  "value_in_pence": 0,
+  "action_ref": "kye:observed-action:acme-bank.payment-prepare.4421",
+  "tenant_id": "kye:tenant:acme-bank",
+  "recorded_at": "2026-05-12T13:04:11.812Z",
+  "stripe_event_id": "evt_meter_1QXYZABCDEFGHIJ",
+  "stripe_meter_id": "mtr_shadow_observation",
+  "signature": "0123456789abcdef0123456789abcdef",
+  "above_quota": true
+}

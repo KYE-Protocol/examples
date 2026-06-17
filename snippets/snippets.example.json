@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.snippet.v1.json",
+  "schema": "kye.snippet.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/24-DESIGN-DICTIONARY.md",
+  "notes": [
+    "Illustrative kye.snippet.v1 instance. The canonical full registry lives at internal"
+  ],
+  "snippets": [
+    {
+      "id": "kye:snippet:example",
+      "lang": "bash",
+      "title": "Example snippet",
+      "surface": "example",
+      "description": "Illustrative snippet."
+    }
+  ]
+}

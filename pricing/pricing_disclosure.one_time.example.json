@@ -1,0 +1,22 @@
+{
+  "schema": "kye.pricing_disclosure.v1",
+  "sku_id": "KYE-DISCOVERY-001",
+  "pricing_envelope_ref": "kye.commercial.value_based_pricing.v1#/envelopes/by-sku/KYE-DISCOVERY-001",
+  "pricing_model": "one_time",
+  "currency": "GBP",
+  "internal_price_band": {
+    "floor": 7500,
+    "ceiling": 10000,
+    "default": 8500
+  },
+  "public_disclosure": {
+    "mode": "from",
+    "displayed_value": 7500
+  },
+  "negotiable": true,
+  "effective_from": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "review_cadence_days": 90,
+  "owners": ["ceo", "commercial-lead"],
+  "rationale": "Discovery Workshop is the entry-point qualifier — public-published floor on the SMB ladder makes the qualification cost visible up-front."
+}

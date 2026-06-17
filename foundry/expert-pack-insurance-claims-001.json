@@ -1,0 +1,55 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:insurance-claims:v1",
+  "partner_id": "kye:foundry-applicant:insurance-claims-reference-partner",
+  "pack_name": "KYE Claims Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "insurance-claims",
+  "bound_sector_pack_refs": ["kye:sector-pack:insurance-claims"],
+  "bound_rule_pack_refs": ["kye:rule-pack:insurance-claims"],
+  "bound_dictionary_refs": ["kye:dictionary:insurance-claims"],
+  "bound_framework_refs": [
+    "kye:framework:fca-consumer-duty",
+    "kye:framework:eu-ai-act",
+    "kye:framework:uk-gdpr",
+    "kye:framework:dora"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:insurance-claims:2026-06-06",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-06T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-insurance-claims-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:insurance-claims:2026-06-06",
+  "claim_set": [
+    {
+      "claim_id": "decision-authority",
+      "claim_text": "Every AI-assisted coverage decision, settlement recommendation, or claim rejection MUST map to a named claims handler with the prescribed authority before it is actioned. Decisions lacking named-handler authority are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "decision-evidence-pack",
+      "claim_text": "Every material AI-assisted claims decision MUST emit a signed, replay-derivable Evidence Pack binding owner identity, the policy version, the AI influence state, the handler review, and the Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "fraud-flag-human-review",
+      "claim_text": "Every AI-generated fraud flag that would drive an adverse claim outcome MUST be reviewed by a named human before the adverse action is taken.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "customer-data-minimisation",
+      "claim_text": "Every AI-assisted access to claimant personal data (including special-category and third-party data in the claim file) MUST be purpose-scoped and minimised to what the declared claims purpose requires.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-06T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

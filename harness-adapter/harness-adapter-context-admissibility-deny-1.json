@@ -1,0 +1,19 @@
+{
+  "schema": "kye.harness_adapter.v1",
+  "adapter_id": "kye:harness-adapter:claude-code-generic",
+  "tool_call_id": "toolu_04JKL012",
+  "agent_id": "general-purpose-content-author",
+  "parent_task": "d4e5f6a7-b8c9-0123-defa-123456789013",
+  "tool_name": "Bash",
+  "tool_type": "bash",
+  "hook_phase": "pre",
+  "admit_verdict": "DENY",
+  "mcp_allow_list_checked": false,
+  "mcp_allow_list_verdict": null,
+  "context_admissibility_verdict": "DENY",
+  "evidence_pack_ref": null,
+  "refusal_ref": "kye:harness-adapt:refusal:d4e5f6a7-toolu_04JKL012",
+  "emitted_at": "2026-06-08T12:03:00.000Z",
+  "harness_shape": "claude-code",
+  "notes": "Pre-hook DENY via §63 context_admissibility: memory entry without lawful basis."
+}

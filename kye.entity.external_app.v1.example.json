@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.entity.external_app.v1",
+  "id": "kye:extapp:acme.salesforce.a1b2c3",
+  "tenant_id": "kye:tenant:acme",
+  "partner_org_id": null,
+  "vendor_name": "Salesforce",
+  "connector_kind": "salesforce",
+  "oauth_subject": "00D5f000000AbCdEAA",
+  "oauth_scopes": ["api", "refresh_token", "offline_access"],
+  "risk_tier": "high",
+  "dpa_reference": "dpa:acme:salesforce-2026-q2",
+  "state": "active",
+  "created_by": "kye:human:acme:owner",
+  "created_at": "2026-05-18T09:30:00Z",
+  "updated_at": "2026-05-18T09:30:00Z"
+}

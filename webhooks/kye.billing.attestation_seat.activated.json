@@ -1,0 +1,35 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:billing.kyeprotocol.com:01JBL7ATT001000000000000001",
+  "event_class": "kye.billing.attestation_seat.activated",
+  "occurred_at": "2026-04-01T00:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme-bank",
+    "trust_domain": "acme-bank.example"
+  },
+  "delivery_id": "dlv_01JBL7ATT001000000000000001",
+  "severity": "info",
+  "payload": {
+    "seat": {
+      "schema": "kye.billing.attestation_seat.v1",
+      "seat_id": "kye:attestation-seat:acme-bank.sr-11-7.2026",
+      "version": 1,
+      "customer_kyeid": "kye:ent:bank.acme",
+      "framework": "sr_11_7",
+      "framework_version": "2011 OCC SR 11-7 (Federal Reserve)",
+      "year": 2026,
+      "annual_fee_pence": 1500000,
+      "currency": "GBP",
+      "valid_from": "2026-04-01T00:00:00Z",
+      "valid_to": "2027-03-31T23:59:59Z",
+      "tenant_id": "kye:tenant:acme-bank",
+      "status": "active"
+    }
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "bb55cc66dd77ee88ff99aabbccddeeff0011223344556677889900aabbccddee",
+    "ts": "1743465600"
+  }
+}

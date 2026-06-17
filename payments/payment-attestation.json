@@ -1,0 +1,18 @@
+{
+  "payment_attestation_id": "kye:att:acme.example:payment_attestation:01JYPA0000000000000",
+  "payment_intent_id": "kye:ent:acme.example:payment_intent:01JYPI000000000000000000",
+  "issuer_entity_id": "kye:ent:acme.example:gateway:01JYGW0000000000000000000",
+  "claims": {
+    "actor_entity_id": "kye:ent:acme.example:ai_agent:01JYPROCUREBOT000000000000",
+    "subject_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+    "wallet_entity_id": "kye:ent:acme.example:wallet:01JYWALLET00000000000000",
+    "policy_decision_id": "kye:pdc:acme.example:01JYPDC0000000000000000000",
+    "amount_minor": 8500,
+    "currency": "GBP",
+    "decision": "allow_with_constraints",
+    "approved": true
+  },
+  "status": "valid",
+  "issued_at": "2026-04-25T06:02:30Z",
+  "expires_at": "2026-04-26T06:02:30Z"
+}

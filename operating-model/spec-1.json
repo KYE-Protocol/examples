@@ -1,0 +1,31 @@
+{
+  "id": "kye:operating-model:acme-bank.treasury-agent-clio",
+  "version": "1.2.0",
+  "principal": "kye:ent:acme-bank",
+  "authority_model_ref": "blob:cid:bafybeiauth7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v1",
+  "behaviour_model_ref": "blob:cid:bafybeibehv7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v2",
+  "reviewed_by": [
+    {
+      "reviewer": "kye:ent:acme-bank:officer:risk-lead",
+      "role": "risk",
+      "signed_at": "2026-03-25T09:01:00Z",
+      "signature": "sig:cose:risk:MEUCIQDj7Ex0F2y7V3wY9fD1bR6eL8iU"
+    },
+    {
+      "reviewer": "kye:ent:acme-bank:officer:legal-lead",
+      "role": "legal",
+      "signed_at": "2026-03-26T11:42:00Z",
+      "signature": "sig:cose:legal:MEUCIQDk8Fy1G3z8W4xZ0gE2cS7fM9jV"
+    },
+    {
+      "reviewer": "kye:ent:acme-bank:officer:product-lead",
+      "role": "product",
+      "signed_at": "2026-03-27T15:18:00Z",
+      "signature": "sig:cose:product:MEUCIQDl9Gz2H4a9X5yA1hF3dT8gN0kW"
+    }
+  ],
+  "signed_at": "2026-03-28T14:22:11Z",
+  "signed_by": "kye:ent:acme-bank:officer:cro",
+  "compiled_bundle_ref": "blob:cid:bafybeibundle7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v",
+  "status": "active"
+}

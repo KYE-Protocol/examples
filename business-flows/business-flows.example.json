@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.business_flow.v1.json",
+  "schema": "kye.business_flow.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/46-FLOW-CONTRACTS.md",
+  "notes": [
+    "Illustrative kye.business_flow.v1 instance. The canonical full registry lives at internal"
+  ],
+  "business_flows": [
+    {
+      "id": "kye:flow:example",
+      "name": "Example Flow",
+      "steps": [
+        "start",
+        "end"
+      ],
+      "entry_surface": "example",
+      "description": "Illustrative flow."
+    }
+  ]
+}

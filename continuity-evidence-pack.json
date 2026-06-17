@@ -1,0 +1,23 @@
+{
+  "schema_version": "kye.continuity_evidence_pack.v1",
+  "evidence_pack_id": "kye:evidence-pack:continuity_001",
+  "continuity_id": "kye:continuity:001",
+  "decision_id": "kye:decision:continuity_001",
+  "included_evidence": {
+    "authority_grant": true,
+    "policy_decision": true,
+    "audit_events": true
+  },
+  "continuity_summary": {
+    "continuity_status": "preserved",
+    "material_drift_detected": false,
+    "human_review_required": false
+  },
+  "hash": "sha384:c0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffeec0ffee",
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:evidence_signing_001",
+    "signature": "RXhhbXBsZS1zaWduYXR1cmUtZm9yLWRlbW9ucHJvb2YtcHVycG9zZXMtb25seQ"
+  },
+  "generated_at": "2026-05-06T12:04:30Z"
+}

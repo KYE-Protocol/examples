@@ -1,0 +1,60 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:clinical-ai-eu-uk:v1",
+  "partner_id": "kye:foundry-applicant:clinical-ai-eu-uk-reference-partner",
+  "pack_name": "KYE Clinical AI Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "clinical-ai-eu-uk",
+  "bound_sector_pack_refs": ["kye:sector-pack:clinical-ai-eu-uk"],
+  "bound_rule_pack_refs": ["kye:rule-pack:clinical-ai-eu-uk"],
+  "bound_dictionary_refs": ["kye:dictionary:clinical-ai-eu-uk"],
+  "bound_framework_refs": [
+    "kye:framework:eu-ai-act",
+    "kye:framework:mhra-mdr",
+    "kye:framework:mhra-samd",
+    "kye:framework:uk-gdpr"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:clinical-ai-eu-uk:2026-06-07",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-07T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-clinical-ai-eu-uk-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:clinical-ai-eu-uk:2026-06-07",
+  "claim_set": [
+    {
+      "claim_id": "authority-to-inform",
+      "claim_text": "Every AI clinical answer that informs a clinical decision MUST map to a recorded authority-to-inform — the agent, the clinical purpose, and the patient context that authorised the AI to inform this decision. Answers lacking a recorded authority-to-inform are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "gdpr-art9-lawful-basis",
+      "claim_text": "Every AI-assisted processing of patient health data (GDPR / UK GDPR Article 9 special-category data) MUST carry a recorded Article 9 lawful basis scoped to the declared clinical purpose. Processing without a recorded health lawful basis is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "conformity-declaration",
+      "claim_text": "A clinical AI operating as a regulated medical device (EU MDR / UK MHRA) or an EU AI Act Annex III high-risk health system MUST NOT enter clinical use unless a current conformity declaration is recorded — device classification, EU AI Act high-risk conformity assessment, and named placing-on-market authority.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "answer-evidence-pack",
+      "claim_text": "Every material AI clinical answer that informs a clinical decision MUST emit a signed, replay-derivable Evidence Pack binding the agent and model version, the authority-to-inform exercised, the GDPR Art. 9 basis, the pinned sources, and the Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "clinician-in-the-loop",
+      "claim_text": "An AI clinical answer MUST remain advisory and MUST NOT drive a clinical action until a named clinician review is recorded. Unreviewed AI-driven clinical actions are refused and routed dual-channel to the responsible clinician.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-07T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:mica-custody:v1",
+  "partner_id": "kye:foundry-applicant:mica-custody-reference-partner",
+  "pack_name": "KYE MiCA Custody Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "mica-custody",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:mica-custody"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:mica-custody"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:mica-custody"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:eu-mica",
+    "kye:framework:eu-mica-art-70-77",
+    "kye:framework:esma",
+    "kye:framework:eba"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:mica-custody:2026-05-31",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-31T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-mica-custody-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:mica-custody:2026-05-31",
+  "claim_set": [
+    {
+      "claim_id": "client-asset-segregation-required",
+      "claim_text": "Every AI-assisted custody decision affecting client crypto-assets MUST evidence segregation from the CASP's own assets. Decisions with unproven segregation are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "withdrawal-authority-required",
+      "claim_text": "Every AI-assisted withdrawal or transfer of custodied crypto-assets MUST map to a named custody-control owner with the prescribed authority. Absent designation refuses the decision.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "safekeeping-evidence-pack",
+      "claim_text": "Every material custody decision attributable to the safekeeping obligation MUST emit a signed, replay-derivable Evidence Pack binding owner identity, MiCA Article discharged, and Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "key-management-dual-control",
+      "claim_text": "Every AI-assisted key-management or signing-key action MUST satisfy dual control. Single-actor key operations are refused and routed dual-channel to the custody-control owner.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

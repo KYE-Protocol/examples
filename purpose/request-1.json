@@ -1,0 +1,11 @@
+{
+  "id": "kye:purpose-req:acme-bank:01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "actor": "kye:ent:agent-clio",
+  "purpose": "kye:purpose-class:finance.invoice.summarise",
+  "action": "summarise",
+  "resource": "kye:res:acme-bank:vault:invoices:2026:inv-2026-04-00871",
+  "data_classes": ["finance.invoice"],
+  "requested_at": "2026-04-15T10:32:47Z",
+  "claimed_grant_id": "kye:purpose:acme-bank:agent-clio:invoice-summarise-2026q2",
+  "tool_call_hash": "sha256:7b9e3c4f1a2d5e6f8b0c9a1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f"
+}

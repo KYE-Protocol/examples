@@ -1,0 +1,13 @@
+{
+  "schema": "kye.consultant_lead.v1",
+  "id": "kye:consultant-lead:01HZN4LEAD-merlin-fintech",
+  "source": "marketplace_directory",
+  "captured_at": "2026-05-12T14:22:00Z",
+  "name": "Sven Norberg",
+  "email": "sven.norberg@merlin-fintech.eu",
+  "firm": "Merlin Fintech",
+  "role": "Chief Risk Officer",
+  "sectors": ["fintech", "payments"],
+  "message": "We are preparing for our PSD3 + DORA audit cycle and need a consultant who can deploy KYE Protocol™ end-to-end in 8 weeks.",
+  "status": "new"
+}

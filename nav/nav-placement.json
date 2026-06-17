@@ -1,0 +1,143 @@
+{
+  "schema": "kye.nav_placement.v1",
+  "manifest_id": "kye:registry:nav-placement",
+  "version": "1.0.0",
+  "adopted": "2026-06-03",
+  "constitution_ref": "constitution/55-TAXONOMY-RAIL.md",
+  "description": "Example kye.nav_placement.v1 instance — the Home + Platform macro slice of the canonical nav placement registry. The full registry lives at internal; menu-tree.json is its derived projection.",
+  "primary_cta": {
+    "id": "apply-audit-pilot",
+    "label": "Apply for Audit Pilot",
+    "url": "/pilot-apply.html",
+    "icon": "rocket_launch"
+  },
+  "macros": [
+    {
+      "macro_id": "home",
+      "label": "Home",
+      "icon": "home",
+      "url": "/",
+      "kind": "link",
+      "ordinal": 1,
+      "primary_path_rule": "macro-link"
+    },
+    {
+      "macro_id": "platform",
+      "label": "Platform",
+      "icon": "hub",
+      "url": "/platform.html",
+      "kind": "dropdown",
+      "ordinal": 2,
+      "tier1_group": "platform",
+      "primary_path_rule": "macro-dropdown"
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "platform-overview",
+      "macro": "platform",
+      "label": "Overview",
+      "ordinal": 1,
+      "primary_path_rule": "macro:platform"
+    },
+    {
+      "group_id": "platform-how-authority-works",
+      "macro": "platform",
+      "label": "How authority works",
+      "ordinal": 2,
+      "primary_path_rule": "macro:platform"
+    }
+  ],
+  "subgroups": [],
+  "derived_holders": [],
+  "leaves": [
+    {
+      "url": "/platform.html",
+      "label": "The platform",
+      "macro": "platform",
+      "group": "platform-overview",
+      "ordinal": 1,
+      "primary_path_rule": "group:platform-overview"
+    },
+    {
+      "url": "/protocol.html",
+      "label": "Protocol overview",
+      "macro": "platform",
+      "group": "platform-overview",
+      "ordinal": 2,
+      "primary_path_rule": "group:platform-overview"
+    },
+    {
+      "url": "/thesis.html",
+      "label": "The thesis",
+      "macro": "platform",
+      "group": "platform-overview",
+      "ordinal": 3,
+      "primary_path_rule": "group:platform-overview"
+    },
+    {
+      "url": "/why.html",
+      "label": "Why it matters",
+      "macro": "platform",
+      "group": "platform-overview",
+      "ordinal": 4,
+      "primary_path_rule": "group:platform-overview"
+    },
+    {
+      "url": "/value.html",
+      "label": "What KYE adds",
+      "macro": "platform",
+      "group": "platform-overview",
+      "ordinal": 5,
+      "primary_path_rule": "group:platform-overview"
+    },
+    {
+      "url": "/action-admissibility.html",
+      "label": "Action Admissibility™",
+      "macro": "platform",
+      "group": "platform-how-authority-works",
+      "ordinal": 1,
+      "primary_path_rule": "group:platform-how-authority-works"
+    },
+    {
+      "url": "/authority-lifecycle.html",
+      "label": "Authority Lifecycle",
+      "macro": "platform",
+      "group": "platform-how-authority-works",
+      "ordinal": 2,
+      "primary_path_rule": "group:platform-how-authority-works"
+    },
+    {
+      "url": "/decision-engine.html",
+      "label": "Decision Engine",
+      "macro": "platform",
+      "group": "platform-how-authority-works",
+      "ordinal": 3,
+      "primary_path_rule": "group:platform-how-authority-works"
+    },
+    {
+      "url": "/evidence-pack.html",
+      "label": "Evidence Pack™",
+      "macro": "platform",
+      "group": "platform-how-authority-works",
+      "ordinal": 4,
+      "primary_path_rule": "group:platform-how-authority-works"
+    },
+    {
+      "url": "/shadow-mode.html",
+      "label": "Shadow Mode™",
+      "macro": "platform",
+      "group": "platform-how-authority-works",
+      "ordinal": 5,
+      "primary_path_rule": "group:platform-how-authority-works"
+    },
+    {
+      "url": "/knowledge-graph.html",
+      "label": "Knowledge graph",
+      "macro": "platform",
+      "group": "platform-how-authority-works",
+      "ordinal": 6,
+      "primary_path_rule": "group:platform-how-authority-works"
+    }
+  ]
+}

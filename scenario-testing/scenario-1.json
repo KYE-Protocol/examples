@@ -1,0 +1,32 @@
+{
+  "schema": "kye.scenario.v1",
+  "id": "kye:scenario:payment-agent-scope-expansion",
+  "version": 1,
+  "name": "Payment agent scope expansion",
+  "description": "What-if scenario projecting the impact of expanding a payment agent's authority from $10k to $50k per-transaction limit on a tier-1 bank's payment graph.",
+  "run_mode": "what_if",
+  "target_object": {
+    "object_id": "kye:agent:acme-bank.payment-orchestrator",
+    "object_schema": "kye.entity.agent.v1"
+  },
+  "inputs": {
+    "current_per_tx_limit_usd": 10000,
+    "proposed_per_tx_limit_usd": 50000,
+    "rail": "fednow"
+  },
+  "stressors": [
+    {
+      "stressor_id": "burst-throughput-3x",
+      "severity": "high",
+      "parameters": { "multiplier": 3 }
+    }
+  ],
+  "validity": {
+    "not_before": "2026-05-14T00:00:00Z",
+    "not_after":  "2026-08-14T00:00:00Z"
+  },
+  "created_at": "2026-05-14T09:00:00Z",
+  "created_by": "kye:agent:scenario-author",
+  "tags": ["payments", "scope-expansion", "tier-1"],
+  "status": "active"
+}

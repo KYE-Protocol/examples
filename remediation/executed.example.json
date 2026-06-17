@@ -1,0 +1,37 @@
+{
+  "schema_version": "kye.remediation.executed.v1",
+  "execution_id": "kye:remediation_execution:01HZAA22-stuck-pages-fix-exec",
+  "proposal_id": "kye:remediation_proposal:01HZAA22-stuck-pages-fix",
+  "classification_id": "kye:ci_classification:01HZAA22-stuck-pages",
+  "started_at": "2026-05-25T12:14:02Z",
+  "completed_at": "2026-05-25T12:14:38Z",
+  "outcome": "success",
+  "execution_mode": "human-ack",
+  "actor": {
+    "kind": "github-actor",
+    "identifier": "m.marandi@gmail.com"
+  },
+  "mutations_executed": [
+    {
+      "kind": "cf-api-call",
+      "summary": "DELETE custom domain kyeprotocol.com",
+      "outcome": "success",
+      "response_status": 200
+    },
+    {
+      "kind": "cf-api-call",
+      "summary": "POST custom domain kyeprotocol.com",
+      "outcome": "success",
+      "response_status": 201
+    },
+    {
+      "kind": "cf-api-call",
+      "summary": "Purge cache",
+      "outcome": "success",
+      "response_status": 200
+    }
+  ],
+  "attempts_for_sha": 1,
+  "follow_up_ci_run_id": "26397500000",
+  "follow_up_outcome": "green"
+}

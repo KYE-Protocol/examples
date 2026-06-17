@@ -1,0 +1,30 @@
+{
+  "schema": "kye.risk_profile_input.v1",
+  "profile_request_id": "kye:risk-profile-req:acme-bank-q3",
+  "tenant_id": "kye:trust-domain:acme-bank",
+  "as_of": "2026-06-05T00:00:00Z",
+  "scope_note": "Customer-curated: the production AI agents with tool access. A realistic, slightly messy estate — overlaps and a shared payments tool included on purpose.",
+  "agents": [
+    { "agent_ref": "agent:claims-triage-a", "purpose": "Triage motor claims", "autonomy_tier": "high", "tool_refs": ["tool:payments", "tool:crm"], "can_spawn_subagents": false, "can_self_modify": false, "acts_on_behalf_of_declared": true, "human_approval_required": true },
+    { "agent_ref": "agent:claims-triage-b", "purpose": "Triage home claims", "autonomy_tier": "high", "tool_refs": ["tool:payments", "tool:crm"], "can_spawn_subagents": false, "can_self_modify": false, "acts_on_behalf_of_declared": true, "human_approval_required": true },
+    { "agent_ref": "agent:underwriting-copilot", "purpose": "AI-assisted underwriting", "autonomy_tier": "full", "tool_refs": ["tool:payments", "tool:code-exec", "tool:pricing-api"], "can_spawn_subagents": true, "can_self_modify": false, "acts_on_behalf_of_declared": false, "human_approval_required": false },
+    { "agent_ref": "agent:ops-assistant", "purpose": "Internal ops automation", "autonomy_tier": "medium", "tool_refs": ["tool:payments"], "can_spawn_subagents": false, "can_self_modify": true, "acts_on_behalf_of_declared": true, "human_approval_required": false },
+    { "agent_ref": "agent:fraud-bot", "purpose": "Fraud screening", "autonomy_tier": "high", "tool_refs": ["tool:payments"], "can_spawn_subagents": false, "can_self_modify": false, "acts_on_behalf_of_declared": true, "human_approval_required": true }
+  ],
+  "tools": [
+    { "tool_ref": "tool:payments", "write_access": true, "external": true, "high_risk": true },
+    { "tool_ref": "tool:code-exec", "write_access": true, "external": false, "high_risk": true },
+    { "tool_ref": "tool:crm", "write_access": true, "external": false, "high_risk": false },
+    { "tool_ref": "tool:pricing-api", "write_access": false, "external": true, "high_risk": false }
+  ],
+  "workflows": [
+    { "workflow_ref": "wf:claim-payout", "consequential": true, "dual_control": false }
+  ],
+  "data_accesses": [
+    { "data_ref": "data:policyholder-pii", "classification": "restricted", "contains_pii": true, "cross_tenant": false }
+  ],
+  "declared_controls": [
+    { "lifecycle_stage": "evidence", "control_note": "We keep an audit log of agent actions." },
+    { "lifecycle_stage": "intent", "control_note": "Agents log a stated objective." }
+  ]
+}

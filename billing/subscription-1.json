@@ -1,0 +1,18 @@
+{
+  "schema": "kye.billing.subscription.v1",
+  "id": "kye:subscription:acme-bank-2026",
+  "version": 1,
+  "customer_kyeid": "kye:ent:bank.acme",
+  "stripe_subscription_id": "sub_1QABCDEFGHIJKLMN",
+  "plan_tier": "regulated",
+  "agents_governed": 240,
+  "workflows_count": 18,
+  "sla_tier": "regulated",
+  "started_at": "2026-04-01T00:00:00Z",
+  "billing_cycle": "annual",
+  "currency": "GBP",
+  "status": "active",
+  "ended_at": null,
+  "annual_fee_pence": 35000000,
+  "tenant_id": "kye:tenant:acme-bank"
+}

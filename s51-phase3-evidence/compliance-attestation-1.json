@@ -1,0 +1,38 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:platform:spof-phase3-2026-05-27",
+  "emitted_at": "2026-05-27T18:00:03Z",
+  "emitter": "kye:engine:reconciliation-engine:v1.2-build-9c1e7af0",
+  "framework_refs": [
+    "constitution/51-NO-SPOF.md",
+    "constitution/13-RESILIENCE-LOOP.md",
+    "constitution/21-DELEGATED-AUDITABILITY.md",
+    "constitution/27-COMMERCIAL-LIFECYCLE.md",
+    "constitution/30-AUDIT-WORM-RETENTION.md",
+    "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+    "constitution/45-SELF-DESCRIPTION.md"
+  ],
+  "subject": "spof-phase3-path-to-full-closure-2026-05-27",
+  "mode": "static",
+  "run_id": "run_spof_phase3_2026_05_27_01HFD7P4QXM2N8R6YZ5VWLQ9P3R",
+  "envelope_report_hash": "bc1e7af0a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456794",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "runbooks_shipped": 10,
+    "partial_entries_annotated_with_path_to_full_ref": 10,
+    "partial_entries_deferred_to_phase_3_1_with_decay": 4,
+    "new_schemas_registered": 1,
+    "registry_schema_extended_with_path_to_full_ref": true,
+    "enforcer_extended_with_phase3_checks": true,
+    "constitutional_amendments_landed": 1,
+    "decay_deadline_for_phase3_runbook_execution": "2026-11-23",
+    "decay_deadline_for_phase3_1_deferred_followups": "2026-11-23"
+  },
+  "blocking_reconcilers": [
+    { "id": "no-spof-coverage", "verdict": "OK" },
+    { "id": "machine-readable-coverage", "verdict": "OK" },
+    { "id": "self-description", "verdict": "OK" },
+    { "id": "schemas", "verdict": "OK" }
+  ]
+}

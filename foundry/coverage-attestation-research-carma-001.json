@@ -1,0 +1,35 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-research-publishing-coverage:2026-06-03",
+  "emitted_at": "2026-06-03T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §15",
+    "constitution/62-GOVERNED-RESEARCH-RAIL.md",
+    "NIST_AI_RMF",
+    "EU_AI_ACT",
+    "NIST_800_207",
+    "ISO_IEC_42001"
+  ],
+  "subject": "kye:powered-pack:research-publishing-runtime-authority:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-research-publishing-001-coverage-2026-06-03",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:research-publishing-runtime-authority:v1",
+    "claim_count": 5,
+    "bound_rule_packs": [],
+    "bound_dictionaries": ["kye:dictionary:research-series", "kye:dictionary:report-format", "kye:dictionary:research-cadence"],
+    "bound_sector_packs": [],
+    "bijection_verdict": "claim-set is bijective with the §62 governed-research pipeline guarantees (every claim pinned to a cited source)",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical",      "verdict": "OK", "drift": 0 },
+    { "id": "research-rail-canonical",     "verdict": "OK", "drift": 0 },
+    { "id": "resolution-canonical",        "verdict": "OK", "drift": 0 }
+  ]
+}

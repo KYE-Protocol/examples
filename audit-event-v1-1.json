@@ -1,0 +1,22 @@
+{
+  "schema": "kye.audit.event.v1",
+  "event_id": "01abefa6-7c8d-4e2f-9a3b-1d4e5f6a7b80",
+  "chain_id": "kye:audit:chain:tenant:acme-bank:01HVK3M2NPQR8XW7TZAC9F5D2E",
+  "previous_anchor": "sha256:8e6c0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b",
+  "current_anchor": "sha256:1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b",
+  "actor_id": "kye:agent:prod:gateway-worker:7c2d",
+  "actor_kind": "agent",
+  "tenant_id": "kye:tenant:prod:acme-bank",
+  "action_kind": "audit_event",
+  "target_system": "kye-audit-chain",
+  "payload_hash": "sha256:a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1d0a3b7e1f4d9a2c5b6e8f1",
+  "verdict": "appended",
+  "emitted_at": "2026-05-19T12:34:56.789Z",
+  "evidence_pack_ref": "https://kyeprotocol.com/v1/evidence/packs/01HVK3M2NPQR8XW7TZAC9F5D2E",
+  "decision_map_ref": "https://kyeprotocol.com/v1/decision-maps/01HVK3M2NPQR8XW7TZAC9F5D2E",
+  "constitution_refs": ["00-INDEX §0.3", "21-DELEGATED-AUDITABILITY", "30-AUDIT-WORM-RETENTION"],
+  "framework_refs": ["dora-art-28", "sr-11-7", "eu-ai-act-art-15", "gdpr", "iso-27001"],
+  "signature_alg": "ed25519",
+  "signature_kid": "kye:key:prod:audit-signer:2026-05",
+  "signature_value_b64": "MEUCIQDgXJyL0qF8xN2k3J9pV6tR1mWqEzH7sB4cD6vN8yA3KwIgZmKpL5rN9oS3xT2vU8wXyZ1qR4hP7nM5eD0aF6cB8gE"
+}

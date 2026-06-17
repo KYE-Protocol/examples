@@ -1,0 +1,14 @@
+{
+  "schema": "kye.agent.completion.v1",
+  "agent_id": "clinical-knowledge-assistant",
+  "parent_task": "7f3c0a91-2d4e-4b1a-9c6f-8a2b1e5d7c30",
+  "completed_at": "2026-06-03T08:41:15Z",
+  "outcome": "success",
+  "files_touched": [
+    { "path": "corpus/clinical-guidelines/anticoag-2025-v3.json", "operation": "read" },
+    { "path": "corpus/formulary/renal-dosing-2026-q2.json", "operation": "read" }
+  ],
+  "mcp_calls_made": [
+    { "server_name": "clinical-knowledge-retriever", "tool": "search", "count": 1 }
+  ]
+}

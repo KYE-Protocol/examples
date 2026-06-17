@@ -1,0 +1,22 @@
+{
+  "schema_version": "kye.badge.v1",
+  "badge_id": "kye:badge:authority-conformant:acme.example:agent-runtime-2.4.1",
+  "level": "kye_authority_conformant",
+  "label": "KYE Authority Conformant™",
+  "product_name": "Acme Agent Runtime",
+  "product_version": "2.4.1",
+  "organisation_entity_id": "kye:org:acme.example",
+  "certification_id": "kye:cert:authority:acme.example:agent-runtime-2.4.1:2026",
+  "protocol_version": "kye.core.v1.0",
+  "profiles": [
+    "kye.core.v1.0",
+    "kye.authority.v1.0",
+    "kye.capability.v1.0"
+  ],
+  "issued_at":  "2026-05-06T00:00:00Z",
+  "expires_at": "2027-05-06T00:00:00Z",
+  "status": "valid",
+  "badge_svg_url":      "https://registry.kye.dev/badges/kye-cert-authority-acme-agent-runtime-2-4-1.svg",
+  "verification_url":   "https://registry.kye.dev/badges/kye-cert-authority-acme-agent-runtime-2-4-1/verify",
+  "registry_listing_url":"https://registry.kye.dev/certifications/acme-agent-runtime-2-4-1"
+}

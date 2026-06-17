@@ -1,0 +1,512 @@
+{
+  "schema": "kye.commercial.value_based_pricing.v1",
+  "set_id": "kye:pricing-set:value-based:2026-06-01",
+  "set_signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:commercial-pricing:2026",
+    "value": "MEYCIQDe2pricing-set-canonical-fixture-2026-06-01-base64-signature-blob-AAAAAAAA==",
+    "signed_at": "2026-05-29T00:00:00Z"
+  },
+  "envelopes": [
+    {
+      "sku_id": "KYE-AUDIT-PILOT-001",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 25000,
+        "amount_to": 50000,
+        "billing": "one-time",
+        "description": "4-week shadow-mode runtime-console build on one AI workflow. Entry into the recurring runtime + renewal streams via the 60-day conversion credit."
+      },
+      "runtime_fee": {
+        "amount_per_year": 75000,
+        "tier_basis": "per-tenant",
+        "description": "Annual Runtime Console hosting + protocol upgrades + security patches + attestation refreshes for one tenant. KYE Authority Finality runtime enforced 24x7."
+      },
+      "renewal_fee": {
+        "amount_per_year": 15000,
+        "description": "Annual protocol-licence renewal per tenant — protocol versioning, registry currency, audit-chain WORM continuity."
+      },
+      "certification_fee": {
+        "amount_per_cycle": 8000,
+        "cycle_months": 24,
+        "level": "L3",
+        "description": "KYE Conformant L3 badge — auditor-issued, signed conformance attestation across the Runtime Console scope."
+      },
+      "value_drivers": [
+        "protocol upgrades",
+        "schema migrations",
+        "attestation refreshes",
+        "security patches",
+        "Authority Finality runtime",
+        "Evidence Pack signing",
+        "dashboard regeneration",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "notes": "Anchors the Runtime Console value-based pricing example. The existing one-time price band (£35–50k) becomes the entry fee; everything else is net-new ARR.",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-001-base64-blob-AUDIT-PILOT==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-ADDON-RISK-REGISTER-001",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 30000,
+        "billing": "one-time",
+        "description": "Initial AI Risk Register configuration + board-row taxonomy load + first signed-evidence binding pass."
+      },
+      "runtime_fee": {
+        "amount_per_year": 60000,
+        "tier_basis": "per-tenant",
+        "description": "Annual KYE Authority Risk Register runtime — continuous gap detection, row aggregation, evidence back-binding, weekly board export."
+      },
+      "renewal_fee": {
+        "amount_per_year": 10000,
+        "description": "Annual protocol-licence renewal — register schema version currency + gap-class taxonomy updates."
+      },
+      "value_drivers": [
+        "continuous authority-gap detection",
+        "row aggregation",
+        "board-export refresh",
+        "evidence back-binding",
+        "schema migrations",
+        "security patches",
+        "attestation refreshes",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-002-base64-blob-RISK-REGISTER==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-PARTNER-T3",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 40000,
+        "billing": "one-time",
+        "description": "Counterparty Governance Rail onboarding — partner profile, deal-registration, white-label rights binding, executive-sponsor cadence stand-up."
+      },
+      "runtime_fee": {
+        "amount_per_year": 120000,
+        "tier_basis": "per-counterparty",
+        "description": "Annual Counterparty Governance Rail runtime — every external party acting on the customer's behalf carries a signed scope envelope, replayable on revocation. Scales per counterparty under management."
+      },
+      "renewal_fee": {
+        "amount_per_year": 20000,
+        "description": "Annual Strategic Partner licence renewal — joint-GTM cadence, success-engineer continuity, program attestation."
+      },
+      "revenue_share": {
+        "kye_pct_kye_sourced": 80,
+        "partner_pct_kye_sourced": 20,
+        "kye_pct_partner_sourced": 35,
+        "partner_pct_partner_sourced": 65,
+        "strategic_terms": "Partner-sourced deals favour the partner (35/65) to compensate ground-game lead generation; KYE-sourced deals favour KYE (80/20) to compensate platform development. Time-boxed performance-gated exclusivity available on multi-counterparty programs."
+      },
+      "value_drivers": [
+        "counterparty scope-envelope signing",
+        "joint-GTM motion",
+        "white-label rights",
+        "executive-sponsor cadence",
+        "protocol upgrades",
+        "security patches",
+        "attestation refreshes",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-003-base64-blob-PARTNER-T3==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-FOUNDRY-SCOUT",
+      "pricing_model": "one-time-only",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 10000,
+        "amount_to": 25000,
+        "billing": "one-time",
+        "description": "2-4 week assessment — framework-fit memo + KYE-Powered Pack feasibility verdict + Build-tier conversion proposal. Credits 100% against Build entry if signed within 60 days."
+      },
+      "runtime_fee": {
+        "amount_per_year": 0,
+        "tier_basis": "flat",
+        "description": "Scout is assessment-only; no recurring runtime — converts to KYE-FOUNDRY-BUILD on positive feasibility verdict."
+      },
+      "renewal_fee": {
+        "amount_per_year": 0,
+        "description": "Scout has no renewal — converts to Build for production engagement."
+      },
+      "onboarding_fee": {
+        "amount": 3000,
+        "amount_to": 5000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Scout-tier onboarding — partner workspace provisioning, NDA execution, framework intake worksheet, kickoff call. Light-touch by design."
+      },
+      "smoke_test_fee": {
+        "amount": 2000,
+        "amount_to": 3000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Pre-assessment smoke test — framework-shape sanity check, ownable-IP boundary screen, conflicting-IP disclosure review. Gates entry to the structured Scout engagement."
+      },
+      "consulting_fee": {
+        "amount": 5000,
+        "amount_to": 10000,
+        "envelope": "range",
+        "billing": "time-and-materials",
+        "description": "Discretionary advisory work outside the Scout assessment envelope — e.g. framework rewrite advisory, buyer-network strategy review. Quoted per request."
+      },
+      "document_evaluation_fee": {
+        "amount": 5000,
+        "amount_to": 8000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Mandatory at Scout — legal review of submitted framework artefacts, IP-ownership attestation review, conflicting-IP disclosure audit, NDA conformance."
+      },
+      "lifecycle_artefacts": {
+        "ip_attestation_required": true,
+        "ip_attestation_ref": "kye:ip-attestation:foundry-applicant:v1",
+        "payout_policy_ref": "kye:payout-policy:foundry:v1"
+      },
+      "value_drivers": [
+        "framework-fit assessment",
+        "feasibility verdict",
+        "Build-tier conversion proposal",
+        "scout report attestation"
+      ],
+      "effective_from": "2026-06-01",
+      "notes": "Diagnostic SKU — the only one-time-only envelope in the Foundry rail. Designed to convert to Build within 60 days. §27 §13: Scout carries no platform fees beyond entry (no production runtime, no Pack, no certification program yet); the bulk of Scout spend is professional-services-billed.",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-004-base64-blob-FOUNDRY-SCOUT==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-FOUNDRY-BUILD",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 75000,
+        "amount_to": 150000,
+        "billing": "one-time",
+        "description": "12-16 week framework productisation into a KYE-Powered Pack. Deep-mapping + coverage attestation + claim approval workflow + badge issuance. Credits 100% against year-1 platform fees if signed within 60 days of Scout close-out."
+      },
+      "runtime_fee": {
+        "amount_per_year": 25000,
+        "tier_basis": "per-pack",
+        "description": "Annual KYE-Powered Pack runtime — pack schema currency, control-row migration, claim-approval workflow continuity. £25–50k/yr range reflects per-Pack scale; anchor £25k."
+      },
+      "renewal_fee": {
+        "amount_per_year": 15000,
+        "description": "Annual partnership licence renewal — joint-GTM, claim-approval reservation, named-engineer continuity, framework binding currency, attestation refresh. £15–30k/yr range; anchor £15k."
+      },
+      "pack_maintenance_fee": {
+        "amount_per_year_per_pack": 20000,
+        "description": "Per-Pack maintenance — framework version tracking, regulator update propagation, rule-pack drift detection, dictionary refresh. £20–40k/yr/Pack range; anchor £20k."
+      },
+      "certification_programme_fee": {
+        "amount_per_year": 10000,
+        "level": "L3",
+        "description": "Annual entitlement to the KYE certification engine + replay-proof issuance + L3 badge currency for the Pack. £10–20k/yr range; anchor £10k. Distinct from per-claim assessor cost (certification_engagement_fee)."
+      },
+      "certification_fee": {
+        "amount_per_cycle": 12000,
+        "cycle_months": 24,
+        "level": "L3",
+        "description": "Legacy bundled certification cycle — preserved for back-compat; superseded by certification_programme_fee (annual entitlement) + certification_engagement_fee (per-claim) under §27 §13."
+      },
+      "onboarding_fee": {
+        "amount": 15000,
+        "amount_to": 25000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Build-tier onboarding — partner tenant setup, IDP wiring, gateway integration, claim-approval workflow plumbing, joint-GTM enablement. Milestone-billed across the 12–16 week engagement."
+      },
+      "smoke_test_fee": {
+        "amount": 8000,
+        "amount_to": 12000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Pre-production conformance smoke test — framework binding sanity, SCCT verdict, bijection check across declared coverage, dry-run of claim-approval workflow."
+      },
+      "consulting_fee": {
+        "envelope": "contact-for-pricing",
+        "billing": "time-and-materials",
+        "description": "Discretionary advisory engagements outside the Build SKU envelope — e.g. supplementary regulator engagement, framework rewrite, claim copy review. £20–40k typical envelope; quoted per request."
+      },
+      "document_evaluation_fee": {
+        "amount": 15000,
+        "amount_to": 25000,
+        "envelope": "range",
+        "billing": "per-pack",
+        "description": "Per-Pack legal review — IP-ownership attestation review, conflicting-IP audit, framework-mapping accuracy review, claim-set legal screen, public-claim approval lifecycle setup."
+      },
+      "certification_engagement_fee": {
+        "amount_per_claim": 3000,
+        "amount_per_claim_to": 5000,
+        "envelope": "range",
+        "billing": "per-claim",
+        "description": "Per-claim assessor work — auditor sign-off on individual public claims emitted by the Pack. Splits from certification_programme_fee: program is the annual entitlement; engagement is the per-event cost-plus."
+      },
+      "lifecycle_artefacts": {
+        "ip_attestation_required": true,
+        "ip_attestation_ref": "kye:ip-attestation:foundry-build:v1",
+        "payout_policy_ref": "kye:payout-policy:foundry-revenue-share:v1"
+      },
+      "revenue_share": {
+        "kye_pct_kye_sourced": 60,
+        "partner_pct_kye_sourced": 40,
+        "kye_pct_partner_sourced": 35,
+        "partner_pct_partner_sourced": 65,
+        "strategic_terms": "Partner-sourced deals favour the partner (35/65) — corrected split rewarding ground-game lead generation. KYE-sourced deals 60/40 KYE reflects platform investment + brand pull. Performance-gated; reviewed quarterly."
+      },
+      "value_drivers": [
+        "framework version tracking",
+        "regulator update propagation",
+        "rule-pack drift detection",
+        "dictionary refresh",
+        "claim-approval workflow",
+        "Pack badge currency",
+        "attestation refreshes",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-005-base64-blob-FOUNDRY-BUILD==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-FOUNDRY-VENTURE",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 250000,
+        "billing": "one-time",
+        "description": "Multi-Pack co-branded engagement entry (anchor £250k+) — roadmap of two or more KYE-Powered Packs, co-executed go-to-market, named Pack engineer, performance-gated exclusivity window. Strategic-deal envelope subject to NDA."
+      },
+      "runtime_fee": {
+        "amount_per_year": 100000,
+        "tier_basis": "per-pack",
+        "description": "Annual multi-Pack runtime (£100k+/yr anchor) — schema currency, regulator update propagation, drift detection, signed attestation cadence across the Pack portfolio. Includes a dedicated-GTM line funding co-marketing, event presence, sales-enablement collateral."
+      },
+      "renewal_fee": {
+        "amount_per_year": 60000,
+        "description": "Annual Venture-tier partnership renewal (£60k+/yr anchor) — quarterly attestation cadence, regulator-bound retention, executive cadence continuity, framework binding currency."
+      },
+      "pack_maintenance_fee": {
+        "amount_per_year_per_pack": 80000,
+        "description": "Per-Pack maintenance for Venture portfolio (£80k+/yr/Pack anchor) — higher than Build to fund regulator-bound retention windows and dedicated Pack engineer time."
+      },
+      "certification_programme_fee": {
+        "amount_per_year": 40000,
+        "level": "L4",
+        "description": "Annual entitlement to the KYE certification engine + replay-proof issuance + L4 badge currency across the Venture Pack portfolio. £40k+/yr anchor."
+      },
+      "certification_fee": {
+        "amount_per_cycle": 20000,
+        "cycle_months": 24,
+        "level": "L4",
+        "description": "Legacy bundled L4 cycle — preserved for back-compat; superseded by certification_programme_fee (annual entitlement) + certification_engagement_fee (per-claim) under §27 §13."
+      },
+      "onboarding_fee": {
+        "amount": 50000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Venture-tier onboarding (£50k+ anchor) — multi-Pack tenant provisioning, named-engineer assignment, co-branded GTM stand-up, executive cadence kickoff, regulator-engagement plan."
+      },
+      "smoke_test_fee": {
+        "amount": 20000,
+        "envelope": "range",
+        "billing": "milestone",
+        "description": "Venture-tier pre-production smoke test (£20k+ anchor) — full portfolio SCCT verdict, bijection check across every Pack, dry-run of dual-channel claim-approval workflow."
+      },
+      "consulting_fee": {
+        "envelope": "contact-for-pricing",
+        "billing": "retainer",
+        "description": "Discretionary executive-tier advisory retainer outside the Venture SKU envelope. £100k+/yr typical envelope; quoted per engagement under NDA."
+      },
+      "document_evaluation_fee": {
+        "amount": 40000,
+        "envelope": "range",
+        "billing": "per-pack",
+        "description": "Per-Pack legal review at Venture tier (£40k+/Pack anchor) — IP-ownership attestation review, conflicting-IP audit, framework-mapping accuracy review, claim-set legal screen, regulator-bound retention review."
+      },
+      "certification_engagement_fee": {
+        "amount_per_claim": 8000,
+        "envelope": "range",
+        "billing": "per-claim",
+        "description": "Per-claim assessor work at L4 (£8k+/claim anchor) — third-party-accredited auditor sign-off on individual public claims across the Pack portfolio."
+      },
+      "lifecycle_artefacts": {
+        "ip_attestation_required": true,
+        "ip_attestation_ref": "kye:ip-attestation:foundry-venture:v1",
+        "payout_policy_ref": "kye:payout-policy:foundry-revenue-share:v1"
+      },
+      "revenue_share": {
+        "kye_pct_kye_sourced": 55,
+        "partner_pct_kye_sourced": 45,
+        "kye_pct_partner_sourced": 30,
+        "partner_pct_partner_sourced": 70,
+        "strategic_terms": "Venture tier rewards multi-Pack commitment with more generous partner splits than Build."
+      },
+      "value_drivers": [
+        "multi-Pack portfolio runtime",
+        "regulator update propagation",
+        "named Pack engineer continuity",
+        "co-branded GTM",
+        "quarterly attestation cadence",
+        "regulator-bound retention",
+        "Pack badge currency",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-006-base64-blob-FOUNDRY-VENTURE==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-STARTER-ANNUAL-001",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 15000,
+        "billing": "one-time",
+        "description": "Tenant stand-up + workflow onboarding + first signed Evidence Pack. Credits against year-1 if signed within 60 days of pilot close-out."
+      },
+      "runtime_fee": {
+        "amount_per_year": 60000,
+        "tier_basis": "per-tenant",
+        "description": "Annual KYE Starter runtime — 2 workflows / 5 agents / 250 evidence packs / 10k decisions. Continuous protocol upgrades, security patches, attestation refreshes."
+      },
+      "renewal_fee": {
+        "amount_per_year": 8000,
+        "description": "Annual protocol-licence renewal — registry currency, schema version migration, certification badge continuity."
+      },
+      "value_drivers": [
+        "protocol upgrades",
+        "schema migrations",
+        "attestation refreshes",
+        "security patches",
+        "Authority Finality runtime",
+        "Evidence Pack signing",
+        "decision-map regeneration",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "notes": "Demonstrates the per-tenant runtime base for the annual ladder. The existing £75k flat list price decomposes cleanly into £15k entry + £60k runtime + £8k renewal — buyer pays a similar total in year 1 but a meaningfully larger renewal-cohort number in year 2+.",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-007-base64-blob-STARTER-ANNUAL==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-CONFORMANCE-001",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 18000,
+        "billing": "one-time",
+        "description": "L3 conformance build — fixture pass, control-mapping seal, public-registry listing, badge issuance."
+      },
+      "runtime_fee": {
+        "amount_per_year": 6000,
+        "tier_basis": "flat",
+        "description": "Annual audit-refresh runtime — drift detection against the 133 conformance fixtures + 289 control mappings; badge re-issuance on green."
+      },
+      "renewal_fee": {
+        "amount_per_year": 4000,
+        "description": "Annual registry-listing renewal — public conformance row continuity, JWKS rotation acknowledgement, badge URL stability."
+      },
+      "certification_fee": {
+        "amount_per_cycle": 18000,
+        "cycle_months": 24,
+        "level": "L3",
+        "description": "KYE Conformant L3 re-certification — full fixture replay + auditor sign-off per 24-month cycle."
+      },
+      "value_drivers": [
+        "fixture pass continuity",
+        "control-mapping seal refresh",
+        "JWKS rotation acknowledgement",
+        "drift detection",
+        "badge re-issuance",
+        "public-registry currency",
+        "attestation refreshes",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-008-base64-blob-CONFORMANCE-L3==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    },
+    {
+      "sku_id": "KYE-CONSULTANT-CERT-001",
+      "pricing_model": "hybrid",
+      "currency": "GBP",
+      "entry_fee": {
+        "amount": 35000,
+        "billing": "one-time",
+        "description": "L4 conformance build — third-party accredited audit, full fixture replay, control-mapping seal across all 20 frameworks, KYE Certified badge issuance."
+      },
+      "runtime_fee": {
+        "amount_per_year": 12000,
+        "tier_basis": "flat",
+        "description": "Annual L4 audit-refresh runtime — third-party audit firm engagement, drift detection, badge re-issuance, regulator-facing artefact maintenance."
+      },
+      "renewal_fee": {
+        "amount_per_year": 6000,
+        "description": "Annual Certified program renewal — accredited-auditor engagement letter, registry-listing currency, badge URL stability."
+      },
+      "certification_fee": {
+        "amount_per_cycle": 35000,
+        "cycle_months": 24,
+        "level": "L4",
+        "description": "KYE Certified L4 re-certification — third-party-accredited auditor (UKAS / ANAB) sign-off per 24-month cycle."
+      },
+      "value_drivers": [
+        "third-party accredited audit",
+        "fixture pass continuity",
+        "control-mapping seal across 20 frameworks",
+        "drift detection",
+        "badge re-issuance",
+        "regulator-facing artefact maintenance",
+        "registry-listing currency",
+        "audit chain WORM retention"
+      ],
+      "effective_from": "2026-06-01",
+      "signature": {
+        "algorithm": "ed25519",
+        "key_id": "kye:key:commercial-pricing:2026",
+        "value": "MEYCIQDe2pricing-envelope-canonical-fixture-009-base64-blob-CERTIFIED-L4==",
+        "signed_at": "2026-05-29T00:00:00Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "kye.ontology_mapping.v1",
+  "mapping_id": "kye:ontology:mapping:openid_scope_to_kye_capability",
+  "source_system": "oauth_oidc",
+  "source_term": "scope",
+  "source_value": "payments:write",
+  "target_term_id": "kye:term:capability:payment_initiation",
+  "mapping_type": "related_not_identical",
+  "confidence": 0.84,
+  "notes": "OAuth scope may indicate API permission but does not by itself prove delegated payment authority, principal consent, state or evidence.",
+  "requires_additional_kye_objects": [
+    "KYEAuthorityGrant",
+    "KYEScope",
+    "KYEStateSnapshot",
+    "KYEPolicyDecision"
+  ],
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z",
+  "validated_at": "2026-05-09T00:00:00Z"
+}

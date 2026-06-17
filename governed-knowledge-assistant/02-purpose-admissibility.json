@@ -1,0 +1,21 @@
+{
+  "request_id": "kye:purpose-req:mercy-health:01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "grant_id": "kye:purpose:mercy-health:clinical-knowledge-assistant:answer-clinical-question-2026q2",
+  "admitted": true,
+  "reasons": [
+    { "code": "principal_matches",      "passed": true,  "detail": "request.actor's grant principal == mercy-health" },
+    { "code": "grantee_matches",        "passed": true,  "detail": "request.actor == grant.grantee (clinical-knowledge-assistant)" },
+    { "code": "purpose_matches",        "passed": true,  "detail": "purpose-class:clinical.knowledge.answer" },
+    { "code": "action_in_scope",        "passed": true,  "detail": "retrieve in [retrieve, summarise] — no write action requested" },
+    { "code": "resource_in_scope",      "passed": true,  "detail": "corpus/clinical-guidelines under approved retrieval scope" },
+    { "code": "data_class_in_scope",    "passed": true,  "detail": "clinical.guideline.public in [clinical.guideline.public, formulary.reference]" },
+    { "code": "within_time_window",     "passed": true,  "detail": "2026-06-03T08:41:12Z in [2026-04-01, 2026-07-01)" },
+    { "code": "within_jurisdiction",    "passed": true,  "detail": "actor seat US in [US]" },
+    { "code": "within_rate_cap",        "passed": true,  "detail": "3/60 rpm used" },
+    { "code": "not_revoked",            "passed": true,  "detail": "grant.revoked_at == null" },
+    { "code": "signature_valid",        "passed": true,  "detail": "EdDSA signature verified against clinical-governance-lead key" },
+    { "code": "dual_control_satisfied", "passed": true,  "detail": "grant.restrictions.dual_control == false (read-only answer, no irreversible act)" }
+  ],
+  "decided_at": "2026-06-03T08:41:12Z",
+  "decided_by": "kye:engine:admissibility:v1.4.2:build-9c1e7af0"
+}

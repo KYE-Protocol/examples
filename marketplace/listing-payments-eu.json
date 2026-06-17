@@ -1,0 +1,44 @@
+{
+  "schema_version": "kye.rule_pack_listing.v1",
+  "listing_id": "kye:listing:payments.eu.psd2",
+  "rule_pack_id": "kye:rule-pack:payments-eu",
+  "version": "1.0.0",
+  "display_name": "Payments — EU PSD2 + SCA",
+  "tagline": "PSD2 / SCA enforcement: 3DS challenge routing, dynamic linking, transaction risk analysis.",
+  "long_description": "Implements PSD2 Strong Customer Authentication (Art 4) with the official RTS exemption matrix, dynamic-linking checks (Art 5), and transaction-risk-analysis routing (Art 18). Drops into any payment-initiation flow; emits require_human_approval / require_revalidation verdicts with the canonical PSD2 reason-code dictionary.",
+  "publisher": {
+    "entity_id": "kye:org:kye-protocol",
+    "display_name": "KYE Protocol",
+    "tier": "first-party-kye",
+    "verified": true
+  },
+  "categories": ["compliance", "sector"],
+  "applies_to_sectors": ["payments", "financial-services"],
+  "applies_to_regimes": ["PSD2"],
+  "applies_to_jurisdictions": ["EU"],
+  "pricing_model": {
+    "model": "annual",
+    "currency": "EUR",
+    "price_minor_units": 3500000,
+    "stripe_price_id": "price_PaymentsEuAnnual2026"
+  },
+  "verification": {
+    "conformance_pack_run_id": "kye:conformance-run:payments-eu-2026-05-15",
+    "conformance_passed": true,
+    "fixtures_passed": 18,
+    "fixtures_total": 18,
+    "signature": {
+      "alg": "EdDSA",
+      "kid": "kye:key:marketplace-signer-001",
+      "value_b64": "MEUCIQD0I1pH3eQ3iN1ZubDfP3CoBn2g0T3sasCj6a1t3R6MtjLlC9pI8yA4f9K5g5j0I2e2A6fH8K1B5o9aR0p4qT7uV"
+    },
+    "verified_at": "2026-05-15T08:00:00Z",
+    "verified_by_entity_id": "kye:org:kye-protocol"
+  },
+  "entitlements": { "max_evaluations_per_month": 10000000, "support_tier": "priority" },
+  "reviews_summary": { "count": 5, "avg_rating": 4.8, "last_reviewed_at": "2026-05-08T11:14:00Z" },
+  "telemetry": { "installs": 11, "active_tenants": 11, "evaluations_last_30d": 6200000 },
+  "status": "active",
+  "created_at": "2026-03-15T00:00:00Z",
+  "updated_at": "2026-05-15T08:00:00Z"
+}

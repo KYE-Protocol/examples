@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.discovery_query.v1",
+  "query_id": "kye:discovery-query:001",
+  "query_type": "authority_path_search",
+  "requested_by_entity_id": "kye:user:security_admin_001",
+  "tenant_id": "tenant_acme",
+  "purpose": "security_review",
+  "query": {
+    "text": "Find all agents that can move money",
+    "filters": {
+      "entity_type": ["ai_agent", "workflow", "api_client"],
+      "capability_type": ["payment_action", "card_purchase", "payment_initiation"],
+      "side_effect_level": ["move_money"],
+      "authority_state": ["active"],
+      "environment": ["production"]
+    }
+  },
+  "result_policy": {
+    "max_results": 100,
+    "include_evidence_refs": true,
+    "include_decision_maps": false,
+    "mask_sensitive_fields": true
+  },
+  "audit": {
+    "audit_required": true,
+    "reason_code_required": true
+  },
+  "created_at": "2026-05-06T12:00:00Z"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:eu-ai-act:v1",
+  "partner_id": "kye:foundry-applicant:eu-ai-act-reference-partner",
+  "pack_name": "KYE EU AI Act Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "eu-ai-act",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:eu-ai-act"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:eu_ai_act"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:eu-ai-act-foundry"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:eu-ai-act",
+    "kye:framework:iso-iec-42001",
+    "kye:framework:nist-ai-rmf"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:eu-ai-act:2026-05-31",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-31T12:00:00Z",
+      "reason_ref": "kye:ingestion-run:eu-ai-act-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:eu-ai-act:2026-05-31",
+  "claim_set": [
+    {
+      "claim_id": "deterministic-ingestion-provenance",
+      "claim_text": "Every rule binding in this Pack traces to a §59 deterministic ingestion run from CELEX:32024R1689 with two independent expert approvals — no LLM, replay-proof.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "high-risk-classification",
+      "claim_text": "Every in-scope AI system maps its Art.6 high-risk classification decision to a named control owner and a signed Evidence Pack.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "human-oversight",
+      "claim_text": "Every high-risk AI decision evidences the Art.14 human-oversight measure in force.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "risk-management-evidence-pack",
+      "claim_text": "Every material decision emits a signed Art.9 risk-management Evidence Pack, replay-derivable from published JWKS.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

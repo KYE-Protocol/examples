@@ -1,0 +1,50 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:trainer-bronze-tier",
+  "name": "Trainer — Bronze Tier",
+  "summary": "Turn-key bundle for a §49 trainer at Bronze tier. Channel-only pack: transparency rule pack, trainers GovernedUI module, trainer-channel comms, pre-configured analytics purpose for course-attendance telemetry.",
+  "target_audience": {
+    "sector": "trainer",
+    "role": "trainer-bronze",
+    "jurisdiction": "global",
+    "tier": "bronze"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:transparency",
+      "kye:rule-pack:compliance-evidence"
+    ],
+    "sector_pack_ids": [],
+    "dictionary_ids": [
+      "kye:dictionary:report-frameworks",
+      "kye:dictionary:report-kinds"
+    ],
+    "comms_template_ids": [
+      "persona-intake.admin-alert.v1",
+      "persona-intake.applicant-confirmation.v1",
+      "engage-access.applicant-confirmation.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.trainers.v1"
+    ],
+    "purposes_preconfigured": [
+      "service_delivery",
+      "analytics_aggregate"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 7,
+  "prerequisites": [
+    "Approved §49 trainer application (engagement_type=trainer, tier=Bronze)",
+    "Trainer obligations acknowledged"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-TRAINER-BRONZE",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "trainer-rail-owner",
+    "partner-rail-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "kye.billing.invoice.v1",
+  "invoice_id": "kye:invoice:acme-bank.2026-05",
+  "version": 1,
+  "customer_kyeid": "kye:ent:bank.acme",
+  "stripe_invoice_id": "in_1QABCDEFGHIJKLMN",
+  "line_items": [
+    {
+      "description": "Platform Fee — Regulated SLA (annual instalment)",
+      "meter_class": "platform_fee",
+      "quantity": 1,
+      "unit_amount_pence": 2916667,
+      "amount_pence": 2916667
+    },
+    {
+      "description": "Shadow observations above quota (12 405 above 100 000)",
+      "meter_class": "shadow_observation",
+      "quantity": 12405,
+      "unit_amount_pence": 25,
+      "amount_pence": 310125
+    },
+    {
+      "description": "BPS on value-bearing actions (8 actions)",
+      "meter_class": "bps_action",
+      "quantity": 8,
+      "unit_amount_pence": 2400,
+      "amount_pence": 19200
+    },
+    {
+      "description": "Compliance Seat — SR 11-7 (annual)",
+      "meter_class": "attestation_seat",
+      "quantity": 1,
+      "unit_amount_pence": 1500000,
+      "amount_pence": 1500000
+    }
+  ],
+  "subtotal_pence": 4745992,
+  "tax_pence": 949198,
+  "total_pence": 5695190,
+  "currency": "GBP",
+  "period_start": "2026-05-01T00:00:00Z",
+  "period_end": "2026-05-31T23:59:59Z",
+  "status": "paid",
+  "paid_at": "2026-06-03T08:21:55Z",
+  "issued_at": "2026-06-01T00:00:00Z",
+  "stripe_hosted_invoice_url": "https://invoice.stripe.com/i/acct_1Q/test_x"
+}

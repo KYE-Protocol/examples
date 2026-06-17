@@ -1,0 +1,11 @@
+{
+  "recovery_request_id": "kye:recovery:01JYRECOV",
+  "subject_entity_id": "kye:ent:acme.example:ai_agent:01JYAGENT",
+  "recovery_kind": "compromise_response",
+  "requested_by": "kye:ent:acme.example:person:01JYSECADMIN",
+  "on_behalf_of": "kye:ent:acme.example:business:01JYACME",
+  "reason_code": "credential_leak",
+  "evidence_refs": ["kye:evidence:01JYEVID1", "kye:evidence:01JYEVID2"],
+  "policy_id": "kye:pol:recovery-default",
+  "requested_at": "2026-05-05T11:00:00Z"
+}

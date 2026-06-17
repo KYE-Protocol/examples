@@ -1,0 +1,35 @@
+{
+  "schema_version": "kye.formal_rule.v1",
+  "rule_id": "kye:rule:payment_agent_approval_required",
+  "rule_type": "obligation",
+  "display_name": "Approval Required Before Payment Execution",
+  "description": "An agent that prepares a payment is obligated to obtain approval before payment execution.",
+  "applies_to": {
+    "actor_types": ["ai_agent", "workflow", "api_client"],
+    "capabilities": ["payment.prepare", "payment.execute"],
+    "profiles": ["kye:profile:payment", "kye:profile:open_finance"]
+  },
+  "condition": {
+    "when": {
+      "action_transition": "payment.prepare_to_payment.execute",
+      "environment": "production"
+    }
+  },
+  "normative_effect": {
+    "operator": "O",
+    "meaning": "obligation",
+    "required_action": "request_principal_approval"
+  },
+  "violation_effect": {
+    "decision": "deny",
+    "reason_code": "approval_obligation_not_satisfied",
+    "obligations": ["emit_audit_event", "generate_evidence_pack", "notify_principal"]
+  },
+  "evidence_requirements": [
+    "authority_grant", "approval_event", "state_snapshot",
+    "decision_map", "evidence_pack"
+  ],
+  "priority": 100,
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

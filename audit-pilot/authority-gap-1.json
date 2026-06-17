@@ -1,0 +1,20 @@
+{
+  "schema": "kye.authority.gap.v1",
+  "id": "kye:authority-gap:acme-bank.payments-agent.missing-grant.001",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "observed_action_id": "kye:observed-action:acme-bank.2026-05-12.a3f9b1",
+  "shadow_evaluation_id": "kye:shadow-eval:acme-bank.2026-05-12.a3f9b1.eval",
+  "gap_class": "missing_authority_grant",
+  "severity": "high",
+  "description": "supplier-payment-agent.v3 acted on payments above 500 GBP without an unrevoked KYE Authority Grant binding the okta payments-prepare role to this agent. Across the pilot the same gap recurred on 12 of 18 prepare actions above the threshold.",
+  "recommended_guard_id": "kye:guard-recommendation:acme-bank.authority-gate.payments-agent.001",
+  "evidence_pack_ref": "kye:evidence-pack:acme-bank.2026-05-12.a3f9b1",
+  "detected_at": "2026-05-12T11:14:32.450Z",
+  "closed_at": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.authority-gap.eu-prod.2026",
+    "value_b64": "OWQyNzZkNjY3NjU0YjJlMTdiOTFkY2YxZjAwYzcyNjVhMzNkYjJlYTY2OWVjZWU1ODkxOWRmZTQyZGFhMGYwNw"
+  }
+}

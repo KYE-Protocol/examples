@@ -1,0 +1,73 @@
+{
+  "schema_version": "kye.site_authority_score.v1",
+  "mode": "observed",
+  "domain": "kyeprotocol.com",
+  "score": 100,
+  "band": "authoritative",
+  "dimension_scores": {
+    "content_authority": {
+      "score": 100,
+      "signals_present": 4,
+      "signals_total": 4,
+      "present": [
+        "schema_org",
+        "author_metadata",
+        "canonical_urls",
+        "jsonld_org"
+      ]
+    },
+    "publishing_evidence": {
+      "score": 100,
+      "signals_present": 3,
+      "signals_total": 3,
+      "present": [
+        "cited_evidence",
+        "evidence_index",
+        "replay_proof"
+      ]
+    },
+    "agent_readiness": {
+      "score": 100,
+      "signals_present": 4,
+      "signals_total": 4,
+      "present": [
+        "llms_txt",
+        "robots_txt",
+        "sitemap",
+        "ai_disclosure"
+      ]
+    },
+    "change_governance": {
+      "score": 100,
+      "signals_present": 3,
+      "signals_total": 3,
+      "present": [
+        "change_feed",
+        "last_modified",
+        "version_pin"
+      ]
+    },
+    "action_authority": {
+      "score": 100,
+      "signals_present": 3,
+      "signals_total": 3,
+      "present": [
+        "agent_endpoint",
+        "well_known",
+        "auth_contract"
+      ]
+    },
+    "trust_registry": {
+      "score": 100,
+      "signals_present": 2,
+      "signals_total": 2,
+      "present": [
+        "registry_member",
+        "badge_present"
+      ]
+    }
+  },
+  "gaps": [],
+  "signals_evaluated": 19,
+  "scorer_version": "site-authority/1.0.0"
+}

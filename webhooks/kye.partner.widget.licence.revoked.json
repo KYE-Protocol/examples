@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:partner.kyeprotocol.com:01J4P9K00U2VVWWXXYYYYYYYYYY",
+  "event_class": "kye.partner.widget.licence.revoked",
+  "occurred_at": "2026-07-01T09:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:partner.kyeprotocol.com",
+    "trust_domain": "partner.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9K00U2VVWWXXYYYYYYYYYY",
+  "severity": "warn",
+  "payload": {
+    "licence_id": "kye:partner-widget-licence:partner.kyeprotocol.com:01J4P9J00T1U",
+    "partner_entity_id": "kye:ent:contoso.example:business:contoso",
+    "revoked_at": "2026-07-01T09:00:00Z",
+    "reason_code": "embed_domain_violation",
+    "violations": [
+      {
+        "domain": "demo.notpermitted.example",
+        "first_seen": "2026-06-28T14:11:02Z",
+        "loads_observed": 142
+      }
+    ],
+    "grace_period_hours": 24,
+    "revoked_by": "kye:ent:partner.kyeprotocol.com:role:partner-ops"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "44556677889900aabbccddeeff11223344556677889900aabbccddeefff001122",
+    "ts": "1751360400"
+  }
+}

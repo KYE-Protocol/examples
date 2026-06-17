@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.admission_gate.v1",
+  "gate_id": "kye:admission-gate:agent_runtime_default",
+  "display_name": "Default Agent Runtime Admission Gate",
+  "description": "Pre-admission gate for AI agent proposed actions before authority decisioning.",
+  "applies_to": {
+    "actor_types": ["ai_agent", "workflow"],
+    "capabilities": ["card_purchase", "payment.prepare", "external_email.send", "data.read"],
+    "profiles": ["kye:profile:agent_runtime", "kye:profile:payment", "kye:profile:commerce"]
+  },
+  "decision_policy": {
+    "default_decision": "admit",
+    "allowed_decisions": ["admit", "reject", "require_clarification", "require_human_review", "quarantine", "route_to_authority_check"]
+  },
+  "required_checks": [
+    "intent_present", "intent_clear", "principal_resolved", "actor_resolved",
+    "accountable_owner_known", "capability_known", "resource_known",
+    "data_source_allowed", "prohibited_action_class", "continuity_preserved",
+    "formal_rule_block", "evidence_ready", "jurisdiction_supported",
+    "risk_state_acceptable", "no_coercion_signal", "no_incentive_conflict",
+    "no_unsafe_tool_path"
+  ],
+  "required_evidence": ["intent_ref", "interpreted_intent_ref", "checked_dimensions_record"],
+  "signal_events": [
+    "kye.admissibility.check_started",
+    "kye.admissibility.admitted",
+    "kye.admissibility.rejected",
+    "kye.admissibility.requires_human_review",
+    "kye.admissibility.quarantined",
+    "kye.admissibility.routed_to_authority_check"
+  ],
+  "status": "active"
+}

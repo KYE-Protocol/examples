@@ -1,0 +1,24 @@
+{
+  "grant_id": "kye:grant:capability:01JYGRANT",
+  "actor_entity_id": "kye:ent:acme.example:ai_agent:01JYAGENT",
+  "principal_entity_id": "kye:ent:acme.example:business:01JYACME",
+  "capability_id": "kye:capability:skill:invoice-reconciliation",
+  "allowed_versions": ["1.2.x"],
+  "allowed_actions": ["invoice.read", "invoice.reconcile.prepare"],
+  "allowed_environments": ["prod"],
+  "limits": {
+    "max_records_per_run": 500,
+    "requires_approval_above": { "amount": 1000, "currency": "GBP" }
+  },
+  "conditions": {
+    "capability_state_must_be": ["active", "limited"],
+    "quality_state_must_be": ["passed", "passed_with_warnings"],
+    "risk_state_max": "medium",
+    "signature_required": true,
+    "human_approval_required": false
+  },
+  "valid_from": "2026-05-05T00:00:00Z",
+  "valid_until": "2026-12-31T23:59:59Z",
+  "state": "active",
+  "issued_by": "kye:ent:acme.example:person:01JYSECADMIN"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "kye.engagement.tier.v1",
+  "sku_id": "KYE-TRAINER-T0",
+  "engagement_type": "trainer",
+  "display_name": "KYE Strategic Trainer™ · Tier-1 / Custom",
+  "tier_rank": 0,
+  "price_band": "tier-1-custom",
+  "published_price_gbp": null,
+  "pricing_disclosure_policy": "contact-for-pricing",
+  "closed_registration": true,
+  "price": {
+    "amount_minor": 0,
+    "currency": "GBP",
+    "period": "year"
+  },
+  "obligations": [
+    "kye:obligation:trainer:certification-renewal",
+    "kye:obligation:trainer:exam-administration",
+    "kye:obligation:trainer:learner-attestation",
+    "kye:obligation:trainer:material-currency",
+    "kye:obligation:trainer:no-exam-leakage",
+    "kye:obligation:trainer:learner-data-residency",
+    "kye:obligation:trainer-t0:dual-channel-signoff",
+    "kye:obligation:trainer-t0:named-engineer-assignment",
+    "kye:obligation:trainer-t0:quarterly-attestation-cadence",
+    "kye:obligation:trainer-t0:regulator-bound-retention"
+  ],
+  "state_machine_states_required": [
+    "received",
+    "triaged",
+    "approved",
+    "invoice_issued",
+    "invoice_paid",
+    "access_provisioning",
+    "access_granted",
+    "entitlement_active",
+    "entitlement_ending",
+    "expired",
+    "renewed"
+  ],
+  "summary": "Bespoke top-tier trainer engagement for national academies, regulator-aligned training bodies, and tier-1 bank L&D programs. NDA + scoping call set the boundary; bespoke SKU; dual-channel sign-off on every curriculum-change irreversible; named curriculum engineer; quarterly attestation; regulator-bound learner-data retention. Pricing disclosed under NDA only."
+}

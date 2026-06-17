@@ -1,0 +1,45 @@
+{
+  "schema": "kye.kit.workflow.v1",
+  "workflow_id": "kye:kit:workflow:kye-pr-loop",
+  "name": "KYE PR Loop",
+  "description": "The real KYE Protocol delegated-build loop encoded as workflow-as-code: a sub-agent builds on an isolated branch, npm test runs the full gate chain, a human reviews the PR (single_approver), and on pass the change merges. This replaces the manual 'dispatch sub-agent → run gates → human-gate → rebase → merge' sequence.",
+  "entry": "build",
+  "nodes": [
+    {
+      "id": "build",
+      "type": "agent",
+      "label": "Delegated build",
+      "selector_classes": ["breadth", "build"],
+      "agent_brief": "Implement the spec on an isolated worktree branch; challenge the spec and cite the canonical being extended before writing code (CLAUDE.md delegated-agent discipline)."
+    },
+    {
+      "id": "gates",
+      "type": "command",
+      "label": "Full gate chain",
+      "command": "npm test",
+      "gate": "npm:test",
+      "selector_classes": ["correctness", "gate"]
+    },
+    {
+      "id": "review",
+      "type": "human_gate",
+      "label": "PR review",
+      "approval_mode": "single_approver",
+      "gate": "github:pr-review",
+      "selector_classes": ["human"]
+    },
+    {
+      "id": "merge",
+      "type": "command",
+      "label": "Merge to main",
+      "command": "gh pr merge --squash",
+      "gate": "github:merge",
+      "selector_classes": ["release"]
+    }
+  ],
+  "edges": [
+    { "from": "build", "to": "gates", "when": "always" },
+    { "from": "gates", "to": "review", "when": "on_pass" },
+    { "from": "review", "to": "merge", "when": "on_pass" }
+  ]
+}

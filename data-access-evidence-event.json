@@ -1,0 +1,23 @@
+{
+  "event_id":     "kye:event:northbank:dae-2026-05-16-7f3c2a9d",
+  "event_type":   "kye.data_access_evidence_event.v1",
+  "decision_id":  "kye:decision:northbank:7f3c2a9d-4b1e-4c8a-9d12-3e6a7c5f1b88",
+  "actor":        "kye:agent:northbank:kyc-verify",
+  "principal":    "kye:org:northbank",
+  "asset_id":     "kye:data_asset:northbank:retail-onboarding.customers_master",
+  "action":       "read",
+  "classification": "personal_data",
+  "purpose":      "regulatory_compliance",
+  "manifest_id":  "kye:data_use_manifest:northbank:agent-kyc-verify-2026-q2",
+  "data_subject_ref": {
+    "ref_type":       "pseudonymous_id",
+    "ref_value_hash": "9a1b3c5d7e8f0a2b4c6d8e0f1a3b5c7d9e1f0a2b4c6d8e0f1a3b5c7d9e1f0a2b"
+  },
+  "row_count":      1,
+  "field_set_hash": "d4f1e2c3b4a59687c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f90011",
+  "decision":       "allow",
+  "decision_reason_codes": [],
+  "jurisdiction":   "GB",
+  "evidence_pack_id": "kye:evidence_pack:northbank:ep-2026-05-16-7f3c2a9d",
+  "occurred_at":    "2026-05-16T13:42:18Z"
+}

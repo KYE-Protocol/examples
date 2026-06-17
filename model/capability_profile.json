@@ -1,0 +1,45 @@
+{
+  "id": "kye:model-capability-profile:tenant-acme:procurement-agent:2026-Q2",
+  "version": 1,
+  "model_id": "anthropic/claude-opus-4-8",
+  "model_provider": "anthropic",
+  "model_version": "4-8-20260201",
+  "declared_capabilities": [
+    "function-calling",
+    "summarisation",
+    "tool-use",
+    "document-extraction",
+    "reasoning-chain-of-thought"
+  ],
+  "prohibited_tasks": [
+    "autonomous-financial-execution",
+    "unsupervised-irreversible-action",
+    "personal-data-egress-cross-border"
+  ],
+  "risk_class": "limited",
+  "risk_class_framework_refs": [
+    { "framework_id": "eu-ai-act", "control_ref": "art-52-transparency" },
+    { "framework_id": "nist-ai-rmf", "control_ref": "GOVERN-1.1" },
+    { "framework_id": "iso-42001", "control_ref": "A.6.2.4" }
+  ],
+  "training_provenance": {
+    "base_model_lineage_hash": "sha256:3f8e2a1c9d4b7e6f5a8c2d1e9b4a7c6f8d3e2a1b9c4d7e6f5a8c2d1e9b4a7c6f",
+    "fine_tune_dataset_hashes": [
+      "sha256:7a2b5c8d3e6f9a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b"
+    ],
+    "rlhf_dataset_hash": "sha256:9c4e7f0a3b6d9e2c5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e"
+  },
+  "permitted_tool_families": [
+    "read-only",
+    "idempotent",
+    "billable"
+  ],
+  "effective_from": "2026-04-01T00:00:00Z",
+  "effective_until": "2026-07-01T00:00:00Z",
+  "attestor_principal_ref": "kye:principal:acme:ai-risk-officer:emp-00117",
+  "signature": {
+    "alg": "EdDSA",
+    "value": "MEUCIQDtP3z9mC4xRk6p0c3e8QlYj4VqXxY2kT9Q5Pl0Nx1aHwIhAMwW3nF7JqKj1xZ9B2eR5l4pVqLgYxZcF6oRgK3dQrTp",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

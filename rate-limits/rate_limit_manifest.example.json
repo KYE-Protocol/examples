@@ -1,0 +1,45 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.rate_limit_manifest.v1.json",
+  "schema": "kye.rate_limit_manifest.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-30T00:00:00Z",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md#2.3",
+  "notes": [
+    "Illustrative example of a kye.rate_limit_manifest.v1 instance. Carries two rules covering one read class + one write class. The canonical full registry lives at internal"
+  ],
+  "rules": [
+    {
+      "id": "kye:rate-limit:example_read",
+      "description": "Example read class.",
+      "endpoint_patterns": ["/v1/example/:id"],
+      "methods": ["GET"],
+      "tier_limits": {
+        "free":       { "requests_per_window": 60,   "window_seconds": 60, "burst_allowance": 20 },
+        "pro":        { "requests_per_window": 600,  "window_seconds": 60, "burst_allowance": 200 },
+        "enterprise": { "requests_per_window": 6000, "window_seconds": 60, "burst_allowance": 2000 },
+        "internal":   { "requests_per_window": 0,    "window_seconds": 60 }
+      },
+      "quota_scope": "per_tenant",
+      "over_limit_response_code": 429,
+      "retry_after_strategy": "token_bucket_drain",
+      "effective_from": "2026-05-30"
+    },
+    {
+      "id": "kye:rate-limit:example_write",
+      "description": "Example write class with SKU binding.",
+      "endpoint_patterns": ["/v1/example"],
+      "methods": ["POST"],
+      "tier_limits": {
+        "free":       { "requests_per_window": 5,   "window_seconds": 60 },
+        "pro":        { "requests_per_window": 30,  "window_seconds": 60 },
+        "enterprise": { "requests_per_window": 300, "window_seconds": 60, "burst_allowance": 50, "concurrency_limit": 10 },
+        "internal":   { "requests_per_window": 0,   "window_seconds": 60 }
+      },
+      "quota_scope": "per_api_key",
+      "over_limit_response_code": 429,
+      "retry_after_strategy": "exponential",
+      "pricing_tier_ref": "kye:sku:KYE-STARTER-ANNUAL-001",
+      "effective_from": "2026-05-30"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "kye:revocation:caseworker-to-bot-2026-05-24-rev",
+  "tenant_id": "kye:tenant:acme-health",
+  "revocation_id": "kye:revocation:caseworker-to-bot-2026-05-24-rev",
+  "target_urn": "kye:delegation:caseworker-to-bot-2026-05-24",
+  "reason_code": "subject_consent_withdrawn",
+  "revoked_at": "2026-05-25T08:00:00Z",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "kye:delegation:caseworker-to-bot-2026-05-24",
+  "tenant_id": "kye:tenant:acme-health",
+  "delegator_entity_id": "kye:human:caseworker-123",
+  "delegatee_entity_id": "kye:agent:caseworker-bot-01",
+  "purpose_id": "kye:purpose:customer-correspondence",
+  "capability_id": "kye:capability:send-customer-email",
+  "not_before": "2026-05-24T12:00:00Z",
+  "not_after": "2026-08-22T12:00:00Z",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

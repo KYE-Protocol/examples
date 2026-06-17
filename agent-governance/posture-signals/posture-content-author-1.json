@@ -1,0 +1,20 @@
+{
+  "schema": "kye.agent.posture_signal.v1",
+  "agent_pattern": "general-purpose-content-author",
+  "trust_domain_id": "kye:trust-domain:kye-protocol:internal",
+  "parent_task": "7c4d9a21-3b6e-4f08-9d12-5a8f1e2c6b40",
+  "window": {
+    "start": "2026-06-03T00:00:00Z",
+    "end": "2026-06-03T01:00:00Z"
+  },
+  "signals": {
+    "sensitive_data_in_context_rate": 0.04,
+    "oversharing_risk_score": 11.5,
+    "risky_usage_indicator_count": 1,
+    "cross_tenant_access_attempts": 0
+  },
+  "cadence": "hourly",
+  "emitted_at": "2026-06-03T01:00:07Z",
+  "complements": ["§21", "§34"],
+  "notes": "Worked-instance hourly posture signal for the content-author pattern over a one-hour window. Sensitive-data-in-context rate is low (content authoring reads constitution + specs, rarely classified data); one risky-usage indicator was a scope-edge read probe that the §52 scope refused; zero cross-tenant access attempts (§0.11 boundary clean)."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_id": "kye.agent_memory.v1",
+  "memory_id": "kye:agent-memory:acme-demo-agent-prospect-context-2026-05-17",
+  "tenant_id": "kye:tenant:acme-bank",
+  "agent_id": "kye:agent:demo-agent",
+  "principal_id": "kye:principal:acme-prospect-claire-thompson",
+  "conversation_id": "demo-2026-05-17T14:00:00Z-claire-thompson",
+  "memory_class": "short_term",
+  "content": {
+    "discovered_facts": [
+      "Prospect is COO of a tier-2 European bank",
+      "Live AI agents: 3 (KYC copilot, payment fraud triage, treasury cash-position assistant)",
+      "Compliance frameworks named: EU AI Act, DORA, GDPR, FCA Operational Resilience",
+      "Open question: how does KYE handle agent-to-agent delegation?"
+    ],
+    "next_action": "Walk through delegation-chain demo on slide 7; queue evidence-pack demo",
+    "scenario_replay_anchors": [
+      "kye:scenario:payment-fraud-triage-tier2-bank-2026-q2"
+    ]
+  },
+  "classification": "confidential",
+  "retention_until": "2026-08-15T14:00:00Z",
+  "memory_source": "conversation",
+  "created_by": "kye:agent:demo-agent",
+  "last_verified_at": "2026-05-17T14:18:42Z",
+  "consent_basis": "legitimate_interest",
+  "scope": {
+    "tenant_bound": true,
+    "principal_bound": true,
+    "cross_agent_allowed": false,
+    "cross_org_allowed": false,
+    "purpose_tags": ["sales_demo", "onboarding_continuity"]
+  },
+  "provenance_ref": "kye:provenance:acme-demo-agent-conversation-2026-05-17",
+  "content_hash": "sha256:9f1a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f8",
+  "caller_kid": "kye:kid:demo-agent-2026-q2",
+  "created_at": "2026-05-17T14:18:42Z",
+  "superseded_at": null,
+  "superseded_by": null,
+  "conflicting_memory_ids": [],
+  "ai_specific_notice": {
+    "notice_version": "2026-06",
+    "purpose_stated": "Maintain continuity of a sales-demo conversation so the agent can resume context across turns.",
+    "data_categories": ["professional_role", "stated_compliance_frameworks", "stated_open_questions"],
+    "model_function": "decision-support",
+    "opt_out_route": "Reply STOP in-conversation or contact the tenant's data-protection officer to withdraw.",
+    "notice_ref": null,
+    "served_at": "2026-05-17T14:00:05Z"
+  },
+  "withdrawal_route": {
+    "channel": "dsar",
+    "dsar_ref": "kye:dsar:acme-bank-claire-thompson-2026-05",
+    "rights_disclosure_ref": "kye:rights-disclosure:memory-authority-rail",
+    "instructions": "Submit a data-subject access / erasure request through the tenant DSAR portal to withdraw this memory."
+  },
+  "use_type": "inference",
+  "use_admissibility_ref": null,
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

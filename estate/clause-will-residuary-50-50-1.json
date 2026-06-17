@@ -1,0 +1,21 @@
+{
+  "schema": "kye.estate.clause.v1",
+  "clause_id": "kye:estate:clause:will-residuary-50-50-v1",
+  "clause_text_template": "I GIVE all the rest of my estate (after payment of my debts, funeral and testamentary expenses, and all legacies) to my Trustees upon trust to divide the same equally between such of my children {{primary_beneficiary_full_name}} and {{secondary_beneficiary_full_name}} as shall survive me and attain the age of eighteen years.",
+  "clause_jurisdiction": "GB-EAW",
+  "clause_version": "1.0.0",
+  "source_statute": "Wills Act 1837 s.9 (formalities of execution); residuary disposition is common-law form.",
+  "applies_when": {
+    "expression_kind": "jsonlogic",
+    "expression": {
+      "and": [
+        { "==": [ { "var": "matter_type" }, "will_standard" ] },
+        { "==": [ { "var": "client.address_country" }, "GB" ] }
+      ]
+    }
+  },
+  "requires_review": false,
+  "matter_types": ["will_standard"],
+  "notes": "Reference residuary clause used by the standard-will rule set when there are exactly two adult, non-vulnerable children named as 50/50 residuary beneficiaries.",
+  "review_required_by_legal": false
+}

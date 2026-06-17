@@ -1,0 +1,8 @@
+{
+  "original_signal_id": "kye:sig:acme.com:entity-engine:01HZ9RTEST000000000000001",
+  "subscriber_id": "sub_acme_prod_webhook_01",
+  "attempts": 3,
+  "last_error": "http_503",
+  "endpoint_url": "https://hooks.acme.com/kye/v1/receive",
+  "failed_at": "2026-05-14T11:30:00Z"
+}

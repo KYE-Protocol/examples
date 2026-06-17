@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.capability_kit.v1.json",
+  "schema": "kye.capability_kit.v1",
+  "capability_kit_id": "kye:capability-kit:events",
+  "display_name": "KYE Events Capability Kit",
+  "rail_ref": "constitution/37-EVENT-ENGINE.md",
+  "portable_path": "public/oss/software-constitution/kit/capability-kits/events/",
+  "governance_hook": "kye.compliance.attestation.v1",
+  "extraction_state": "reference",
+  "isolation_proof": "Adopter scaffolds the event-family contract skeleton into its own repo, streams to its own R2/log sink, and keeps its own event rows — KYE's private event registry never travels with the kit.",
+  "constitution_ref": "constitution/42-CONSTITUTION-KIT.md"
+}

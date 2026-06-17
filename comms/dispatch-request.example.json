@@ -1,0 +1,14 @@
+{
+  "template_id": "persona-intake.admin-alert.v1",
+  "to": ["info@kyeprotocol.com"],
+  "params": {
+    "label": "Trainer application",
+    "organisation": "Example Bank Ltd",
+    "fields_html": "<tr><td>name</td><td>Jane Doe</td></tr>",
+    "fields_text": "name: Jane Doe",
+    "actions_html": "<a href=\"https://admin.kyeprotocol.com/persona-intake-queue.html\">Review</a>",
+    "actions_text": "Review: https://admin.kyeprotocol.com/persona-intake-queue.html"
+  },
+  "idempotency_key": "intake:trainer:abc-123:admin-alert",
+  "tenant_id": "kye:tenant:platform"
+}

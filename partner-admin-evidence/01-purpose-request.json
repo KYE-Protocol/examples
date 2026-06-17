@@ -1,0 +1,24 @@
+{
+  "schema": "kye.purpose.request.v1",
+  "id": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB",
+  "actor": "kye:ent:operator:owner-ops@kyeprotocol.com",
+  "purpose": "kye:purpose-class:partner.programme.revoke",
+  "action": "revoke",
+  "resource": "kye:partner:legacy-consulting-llp.9d1c4b",
+  "data_classes": ["partner.status", "partner.audit_log"],
+  "requested_at": "2026-05-28T13:45:14Z",
+  "claimed_grant_id": "kye:purpose:kye-protocol:owner-ops:partner-revoke-2026q2",
+  "tool_call_hash": "sha256:a7c92d1e4b6f8a0d3c5e7f9a1b3d5e7f9c1a3b5d7e9f1a3c5b7d9e1f3a5c7b9d",
+  "context": {
+    "trigger": "missed quarterly attestation",
+    "partner_tier": "T1",
+    "last_attestation_received": "2026-02-01T00:00:00Z",
+    "attestation_due": "2026-05-01T00:00:00Z",
+    "contact_attempts": [
+      { "channel": "email", "at": "2026-05-08T09:00:00Z", "outcome": "no_reply" },
+      { "channel": "email", "at": "2026-05-22T09:00:00Z", "outcome": "no_reply" }
+    ],
+    "second_approver_id": "owner+program@kyeprotocol.com",
+    "reason_text": "Q1 2026 quarterly attestation cycle missed. Manual revocation closes the loop before the auto-job fires."
+  }
+}

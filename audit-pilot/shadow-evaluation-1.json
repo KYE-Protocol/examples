@@ -1,0 +1,27 @@
+{
+  "schema": "kye.decision.shadow_evaluation.v1",
+  "id": "kye:shadow-eval:acme-bank.2026-05-12.a3f9b1.eval",
+  "version": 1,
+  "observed_action_id": "kye:observed-action:acme-bank.2026-05-12.a3f9b1",
+  "mode": "shadow",
+  "simulated_decision": "simulated_requires_approval",
+  "reasoning": [
+    { "engine": "entity",    "check": "actor_in_registry",                       "passed": true,  "detail": "supplier-payment-agent.v3 attested" },
+    { "engine": "authority", "check": "actor_holds_active_grant",                "passed": false, "detail": "no KYE Authority Grant binds okta:role:payments-prepare to supplier-payment-agent.v3" },
+    { "engine": "purpose",   "check": "claimed_purpose_in_taxonomy",             "passed": false, "detail": "supplier_payment_prepare not bound by any active Purpose Permission for this agent" },
+    { "engine": "scope",     "check": "amount_within_scope_threshold",           "passed": false, "detail": "amount 950 GBP exceeds inferred scope ceiling 500 GBP for unattended agents" },
+    { "engine": "state",     "check": "vendor_in_active_state",                  "passed": true,  "detail": "vendor master record active" },
+    { "engine": "rules",     "check": "four_eyes_required_above_500_gbp",        "passed": false, "detail": "rule R-AB-PAY-04 requires dual control above 500 GBP" },
+    { "engine": "decision",  "check": "all_engines_passed_or_explicit_overrides","passed": false, "detail": "3 of 6 checks failed; admissible decision is requires_approval" }
+  ],
+  "engines_run": ["entity", "authority", "purpose", "scope", "state", "rules", "decision"],
+  "evaluated_at": "2026-05-12T11:14:32.180Z",
+  "production_action_blocked": false,
+  "would_have_blocked": true,
+  "decision_map_ref": "kye:decision-map:acme-bank.2026-05-12.a3f9b1",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.shadow-eval.eu-prod.2026",
+    "value_b64": "ZmRkZWVmZjAwMTEyMjMzNDQ1NTY2Nzc4ODk5YWFiYmNjMmM4YTkxZjBkM2U2NDc3YWFiMWM5ZjMzNDQ1NTY2Nzc4OA"
+  }
+}

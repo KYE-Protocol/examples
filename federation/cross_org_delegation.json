@@ -1,0 +1,50 @@
+{
+  "id": "kye:federation:cross-org-delegation:tenant-acme:2026-05-28T18:23:00Z:a0b1c2d3",
+  "version": 1,
+  "decision_id": "kye:decision:tenant-acme:procurement:2026-05-28T18:23:00Z:a0b1c2d3",
+  "delegation_chain": [
+    {
+      "hop_index": 0,
+      "issuer_tenant_id": "kye:tenant:bank-of-example",
+      "issuer_jwks_url": "https://kye.bank-of-example.example/.well-known/jwks.json",
+      "issuer_jwks_snapshot_hash": "sha256:c4d7f8a3e1b2c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0",
+      "subject_tenant_id": "kye:tenant:bank-of-example",
+      "subject_principal_ref": "kye:principal:bank-of-example:treasury-vp:emp-00482",
+      "scope_ref": "kye:purpose-permission:bank-of-example:treasury-vp:procurement-eur-1m-cap",
+      "valid_from": "2026-05-28T00:00:00Z",
+      "valid_until": "2026-06-04T00:00:00Z",
+      "revocation_check_url": "https://kye.bank-of-example.example/v1/revocations",
+      "signature": {
+        "alg": "EdDSA",
+        "value": "MEUCIQDmZ9z8nB3xRk5p9c2e7QlYj3VqXxY1kT8Q4Pl9Nx0aHwIhAMvW2nF6JqKj0xZ8B1eR4l3pVqLgYxZcF5oRgK2dQrTp",
+        "key_id": "kye:tenant:bank-of-example:jwks:2026Q2:sig-01"
+      },
+      "issued_at": "2026-05-28T08:00:00Z"
+    },
+    {
+      "hop_index": 1,
+      "issuer_tenant_id": "kye:tenant:bank-of-example",
+      "issuer_jwks_url": "https://kye.bank-of-example.example/.well-known/jwks.json",
+      "issuer_jwks_snapshot_hash": "sha256:c4d7f8a3e1b2c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0",
+      "subject_tenant_id": "kye:tenant:acme",
+      "subject_principal_ref": "kye:principal:acme:procurement-agent:v2.3",
+      "scope_ref": "kye:purpose-permission:bank-of-example:acme-procurement-narrowed-eur-200k",
+      "valid_from": "2026-05-28T09:00:00Z",
+      "valid_until": "2026-06-04T00:00:00Z",
+      "revocation_check_url": "https://kye.bank-of-example.example/v1/revocations",
+      "signature": {
+        "alg": "EdDSA",
+        "value": "MEYCIQDnK9z8nB3xRk5p9c2e7QlYj3VqXxY1kT8Q4Pl9Nx0aHwIhAKvW2nF6JqKj0xZ8B1eR4l3pVqLgYxZcF5oRgK2dQrTp",
+        "key_id": "kye:tenant:bank-of-example:jwks:2026Q2:sig-01"
+      },
+      "issued_at": "2026-05-28T09:00:00Z"
+    }
+  ],
+  "attenuation_invariant": "scope-explicit-narrow",
+  "issued_at": "2026-05-28T18:23:00.412Z",
+  "envelope_signature": {
+    "alg": "EdDSA",
+    "value": "MEUCIQDkY9z8mB3xRk5p9c2e7QlYj3VqXxY1kT8Q4Pl9Nx0aHwIgKvW2nF6JqKj0xZ8B1eR4l3pVqLgYxZcF5oRgK2dQrTp",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

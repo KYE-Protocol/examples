@@ -1,0 +1,50 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.modal_wiring.v1.json",
+  "schema": "kye.modal_wiring.v1",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:modal-wiring",
+  "constitution_ref": "constitution/00-INDEX.md",
+  "generated_at": "2026-06-08T00:00:00Z",
+  "notes": [
+    "Illustrative example of a kye.modal_wiring.v1 registry instance: one unit-smoked modal, one binding-declared modal, one postMessage widget."
+  ],
+  "unwired_baseline": 0,
+  "modals": [
+    {
+      "modal_id": "kye:modal:report-subscribe",
+      "surface": "site",
+      "page_path": "public/site/assets/components.js",
+      "trigger": "[data-report-subscribe-open]",
+      "endpoint": "/api/report-subscribe",
+      "handler_path": "public/site/functions/api/report-subscribe.js",
+      "method": "POST",
+      "binding_deps": ["D1", "Service"],
+      "wired": true,
+      "smoke": "unit-smoke"
+    },
+    {
+      "modal_id": "kye:modal:contact-engage",
+      "surface": "site",
+      "page_path": "public/site/main.js",
+      "trigger": "[data-contact-trigger]",
+      "endpoint": "/api/contact",
+      "handler_path": "public/site/functions/api/contact.js",
+      "method": "POST",
+      "binding_deps": ["Secret", "Service"],
+      "wired": true,
+      "smoke": "binding-declared"
+    },
+    {
+      "modal_id": "kye:modal:widget-deal-registration",
+      "surface": "widgets",
+      "page_path": "public/widgets/deal-registration/v1/index.html",
+      "trigger": "#dr-submit",
+      "endpoint": "window.parent.postMessage(submit_deal)",
+      "handler_path": "",
+      "method": "postMessage",
+      "binding_deps": ["none"],
+      "wired": true,
+      "smoke": "binding-declared"
+    }
+  ]
+}

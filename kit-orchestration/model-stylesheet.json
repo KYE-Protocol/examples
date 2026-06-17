@@ -1,0 +1,31 @@
+{
+  "schema": "kye.kit.model_stylesheet.v1",
+  "stylesheet_id": "kye:kit:model-stylesheet:kye-pr-loop",
+  "name": "KYE PR Loop model assignment",
+  "default_fallback": ["frontier"],
+  "rules": [
+    {
+      "selector": "*",
+      "model": "fast",
+      "note": "Universal default — fast model for any stage not otherwise assigned."
+    },
+    {
+      "selector": ".breadth",
+      "model": "fast",
+      "fallback": ["frontier"],
+      "note": "Breadth/exploration stages run on the fast model."
+    },
+    {
+      "selector": ".correctness",
+      "model": "frontier",
+      "fallback": ["fast"],
+      "note": "Correctness-critical stages (the gate chain) run on the frontier model."
+    },
+    {
+      "selector": "#merge",
+      "model": "frontier",
+      "fallback": ["fast"],
+      "note": "The merge stage is irreversible — pin the frontier model by id selector (highest specificity)."
+    }
+  ]
+}

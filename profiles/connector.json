@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:connector",
+  "slug": "connector",
+  "display_name": "KYE Connector Profile™",
+  "layer": "domain",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "How external systems (CKAN / Stripe / Clerk / Salesforce / Splunk / Slack / GitHub / etc.) integrate. Connectors declare capabilities, scopes, evidence emission, and the canonical action vocabulary they map onto.",
+  "required_objects": ["Actor", "Scope", "Evidence"],
+  "required_engines": ["kye:engine:connector-runtime"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

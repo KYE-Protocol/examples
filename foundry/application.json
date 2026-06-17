@@ -1,0 +1,85 @@
+{
+  "schema": "kye.foundry.application.v1",
+  "application_id": "a8c7e3d1-90a4-4b6c-9b1d-3e5f7d9a4b21",
+  "applicant_id": "kye:foundry-applicant:meridian-clinical-risk",
+  "applicant_profile": {
+    "org_name": "Meridian Clinical Risk Advisory Ltd",
+    "contact_email": "partnerships@meridian-clinical.example",
+    "contact_name": "Dr Helena Ashford",
+    "jurisdictions": ["uk", "eu"],
+    "website": "https://meridian-clinical.example",
+    "linkedin": "https://www.linkedin.com/in/helena-ashford-example"
+  },
+  "framework_name": "Meridian Clinical Risk Governance Framework",
+  "framework_summary": "A clinical-risk governance framework that maps clinical-decision-support deployments to MHRA Software as a Medical Device classification, NHS Digital DCB0129/0160 safety case assurance, and ISO 14971 risk management. The framework defines per-deployment risk artefacts (clinical safety case, hazard log, post-market surveillance plan) and the acceptance criteria a Trust safety officer signs off before clinical go-live.",
+  "framework_ownable_ip_summary": "The ownable IP is (a) the proprietary deployment-tier rubric that classifies a clinical-decision-support workflow against MHRA + NHS Digital tiers in one rubric, (b) the canonical hazard-log template Meridian has used with 11 NHS Trusts since 2019, (c) the Trust-safety-officer acceptance-criteria checklist (refined through 38 deployments), and (d) the per-tier evidence-pack contract. The underlying regulatory text (MHRA SaMD, DCB0129/0160, ISO 14971) is public; the rubric, templates, checklists, and evidence-pack contract are Meridian's.",
+  "domain_expertise_evidence": [
+    {
+      "claim": "Former NHS Digital Clinical Safety Officer (2016–2021); chaired the DCB0129 review board for the South-East region.",
+      "evidence_kind": "named-prior-role",
+      "url": "https://meridian-clinical.example/about"
+    },
+    {
+      "claim": "11 NHS Trust clinical-decision-support deployments under DCB0129/0160 assurance since 2019; zero serious-incident clinical safety failures attributable to the framework.",
+      "evidence_kind": "audited-deployment"
+    },
+    {
+      "claim": "Lead author, 'Safety-case patterns for AI-assisted triage in emergency medicine,' BMJ Health & Care Informatics 2023.",
+      "evidence_kind": "publication",
+      "url": "https://example-journal.com/article/safety-case-patterns-2023"
+    },
+    {
+      "claim": "Standing engagement with MHRA SaMD Change Program advisory group on PCCP definitions (2024–present).",
+      "evidence_kind": "regulator-engagement"
+    }
+  ],
+  "buyer_network_evidence": [
+    {
+      "buyer_segment": "NHS Trust Chief Clinical Information Officers (CCIOs)",
+      "named_relationships_count": 14,
+      "qualified_pipeline_value_gbp": 2400000,
+      "notes": "14 named CCIOs across acute Trusts; 6 with active AI-CDS pilots looking for a defensible safety case."
+    },
+    {
+      "buyer_segment": "Private healthcare group medical directors (Bupa / Spire / Nuffield tier)",
+      "named_relationships_count": 5,
+      "qualified_pipeline_value_gbp": 850000,
+      "notes": "5 medical directors; private-sector adoption is the secondary segment."
+    },
+    {
+      "buyer_segment": "Clinical-AI software vendors (sub-25-person)",
+      "named_relationships_count": 9,
+      "qualified_pipeline_value_gbp": 540000,
+      "notes": "Vendors who need a defensible safety case to sell into NHS Trusts."
+    }
+  ],
+  "no_conflicting_ip": true,
+  "nda_signed": true,
+  "claims_to_make": [
+    "Provides the canonical clinical-risk safety case for AI-assisted clinical decision support deployed under DCB0129/0160 assurance.",
+    "Every per-deployment evidence pack is bijective with the Trust safety officer's acceptance checklist.",
+    "Post-market surveillance artefacts emit on the §0.3 audit chain (PMS plan, incident log, trend report).",
+    "Replay-Proof™ derivable from public keys alone for every clinical-safety acceptance decision."
+  ],
+  "evidence_buyers_need": [
+    "Signed clinical safety case envelope per deployment (DCB0129 §5).",
+    "Hazard log with closure attestation per hazard (ISO 14971 §6).",
+    "PMS plan + PSUR + trend-report attestations on a quarterly cadence (MHRA PMS 2025).",
+    "Trust safety officer acceptance signature, dual-channel, bound to a §0.3 audit envelope.",
+    "Control-mapping table — Meridian framework → MHRA SaMD + DCB0129/0160 + ISO 14971."
+  ],
+  "tier_requested": "scout",
+  "exclusivity_requested": false,
+  "authority_to_bind": true,
+  "information_accurate": true,
+  "closed_registration_acknowledged": true,
+  "data_processing_consent": true,
+  "submitted_at": "2026-05-29T11:42:00Z",
+  "ip_hash": "c8b2a9f3e1d6c8b2a9f3e1d6c8b2a9f3e1d6c8b2a9f3e1d6c8b2a9f3e1d6c8b2",
+  "ua_hash": "d3a7b1e9f4c2d3a7b1e9f4c2d3a7b1e9f4c2d3a7b1e9f4c2d3a7b1e9f4c2d3a7",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-meridian-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-CANONICAL-FORM-FIELDS-PLACEHOLDER-FIXTURE-VALUE-ONLY"
+  }
+}

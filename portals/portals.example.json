@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.portal.v1.json",
+  "schema": "kye.portal.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/07-SUBDOMAIN.md",
+  "notes": [
+    "Illustrative kye.portal.v1 instance. The canonical full registry lives at internal"
+  ],
+  "portals": [
+    {
+      "id": "kye:portal:example",
+      "name": "Example Portal",
+      "host": "example.kyeprotocol.com",
+      "public": true,
+      "description": "Illustrative portal."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "approval_requirement_id": "kye:apr:acme.example:01JYAPR0000000000000000000",
+  "applies_to_action": "payment.initiate",
+  "threshold_minor": 10000,
+  "currency": "GBP",
+  "approval_type": "dual",
+  "approver_roles": ["finance_manager", "controller"],
+  "status": "active"
+}

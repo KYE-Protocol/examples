@@ -1,0 +1,66 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:insurance-underwriting-claims:v1",
+  "partner_id": "kye:foundry-applicant:insurance-underwriting-claims-reference-partner",
+  "pack_name": "KYE Insurance Underwriting & Claims Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "insurance-underwriting-claims",
+  "bound_sector_pack_refs": ["kye:sector-pack:insurance-underwriting-claims"],
+  "bound_rule_pack_refs": ["kye:rule-pack:insurance-underwriting-claims"],
+  "bound_dictionary_refs": ["kye:dictionary:insurance-underwriting-claims"],
+  "bound_framework_refs": [
+    "kye:framework:naic-model-bulletin-ai",
+    "kye:framework:colorado-sb21-169",
+    "kye:framework:eu-ai-act-insurance",
+    "kye:framework:nydfs-insurance-circular-ai",
+    "kye:framework:gdpr-automated-decision"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:insurance-underwriting-claims:2026-06-10",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-10T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-insurance-underwriting-claims-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:insurance-underwriting-claims:2026-06-10",
+  "claim_set": [
+    {
+      "claim_id": "underwriting-decision-authority",
+      "claim_text": "Every AI-assisted underwriting decision that moves toward a consequential adverse action (declining an applicant, issuing an adverse-rate offer, applying an exclusion, rescinding cover) MUST map to a recorded named-authority decision — the agent, the applicant / decision artefact, the intended consequential action, and the named underwriter / underwriting authority under whose authority it proceeds. Decisions lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "adverse-action-explainability",
+      "claim_text": "No AI-assisted underwriting or claims decision may drive a consequential adverse action against an applicant or claimant without a recorded adverse-action reason-code and the evidence the reason rests on — the specific reason, the principal factors and data fields that drove it, and the pinned source for each material factor — so the applicant / claimant receives a meaningful, specific reason. A black-box decline without a recorded reason-code is refused and never proceeds.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "claims-determination-authority",
+      "claim_text": "Every AI-assisted claims determination that moves toward a consequential adverse action (denying a claim, reducing a settlement, declining on a fraud-flag, rescinding cover) MUST map to a recorded named-authority decision — the agent, the claim / determination artefact, the intended consequential action, and the named adjuster / claims authority under whose authority it proceeds. Determinations lacking a recorded authority decision are refused and routed dual-channel to the responsible claims authority.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "fairness-evidence-capture",
+      "claim_text": "Every AI-assisted underwriting or claims decision that proceeds to a consequential adverse action MUST emit a signed, replay-provable fairness-evidence record binding the proxy-discrimination check applied (the protected-class proxy test, the disparate-impact / unfair-discrimination check result, the data fields tested, and the named-authority outcome) — so the decision is provably tested against unfair discrimination. A consequential decision without captured fairness-evidence is refused and never proceeds.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "appeal-contestability-record",
+      "claim_text": "Every AI-assisted underwriting or claims decision that proceeds to a consequential adverse action MUST carry an appeal / contestability record — a stable decision identifier, the inputs and authority and evidence it rested on, the applicant / claimant's right to human intervention, and a reconstruction / appeal route — so that when the decision is contested (a GDPR Art. 22 request for human intervention, a regulator's market-conduct inquiry, an adverse-action appeal under the NYDFS / Colorado regimes) it can be reconstructed exactly as made and contested through a recorded route.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE + DEFENSIBILITY of AI-assisted insurance underwriting and claims decisions and PROVES they are fair and contestable — who authorised the adverse decision, the adverse-action reason, the fairness-evidence, and whether it can be reconstructed and contested. KYE does NOT price risk, write the policy, set the risk appetite, or replace the actuary / underwriter / adjuster.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-10T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

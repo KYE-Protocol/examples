@@ -1,0 +1,24 @@
+{
+  "schema_version": "kye.entity.core.v1",
+  "kyeid": "kye:ent:acme.com:employee:alice-001",
+  "class": "org",
+  "trust_domain": "acme.com",
+  "subclass": "employee",
+  "local_id": "alice-001",
+  "display_name": "Alice — Engineering",
+  "jurisdiction": ["GB", "DE"],
+  "certification_tier": "tier_2",
+  "capabilities": [
+    "kye:capability:identity.verify",
+    "kye:capability:audit.read"
+  ],
+  "identifiers": [
+    { "scheme": "email", "value": "alice@acme.com" },
+    { "scheme": "iso-17442-lei", "value": "529900T8BM49AURSDO55", "issuer": "GLEIF" }
+  ],
+  "status": "active",
+  "public": false,
+  "owner_kyeid": "kye:ent:acme.com:org:root",
+  "created_at": "2026-01-15T09:00:00Z",
+  "updated_at": "2026-05-12T10:30:00Z"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "kye:model-params:tenant-acme:2026-05-28T18:23:00Z:a0b1c2d3",
+  "version": 1,
+  "decision_id": "kye:decision:tenant-acme:procurement:2026-05-28T18:23:00Z:a0b1c2d3",
+  "model_id": "anthropic/claude-opus-4-8",
+  "model_version": "4-8-20260201",
+  "model_provider": "anthropic",
+  "seed": 88112406,
+  "sampling": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096,
+    "response_format": "json_object"
+  },
+  "input_content_hash": "sha256:9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "output_content_hash": "sha256:2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+  "captured_at": "2026-05-28T18:23:00.412Z",
+  "signature": {
+    "alg": "EdDSA",
+    "value": "MEUCIQDqaq4D9X5g7v1aA8eq7Y5W4f3kQz9Pn8R1uJxR2pVqBgIgZbVc8jHm0qK4l9qLfAxLwYzC2u8YzWqQ4LcRJxXxYrA",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

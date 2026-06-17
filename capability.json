@@ -1,0 +1,55 @@
+{
+  "capability_id": "kye:capability:skill:invoice-reconciliation",
+  "entity_type": "capability",
+  "capability_type": "skill",
+  "name": "invoice-reconciliation",
+  "display_name": "Invoice Reconciliation",
+  "description": "Reconciles supplier invoices against purchase orders and payment records.",
+  "namespace": "acme.finance",
+  "issuer": {
+    "issuer_entity_id": "kye:ent:acme.example:business:01JYACME",
+    "issuer_type": "organisation",
+    "maintainer_entity_ids": ["kye:ent:acme.example:person:01JYPLATFORM"]
+  },
+  "version": {
+    "version_id": "kye:capability_version:invoice-reconciliation:1.2.3",
+    "semver": "1.2.3",
+    "release_channel": "production",
+    "published_at": "2026-05-05T10:00:00Z"
+  },
+  "state": {
+    "capability_state": "active",
+    "quality_state": "passed",
+    "risk_state": "medium",
+    "approval_state": "approved"
+  },
+  "scope": {
+    "allowed_actor_entity_types": ["ai_agent", "service_account"],
+    "allowed_environments": ["stage", "prod"],
+    "allowed_actions": ["invoice.read", "invoice.classify", "invoice.reconcile.prepare"],
+    "prohibited_actions": ["payment.execute"],
+    "data_classes": ["financial_data"],
+    "max_side_effect_level": "prepare_only",
+    "requires_human_approval_above": { "amount": 1000, "currency": "GBP" }
+  },
+  "integrity": {
+    "content_hash": "sha256:abcdef0123456789",
+    "manifest_hash": "sha256:fedcba9876543210",
+    "signature_required": true,
+    "signature_ref": "kye:signature:01JYSIG",
+    "supply_chain_state": "verified"
+  },
+  "runtime": {
+    "runtime_type": "agent_skill",
+    "execution_mode": "sandboxed",
+    "requires_network": false,
+    "requires_credentials": false,
+    "timeout_ms": 30000,
+    "idempotency_required": true
+  },
+  "audit": {
+    "created_at": "2026-05-05T09:00:00Z",
+    "updated_at": "2026-05-05T10:00:00Z",
+    "audit_hash": "sha384:0011223344"
+  }
+}

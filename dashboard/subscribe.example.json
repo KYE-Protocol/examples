@@ -1,0 +1,10 @@
+{
+  "schema": "kye.dashboard.subscribe.v1",
+  "subscription_id": "kye:dashboard-subscription:acme-2026-05-30T14-22-08Z-7af31c",
+  "tenant_id": "kye:tenant:org_2vAcMeBank",
+  "subscribed_at": "2026-05-30T14:22:08Z",
+  "event_classes": ["decision", "authority_change", "metric_tick", "density_cell"],
+  "transport": "sse",
+  "heartbeat_interval_sec": 25,
+  "auth_method": "clerk_jwt"
+}

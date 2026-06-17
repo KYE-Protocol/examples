@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-spof-closure-design",
+  "parent_task": "c5044a01-d85f-4c7d-9f51-5f9d65c31b8f",
+  "refused_at": "2026-05-27T11:22:48Z",
+  "chapter_ref": "§52",
+  "reason_summary": "Parent prompt requested provisioning a secondary Cloudflare R2 bucket via mcp__2dc6ae19-c258-4c9b-89de-eb3d52b6304c__r2_bucket_create. The §52 MCP allow-list manifest declares this server is NOT in the spof-closure-design pattern's allowed_mcp_servers[] (closure DESIGN is contract-only; Phase 3 deploy dispatch owns infrastructure provisioning under its own §52 binding). Refusing the call pre-execution.",
+  "remediation_hint": "Re-dispatch under a distinct agent_id with an explicit infrastructure-deploy purpose, or split the work: keep closure-design here (contract layer) and dispatch a separate Phase 3 deploy agent with mcp__2dc6ae19-c258-4c9b-89de-eb3d52b6304c__* in its allow-list under §27 dual-channel sign-off."
+}

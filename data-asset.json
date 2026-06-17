@@ -1,0 +1,27 @@
+{
+  "asset_id":   "kye:data_asset:northbank:retail-onboarding.customers_master",
+  "owner":      "kye:org:northbank",
+  "asset_kind": "db_table",
+  "location": {
+    "system":       "cloudflare:d1",
+    "address":      "retail_onboarding.customers_master",
+    "jurisdiction": "GB"
+  },
+  "classification": "personal_data",
+  "pii_inventory": [
+    { "field": "given_name",          "pii_type": "name",             "redaction_strategy": "preserve_only_for_subject" },
+    { "field": "family_name",         "pii_type": "name",             "redaction_strategy": "preserve_only_for_subject" },
+    { "field": "email",               "pii_type": "email_address",    "redaction_strategy": "preserve_only_for_subject" },
+    { "field": "national_insurance",  "pii_type": "national_id",      "redaction_strategy": "tokenise" },
+    { "field": "date_of_birth",       "pii_type": "date_of_birth",    "redaction_strategy": "preserve_only_for_subject" },
+    { "field": "primary_iban",        "pii_type": "financial_account","redaction_strategy": "partial_mask" }
+  ],
+  "labels": {
+    "kyc-scope":        "tier-1",
+    "regulator-domain": "FCA-PRA"
+  },
+  "default_retention_days":  2555,
+  "data_subject_ref_field":  "customer_id",
+  "lineage_parents":         [],
+  "registered_at":           "2026-03-15T11:00:00Z"
+}

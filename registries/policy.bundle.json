@@ -1,0 +1,19 @@
+{
+  "id": "kye:policy-bundle:acme-health-v1",
+  "tenant_id": "kye:tenant:acme-health",
+  "bundle_id": "kye:policy-bundle:acme-health-v1",
+  "rule_pack_ids": [
+    "kye:rule-pack:healthcare-canada-v1"
+  ],
+  "operating_model_version": "2026.05.24",
+  "content_hash": "sha256:stub-content-hash",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

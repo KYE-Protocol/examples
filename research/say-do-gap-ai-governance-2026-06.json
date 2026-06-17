@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:say-do-gap-ai-governance-2026-06",
+  "series": "roadmap_to_ai_governance",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "counsel",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "The Say-Do Gap in AI Governance: why stated controls fail their first incident — June 2026",
+  "tribute_ref": "kye:scientist-tribute:diffie-hellman",
+  "topic_id": "kye:research-topic:say-do-gap-ai-governance",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:say-do-gap-ai-governance:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "w6GECO0jPmaLyjqYHFbs+uwOdVAWnOerdZAU1dge/5oI80XDAKX9ycl5D/01egIGSA/yVKZlPyarThq6yRwTBw=="
+  },
+  "citations": [
+    {
+      "claim": "Commentary aimed at in-house legal teams has named a 'say-do gap' in AI governance — the distance between what organisations say about their AI controls (a use policy exists, every output is human-reviewed, confidential data never enters public tools, someone is accountable, the approach is risk-based) and what they can actually evidence in practice.",
+      "source_url": "https://globallegalai.com/",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Global Legal AI, 'The Say-Do Gap'. Cited as commentary, not as a statement of law."
+    },
+    {
+      "claim": "The Financial Stability Board's June 2026 consultation on sound practices for AI states that oversight must be meaningful rather than nominal and instructs institutions to investigate cases where humans consistently approve AI recommendations without modification — i.e. oversight that cannot be evidenced is not oversight.",
+      "source_url": "https://www.fsb.org/",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Financial Stability Board (consultation report). Publisher-level citation; deep-link to be pinned."
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-13T11:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

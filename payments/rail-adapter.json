@@ -1,0 +1,8 @@
+{
+  "adapter_id": "kye:ent:acme.example:payment_rail_adapter:01JYRAIL0000000000000",
+  "adapter_type": "bank_transfer_adapter",
+  "provider_entity_id": "kye:ent:acme.example:provider:01JYPROV0000000000000000",
+  "supported_rails": ["bank_transfer", "internal_ledger"],
+  "callback_mode": "signed_webhook",
+  "status": "active"
+}

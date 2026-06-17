@@ -1,0 +1,63 @@
+{
+  "schema": "kye.starter_pack.v1",
+  "id": "kye:starter-pack:uk-insurer-ciso",
+  "name": "UK Insurer CISO",
+  "summary": "Turn-key bundle for the Chief Information Security Officer at a UK insurer. Activates rate-limit, SIEM-routing, recovery, and continuity rule packs; the insurance sector pack; and pre-configured purposes for security-monitoring and incident-response.",
+  "target_audience": {
+    "sector": "insurance",
+    "role": "ciso",
+    "jurisdiction": "GB",
+    "tier": "mid-to-large-insurer"
+  },
+  "bundles": {
+    "rule_pack_ids": [
+      "kye:rule-pack:rate-limit",
+      "kye:rule-pack:siem-routing",
+      "kye:rule-pack:recovery",
+      "kye:rule-pack:continuity",
+      "kye:rule-pack:compliance-evidence"
+    ],
+    "sector_pack_ids": [
+      "kye:sector-pack:insurance",
+      "kye:sector-pack:financial-services"
+    ],
+    "dictionary_ids": [
+      "kye:dictionary:risk-classes",
+      "kye:dictionary:reason_codes",
+      "kye:dictionary:signals",
+      "kye:dictionary:telemetry"
+    ],
+    "comms_template_ids": [
+      "audit-pilot.admin-alert.v1",
+      "audit-pilot.applicant-confirmation.v1",
+      "onboarding-agent.pilot-approved.v1"
+    ],
+    "dashboard_widget_ids": [
+      "kye.governedui.module.evidence_timeline.v1",
+      "kye.governedui.module.authority_drift.v1",
+      "kye.governedui.module.critical_point_review.v1"
+    ],
+    "purposes_preconfigured": [
+      "security_monitoring",
+      "incident_response",
+      "audit_trail",
+      "regulatory_compliance"
+    ]
+  },
+  "activation_flow_ref": "constitution/22-ONBOARDING.md#starter-pack-activation",
+  "time_to_value_estimate_days": 28,
+  "prerequisites": [
+    "Signed pilot SOW",
+    "SIEM connector configured (Splunk / Sentinel / Chronicle)",
+    "Incident-response playbook reviewed by the Onboarding Agent"
+  ],
+  "value_graph_node_ref": null,
+  "pricing_sku_ref": "KYE-FINSERV-UK-ANNUAL-001",
+  "status": "active",
+  "created": "2026-05-30",
+  "owners": [
+    "insurance-rail-owner",
+    "security-rail-owner"
+  ],
+  "constitution_ref": "constitution/22-ONBOARDING.md §5"
+}

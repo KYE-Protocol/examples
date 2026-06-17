@@ -1,0 +1,24 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.user_journey.v1.json",
+  "schema": "kye.user_journey.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/02-INFORMATION-ARCHITECTURE.md",
+  "notes": [
+    "Illustrative kye.user_journey.v1 instance. The canonical full registry lives at internal"
+  ],
+  "user_journeys": [
+    {
+      "id": "kye:journey:example",
+      "persona": "buyer",
+      "stages": [
+        "start",
+        "end"
+      ],
+      "flows_ref": [
+        "kye:flow:example"
+      ],
+      "description": "Illustrative journey."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:core",
+  "slug": "core",
+  "display_name": "KYE Core Profile™",
+  "layer": "kernel",
+  "derives_from": null,
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "Universal contracts: Entity, Principal, Actor, Purpose, Authority, Scope, State, Rule, Decision, Evidence, Replay, Manifest. Every KYE™ implementation derives from this profile.",
+  "required_objects": ["Entity", "Principal", "Actor", "Purpose", "Authority", "Scope", "State", "Rule", "Decision", "Evidence", "Replay", "Manifest"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

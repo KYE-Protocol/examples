@@ -1,0 +1,38 @@
+{
+  "schema_version": "kye.rule_pack_listing.v1",
+  "listing_id": "kye:listing:eu-ai-act.foundational",
+  "rule_pack_id": "kye:rule-pack:eu-ai-act",
+  "version": "1.0.0",
+  "display_name": "EU AI Act — Foundational Compliance",
+  "tagline": "High-risk AI system controls: Art 9 risk management, Art 12 record-keeping, Art 14 human oversight.",
+  "long_description": "Implements the operational controls every high-risk AI system deployer in the EU must demonstrate: risk-management evidence pack, ≥10-year activity logs, demonstrable human oversight on every privileged inference, and serious-incident reporting hooks. Pairs with the EU AI Act sector pack for ESI / employment / law-enforcement / migration use cases.",
+  "publisher": {
+    "entity_id": "kye:org:kye-protocol",
+    "display_name": "KYE Protocol",
+    "tier": "first-party-kye",
+    "verified": true
+  },
+  "categories": ["compliance"],
+  "applies_to_regimes": ["EU_AI_ACT"],
+  "applies_to_jurisdictions": ["EU"],
+  "pricing_model": { "model": "free" },
+  "verification": {
+    "conformance_pack_run_id": "kye:conformance-run:eu-ai-act-2026-05-15",
+    "conformance_passed": true,
+    "fixtures_passed": 24,
+    "fixtures_total": 24,
+    "signature": {
+      "alg": "EdDSA",
+      "kid": "kye:key:marketplace-signer-001",
+      "value_b64": "MEUCIQDzH0oG2dP2gL9XsaBeN1BmZm0e8R2rapAh4Z9r1P5LrhKjA7mG5wX2c6H3e3h8G0c0y4dF6I9z1b8N4m1O2p3qS"
+    },
+    "verified_at": "2026-05-15T08:00:00Z",
+    "verified_by_entity_id": "kye:org:kye-protocol"
+  },
+  "entitlements": { "support_tier": "community" },
+  "reviews_summary": { "count": 21, "avg_rating": 4.8, "last_reviewed_at": "2026-05-14T09:11:00Z" },
+  "telemetry": { "installs": 132, "active_tenants": 118, "evaluations_last_30d": 14200000 },
+  "status": "active",
+  "created_at": "2026-02-01T00:00:00Z",
+  "updated_at": "2026-05-15T08:00:00Z"
+}

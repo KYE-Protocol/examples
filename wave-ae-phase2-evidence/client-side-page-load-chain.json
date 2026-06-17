@@ -1,0 +1,17 @@
+{
+  "_comment": "Example browser-emitted §0.3 governance envelope from public/app/ep/_assets/auth.js on page load. The customer-app surface declares its tenant scope BEFORE any user interaction; this envelope lands in localStorage under the key 'kye-ep-governance-chain:<tenant_slug>' and is what the authority-map.html page reads to render the local-chain summary.",
+  "schema": "kye.agent.governance.v1",
+  "envelope_id": "kye:envelope:kye:tenant:acme-estate:rid-1716804000000-abc12345:agent-governance:0",
+  "emitted_at": "2026-05-27T11:00:00Z",
+  "emitted_by": "kye:actor:acme-estate:adviser-jane",
+  "tenant_id": "kye:tenant:acme-estate",
+  "engagement_id": "kye:engagement:kye-pilot-estate-002",
+  "request_id": "rid-1716804000000-abc12345",
+  "operation_id": "ep_pageLoad",
+  "payload": {
+    "agent_id": "ep-customer-app-client",
+    "binding_manifest_ref": "internal",
+    "task_narrative": "browser-side page load for the KYE Estate Planning Authority Console customer app; declares tenant scope before any user interaction",
+    "constitutional_acknowledgements": ["§0", "§0.3", "§33", "§49 §9", "§52"]
+  }
+}

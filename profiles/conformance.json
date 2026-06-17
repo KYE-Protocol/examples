@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:conformance",
+  "slug": "conformance",
+  "display_name": "KYE Conformance Profile™",
+  "layer": "domain",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "How an implementation proves it conforms — test fixtures, conformance report, certification badge. Anchors the Conformance Pack™ shipped by §15 (MCP + SDK).",
+  "required_objects": ["Evidence", "Manifest"],
+  "required_engines": ["kye:engine:conformance-pack"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

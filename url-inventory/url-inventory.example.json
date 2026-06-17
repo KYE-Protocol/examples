@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.url_inventory.v1.json",
+  "schema": "kye.url_inventory.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/06-WEBSITE.md",
+  "notes": [
+    "Illustrative kye.url_inventory.v1 instance. The canonical full registry lives at internal"
+  ],
+  "urls": [
+    {
+      "id": "kye:url:example",
+      "url": "https://kyeprotocol.com/example",
+      "surface": "site",
+      "status": "live"
+    }
+  ]
+}

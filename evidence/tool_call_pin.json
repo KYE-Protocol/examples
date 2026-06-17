@@ -1,0 +1,19 @@
+{
+  "id": "kye:tool-call-pin:tenant-acme:2026-05-28T18:23:02Z:supplier-lookup",
+  "version": 1,
+  "decision_id": "kye:decision:tenant-acme:procurement:2026-05-28T18:23:00Z:a0b1c2d3",
+  "tool_id": "supplier-registry.lookup",
+  "tool_version": "8.4.1",
+  "tool_endpoint": "https://mcp.acme.example/v1/supplier-registry/lookup",
+  "mcp_server_id": "kye:mcp-server:acme:supplier-registry:prod",
+  "input_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_hash": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+  "deterministic": true,
+  "side_effects": ["none"],
+  "invoked_at": "2026-05-28T18:23:02.118Z",
+  "signature": {
+    "alg": "EdDSA",
+    "value": "MEYCIQDgJ8z0mB3xRk5p9c2e7QlYj3VqXxY1kT8Q4Pl9Nx0aHwIhAKvW2nF6JqKj0xZ8B1eR4l3pVqLgYxZcF5oRgK2dQrTp",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

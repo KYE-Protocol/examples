@@ -1,0 +1,29 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.design_partner_program.v1.json",
+  "schema": "kye.design_partner_program.v1",
+  "tier_id": "kye:design-partner-program:founding",
+  "display_name": "KYE Design Partner™ — Founding",
+  "founding_price_usd": 30000,
+  "list_price_usd": 50000,
+  "price_locked_months": 24,
+  "term_months": 12,
+  "cohort_cap": 10,
+  "partner_commitments": {
+    "co_design_cadence": "fortnightly co-design working sessions plus a quarterly governed-workflow review",
+    "reference_rights": true,
+    "logo_rights": true,
+    "rights_disclosure": "Reference and logo rights are a contractual exchange the Founding partner grants in return for founding terms — withdrawable per the §49 directory-consent obligation, never auto-assumed, and never a substitute for the founding discount."
+  },
+  "partner_benefits": {
+    "roadmap_influence": true,
+    "founder_access": true
+  },
+  "eligibility": {
+    "regulated_sector_only": true,
+    "eligibility_note": "Early enterprise adopters in a regulated sector who will co-design real governed workflows. Meeting the profile qualifies you to apply; the cohort is capped at 10 and admission is §49 application-reviewed."
+  },
+  "sku_ref": "KYE-DESIGN-PARTNER-FOUNDING-001",
+  "obligations_ref": "kye:obligation-manifest:pilot:design-partner-program",
+  "constitution_ref": "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md §9",
+  "status": "active"
+}

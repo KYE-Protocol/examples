@@ -1,0 +1,42 @@
+{
+  "schema": "kye.assurance.audit_replay_report.v1",
+  "id": "kye:audit-replay-report:e9c2b8a5d31470f2",
+  "version": 1,
+  "issued_at": "2026-05-01T03:00:00Z",
+  "signed_by": "kye:agent:audit-replay-orchestrator",
+  "batch_id": "nightly-2026-05-01",
+  "total_packs": 1000,
+  "equivalent_packs": 1000,
+  "divergent_packs": 0,
+  "divergence_rate": 0,
+  "per_rule_bundle": [
+    {
+      "rule_bundle_id": "kye:rules:agent-tool-call-v1",
+      "total_packs": 1000,
+      "equivalent_packs": 1000,
+      "divergent_packs": 0,
+      "divergence_rate": 0
+    }
+  ],
+  "per_tenant": [
+    {
+      "tenant_id": "kye:tenant:fintech-sandbox",
+      "total_packs": 500,
+      "equivalent_packs": 500,
+      "divergent_packs": 0
+    },
+    {
+      "tenant_id": "kye:tenant:gov-pilot",
+      "total_packs": 500,
+      "equivalent_packs": 500,
+      "divergent_packs": 0
+    }
+  ],
+  "divergent_pack_ids": [],
+  "content_hash": "e9c2b8a5d31470f29481af6c5e7d8b3a2c4f5e6d7a8b9c0d1e2f3a4b5c6d7e8f",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:audit-replay-2026-05",
+    "value_b64": "QVZhbGlkSWxsdXN0cmF0aXZlU2lnbmF0dXJlU3RyaW5nVHdvRm9ySnVzdFRoaXNFeGFtcGxlMg"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.database_tenancy.v1.json",
+  "schema_version": "1.0.0",
+  "manifest_id": "kye:manifest:database-tenancy",
+  "adopted_at": "2026-05-30",
+  "description": "Illustrative example covering the five canonical tenancy postures: (1) global vocabulary, (2) tenant-direct-column, (3) tenant-inherited-FK, (4) tenant-per-database, and (5) weak-email-scoped pre-tenant submission. The production manifest at internal covers every CREATE TABLE in the migration tree.",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md + constitution/20-ANALYTICS-PLANE.md + constitution/30-AUDIT-WORM-RETENTION.md",
+  "tables": [
+    {
+      "table_name": "taxonomy_terms",
+      "database_id": "kye:database:d1:kye-core",
+      "migration_ref": "kye:migration:004-init_taxonomy_metadata_graph_payload",
+      "is_global": true,
+      "sharding_strategy": "single",
+      "cross_tenant_query_allowed": true,
+      "cross_tenant_query_audit_required": false,
+      "isolation_class": "global_vocabulary",
+      "pii_columns": [],
+      "notes": "Controlled vocabulary; read-mostly; mutated only by privileged migration."
+    },
+    {
+      "table_name": "data_use_manifests",
+      "database_id": "kye:database:d1:kye-core",
+      "migration_ref": "kye:migration:021-data_governance_pack",
+      "is_global": false,
+      "scoping_column": "tenant_id",
+      "scoping_column_type": "TEXT",
+      "sharding_strategy": "single",
+      "cross_tenant_query_allowed": false,
+      "cross_tenant_query_audit_required": true,
+      "isolation_class": "tenant_direct_column",
+      "pii_columns": [],
+      "retention_policy_ref": "kye:retention:commercial_7y",
+      "notes": "Every SELECT MUST include tenant_id predicate; cross-tenant aggregations require purpose grant + tool_call audit."
+    },
+    {
+      "table_name": "audit_events",
+      "database_id": "kye:database:d1:kye-core",
+      "migration_ref": "kye:migration:001-init_core",
+      "is_global": false,
+      "inherits_scoping_from": {
+        "parent_table": "runtime_events",
+        "fk_column": "runtime_event_id",
+        "parent_scoping_column": "trust_domain_id"
+      },
+      "sharding_strategy": "single",
+      "cross_tenant_query_allowed": false,
+      "cross_tenant_query_audit_required": true,
+      "isolation_class": "tenant_inherited_fk",
+      "pii_columns": [],
+      "retention_policy_ref": "kye:retention:audit_events_10y",
+      "notes": "Tenancy inherited through runtime_events → entities.trust_domain_id chain. Queries must join the parent chain."
+    },
+    {
+      "table_name": "tenant_dedicated_credentials",
+      "database_id": "kye:database:d1:kye-regulated-banking-tier",
+      "migration_ref": "kye:migration:001-init_core",
+      "is_global": false,
+      "scoping_column": "tenant_id",
+      "scoping_column_type": "TEXT",
+      "sharding_strategy": "tenant_per_db",
+      "cross_tenant_query_allowed": false,
+      "cross_tenant_query_audit_required": false,
+      "isolation_class": "tenant_per_database",
+      "pii_columns": [],
+      "retention_policy_ref": "kye:retention:audit_events_10y",
+      "notes": "Hypothetical regulated-tenant binding — one D1 database per tenant; isolation is binding-level, no query-time predicate needed."
+    },
+    {
+      "table_name": "consultant_leads",
+      "database_id": "kye:database:d1:kye-core",
+      "migration_ref": "kye:migration:008-consultant_programme",
+      "is_global": false,
+      "scoping_column": "submitter_email",
+      "scoping_column_type": "TEXT",
+      "sharding_strategy": "single",
+      "cross_tenant_query_allowed": true,
+      "cross_tenant_query_audit_required": true,
+      "isolation_class": "weak_email_scoped",
+      "pii_columns": ["submitter_email"],
+      "notes": "Pre-tenancy inbound submission; promoted to a tenant-keyed row after onboarding completes."
+    }
+  ]
+}

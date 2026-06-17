@@ -1,0 +1,50 @@
+{
+  "schema_version": "kye.rule_pack_listing.v1",
+  "listing_id": "kye:listing:financial-services.eu",
+  "rule_pack_id": "kye:rule-pack:financial-services",
+  "version": "1.0.0",
+  "display_name": "Financial Services — EU (DORA / EU AI Act / FCA SYSC)",
+  "tagline": "Bank-grade rule pack covering payments, agentic trading, and AML for EU + UK financial entities.",
+  "long_description": "Reflects DORA Art 28 (ICT third-party risk), SR 11-7 model risk principles, FCA SYSC 9.1 record-keeping, EU AI Act Art 14 (human oversight), and FINRA 4511 books-and-records retention. Enforces watchlist-hit blocking, high-value payment approvals, and 10-year audit-event retention.",
+  "publisher": {
+    "entity_id": "kye:org:kye-protocol",
+    "display_name": "KYE Protocol",
+    "tier": "first-party-kye",
+    "verified": true
+  },
+  "categories": ["compliance", "sector"],
+  "applies_to_sectors": ["financial-services", "payments"],
+  "applies_to_regimes": ["DORA", "EU_AI_ACT", "FCA_SYSC", "SR_11_7", "FINRA"],
+  "applies_to_jurisdictions": ["EU", "GB", "IT", "DE", "FR"],
+  "pricing_model": {
+    "model": "annual",
+    "currency": "USD",
+    "price_minor_units": 4900000,
+    "stripe_price_id": "price_FsEuAnnual2026",
+    "trial_days": 30
+  },
+  "verification": {
+    "conformance_pack_run_id": "kye:conformance-run:fs-eu-2026-05-15",
+    "conformance_passed": true,
+    "fixtures_passed": 42,
+    "fixtures_total": 42,
+    "signature": {
+      "alg": "EdDSA",
+      "kid": "kye:key:marketplace-signer-001",
+      "value_b64": "MEUCIQDxF8mE0bN0eJ7VqYZcL9ZkXk8c6P0pZmYf2X7p9N3JpgIgY5kE3uV0a4F1c1f6E8a8w2bD4G7x9z6L2k9M0n1o2pQ"
+    },
+    "verified_at": "2026-05-15T08:00:00Z",
+    "verified_by_entity_id": "kye:org:kye-protocol"
+  },
+  "entitlements": {
+    "max_evaluations_per_month": 5000000,
+    "max_workflows": 200,
+    "support_tier": "priority",
+    "includes_dictionaries": ["kye:dictionary:reason-codes", "kye:dictionary:capability"]
+  },
+  "reviews_summary": { "count": 8, "avg_rating": 4.6, "last_reviewed_at": "2026-05-10T14:22:00Z" },
+  "telemetry": { "installs": 17, "active_tenants": 14, "evaluations_last_30d": 2840000 },
+  "status": "active",
+  "created_at": "2026-03-01T00:00:00Z",
+  "updated_at": "2026-05-15T08:00:00Z"
+}

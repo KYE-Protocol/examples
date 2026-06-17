@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:roi-governed-ai-action-2026-06",
+  "series": "roadmap_to_ai_adoption",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "cfo",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "The ROI of Governed AI Action — governance is the unlock, not the tax — June 2026",
+  "tribute_ref": "kye:scientist-tribute:shafi-goldwasser",
+  "topic_id": "kye:research-topic:roi-governed-ai-action",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:roi-governed-ai-action:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "uldsr025h9iPJRf0qomMIdq4krWDZ6dKUzaazXU2OT6a221PzWCCbgRDHFxzesiKZzILmxAgPQrl4IGRtm/KCQ=="
+  },
+  "citations": [
+    {
+      "claim": "Google Cloud's 'ROI of AI 2025' benchmark (with National Research Group; n=3,466 senior leaders at $10M+ enterprises) reports that 74% of organisations see ROI on at least one generative-AI use case, 52% now also run AI agents in production, 51% reach production in 3-6 months, and the #1 criterion for selecting an LLM provider is data privacy and security (37%).",
+      "source_url": "https://cloud.google.com/",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Google Cloud / National Research Group, 'The ROI of AI 2025'. Publisher-level citation; deep-link to be pinned."
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of an AI system, discharged at the point of use rather than in a later review — i.e. runtime governance is a legal requirement for higher-risk systems, not an optional overhead.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-13T10:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

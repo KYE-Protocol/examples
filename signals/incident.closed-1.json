@@ -1,0 +1,7 @@
+{
+  "incident_id": "kye:incident:acme.com:sec:inc-20260514-001",
+  "resolution_summary": "Root cause identified as misconfigured capability set in billing-agent-01 deployment manifest. Manifest corrected, agent redeployed in controlled_production with dual_control_required=true. No data exfiltration confirmed.",
+  "closed_at": "2026-05-14T14:00:00Z",
+  "closed_by": "kye:ent:acme.com:person:alice",
+  "root_cause_category": "configuration_error"
+}

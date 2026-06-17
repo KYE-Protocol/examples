@@ -1,0 +1,37 @@
+{
+  "schema_version": "kye.operating_model_profile.v1",
+  "profile_id": "kye:profile:operating_model",
+  "display_name": "KYE Operating Model Profile™",
+  "category": "ai_worker_governance",
+  "version": "1.0.0",
+  "description": "Defines the schemas, gates, review paths and evidence objects required to move AI workers from use-case intake to runtime authority control.",
+  "required_kye_profiles": [
+    "kye.core.v1",
+    "kye.authority.v1",
+    "kye.capability.v1",
+    "kye.state.v1",
+    "kye.evidence.v1"
+  ],
+  "recommended_kye_profiles": [
+    "kye.discoverability.v1",
+    "kye.continuity.v1",
+    "kye.ontology.v1"
+  ],
+  "required_objects": [
+    "KYEUseCaseIntake",
+    "KYEReadinessAssessment",
+    "KYEEntityAuthorityRecord",
+    "KYEAuthorityGate",
+    "KYECommitBoundary",
+    "KYEReviewPath",
+    "KYETrainingRecord",
+    "KYEAdoptionEvidencePack",
+    "KYEGovernedCatalogEntry"
+  ],
+  "journey_stages": [
+    "intake", "assess", "classify", "map_authority", "place_gates",
+    "configure_runtime", "execute", "evidence", "review", "improve"
+  ],
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

@@ -1,0 +1,75 @@
+{
+  "schema_id": "kye.data_flow_graph.v1",
+  "graph_id": "kye:data-flow-graph:acme-bank-payment-flow-2026-05-17",
+  "tenant_id": "kye:tenant:acme-bank",
+  "window_start": "2026-05-17T00:00:00Z",
+  "window_end": "2026-05-17T12:00:00Z",
+  "nodes": [
+    { "node_id": "n1", "entity_id": "kye:principal:acme-treasury-ops", "kind": "principal", "display_name": "Treasury Ops (human)" },
+    { "node_id": "n2", "entity_id": "kye:agent:acme-payment-agent-eu", "kind": "agent", "display_name": "Payment Agent (EU)", "risk_tier": "high" },
+    { "node_id": "n3", "entity_id": "kye:model:gpt-4o-2024-08-06", "kind": "model_endpoint", "display_name": "GPT-4o" },
+    { "node_id": "n4", "entity_id": "kye:dataset:acme-customer-master", "kind": "dataset", "display_name": "Customer Master", "classification": "restricted" },
+    { "node_id": "n5", "entity_id": "kye:tool:acme-stripe-payment-tool", "kind": "tool", "display_name": "Stripe Payment Tool", "risk_tier": "high" },
+    { "node_id": "n6", "entity_id": "kye:connector:stripe", "kind": "external_service", "display_name": "Stripe API" }
+  ],
+  "edges": [
+    {
+      "edge_id": "e1", "from_node_id": "n1", "to_node_id": "n2",
+      "flow_kind": "delegate", "count": 47,
+      "classification_floor": null, "risk_tier_max": "high",
+      "first_event_at": "2026-05-17T00:14:03Z",
+      "last_event_at": "2026-05-17T11:52:21Z",
+      "audit_chain_anchor": "kye:audit-chain-anchor:acme-bank-2026-05-17T00"
+    },
+    {
+      "edge_id": "e2", "from_node_id": "n2", "to_node_id": "n3",
+      "flow_kind": "invoke", "count": 312,
+      "classification_floor": "confidential", "risk_tier_max": "high",
+      "first_event_at": "2026-05-17T00:14:08Z",
+      "last_event_at": "2026-05-17T11:52:30Z",
+      "audit_chain_anchor": "kye:audit-chain-anchor:acme-bank-2026-05-17T00"
+    },
+    {
+      "edge_id": "e3", "from_node_id": "n2", "to_node_id": "n4",
+      "flow_kind": "read", "count": 89,
+      "classification_floor": "restricted", "risk_tier_max": "high",
+      "first_event_at": "2026-05-17T00:14:12Z",
+      "last_event_at": "2026-05-17T11:51:55Z",
+      "audit_chain_anchor": "kye:audit-chain-anchor:acme-bank-2026-05-17T00"
+    },
+    {
+      "edge_id": "e4", "from_node_id": "n2", "to_node_id": "n5",
+      "flow_kind": "invoke", "count": 23,
+      "classification_floor": "confidential", "risk_tier_max": "high",
+      "first_event_at": "2026-05-17T00:32:11Z",
+      "last_event_at": "2026-05-17T11:48:09Z",
+      "audit_chain_anchor": "kye:audit-chain-anchor:acme-bank-2026-05-17T00"
+    },
+    {
+      "edge_id": "e5", "from_node_id": "n5", "to_node_id": "n6",
+      "flow_kind": "invoke", "count": 23,
+      "classification_floor": "confidential", "risk_tier_max": "high",
+      "first_event_at": "2026-05-17T00:32:15Z",
+      "last_event_at": "2026-05-17T11:48:13Z",
+      "audit_chain_anchor": "kye:audit-chain-anchor:acme-bank-2026-05-17T00"
+    },
+    {
+      "edge_id": "e6", "from_node_id": "n2", "to_node_id": "n2",
+      "flow_kind": "emit_evidence", "count": 471,
+      "classification_floor": "internal", "risk_tier_max": "high",
+      "first_event_at": "2026-05-17T00:14:08Z",
+      "last_event_at": "2026-05-17T11:52:30Z",
+      "audit_chain_anchor": "kye:audit-chain-anchor:acme-bank-2026-05-17T00"
+    }
+  ],
+  "summary": {
+    "node_count": 6,
+    "edge_count": 6,
+    "highest_classification": "restricted",
+    "highest_risk_tier": "high",
+    "framework_floors_triggered": ["eu_ai_act", "dora", "gdpr", "pci_dss", "fca_opres"]
+  },
+  "generator_kid": "kye:kid:acme-data-mapping-agent-2026-q2",
+  "generated_at": "2026-05-17T12:00:00Z",
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

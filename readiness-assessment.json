@@ -1,0 +1,50 @@
+{
+  "schema_version": "kye.readiness_assessment.v1",
+  "assessment_id": "kye:readiness:001",
+  "use_case_id": "kye:use-case:ai_finance_worker_001",
+  "status": "requires_controls",
+  "risk_tier": "high",
+  "assessed_dimensions": {
+    "owner_defined": true,
+    "purpose_defined": true,
+    "capabilities_defined": true,
+    "data_classes_identified": true,
+    "authority_model_defined": false,
+    "human_review_path_defined": false,
+    "evidence_requirements_defined": false,
+    "revocation_path_defined": false,
+    "continuity_requirements_defined": false,
+    "discoverability_requirements_defined": true
+  },
+  "required_profiles": [
+    "kye:profile:payment",
+    "kye:profile:discoverability",
+    "kye:profile:continuity",
+    "kye:profile:operating_model"
+  ],
+  "required_gates": [
+    "kye:gate:payment_prepare",
+    "kye:gate:payment_execute",
+    "kye:gate:external_send"
+  ],
+  "required_evidence": [
+    "authority_grant",
+    "scope",
+    "state_snapshot",
+    "policy_decision",
+    "decision_map",
+    "evidence_pack"
+  ],
+  "readiness_score": {
+    "score": 0.58,
+    "scale": "0_to_1",
+    "interpretation": "not_ready_for_autonomous_execution"
+  },
+  "recommended_next_steps": [
+    "define_entity_authority_record",
+    "place_payment_execution_gate",
+    "define_human_approval_threshold",
+    "configure_evidence_pack"
+  ],
+  "assessed_at": "2026-05-09T12:05:00Z"
+}

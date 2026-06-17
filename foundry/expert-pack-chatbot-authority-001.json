@@ -1,0 +1,63 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:chatbot-authority:v1",
+  "partner_id": "kye:foundry-applicant:chatbot-authority-reference-partner",
+  "pack_name": "KYE Chatbot Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "chatbot-authority",
+  "bound_sector_pack_refs": ["kye:sector-pack:chatbot-authority"],
+  "bound_rule_pack_refs": ["kye:rule-pack:chatbot-authority"],
+  "bound_dictionary_refs": ["kye:dictionary:chatbot-authority"],
+  "bound_framework_refs": [
+    "kye:framework:us-state-chatbot-laws",
+    "kye:framework:eu-ai-act-chatbot-transparency"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:chatbot-authority:2026-06-10",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-10T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-chatbot-authority-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:chatbot-authority:2026-06-10",
+  "claim_set": [
+    {
+      "claim_id": "jurisdiction-resolution",
+      "claim_text": "Before a consumer / customer chatbot interaction proceeds, the user's location is resolved to the applicable AI-chatbot-law regime (the applicable US state law and/or EU AI Act Article 50) and its applicable safeguard set, reusing the canonical jurisdiction dictionary + the Cross-Jurisdiction Handoff Rail. An interaction whose applicable jurisdiction is unresolved is refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "crisis-protocol",
+      "claim_text": "When a chatbot interaction surfaces a mental-health-crisis signal under a regime that mandates a crisis protocol (Utah AI Mental Health Chatbot Act; California SB 243 crisis-referral), the applicable crisis-escalation action MUST be authorised and triggered; an interaction carrying a detected crisis signal that proceeds without an authorised, triggered escalation is refused. KYE proves whether the crisis-escalation was authorised and triggered; it does not provide the clinical crisis-counselling content or the crisis service.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "minor-protection",
+      "claim_text": "When a chatbot interaction detects or the user declares a minor under a regime that mandates minor protections (California SB 243 and related companion-chatbot Acts), the restricted-minor safeguard profile MUST be applied under a recorded authority decision before the interaction proceeds; otherwise it is refused. KYE proves whether the minor-profile was applied under whose authority; it does not author the minor-safety content or run the age-estimation model.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "disclosure-enforcement",
+      "claim_text": "Under a regime that mandates chatbot disclosure / anti-deception (California SB 243 clear-and-conspicuous AI disclosure; EU AI Act Article 50), a consumer / customer chatbot interaction MUST NOT proceed unless the applicable AI-is-not-human disclosure has been shown and the operator's anthropomorphism / deception policy enforced; otherwise it is refused. KYE proves whether the disclosure was shown and the policy enforced; it does not author the chatbot UX or disclosure copy.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "interaction-evidence",
+      "claim_text": "Every chatbot interaction that proceeds under a safeguard regime emits a signed, replay-derivable Evidence Pack binding the resolved jurisdiction, the safeguards applied, the person classification, the disclosure shown, the crisis-escalation outcome, and the authority outcome — so the operator can prove, when sued under a private right of action (7 enacted state laws carry one at roughly $1,000 per violation), that the right safeguards applied to the right person in the right jurisdiction at the moment of interaction.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE of chatbot safeguard actions and PROVES it for litigation. KYE does not provide the chatbot / LLM, the clinical crisis-counselling content, or the GRC program.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-10T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

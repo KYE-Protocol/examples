@@ -1,0 +1,41 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.component_readiness.v1.json",
+  "schema": "kye.component_readiness.v1",
+  "version": "1.0.0",
+  "as_of": "2026-06-08",
+  "constitution_ref": "constitution/00-INDEX.md",
+  "lifecycle_stages": [
+    "architected",
+    "implemented",
+    "wired",
+    "integrated",
+    "built",
+    "tested",
+    "worm_audit",
+    "deploy_ready"
+  ],
+  "external_exception": {
+    "note": "The ONLY admissible incompleteness is a genuine third-party external (pentest, SOC 2 / ISO 27001, cyber-insurance, counsel/patent sign-off, or a live deploy credential not held in-repo) — declared honestly in the readiness ledger, never faked (§0.29 + §0.2).",
+    "ledger_ref": "compliance/tier1-readiness ledger"
+  },
+  "untested_worker_baseline": 1,
+  "components": [
+    {
+      "component_id": "example-edge-worker",
+      "kind": "worker",
+      "path": "runtime/example-edge-worker",
+      "tested": true,
+      "deploy_ready": true,
+      "blocked_external": false
+    },
+    {
+      "component_id": "example-batch-worker",
+      "kind": "worker",
+      "path": "runtime/example-batch-worker",
+      "tested": false,
+      "deploy_ready": true,
+      "blocked_external": false,
+      "notes": "Illustrative: a deployed worker still awaiting its unit + integration tests — counted in untested_worker_baseline until covered."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "kye.governance_rule.v1",
+  "governance_rule_id": "kye:governance-rule:payment_rule_override",
+  "display_name": "Payment Rule Override Governance",
+  "rule_scope": "payment_profile",
+  "who_may_override": [
+    "role:chief_risk_officer",
+    "role:payments_control_owner"
+  ],
+  "override_conditions": [
+    "incident_response",
+    "business_continuity",
+    "regulatory_instruction"
+  ],
+  "override_requires": [
+    "reason_code",
+    "time_bound_expiry",
+    "second_approver",
+    "evidence_pack"
+  ],
+  "default_override_duration_minutes": 60,
+  "audit_required": true,
+  "status": "active"
+}

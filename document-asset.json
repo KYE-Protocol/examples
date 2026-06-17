@@ -1,0 +1,33 @@
+{
+  "document_asset_id": "kye:document_asset:northbank:acceptable-use-policy-v3",
+  "data_asset_ref": "kye:data_asset:northbank:governance.acceptable-use-policy-v3",
+  "trust_domain_id": "northbank",
+  "owner": "kye:org:northbank",
+  "classification_kind": "acceptable_use",
+  "filename": "northbank-acceptable-use-policy-v3.pdf",
+  "media_type": "application/pdf",
+  "byte_size": 184320,
+  "content_sha256": "815e1b6db9deb7d769c31fd2194f9f98cca24f6702671f8bb4cef2f35c6de258",
+  "object_lock": {
+    "bucket": "kye-document-governance",
+    "object_key": "northbank/document-assets/acceptable-use-policy-v3.pdf",
+    "mode": "COMPLIANCE",
+    "retain_until": "2033-06-10T00:00:00Z"
+  },
+  "data_use_manifest_ref": "kye:data_use_manifest:northbank:document-governance-default",
+  "retention_policy_ref": "kye:retention:document_assets_7y",
+  "content_safety": {
+    "verdict": "clean",
+    "scanned_at": "2026-06-10T09:30:00Z",
+    "pii_findings": [],
+    "disallowed_type": false,
+    "scanner": {
+      "engine": "kye-document-content-safety",
+      "engine_version": "1.0.0",
+      "av_vendor_status": "not_configured"
+    }
+  },
+  "policy_clause_mapping_ref": "kye:policy_clause_mapping:northbank:acceptable-use-policy-v3.gdpr",
+  "ingestion_evidence_ref": "kye:evidence-pack:northbank:document-ingest-acceptable-use-policy-v3",
+  "registered_at": "2026-06-10T09:30:02Z"
+}

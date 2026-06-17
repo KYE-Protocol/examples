@@ -1,0 +1,14 @@
+{
+  "entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "entity_state": "active",
+  "authority_state": "active",
+  "delegation_state": "active",
+  "credential_state": "active",
+  "recovery_state": "none",
+  "risk_state": "normal",
+  "checked_at": "2026-05-05T13:30:00Z",
+  "may_act_now": true,
+  "blockers": [],
+  "active_break_glass_grants": [],
+  "last_audit_event_id": "kye:aud:acme.example:01JYAUDIT7K00000000000XZ"
+}

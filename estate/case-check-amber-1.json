@@ -1,0 +1,26 @@
+{
+  "schema": "kye.estate.case_check.v1",
+  "case_check_id": "kye:estate:case_check:demo-tenant:cc-2026-05-27-001",
+  "matter_id": "kye:estate:matter:demo-tenant:matter-2026-05-27-001",
+  "draft_manifest_id": "kye:estate:draft_manifest:demo-tenant:dm-2026-05-27-001",
+  "governance_envelope_ref": {
+    "schema": "kye.agent.governance.v1",
+    "parent_task": "8f1b3e9c-6a02-4d54-9f37-1ce6b22e9f44",
+    "agent_id": "estate-ai-case-checker"
+  },
+  "checked_at": "2026-05-27T09:45:30Z",
+  "severity": "amber",
+  "scope_categories": ["executor_validity", "beneficiary_consistency", "share_arithmetic", "capacity_consistency", "clause_jurisdiction_match", "clause_version_currency"],
+  "findings": [
+    {
+      "finding_id": "kye:estate:finding:residuary-share-rounding-001",
+      "category": "share_arithmetic",
+      "severity": "major",
+      "description": "Residuary shares total 100% across two beneficiaries (50/50) which is arithmetically correct, but no failover clause names a substitute residuary beneficiary in the event one beneficiary predeceases the testator. Recommend adding a per-stirpes substitution clause to avoid partial intestacy.",
+      "clause_ref": "kye:estate:clause:will-residuary-50-50-v1",
+      "recommended_action": "adviser_review"
+    }
+  ],
+  "ai_model_version": "kye-estate-checker-v1.0.0",
+  "fallback_mode": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema_id": "kye.stakeholder.v1",
+  "stakeholder_id": "kye:consultant:big4.acme.london",
+  "stakeholder_class": "consultant",
+  "tenant_id": "kye:tenant:big4_acme",
+  "display_name": "Acme Consulting (Big-4 London)",
+  "contact_email_hash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+  "country": "GB",
+  "onboarded_at": "2026-05-17T18:30:00Z",
+  "onboarding_flow": "consultant-lead",
+  "admin_action_prefix": "kye:consultant-lead",
+  "status": "active",
+  "rights": [
+    "consultant.list_tenant_links",
+    "consultant.read_engagement_evidence",
+    "consultant.publish_listing"
+  ],
+  "obligations": [
+    "consultant.maintain_active_certifications",
+    "consultant.respect_tenant_classification_floor",
+    "consultant.report_msa_deliverables_quarterly"
+  ],
+  "report_delivery_subscriptions": [
+    { "report_kind": "consultant_engagement_utilization", "cadence": "monthly" },
+    { "report_kind": "consultant_portfolio_risk_rollup",  "cadence": "monthly" }
+  ],
+  "superseded_at": null,
+  "revoked_at": null,
+  "signing_kid": "kye:kid:big4_acme:onboarding",
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

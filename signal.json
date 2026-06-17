@@ -1,0 +1,19 @@
+{
+  "signal_id": "kye:sig:acme.example:01JYSIG0000000000000000000",
+  "signal_type": "entity.stop",
+  "target_entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "issued_by_entity_id": "kye:ent:acme.example:person:01JYSECADMIN0000000000000",
+  "reason_code": "policy_violation",
+  "effect": "immediate_stop",
+  "applies_to": [
+    "runtime_actions",
+    "active_tokens",
+    "active_sessions",
+    "delegations",
+    "workflows"
+  ],
+  "payload": {
+    "incident_ref": "INC-2026-0042"
+  },
+  "issued_at": "2026-04-23T22:00:00Z"
+}

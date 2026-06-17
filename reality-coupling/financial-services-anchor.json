@@ -1,0 +1,36 @@
+{
+  "schema_version": "kye.reality_anchor.v1",
+  "anchor_id": "kye:anchor:globalbank:ofac-sdn-list",
+  "anchor_type": "external_source_of_truth",
+  "display_name": "OFAC Specially Designated Nationals (SDN) List — Global Bank Mirror",
+  "description": "Authoritative mirror of the U.S. Treasury OFAC SDN sanctions list used to ground payment-release, wire-execution, and counterparty-onboarding actions. Refreshed on every upstream publication; freshness window enforced at decision time.",
+  "authority": {
+    "owner_entity_id": "kye:entity:globalbank:compliance-office",
+    "regulator_id": "kye:regulator:us:treasury-ofac",
+    "jurisdiction": "US"
+  },
+  "freshness_contract": {
+    "max_staleness_seconds": 3600,
+    "expected_refresh_seconds": 900,
+    "stale_runtime_effect": "deny"
+  },
+  "grounds_actions": [
+    "kye.action:wire_execute",
+    "kye.action:counterparty_onboard",
+    "kye.action:payment_release",
+    "kye.action:correspondent_account_open"
+  ],
+  "grounds_profiles": [
+    "kye.reality_coupling_profile.v1",
+    "kye.reality_anchor_profile.v1"
+  ],
+  "source": {
+    "kind": "stream",
+    "uri": "https://sanctions-mirror.globalbank.example/api/v1/ofac/sdn/stream",
+    "credential_ref": "kye:credential:globalbank:sanctions-mirror-readonly"
+  },
+  "tags": ["sanctions", "ofac", "aml", "financial-services", "critical"],
+  "status": "active",
+  "created_at": "2026-05-14T08:00:00Z",
+  "updated_at": "2026-05-14T08:00:00Z"
+}

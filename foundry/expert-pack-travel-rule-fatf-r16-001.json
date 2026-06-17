@@ -1,0 +1,60 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:travel-rule-fatf-r16:v1",
+  "partner_id": "kye:foundry-applicant:travel-rule-fatf-r16-reference-partner",
+  "pack_name": "KYE Travel Rule Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "travel-rule-fatf-r16",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:travel-rule-fatf-r16"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:travel-rule-fatf-r16"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:travel-rule-fatf-r16"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:fatf-r16",
+    "kye:framework:fatf",
+    "kye:framework:fin-travel-rule"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:travel-rule-fatf-r16:2026-05-31",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-31T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-travel-rule-fatf-r16-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:travel-rule-fatf-r16:2026-05-31",
+  "claim_set": [
+    {
+      "claim_id": "originator-beneficiary-data-required",
+      "claim_text": "Every AI-assisted virtual-asset transfer above the de-minimis threshold MUST evidence complete originator and beneficiary information before execution. Incomplete data refuses the transfer at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "counterparty-vasp-dd-required",
+      "claim_text": "Every transfer to a counterparty VASP MUST evidence counterparty due diligence. Unverified counterparty VASPs refuse the transfer and route to the compliance owner.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "sanctions-screening-evidence-pack",
+      "claim_text": "Every transfer decision MUST emit a signed, replay-derivable Evidence Pack binding the sanctions-screening result, compliance-owner identity, and Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "sunrise-issue-handling",
+      "claim_text": "Every transfer to a jurisdiction that has not yet implemented the Travel Rule (sunrise issue) MUST obtain compliance-owner approval. Unapproved sunrise transfers are refused and routed dual-channel.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

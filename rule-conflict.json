@@ -1,0 +1,21 @@
+{
+  "schema_id": "kye.rule_conflict.v1",
+  "conflict_id": "kye:rule-conflict:acme-gdpr-fca-marketing-2026-05-17",
+  "tenant_id": "kye:tenant:acme-bank",
+  "conflict_kind": "framework_obligation_conflict",
+  "detection_phase": "compile",
+  "participants": [
+    "kye:rule-pack:gdpr-art21-direct-marketing-objection",
+    "kye:rule-pack:fca-conduct-of-business-promotion-positive-friction",
+    "kye:operating-model:acme-bank-marketing-2026"
+  ],
+  "severity": "high",
+  "description": "GDPR Art. 21 grants the data subject an absolute right to object to direct marketing; the FCA-aligned rule pack mandates positive-friction confirmation prompts on opt-out flows. The two obligations cannot both be honoured for the same data subject without a deterministic precedence rule.",
+  "resolution_path": "requires_amendment",
+  "resolution_strategy": null,
+  "resolution_at": null,
+  "resolver_kid": null,
+  "amendment_ref": null,
+  "detected_at": "2026-05-17T11:30:00Z",
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "kye.proposed_action.v1",
+  "proposed_action_id": "kye:proposed-action:001",
+  "origin": {
+    "source_type": "ai_agent",
+    "source_entity_id": "kye:agent:shopping_agent_456",
+    "principal_entity_id": "kye:person:customer_123",
+    "accountable_entity_id": "kye:org:acme_ltd"
+  },
+  "intent_ref": "kye:intent:001",
+  "interpreted_intent_ref": "kye:intent-interpretation:001",
+  "requested_capability": "card_purchase",
+  "action_summary": "Prepare purchase of phone charger under GBP 40.",
+  "target_resource": {
+    "resource_type": "merchant_basket",
+    "resource_id": "basket_789",
+    "payload_hash": "sha256:..."
+  },
+  "preconditions": {
+    "principal_known": true,
+    "actor_known": true,
+    "intent_present": true,
+    "authority_context_present": true,
+    "data_source_allowed": true,
+    "jurisdiction_supported": true
+  },
+  "risk_flags": {
+    "prohibited_category_detected": false,
+    "coercion_signal_detected": false,
+    "incentive_conflict_detected": false,
+    "continuity_drift_detected": false,
+    "unsafe_tool_path_detected": false
+  },
+  "created_at": "2026-05-10T12:00:00Z"
+}

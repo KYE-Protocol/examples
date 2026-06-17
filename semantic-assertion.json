@@ -1,0 +1,20 @@
+{
+  "schema_version": "kye.semantic_assertion.v1",
+  "assertion_id": "kye:semantic:assertion:001",
+  "subject_ref": "kye:decision:payment_001",
+  "assertion_type": "decision_semantics",
+  "terms": [
+    { "term_id": "kye:term:authority:delegated_payment_authority", "applies": true, "confidence": 0.97 },
+    { "term_id": "kye:term:scope:amount_limit", "applies": true, "confidence": 1.00 },
+    { "term_id": "kye:term:evidence:decision_map", "applies": true, "confidence": 1.00 }
+  ],
+  "mappings_consulted": [
+    "kye:ontology:mapping:openid_scope_to_kye_capability"
+  ],
+  "semantic_summary": "Scoped delegated payment authority check for an AI shopping agent acting on behalf of a cardholder; OAuth scope was consulted as a related-not-identical mapping and the additional KYE authority + state + decision objects were verified.",
+  "evidence_refs": [
+    "kye:evidence-pack:payment_001"
+  ],
+  "audit_chain_ref": "kye:audit:chain:0xabc123",
+  "created_at": "2026-05-09T00:00:00Z"
+}

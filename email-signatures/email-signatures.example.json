@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.email_signature.v1.json",
+  "schema": "kye.email_signature.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/38-COMMS-RAIL.md",
+  "notes": [
+    "Illustrative kye.email_signature.v1 instance. The canonical full registry lives at internal"
+  ],
+  "email_signatures": [
+    {
+      "id": "kye:email-signature:example",
+      "persona": "support",
+      "body": "— Example"
+    }
+  ]
+}

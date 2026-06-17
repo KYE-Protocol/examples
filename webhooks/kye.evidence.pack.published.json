@@ -1,0 +1,26 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:acme.example:01J4P9700H9IIJJKKLLLLLLLLLL",
+  "event_class": "kye.evidence.pack.published",
+  "occurred_at": "2026-05-08T14:05:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme.example",
+    "trust_domain": "acme.example"
+  },
+  "delivery_id": "dlv_01J4P9700H9IIJJKKLLLLLLLLLL",
+  "severity": "info",
+  "payload": {
+    "evidence_pack_id": "kye:evidence-pack:acme.example:01J4P9500F7G",
+    "published_at": "2026-05-08T14:05:00Z",
+    "long_term_store_ref": "r2://kye-evidence-eu/acme.example/2026/05/08/01J4P9500F7G.tar.zst",
+    "transparency_receipt_id": "kye:rcpt:transparency.example:01J4P9700H9I",
+    "size_bytes": 47832,
+    "retention_until": "2033-05-08T14:00:30Z"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "182a3b4c5d6e7f80910223344556677889900aabbccddeeff1122334455667ff",
+    "ts": "1746713100"
+  }
+}

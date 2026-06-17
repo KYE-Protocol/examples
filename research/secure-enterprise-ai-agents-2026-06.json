@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:secure-enterprise-ai-agents-2026-06",
+  "series": "roadmap_to_agentic_ai",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "ciso",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "Securing enterprise AI agents: where the controls live, and where authority begins — June 2026",
+  "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
+  "topic_id": "kye:research-topic:secure-enterprise-ai-agents",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:secure-enterprise-ai-agents:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "QMet4tMm+L0Om8pYHInCDe6M8ZnBGHMhPDcm+cpZVbNF1mEWnFVLG1xWslllctp+QJlENG+vMqylWjpBHYKWCw=="
+  },
+  "citations": [
+    {
+      "claim": "Industry guidance on securing enterprise AI agents recommends engineered controls across the agent lifecycle — distinct agent identity, least-privilege and scoped capability/tool access, human approval for consequential actions, and end-to-end auditability/observability of what an agent did.",
+      "source_url": "https://www.ibm.com/think",
+      "retrieved_at": "2026-06-14T00:00:00Z",
+      "publisher": "IBM + Anthropic, guidance on securing enterprise AI agents. Cited as published guidance, not as a security or compliance recommendation by KYE Protocol™."
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of an AI system, discharged at the point of use rather than in a later review.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-14T00:00:00Z",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-14T09:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

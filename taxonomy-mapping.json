@@ -1,0 +1,23 @@
+{
+  "schema_version": "kye.taxonomy_mapping.v1",
+  "mapping_id": "kye:mapping:eu-ai-act:high-risk-ai-system",
+  "source": {
+    "taxonomy_id": "kye:taxonomy:risk_state",
+    "term": "high_risk"
+  },
+  "target": {
+    "framework": "EU_AI_ACT",
+    "control_ref": "high_risk_ai_system"
+  },
+  "kye_implications": {
+    "requires_human_oversight": true,
+    "requires_runtime_logs": true,
+    "requires_technical_documentation": true,
+    "requires_post_market_monitoring": true,
+    "requires_signed_evidence_pack": true,
+    "requires_dispute_resolution_artefact": true
+  },
+  "issued_at": "2026-05-05T00:00:00Z",
+  "version": "1.0.0",
+  "status": "active"
+}

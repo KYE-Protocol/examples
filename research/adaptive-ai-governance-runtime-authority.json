@@ -1,0 +1,84 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:adaptive-ai-governance-runtime-authority-2026-q3",
+  "series": "roadmap_to_ai_governance",
+  "format": "deep_dive",
+  "sector": "financial-services",
+  "audience": "regulator",
+  "cadence": "quarterly",
+  "edition": "2026-Q3",
+  "title": "Adaptive AI Governance Needs a Runtime Authority Layer — Q3 2026 Edition",
+  "tribute_ref": "kye:scientist-tribute:diffie-hellman",
+  "topic_id": "kye:research-topic:adaptive-ai-governance-runtime-authority",
+  "tier": "paid",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:adaptive-ai-governance-runtime-authority:2026-q3",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "8b9vFtfqlh6925lc4cSWo1LuGwmsQBUEDtMfbkRba3XTyeVDfGLpf1DCqTV74an4kP4pkxzHNBxiaZ2BnDBVDQ=="
+  },
+  "citations": [
+    {
+      "claim": "The NIST AI Risk Management Framework organises trustworthy-AI practice into four core functions — Govern, Map, Measure, Manage — where Govern is the foundational, continuous function establishing accountability and oversight rather than a one-time control.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "The NIST AI RMF Generative AI Profile (NIST-AI-600-1, July 2024) provides more than 200 suggested actions organised by RMF function for twelve generative-AI risk areas including Human-AI Configuration and Information Integrity, making governance substantially more operational than the base framework.",
+      "source_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "Under the EU AI Act (Regulation (EU) 2024/1689), high-risk AI systems must be designed so they can be effectively overseen by natural persons during the period in which they are in use, and deployers must assign human oversight to persons with the necessary competence, training and authority.",
+      "source_url": "https://artificialintelligenceact.eu/article/14/",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "EU Artificial Intelligence Act (artificialintelligenceact.eu)"
+    },
+    {
+      "claim": "The EU AI Act requires high-risk AI systems to technically allow automatic recording of events (logs) over their lifetime, and obliges deployers to keep those logs for an appropriate period of at least six months, supporting post-market monitoring and traceability.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "Official Journal of the European Union (EUR-Lex)"
+    },
+    {
+      "claim": "The OWASP Top 10 for Agentic Applications (December 2025) identifies Tool Misuse & Exploitation as a critical threat — agents misusing tools through unsafe composition, recursion, or excessive execution despite holding valid permissions — and recommends least privilege per tool, explicit approval for destructive operations, just-in-time access verification, and robust execution logs.",
+      "source_url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "OWASP GenAI Security Project"
+    },
+    {
+      "claim": "NIST SP 800-207 (Zero Trust Architecture) separates a Policy Decision Point, which evaluates enterprise policy and contextual signals to decide whether access is granted, from a Policy Enforcement Point positioned close to the resource that enforces that decision — granting access dynamically on a per-request basis rather than via static perimeter trust.",
+      "source_url": "https://www.nist.gov/publications/zero-trust-architecture",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "ISO/IEC 42001:2023, the first international standard for an AI management system, demands not only documented governance processes but operational control and continuous monitoring of AI at runtime — including runtime monitoring, incident response, and change management — so that control effectiveness is validated continuously rather than attested once.",
+      "source_url": "https://www.iso.org/standard/42001",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "International Organization for Standardization"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-30T08:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": true
+  },
+  "status": "published"
+}

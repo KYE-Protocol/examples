@@ -1,0 +1,27 @@
+{
+  "schema": "kye.engagement.application.v1",
+  "application_id": "1f3c8b40-0a1f-4f5b-9c4e-bd24b48f4f01",
+  "engagement_type": "partner",
+  "applicant": {
+    "org_name": "Northwind Risk Advisory Ltd",
+    "contact_email": "partnerships@northwind-risk.example",
+    "contact_name": "Aoife Donnelly",
+    "jurisdiction": "GB",
+    "website": "https://northwind-risk.example"
+  },
+  "requested_sku": "KYE-PARTNER-T2",
+  "submitted_at": "2026-05-26T09:14:00Z",
+  "obligations_acknowledged": [
+    "kye:obligation:partner:nda",
+    "kye:obligation:partner:accurate-representation",
+    "kye:obligation:partner:deal-registration",
+    "kye:obligation:partner:lead-time-enterprise",
+    "kye:obligation:partner:training-currency"
+  ],
+  "notes": "Existing FS-clients in UK + Ireland; aiming to bundle KYE Audit Pilot with our DORA readiness practice.",
+  "source": "referral",
+  "consent_marketing": true,
+  "consent_followup": true,
+  "ip_hash": "f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2",
+  "ua_hash": "9b8a7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b"
+}

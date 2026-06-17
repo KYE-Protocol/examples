@@ -1,0 +1,54 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.theme_manifest.v1.json",
+  "schema_version": "kye.theme_manifest.v1",
+  "manifest_id": "kye:registry:theme-manifest",
+  "constitution_ref": "constitution/24-DESIGN-DICTIONARY.md",
+  "adopted_at": "2026-05-30",
+  "description": "Canonical theme manifest example — mirrors the operational manifest at internal Light is the canonical default; dark is declared but hidden-until-stable.",
+  "publication_rule": {
+    "policy": "public",
+    "rationale": "Illustrative fixture for downstream SDK / integrator consumers."
+  },
+  "themes": [
+    {
+      "id": "kye:theme:light",
+      "name": "Light",
+      "is_default": true,
+      "data_theme_attribute": "light",
+      "browser_color_scheme": "light",
+      "palette_ref": "design-system/tokens/color.json#themes.light",
+      "type_ref": "design-system/tokens/type.json",
+      "spacing_ref": "design-system/tokens/spacing.json",
+      "motion_ref": "design-system/tokens/motion.json",
+      "accessibility_tier": "WCAG-AAA-target",
+      "motion_preset": "reduced-by-default",
+      "applies_to_surfaces": [
+        "site", "app", "admin", "dev", "sandbox", "status", "oss", "widgets"
+      ],
+      "status": "active",
+      "introduced": "2026-05-30",
+      "owners": ["design"],
+      "notes": "Canonical default per CEO directive 2026-05-30."
+    },
+    {
+      "id": "kye:theme:dark",
+      "name": "Dark",
+      "is_default": false,
+      "data_theme_attribute": "dark",
+      "browser_color_scheme": "dark",
+      "palette_ref": "design-system/tokens/color.json#themes.dark",
+      "type_ref": "design-system/tokens/type.json",
+      "spacing_ref": "design-system/tokens/spacing.json",
+      "motion_ref": "design-system/tokens/motion.json",
+      "accessibility_tier": "WCAG-AA",
+      "motion_preset": "reduced-by-default",
+      "applies_to_surfaces": [
+        "site", "app", "admin", "dev", "sandbox", "status", "oss", "widgets"
+      ],
+      "status": "hidden-until-stable",
+      "introduced": "2026-05-15",
+      "owners": ["design"],
+      "notes": "Reactivation requires WCAG-AAA-target dark contrast pass."
+    }
+  ]
+}

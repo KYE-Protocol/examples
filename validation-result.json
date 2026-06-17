@@ -1,0 +1,13 @@
+{
+  "validation_id": "kye:val:acme.example:01JYVAL000000000000000XZ",
+  "subject_entity_id": "kye:ent:acme.example:wallet:01JY3J1D4E5A7K3JQFK4E0Q2XZ",
+  "actor_entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "policy_decision_id": "kye:pdc:acme.example:01JYPDC000000000000000XZ",
+  "correlation_id": "kye:cor:acme.example:01JYCOR000000000000000XZ",
+  "check_kind": "scope_attenuation",
+  "outcome": "pass",
+  "reason_code": "scope.attenuation_satisfied",
+  "evidence_refs": ["kye:scp:acme.example:01JYFINANCEPROD000000000A"],
+  "performed_at": "2026-05-05T13:30:01.234Z",
+  "duration_ms": 1
+}

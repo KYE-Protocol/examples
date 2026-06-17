@@ -1,0 +1,107 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.feature_flag_manifest.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:feature-flags-example",
+  "adopted_at": "2026-05-30",
+  "description": "Illustrative example of a kye.feature_flag_manifest.v1 instance. Shows the four lifecycle stages (pending → active → deprecated → removed), a flag with a real sunset_date, a flag linked to a SKU, and a KV-backed flag.",
+  "constitution_ref": "constitution/00-INDEX.md#section-0-9-universal-canonicalisation",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "Example artefact published for SDK consumers."
+  },
+  "counts": {
+    "total": 4,
+    "pending": 1,
+    "active": 1,
+    "deprecated": 1,
+    "removed": 1
+  },
+  "kv_bindings": [
+    {
+      "binding": "FEATURE_FLAG_KV",
+      "kv_id_var": "KV_FEATURE_FLAG_ID",
+      "workers": ["kye-gateway"],
+      "live_keys": ["feature:experimental_rerank_v2"],
+      "rationale": "Example KV namespace binding — one live key gated to the experimental rerank pipeline.",
+      "wrangler_refs": ["private/infra/wrangler/kye-gateway.wrangler.toml"]
+    }
+  ],
+  "flags": [
+    {
+      "id": "kye:feature-flag:experimental_rerank_v2",
+      "name": "FEATURE_EXPERIMENTAL_RERANK_V2",
+      "status": "pending",
+      "introduced_date": "2026-05-30",
+      "sunset_date": "2026-08-28",
+      "owners": ["search-engineering"],
+      "phase": "phase-0-design",
+      "current_value": {
+        "default": false
+      },
+      "consumers": [],
+      "rationale": "Planned experimental rerank pipeline behind a KV-backed flag. Currently pending — not yet wired into runtime; once wired the status flips to active and the consumers list is populated by the gate's grep sweep.",
+      "kv_binding": "FEATURE_FLAG_KV",
+      "linked_sku": null,
+      "migration_note": null
+    },
+    {
+      "id": "kye:feature-flag:idp_failover_active",
+      "name": "IDP_FAILOVER_ACTIVE",
+      "status": "active",
+      "introduced_date": "2026-05-27",
+      "sunset_date": null,
+      "owners": ["platform-ops"],
+      "phase": "phase-1-canary",
+      "current_value": {
+        "default": "0",
+        "production": "0",
+        "staging": "0",
+        "dev": "0"
+      },
+      "consumers": [
+        "public/admin/functions/_lib/idp-provider.js"
+      ],
+      "rationale": "Example active flag — operational kill-switch for the IdP failover code path (§51 SPOF closure).",
+      "kv_binding": null,
+      "linked_sku": null,
+      "migration_note": "Phase-2 rename candidate: FEATURE_IDP_FAILOVER."
+    },
+    {
+      "id": "kye:feature-flag:legacy_evidence_pack_v1",
+      "name": "FEATURE_LEGACY_EVIDENCE_PACK_V1",
+      "status": "deprecated",
+      "introduced_date": "2026-02-01",
+      "sunset_date": "2026-06-30",
+      "owners": ["evidence-engine"],
+      "phase": "phase-deprecation",
+      "current_value": {
+        "default": "0",
+        "production": "0"
+      },
+      "consumers": [
+        "internal"
+      ],
+      "rationale": "Example deprecated flag — kept readable to honour legacy clients during the deprecation window. Code path removed on sunset_date.",
+      "kv_binding": null,
+      "linked_sku": null,
+      "migration_note": null
+    },
+    {
+      "id": "kye:feature-flag:beta_dashboard_v0",
+      "name": "FEATURE_BETA_DASHBOARD_V0",
+      "status": "removed",
+      "introduced_date": "2026-01-10",
+      "sunset_date": "2026-04-01",
+      "owners": ["admin-console"],
+      "phase": null,
+      "current_value": {
+        "default": false
+      },
+      "consumers": [],
+      "rationale": "Example removed flag — code path deleted in PR #312; entry retained for audit history and to prevent re-introduction of the same name.",
+      "kv_binding": null,
+      "linked_sku": null,
+      "migration_note": null
+    }
+  ]
+}

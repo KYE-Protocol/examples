@@ -1,0 +1,43 @@
+{
+  "schema_version": "kye.discovery_policy.v1",
+  "policy_id": "kye:policy:discovery:security-admin",
+  "display_name": "Security Admin Discovery Policy",
+  "description": "Allows security administrators to discover high-risk authority chains inside their tenant.",
+  "applies_to": {
+    "roles": ["security_admin", "tenant_admin"],
+    "purposes": ["security_review", "incident_response", "audit"]
+  },
+  "allowed_discovery_types": [
+    "entity_search",
+    "authority_path_search",
+    "capability_search",
+    "risk_search",
+    "evidence_search"
+  ],
+  "field_rules": {
+    "allowed_fields": [
+      "actor_entity_id",
+      "principal_entity_id",
+      "capability_id",
+      "authority_state",
+      "risk_state",
+      "scope_summary",
+      "evidence_refs"
+    ],
+    "masked_fields": [
+      "payment_instrument_ref",
+      "personal_data_fields",
+      "secret_refs"
+    ],
+    "denied_fields": [
+      "raw_credentials",
+      "private_keys"
+    ]
+  },
+  "audit_required": true,
+  "reason_code_required": true,
+  "retention": {
+    "query_audit_retention_days": 365
+  },
+  "status": "active"
+}

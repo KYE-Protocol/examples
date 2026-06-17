@@ -1,0 +1,17 @@
+{
+  "schema_id": "kye.dsar_request.v1",
+  "request_id": "kye:dsar-request:2026-05-17.a1b2c3d4",
+  "controller": "Acme Bank plc",
+  "right_exercised": "access",
+  "regime": "gdpr",
+  "email_hash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+  "name": "Jane Doe",
+  "detail": "All transaction-monitoring profile-update logs between 2024-01-01 and 2024-12-31.",
+  "filed_at": "2026-05-17T18:30:00Z",
+  "due_at":  "2026-06-16T18:30:00Z",
+  "status": "pending_acknowledgement",
+  "ip_hash": "9b50abd712979c7c7e683c617fbe10f47150104c361b87b7e197ce2ce38f63f4",
+  "ua_hash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+  "consent_accepted_at": "2026-05-17T18:29:58Z",
+  "linked_report_id": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "kye.agent.library_entry.v1",
+  "library_id": "kye:agent-library:platform_state.state-machine-validator.v1",
+  "title": "State Machine Validator",
+  "summary": "Validates every incoming state transition event against the applicable state machine definition, enforcing guards, actor-role requirements, and terminal-state immutability before persisting the transition.",
+  "category": "platform_state",
+  "role": "validator",
+  "triggers": [
+    { "kind": "queue", "queue": "state-transition-events" }
+  ],
+  "inputs": [
+    { "kind": "d1_table", "name": "state_machines", "description": "Active machine definitions keyed by machine_id" },
+    { "kind": "queue", "name": "state-transition-events", "description": "Raw transition-attempt events from runtime" }
+  ],
+  "outputs": [
+    { "kind": "d1_table", "name": "state_events", "description": "Validated + committed state-event ledger" },
+    { "kind": "queue", "name": "state-validation-errors", "description": "Rejected transition payloads with reason codes" }
+  ],
+  "required_bindings": [
+    { "name": "KYE_DB", "kind": "d1" },
+    { "name": "STATE_TRANSITION_Q", "kind": "queue_consumer" },
+    { "name": "VALIDATION_ERROR_Q", "kind": "queue_producer" }
+  ],
+  "required_capabilities": ["read:state_machines", "write:state_events", "write:validation_errors"],
+  "compatible_state_machines": ["kye:state-library:*"],
+  "obligations": [
+    { "id": "ob.smv.guard_enforcement", "summary": "Every transition guard predicate MUST be evaluated; rejection reason MUST be persisted." },
+    { "id": "ob.smv.terminal_lock", "summary": "No outbound transition from a terminal state is permissible; attempt MUST be logged as security event." }
+  ],
+  "platform_locked_capabilities": ["read:state_machines", "write:state_events"],
+  "machine_seal": "sha256:dc41212fcb6b58b54f5e0157bad71f187520a143857285d1a455083b157f13f2",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:agent-library:platform-seed.v1",
+    "value_b64": "PLACEHOLDER_AGENT_LIBRARY_SEED_SIG"
+  },
+  "supersedes": null,
+  "compatibility": { "kye_version_min": "3.0.0", "kye_version_max": null }
+}

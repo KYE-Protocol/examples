@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:mas-digital-asset-treasury:v1",
+  "partner_id": "kye:foundry-applicant:mas-digital-asset-treasury-reference-partner",
+  "pack_name": "KYE MAS Digital-Asset Treasury Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "mas-digital-asset-treasury",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:mas-digital-asset-treasury"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:mas-digital-asset-treasury"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:mas-digital-asset-treasury"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:sg-mas-psn02",
+    "kye:framework:sg-mas-psn04",
+    "kye:framework:mas",
+    "kye:framework:sg-psa"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:mas-digital-asset-treasury:2026-05-31",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-31T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-mas-digital-asset-treasury-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:mas-digital-asset-treasury:2026-05-31",
+  "claim_set": [
+    {
+      "claim_id": "amlcft-screening-required",
+      "claim_text": "Every AI-assisted treasury decision involving a counterparty MUST evidence AML/CFT screening before execution. Unscreened counterparties refuse the decision at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "treasury-owner-required",
+      "claim_text": "Every AI-assisted digital-asset treasury decision MUST map to a named treasury-control owner under the prescribed risk-management authority. Absent designation refuses the decision.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "risk-limit-evidence-pack",
+      "claim_text": "Every treasury risk-limit decision MUST emit a signed, replay-derivable Evidence Pack binding owner identity, the MAS obligation discharged, and Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "limit-breach-dual-control",
+      "claim_text": "Every AI-assisted action that breaches a declared treasury risk limit MUST satisfy dual control. Single-actor breach-overrides are refused and routed dual-channel to the treasury-control owner.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "kye:authority-risk-register:tenant-acme:2026-05-28T20:30:00Z:wave-1",
+  "version": 1,
+  "tenant_id": "kye:tenant:acme",
+  "as_of": "2026-05-28T20:30:00Z",
+  "rows": [
+    {
+      "row_id": "kye:authority-risk-row:acme:procurement-agent:scope-exceeded:0001",
+      "gap_class": "scope-exceeded",
+      "subject_id": "kye:agent:acme:procurement:v2.3",
+      "subject_class": "agent",
+      "severity": "critical",
+      "first_observed_at": "2026-05-27T14:12:08Z",
+      "last_observed_at": "2026-05-28T18:23:00Z",
+      "occurrence_count": 7,
+      "evidence_refs": [
+        {
+          "schema_id": "kye.purpose.admissibility.v1",
+          "envelope_id": "kye:admissibility:tenant-acme:procurement:2026-05-28T18:23:00Z:a0b1c2d3",
+          "envelope_hash": "sha256:c4d7f8a3e1b2c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0"
+        }
+      ],
+      "status": "open",
+      "owner_id": "kye:principal:acme:cfo:emp-00012",
+      "recommended_control_ref": "kye:rule-pack:purpose-permission:procurement-eur-cap-narrowing",
+      "remediation_due_by": "2026-06-04T00:00:00Z",
+      "board_visible": true
+    },
+    {
+      "row_id": "kye:authority-risk-row:acme:clinical-triage-agent:delegation-invalid:0002",
+      "gap_class": "delegation-invalid",
+      "subject_id": "kye:agent:acme:clinical-triage:v1.4",
+      "subject_class": "agent",
+      "severity": "high",
+      "first_observed_at": "2026-05-26T08:00:00Z",
+      "last_observed_at": "2026-05-28T19:45:00Z",
+      "occurrence_count": 12,
+      "evidence_refs": [
+        {
+          "schema_id": "kye.evidence.decision_map.v1",
+          "envelope_id": "kye:decision-map:tenant-acme:clinical:2026-05-28T19:45:00Z:e5f6a7b8",
+          "envelope_hash": "sha256:b3c6d9e2f1a4b7c0d3e6f9a2b5c8d1e4f7a0b3c6d9e2f1a4b7c0d3e6f9a2b5c8"
+        },
+        {
+          "schema_id": "kye.purpose.grant.revoked.v1",
+          "envelope_id": "kye:grant-revoked:tenant-acme:clinical-triage:2026-05-26T07:55:00Z:r1s2t3u4",
+          "envelope_hash": "sha256:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
+        }
+      ],
+      "status": "mitigating",
+      "owner_id": "kye:principal:acme:cmo:emp-00045",
+      "recommended_control_ref": "kye:rule-pack:delegation:clinical-triage-re-grant",
+      "remediation_due_by": "2026-06-02T00:00:00Z",
+      "board_visible": true
+    },
+    {
+      "row_id": "kye:authority-risk-row:acme:vendor-data-export-tool:capability-envelope-violation:0003",
+      "gap_class": "capability-envelope-violation",
+      "subject_id": "kye:tool:acme:vendor-data-export:v3.1",
+      "subject_class": "tool",
+      "severity": "high",
+      "first_observed_at": "2026-05-28T11:20:00Z",
+      "last_observed_at": "2026-05-28T16:08:00Z",
+      "occurrence_count": 3,
+      "evidence_refs": [
+        {
+          "schema_id": "kye.evidence.decision_map.v1",
+          "envelope_id": "kye:decision-map:tenant-acme:vendor-export:2026-05-28T16:08:00Z:p9q0r1s2",
+          "envelope_hash": "sha256:f1e2d3c4b5a69788796a5b4c3d2e1f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e"
+        }
+      ],
+      "status": "open",
+      "owner_id": "kye:principal:acme:dpo:emp-00007",
+      "recommended_control_ref": "kye:rule-pack:capability:vendor-data-export-cross-border-narrowing",
+      "remediation_due_by": "2026-06-11T00:00:00Z",
+      "board_visible": true
+    },
+    {
+      "row_id": "kye:authority-risk-row:acme:legal-drafting-agent:trace-replay-unsatisfied:0004",
+      "gap_class": "trace-replay-unsatisfied",
+      "subject_id": "kye:agent:acme:legal-drafting:v1.0",
+      "subject_class": "agent",
+      "severity": "medium",
+      "first_observed_at": "2026-05-25T10:00:00Z",
+      "last_observed_at": "2026-05-28T15:30:00Z",
+      "occurrence_count": 21,
+      "evidence_refs": [
+        {
+          "schema_id": "kye.evidence.trace_replay_spec.v1",
+          "envelope_id": "kye:trace-replay-spec:tenant-acme:legal-drafting:2026-05-28T15:30:00Z:l4m5n6o7",
+          "envelope_hash": "sha256:9876fedcba0123456789abcdef0123456789abcdef0123456789abcdef012345"
+        }
+      ],
+      "status": "accepted-risk",
+      "owner_id": "kye:principal:acme:gc:emp-00021",
+      "recommended_control_ref": "kye:rule-pack:trace-replay:tool-pin-deterministic-only",
+      "remediation_due_by": "2026-07-31T00:00:00Z",
+      "board_visible": false
+    },
+    {
+      "row_id": "kye:authority-risk-row:acme:bank-of-example-procurement:cross-org-chain-broken:0005",
+      "gap_class": "cross-org-chain-broken",
+      "subject_id": "kye:action:acme:procurement-wire:2026-05-28T17:00:00Z:k3l4m5n6",
+      "subject_class": "action",
+      "severity": "critical",
+      "first_observed_at": "2026-05-28T17:02:00Z",
+      "last_observed_at": "2026-05-28T17:02:00Z",
+      "occurrence_count": 1,
+      "evidence_refs": [
+        {
+          "schema_id": "kye.federation.cross_org_delegation.v1",
+          "envelope_id": "kye:federation:cross-org-delegation:tenant-acme:2026-05-28T17:02:00Z:k3l4m5n6",
+          "envelope_hash": "sha256:1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+        }
+      ],
+      "status": "open",
+      "owner_id": "kye:principal:acme:treasury:emp-00033",
+      "recommended_control_ref": "kye:rule-pack:federation:jwks-snapshot-pin-required",
+      "remediation_due_by": "2026-05-30T00:00:00Z",
+      "board_visible": true
+    }
+  ],
+  "summary": {
+    "total_open": 5,
+    "by_severity": { "critical": 2, "high": 2, "medium": 1, "low": 0 },
+    "by_gap_class": {
+      "scope-exceeded": 1,
+      "delegation-invalid": 1,
+      "capability-envelope-violation": 1,
+      "trace-replay-unsatisfied": 1,
+      "cross-org-chain-broken": 1
+    },
+    "by_owner": {
+      "kye:principal:acme:cfo:emp-00012": 1,
+      "kye:principal:acme:cmo:emp-00045": 1,
+      "kye:principal:acme:dpo:emp-00007": 1,
+      "kye:principal:acme:gc:emp-00021": 1,
+      "kye:principal:acme:treasury:emp-00033": 1
+    }
+  },
+  "issued_at": "2026-05-28T20:30:01.234Z",
+  "signature": {
+    "alg": "EdDSA",
+    "value": "MEUCIQDmZ9z8nB3xRk5p9c2e7QlYj3VqXxY1kT8Q4Pl9Nx0aHwIhAMvW2nF6JqKj0xZ8B1eR4l3pVqLgYxZcF5oRgK2dQrTp",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "kye.agency_drift_event.v1",
+  "drift_event_id": "kye:drift:001",
+  "continuity_id": "kye:continuity:001",
+  "drift_type": "intent_drift",
+  "severity": "medium",
+  "detected_at": "2026-05-06T12:04:00Z",
+  "actor_entity_id": "kye:entity:agent:shopping_agent_456",
+  "principal_entity_id": "kye:entity:person:customer_123",
+  "description": "Agent selected a subscription product despite the original constraint excluding subscriptions.",
+  "affected_dimensions": [
+    "intent_alignment",
+    "scope_alignment"
+  ],
+  "original_value": {
+    "constraint": "no subscription"
+  },
+  "observed_value": {
+    "product_type": "monthly subscription"
+  },
+  "recommended_decision": "deny",
+  "recommended_obligations": [
+    "notify_principal",
+    "quarantine_purchase_request",
+    "emit_audit_event"
+  ],
+  "evidence_refs": [
+    "kye:evidence:product_metadata_001",
+    "kye:evidence:intent_constraints_001"
+  ]
+}

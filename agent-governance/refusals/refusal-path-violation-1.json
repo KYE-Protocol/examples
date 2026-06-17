@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-content-author",
+  "parent_task": "b4f33f98-c74f-4b6c-8e51-4f9d65c31b8f",
+  "refused_at": "2026-05-27T11:14:22Z",
+  "chapter_ref": "§33",
+  "reason_summary": "Parent task scope.write_paths declared internal** as a write target. §33 IP/OSS Line forbids any non-generic basename under internal from being authored by a delegated agent — those files are placeholders pre-patent-filing and must only be edited by the human patent track owner. Refusing rather than proceeding; no mechanism payload disclosed in this envelope.",
+  "remediation_hint": "Re-dispatch with scope.write_paths constrained to internal or constitution/. If the patent track owner needs to update mechanism content, that is a human-author action, not a delegated-agent dispatch."
+}

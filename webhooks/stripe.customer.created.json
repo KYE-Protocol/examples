@@ -1,0 +1,25 @@
+{
+  "id": "evt_1QSTRIPECUS001000000",
+  "object": "event",
+  "api_version": "2024-11-20.acacia",
+  "created": 1743465600,
+  "livemode": false,
+  "type": "customer.created",
+  "data": {
+    "object": {
+      "id": "cus_1QACMEBANKABCDEF",
+      "object": "customer",
+      "email": "[email protected]",
+      "name": "ACME Bank plc",
+      "description": "Tier-1 banking customer, KYE Regulated SLA",
+      "currency": "gbp",
+      "metadata": {
+        "kye_customer_kyeid": "kye:ent:bank.acme",
+        "kye_tenant_id": "kye:tenant:acme-bank",
+        "kye_pilot_id": "kye:audit-pilot:acme-bank.2026-q1"
+      },
+      "preferred_locales": ["en-GB"]
+    }
+  },
+  "request": { "id": "req_1QREQACMECREATE", "idempotency_key": "kye-bootstrap-acme-bank-2026" }
+}

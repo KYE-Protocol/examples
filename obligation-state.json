@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.obligation_state.v1",
+  "obligation_id": "kye:obligation:approval_before_execution",
+  "state": "satisfied",
+  "previous_state": "pending",
+  "state_transition": "pending_to_satisfied",
+  "satisfaction_event": {
+    "event_id": "kye:event:approval_recorded_001",
+    "approved_by_entity_id": "kye:user:finance_manager_001",
+    "approval_decision_id": "kye:decision:approval_001",
+    "timestamp": "2026-05-09T12:10:00Z"
+  },
+  "evidence_refs": ["kye:evidence-pack:approval_001"],
+  "audit_chain_ref": "kye:audit:chain:0xabc123",
+  "updated_at": "2026-05-09T12:10:00Z"
+}

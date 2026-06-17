@@ -1,0 +1,44 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.channel.v1.json",
+  "schema": "kye.channel.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-06-05T00:00:00Z",
+  "constitution_ref": "constitution/06-WEBSITE.md",
+  "notes": [
+    "Illustrative kye.channel.v1 instance — one active footer channel + one secured (reserved) calendar + one planned (not-yet-secured) channel."
+  ],
+  "channels": [
+    {
+      "id": "kye:channel:github",
+      "platform": "github",
+      "url": "https://github.com/KYE-Protocol",
+      "handle": "KYE-Protocol",
+      "label": "GitHub",
+      "status": "active",
+      "visibility": "public",
+      "show_in_footer": true,
+      "purpose": "code"
+    },
+    {
+      "id": "kye:channel:luma-aigovern",
+      "platform": "luma",
+      "url": "https://lu.ma/aigovern",
+      "handle": "aigovern",
+      "label": "AI Governance calendar",
+      "status": "secured",
+      "visibility": "public",
+      "show_in_footer": false,
+      "purpose": "events"
+    },
+    {
+      "id": "kye:channel:youtube",
+      "platform": "youtube",
+      "handle": "kyeprotocol",
+      "label": "YouTube",
+      "status": "planned",
+      "visibility": "public",
+      "show_in_footer": false,
+      "purpose": "video"
+    }
+  ]
+}

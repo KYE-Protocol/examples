@@ -1,0 +1,36 @@
+{
+  "id": "kye:authority:acme-bank.treasury-ops-lead.agent-clio.2026q2",
+  "version": 1,
+  "principal": "kye:ent:acme-bank",
+  "grantee": "kye:ent:agent-clio",
+  "scope": {
+    "actions": ["read", "summarise", "tag"],
+    "resources": ["kye:res:acme-bank:vault:invoices:2026"],
+    "constraints": {
+      "max_records_per_action": 250,
+      "redaction_policy": "kye:policy:acme-bank:pii-redact-v3"
+    }
+  },
+  "jurisdiction": ["GB", "IE"],
+  "not_before": "2026-04-01T00:00:00Z",
+  "not_after": "2026-07-01T00:00:00Z",
+  "issued_at": "2026-03-28T14:22:11Z",
+  "issued_by": "kye:ent:acme-bank:officer:treasury-ops-lead",
+  "signature": "sig:cose:MEQCIFqL1mYg2H4pE3sCtA0Q6c8X2y9Z4N1bDfRkH7uJpQwLAiAY5K0wTvP9rO8nM2sQ3uK1xL4cB8aV6fE9gH3jD7mNzA",
+  "revocation_chain": [
+    {
+      "grant_id": "kye:authority:acme-bank.board.treasury-ops-lead.2025",
+      "issuer": "kye:ent:acme-bank:board",
+      "status": "active",
+      "revoked_at": null
+    },
+    {
+      "grant_id": "kye:authority:acme-bank.root.board.charter-2018",
+      "issuer": "kye:ent:acme-bank",
+      "status": "active",
+      "revoked_at": null
+    }
+  ],
+  "revoked_at": null,
+  "revoked_reason": null
+}

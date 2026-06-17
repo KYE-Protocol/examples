@@ -1,0 +1,32 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-chatbot-authority-coverage:2026-06-10",
+  "emitted_at": "2026-06-10T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "US_STATE_CHATBOT_LAWS",
+    "EU_AI_ACT_CHATBOT_TRANSPARENCY"
+  ],
+  "subject": "kye:powered-pack:chatbot-authority:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-chatbot-authority-001-coverage-2026-06-10",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:chatbot-authority:v1",
+    "claim_count": 6,
+    "bound_rule_packs": ["kye:rule-pack:chatbot-authority"],
+    "bound_dictionaries": ["kye:dictionary:chatbot-authority"],
+    "bound_sector_packs": ["kye:sector-pack:chatbot-authority"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

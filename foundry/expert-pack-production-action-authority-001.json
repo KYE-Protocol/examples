@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:production-action-authority:v1",
+  "partner_id": "kye:foundry-applicant:production-action-authority-reference-partner",
+  "pack_name": "KYE Production Action Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "production-action-authority",
+  "bound_sector_pack_refs": ["kye:sector-pack:production-action-authority"],
+  "bound_rule_pack_refs": ["kye:rule-pack:production-action-authority"],
+  "bound_dictionary_refs": ["kye:dictionary:production-action-authority"],
+  "bound_framework_refs": [
+    "kye:framework:itil-4-change-enablement",
+    "kye:framework:iso-iec-20000-1",
+    "kye:framework:nist-800-53-cm",
+    "kye:framework:soc2-cc8-change-management",
+    "kye:framework:google-sre-change-management"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:production-action-authority:2026-06-10",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-10T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-production-action-authority-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:production-action-authority:2026-06-10",
+  "claim_set": [
+    {
+      "claim_id": "named-authority",
+      "claim_text": "Every AI-generated production action that moves toward a consequential effect — a mitigation applied, a rollback, a hotfix deployed, an infra-change committed, an alert suppressed, a customer status posted — MUST map to a recorded named-authority decision: the agent, the proposed action artefact, the intended consequential action class, and the named SRE / change-owner / incident-commander under whose delegated authority it proceeds. Actions lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "change-due-diligence",
+      "claim_text": "Before an AI-generated production action proceeds to a consequential effect it MUST carry a recorded change-class due-diligence result — change-classification (standard / normal / emergency), a blast-radius / impact-and-rollback-plan assessment (NIST 800-53 CM-3/CM-4; Google SRE progressive-rollout & rollback-readiness), and a safety-floor / freeze-window / dependency screen where applicable. An unscreened, high-blast-radius, freeze-window, or rollback-plan-absent action is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-generated production action that proceeds toward a consequential effect MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the incident-intelligence inputs and pinned signals (the alert / incident ticket, root-cause hypothesis, detected blast radius, telemetry snapshot from the incident-intelligence tool), the change class and rollback plan applied, the due-diligence result relied on, and the named-authority outcome — audit-grade, NIST 800-53 CM-3 / SOC 2 CC8.1-aligned data-integrity provenance verifiable offline.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "signoff-gate",
+      "claim_text": "An AI-generated production action MUST remain advisory and MUST NOT drive a consequential effect until a named human reviewer — the on-call SRE, the incident commander, or the responsible change-owner — records sign-off. The irreversible / high-blast-radius rollback / hotfix-deployment / infra-change additionally requires §36 two-person sign-off (the proposing engineer AND an approving change-owner). Unreviewed AI-driven consequential production actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-driven production action may proceed to a consequential effect and PROVES the basis. KYE does not detect the incident, perform root-cause analysis, monitor the system, run the autoheal engine, or judge whether the fix is technically correct. Autoheal finds the fix; KYE proves the fix had authority.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-10T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

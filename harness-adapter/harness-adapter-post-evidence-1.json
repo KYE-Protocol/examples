@@ -1,0 +1,19 @@
+{
+  "schema": "kye.harness_adapter.v1",
+  "adapter_id": "kye:harness-adapter:claude-code-generic",
+  "tool_call_id": "toolu_03GHI789",
+  "agent_id": "general-purpose-constitutional-amendment",
+  "parent_task": "c3d4e5f6-a7b8-9012-cdef-012345678902",
+  "tool_name": "mcp__github__create_pull_request",
+  "tool_type": "mcp",
+  "hook_phase": "post",
+  "admit_verdict": "ALLOW",
+  "mcp_allow_list_checked": true,
+  "mcp_allow_list_verdict": "allowed",
+  "context_admissibility_verdict": null,
+  "evidence_pack_ref": "kye:harness-adapt:c3d4e5f6-toolu_03GHI789",
+  "refusal_ref": null,
+  "emitted_at": "2026-06-08T12:02:00.000Z",
+  "harness_shape": "claude-code",
+  "notes": "Post-hook: Evidence pack sealed with canonical SHA-256 hash of tool call provenance."
+}

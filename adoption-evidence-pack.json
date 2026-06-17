@@ -1,0 +1,30 @@
+{
+  "schema_version": "kye.adoption_evidence_pack.v1",
+  "evidence_pack_id": "kye:evidence-pack:adoption_001",
+  "use_case_id": "kye:use-case:ai_finance_worker_001",
+  "included_evidence": {
+    "use_case_intake": true,
+    "readiness_assessment": true,
+    "entity_authority_record": true,
+    "authority_gates": true,
+    "commit_boundaries": true,
+    "review_paths": true,
+    "training_records": true,
+    "runtime_decision_examples": true,
+    "evidence_pack_samples": true,
+    "revocation_test": true
+  },
+  "readiness_summary": {
+    "status": "pilot_ready_with_controls",
+    "autonomous_execution_allowed": false,
+    "human_review_required": true
+  },
+  "hash": "sha384:...",
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:evidence_signing_001",
+    "signature": "..."
+  },
+  "audit_chain_ref": "kye:audit:chain:0xabc123",
+  "generated_at": "2026-05-09T12:30:00Z"
+}

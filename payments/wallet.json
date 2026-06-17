@@ -1,0 +1,13 @@
+{
+  "wallet_id": "kye:ent:acme.example:wallet:01JYWALLET00000000000000",
+  "entity_id": "kye:ent:acme.example:wallet:01JYWALLET00000000000000",
+  "wallet_kind": "treasury_wallet",
+  "owner_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+  "controller_entity_id": "kye:ent:acme.example:team:01JYFINOPS00000000000000",
+  "currencies": ["GBP"],
+  "rail_types": ["bank_transfer", "internal_ledger"],
+  "custody_provider_entity_id": "kye:ent:acme.example:custody_provider:01JYCUST0000000000000000",
+  "program_id": "kye:ent:acme.example:spend_program:01JYPROG00000000000000000",
+  "status": "active",
+  "created_at": "2026-04-01T10:00:00Z"
+}

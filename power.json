@@ -1,0 +1,22 @@
+{
+  "schema_version": "kye.power.v1",
+  "power_id": "kye:power:principal_revoke_agent_authority",
+  "holder_entity_id": "kye:person:customer_123",
+  "power_type": "revocation_power",
+  "target_object_types": ["KYEAuthorityGrant", "KYEPermission", "KYEDelegation"],
+  "allowed_operations": ["revoke", "suspend", "expire"],
+  "scope": {
+    "applies_to_principal_entity_id": "kye:person:customer_123",
+    "applies_to_actor_types": ["ai_agent", "workflow", "api_client"]
+  },
+  "state_requirements": {
+    "holder_state": "active",
+    "credential_state": "valid"
+  },
+  "exercise_effect": {
+    "cascade_revocation_required": true,
+    "emit_signal_event": "kye.authority.revoked",
+    "generate_evidence_pack": true
+  },
+  "status": "active"
+}

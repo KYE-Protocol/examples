@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:ai-legal-brief-munich-google-ai-overviews-2026-06",
+  "series": "ai_legal_briefs",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "general",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "AI Legal Brief: a German court holds an AI provider responsible for its AI's answers — June 2026",
+  "tribute_ref": "kye:scientist-tribute:ralph-merkle",
+  "topic_id": "kye:research-topic:ai-legal-brief-munich-google-ai-overviews",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:ai-legal-brief-munich-google-ai-overviews:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "li8cRt44KKdXpVRz5BXjSI8BBqrMSbLSZewvoCPuPgLZ0FrEVIPCRvXN8WTyieFf57E9usA9QUqhiYxqvR3ODw=="
+  },
+  "citations": [
+    {
+      "claim": "The Regional Court of Munich (Landgericht München) held that Google's AI Overviews are Google's own responsibility — not the sources' and not the users' — and that a provider presenting content as a coherent, autonomous, authoritative answer cannot transfer the entire burden of verification to the user.",
+      "source_url": "https://the-decoder.com/",
+      "retrieved_at": "2026-06-12T00:00:00Z",
+      "publisher": "THE DECODER (Matthias Bastian, 9 June 2026: \"Landmark German ruling declares Google's AI Overviews are Google's own words and makes it liable for false answers\"). Publisher-level citation; deep-link to be pinned."
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of an AI system, discharged at the point of use rather than in a later review.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-12T00:00:00Z",
+      "publisher": "Official Journal of the European Union"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-12T09:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "kye.expert_approval.v1",
+  "approval_id": "kye:expert-approval:eu-ai-act-001-a",
+  "run_id": "kye:ingestion-run:eu-ai-act-001",
+  "expert_id": "kye:expert:eu-ai-act-counsel-1",
+  "expert_credential": "EU technology + AI regulatory counsel",
+  "approved": true,
+  "review_notes": "Clause parse + mapping reviewed against CELEX:32024R1689; deterministic output confirmed.",
+  "signed_at": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-fie-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-EXPERT-APPROVAL-A-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "attestation_id": "kye:att:acme.example:workload_attestation:01JYATT0000000000000000",
+  "entity_id": "kye:ent:acme.example:workload:01JYWORKLOAD0000000000000",
+  "attestation_type": "workload_attestation",
+  "spiffe_id": "spiffe://acme.example/workload/finance/procurement-agent",
+  "svid_type": "jwt-svid",
+  "selector_set": [
+    "k8s:ns:finance",
+    "k8s:sa:procurement-agent",
+    "image:digest:sha256:abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789"
+  ],
+  "container_digest": "sha256:abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789",
+  "build_provenance_hash": "sha256:cafe00000000000000000000000000000000000000000000000000000000000a",
+  "issuer_entity_id": "kye:ent:acme.example:workload_issuer:01JYWLISS0000000000000000",
+  "status": "valid",
+  "issued_at": "2026-04-15T12:00:00Z",
+  "expires_at": "2026-04-15T13:00:00Z"
+}

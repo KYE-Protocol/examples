@@ -1,0 +1,32 @@
+{
+  "schema": "kye.stress_test.v1",
+  "id": "kye:stress-test:payments-burst-throughput-3x",
+  "version": 1,
+  "name": "Payments burst throughput 3x",
+  "description": "Stressor bundle that triples expected per-minute payment instruction rate for the target agent.",
+  "severity": "high",
+  "target_object": {
+    "object_id": "kye:agent:acme-bank.payment-orchestrator",
+    "object_schema": "kye.entity.agent.v1"
+  },
+  "stressors": [
+    {
+      "stressor_id": "burst-throughput-3x",
+      "severity": "high",
+      "parameters": { "multiplier": 3, "window_seconds": 60 }
+    },
+    {
+      "stressor_id": "rail-latency-spike",
+      "severity": "medium",
+      "parameters": { "added_ms": 800 }
+    }
+  ],
+  "expected_outcome": {
+    "admit_count": 1700,
+    "deny_count": 50,
+    "escalate_count": 150
+  },
+  "created_at": "2026-05-14T08:30:00Z",
+  "created_by": "kye:agent:scenario-author",
+  "tags": ["payments", "throughput"]
+}

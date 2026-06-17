@@ -1,0 +1,23 @@
+{
+  "schema_version": "kye.entity.evaluation_profile.v1",
+  "id": "kye:eval_profile:acme.prod.banking-grade.v2",
+  "tenant_id": "kye:tenant:acme",
+  "workspace_id": "kye:wsp:acme.prod",
+  "test_vectors_ref": "https://kyeprotocol.com/r2/eval-profiles/acme/banking-grade-v2/test-vectors.signed.json",
+  "signed_by": "kye:key:acme.evals.ed25519.20260512",
+  "thresholds": {
+    "allow": 0.95,
+    "require_approval": 0.80,
+    "deny": 0.50
+  },
+  "risk_class_map": {
+    "low": 0.95,
+    "medium": 0.85,
+    "high": 0.70,
+    "critical": 0.50
+  },
+  "compliance_frameworks": ["sr-11-7", "dora", "eu-ai-act", "iso-42001", "bcbs-239"],
+  "state": "active",
+  "created_at": "2026-05-12T09:30:00Z",
+  "updated_at": "2026-05-15T08:15:00Z"
+}

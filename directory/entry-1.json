@@ -1,0 +1,20 @@
+{
+  "kyeid": "kye:ent:acme-bank",
+  "class": "org",
+  "trust_domain": "kye:td:uk-financial",
+  "certification_tier": "gold",
+  "jurisdiction": ["GB", "IE"],
+  "public": true,
+  "indexed_at": "2026-05-01T03:14:09Z",
+  "display_name": "Acme Bank plc",
+  "endpoints": [
+    {
+      "kind": "well_known",
+      "url": "https://acme-bank.example/.well-known/kye"
+    },
+    {
+      "kind": "metadata",
+      "url": "https://acme-bank.example/kye/metadata.json"
+    }
+  ]
+}

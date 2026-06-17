@@ -1,0 +1,28 @@
+{
+  "schema_version": "kye.engine_health.v1",
+  "implementation_id": "kye:implementation:acme.example:agent-runtime",
+  "checked_at": "2026-05-06T10:00:00Z",
+  "status": "degraded",
+  "engines": {
+    "schema_validator":    "healthy",
+    "dictionary_resolver": "healthy",
+    "profile_resolver":    "healthy",
+    "registry_resolver":   "healthy",
+    "authority_engine":    "healthy",
+    "state_engine":        "healthy",
+    "policy_adapter":      "healthy",
+    "decision_engine":     "healthy",
+    "audit_engine":        "healthy",
+    "evidence_engine":     "healthy",
+    "graph_engine":        "healthy",
+    "webhook_engine":      "degraded",
+    "recovery_engine":     "healthy"
+  },
+  "warnings": [
+    {
+      "engine": "webhook_engine",
+      "reason_code": "delivery_latency_elevated",
+      "message": "p99 delivery latency over the last 5 minutes is 1.8s (threshold 1.0s)."
+    }
+  ]
+}

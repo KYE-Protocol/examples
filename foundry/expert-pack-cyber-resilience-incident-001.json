@@ -1,0 +1,66 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:cyber-resilience-incident:v1",
+  "partner_id": "kye:foundry-applicant:cyber-resilience-incident-reference-partner",
+  "pack_name": "KYE Cyber Resilience & Incident Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "cyber-resilience-incident",
+  "bound_sector_pack_refs": ["kye:sector-pack:cyber-resilience-incident"],
+  "bound_rule_pack_refs": ["kye:rule-pack:cyber-resilience-incident"],
+  "bound_dictionary_refs": ["kye:dictionary:cyber-resilience-incident"],
+  "bound_framework_refs": [
+    "kye:framework:dora-ict-incident",
+    "kye:framework:nis2-incident",
+    "kye:framework:nist-csf-2-respond-recover",
+    "kye:framework:sec-cyber-disclosure",
+    "kye:framework:iso-27035"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:cyber-resilience-incident:2026-06-10",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-10T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-cyber-resilience-incident-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:cyber-resilience-incident:2026-06-10",
+  "claim_set": [
+    {
+      "claim_id": "containment-action-authority",
+      "claim_text": "Every AI-assisted containment action (isolate / block / shutdown), incident classification, or disclosure-timing call that moves toward a consequential incident action MUST map to a recorded named-authority decision — the agent, the target asset / incident, the intended action, and the named incident commander / CISO / accountable officer under whose authority it proceeds. Actions lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "incident-evidence-chain-of-custody",
+      "claim_text": "Before AI-collected or AI-classified incident evidence proceeds to a consequential incident action it MUST carry a recorded chain-of-custody — the source system and collection point, every transformation (parsing, enrichment, AI classification, redaction) with actor and timestamp, and the integrity hash as collected and as relied on — so the evidence can be authenticated and the incident record certified as complete and reasonable under DORA / NIS2 reporting and ISO/IEC 27035.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "ai-triage-provenance-pin",
+      "claim_text": "Every AI-asserted incident classification, severity rating, attribution, or scope assertion that proceeds toward a consequential incident action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs, the pinned signal source for each asserted classification (the actual EDR alert, the verifiable log event, the SIEM correlation, the threat-intel indicator), the triage basis applied, and the named-authority outcome — so no AI-asserted incident classification is relied on without a pinned, verifiable signal source. A classification without a resolvable pinned signal source is refused and never proceeds.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "disclosure-timing-authority",
+      "claim_text": "Every AI-assisted disclosure-timing decision — starting or stopping a regulator-notification clock, filing a DORA initial / intermediate / final report, sending a NIS2 24-hour early warning or 72-hour notification, beginning the SEC Item 1.05 four-business-day materiality clock, or notifying affected parties — MUST map to a recorded named-authority decision (the agent, the incident, the disclosure action and its timing, and the named accountable officer under whose authority it proceeds) before the disclosure action commits. A disclosure-timing call lacking a recorded authority decision is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "incident-contestability-record",
+      "claim_text": "Every AI-assisted incident decision that proceeds to a consequential action MUST carry a contestability record — a stable decision identifier, the inputs and authority and evidence it rested on, and a reconstruction / challenge route — so that when the decision is challenged (a regulator's post-incident DORA / NIS2 inquiry, an insurer's claim dispute, a board / audit review, or litigation) it can be reconstructed exactly as made and contested through a recorded route.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE + DEFENSIBILITY of AI-assisted cybersecurity / incident-response work and PROVES it — who authorised the containment, the provenance of the AI triage, the chain-of-custody, whether the decision can be reconstructed and contested. KYE does NOT detect threats, run the SIEM/EDR, perform forensics, remediate the incident, or replace the SOC analyst.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-10T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

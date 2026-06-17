@@ -1,0 +1,50 @@
+{
+  "schema": "kye.foundry.revenue_share.v1",
+  "envelope_id": "kye:foundry:revenue-share:meridian-clinical-risk:2026-05-29",
+  "pack_id": "kye:powered-pack:meridian-clinical-risk:v1",
+  "partner_id": "kye:foundry-applicant:meridian-clinical-risk",
+  "tier": "build",
+  "kye_sourced_split": {
+    "kye_pct": 70,
+    "partner_pct": 30
+  },
+  "partner_sourced_split": {
+    "kye_pct": 40,
+    "partner_pct": 60
+  },
+  "strategic_deal_split": {
+    "deal_value_floor_gbp": 500000,
+    "kye_pct": 50,
+    "partner_pct": 50,
+    "notes": "Co-sold, co-branded strategic deals ≥ £500k revert to a 50/50 split irrespective of channel of origin."
+  },
+  "exclusivity_target": "UK NHS Trust clinical-decision-support sector",
+  "exclusivity_until": "2027-05-29T00:00:00Z",
+  "performance_gates": [
+    {
+      "metric": "arr_originated_gbp",
+      "threshold": 750000,
+      "review_at": "2026-11-29T00:00:00Z"
+    },
+    {
+      "metric": "certified_buyers_count",
+      "threshold": 4,
+      "review_at": "2027-02-28T00:00:00Z"
+    }
+  ],
+  "termination_terms_ref": "kye:contract:foundry-build-master-agreement:v1#§9-termination",
+  "claim_approval_required": true,
+  "discontinuation_clause": true,
+  "co_branding_rights": {
+    "kye_logo_on_partner_site": true,
+    "partner_logo_on_kye_directory": true,
+    "joint_press_release_permitted": true
+  },
+  "effective_from": "2026-05-29T12:00:00Z",
+  "effective_until": "2028-05-29T00:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-build-2026-05",
+    "value": "BASE64URL-ED25519-DUAL-CHANNEL-SIGNATURE-PLACEHOLDER-FIXTURE-VALUE-ONLY"
+  }
+}

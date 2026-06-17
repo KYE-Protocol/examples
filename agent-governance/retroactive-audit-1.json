@@ -1,0 +1,85 @@
+{
+  "schema": "kye.agent.retroactive_audit.v1",
+  "report_id": "kye:retroactive-audit:example-2026-05-27",
+  "generated_at": "2026-05-27T20:30:00.000Z",
+  "scanner_version": "1.0.0",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md",
+  "transcripts_scanned": 43,
+  "pattern_inference": {
+    "method": "keyword-heuristic-v1",
+    "patterns_matched": 27,
+    "unmatched_transcripts": 16
+  },
+  "violations": {
+    "paths_outside_scope": 515,
+    "mcp_calls_outside_allow_list": 12,
+    "missing_completion_envelope": 34
+  },
+  "per_pattern_aggregates": [
+    {
+      "pattern": "general-purpose-content-author",
+      "transcripts": 17,
+      "paths_outside_scope": 467,
+      "mcp_calls_outside_allow_list": 11,
+      "example_path_redacted_prefixes": [
+        "scripts/gates/...",
+        "scripts/ci/...",
+        "scripts/compliance/...",
+        "public/site/...",
+        "public/sandbox/...",
+        "public/oss/...",
+        "public/examples/...",
+        ".claude/hooks/...",
+        "package.json",
+        "scripts/validate-schemas.js"
+      ],
+      "example_mcp_servers": [
+        "mcp__github__create_pull_request",
+        "mcp__github__list_pull_requests",
+        "mcp__github__update_pull_request"
+      ]
+    },
+    {
+      "pattern": "unmatched",
+      "transcripts": 16,
+      "paths_outside_scope": 0,
+      "mcp_calls_outside_allow_list": 0,
+      "example_path_redacted_prefixes": [],
+      "example_mcp_servers": []
+    },
+    {
+      "pattern": "general-purpose-gate-author",
+      "transcripts": 9,
+      "paths_outside_scope": 46,
+      "mcp_calls_outside_allow_list": 1,
+      "example_path_redacted_prefixes": [
+        "internal",
+        "scripts/liveness/...",
+        "_diagnostics/liveness",
+        "constitution/44-LIVENESS-ENGINE.md",
+        "constitution/45-SELF-DESCRIPTION-GATE.md",
+        "private/roadmap/..."
+      ],
+      "example_mcp_servers": [
+        "mcp__github__create_pull_request"
+      ]
+    },
+    {
+      "pattern": "general-purpose-sector-product-canonical",
+      "transcripts": 1,
+      "paths_outside_scope": 2,
+      "mcp_calls_outside_allow_list": 0,
+      "example_path_redacted_prefixes": [
+        "scripts/validate-schemas.js"
+      ],
+      "example_mcp_servers": []
+    }
+  ],
+  "decay_deadline": "2026-08-25",
+  "notes": [
+    "Worked-instance fixture for kye.agent.retroactive_audit.v1 — Phase 3 baseline shape.",
+    "Anonymisation ON: every path trimmed to its first 2 segments; raw transcript content never committed (§33 IP/OSS line).",
+    "Phase 3 ratchets paths_outside_scope + mcp_calls_outside_allow_list only; pattern match-rate + missing-completion-envelope counts are observational.",
+    "Decay deadline = baseline_date + 90 days (2026-08-25). Past that date, ANY remaining violation = §52 §6 Phase 3 monotonicity violation."
+  ]
+}

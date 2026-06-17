@@ -1,0 +1,66 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:chargeback-evidence:v1",
+  "partner_id": "kye:foundry-applicant:chargeback-evidence-reference-partner",
+  "pack_name": "KYE Chargeback Evidence",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "chargeback-evidence",
+  "bound_sector_pack_refs": ["kye:sector-pack:chargeback-evidence"],
+  "bound_rule_pack_refs": ["kye:rule-pack:chargeback-evidence"],
+  "bound_dictionary_refs": ["kye:dictionary:chargeback-evidence"],
+  "bound_framework_refs": [
+    "kye:framework:reg-e",
+    "kye:framework:reg-z",
+    "kye:framework:psd2-sca-disputes",
+    "kye:framework:visa-ce30",
+    "kye:framework:mastercard-dispute-rules"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:chargeback-evidence:2026-06-11",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-11T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-chargeback-evidence-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:chargeback-evidence:2026-06-11",
+  "claim_set": [
+    {
+      "claim_id": "refund-action-authority",
+      "claim_text": "Every refund, credit, or chargeback-driven reversal initiated by an AI agent or automated workflow above the merchant's declared threshold MUST map to a recorded named-authority decision — the agent, the payment / dispute artefact, the intended consequential action, and the named human owner under whose authority it proceeds. Refunds lacking a recorded authority decision are refused at the action-admissibility gate and routed dual-channel to the responsible payments / finance owner.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "representment-authority",
+      "claim_text": "Every representment — the decision to contest a chargeback and submit dispute evidence to the card network — MUST map to a recorded named-authority decision before submission: the agent or person proposing it, the dispute artefact, the representment action, and the named human owner under whose authority it proceeds. A representment moving toward submission without a recorded authority decision is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "dispute-evidence-capture",
+      "claim_text": "The dispute evidence trail for every governed transaction — the order record, the delivery / fulfilment confirmation, the AVS / CVV authorisation result, and the customer-communication trail — MUST be captured as timestamped, hash-bound evidence events AT TRANSACTION TIME, not reconstructed after the chargeback arrives. This is the qualifying evidence set Visa Compelling Evidence 3.0 representments turn on; a dispute response moving toward submission without the captured trail is refused with the honest gap enumerated.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "evidence-pack-integrity",
+      "claim_text": "Every representment / dispute-evidence bundle submitted to the card network MUST be sealed as a signed, replay-provable Evidence Pack — evidence events, named-authority decisions, and assembly basis bound under a context seal, hash-bound over canonical JSON, signed, and retained append-only (WORM) — reconstructable and verifiable offline, valid at T=0, derivable from published keys alone, when the issuer, the network, an arbitration panel, or a regulator challenges it.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "liability-acceptance-record",
+      "claim_text": "Every liability acceptance — choosing not to contest a chargeback, conceding a Reg E / Reg Z error claim, or writing off a disputed amount — MUST be recorded as a contestable decision: a stable decision identifier, the inputs and authority it rested on, the evidence state at the moment of acceptance, and a reconstruction / challenge route. Silent AI write-offs are refused and routed dual-channel to the responsible finance owner.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE of the card-dispute / chargeback flow and makes the merchant's representment evidence cryptographically provable — who authorised the refund / representment / liability acceptance, what evidence was captured at transaction time, and that the submitted bundle is signed, WORM-retained and replay-verifiable. KYE does NOT decide whether to fight a dispute, auto-generate dispute narratives, judge the dispute outcome, or do fraud scoring.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-11T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

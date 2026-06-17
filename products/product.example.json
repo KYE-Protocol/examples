@@ -1,0 +1,29 @@
+{
+  "product_id": "insurance-claims",
+  "kind": "foundry-pack",
+  "display_name": "KYE Claims Authority Pack",
+  "sku_id": "KYE-FOUNDRY-PACK-INSURANCE-CLAIMS-001",
+  "sector_specialization": "insurance-claims",
+  "frameworks": ["FCA_CONSUMER_DUTY", "EU_AI_ACT", "UK_GDPR", "DORA"],
+  "jurisdiction": "uk",
+  "trademark_id": "kye-claims-authority-pack",
+  "landing_path": "public/site/foundry/insurance-claims-authority-pack.html",
+  "bound": {
+    "sector_pack": "kye:sector-pack:insurance-claims",
+    "rule_pack": "kye:rule-pack:insurance-claims",
+    "dictionary": "kye:dictionary:insurance-claims"
+  },
+  "fanout": {
+    "data_and_contracts": ["kye:sector-pack:insurance-claims", "kye:rule-pack:insurance-claims", "kye:dictionary:insurance-claims"],
+    "policy_and_decision": ["kye:rule-pack:insurance-claims", "N/A: the policy-points manifest is the IP-track domain-2 binding (carried in the private product registry)"],
+    "rails_engines_agents": ["constitution/54-SECTOR-PACK-FOUNDRY.md", "N/A: the risk-profiler engine is the IP-track domain-3 binding"],
+    "commerce": ["KYE-FOUNDRY-PACK-INSURANCE-CLAIMS-001", "N/A: the pricing-disclosure record is the IP-track domain-4 binding"],
+    "surfaces": ["public/site/foundry/insurance-claims-authority-pack.html", "N/A: the dashboard preset + apex/sandbox surfaces — see the private product registry"],
+    "integration": ["N/A: sector-dedicated endpoints/SDK/CLI are Phase-2"],
+    "comms_and_legal": ["N/A: the comms + email-templates manifests are the IP-track domain-7 binding"],
+    "runtime_and_infra": ["N/A: shared evidence/WORM runtime; sector-dedicated worker/DB/queue are Phase-2 (governed CF deploy)"],
+    "governance_and_evidence": ["N/A: the compliance-attestation + audit-retention schemas are the IP-track domain-9 binding"]
+  },
+  "status": "shipped",
+  "announced_at": "2026-06-06"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "kye.engagement.directory_entry.v1",
+  "entry_id": "kye:directory-entry:partner:northwind-risk-advisory",
+  "engagement_type": "partner",
+  "org_name": "Northwind Risk Advisory Ltd",
+  "tier_sku": "KYE-PARTNER-T2",
+  "tags": ["financial-services", "dora", "uk", "ireland"],
+  "labels": ["solutions-partner"],
+  "approved_at": "2026-05-26T13:48:00Z",
+  "expires_at": "2027-05-26T13:48:00Z",
+  "website": "https://northwind-risk.example",
+  "summary": "DORA + FCA operational-resilience advisory; bundles KYE Audit Pilot with regulator-readiness engagements.",
+  "kind_specific": {
+    "service_areas": ["governance-design", "dora-readiness", "audit-prep", "evidence-pipeline-implementation"],
+    "regions_covered": ["GB", "IE"],
+    "consultant_count": 18
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:directory.kyeprotocol.com:01J4P9C00M4NNOOPPQQQQQQQQQQ",
+  "event_class": "kye.directory.entry.added",
+  "occurred_at": "2026-05-11T09:15:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:directory.kyeprotocol.com",
+    "trust_domain": "directory.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9C00M4NNOOPPQQQQQQQQQQ",
+  "severity": "info",
+  "payload": {
+    "entry_id": "kye:directory-entry:directory.kyeprotocol.com:01J4P9C00M4N",
+    "subject_entity_id": "kye:ent:contoso.example:business:contoso",
+    "trust_domain": "contoso.example",
+    "display_name": "Contoso Ltd",
+    "categories": ["financial-services", "open-banking"],
+    "evidence_links": [
+      "kye:evidence-pack:contoso.example:01J4P0000A"
+    ],
+    "verified_attestations": ["kye:att:transparency.example:01J4P0000B"]
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "6e7f80910223344556677889900aabbccddeeff11223344556677889900aabbc",
+    "ts": "1746951300"
+  }
+}

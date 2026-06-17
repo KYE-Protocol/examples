@@ -1,0 +1,206 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.engagement.pilot_orchestration.v1.json",
+  "schema": "kye.engagement.pilot_orchestration.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-06-03T00:00:00Z",
+  "constitution_ref": "constitution/27-COMMERCIAL-LIFECYCLE.md",
+  "notes": [
+    "Canada-Health pilot end-to-end lifecycle orchestration (P1). A PROJECTION onto the §27 16-state Commercial Lifecycle machine — never a parallel machine (§0 / §0.10).",
+    "Composition of existing rails: §27 lifecycle states + §38 Comms Engine templates + §33 legal artefacts + §27 payment-gate + §37 event-native triggers + §0.3 evidence family. No new engine.",
+    "P2 deferral: the live sandbox tenant + runtime PEP wiring are explicit contract waypoints (provision_contract / access_contract status=p2_contract_waypoint), not stubs."
+  ],
+  "engagement_type": "pilot",
+  "specialization": "canada-health",
+  "sku_id": "KYE-PILOT-CANADA-HEALTH-001",
+  "obligation_manifest_ref": "internal",
+  "lifecycle_machine_ref": "internal",
+  "payment_gate": {
+    "mode": "invoice_po",
+    "satisfied_by": ["signed_purchase_order", "paid_invoice", "admin_mark_paid_manually"],
+    "gate_state": "invoice_paid",
+    "blocks_access_until_state": "access_provisioning",
+    "constitution_ref": "constitution/27-COMMERCIAL-LIFECYCLE.md#section-6"
+  },
+  "provision_contract": {
+    "entry_state": "access_provisioning",
+    "status": "p2_contract_waypoint",
+    "p2_waypoint": "P2 wires the live Canada-Health sandbox tenant provisioning + runtime PEP into the access_provisioning entry action. P1 ships the orchestration mapping only; provisioning is a declared contract waypoint, dispatched by the existing §22 Onboarding Agent under the §27 access_provisioning entry action."
+  },
+  "access_contract": {
+    "entry_state": "access_granted",
+    "status": "p2_contract_waypoint",
+    "p2_waypoint": "P2 mints the one-click sign-in into the live sandbox scope at public/sandbox/canada-health/. P1 ships the access-granted comms + evidence binding; the live magic-link minting is a declared contract waypoint behind the §27 §6 payment gate."
+  },
+  "steps": [
+    {
+      "step_id": "applied",
+      "lifecycle_state": "received",
+      "human_label": "Application received — welcome / acknowledgement",
+      "trigger": { "actor": "applicant", "event": "kye.commercial.application.received.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-applied.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1"
+      ]
+    },
+    {
+      "step_id": "qualified",
+      "lifecycle_state": "triaged",
+      "human_label": "Application qualified by admin review",
+      "trigger": { "actor": "admin", "event": "kye.commercial.application.triaged.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-qualified.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1"
+      ]
+    },
+    {
+      "step_id": "approved",
+      "lifecycle_state": "approved",
+      "human_label": "Pilot approved — contract incoming",
+      "trigger": { "actor": "admin", "event": "kye.commercial.application.approved.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-approved.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1",
+        "kye.replay.proof.v1"
+      ]
+    },
+    {
+      "step_id": "contracting",
+      "lifecycle_state": "approved",
+      "human_label": "Order form + Canada-health DPA ready to e-sign",
+      "trigger": { "actor": "admin", "event": "kye.commercial.application.approved.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-contract-ready.v1"],
+      "legal_artifacts": [
+        "kye:legal:order-form-canada-health-pilot",
+        "kye:legal:dpa-canada-health"
+      ],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1",
+        "kye.replay.proof.v1"
+      ]
+    },
+    {
+      "step_id": "invoice-issued",
+      "lifecycle_state": "invoice_issued",
+      "human_label": "Invoice / PO issued — payment-gate pending",
+      "trigger": { "actor": "admin", "event": "kye.commercial.invoice.issued.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-invoice-issued.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1"
+      ]
+    },
+    {
+      "step_id": "payment-recorded",
+      "lifecycle_state": "invoice_paid",
+      "human_label": "Payment / PO recorded — §27 payment-gate satisfied",
+      "trigger": { "actor": "admin", "event": "kye.commercial.invoice.paid.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-payment-recorded.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": true,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1",
+        "kye.replay.proof.v1",
+        "kye.compliance.attestation.v1"
+      ]
+    },
+    {
+      "step_id": "provisioning",
+      "lifecycle_state": "access_provisioning",
+      "human_label": "Provision contract — tenant provisioning dispatched (P2 waypoint)",
+      "trigger": { "actor": "agent", "event": "kye.commercial.access.provisioning.v1" },
+      "comms_templates": [],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1",
+        "kye.replay.proof.v1"
+      ]
+    },
+    {
+      "step_id": "sandbox-access-granted",
+      "lifecycle_state": "access_granted",
+      "human_label": "Access contract — sandbox access granted",
+      "trigger": { "actor": "agent", "event": "kye.commercial.access.granted.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-access-granted.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1",
+        "kye.replay.proof.v1"
+      ]
+    },
+    {
+      "step_id": "onboarding-guide",
+      "lifecycle_state": "entitlement_active",
+      "human_label": "Pilot running — onboarding guide",
+      "trigger": { "actor": "agent", "event": "kye.commercial.entitlement.active.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-onboarding-guide.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1"
+      ]
+    },
+    {
+      "step_id": "check-in",
+      "lifecycle_state": "entitlement_ending",
+      "human_label": "Quarterly attestation & check-in",
+      "trigger": { "actor": "timer", "event": "kye.commercial.entitlement.ending.v1" },
+      "comms_templates": ["commercial-lifecycle.canada-health-pilot-check-in.v1"],
+      "legal_artifacts": [],
+      "payment_gate_checkpoint": false,
+      "evidence_event_family": [
+        "kye.purpose.request.v1",
+        "kye.purpose.admissibility.v1",
+        "kye.evidence.decision_map.v1",
+        "kye.replay.context_seal.v1",
+        "kye.evidence.pack.v1",
+        "kye.compliance.attestation.v1"
+      ]
+    }
+  ]
+}

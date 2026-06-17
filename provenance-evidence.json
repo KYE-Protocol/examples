@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.provenance_evidence.v1",
+  "provenance_id": "kye:provenance:finance_agent_001",
+  "subject_entity_id": "kye:agent:finance_agent_001",
+  "models": [],
+  "datasets": [
+    {
+      "dataset_id": "kye:dataset:supplier_master_v3",
+      "version": "3.2.0",
+      "licence": "internal-confidential",
+      "checksum": "sha256:...",
+      "data_classes": ["supplier_data", "personal_data"]
+    }
+  ],
+  "tools": [
+    { "tool_id": "kye:tool:invoice_parser", "version": "1.4.2", "supplier": "internal" },
+    { "tool_id": "kye:tool:banking_api_adapter", "version": "2.1.0", "supplier": "internal" }
+  ],
+  "hardware": [],
+  "suppliers": [
+    {
+      "supplier_id": "kye:supplier:internal_platform",
+      "verified": true,
+      "verification_method": "signed_evidence"
+    }
+  ],
+  "licences": ["internal-confidential", "apache-2.0"],
+  "version_lineage": ["finance_agent_001@1.0.0", "finance_agent_001@1.0.1"],
+  "verification_status": "verified",
+  "audit_chain_ref": "kye:audit:chain:0xabc456",
+  "created_at": "2026-05-09T12:00:00Z",
+  "updated_at": "2026-05-09T12:00:00Z"
+}

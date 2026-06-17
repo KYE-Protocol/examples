@@ -1,0 +1,9 @@
+{
+  "payment_approval_id": "kye:payapr:acme.example:01JYAP1000000000000000000",
+  "payment_intent_id": "kye:ent:acme.example:payment_intent:01JYPI000000000000000000",
+  "approver_entity_id": "kye:ent:acme.example:person:01JYFM000000000000000000",
+  "approval_type": "dual",
+  "decision": "approved",
+  "reason": "within approved vendor program",
+  "created_at": "2026-04-25T06:02:00Z"
+}

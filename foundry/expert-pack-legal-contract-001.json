@@ -1,0 +1,65 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:legal-contract:v1",
+  "partner_id": "kye:foundry-applicant:legal-contract-reference-partner",
+  "pack_name": "KYE Contract Workflow Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "legal-contract",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:legal-contract"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:legal-contract"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:legal-contract"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:sra-handbook",
+    "kye:framework:gdpr",
+    "kye:framework:uk-contract-law"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:legal-contract:2026-06-02",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-02T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-legal-contract-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:legal-contract:2026-06-02",
+  "claim_set": [
+    {
+      "claim_id": "matter-scope-authority-mapping",
+      "claim_text": "Every AI-assisted contract-workflow action in scope of the Pack is bound to an open matter with a defined scope of authority via the canonical KYE Authority Register.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "lawyer-review-before-release",
+      "claim_text": "No AI-generated or AI-redlined artefact is released to a client or counterparty until a qualified supervising lawyer named on the matter has reviewed and signed off.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "risk-escalation-threshold",
+      "claim_text": "AI-assisted decisions crossing the matter risk-escalation threshold (uncapped liability, indemnity, off-playbook deviation, governing-law change, value over limit) escalate to a supervising partner before acceptance.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "privileged-material-handling",
+      "claim_text": "Privileged, confidential, or special-category client material is refused egress outside the matter trust domain, preserving SRA confidentiality and the UK GDPR Article 28 processing boundary.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "redline-evidence-pack",
+      "claim_text": "Each AI-assisted redline emits a signed, replay-derivable negotiation Evidence Pack binding the matter scope, playbook clause, risk classification, lawyer-review state, and Authority Finality outcome.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-02T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

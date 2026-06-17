@@ -1,0 +1,7 @@
+{
+  "card_id": "kye:compliance-card:acme.com:org:acme-corp:2026-q2",
+  "tenant_id": "kye:ent:acme.com:org:acme-corp",
+  "version": 7,
+  "overall_status": "at_risk",
+  "refreshed_at": "2026-05-14T06:00:00Z"
+}

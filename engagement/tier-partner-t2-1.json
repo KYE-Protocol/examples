@@ -1,0 +1,37 @@
+{
+  "schema": "kye.engagement.tier.v1",
+  "sku_id": "KYE-PARTNER-T2",
+  "engagement_type": "partner",
+  "display_name": "KYE Solutions Partner",
+  "tier_rank": 2,
+  "price_band": "public-published",
+  "published_price_gbp": 15000,
+  "pricing_disclosure_policy": "public-published",
+  "closed_registration": false,
+  "price": {
+    "amount_minor": 1500000,
+    "currency": "GBP",
+    "period": "year"
+  },
+  "obligations": [
+    "kye:obligation:partner:nda",
+    "kye:obligation:partner:accurate-representation",
+    "kye:obligation:partner:deal-registration",
+    "kye:obligation:partner:lead-time-enterprise",
+    "kye:obligation:partner:training-currency"
+  ],
+  "state_machine_states_required": [
+    "received",
+    "triaged",
+    "approved",
+    "invoice_issued",
+    "invoice_paid",
+    "access_provisioning",
+    "access_granted",
+    "entitlement_active",
+    "entitlement_ending",
+    "expired",
+    "renewed"
+  ],
+  "summary": "Mid-tier partner with co-sell motion, deal-registration, and solution-builder enablement."
+}

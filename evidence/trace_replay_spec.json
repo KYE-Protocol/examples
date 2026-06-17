@@ -1,0 +1,24 @@
+{
+  "id": "kye:trace-replay-spec:tenant-acme:2026-05-28T18:23:03Z:a0b1c2d3",
+  "version": 1,
+  "decision_id": "kye:decision:tenant-acme:procurement:2026-05-28T18:23:00Z:a0b1c2d3",
+  "claim": "trace-replayable",
+  "bound_records": {
+    "decision_map": "kye:decision-map:tenant-acme:2026-05-28T18:23:00Z:a0b1c2d3",
+    "model_params": "kye:model-params:tenant-acme:2026-05-28T18:23:00Z:a0b1c2d3",
+    "tool_call_pins": [
+      "kye:tool-call-pin:tenant-acme:2026-05-28T18:23:02Z:supplier-lookup"
+    ],
+    "input_content_hash": "sha256:9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "rag_corpus_snapshot": "kye:rag-snapshot:tenant-acme:supplier-policy:2026-05-28T18:00:00Z"
+  },
+  "satisfied": true,
+  "unsatisfied_reasons": [],
+  "verifier_recipe_ref": "https://kyeprotocol.com/conformance/recipes/trace-replay-verifier.v1.mjs",
+  "created_at": "2026-05-28T18:23:03.502Z",
+  "signature": {
+    "alg": "EdDSA",
+    "value": "MEUCIQCkY9z8mB3xRk5p9c2e7QlYj3VqXxY1kT8Q4Pl9Nx0aHwIgKvW2nF6JqKj0xZ8B1eR4l3pVqLgYxZcF5oRgK2dQrTp",
+    "key_id": "kye:tenant:acme:jwks:2026Q2:sig-01"
+  }
+}

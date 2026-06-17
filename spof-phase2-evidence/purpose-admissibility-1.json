@@ -1,0 +1,21 @@
+{
+  "request_id": "kye:purpose-req:platform:01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
+  "grant_id": "kye:purpose:platform:architecture:constitutional-amendment-2026q2",
+  "admitted": true,
+  "reasons": [
+    { "code": "principal_matches",      "passed": true, "detail": "request.actor's grant principal == kye:ent:agent-architecture-spof-phase2" },
+    { "code": "grantee_matches",        "passed": true, "detail": "request.actor == grant.grantee" },
+    { "code": "purpose_matches",        "passed": true, "detail": "purpose-class:platform.spof.phase2-closure registered under grant" },
+    { "code": "action_in_scope",        "passed": true, "detail": "declare-fallback-contract in [declare-fallback-contract, lift-spof-status, register-schema]" },
+    { "code": "resource_in_scope",      "passed": true, "detail": "constitution/51-no-spof under platform:constitution:51-no-spof:*" },
+    { "code": "data_class_in_scope",    "passed": true, "detail": "constitution.amendment, spof.registry.row in scope" },
+    { "code": "within_time_window",     "passed": true, "detail": "2026-05-27T10:00:00Z in [2026-04-01, 2026-09-01)" },
+    { "code": "within_jurisdiction",    "passed": true, "detail": "actor seat GB in [GB, IE, EU]" },
+    { "code": "within_rate_cap",        "passed": true, "detail": "1/30 rpm used" },
+    { "code": "not_revoked",            "passed": true, "detail": "grant.revoked_at == null" },
+    { "code": "signature_valid",        "passed": true, "detail": "COSE signature verified against architecture-lead key" },
+    { "code": "dual_control_satisfied", "passed": true, "detail": "§27 dual-channel approval pack kye:approval-evidence-pack:spof-phase2-architecture-security recorded" }
+  ],
+  "decided_at": "2026-05-27T10:00:01Z",
+  "decided_by": "kye:engine:admissibility:v1.4.2:build-9c1e7af0"
+}

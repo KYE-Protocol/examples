@@ -1,0 +1,60 @@
+{
+  "id": "kye:evidence-pack:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "version": 1,
+  "decision_id": "kye:decision:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "decision_map_ref": "kye:decision-map:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "inputs_blob_ref": "blob:cid:bafybeihq7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v1w",
+  "signed_state": {
+    "state_hash": "sha256:f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203040506",
+    "state_ref": "blob:cid:bafybeigstate7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v",
+    "signer": "kye:ent:acme-bank:engine:state-snapshot",
+    "signed_at": "2026-04-15T10:32:46Z",
+    "signature": "sig:cose:state:MEUCIQDf3At6B8u3R9sU5bZ7xN2aH4eQ"
+  },
+  "signals": [
+    {
+      "id": "sig.fraud-risk.v3",
+      "source": "kye:ent:acme-bank:signal:fraud-risk-v3",
+      "payload_hash": "sha256:1718293a4b5c6d7e8f9012345678abcdef0123456789abcdef01020304050607",
+      "observed_at": "2026-04-15T10:32:45Z"
+    },
+    {
+      "id": "sig.geo-attest.iso3166",
+      "source": "kye:ent:acme-bank:signal:geo-attest",
+      "payload_hash": "sha256:18293a4b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708",
+      "observed_at": "2026-04-15T10:32:45Z"
+    }
+  ],
+  "signatures": [
+    {
+      "signer": "kye:ent:acme-bank:engine:admissibility",
+      "signature": "sig:cose:engine:MEUCIQDg4Bu7C9v4S0tV6cA8yO3bI5fR",
+      "signed_at": "2026-04-15T10:32:47Z"
+    },
+    {
+      "signer": "kye:ent:acme-bank:officer:treasury-ops-lead",
+      "signature": "sig:cose:officer:MEUCIQDh5Cv8D0w5T1uW7dB9zP4cJ6gS",
+      "signed_at": "2026-04-15T10:32:48Z"
+    }
+  ],
+  "replay_seal_ref": "kye:replay-seal:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "created_at": "2026-04-15T10:32:48Z",
+  "decided_in_region": "eu",
+  "stored_in_region": "eu",
+  "memory_basis": [
+    {
+      "memory_id": "kye:agent-memory:acme-bank-treasury-agent-counterparty-limit-2026-04",
+      "content_hash": "sha256:2a4b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708090a",
+      "used_as": "decision_context",
+      "admissibility_state": "MEMORY_ADMISSIBLE",
+      "reasons": ["MEMORY_VALID"]
+    },
+    {
+      "memory_id": "kye:agent-memory:acme-bank-treasury-agent-stale-fx-pref-2025-11",
+      "content_hash": "sha256:3b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708090a0b",
+      "used_as": "decision_context",
+      "admissibility_state": "MEMORY_NOT_ADMISSIBLE",
+      "reasons": ["MEMORY_STALE"]
+    }
+  ]
+}

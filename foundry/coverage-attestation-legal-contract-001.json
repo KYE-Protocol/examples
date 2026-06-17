@@ -1,0 +1,33 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-legal-contract-coverage:2026-06-02",
+  "emitted_at": "2026-06-02T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §14",
+    "SRA",
+    "GDPR",
+    "UK_CONTRACT_LAW"
+  ],
+  "subject": "kye:powered-pack:legal-contract:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-legal-contract-001-coverage-2026-06-02",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:legal-contract:v1",
+    "claim_count": 5,
+    "bound_rule_packs": ["kye:rule-pack:legal-contract"],
+    "bound_dictionaries": ["kye:dictionary:legal-contract"],
+    "bound_sector_packs": ["kye:sector-pack:legal-contract"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical",       "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical",          "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical",       "verdict": "OK", "drift": 0 }
+  ]
+}

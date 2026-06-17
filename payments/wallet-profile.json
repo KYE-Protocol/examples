@@ -1,0 +1,9 @@
+{
+  "wallet_kind": "treasury_wallet",
+  "currencies": ["EUR", "USD", "GBP"],
+  "rail_types": ["sepa", "swift", "open_banking_payment_initiation"],
+  "custody_provider_entity_id": "kye:ent:acme.example:custody_provider:bank-acme-eu",
+  "owner_entity_id": "kye:ent:acme.example:business:treasury-ops",
+  "controller_entity_id": "kye:ent:acme.example:person:treasury-controller-01",
+  "program_id": "kye:program:acme.example:treasury-2026"
+}

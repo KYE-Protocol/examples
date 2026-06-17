@@ -1,0 +1,30 @@
+{
+  "schema": "kye.update_feed.v1",
+  "registry_id": "kye:registry:update-feed",
+  "generator": "scripts/build-update-feed.mjs",
+  "constitution_ref": "constitution/65-UPDATES-RAIL.md",
+  "entry_count": 2,
+  "kind_counts": { "event": 1, "rail": 1 },
+  "entries": [
+    {
+      "update_id": "kye:update:rail:64-obligation-authority-rail",
+      "kind": "rail",
+      "title": "KYE Obligation Authority Rail — adopted",
+      "date": "2026-06-04",
+      "source_id": "constitution-rails",
+      "ref_id": "64-OBLIGATION-AUTHORITY-RAIL",
+      "url": "/constitution/64-OBLIGATION-AUTHORITY-RAIL",
+      "audience": "all"
+    },
+    {
+      "update_id": "kye:update:event:kye-event-governed-agents-finance-2026-06",
+      "kind": "event",
+      "title": "Governed Agents in Financial Services",
+      "date": "2026-06-18",
+      "source_id": "events",
+      "ref_id": "kye:event:governed-agents-finance-2026-06",
+      "url": "/events",
+      "audience": "all"
+    }
+  ]
+}

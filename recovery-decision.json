@@ -1,0 +1,30 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/recovery-decision.json",
+  "recovery_decision_id": "kye:recovery_decision:custody.acme.eu:2026-05-04_signer_001",
+  "recovery_request_id": "kye:recovery_request:custody.acme.eu:2026-05-04_signer_001",
+  "decision": "partial",
+  "restored_authority": [
+    "kye:authority:custody.acme.eu:read_evidence",
+    "kye:authority:custody.acme.eu:freeze_positions"
+  ],
+  "reduced_authority": [
+    "kye:authority:custody.acme.eu:initiate_trades",
+    "kye:authority:custody.acme.eu:approve_settlements"
+  ],
+  "obligations": [
+    "audit.emit",
+    "step_up.required",
+    "post_hoc_review.required",
+    "key_rotation.required_within_24h"
+  ],
+  "valid_from": "2026-05-04T02:18:00Z",
+  "valid_until": "2026-05-04T06:18:00Z",
+  "approver_quorum": 2,
+  "approvers": [
+    "kye:human:custody.acme.eu:head_of_custody:director-001",
+    "kye:human:custody.acme.eu:soc_lead:lead-002"
+  ],
+  "decided_by": "kye:trust_domain:custody.acme.eu",
+  "decided_at": "2026-05-04T02:18:00Z",
+  "audit_hash": "sha256:b5d4f1c2e8a39f7c4d8e2b1a5f6c9d0e3b8a7c5d4e1f2c3b6a9d8e7f0c1b2a3"
+}

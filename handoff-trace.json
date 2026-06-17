@@ -1,0 +1,38 @@
+{
+  "schema_version": "kye.handoff_trace.v1",
+  "handoff_trace_id": "kye:handoff-trace:001",
+  "continuity_id": "kye:continuity:001",
+  "handoffs": [
+    {
+      "handoff_id": "kye:handoff:001",
+      "from_entity_id": "kye:entity:person:customer_123",
+      "to_entity_id": "kye:entity:agent:shopping_agent_456",
+      "handoff_type": "human_to_agent_instruction",
+      "meaning_before": "Buy a phone charger under GBP 40 with no subscription.",
+      "meaning_after": "Buy an electronics accessory under GBP 40.",
+      "meaning_delta": {
+        "lost_constraints": ["no_subscription"],
+        "added_assumptions": []
+      },
+      "risk_level": "medium",
+      "timestamp": "2026-05-10T12:00:01Z"
+    },
+    {
+      "handoff_id": "kye:handoff:002",
+      "from_entity_id": "kye:entity:agent:shopping_agent_456",
+      "to_entity_id": "kye:tool:checkout_tool_001",
+      "handoff_type": "agent_to_tool_request",
+      "meaning_before": "Buy electronics accessory under GBP 40.",
+      "meaning_after": "Prepare checkout for selected product.",
+      "meaning_delta": {
+        "lost_constraints": [],
+        "added_assumptions": ["selected_product_matches_constraints"]
+      },
+      "risk_level": "low",
+      "timestamp": "2026-05-10T12:00:03Z"
+    }
+  ],
+  "aggregate_handoff_risk": "medium",
+  "meaning_drift_detected": true,
+  "evidence_refs": ["kye:evidence:handoff_trace_001"]
+}

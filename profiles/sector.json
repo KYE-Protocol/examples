@@ -1,0 +1,13 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:sector",
+  "slug": "sector",
+  "display_name": "KYE Sector Profile™",
+  "layer": "domain",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "Meta-profile for sector packs — defines how a sector pack declares its dictionary + rule packs + control mappings + templates. Sector specialisation lives here; canonical profiles never shift.",
+  "required_objects": ["Manifest", "Rule"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.data_residency_manifest.v1.json",
+  "schema_version": "kye.data_residency_manifest.v1",
+  "manifest_id": "kye:registry:data-residency-manifest",
+  "adopted_at": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "constitution_ref": "constitution/25-EDGE-GOVERNANCE.md#section-10-data-residency-manifest",
+  "description": "Canonical fixture — one rule per data_category enum value (PII, financial, health, biometric, behavioral, operational, metadata) demonstrating the full Rule shape including allowed_regions, forbidden_regions, tenant_class_match wildcards, endpoint_patterns prefix matching, all three enforcement_mode values, and framework_basis entries spanning GDPR / UK-DPA / DORA / PCI-DSS / HIPAA / SOC-2 / ISO-27001 / EU-AI-Act.",
+  "owners": [
+    "kye:team:edge-governance",
+    "kye:role:dpo"
+  ],
+  "rules": [
+    {
+      "id": "kye:residency-rule:example-pii",
+      "data_category": "PII",
+      "allowed_regions": ["eu"],
+      "forbidden_regions": ["us", "apac", "me", "af", "latam"],
+      "tenant_class_match": ["EU", "EEA"],
+      "endpoint_patterns": ["*"],
+      "enforcement_mode": "block",
+      "framework_basis": ["GDPR-Art-44", "GDPR-Art-45"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:role:dpo"],
+      "notes": "Example PII rule — EU-tenant PII must stay in EU regions."
+    },
+    {
+      "id": "kye:residency-rule:example-financial",
+      "data_category": "financial",
+      "allowed_regions": ["us", "eu", "uk", "apac"],
+      "forbidden_regions": [],
+      "tenant_class_match": ["*"],
+      "endpoint_patterns": ["/api/payments/*", "/wallets/*"],
+      "enforcement_mode": "block",
+      "framework_basis": ["DORA-Art-28", "PSD2-Art-95", "PCI_DSS-Req-9"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:role:dpo", "kye:team:payments"],
+      "notes": "Example financial rule — region pinned per tenant banking jurisdiction; SCCs cover batch only, not live routing."
+    },
+    {
+      "id": "kye:residency-rule:example-health",
+      "data_category": "health",
+      "allowed_regions": ["us", "eu", "uk"],
+      "forbidden_regions": ["apac", "me", "af", "latam"],
+      "tenant_class_match": ["*"],
+      "endpoint_patterns": ["/api/health/*"],
+      "enforcement_mode": "block",
+      "framework_basis": ["GDPR-Art-9"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:role:dpo"],
+      "notes": "Example health rule — GDPR Art 9 special-category + HIPAA Safe Harbor."
+    },
+    {
+      "id": "kye:residency-rule:example-biometric",
+      "data_category": "biometric",
+      "allowed_regions": ["us", "eu", "uk", "apac"],
+      "forbidden_regions": ["me", "af", "latam"],
+      "tenant_class_match": ["*"],
+      "endpoint_patterns": ["/api/biometric/*", "/webauthn/*"],
+      "enforcement_mode": "block",
+      "framework_basis": ["GDPR-Art-9", "EU_AI_ACT-Art-5"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:role:dpo"],
+      "notes": "Example biometric rule — templates pinned to primary region; EU AI Act Art 5 prohibitions enforced upstream."
+    },
+    {
+      "id": "kye:residency-rule:example-behavioral",
+      "data_category": "behavioral",
+      "allowed_regions": ["us", "eu", "uk", "apac"],
+      "forbidden_regions": [],
+      "tenant_class_match": ["*"],
+      "endpoint_patterns": ["/api/analytics/*", "/telemetry/*"],
+      "enforcement_mode": "warn",
+      "framework_basis": ["GDPR-Art-6"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:role:dpo", "kye:team:analytics"],
+      "notes": "Example behavioral rule — pseudonymised telemetry; warn-only, tenant may upgrade to block."
+    },
+    {
+      "id": "kye:residency-rule:example-operational",
+      "data_category": "operational",
+      "allowed_regions": ["us", "eu", "uk", "apac", "me", "af", "latam"],
+      "forbidden_regions": [],
+      "tenant_class_match": ["*"],
+      "endpoint_patterns": ["/api/ops/*"],
+      "enforcement_mode": "audit_only",
+      "framework_basis": ["SOC_2-CC7-1", "ISO_27001-A-12-4-1"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:team:sre"],
+      "notes": "Example operational rule — no tenant payload, audit-only."
+    },
+    {
+      "id": "kye:residency-rule:example-metadata",
+      "data_category": "metadata",
+      "allowed_regions": ["us", "eu", "uk", "apac", "me", "af", "latam"],
+      "forbidden_regions": [],
+      "tenant_class_match": ["*"],
+      "endpoint_patterns": ["/healthz", "/readyz", "/metrics", "/sso/saml/*", "/scim/v2/*"],
+      "enforcement_mode": "audit_only",
+      "framework_basis": ["SOC_2-CC7-2", "ISO_27001-A-12-1-3"],
+      "effective_from": "2026-05-30",
+      "last_reviewed": "2026-05-30",
+      "owners": ["kye:team:edge-governance"],
+      "notes": "Example metadata rule — corresponds to the legacy SKIP_PREFIXES allow-list."
+    }
+  ],
+  "residency_regions": [
+    {
+      "trust_domain_id": "kye:tenant:example-eu-bank",
+      "residency_region": "eu",
+      "tenant_class": "EU",
+      "framework_basis": ["GDPR-Art-44"],
+      "notes": "Example EU-pinned tenant."
+    },
+    {
+      "trust_domain_id": "kye:tenant:example-us-bank",
+      "residency_region": "us",
+      "tenant_class": "US",
+      "framework_basis": ["SOC_2-CC6-1"],
+      "notes": "Example US-pinned tenant."
+    }
+  ]
+}

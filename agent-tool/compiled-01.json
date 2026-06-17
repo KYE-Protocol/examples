@@ -1,0 +1,12 @@
+{
+  "tenant_id": "kye:platform:kye-protocol",
+  "spec_id": "core.openapi.v1",
+  "source_sha256": "2c83db87500900977342d43368840b7d9fae509dc3e468e2f3d4b042fab5175a",
+  "pack_sha256": "eedf469df364e4f7d14c45e9715e199cc3b620f0bc093a778ebaf13325daa4cb",
+  "kid": "kye:key:agent-tool-signing:dev",
+  "compiled_at": "2026-05-14T12:09:31Z",
+  "ratio_pct": 27,
+  "endpoints": 46,
+  "drift_kind": "initial_compile",
+  "previous_pack_sha256": null
+}

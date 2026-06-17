@@ -1,0 +1,32 @@
+{
+  "schema": "kye.connector.onboarding.v1",
+  "id": "kye:connector-onboarding:4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d",
+  "version": 1,
+  "partner": "kye:partner:anthropic",
+  "stage": "rejected",
+  "manifest": {
+    "connector_kind": "mcp_server",
+    "vendor": "Demo MCP",
+    "product": "Demo MCP Beta",
+    "version": "0.1.0",
+    "capabilities": ["tools_list", "tools_call"],
+    "oauth_scopes": [],
+    "api_endpoints": ["https://demo.example.invalid/mcp"],
+    "security_posture": {
+      "tls_min_version": "1.2",
+      "cert_pinning": false,
+      "mTLS": false,
+      "audit_logging": false
+    }
+  },
+  "history": [
+    { "from": "proposed", "to": "proposed",  "at": "2026-04-09T10:00:00Z", "actor": "kye:partner:anthropic", "reason": "submitted" },
+    { "from": "proposed", "to": "rejected",  "at": "2026-04-09T10:00:01Z", "actor": "kye:agent:connector-onboarding", "reason": "discovery rejected: score=35" }
+  ],
+  "discovery_report_ref": "kye:connector-discovery-report:b1c2d3e4f5a6b7c8",
+  "conformance_run_ref": null,
+  "registry_ref": null,
+  "rejection_reason": "discovery score below threshold",
+  "created_at": "2026-04-09T10:00:00Z",
+  "updated_at": "2026-04-09T10:00:01Z"
+}

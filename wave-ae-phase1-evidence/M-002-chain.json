@@ -1,0 +1,188 @@
+{
+  "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+  "short_name": "David Harris",
+  "chain": [
+    {
+      "schema": "kye.estate.fact_find.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:fact_find:1",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "fact_find_id": "kye:demo:estate:fact_find:sandbox:M-002",
+      "matter_type": "lpa",
+      "version": 1,
+      "completion_status": "complete"
+    },
+    {
+      "schema": "kye.estate.draft_manifest.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:draft_manifest:2",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "draft_manifest_id": "kye:demo:estate:draft_manifest:sandbox:M-002",
+      "fact_find_id": "kye:demo:estate:fact_find:sandbox:M-002",
+      "rule_set_version": "1.0.0",
+      "clause_library_version": "1.0.0",
+      "template_version": "1.0.0",
+      "drafting_profile_version": "1.0.0",
+      "rules_fired": [
+        {
+          "rule_id": "kye:estate:rule:lpa-attorney-required",
+          "outcome": "auto_include_clause:lpa-attorney-decl-v1"
+        },
+        {
+          "rule_id": "kye:estate:rule:lpa-certificate-provider",
+          "outcome": "auto_include_clause:lpa-cert-provider-v1"
+        },
+        {
+          "rule_id": "kye:estate:rule:lpa-attorney-address-required",
+          "outcome": "fail:attorney_address_missing"
+        }
+      ],
+      "ai_assistance_used": false,
+      "authority_status": "draft_only"
+    },
+    {
+      "schema": "kye.agent.governance.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:agent_governance:3",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "envelope_role": "task-start",
+      "agent_id": "estate-ai-case-checker",
+      "parent_task": "kye:demo:task:sandbox:M-002",
+      "scope": {
+        "purpose": "case_check estate planning draft for matter M-002",
+        "read_paths": [
+          "matters/M-002",
+          "internal*",
+          "internal*.json",
+          "internal*.json"
+        ],
+        "write_paths": [
+          "matters/M-002/case_check/*"
+        ],
+        "mcp_allow_list": [],
+        "scope_categories_permitted": [
+          "executor_validity",
+          "beneficiary_consistency",
+          "share_arithmetic",
+          "capacity_consistency",
+          "clause_jurisdiction_match",
+          "clause_version_currency",
+          "trust_indicator",
+          "evidence_insufficient"
+        ]
+      },
+      "chapter_acknowledgements": [
+        "§0",
+        "§0.3",
+        "§47",
+        "§49",
+        "§52"
+      ],
+      "binding_manifest_ref": "internal#estate-ai-case-checker"
+    },
+    {
+      "schema": "kye.estate.case_check.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:case_check:4",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "case_check_id": "kye:demo:estate:case_check:sandbox:M-002",
+      "draft_manifest_id": "kye:demo:estate:draft_manifest:sandbox:M-002",
+      "governance_envelope_ref": {
+        "schema": "kye.agent.governance.v1",
+        "envelope_id": "kye:demo:envelope:sandbox:M-002:agent_governance:3",
+        "agent_id": "estate-ai-case-checker"
+      },
+      "checked_at": "2026-05-27T10:00:00Z",
+      "severity": "amber",
+      "scope_categories": [
+        "executor_validity",
+        "beneficiary_consistency",
+        "share_arithmetic",
+        "capacity_consistency",
+        "clause_jurisdiction_match",
+        "clause_version_currency",
+        "trust_indicator",
+        "evidence_insufficient"
+      ],
+      "findings": [
+        {
+          "finding_id": "kye:demo:finding:M-002:seed",
+          "category": "demo_summary",
+          "severity": "info",
+          "description": "See sandbox demo for full findings; this is the chain fixture.",
+          "recommended_action": "see_demo"
+        }
+      ],
+      "ai_model_version": "kye-estate-checker-demo-v1.0.0",
+      "fallback_mode": false
+    },
+    {
+      "schema": "kye.engagement.approval.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:approval:5",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:manager-paul",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "approval_id": "kye:demo:approval:sandbox:M-002",
+      "subject_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "decision": "return_to_adviser",
+      "approver_role": "manager",
+      "approved_at": "2026-05-27T10:00:00Z",
+      "dual_channel_used": false
+    },
+    {
+      "schema": "kye.estate.boundary_decision.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:boundary:6",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "boundary_decision_id": "kye:demo:estate:boundary_decision:sandbox:M-002",
+      "state": "manager_review_required",
+      "reason": "Matter returned to adviser for attorney-address capture. No signing pack produced.",
+      "decided_at": "2026-05-27T10:00:00Z"
+    },
+    {
+      "schema": "kye.estate.signing_pack.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:signing_pack:7",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "signing_pack_id": "kye:demo:signing_pack:sandbox:M-002",
+      "released_pack": false,
+      "signature_kid": "kye:demo:assembler-kid:estate-planning-sandbox:v1",
+      "detached_signature_ref": "public/sandbox/estate-planning/data/M-002.signed-pack.json"
+    },
+    {
+      "schema": "kye.estate.authority_finality.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-002:finality:8",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-002-david-harris",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "authority_finality_id": "kye:demo:estate:authority_finality:sandbox:M-002",
+      "outcome": "review_required",
+      "outcome_detail": "Matter returned to adviser for attorney-address capture. No signing pack produced.",
+      "released_pack": false,
+      "lifecycle_state": "RETURNED_TO_ADVISER",
+      "decided_at": "2026-05-27T10:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/capability-invocation.json",
+  "request_id": "req-01HXY7Q8CAPABILITY00INVOCATION0001",
+  "decision": "allow",
+  "decision_id": "kye:decision:acme.example:01HXY7Q800CAPDEC0000000000000001",
+  "reason_code": "scope.intersection.match",
+  "actor_entity_id": "kye:ent:acme.example:ai_agent:fx-router",
+  "principal_entity_id": "kye:ent:acme.example:business:treasury-ops",
+  "capability_id": "kye:capability:acme.example:treasury:fx-quote-request",
+  "capability_version": "v1.2.0",
+  "matched_grant_id": "kye:capability_grant:acme.example:01HXY7Q800GRANT00000000000000001",
+  "matched_policy_ids": [
+    "kye:pol:acme.example:treasury-fx-quote-policy:v3"
+  ],
+  "obligations": [
+    { "type": "audit.emit",         "value": "decision_id" },
+    { "type": "evidence.attach",    "value": "quote-payload" },
+    { "type": "rate_limit.apply",   "value": "per-actor:60/min" }
+  ],
+  "decided_at": "2026-05-07T08:31:14.012Z"
+}

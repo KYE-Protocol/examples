@@ -1,0 +1,24 @@
+{
+  "schema": "kye.spof.path_to_full.v1",
+  "component_id": "example-vendor-binding",
+  "current_state": "Single example-vendor binding behind an abstraction flag (EXAMPLE_FAILOVER_ACTIVE=1). The backup provider is configured but cold; no shadow traffic and no automated health probe.",
+  "target_state": "Active multi-provider split with deterministic traffic allocation and automatic health-probe failover; both providers receive shadow traffic continuously so the cutover path is exercised end-to-end every day.",
+  "concrete_steps": [
+    "Provision the secondary example-vendor account in a separate billing org with its own API key and store the key in the canonical secrets manager under a dedicated kid.",
+    "Wire shadow-traffic mirroring at the abstraction layer so 5% of production calls are duplicated to the backup with results compared offline.",
+    "Implement the active health-probe loop in the kye-failover-controller worker with a 30-second cadence and a 3-strike trigger.",
+    "Add the §0.3 evidence chain emission (kye.purpose.request.v1 ... kye.compliance.attestation.v1) on every cutover decision.",
+    "Run the first quarterly failover drill end-to-end and pin the drill envelope to WORM."
+  ],
+  "acceptance_criteria": [
+    "Shadow-traffic comparison shows < 0.5% semantic drift over a 30-day window.",
+    "Automated cutover triggered by simulated primary outage completes in < 60 seconds with no human intervention.",
+    "Quarterly drill envelope landed in WORM with verdict=ok and replay-proof verifiable from public keys alone.",
+    "no-spof-coverage gate sees the registry row fallback_status='full' with the path_to_full runbook archived (not deleted)."
+  ],
+  "decay_deadline": "2026-11-23",
+  "owner": "Architecture",
+  "decision_needed": "Commercial: confirm the backup-provider contract terms before step 1 can execute. Procurement-bound, not engineering-bound.",
+  "supersedes_partial_ref": "public/admin/functions/_lib/example-provider.js",
+  "notes": "Illustrative example only. See internal for the canonical Phase 3 runbooks."
+}

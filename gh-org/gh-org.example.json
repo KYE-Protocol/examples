@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.gh_org.v1.json",
+  "schema": "kye.gh_org.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/05-GITHUB.md",
+  "notes": [
+    "Illustrative kye.gh_org.v1 instance. The canonical full registry lives at internal"
+  ],
+  "entries": [
+    {
+      "id": "kye:gh:example",
+      "kind": "label",
+      "name": "example",
+      "description": "Illustrative."
+    }
+  ]
+}

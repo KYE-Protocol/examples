@@ -1,0 +1,14 @@
+{
+  "schema": "kye.ingestion_run.v1",
+  "run_id": "kye:ingestion-run:eu-ai-act-001",
+  "document_id": "kye:framework-doc:eu-ai-act",
+  "parser_version": "akoma-ntoso-deterministic-1.0.0",
+  "mapping_rule_set_version": "2026-05-31.1",
+  "input_hash": "33fa16b48ba6ae1ff3543bfadde20af53e938845591b02fae5a57fca39fedab4",
+  "output_hash": "59a64b08f2a175d4b5f43ef00a741838fcfcf279cb968dd1a4f93d1294f802f6",
+  "deterministic": true,
+  "llm_calls": 0,
+  "clause_count": 6,
+  "mapping_count": 6,
+  "emitted_at": "2026-05-31T12:00:00Z"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "kye.engagement.tier.v1",
+  "sku_id": "KYE-PILOT-ESTATE-T0",
+  "engagement_type": "pilot",
+  "specialization": "estate-planning",
+  "display_name": "KYE Estate Planning Pilot™ · Tier-1 / Custom",
+  "tier_rank": 0,
+  "price_band": "tier-1-custom",
+  "published_price_gbp": null,
+  "pricing_disclosure_policy": "contact-for-pricing",
+  "closed_registration": true,
+  "price": {
+    "amount_minor": 0,
+    "currency": "GBP",
+    "period": "pilot"
+  },
+  "obligations": [
+    "kye:obligation:pilot-estate:data-confidentiality",
+    "kye:obligation:pilot-estate:adviser-training-prerequisite",
+    "kye:obligation:pilot-estate:deliverable-acceptance",
+    "kye:obligation:pilot-estate:post-pilot-data-deletion",
+    "kye:obligation:pilot-estate:multi-user-rbac-config",
+    "kye:obligation:pilot-estate:manager-review-sla",
+    "kye:obligation:pilot-estate:sra-regulated-workflow-handover",
+    "kye:obligation:pilot-estate:credential-migration-signoff",
+    "kye:obligation:pilot-estate:audit-firm-engagement-ack",
+    "kye:obligation:pilot-estate-t0:dual-channel-signoff",
+    "kye:obligation:pilot-estate-t0:named-engineer-assignment",
+    "kye:obligation:pilot-estate-t0:quarterly-attestation-cadence",
+    "kye:obligation:pilot-estate-t0:regulator-bound-retention"
+  ],
+  "state_machine_states_required": [
+    "received",
+    "triaged",
+    "approved",
+    "invoice_issued",
+    "invoice_paid",
+    "access_provisioning",
+    "access_granted",
+    "entitlement_active",
+    "entitlement_ending",
+    "expired",
+    "renewed"
+  ],
+  "summary": "Bespoke 12-week paid pilot of the KYE Estate Planning Authority Console™ for tier-1 banks, global insurers, and large-enterprise estate-planning arms. NDA + scoping call set the boundary; bespoke SKU; dual-channel sign-off; named partner engineer; quarterly attestation; regulator-defined retention windows. Pricing disclosed under NDA only."
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:partner.kyeprotocol.com:01J4P9J00T1UUVVWWYYYYYYYYYY",
+  "event_class": "kye.partner.widget.licence.issued",
+  "occurred_at": "2026-05-12T11:30:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:partner.kyeprotocol.com",
+    "trust_domain": "partner.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9J00T1UUVVWWYYYYYYYYYY",
+  "severity": "info",
+  "payload": {
+    "licence_id": "kye:partner-widget-licence:partner.kyeprotocol.com:01J4P9J00T1U",
+    "partner_entity_id": "kye:ent:contoso.example:business:contoso",
+    "widget_ids": [
+      "kye:widget:consent-receipt-banking",
+      "kye:widget:decision-map-healthcare"
+    ],
+    "valid_from": "2026-05-12T11:30:00Z",
+    "valid_until": "2027-05-12T11:30:00Z",
+    "max_monthly_loads": 1000000,
+    "embed_domains_allowlist": ["*.contoso.example", "secure.contoso.example"]
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "3344556677889900aabbccddeeff11223344556677889900aabbccddeefff0011",
+    "ts": "1747049400"
+  }
+}

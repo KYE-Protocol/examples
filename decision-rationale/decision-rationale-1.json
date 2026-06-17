@@ -1,0 +1,77 @@
+{
+  "id": "kye:decision-rationale:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "version": 1,
+  "decision_id": "kye:decision:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "evidence_pack_ref": "kye:evidence-pack:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "decision_map_ref": "kye:decision-map:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "replay_proof_ref": "kye:replay-proof:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "verdict": "admitted_with_restrictions",
+  "verdict_summary": "The agent was allowed to open the account but capped at the low-value tier, because the customer's identity was verified yet a moderate fraud-risk signal and a cross-border geo signal meant the standing permission only covered a limited opening.",
+  "rules_fired": [
+    {
+      "rule_ref": "kye:rule-pack:account-opening:R-IDV-MET",
+      "effect": "allow",
+      "human_reason": "Identity verification was completed to the required assurance level, so the act cleared the identity gate.",
+      "decisive": true
+    },
+    {
+      "rule_ref": "kye:rule-pack:account-opening:R-FRAUD-MODERATE-CAP",
+      "effect": "attenuate_scope",
+      "human_reason": "A moderate fraud-risk score above the review threshold caps a newly opened account to the low-value tier until a further check clears.",
+      "decisive": true
+    }
+  ],
+  "authority_resolved": {
+    "authority_ref": "kye:authority:acme-bank:grant:account-opening-agent-2026Q2",
+    "principal": "kye:ent:acme-bank:officer:onboarding-lead",
+    "delegation_chain": [
+      "kye:ent:acme-bank:officer:onboarding-lead",
+      "kye:ent:acme-bank:agent:account-opening-bot"
+    ],
+    "human_reason": "The onboarding lead holds the authority to open accounts and delegated a scoped slice of it to the account-opening agent; the agent acted within that delegated slice."
+  },
+  "inputs_consumed": [
+    {
+      "signal_id": "sig.fraud-risk.v3",
+      "kind": "risk_score",
+      "human_label": "Third-party fraud-risk score for this application (moderate).",
+      "weight_in_decision": "determinative"
+    },
+    {
+      "signal_id": "sig.geo-attest.iso3166",
+      "kind": "attestation",
+      "human_label": "Attested country of the applicant's verified location (cross-border to the booking entity).",
+      "weight_in_decision": "contributing"
+    }
+  ],
+  "purpose_scope": {
+    "purpose": "Open a retail current account for a verified individual customer.",
+    "scope": "Account opening limited to the low-value product tier; no overdraft, no cross-border wire enablement until secondary review.",
+    "grant_ref": "kye:purpose:acme-bank:grant:retail-onboarding-2026Q2",
+    "human_reason": "The act sat inside the granted onboarding purpose, but the moderate-risk path attenuated the scope to the low-value tier rather than the full product set."
+  },
+  "human_oversight": {
+    "oversight_mode": "single_approver",
+    "reviewer": "kye:ent:acme-bank:officer:onboarding-lead",
+    "reviewed_at": "2026-04-15T10:34:02Z",
+    "intervention": "approved",
+    "human_reason": "Confirmed the low-value cap was appropriate given the fraud signal and approved the restricted opening."
+  },
+  "contest_path": {
+    "contestable": true,
+    "how_to_contest": "The customer may challenge the restriction by raising it with the bank's complaints function; if unresolved, the matter can be escalated to the relevant financial ombudsman. KYE supplies the signed Evidence Pack and this rationale so the body holding jurisdiction can re-derive exactly what was decided and why.",
+    "jurisdiction": "uk",
+    "adjudicator_hint": "Financial Ombudsman Service (UK) for retail banking complaints, after the firm's own complaints stage."
+  },
+  "interpretability_boundary": {
+    "explains": "Why the governance verdict was reached: the identity rule allowed it, the moderate-fraud rule attenuated the scope, the delegated authority backed the act, the cross-border and risk signals were consumed, and the purpose+scope capped it to the low-value tier.",
+    "does_not_explain": "How the third-party fraud-risk model computed its score internally. That model output is consumed as a governed input signal; KYE does not produce post-hoc statistical interpretability (e.g. SHAP/LIME feature attribution) of the upstream model's weights."
+  },
+  "jurisdictions": ["uk"],
+  "framework_refs": [
+    "eu-ai-act.A13.RATIONALE",
+    "eu-ai-act.A14.RATIONALE",
+    "eu-ai-act.A86.RATIONALE"
+  ],
+  "created_at": "2026-04-15T10:34:05Z"
+}

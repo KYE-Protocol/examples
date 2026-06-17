@@ -1,0 +1,21 @@
+{
+  "schema": "kye.onboarding.transition.v1",
+  "id": "kye:onboarding-transition:acme-bank.payments-agent.q3-2026.0003",
+  "version": 1,
+  "workflow_id": "kye:onboarding-workflow:acme-bank.payments-agent.q3-2026",
+  "from": "approved",
+  "to": "tenant_provisioned",
+  "at": "2026-05-12T09:14:22Z",
+  "by": "kye:agent:onboarding",
+  "reason": "Entity Engine register(tenant) completed; root tenant entity record minted.",
+  "engine_invocations": [
+    "kye:engine-invocation:7c2f9e4b1a803d6e5c1f8a4d2b9e0a7c"
+  ],
+  "predecessor_hash": "a1c4d9e8b27f5031c8e6a293f1d70b48",
+  "this_hash": "b3d8f2e1907c5a624d1b2c9e8a4f3057",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.onboarding-agent.eu-prod.2026",
+    "value_b64": "b25ib2FyZGluZ190cmFuc2l0aW9uX3NpZ25hdHVyZV9wbGFjZWhvbGRlcl9waWxvdF8wMDM"
+  }
+}

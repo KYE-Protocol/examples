@@ -1,0 +1,59 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:platform:post-bypass-main-restore-2026-05-27",
+  "emitted_at": "2026-05-27T16:55:00Z",
+  "emitter": "kye:agent:post-bypass-main-restore-and-heartbeat-refine",
+  "framework_refs": [
+    "constitution/00-INDEX.md#0",
+    "constitution/00-INDEX.md#0.3",
+    "constitution/00-INDEX.md#0.4",
+    "constitution/48-SIGNAL-INGEST-CONTRACT.md#5.5.3",
+    "constitution/50-CONTENT-GRAPH-DISCOVERABILITY.md"
+  ],
+  "subject": "post-bypass-main-restore-and-heartbeat-refine-2026-05-27",
+  "mode": "static",
+  "run_id": "run_post_bypass_main_restore_2026_05_27_01HFC9ZX5MAINRESTORE",
+  "envelope_report_hash": "d2e3f4a5b6c70819234a5b6c7d8e9f01112233aabbccddeeff001122334455d3",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "derivative_artefacts_regenerated": [
+      "internal",
+      "public/site/platform-meta-index.json"
+    ],
+    "regenerators_run_clean": [
+      "scripts/sync-marketing-counters.mjs",
+      "scripts/build-page-registry.mjs",
+      "scripts/build-platform-meta-index.mjs",
+      "scripts/build-derived-nav.mjs",
+      "scripts/build-derived-search.mjs",
+      "scripts/build-sitemap.mjs"
+    ],
+    "heartbeat_refinement": {
+      "helper_path": "scripts/ci/subagent-heartbeat-check.mjs",
+      "default_threshold_min_before": 15,
+      "default_threshold_min_after": 1440,
+      "completion_detection_conditions_added": [
+        "inline_completion_envelope",
+        "stop_reason_end_turn",
+        "assistant_text_final_no_tool_use",
+        "user_interrupted"
+      ],
+      "silent_count_before": 42,
+      "silent_count_after_default_threshold": 0,
+      "silent_count_after_at_15min_threshold": 0,
+      "target_acceptance_max_silent_count": 30
+    },
+    "constitution_amendment_landed": "constitution/48-SIGNAL-INGEST-CONTRACT.md §5.5.3 (Refined completion detection — 2026-05-27)",
+    "npm_test_exit_code": 0,
+    "wave_size": "small (2 fixes; light instrumentation per §0.3 proportionality)"
+  },
+  "blocking_reconcilers": [
+    { "id": "ci-parity-runner",                    "verdict": "OK" },
+    { "id": "framework-coverage-bijection",        "verdict": "OK" },
+    { "id": "content-graph-coverage",              "verdict": "OK" },
+    { "id": "manifest-canonical",                  "verdict": "OK" },
+    { "id": "delegated-agent-binding-coverage",    "verdict": "OK" },
+    { "id": "no-spof-coverage",                    "verdict": "OK" }
+  ]
+}

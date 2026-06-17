@@ -1,0 +1,28 @@
+{
+  "schema": "kye.approval_brief.v1",
+  "id": "kye:approval-brief:payment-agent-scope-expansion.2026-05-14",
+  "version": 1,
+  "proposed_action": {
+    "action_id": "kye:proposed-action:expand-payment-agent-limit-50k",
+    "action_schema": "kye.proposed_action.v1",
+    "summary": "Expand acme-bank payment orchestrator per-transaction limit from $10k to $50k on FedNow rail, effective 2026-06-01."
+  },
+  "approver": "kye:person:acme-bank.cro",
+  "knowledge_snapshot_id": "kye:approver-knowledge-snapshot:payment-agent-scope-expansion.cro.2026-05-14",
+  "consequence_map_id":    "kye:consequence-map:payment-agent-scope-expansion.2026-05-14",
+  "supporting_scenario_runs": [
+    "kye:scenario-run:payment-agent-scope-expansion.2026-05-14"
+  ],
+  "recommended_decision": "approved_with_restrictions",
+  "validity": {
+    "not_before": "2026-05-14T10:00:00Z",
+    "not_after":  "2026-05-21T10:00:00Z"
+  },
+  "issued_at": "2026-05-14T09:30:00Z",
+  "issued_by": "kye:agent:approval-brief-assembler",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:approval-brief-2026-05",
+    "value_b64": "TG9yZW1hcHByb3ZhbEJyaWVmU2lnbmF0dXJlRXhhbXBsZV8x"
+  }
+}

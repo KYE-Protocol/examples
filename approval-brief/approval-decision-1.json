@@ -1,0 +1,28 @@
+{
+  "schema": "kye.approval_decision.v1",
+  "id": "kye:approval-decision:payment-agent-scope-expansion.2026-05-14",
+  "version": 1,
+  "approval_brief_id": "kye:approval-brief:payment-agent-scope-expansion.2026-05-14",
+  "approver": "kye:person:acme-bank.cro",
+  "decision": "approved_with_restrictions",
+  "decided_at": "2026-05-14T11:02:00Z",
+  "rationale": "Approved with restrictions pending beneficiary screening policy v3 retune. Risk score (0.34) and consequence profile acceptable given dual-control attestation in place.",
+  "restrictions": [
+    {
+      "restriction_id": "restr-001",
+      "summary": "Per-transaction limit increase deferred to 2026-06-01 effective date; no production traffic at $50k tier before that date.",
+      "expires_at": "2026-06-01T00:00:00Z"
+    },
+    {
+      "restriction_id": "restr-002",
+      "summary": "Beneficiary screening policy v3 must be retuned and attested before $50k tier goes live.",
+      "expires_at": "2026-06-01T00:00:00Z"
+    }
+  ],
+  "knowledge_snapshot_id": "kye:approver-knowledge-snapshot:payment-agent-scope-expansion.cro.2026-05-14",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:cro-acme-bank-2026-05",
+    "value_b64": "TG9yZW1hcHByb3ZhbERlY2lzaW9uU2lnbmF0dXJlRXhhbXBsZV8x"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "kye:drift-event:acme-bank.2026-04-15.agent-clio.001",
+  "version": 1,
+  "drift_class": "scope",
+  "detected_by": "kye:ent:acme-bank:monitor:scope-watch",
+  "severity": "high",
+  "evidence_ref": "kye:evidence-pack:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2Q",
+  "triggered_loop_iteration_id": "kye:loop-iter:acme-bank.resilience.2026-04-15.0007",
+  "detected_at": "2026-04-15T11:04:23Z",
+  "subject": "kye:ent:agent-clio",
+  "summary": "agent-clio attempted action 'transfer' outside scope [read, summarise, tag]"
+}

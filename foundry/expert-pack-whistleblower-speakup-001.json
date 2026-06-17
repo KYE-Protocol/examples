@@ -1,0 +1,66 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:whistleblower-speakup:v1",
+  "partner_id": "kye:foundry-applicant:whistleblower-speakup-reference-partner",
+  "pack_name": "KYE Whistleblower & Speak-Up Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "whistleblower-speakup",
+  "bound_sector_pack_refs": ["kye:sector-pack:whistleblower-speakup"],
+  "bound_rule_pack_refs": ["kye:rule-pack:whistleblower-speakup"],
+  "bound_dictionary_refs": ["kye:dictionary:whistleblower-speakup"],
+  "bound_framework_refs": [
+    "kye:framework:eu-whistleblower-directive",
+    "kye:framework:sox-806",
+    "kye:framework:dodd-frank-whistleblower",
+    "kye:framework:uk-pida",
+    "kye:framework:gdpr-whistleblower"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:whistleblower-speakup:2026-06-10",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-10T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-whistleblower-speakup-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:whistleblower-speakup:2026-06-10",
+  "claim_set": [
+    {
+      "claim_id": "report-access-authority",
+      "claim_text": "Every AI-assisted access that reveals a whistleblower reporter's identity or identifying content (a read, an unmasking, a routing that reveals the reporter, an export) MUST map to a recorded need-to-know named-authority decision — the agent, the report artefact, the intended access, and the named case-handler / ethics officer under whose authority and need-to-know it proceeds. Accesses lacking a recorded need-to-know authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "confidentiality-evidence-capture",
+      "claim_text": "Every reporter-identifying access and every consequential case action MUST emit a signed, replay-provable confidentiality Evidence Pack binding the need-to-know named-authority decision, the data-minimisation basis (what identifying fields were exposed and why), the accessing principal, and the access purpose under a context seal — reconstructable and valid at T=0, derivable from published keys alone, retained under WORM — the defensibility artefact a regulator, a court, or the reporter can verify offline when confidentiality is challenged.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "anti-retaliation-risk-record",
+      "claim_text": "Before any adverse HR / employment action that touches a known reporter — a termination, demotion, reassignment, discipline, performance-rating change, or denial of benefit affecting a person who made a protected disclosure — proceeds, a retaliation-risk assessment MUST be recorded as evidence (the reporter's protected-disclosure status, the proximity in time and decision-maker to the disclosure, the stated non-retaliatory basis, and the named assessing authority), so the anti-retaliation protections of SOX §806, Dodd-Frank, UK PIDA, and the EU Whistleblower Directive Art. 19 are defensible and the burden-of-proof record exists if challenged.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "case-disposition-authority",
+      "claim_text": "Every AI-assisted case disposition (close / dismiss / escalate / refer externally / substantiate) MUST map to a recorded named-authority decision — the agent, the case artefact, the intended disposition, and the named case-handler / ethics officer / disclosure-receiver under whose authority it proceeds — so the acknowledgement / feedback-clock and reasonable-follow-up obligations of the EU Whistleblower Directive Art. 9 / 11 and UK PIDA are met under a named, accountable authority.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "reporter-contestability-record",
+      "claim_text": "Every AI-assisted whistleblower / speak-up determination that proceeds to a consequential action MUST carry a contestability record — a stable determination identifier, the inputs and authority and evidence it rested on, and a reconstruction / challenge route — so that when the determination is challenged (a reporter alleging retaliation under SOX §806 / Dodd-Frank / UK PIDA, a confidentiality-breach complaint under the EU Whistleblower Directive Art. 16, a GDPR data-subject access or objection, a regulator inquiry) it can be reconstructed exactly as made and contested through a recorded route.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE + DEFENSIBILITY of AI-assisted whistleblower intake / triage / case-handling and PROVES it — who/what may access a report, who authorised closing or escalating, whether a retaliation-risk record exists before adverse action on a reporter, and whether any determination can be reconstructed and contested. KYE does NOT investigate the substance, judge the allegation, decide whether wrongdoing occurred, render the ethics opinion, or replace the ethics / legal / compliance officer.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-10T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

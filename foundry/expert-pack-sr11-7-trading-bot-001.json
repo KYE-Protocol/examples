@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:sr11-7-trading-bot:v1",
+  "partner_id": "kye:foundry-applicant:sr11-7-trading-bot-reference-partner",
+  "pack_name": "KYE Trading-Bot Model-Risk Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "sr11-7-trading-bot",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:sr11-7-trading-bot"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:sr11-7-trading-bot"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:sr11-7-trading-bot"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:us-sr11-7",
+    "kye:framework:eba",
+    "kye:framework:uk-pra-ss",
+    "kye:framework:uk-pra-ss1-23"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:sr11-7-trading-bot:2026-05-31",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-31T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-sr11-7-trading-bot-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:sr11-7-trading-bot:2026-05-31",
+  "claim_set": [
+    {
+      "claim_id": "model-validation-required",
+      "claim_text": "Every AI trading-bot model deployment or material parameter change MUST evidence independent validation sign-off. Unvalidated deployments are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "model-owner-required",
+      "claim_text": "Every AI trading-bot decision MUST map to a named model owner accountable under the model-risk framework. Absent designation refuses the decision.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "override-evidence-pack",
+      "claim_text": "Every model override or manual intervention MUST emit a signed, replay-derivable Evidence Pack binding owner identity, the principle discharged, and Authority Finality outcome.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "kill-switch-authority",
+      "claim_text": "Every kill-switch invocation or trading-halt action MUST be exercised by an authorised model owner under the prescribed authority. Unauthorised invocations are refused and routed dual-channel.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-31T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "decision_id": "kye:decision:acme.com:pdp:dec-20260514-001",
+  "entity_id": "kye:agent:acme.com:runtime:billing-agent-01",
+  "action": "capability:invoice-generate",
+  "policy_refs": [
+    "kye:policy:acme.com:billing:invoice-policy-v2"
+  ],
+  "decided_at": "2026-05-14T10:05:00Z"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "kye.policy_coverage_report.v1",
+  "report_id": "kye:policy-coverage:acme.example:001",
+  "coverage_result": "passed_with_gaps",
+  "coverage": [
+    { "area": "payment_actions",          "required_policy": "human_approval_above_threshold",   "status": "covered", "policy_id": "kye:policy:acme.example:payment-thresholds" },
+    { "area": "high_risk_ai_capabilities","required_policy": "human_oversight_required",         "status": "gap",     "reason_code": "required_policy_missing" },
+    { "area": "compromised_credentials",  "required_policy": "block_compromised_credential",     "status": "covered", "policy_id": "kye:policy:acme.example:credential-cascade" },
+    { "area": "expired_delegations",      "required_policy": "deny_expired_delegation",          "status": "covered", "policy_id": "kye:policy:acme.example:delegation-validity" },
+    { "area": "eu_ai_act_evidence",       "required_policy": "post_market_monitoring_emission",  "status": "covered", "policy_id": "kye:policy:acme.example:eu-ai-act-monitoring" }
+  ],
+  "checked_at": "2026-05-06T10:40:00Z"
+}

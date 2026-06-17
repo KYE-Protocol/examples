@@ -1,0 +1,72 @@
+{
+  "schema_version": "kye.pages_function_manifest.v1",
+  "manifest_id": "kye:pages-function-manifest:example",
+  "generated_at": "2026-05-30T00:00:00Z",
+  "constitution_refs": [
+    "constitution/02-INFORMATION-ARCHITECTURE.md",
+    "constitution/46-FLOW-CONTRACTS.md"
+  ],
+  "surface_counts": {
+    "admin": 2,
+    "app": 1
+  },
+  "baseline_uncovered": 1,
+  "baseline_set_at": "2026-05-30",
+  "handlers": [
+    {
+      "file_path": "public/admin/functions/api/v1/agent-library.js",
+      "surface": "admin",
+      "url_pattern": "/api/v1/agent-library",
+      "methods": ["GET"],
+      "operationId": "admin-list-agent-library",
+      "auth_required": "owner_only",
+      "purpose_check_required": false,
+      "schemas": {
+        "request_id": null,
+        "response_id": "kye.agent.library_entry.v1"
+      },
+      "audit_events_emitted": ["kye.agent.library_entry.v1"],
+      "rate_limit_class": "admin_default",
+      "tenant_scoped": false,
+      "status": "active"
+    },
+    {
+      "file_path": "public/admin/functions/api/v1/tenants.js",
+      "surface": "admin",
+      "url_pattern": "/api/v1/tenants",
+      "methods": ["GET", "POST"],
+      "operationId": "admin.listTenants",
+      "auth_required": "owner_only",
+      "purpose_check_required": true,
+      "schemas": {
+        "request_id": "kye.admin.tenant_create_request.v1",
+        "response_id": "kye.admin.tenant.v1"
+      },
+      "audit_events_emitted": [
+        "kye.purpose.request.v1",
+        "kye.evidence.decision_map.v1"
+      ],
+      "rate_limit_class": "admin_default",
+      "tenant_scoped": true,
+      "status": "active"
+    },
+    {
+      "file_path": "public/app/functions/api/v1/sessions/new.js",
+      "surface": "app",
+      "url_pattern": "/api/v1/sessions/new",
+      "methods": ["POST"],
+      "operationId": null,
+      "auth_required": "session",
+      "purpose_check_required": true,
+      "schemas": {
+        "request_id": null,
+        "response_id": null
+      },
+      "audit_events_emitted": [],
+      "rate_limit_class": "tenant_default",
+      "tenant_scoped": true,
+      "status": "active",
+      "notes": "Counts toward baseline_uncovered until an OpenAPI operationId is hand-authored."
+    }
+  ]
+}

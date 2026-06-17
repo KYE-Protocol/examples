@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:framework__jurisdiction:gdpr__eu",
+  "relationship_type": "member-of",
+  "source_class": "framework",
+  "source_id": "gdpr",
+  "target_class": "jurisdiction",
+  "target_id": "eu",
+  "cardinality": "many-to-many",
+  "bidirectional": true,
+  "weight": 0.95,
+  "evidence_basis": "GDPR (Reg. 2016/679) is EU-wide regulation in all member states.",
+  "effective_from": "2026-05-30",
+  "owners": ["KYE Compliance Authority"],
+  "status": "active"
+}

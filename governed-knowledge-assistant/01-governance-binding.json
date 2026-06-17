@@ -1,0 +1,20 @@
+{
+  "schema": "kye.agent.governance.v1",
+  "agent_id": "clinical-knowledge-assistant",
+  "parent_task": "7f3c0a91-2d4e-4b1a-9c6f-8a2b1e5d7c30",
+  "dispatched_at": "2026-06-03T08:41:10Z",
+  "purpose": "Answer one clinician's question about anticoagulation dosing by retrieving from the approved clinical-guideline corpus and citing the passages used; never write to any system of record.",
+  "scope": {
+    "read_paths": [
+      "corpus/clinical-guidelines/**",
+      "corpus/formulary/**"
+    ],
+    "write_paths": []
+  },
+  "mcp_allow_list": [
+    "clinical-knowledge-retriever"
+  ],
+  "constitutional_acknowledgement": ["§0", "§0.2", "§0.3", "§12", "§15", "§52"],
+  "binding_manifest_ref": "agent-governance/binding-manifest#clinical-knowledge-assistant",
+  "notes": "Illustrative emission shape for a third-party document-QA / RAG assistant governed at the KYE execution boundary. The empty write_paths makes it a read-only assistant — it may answer, never act on a system of record. The single MCP allow-list entry is the only retrieval surface it may call; any call outside it is a §52 violation that the completion ledger will surface."
+}

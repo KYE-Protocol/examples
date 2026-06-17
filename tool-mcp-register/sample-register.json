@@ -1,0 +1,162 @@
+{
+  "schema": "kye.tool_mcp_register.v1",
+  "register_id": "kye:tool-mcp-register:acme-financial:reg-2026-q2",
+  "tenant_id": "kye:tenant:acme-financial",
+  "version": 4,
+  "issued_at": "2026-05-29T00:00:00Z",
+  "not_before": "2026-05-29T00:00:00Z",
+  "not_after":  "2026-08-29T00:00:00Z",
+  "entries": [
+    {
+      "tool_id": "kye:tool:acme-financial:experimental-research-llm",
+      "tool_display_name": "Experimental research LLM connector",
+      "mcp_server_id": "kye:mcp-server:acme-financial:research-sandbox",
+      "mcp_server_display_name": "Acme Research Sandbox MCP",
+      "trust_tier": "tier-0-untrusted",
+      "permitted_agents": [
+        "kye:agent:acme-financial:research-explorer"
+      ],
+      "permitted_actions": ["search", "summarise"],
+      "data_access_scope": {
+        "classes": ["public-only"],
+        "regions": ["uk-south"],
+        "rate_limit_per_min": 30
+      },
+      "write_permissions": ["none"],
+      "approval_threshold": "single-approver",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json"
+      ],
+      "finality_conditions": [
+        "no-side-effect-permitted",
+        "session-bounded"
+      ],
+      "last_assurance_review": "2026-05-01",
+      "next_assurance_review": "2026-08-01",
+      "decay_deadline": "2026-08-29"
+    },
+    {
+      "tool_id": "kye:tool:acme-financial:sanctions-screener-sandbox",
+      "tool_display_name": "Sanctions screener (sandboxed)",
+      "mcp_server_id": "kye:mcp-server:acme-financial:risk-mcp",
+      "mcp_server_display_name": "Acme Risk MCP",
+      "trust_tier": "tier-1-sandboxed",
+      "permitted_agents": [
+        "kye:agent:acme-financial:onboarding-explorer"
+      ],
+      "permitted_actions": ["screen", "summarise"],
+      "data_access_scope": {
+        "classes": ["customer-pii-pseudonymous"],
+        "regions": ["uk-south", "eu-west"],
+        "rate_limit_per_min": 60
+      },
+      "write_permissions": ["none"],
+      "approval_threshold": "auto",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json"
+      ],
+      "finality_conditions": ["read-only", "session-bounded"],
+      "last_assurance_review": "2026-04-15",
+      "next_assurance_review": "2026-07-15"
+    },
+    {
+      "tool_id": "kye:tool:acme-financial:case-management-write",
+      "tool_display_name": "Case management write API",
+      "mcp_server_id": "kye:mcp-server:acme-financial:core-mcp",
+      "mcp_server_display_name": "Acme Core MCP",
+      "trust_tier": "tier-2-scoped",
+      "permitted_agents": [
+        "kye:agent:acme-financial:case-handler-assistant"
+      ],
+      "permitted_actions": ["read", "update-narrative", "update-status"],
+      "data_access_scope": {
+        "classes": ["customer-pii", "case-record"],
+        "regions": ["uk-south"],
+        "rate_limit_per_min": 120
+      },
+      "write_permissions": ["tenant-scoped-write"],
+      "approval_threshold": "single-approver",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.decision_map.v1.json"
+      ],
+      "finality_conditions": [
+        "write-bound-to-case-id",
+        "human-approver-recorded"
+      ],
+      "last_assurance_review": "2026-03-30",
+      "next_assurance_review": "2026-06-30"
+    },
+    {
+      "tool_id": "kye:tool:acme-financial:payment-rail-adapter",
+      "tool_display_name": "Faster Payments rail adapter",
+      "mcp_server_id": "kye:mcp-server:acme-financial:payments-mcp",
+      "mcp_server_display_name": "Acme Payments MCP",
+      "trust_tier": "tier-3-trusted",
+      "permitted_agents": [
+        "kye:agent:acme-financial:payment-orchestrator"
+      ],
+      "permitted_actions": ["submit", "reverse", "reconcile"],
+      "data_access_scope": {
+        "classes": ["payment-instruction", "wallet-state"],
+        "regions": ["uk-south"],
+        "rate_limit_per_min": 240
+      },
+      "write_permissions": ["external-side-effect"],
+      "approval_threshold": "two-person",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json",
+        "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.trace_replay_spec.v1.json",
+        "https://kyeprotocol.com/schemas/kye.compliance.attestation.v1.json"
+      ],
+      "finality_conditions": [
+        "two-person-approval-required-above-threshold",
+        "settled-or-reversed",
+        "replay-proof-derivable"
+      ],
+      "last_assurance_review": "2026-05-12",
+      "next_assurance_review": "2026-08-12"
+    },
+    {
+      "tool_id": "kye:tool:acme-financial:cross-org-settlement-bridge",
+      "tool_display_name": "Cross-org settlement bridge",
+      "mcp_server_id": "kye:mcp-server:acme-financial:federation-mcp",
+      "mcp_server_display_name": "Acme Federation MCP",
+      "trust_tier": "tier-3-trusted",
+      "permitted_agents": [
+        "kye:agent:acme-financial:federation-orchestrator"
+      ],
+      "permitted_actions": ["initiate-settlement", "release-funds"],
+      "data_access_scope": {
+        "classes": ["payment-instruction", "counterparty-record"],
+        "regions": ["uk-south", "eu-west"],
+        "rate_limit_per_min": 60
+      },
+      "write_permissions": ["external-side-effect", "system-of-record-write"],
+      "approval_threshold": "two-person-with-legal",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.federation.cross_org_delegation.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.trace_replay_spec.v1.json",
+        "https://kyeprotocol.com/schemas/kye.compliance.attestation.v1.json"
+      ],
+      "finality_conditions": [
+        "federation-chain-resolved",
+        "authority-finality-recorded",
+        "settlement-irreversible-after-finality"
+      ],
+      "last_assurance_review": "2026-05-20",
+      "next_assurance_review": "2026-08-20"
+    }
+  ],
+  "signature": {
+    "alg": "ed25519",
+    "value": "sample-register-2026-05-29-ed25519-signature-placeholder-resolved-by-signing-engine",
+    "key_id": "kye:signing-key:acme-financial-2026-q2"
+  }
+}

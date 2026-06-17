@@ -1,0 +1,46 @@
+{
+  "schema": "kye.assurance.audit_replay_report.v1",
+  "id": "kye:audit-replay-report:b3a1f4c7d2e09584",
+  "version": 1,
+  "issued_at": "2026-05-12T14:30:00Z",
+  "signed_by": "kye:agent:audit-replay-orchestrator",
+  "batch_id": "batch-2026-Q2-001",
+  "total_packs": 250,
+  "equivalent_packs": 248,
+  "divergent_packs": 2,
+  "divergence_rate": 0.008,
+  "per_rule_bundle": [
+    {
+      "rule_bundle_id": "kye:rules:payments-v3",
+      "total_packs": 120,
+      "equivalent_packs": 119,
+      "divergent_packs": 1,
+      "divergence_rate": 0.008333
+    },
+    {
+      "rule_bundle_id": "kye:rules:supplier-v2",
+      "total_packs": 130,
+      "equivalent_packs": 129,
+      "divergent_packs": 1,
+      "divergence_rate": 0.007692
+    }
+  ],
+  "per_tenant": [
+    {
+      "tenant_id": "kye:tenant:acme-bank",
+      "total_packs": 250,
+      "equivalent_packs": 248,
+      "divergent_packs": 2
+    }
+  ],
+  "divergent_pack_ids": [
+    "kye:evp:acme-bank.payment-2026-04-15.001",
+    "kye:evp:acme-bank.supplier-2026-04-29.014"
+  ],
+  "content_hash": "b3a1f4c7d2e09584a1c5d8e2f7901234567890abcdef1234567890abcdef1234",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:audit-replay-2026-05",
+    "value_b64": "TG9yZW10b29sb29Td2lsbE5vdEFwcGVhcmluVGhpc1NjaGVtYUV4YW1wbGVfMQ"
+  }
+}

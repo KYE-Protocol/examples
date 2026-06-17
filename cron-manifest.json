@@ -1,0 +1,21 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.cron_manifest.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:cron",
+  "adopted_at": "2026-05-30",
+  "description": "Example fixture mirroring the canonical cron manifest. Used by the §0.15 event-native-coverage gate as the schema-conformance witness. The real registry lives at internal",
+  "constitution_ref": "constitution/00-INDEX.md#section-0-15-event-native",
+  "publication_rule": { "policy": "public", "rationale": "Example fixture." },
+  "counts": { "total": 1 },
+  "crons": [
+    {
+      "cron_id": "kye:cron:liveness-heartbeat",
+      "workflow_path": ".github/workflows/liveness-heartbeat.yml",
+      "cron_expression": "0 */6 * * *",
+      "periodic_invariant": "liveness_heartbeat",
+      "rationale": "§44 Liveness Engine heartbeat probe. Silence MUST be detectable, and silence has no event to subscribe to.",
+      "constitution_ref": "constitution/44-LIVENESS-ENGINE.md",
+      "alternative_event_trigger_considered": "Push-based external monitor (rejected: would introduce a new SPOF row)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.image_provenance.v1",
+  "provenance_id": "kye:image-provenance:vgl-structured-example01",
+  "generated_at": "2026-06-12T09:00:00Z",
+  "source": "bria",
+  "model": "vgl",
+  "operation": "vgl_structured",
+  "request": {
+    "vgl": {
+      "objects": [
+        {
+          "type": "shield",
+          "label": "authority"
+        }
+      ],
+      "lighting": "studio",
+      "style": "kye-brand-purple"
+    }
+  },
+  "commercial_safety": {
+    "attested": true,
+    "basis": "Bria models are trained on licensed data and are commercially safe by construction; no copyright/IP-tainted training data in the produced asset."
+  },
+  "outcome": "generated",
+  "output": {
+    "content_sha256": "3817971e308949f7b2fd63d8aa71bf2ad7ad1bafa6e98dc3c331b7d52d2fb786",
+    "format": "png",
+    "width": 1200,
+    "height": 630,
+    "asset_ref": "public/site/assets/example-card.png"
+  },
+  "evidence_event_family": "kye.image_provenance.v1"
+}

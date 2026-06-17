@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.readme.v1.json",
+  "schema": "kye.readme.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+  "notes": [
+    "Illustrative kye.readme.v1 instance. The canonical full registry lives at internal"
+  ],
+  "readmes": [
+    {
+      "id": "kye:readme:example",
+      "path": "example/README.md",
+      "audience": "public",
+      "title": "Illustrative."
+    }
+  ]
+}

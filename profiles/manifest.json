@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:manifest",
+  "slug": "manifest",
+  "display_name": "KYE Manifest Profile™",
+  "layer": "domain",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "How installable / verifiable / billable units (connectors, widgets, SKUs, rule packs, sector packs, MCP tools) declare themselves. Adopted with §29 Phase 6 (Manifest-First). Every manifest MUST declare schema_version, registry_id, version, publication_rule, and conform to the registry-specific manifest schema.",
+  "required_objects": ["Manifest", "Rule", "Authority"],
+  "required_engines": ["kye:engine:manifest-runtime"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

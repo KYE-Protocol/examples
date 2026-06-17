@@ -1,0 +1,52 @@
+{
+  "schema": "kye.onboarding.kickoff_brief.v1",
+  "id": "kye:kickoff-brief:acme-bank.payments-agent.q3-2026",
+  "version": 1,
+  "workflow_id": "kye:onboarding-workflow:acme-bank.payments-agent.q3-2026",
+  "pilot_application_ref": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "pilot_scope": {
+    "agents_observed": [
+      "kye:agent:acme-bank.supplier-payment-agent.v3",
+      "kye:agent:acme-bank.procurement-copilot.v1"
+    ],
+    "stacks_bound": [
+      "kye:stack-binding:acme-bank.okta-prod",
+      "kye:stack-binding:acme-bank.kong-api-gateway",
+      "kye:stack-binding:acme-bank.temporal-workflow",
+      "kye:stack-binding:acme-bank.splunk-siem"
+    ],
+    "data_classes": ["financial.payments", "vendor.invoice", "vendor.master"],
+    "duration_days": 60
+  },
+  "target_workflows": [
+    "supplier_payment_agent",
+    "procurement_copilot"
+  ],
+  "observed_action_ingestion": {
+    "endpoint": "https://gateway.kyeprotocol.com/v1/observed-actions",
+    "binding_refs": [
+      "kye:stack-binding:acme-bank.kong-api-gateway",
+      "kye:stack-binding:acme-bank.temporal-workflow"
+    ],
+    "rate_cap_per_min": 600,
+    "data_residency": ["EU-WEST", "GB"]
+  },
+  "first_evidence_pack_ref": "kye:evp:acme-bank.payments-agent.q3-2026.first",
+  "first_observed_action_ref": "kye:observed-action:acme-bank.payments-agent.0001",
+  "first_shadow_evaluation_ref": "kye:shadow-eval:acme-bank.payments-agent.0001",
+  "first_authority_gap_ref": "kye:authority-gap:acme-bank.payments-agent.0001",
+  "recommended_next_stage": "evidence",
+  "scheduled_cadence": {
+    "weekly_review": "Wednesdays 10:00 CET — joint with Acme CISO + KYE operator",
+    "monthly_pack": "First business day of the month — signed pack delivered by 12:00 UTC",
+    "quarterly_sign_off": "Quarterly review with risk committee — Q3 sign-off targeted 2026-09-30"
+  },
+  "rendered_markdown_ref": "r2://kye-evidence-packs/onboarding/acme-bank.payments-agent.q3-2026.md",
+  "issued_at": "2026-05-12T14:02:55Z",
+  "signed_by": "kye:ent:kye-protocol.operator.eu-onboarding",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.operator-signer.eu-prod.2026",
+    "value_b64": "a2lja29mZl9icmllZl9zaWduYXR1cmVfcGxhY2Vob2xkZXJfYWNtZV9wYXltZW50c19hZ2VudA"
+  }
+}

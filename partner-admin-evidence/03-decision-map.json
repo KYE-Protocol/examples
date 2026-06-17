@@ -1,0 +1,24 @@
+{
+  "schema": "kye.evidence.decision_map.v1",
+  "id": "kye:decision-map:2026-05-28-partner-revoke-legacy-001",
+  "decision_id": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f",
+  "emitted_at": "2026-05-28T13:45:30Z",
+  "subject": "kye:partner:legacy-consulting-llp.9d1c4b",
+  "action": "revoke",
+  "edges": [
+    { "from": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB", "to": "kye:admissibility:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB", "kind": "request_admitted_by", "weight": 1.0 },
+    { "from": "kye:admissibility:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB", "to": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f", "kind": "decision_authorised_by", "weight": 1.0 },
+    { "from": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f", "to": "partner_entities.legacy-consulting-llp.9d1c4b.status:active->offboarding", "kind": "mutation_applied", "weight": 1.0 },
+    { "from": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f", "to": "kye:compliance-attestation:2026-05-28-partner-revoke-legacy-001", "kind": "evidence_emitted", "weight": 1.0 }
+  ],
+  "factors": {
+    "constitutional_basis": ["constitution/10-PARTNER.md §8.1", "constitution/00-INDEX.md §0.3", "constitution/00-INDEX.md §0.4"],
+    "framework_refs": ["partner-agreement-v1.4 §6.3 (lapsed-attestation revocation)", "SOC2 CC1.4"],
+    "blast_radius": ["partner_directory_listing", "deal_attribution_pipeline", "marketplace_listing_visibility"],
+    "compensating_actions": [
+      "kye.lifecycle.compensating.v1 enqueued: stop deal-attribution payouts at end of current period",
+      "kye.comms.dispatch.v1 enqueued: notify partner primary_contact_email of revocation + appeal window",
+      "kye.directory.entry.update.v1 enqueued: flip listing visibility to 'lapsed'"
+    ]
+  }
+}

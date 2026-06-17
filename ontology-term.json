@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.ontology_term.v1",
+  "term_id": "kye:term:authority:delegated_payment_authority",
+  "label": "Delegated Payment Authority",
+  "domain": "authority",
+  "definition": "Authority granted by a principal to an actor to prepare, request or execute payment-related actions within defined scope and state conditions.",
+  "preferred_name": "delegated_payment_authority",
+  "aliases": [
+    "payment mandate",
+    "payment delegation",
+    "agent payment permission"
+  ],
+  "related_terms": [
+    { "relationship": "requires", "term_id": "kye:term:capability:payment_initiation" },
+    { "relationship": "constrained_by", "term_id": "kye:term:scope:amount_limit" },
+    { "relationship": "evidenced_by", "term_id": "kye:term:evidence:evidence_pack" }
+  ],
+  "not_equivalent_to": [
+    "kye:term:authn:login_session",
+    "kye:term:legal:power_of_attorney"
+  ],
+  "profile_refs": [
+    "kye:profile:payment",
+    "kye:profile:open_finance",
+    "kye:profile:agent_runtime"
+  ],
+  "status": "active",
+  "created_at": "2026-05-09T00:00:00Z"
+}

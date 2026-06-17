@@ -1,0 +1,37 @@
+{
+  "id": "kye:regulator-subpoena-response:acme-health:20260524T140000Z",
+  "version": 1,
+  "tenant_id": "kye:tenant:acme-health",
+  "regulator_term": "opc",
+  "subpoena_ref": "OPC-2026-00042",
+  "scope": {
+    "jurisdiction_canonical": "canada",
+    "from": "2026-04-01T00:00:00Z",
+    "to": "2026-05-01T00:00:00Z",
+    "subject_filter": {
+      "subject_urns": ["kye:subject:patient-9631119"],
+      "action_classes": ["ai_assisted_diagnosis", "automated_dose_recommendation"]
+    }
+  },
+  "evidence_pack_ids": [
+    "kye:evidence-pack:acme-health:dx-2026-04-12-7e2a",
+    "kye:evidence-pack:acme-health:dx-2026-04-19-b41f",
+    "kye:evidence-pack:acme-health:rx-2026-04-22-d09c"
+  ],
+  "evidence_pack_count": 3,
+  "redactions": [
+    {
+      "evidence_pack_id": "kye:evidence-pack:acme-health:dx-2026-04-12-7e2a",
+      "field_path": "/inputs_blob_ref/free_text_clinical_notes",
+      "exemption_basis": "PIPEDA s.9(3)(c) — third-party personal information"
+    }
+  ],
+  "responded_at": "2026-05-24T14:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

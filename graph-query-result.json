@@ -1,0 +1,38 @@
+{
+  "schema_version": "kye.graph_query_result.v1",
+  "query_id": "kye:graph-query:acme.example:authority-path:01HXGRAPHQUERY00000000000A",
+  "query_type": "authority_path",
+  "request": {
+    "actor": "kye:agent:acme.example:finance-agent-007",
+    "principal": "kye:org:acme.example",
+    "action": "payment.prepare",
+    "max_depth": 6
+  },
+  "issued_at": "2026-05-05T22:30:00Z",
+  "nodes": [
+    { "node_id": "n1", "node_type": "ai_agent",        "ref": "kye:agent:acme.example:finance-agent-007",   "labels": ["ai_agent","production"], "state": { "entity_state": "active", "authority_state": "scoped" } },
+    { "node_id": "n2", "node_type": "delegation",      "ref": "kye:delegation:acme.example:abc",             "state": { "delegation_state": "active" } },
+    { "node_id": "n3", "node_type": "organisation",    "ref": "kye:org:acme.example",                        "state": { "entity_state": "active" } },
+    { "node_id": "n4", "node_type": "authority_grant", "ref": "kye:authority:grant:acme.example:123",        "state": { "authority_state": "scoped" } },
+    { "node_id": "n5", "node_type": "scope",           "ref": "kye:scope:acme.example:finance-prod" },
+    { "node_id": "n6", "node_type": "capability",      "ref": "kye:capability:acme.example:skill:invoice-reconciliation", "state": { "capability_state": "active" } }
+  ],
+  "edges": [
+    { "from": "n1", "to": "n2", "edge_type": "acts_on_behalf_of",  "state": "active",  "evidence_refs": ["kye:evidence-pack:acme.example:delegation-contract-001"] },
+    { "from": "n2", "to": "n3", "edge_type": "delegates_to",       "state": "active" },
+    { "from": "n3", "to": "n4", "edge_type": "grants_authority_to","state": "active" },
+    { "from": "n4", "to": "n5", "edge_type": "scoped_to",          "state": "active" },
+    { "from": "n4", "to": "n6", "edge_type": "authorises_capability", "state": "active", "policy_refs": ["kye:policy:acme.example:prod-capability-execution"] },
+    { "from": "n1", "to": "n6", "edge_type": "uses_capability",    "state": "active" }
+  ],
+  "summary": {
+    "node_count": 6,
+    "edge_count": 6,
+    "max_depth": 4,
+    "result_status": "complete"
+  },
+  "evidence_refs": [
+    "kye:evidence:acme.example:authority-grant-123",
+    "kye:evidence:acme.example:capability-manifest-456"
+  ]
+}

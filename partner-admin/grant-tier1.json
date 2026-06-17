@@ -1,0 +1,13 @@
+{
+  "schema": "kye.partner_admin_action.v1",
+  "action_id": "kye:partner-admin-action:7c1f5a90-3d8e-4b2a-9c6f-1a2b3c4d5e6f",
+  "partner_id": "kye:partner:northshore-advisory.a1b2c3",
+  "action_type": "grant",
+  "tier": "T1",
+  "reason": "Application reviewed; identity verification complete; Partner Agreement signed 2026-05-21; sandbox conformance run kye:run:2026-05-22-northshore passed all 17 KYE Certified Partner T1 gates. Granting Tier-1 baseline.",
+  "performer_id": "owner+ops@kyeprotocol.com",
+  "second_approver_id": null,
+  "evidence_pack_id": "kye:evidence-pack:2026-05-28-partner-grant-northshore-001",
+  "attestation_id": "kye:compliance-attestation:2026-05-28-partner-grant-northshore-001",
+  "performed_at": "2026-05-28T09:14:22Z"
+}

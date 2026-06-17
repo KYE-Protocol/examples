@@ -1,0 +1,13 @@
+{
+  "schema": "kye.white_label_config.v1",
+  "id": "kye:white-label-config:01HZN4WL-acme-trust-partners",
+  "consultant_id": "kye:consultant:acme-trust-partners-eleanor-vance",
+  "brand_name": "Acme Trust Partners — Governance Practice",
+  "logo_url": "https://governance.acmetrust.eu/brand/logo.svg",
+  "primary_color": "#4B3FA8",
+  "accent_color": "#C0C6CF",
+  "custom_domain": "governance.acmetrust.eu",
+  "footer_text": "Powered by KYE Protocol™. Cryptographic provenance is preserved on every signed evidence pack.",
+  "locked_surfaces": ["evidence_pack", "signature_block", "kye_attribution"],
+  "created_at": "2026-02-10T10:00:00Z"
+}

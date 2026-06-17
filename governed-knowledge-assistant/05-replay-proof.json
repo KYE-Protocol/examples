@@ -1,0 +1,13 @@
+{
+  "id": "kye:replay-proof:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "version": 1,
+  "seal_ref": "kye:replay-seal:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "claimed_decision_map_ref": "kye:decision-map:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
+  "claimed_decision_map_hash": "sha256:7e8f9012345678abcdef0123456789abcdef0102030405060708091011121314",
+  "recomputed_decision_map_hash": "sha256:7e8f9012345678abcdef0123456789abcdef0102030405060708091011121314",
+  "equivalent": true,
+  "diff_ref": null,
+  "signed_by": "kye:ent:mercy-health:engine:replay",
+  "signed_at": "2026-06-03T09:02:55Z",
+  "signature": "sig:cose:replay:MEUCIQDi6Dw9E1x6U2vX8eC0aQ5dK7hT"
+}

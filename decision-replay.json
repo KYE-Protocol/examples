@@ -1,0 +1,20 @@
+{
+  "schema_version": "kye.decision_replay.v1",
+  "replay_id": "kye:replay:acme.example:decision_987",
+  "decision_id": "kye:decision:acme.example:987",
+  "original_decision": "allow",
+  "replayed_decision": "allow",
+  "result": "match",
+  "replay_mode": "historical_state_snapshot",
+  "checked_items": {
+    "actor_state":      "matched",
+    "principal_state":  "matched",
+    "delegation_state": "matched",
+    "authority_grant":  "matched",
+    "capability_state": "matched",
+    "policy_version":   "matched",
+    "reason_code":      "matched",
+    "audit_hash":       "valid"
+  },
+  "replayed_at": "2026-05-06T10:30:00Z"
+}

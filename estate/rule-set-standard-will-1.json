@@ -1,0 +1,42 @@
+{
+  "schema": "kye.estate.rule_set.v1",
+  "rule_set_id": "kye:estate:rule_set:standard-will-v1",
+  "rule_set_version": "1.0.0",
+  "matter_type": "will_standard",
+  "jurisdiction": "GB-EAW",
+  "rules": [
+    {
+      "rule_id": "kye:estate:rule:will-standard-revocation",
+      "summary": "Always include the revocation clause for a standard will.",
+      "when": { "expression_kind": "literal_true", "expression": true },
+      "select_clauses": ["kye:estate:clause:will-revocation-v1"],
+      "boundary_hint": "within_adviser_authority"
+    },
+    {
+      "rule_id": "kye:estate:rule:will-standard-residuary-50-50",
+      "summary": "Residuary 50/50 between two adult non-vulnerable children.",
+      "when": {
+        "expression_kind": "jsonlogic",
+        "expression": {
+          "and": [
+            { "==": [ { "var": "matter_type" }, "will_standard" ] },
+            { "==": [ { "var": "beneficiaries.length" }, 2 ] }
+          ]
+        }
+      },
+      "select_clauses": ["kye:estate:clause:will-residuary-50-50-v1"],
+      "boundary_hint": "within_adviser_authority"
+    },
+    {
+      "rule_id": "kye:estate:rule:will-standard-amber-requires-manager-review",
+      "summary": "Any amber finding on a will_standard escalates to manager review.",
+      "when": {
+        "expression_kind": "jsonlogic",
+        "expression": { "==": [ { "var": "case_check.severity" }, "amber" ] }
+      },
+      "select_clauses": ["kye:estate:clause:will-attestation-clause-v1"],
+      "boundary_hint": "manager_review_required"
+    }
+  ],
+  "notes": "Reference rule set for the standard-will matter type in England and Wales."
+}

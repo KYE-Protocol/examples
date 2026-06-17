@@ -1,0 +1,72 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:roadmap-ai-adoption-healthcare-2026-06",
+  "series": "roadmap_to_ai_adoption",
+  "format": "quick_guide",
+  "sector": "healthcare",
+  "audience": "dpo",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "Roadmap to AI Adoption in Healthcare — June 2026 Edition",
+  "tribute_ref": "kye:scientist-tribute:shafi-goldwasser",
+  "topic_id": "kye:research-topic:ai-adoption-healthcare-monthly",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:ai-adoption-healthcare:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "BBkMbETNTzTttIY/CzyjPdTHI5Z4JltOyKsGxhsFxkDFqyXZ3Ynu/o8DJhko9J0VDepzDkUoYJsXgZnppyI8Cw=="
+  },
+  "citations": [
+    {
+      "claim": "Health data is special-category data under GDPR Article 9: processing is prohibited unless a specific Article 9(2) condition applies, on top of an Article 6 lawful basis.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "retrieved_at": "2026-06-10T09:00:00Z",
+      "publisher": "Official Journal of the European Union"
+    },
+    {
+      "claim": "Software intended to inform diagnosis or treatment is a medical device that must be CE-marked under the EU Medical Device Regulation (EU) 2017/745 before being placed on the market.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj",
+      "retrieved_at": "2026-06-10T09:00:00Z",
+      "publisher": "Official Journal of the European Union"
+    },
+    {
+      "claim": "The MHRA regulates software and AI as a medical device in the UK and has set out a programme to reform how such products are regulated.",
+      "source_url": "https://www.gov.uk/government/publications/software-and-ai-as-a-medical-device-change-programme",
+      "retrieved_at": "2026-06-10T09:00:00Z",
+      "publisher": "Medicines and Healthcare products Regulatory Agency"
+    },
+    {
+      "claim": "The EU AI Act classifies AI systems that are, or are a safety component of, a regulated medical device as high-risk, attaching risk-management, data-governance, logging and human-oversight obligations to the deployer.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-10T09:00:00Z",
+      "publisher": "Official Journal of the European Union"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework organises trustworthy-AI practice into four functions — Govern, Map, Measure, Manage — that healthcare deployers adapt as the backbone of an AI governance programme.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_at": "2026-06-10T09:00:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-15T08:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": true
+  },
+  "status": "published"
+}

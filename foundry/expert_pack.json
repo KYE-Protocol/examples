@@ -1,0 +1,62 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:meridian-clinical-risk:v1",
+  "partner_id": "kye:foundry-applicant:meridian-clinical-risk",
+  "pack_name": "Meridian Clinical Risk Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "clinical-decision-support",
+  "bound_sector_pack_refs": [
+    "kye:sector-pack:health-clinical-decision-support"
+  ],
+  "bound_rule_pack_refs": [
+    "kye:rule-pack:dcb-0129-clinical-safety-case",
+    "kye:rule-pack:iso-14971-hazard-log",
+    "kye:rule-pack:mhra-pms-2025-clinical"
+  ],
+  "bound_dictionary_refs": [
+    "kye:dictionary:clinical-hazard-classes",
+    "kye:dictionary:trust-safety-roles"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:mhra-samd-change-programme",
+    "kye:framework:mhra-pms-2025"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:meridian-clinical-risk:2026-05-29",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-05-29T12:00:00Z",
+      "reason_ref": "kye:foundry:application:a8c7e3d1-90a4-4b6c-9b1d-3e5f7d9a4b21"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:meridian-clinical-risk:2026-05-29",
+  "claim_set": [
+    {
+      "claim_id": "canonical-clinical-safety-case",
+      "claim_text": "Provides the canonical clinical-risk safety case for AI-assisted clinical decision support deployed under DCB0129/0160 assurance.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "evidence-pack-bijection",
+      "claim_text": "Every per-deployment evidence pack is bijective with the Trust safety officer's acceptance checklist.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "pms-on-audit-chain",
+      "claim_text": "Post-market surveillance artefacts emit on the §0.3 audit chain (PMS plan, incident log, trend report).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "replay-proof-derivable",
+      "claim_text": "Replay-Proof™ derivable from public keys alone for every clinical-safety acceptance decision.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-05-29T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-PLACEHOLDER-FIXTURE-VALUE-ONLY"
+  }
+}

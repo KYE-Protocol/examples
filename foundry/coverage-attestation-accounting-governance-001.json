@@ -1,0 +1,36 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-accounting-governance-coverage:2026-06-08",
+  "emitted_at": "2026-06-08T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "COMPANIES_ACT_2006",
+    "UK_GAAP_FRS102",
+    "ISA_UK",
+    "FRC_ETHICAL_STANDARD",
+    "SOX_404",
+    "UK_MTD"
+  ],
+  "subject": "kye:powered-pack:accounting-governance:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-accounting-governance-001-coverage-2026-06-08",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:accounting-governance:v1",
+    "claim_count": 5,
+    "bound_rule_packs": ["kye:rule-pack:accounting-governance"],
+    "bound_dictionaries": ["kye:dictionary:accounting-governance"],
+    "bound_sector_packs": ["kye:sector-pack:accounting-governance"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

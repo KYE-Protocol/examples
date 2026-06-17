@@ -1,0 +1,45 @@
+{
+  "schema_id": "kye.search_result.v1",
+  "query_id": "kye:search-query:acme-bank-eu-ai-act-consultants-2026-05-17",
+  "tenant_id": "kye:tenant:acme-bank",
+  "caller_kid": "kye:kid:acme-bank-cloud-console-2026-q2",
+  "index_name": "consultants",
+  "query_text": "EU AI Act readiness financial services",
+  "classification_floor": "internal",
+  "risk_tier_max": "high",
+  "served_at": "2026-05-17T14:30:00Z",
+  "search_mode": "hybrid",
+  "result_count": 3,
+  "results": [
+    {
+      "id": "kye:consultant:catherine-langford",
+      "score": 0.92,
+      "classification": "public",
+      "risk_tier": "limited",
+      "snippet": "EU AI Act readiness lead for tier-1 banks; 14 years prudential regulatory practice; CCO-track.",
+      "projection": { "display_name": "Catherine Langford", "country": "GB", "certification_level": "advanced" }
+    },
+    {
+      "id": "kye:consultant:marcus-okonkwo",
+      "score": 0.87,
+      "classification": "public",
+      "risk_tier": "limited",
+      "snippet": "EU AI Act + DORA combined readiness; payments + custody focus; UK + EU bar admissions.",
+      "projection": { "display_name": "Marcus Okonkwo", "country": "GB", "certification_level": "advanced" }
+    },
+    {
+      "id": "kye:consultant:elena-rosetti",
+      "score": 0.81,
+      "classification": "public",
+      "risk_tier": "limited",
+      "snippet": "Banca d'Italia veteran; EU AI Act conformity assessment specialist for retail-banking AI agents.",
+      "projection": { "display_name": "Elena Rosetti", "country": "IT", "certification_level": "certified" }
+    }
+  ],
+  "filtered_out": {
+    "by_classification_floor": 0,
+    "by_risk_tier_max": 1,
+    "by_entitlement": 0
+  },
+  "signature_b64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QA=="
+}

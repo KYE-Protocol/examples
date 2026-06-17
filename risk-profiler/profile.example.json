@@ -1,0 +1,201 @@
+{
+  "schema": "kye.authority_risk_profile.v1",
+  "profile_id": "kye:authority-risk-profile:acme-bank-q3",
+  "input_ref": "kye:risk-profile-req:acme-bank-q3",
+  "tenant_id": "kye:trust-domain:acme-bank",
+  "overall": {
+    "risk_tier": "high",
+    "risk_score": 58,
+    "posture_summary": "8/10 lifecycle stages ungoverned across 11 included item(s); 5 top exposure(s). Risk tier: high."
+  },
+  "lifecycle_coverage": [
+    {
+      "lifecycle_stage": "intent",
+      "coverage": "governed"
+    },
+    {
+      "lifecycle_stage": "action-admissibility",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for action-admissibility."
+    },
+    {
+      "lifecycle_stage": "authority-resolution",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for authority-resolution."
+    },
+    {
+      "lifecycle_stage": "delegation-scope",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for delegation-scope."
+    },
+    {
+      "lifecycle_stage": "execution-control",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for execution-control."
+    },
+    {
+      "lifecycle_stage": "evidence",
+      "coverage": "governed"
+    },
+    {
+      "lifecycle_stage": "finality",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for finality."
+    },
+    {
+      "lifecycle_stage": "reality-coupling",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for reality-coupling."
+    },
+    {
+      "lifecycle_stage": "contestability",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for contestability."
+    },
+    {
+      "lifecycle_stage": "renewal-revocation",
+      "coverage": "ungoverned",
+      "gap_note": "No declared control for renewal-revocation."
+    }
+  ],
+  "top_exposures": [
+    {
+      "subject_ref": "agent:underwriting-copilot",
+      "subject_kind": "agent",
+      "exposure": "high",
+      "reason_code": "spawns-subagents"
+    },
+    {
+      "subject_ref": "agent:ops-assistant",
+      "subject_kind": "agent",
+      "exposure": "high",
+      "reason_code": "self-modifying-agent"
+    },
+    {
+      "subject_ref": "tool:payments",
+      "subject_kind": "tool",
+      "exposure": "limited",
+      "reason_code": "high-risk-tool"
+    },
+    {
+      "subject_ref": "tool:code-exec",
+      "subject_kind": "tool",
+      "exposure": "limited",
+      "reason_code": "high-risk-tool"
+    },
+    {
+      "subject_ref": "wf:claim-payout",
+      "subject_kind": "workflow",
+      "exposure": "limited",
+      "reason_code": "consequential-no-dual-control"
+    }
+  ],
+  "recommended_controls": [
+    {
+      "lifecycle_stage": "action-admissibility",
+      "control": "Action Admissibility™ check at the execution boundary."
+    },
+    {
+      "lifecycle_stage": "authority-resolution",
+      "control": "Resolve who/what is acting on whose behalf."
+    },
+    {
+      "lifecycle_stage": "delegation-scope",
+      "control": "Explicit, scoped, revocable delegation envelopes."
+    },
+    {
+      "lifecycle_stage": "execution-control",
+      "control": "Pre-commit execution control with kill-switch."
+    },
+    {
+      "lifecycle_stage": "finality",
+      "control": "Authority Finality™ — deny finality on oversight failure."
+    },
+    {
+      "lifecycle_stage": "reality-coupling",
+      "control": "Reality Coupling™ — revalidate when grounding drifts."
+    },
+    {
+      "lifecycle_stage": "contestability",
+      "control": "A contestation / dispute route for every action."
+    },
+    {
+      "lifecycle_stage": "renewal-revocation",
+      "control": "Revocation that propagates, provably."
+    }
+  ],
+  "estate_findings": [
+    {
+      "dimension": "bottleneck",
+      "severity": "high",
+      "subject_refs": [
+        "tool:payments",
+        "agent:claims-triage-a",
+        "agent:claims-triage-b",
+        "agent:fraud-bot",
+        "agent:ops-assistant",
+        "agent:underwriting-copilot"
+      ],
+      "detail": "5 agents route through tool:payments — a single point of dependency."
+    },
+    {
+      "dimension": "clutter",
+      "severity": "low",
+      "subject_refs": [
+        "agent:claims-triage-a",
+        "agent:claims-triage-b"
+      ],
+      "detail": "Agents agent:claims-triage-a, agent:claims-triage-b have identical tool-sets — redundant authority."
+    },
+    {
+      "dimension": "clutter",
+      "severity": "low",
+      "subject_refs": [
+        "agent:fraud-bot",
+        "agent:ops-assistant"
+      ],
+      "detail": "Agents agent:fraud-bot, agent:ops-assistant have identical tool-sets — redundant authority."
+    },
+    {
+      "dimension": "concentration",
+      "severity": "medium",
+      "subject_refs": [
+        "agent:underwriting-copilot",
+        "tool:code-exec",
+        "tool:payments"
+      ],
+      "detail": "Agent agent:underwriting-copilot wields 2 high-risk tools — authority concentrated."
+    },
+    {
+      "dimension": "overlap",
+      "severity": "medium",
+      "subject_refs": [
+        "agent:claims-triage-a",
+        "agent:claims-triage-b",
+        "tool:crm"
+      ],
+      "detail": "2 agents share the tool tool:crm — overlapping authority paths."
+    },
+    {
+      "dimension": "painpoint",
+      "severity": "high",
+      "subject_refs": [
+        "agent:ops-assistant"
+      ],
+      "detail": "Agent agent:ops-assistant holds a high-risk tool with weak oversight (no human approval or undeclared principal)."
+    },
+    {
+      "dimension": "painpoint",
+      "severity": "high",
+      "subject_refs": [
+        "agent:underwriting-copilot"
+      ],
+      "detail": "Agent agent:underwriting-copilot holds a high-risk tool with weak oversight (no human approval or undeclared principal)."
+    }
+  ],
+  "evidence": {
+    "scorer_version": "risk-profiler-score/1.1.0",
+    "input_sha256": "2e1ada06fcf4b15da90f0b92d501921c6978b5bb5905cb007bddbc15e8866651"
+  },
+  "generated_at": "2026-06-05T00:00:00Z"
+}

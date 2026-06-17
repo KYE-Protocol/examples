@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.dashboard.v1.json",
+  "schema": "kye.dashboard.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/08-APPS-DASHBOARDS.md",
+  "notes": [
+    "Illustrative kye.dashboard.v1 instance. The canonical full registry lives at internal"
+  ],
+  "dashboards": [
+    {
+      "id": "kye:dashboard:example",
+      "audience": "customer",
+      "name": "Example Dashboard",
+      "surface": "public/app/example.html",
+      "realtime": false,
+      "description": "Illustrative dashboard."
+    }
+  ]
+}

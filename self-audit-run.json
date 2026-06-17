@@ -1,0 +1,36 @@
+{
+  "schema_version": "kye.self_audit_run.v1",
+  "self_audit_id": "kye:self-audit:acme.example:run_001",
+  "implementation_id": "kye:implementation:acme.example:agent-runtime",
+  "organisation_entity_id": "kye:org:acme.example",
+  "kye_core_version": "1.0.0",
+  "profiles_tested": [
+    "kye.core.v1",
+    "kye.authority.v1",
+    "kye.capability.v1",
+    "kye.evidence.v1",
+    "kye.graph.v1"
+  ],
+  "started_at":   "2026-05-06T10:00:00Z",
+  "completed_at": "2026-05-06T10:04:13Z",
+  "result": "passed_with_warnings",
+  "summary": {
+    "tests_total": 240,
+    "tests_passed": 232,
+    "tests_failed": 0,
+    "warnings": 8,
+    "critical_findings": 0
+  },
+  "findings": [
+    {
+      "finding_id": "finding_001",
+      "severity": "low",
+      "area": "webhook",
+      "reason_code": "webhook_retry_policy_missing",
+      "message": "Webhook retry policy is not declared in the implementation profile."
+    }
+  ],
+  "evidence_refs": [
+    "kye:evidence-pack:acme.example:self-audit-001"
+  ]
+}

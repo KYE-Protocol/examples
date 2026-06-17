@@ -1,0 +1,45 @@
+{
+  "schema_version": "kye.authority_gate.v1",
+  "gate_id": "kye:gate:payment_execute",
+  "display_name": "Payment Execution Gate",
+  "gate_type": "payment_execution",
+  "description": "Runtime gate before a prepared payment becomes an executed payment.",
+  "applies_to_capabilities": [
+    "payment.execute",
+    "open_banking.payment_initiate",
+    "card_purchase.confirm"
+  ],
+  "risk_level": "high",
+  "trigger_conditions": {
+    "side_effect_level": "move_money",
+    "environment": "production",
+    "amount_threshold": { "value": 0, "currency": "GBP" }
+  },
+  "decision_policy": {
+    "default_decision": "require_approval",
+    "allowed_decisions": ["allow", "deny", "require_approval", "require_step_up", "quarantine"]
+  },
+  "required_checks": [
+    "actor_identity",
+    "principal_authority",
+    "authority_grant",
+    "scope",
+    "state",
+    "continuity",
+    "evidence"
+  ],
+  "required_evidence": [
+    "decision_map",
+    "state_snapshot",
+    "authority_grant",
+    "payload_hash",
+    "approval_event",
+    "evidence_pack"
+  ],
+  "signal_events": [
+    "kye.authority_gate.triggered",
+    "kye.decision.requires_approval",
+    "kye.evidence_pack.generated"
+  ],
+  "status": "active"
+}

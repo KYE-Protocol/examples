@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:turncoat-agents-insider-threat-2026-06",
+  "series": "roadmap_to_agentic_ai",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "ciso",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "Turncoat agents: the AI insider threat — and why authority, not trust, is the control",
+  "tribute_ref": "kye:scientist-tribute:leslie-lamport",
+  "topic_id": "kye:research-topic:turncoat-agents-insider-threat",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:turncoat-agents-insider-threat:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "VIMrS2u2sQZdngAmWP7i35FdRLeICi+mar4nizva3tYr160bB1yQd4vGklWOIzgg7Ogzjht8jZ2wdjrZoMogCA=="
+  },
+  "citations": [
+    {
+      "claim": "AI agents are described as 2026's biggest insider threat: a single well-crafted prompt injection or a tool-misuse vulnerability can turn a trusted autonomous agent into an autonomous insider at an attacker's command — able to silently execute trades, delete backups, or exfiltrate a customer database — and roughly 40% of enterprise applications are expected to integrate task-specific AI agents by the end of 2026, up from under 5% in 2025.",
+      "source_url": "https://www.theregister.com/2026/01/04/ai_agents_insider_threats_panw/",
+      "retrieved_at": "2026-06-15T00:00:00Z",
+      "publisher": "The Register, reporting comments by Palo Alto Networks' Chief Security Intelligence Officer. Cited as published security commentary, not as a security or compliance recommendation by KYE Protocol™."
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of an AI system, discharged at the point of use rather than in a later review.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-15T00:00:00Z",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-15T09:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "kye.estate.fact_find_template.v1",
+  "fact_find_template_id": "kye:estate:fact_find_template:standard-will-v1",
+  "template_version": "1.0.0",
+  "matter_type": "will_standard",
+  "jurisdiction": "GB-EAW",
+  "sections": [
+    {
+      "section_id": "client",
+      "section_title": "Client details",
+      "fields": [
+        { "field_path": "client.full_name", "field_kind": "string", "required": true, "label": "Full legal name" },
+        { "field_path": "client.date_of_birth", "field_kind": "date", "required": true, "label": "Date of birth" },
+        { "field_path": "client.address_country", "field_kind": "string", "required": true, "label": "Country of residence (ISO-3166)" },
+        { "field_path": "client.domicile_jurisdiction", "field_kind": "string", "required": true, "label": "Domicile jurisdiction" }
+      ]
+    },
+    {
+      "section_id": "executors",
+      "section_title": "Executors",
+      "fields": [
+        { "field_path": "executors[*].full_name", "field_kind": "string", "required": true, "label": "Executor full name" },
+        { "field_path": "executors[*].role", "field_kind": "enum", "required": true, "label": "Role", "enum_values": ["primary_executor", "substitute_executor"] }
+      ]
+    },
+    {
+      "section_id": "beneficiaries",
+      "section_title": "Beneficiaries",
+      "fields": [
+        { "field_path": "beneficiaries[*].full_name", "field_kind": "string", "required": true, "label": "Beneficiary full name" },
+        { "field_path": "beneficiaries[*].share_kind", "field_kind": "enum", "required": true, "label": "Share kind", "enum_values": ["pecuniary", "specific", "residuary", "contingent"] }
+      ]
+    }
+  ],
+  "notes": "Reference fact-find template for the standard-will matter type."
+}

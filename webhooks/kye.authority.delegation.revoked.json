@@ -1,0 +1,30 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:acme.example:01J4P9400E6FFGGHHIIIIIIIIII",
+  "event_class": "kye.authority.delegation.revoked",
+  "occurred_at": "2026-05-07T11:42:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme.example",
+    "trust_domain": "acme.example"
+  },
+  "delivery_id": "dlv_01J4P9400E6FFGGHHIIIIIIIIII",
+  "severity": "warn",
+  "payload": {
+    "grant_id": "kye:agr:acme.example:01J4P9300D5E",
+    "revoked_at": "2026-05-07T11:42:00Z",
+    "reason": "compromise_suspected",
+    "cascaded_from": null,
+    "cascaded_revocations": [
+      "kye:agr:acme.example:01J4P9300D5F",
+      "kye:agr:acme.example:01J4P9300D5G"
+    ],
+    "actor_entity_id": "kye:ent:acme.example:agent:onboarder-007",
+    "stop_signal_emitted": true
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "e5f607182a3b4c5d6e7f80910223344556677889900aabbccddeeff112233445",
+    "ts": "1746615720"
+  }
+}

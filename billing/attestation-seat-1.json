@@ -1,0 +1,16 @@
+{
+  "schema": "kye.billing.attestation_seat.v1",
+  "seat_id": "kye:attestation-seat:acme-bank.sr-11-7.2026",
+  "version": 1,
+  "customer_kyeid": "kye:ent:bank.acme",
+  "framework": "sr_11_7",
+  "framework_version": "2011 OCC SR 11-7 (Federal Reserve)",
+  "year": 2026,
+  "annual_fee_pence": 1500000,
+  "currency": "GBP",
+  "valid_from": "2026-04-01T00:00:00Z",
+  "valid_to": "2027-03-31T23:59:59Z",
+  "tenant_id": "kye:tenant:acme-bank",
+  "stripe_subscription_item_id": "si_1QABCDEFGHIJKLMN",
+  "status": "active"
+}

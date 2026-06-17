@@ -1,0 +1,34 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-insurance-claims-coverage:2026-06-06",
+  "emitted_at": "2026-06-06T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "FCA_CONSUMER_DUTY",
+    "EU_AI_ACT",
+    "UK_GDPR",
+    "DORA"
+  ],
+  "subject": "kye:powered-pack:insurance-claims:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-insurance-claims-001-coverage-2026-06-06",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:insurance-claims:v1",
+    "claim_count": 4,
+    "bound_rule_packs": ["kye:rule-pack:insurance-claims"],
+    "bound_dictionaries": ["kye:dictionary:insurance-claims"],
+    "bound_sector_packs": ["kye:sector-pack:insurance-claims"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "kye.dashboard.event.v1",
+  "event_id": "kye:dashboard-event:acme-h-2026-05-30T14-25-00-000Z-d18a",
+  "tenant_id": "kye:tenant:org_2vAcMeBank",
+  "subscription_id": "kye:dashboard-subscription:acme-2026-05-30T14-22-08Z-7af31c",
+  "event_class": "density_cell",
+  "emitted_at": "2026-05-30T14:25:00.000Z",
+  "payload": {
+    "day_of_week": 5,
+    "hour_of_day": 14,
+    "count": 47,
+    "window_start": "2026-05-23T00:00:00Z"
+  }
+}

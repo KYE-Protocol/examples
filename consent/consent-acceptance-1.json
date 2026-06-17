@@ -1,0 +1,17 @@
+{
+  "schema": "kye.consent.acceptance.v1",
+  "id": "kye:consent:pilot-apply.2026-05-12.a3f9b1",
+  "version": 1,
+  "subject_email_hash": "0d4f2a17ec5b9a3d8e02bf8a14e1112233445566778899aabbccddeeff001122",
+  "accepted_at": "2026-05-12T08:42:17Z",
+  "ip_hash": "9b8a7c6d5e4f3210112233445566778899aabbccddeeff0011223344556677",
+  "ua_hash": "1122334455667788991122334455667788991122334455667788991122334455",
+  "policy_version_hash": "f3a1c0b7d29e4561",
+  "accepted_clauses": ["tos", "privacy", "aup", "authority", "dpa"],
+  "form_id": "pilot-apply",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.consent-signer.eu-prod.2026",
+    "value_b64": "Y29uc2VudF9hY2NlcHRhbmNlX3NpZ25hdHVyZV9wbGFjZWhvbGRlcl9waWxvdF9hcHBseV8wMDE"
+  }
+}

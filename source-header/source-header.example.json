@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.source_header.v1.json",
+  "schema": "kye.source_header.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/33-IP-OSS-LINE.md",
+  "notes": [
+    "Illustrative kye.source_header.v1 instance. The canonical full registry lives at internal"
+  ],
+  "headers": [
+    {
+      "id": "kye:source-header:example",
+      "track": "oss",
+      "marker": "SPDX-License-Identifier: Apache-2.0",
+      "description": "Illustrative."
+    }
+  ]
+}

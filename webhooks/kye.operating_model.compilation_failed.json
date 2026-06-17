@@ -1,0 +1,28 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:acme.example:01J4P9F00P7QQRRSSTTTTTTTTTT",
+  "event_class": "kye.operating_model.compilation_failed",
+  "occurred_at": "2026-05-11T12:54:30Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme.example",
+    "trust_domain": "acme.example"
+  },
+  "delivery_id": "dlv_01J4P9F00P7QQRRSSTTTTTTTTTT",
+  "severity": "critical",
+  "payload": {
+    "om_id": "kye:operating-model:acme.example:credit:om-003",
+    "om_version": 3,
+    "lifecycle_state": "signed",
+    "compiler_version": "1.0.0",
+    "error_code": "missing_obligation_link",
+    "error_message": "Behaviour Model action 'credit.decline' references obligation 'explainability.attach' which is not declared in obligations[].",
+    "failed_at": "2026-05-11T12:54:30Z",
+    "attempted_by": "kye:ent:acme.example:role:platform-ops"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "910223344556677889900aabbccddeeff11223344556677889900aabbccddeef",
+    "ts": "1746964470"
+  }
+}

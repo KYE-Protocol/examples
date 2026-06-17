@@ -1,0 +1,23 @@
+{
+  "schema_version": "kye.risk.score.v1",
+  "id": "kye:risk_score:acme.20260515t110042.b7c2a9",
+  "tenant_id": "kye:tenant:acme",
+  "workspace_id": "kye:wsp:acme.prod",
+  "endpoint_id": "kye:endpoint:acme.prod.claude-3-5-sonnet.20260515",
+  "decision_id": "kye:decision:acme.20260515t110042.a3f1e8",
+  "score": 0.93,
+  "risk_class": "medium",
+  "eval_profile_id": "kye:eval_profile:acme.prod.banking-grade.v2",
+  "signals": {
+    "test_vector_pass_rate": 0.96,
+    "freshness_age_seconds": 1842,
+    "drift_detected": false,
+    "jurisdiction_match": true
+  },
+  "signed_at": "2026-05-15T11:00:42.118Z",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kyeprotocol.gateway.ed25519.20260514",
+    "value": "MEUCIQDx1pZ4kY3Tx0XEUWPxVT3eW2qN8XwZxGc1mBpvKwAaZAIgYjEGAhWdHMfLYHJBhKZIiATL6bRq6Lr5Hs"
+  }
+}

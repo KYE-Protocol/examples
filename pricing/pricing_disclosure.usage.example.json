@@ -1,0 +1,25 @@
+{
+  "schema": "kye.pricing_disclosure.v1",
+  "sku_id": "KYE-ADDON-EVIDENCE-PRO-001",
+  "pricing_model": "usage",
+  "currency": "GBP",
+  "internal_price_band": {
+    "floor": 0.40,
+    "ceiling": 1.20,
+    "default": 0.75
+  },
+  "public_disclosure": {
+    "mode": "hidden"
+  },
+  "negotiable": true,
+  "volume_discounts": [
+    { "threshold": 10000,  "threshold_basis": "evidence_packs_per_year", "discount_pct": 10, "description": "10% off list above 10k packs/year" },
+    { "threshold": 100000, "threshold_basis": "evidence_packs_per_year", "discount_pct": 25, "description": "25% off list above 100k packs/year" },
+    { "threshold": 1000000,"threshold_basis": "evidence_packs_per_year", "discount_pct": 40, "description": "40% off list above 1M packs/year" }
+  ],
+  "effective_from": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "review_cadence_days": 90,
+  "owners": ["ceo", "commercial-lead"],
+  "rationale": "Usage add-on metered per evidence pack sealed. Disclosure hidden — usage pricing is a closed-registration line-item under the annual contract."
+}

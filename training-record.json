@@ -1,0 +1,17 @@
+{
+  "schema_version": "kye.training_record.v1",
+  "training_record_id": "kye:training:001",
+  "subject_entity_id": "kye:user:finance_owner_001",
+  "training_track": "KYE AI Worker Owner",
+  "modules_completed": [
+    "kye_fundamentals",
+    "authority_gates",
+    "commit_boundaries",
+    "evidence_packs",
+    "revocation"
+  ],
+  "certification_status": "completed",
+  "valid_until": "2027-05-09T00:00:00Z",
+  "evidence_ref": "kye:evidence-pack:training_001",
+  "created_at": "2026-05-09T12:00:00Z"
+}

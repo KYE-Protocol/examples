@@ -1,0 +1,49 @@
+{
+  "schema": "kye.consequence_map.v1",
+  "id": "kye:consequence-map:payment-agent-scope-expansion.2026-05-14",
+  "version": 1,
+  "scenario_run_id": "kye:scenario-run:payment-agent-scope-expansion.2026-05-14",
+  "target_object": {
+    "object_id": "kye:agent:acme-bank.payment-orchestrator",
+    "object_schema": "kye.entity.agent.v1"
+  },
+  "generated_at": "2026-05-14T09:06:00Z",
+  "generated_by": "kye:agent:consequence-mapper",
+  "consequences": [
+    {
+      "affected_object": "kye:authority:acme-bank.payment-limit-policy",
+      "kind": "authority",
+      "severity": "high",
+      "description": "Per-transaction limit policy must be re-issued at $50k tier; existing $10k authority grants become inconsistent.",
+      "likelihood": 0.95
+    },
+    {
+      "affected_object": "kye:obligation:acme-bank.sox-control-itgc-04",
+      "kind": "obligation",
+      "severity": "medium",
+      "description": "SOX ITGC-04 control requires updated dual-control attestation when payment limits cross $25k threshold.",
+      "likelihood": 0.85
+    },
+    {
+      "affected_object": "kye:data-class:pii-payment-instructions",
+      "kind": "data_class",
+      "severity": "low",
+      "description": "Volume of payment instructions touching PII data class projected to grow ~1.6x.",
+      "likelihood": 0.7
+    },
+    {
+      "affected_object": "kye:policy:acme-bank.beneficiary-screening-v3",
+      "kind": "policy",
+      "severity": "critical",
+      "description": "Beneficiary screening policy v3 thresholds tuned for $10k tier — will produce false-negatives at $50k tier without retune.",
+      "likelihood": 0.6
+    }
+  ],
+  "summary": {
+    "total_consequences": 4,
+    "critical_count": 1,
+    "high_count": 1,
+    "medium_count": 1,
+    "low_count": 1
+  }
+}

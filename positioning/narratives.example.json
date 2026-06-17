@@ -1,0 +1,24 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.positioning_narrative.v1.json",
+  "schema": "kye.positioning_narrative.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-06-05T00:00:00Z",
+  "constitution_ref": "constitution/06-WEBSITE.md",
+  "notes": [
+    "Illustrative kye.positioning_narrative.v1 instance — one narrative merchandising existing primitives onto a public landing."
+  ],
+  "narratives": [
+    {
+      "narrative_id": "kye:positioning:self-improving-agents",
+      "thesis": "Recursive self-improvement changes what AI can do; KYE Protocol governs what AI is allowed to do.",
+      "signal_kind": "press",
+      "signal_label": "FT — the dawn of self-improving AI",
+      "mapped_primitives": [
+        "constitution/25-EDGE-GOVERNANCE.md",
+        "constitution/13-RESILIENCE-LOOP.md"
+      ],
+      "landing_surface": "public/site/self-improving-agents.html",
+      "status": "live"
+    }
+  ]
+}

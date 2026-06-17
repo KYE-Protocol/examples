@@ -11,7 +11,19 @@
   "forbidden_actions": [
     "document.export"
   ],
-  "scope_id": "kye:scp:acme.example:01JYFINANCE000000000000000",
+  "scope": {
+    "scope_id": "kye:scp:acme.example:01JYFINANCE000000000000000",
+    "constraints": {
+      "workspace": "finance",
+      "environment": "prod",
+      "jurisdiction": "GB",
+      "data_constraints": {
+        "redaction_required": true,
+        "external_send_allowed": false
+      },
+      "obligations": ["audit.emit"]
+    }
+  },
   "status": "active",
   "valid_from": "2026-04-01T00:00:00Z",
   "valid_until": "2026-12-31T23:59:59Z"

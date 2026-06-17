@@ -1,0 +1,26 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:acme-bank.example:01J4PZZZZZZZZZZZZZZZZZZ5T",
+  "event_class": "kye.onboarding.shadow_mode_active",
+  "occurred_at": "2026-05-12T09:14:22Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme-bank",
+    "trust_domain": "acme-bank"
+  },
+  "delivery_id": "dlv_01J4PXXXXXXXXXXXXXXXXXX5T",
+  "severity": "info",
+  "payload": {
+    "workflow_id": "kye:onboarding-workflow:acme-bank.payments-agent.q3-2026",
+    "from": "stack_bound",
+    "to": "shadow_mode_active",
+    "at": "2026-05-12T11:42:30Z",
+    "by": "kye:agent:onboarding",
+    "reason": "all bindings flipped to mode=read_only"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-05",
+    "value": "5e3d09bd1c0d4c8c5e26db9f7e6c2db3a1c8a40f1f5d4e7b3a2f1c0d4c8c5e26",
+    "ts": "1747042462"
+  }
+}

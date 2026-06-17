@@ -1,0 +1,31 @@
+{
+  "id": "kye:purpose:acme-bank:agent-clio:invoice-summarise-2026q2",
+  "version": 1,
+  "principal": "kye:ent:acme-bank",
+  "grantee": "kye:ent:agent-clio",
+  "purpose": {
+    "id": "kye:purpose-class:finance.invoice.summarise",
+    "label": "Summarise vendor invoices for treasury review"
+  },
+  "scope": {
+    "data_classes": ["finance.invoice", "vendor.profile.basic"],
+    "actions": ["read", "summarise"],
+    "resources": ["kye:res:acme-bank:vault:invoices:2026"]
+  },
+  "restrictions": {
+    "jurisdiction": ["GB", "IE"],
+    "data_residency": ["eu-west-1"],
+    "weekly_window": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=8,9,10,11,12,13,14,15,16,17",
+    "rate_cap": { "requests_per_minute": 30 },
+    "dual_control": false,
+    "max_blast_radius": 250,
+    "requires_evidence": true
+  },
+  "not_before": "2026-04-01T00:00:00Z",
+  "not_after": "2026-07-01T00:00:00Z",
+  "issued_at": "2026-03-28T14:22:11Z",
+  "issued_by": "kye:ent:acme-bank:officer:treasury-ops-lead",
+  "revoked_at": null,
+  "revoked_reason": null,
+  "signature": "sig:cose:MEUCIQDp7Hk2vQ1tJp7tQy3oZ3w0aXc7eP9c2gV8Q1pK9aFkAAIgT5n9k7XnQXqg9k2pPVZbJ1c3y6q0R8N2dDxYwHs5kKw"
+}

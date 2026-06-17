@@ -1,0 +1,17 @@
+{
+  "id": "kye:tool-call:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P.001",
+  "version": 1,
+  "caller": "kye:ent:agent-clio",
+  "callee": "kye:ent:acme-bank:tool:invoice-vault-reader",
+  "purpose_permission_id": "kye:purpose:acme-bank:agent-clio:invoice-summarise-2026q2",
+  "input_hash": "sha256:293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203040506070809",
+  "output_hash": "sha256:3a4b5c6d7e8f9012345678abcdef0123456789abcdef01020304050607080910",
+  "cost": {
+    "tokens": 4128,
+    "dollars": 0.0421
+  },
+  "started_at": "2026-04-15T10:32:47.112Z",
+  "ended_at": "2026-04-15T10:32:48.034Z",
+  "decision_id": "kye:decision:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+  "outcome": "ok"
+}

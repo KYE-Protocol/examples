@@ -1,0 +1,23 @@
+{
+  "schema": "kye.infra_topology.v1",
+  "tenant_id": "kye:tenant:org_2vAcMeBank",
+  "rendered_at": "2026-05-30T14:30:00Z",
+  "nodes": [
+    { "id": "worker:kye-app", "kind": "worker", "label": "kye-app (Pages Functions)", "status": "ok", "p50_ms": 18.4, "p99_ms": 142.7, "error_rate": 0.0008, "spof_posture": "partial" },
+    { "id": "worker:kye-stream", "kind": "worker", "label": "kye-stream (SSE)", "status": "ok", "p50_ms": 9.1, "p99_ms": 38.0, "error_rate": 0.0, "spof_posture": "partial" },
+    { "id": "d1:kye-db", "kind": "d1", "label": "KYE_DB (D1)", "status": "ok", "p50_ms": 7.2, "p99_ms": 41.5, "error_rate": 0.0, "spof_posture": "partial" },
+    { "id": "queue:kye-audit", "kind": "queue", "label": "kye-audit (Queue)", "status": "ok", "p50_ms": 2.0, "p99_ms": 18.3, "error_rate": 0.0, "spof_posture": "full" },
+    { "id": "queue:kye-signals", "kind": "queue", "label": "kye-signals (Queue)", "status": "degraded", "p50_ms": 12.0, "p99_ms": 230.0, "error_rate": 0.012, "spof_posture": "partial" },
+    { "id": "r2:kye-evidence", "kind": "r2", "label": "kye-evidence (R2 + Object Lock)", "status": "ok", "p50_ms": 32.0, "p99_ms": 180.0, "error_rate": 0.0, "spof_posture": "partial" },
+    { "id": "kv:kye-session", "kind": "kv", "label": "kye-session (KV)", "status": "ok", "p50_ms": 4.5, "p99_ms": 22.0, "error_rate": 0.0, "spof_posture": "partial" }
+  ],
+  "edges": [
+    { "from": "worker:kye-app", "to": "d1:kye-db", "kind": "reads", "throughput_per_sec": 142.0 },
+    { "from": "worker:kye-app", "to": "d1:kye-db", "kind": "writes", "throughput_per_sec": 28.0 },
+    { "from": "worker:kye-app", "to": "queue:kye-audit", "kind": "produces", "throughput_per_sec": 31.0 },
+    { "from": "worker:kye-stream", "to": "d1:kye-db", "kind": "reads", "throughput_per_sec": 220.0 },
+    { "from": "worker:kye-stream", "to": "queue:kye-signals", "kind": "consumes", "throughput_per_sec": 18.0 },
+    { "from": "worker:kye-app", "to": "r2:kye-evidence", "kind": "writes", "throughput_per_sec": 1.2 },
+    { "from": "worker:kye-app", "to": "kv:kye-session", "kind": "reads", "throughput_per_sec": 480.0 }
+  ]
+}

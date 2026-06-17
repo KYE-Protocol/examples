@@ -1,0 +1,28 @@
+{
+  "schema_version": "kye.commit_boundary.v1",
+  "commit_boundary_id": "kye:commit-boundary:payment_execution",
+  "display_name": "Payment Execution Commit Boundary",
+  "description": "Separates payment preparation from payment execution.",
+  "before_boundary_actions": ["invoice.read", "payment.prepare", "beneficiary.validate"],
+  "after_boundary_actions": ["payment.execute", "payment.submit_to_bank", "payment.confirm"],
+  "boundary_condition": {
+    "action_transition": "payment.prepare_to_payment.execute",
+    "requires_authority_gate": "kye:gate:payment_execute"
+  },
+  "required_decision": {
+    "decision_endpoint": "/v1/authority:decide",
+    "required_result": ["allow", "require_approval_completed"]
+  },
+  "obligations": [
+    "generate_decision_map",
+    "emit_signed_signal",
+    "generate_evidence_pack",
+    "record_commit_event"
+  ],
+  "failure_behaviour": {
+    "on_missing_authority": "deny",
+    "on_state_mismatch": "quarantine",
+    "on_evidence_failure": "deny"
+  },
+  "status": "active"
+}

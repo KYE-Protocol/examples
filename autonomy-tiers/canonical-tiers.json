@@ -1,0 +1,100 @@
+{
+  "schema": "kye.autonomy_tier.v1",
+  "registry_id": "kye:autonomy-tiers:canonical-v1",
+  "version": "1.0",
+  "issued_at": "2026-05-29T00:00:00Z",
+  "effective_from": "2026-05-29",
+  "constitution_refs": [
+    "constitution/12-PURPOSE-PERMISSION.md",
+    "constitution/13-RESILIENCE-LOOP.md",
+    "constitution/21-DELEGATED-AUDITABILITY.md",
+    "constitution/36-GOVERNEDUI.md",
+    "constitution/52-DELEGATED-AGENT-BINDING.md"
+  ],
+  "tiers": [
+    {
+      "tier_id": "A0",
+      "tier_name": "Human-only",
+      "description": "No agent action. A human actor performs the work end-to-end. KYE Protocol is not in the path; downstream compliance applies as it would for any non-AI workflow.",
+      "human_oversight_role": "actor",
+      "agent_authority_scope": "none",
+      "required_kye_controls": [],
+      "required_evidence_schemas": [],
+      "kye_required": false,
+      "adg_crosswalk": ["n/a"],
+      "example_use_cases": [
+        "An adviser drafts a will by hand with no AI tooling.",
+        "A claims handler resolves a case in the legacy case-management system without agent assistance."
+      ]
+    },
+    {
+      "tier_id": "A1",
+      "tier_name": "Assist",
+      "description": "The agent suggests, drafts, or summarises; a human reviews and decides. The human owns the decision and the audit record. KYE Protocol is optional and recommended only when the assistance materially shapes the decision.",
+      "human_oversight_role": "decision-owner",
+      "agent_authority_scope": "suggest-only",
+      "required_kye_controls": ["KAC-1"],
+      "required_evidence_schemas": [
+        "https://kyeprotocol.com/schemas/entity.json"
+      ],
+      "kye_required": false,
+      "adg_crosswalk": ["HITL"],
+      "example_use_cases": [
+        "An adviser uses an AI assistant to draft clause-suggestions which the adviser reviews before signing.",
+        "A risk analyst uses an LLM to summarise a 30-page exposure report before manually scoring it."
+      ]
+    },
+    {
+      "tier_id": "A2",
+      "tier_name": "Scoped delegation",
+      "description": "The agent acts inside a pre-declared Purpose Permission grant for a bounded class of actions. Every action passes through admissibility, emits an evidence pack, and is replayable. A human approver remains on-call for critical-point reviews. KYE Protocol is required.",
+      "human_oversight_role": "approver",
+      "agent_authority_scope": "scoped-delegation",
+      "required_kye_controls": [
+        "KAC-1", "KAC-2", "KAC-4", "KAC-5", "KAC-6", "KAC-7", "KAC-8", "KAC-10", "KAC-11", "KAC-12"
+      ],
+      "required_evidence_schemas": [
+        "https://kyeprotocol.com/schemas/kye.purpose.grant.v1.json",
+        "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.decision_map.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.trace_replay_spec.v1.json",
+        "https://kyeprotocol.com/schemas/kye.governedui.critical_point_review.v1.json"
+      ],
+      "kye_required": true,
+      "adg_crosswalk": ["HITL", "HOTL", "ADG-MC-floor"],
+      "example_use_cases": [
+        "An estate-planning agent assembles a draft will and lifts each clause-novelty above the firm's threshold for adviser approval.",
+        "A payment-orchestration agent reconciles invoices within a single counterparty scope; transfers above a threshold escalate to two-person review."
+      ]
+    },
+    {
+      "tier_id": "A3",
+      "tier_name": "Autonomous with Authority Finality",
+      "description": "The agent acts under bundled authority — a compiled grant + federation chain — and reports finality. Every action is admissibility-gated, evidenced, replayable, and recorded against the authority finality register. A supervisor is on the loop only for declared exceptions. Every KAC-1..KAC-12 is operating.",
+      "human_oversight_role": "supervisor",
+      "agent_authority_scope": "bundled-authority-with-finality",
+      "required_kye_controls": [
+        "KAC-1", "KAC-2", "KAC-3", "KAC-4", "KAC-5", "KAC-6", "KAC-7", "KAC-8", "KAC-9", "KAC-10", "KAC-11", "KAC-12"
+      ],
+      "required_evidence_schemas": [
+        "https://kyeprotocol.com/schemas/kye.purpose.grant.v1.json",
+        "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json",
+        "https://kyeprotocol.com/schemas/kye.federation.cross_org_delegation.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.decision_map.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.evidence.trace_replay_spec.v1.json",
+        "https://kyeprotocol.com/schemas/kye.estate.authority_finality.v1.json",
+        "https://kyeprotocol.com/schemas/kye.compliance.attestation.v1.json"
+      ],
+      "kye_required": true,
+      "adg_crosswalk": ["HOOTL", "ADG-MC-floor"],
+      "example_use_cases": [
+        "A cross-organisation procurement agent issues purchase orders within a federated authority bundle, reporting authority finality on each issuance.",
+        "A regulated-data steward agent runs a bounded DSAR pipeline end-to-end, with replay-proof evidence on every read and every release."
+      ]
+    }
+  ]
+}

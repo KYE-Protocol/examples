@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:industry__stakeholder:banking__ciso",
+  "relationship_type": "interacts-with",
+  "source_class": "industry",
+  "source_id": "banking",
+  "target_class": "stakeholder",
+  "target_id": "ciso",
+  "cardinality": "many-to-many",
+  "bidirectional": true,
+  "weight": 0.95,
+  "evidence_basis": "Basel III / DORA Art. 5 names CISO as accountable officer for ICT third-party risk in banking.",
+  "effective_from": "2026-05-30",
+  "owners": ["KYE Sector Pack Authority"],
+  "status": "active"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "kye.engagement.tier.v1",
+  "sku_id": "KYE-PILOT-ESTATE-001",
+  "engagement_type": "pilot",
+  "specialization": "estate-planning",
+  "display_name": "KYE Estate Planning Pilot™ · Solo / Boutique",
+  "tier_rank": 1,
+  "price_band": "public-published",
+  "published_price_gbp": 45000,
+  "pricing_disclosure_policy": "public-published",
+  "closed_registration": false,
+  "price": {
+    "amount_minor": 4500000,
+    "currency": "GBP",
+    "period": "pilot"
+  },
+  "obligations": [
+    "kye:obligation:pilot-estate:data-confidentiality",
+    "kye:obligation:pilot-estate:synthetic-pilot-data",
+    "kye:obligation:pilot-estate:adviser-training-prerequisite",
+    "kye:obligation:pilot-estate:deliverable-acceptance",
+    "kye:obligation:pilot-estate:post-pilot-data-deletion"
+  ],
+  "state_machine_states_required": [
+    "received",
+    "triaged",
+    "approved",
+    "invoice_issued",
+    "invoice_paid",
+    "access_provisioning",
+    "access_granted",
+    "entitlement_active",
+    "entitlement_ending",
+    "expired"
+  ],
+  "summary": "4-week paid pilot of the KYE Estate Planning Authority Console™ for a single adviser or ≤5-person firm. Public-published £45k. One matter type (will or LPA); synthetic pilot data only; no SRA-regulated workflow profile."
+}

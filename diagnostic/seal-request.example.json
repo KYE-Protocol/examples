@@ -1,0 +1,41 @@
+{
+  "tenant_id": "kye:tenant:acme-payments",
+  "actor_email": "ciso@acme-payments.example",
+  "answers_payload": {
+    "diagnostic_id": "kye:diagnostic:authority-finality:v1",
+    "started_at": "2026-05-25T09:00:00Z",
+    "completed_at": "2026-05-25T09:11:42Z",
+    "tenant_label": "Acme Payments Ltd",
+    "surface": "claude-code-plugin",
+    "answers": [
+      { "question_id": "ev-1", "choice_index": 2 },
+      { "question_id": "ev-2", "choice_index": 1 },
+      { "question_id": "ev-3", "choice_index": 1 },
+      { "question_id": "ev-4", "choice_index": 2 },
+      { "question_id": "ca-1", "choice_index": 1 },
+      { "question_id": "ca-2", "choice_index": 0 },
+      { "question_id": "ca-3", "choice_index": 2 },
+      { "question_id": "ca-4", "choice_index": 1 },
+      { "question_id": "sd-1", "choice_index": 2 },
+      { "question_id": "sd-2", "choice_index": 2 },
+      { "question_id": "sd-3", "choice_index": 1 },
+      { "question_id": "sd-4", "choice_index": 1 },
+      { "question_id": "pr-1", "choice_index": 2 },
+      { "question_id": "pr-2", "choice_index": 2 },
+      { "question_id": "pr-3", "choice_index": 2 },
+      { "question_id": "pr-4", "choice_index": 1 },
+      { "question_id": "er-1", "choice_index": 2 },
+      { "question_id": "er-2", "choice_index": 2 },
+      { "question_id": "er-3", "choice_index": 1 },
+      { "question_id": "er-4", "choice_index": 2 },
+      { "question_id": "af-1", "choice_index": 1 },
+      { "question_id": "af-2", "choice_index": 2 },
+      { "question_id": "af-3", "choice_index": 1 },
+      { "question_id": "af-4", "choice_index": 2 }
+    ]
+  },
+  "render_options": {
+    "include_framework_map": true,
+    "include_one_pager": true
+  }
+}

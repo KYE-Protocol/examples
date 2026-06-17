@@ -1,0 +1,31 @@
+{
+  "manifest_id": "kye:data_use_manifest:northbank:agent-kyc-verify-2026-q2",
+  "issuer":      "kye:org:northbank",
+  "subject":     "kye:agent:northbank:kyc-verify",
+  "purposes":    ["service_delivery", "regulatory_compliance", "fraud_prevention"],
+  "permitted_actions": ["read", "summarise", "transform"],
+  "asset_selectors": [
+    { "selector_type": "asset_urn_prefix", "selector": "kye:data_asset:northbank:retail-onboarding." },
+    { "selector_type": "label",            "selector": "kyc-scope:tier-1" }
+  ],
+  "permitted_classifications": ["personal_data", "financial_data", "internal"],
+  "permitted_jurisdictions":   ["GB", "IE", "DE"],
+  "transfer_safeguards":       ["scc_2021"],
+  "retention": {
+    "max_age_days":          1825,
+    "post_retention_action": "delete"
+  },
+  "data_subject_basis":   "legal_obligation",
+  "evidence_requirements": {
+    "evidence_pack_required": true,
+    "audit_chain_required":   true
+  },
+  "issued_at":  "2026-04-01T09:00:00Z",
+  "not_before": "2026-04-01T09:00:00Z",
+  "not_after":  "2027-04-01T09:00:00Z",
+  "signature": {
+    "alg":       "Ed25519",
+    "kid":       "kye:key:northbank:dgp-signer-2026-q2",
+    "value_b64": "Zu9SR2W9hLZk4P1mZxQ8DcsT0vF2gJtY0nq7XbVnEoZHCMa1L8VqfP9bxYZJk6XKfGwHnH3rqUzQAJp2pYRDDw"
+  }
+}

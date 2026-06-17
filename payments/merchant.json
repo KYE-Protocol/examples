@@ -1,0 +1,8 @@
+{
+  "merchant_id": "kye:ent:acme.example:merchant:01JYMERCH00000000000000000",
+  "entity_id": "kye:ent:acme.example:merchant:01JYMERCH00000000000000000",
+  "merchant_category": "software_saas",
+  "jurisdiction": "GB",
+  "status": "active",
+  "created_at": "2026-04-01T10:00:00Z"
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "kye.stable_drift_event.v1",
+  "drift_event_id": "kye:drift:acme:2026-05-14:a4f1",
+  "check_id": "kye:coupling-check:acme:2026-05-14:a4f1",
+  "action_id": "kye:action:acme:supplier_payment_release:inv-90213",
+  "actor_entity_id": "kye:agent:acme:ap-automation-bot",
+  "principal_entity_id": "kye:entity:acme:finance-office",
+  "drift_type": "verified_but_stale",
+  "severity": "high",
+  "detected_at": "2026-05-14T12:30:15Z",
+  "anchors_implicated": [
+    {
+      "anchor_id": "kye:anchor:acme:supplier-risk-registry",
+      "anchor_type": "risk_context",
+      "snapshot_id": "kye:snapshot:acme:supplier-risk-registry:2026-05-14T12-30-00Z"
+    }
+  ],
+  "expected_state": {
+    "supplier_risk_rating": "low"
+  },
+  "observed_state": {
+    "supplier_risk_rating": "high",
+    "uplift_at": "2026-05-14T11:42:00Z"
+  },
+  "description": "Locally-valid AP automation action releases payment to a supplier whose risk rating was uplifted to high after the purpose-grant was issued. Action remains authorised and evidenced; grounding has shifted.",
+  "reason_codes": [
+    "supplier_risk_uplift_since_authorization",
+    "assumption_supplier_risk_rating_at_authorization_no_longer_holds"
+  ],
+  "recommended_runtime_effect": "require_human_review",
+  "recommended_obligations": [
+    "notify_finance_controller",
+    "freeze_subsequent_releases_to_supplier_pending_review"
+  ],
+  "evidence_refs": [
+    "kye:evidence:acme:ap-release:inv-90213"
+  ]
+}

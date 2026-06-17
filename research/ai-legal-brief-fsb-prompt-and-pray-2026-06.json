@@ -1,0 +1,60 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:ai-legal-brief-fsb-prompt-and-pray-2026-06",
+  "series": "ai_legal_briefs",
+  "format": "bulletin",
+  "sector": "cross-sector",
+  "audience": "general",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "AI Legal Brief: the FSB asks for engineered controls, not well-worded prompts — June 2026",
+  "tribute_ref": "kye:scientist-tribute:leslie-lamport",
+  "topic_id": "kye:research-topic:ai-legal-brief-fsb-prompt-and-pray",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:ai-legal-brief-fsb-prompt-and-pray:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "lE9rvEQqC9VSe396HVKPtFIlejXXJGu803KsWiG5ZQ70gZCP7sjARfNhmNP4COWltM8kSqoQHYlexVlfvqYlDw=="
+  },
+  "citations": [
+    {
+      "claim": "On 10 June 2026 the Financial Stability Board published a consultation, 'Sound Practices for Responsible Adoption of Artificial Intelligence', a deliberately non-binding and proportionate menu of sound practices for financial institutions, open for comment until 22 July 2026 with a final report due October 2026.",
+      "source_url": "https://www.fsb.org/",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Financial Stability Board (consultation report). Publisher-level citation; deep-link to be pinned."
+    },
+    {
+      "claim": "US model risk management guidance (SR 11-7) sets out principles — control proportionate to risk, independent effective challenge by parties with the incentive, competence and access to find what is wrong, governance across the model lifecycle, and a named owner of the outcome.",
+      "source_url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Board of Governors of the Federal Reserve System / OCC (SR 11-7)"
+    },
+    {
+      "claim": "Commentary has named the pattern of treating a paragraph of instructions as a control — instruction plus an LLM-as-judge review plus a human sign-off plus a green dashboard — 'prompt and pray', and argued that strengthening the prompt converges to a longer prompt over the same unfixed bottleneck.",
+      "source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6932339",
+      "retrieved_at": "2026-06-13T00:00:00Z",
+      "publisher": "Agus Sudjianto, 'Unified Prompt and Pray Framework' (SSRN). Cited as commentary, not as a statement of law."
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-13T09:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

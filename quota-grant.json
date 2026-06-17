@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/quota-grant.json",
+  "quota_id": "kye:quota:bank-z.eu:tenant_acme:authorize_decision:per_day:01HX",
+  "schema_version": "kye.quota_grant.v1",
+  "principal_entity_id": "kye:business:bank-z.eu:corp:acme-treasury-gmbh",
+  "authority_grant_id": "kye:authority:grant:agent_purchase_001",
+  "metric_name": "authorize_decision",
+  "limit": 10000,
+  "unit": "decision",
+  "window": "per_day",
+  "current_consumed": 1247,
+  "reserved": 12,
+  "state": "active",
+  "valid_from": "2026-05-08T00:00:00Z",
+  "valid_until": "2026-12-31T23:59:59Z",
+  "external_meter_provider": "stripe",
+  "external_meter_id": "billing_meter_1ABCdef"
+}

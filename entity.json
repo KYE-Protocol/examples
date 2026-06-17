@@ -5,6 +5,12 @@
   "display_name": "Acme Procurement Agent",
   "status": "active",
   "lifecycle_state": "active",
+  "immutable": {
+    "root_entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+    "registration_event_id": "kye:aud:acme.example:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+    "root_hash": "sha256:8f9c2b1a4d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+    "initial_entity_type": "ai_agent"
+  },
   "classification": {
     "risk_level": "medium",
     "sector_tags": ["finance"],

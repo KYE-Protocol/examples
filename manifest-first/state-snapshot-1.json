@@ -1,0 +1,46 @@
+{
+  "schema_version": "kye.state_snapshot.v1",
+  "snapshot_id": "kye:state-snapshot:acme.20260515.001",
+  "tenant_id": "kye:tenant:acme-bank",
+  "captured_at": "2026-05-15T09:42:12.291Z",
+  "entity_states": [
+    {
+      "entity_id": "kye:agent:acme-payments-agent",
+      "lifecycle_state": "active",
+      "risk_tier": "high",
+      "residency": "IT",
+      "last_validated": "2026-05-15T09:00:00Z"
+    },
+    {
+      "entity_id": "kye:ent:counterparty.zeta.holdings",
+      "lifecycle_state": "quarantined",
+      "risk_tier": "critical",
+      "residency": "CH",
+      "last_validated": "2026-05-15T09:30:00Z"
+    }
+  ],
+  "signal_states": [
+    {
+      "signal_class": "kye.signal.watchlist.match",
+      "value": { "list_id": "EU_CONSOLIDATED_FINANCIAL_SANCTIONS", "match_score": 0.94 },
+      "observed_at": "2026-05-15T09:32:18Z",
+      "ttl_seconds": 86400
+    },
+    {
+      "signal_class": "kye.signal.payment.amount_band",
+      "value": { "currency": "EUR", "band": "50000_to_100000" },
+      "observed_at": "2026-05-15T09:42:10Z",
+      "ttl_seconds": 600
+    }
+  ],
+  "ledger_position": {
+    "audit_chain_id": "kye:audit-chain:acme-bank.production.001",
+    "entry_index": 8845921,
+    "entry_hash": "sha384:5f3c8a8e6b1c0a2f3d9b7e1c4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e"
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:acme-bank-state-001",
+    "value_b64": "MEUCIQDqAk9C1cN1fK8WrZAdM0AlYl9d7Q1qZnZg3Y8q0O4KqhJhZ6lF4vW1b5G2d2g7F9b9x3cE5H8y0a7M3l0N1o2pR3qS"
+  }
+}

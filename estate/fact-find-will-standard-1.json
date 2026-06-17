@@ -1,0 +1,34 @@
+{
+  "schema": "kye.estate.fact_find.v1",
+  "fact_find_id": "kye:estate:fact_find:demo-tenant:ff-2026-05-27-001",
+  "matter_id": "kye:estate:matter:demo-tenant:matter-2026-05-27-001",
+  "matter_type": "will_standard",
+  "fact_find_template_id": "kye:estate:fact_find_template:standard-will-v1",
+  "created_by": "kye:actor:demo-tenant:adviser-jane",
+  "client_instruction_at": "2026-05-27T09:30:00Z",
+  "version": 1,
+  "input_hash": "sha256:9098dab3e2cb1ecfbbaf95a8e858c079c34b8f13a8add4796534aeba548a6a61",
+  "completion_status": "complete",
+  "evidence_status": "partial",
+  "client": {
+    "full_name": "Margaret Helen Whitfield",
+    "date_of_birth": "1952-03-14",
+    "address_country": "GB",
+    "marital_status": "widowed",
+    "domicile_jurisdiction": "GB-EAW"
+  },
+  "executors": [
+    { "full_name": "Robert James Whitfield", "relationship": "son", "role": "primary_executor" },
+    { "full_name": "Susan Mary Carter", "relationship": "daughter", "role": "substitute_executor" }
+  ],
+  "beneficiaries": [
+    { "full_name": "Robert James Whitfield", "relationship": "son", "share_kind": "residuary", "share_value": { "percent": 50 }, "is_minor": false, "is_vulnerable": false },
+    { "full_name": "Susan Mary Carter", "relationship": "daughter", "share_kind": "residuary", "share_value": { "percent": 50 }, "is_minor": false, "is_vulnerable": false }
+  ],
+  "assets": [
+    { "asset_kind": "real_property", "description": "Freehold dwelling at 12 Acacia Avenue, Reading RG1 1AA, HM Land Registry title BK123456", "estimated_value_minor": 42500000, "currency": "GBP", "joint_ownership": false, "jurisdiction": "GB-EAW" },
+    { "asset_kind": "bank_account", "description": "NatWest current account ending 4421", "estimated_value_minor": 1850000, "currency": "GBP", "joint_ownership": false, "jurisdiction": "GB" }
+  ],
+  "capacity_notes": "Client presented with full testamentary capacity at instruction. Banks v Goodfellow test discussed; client able to articulate the nature of the act, the extent of the property, and the persons with claims on her estate.",
+  "iht_screening": { "estate_above_nrb": false, "non_uk_domicile_flag": false, "lifetime_gift_flag": false, "business_property_relief_flag": false }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "kye.entity.agent.v1",
+  "kyeid": "kye:agent:acme.com:production:payments-router-v3",
+  "class": "agent",
+  "trust_domain": "acme.com",
+  "subclass": "production",
+  "local_id": "payments-router-v3",
+  "display_name": "Payments Router Agent v3",
+  "model_build_hash": "sha256:d2c5f3a8b1e94f7c0123456789abcdef0123456789abcdef0123456789abcdef",
+  "parent_principal": "kye:ent:acme.com:org:treasury",
+  "owner_kyeid": "kye:ent:acme.com:employee:bob-cfo",
+  "capabilities": [
+    "kye:capability:payments.route",
+    "kye:capability:payments.reconcile"
+  ],
+  "prohibited_capabilities": [
+    "kye:capability:payments.refund",
+    "kye:capability:identity.create"
+  ],
+  "dual_control_required": true,
+  "human_in_the_loop_threshold": {
+    "transaction_value_above": 50000,
+    "currency": "EUR"
+  },
+  "rule_bundle_id": "kye:rule-bundle:payments-router:v3.4.0",
+  "operating_model_id": "kye:operating-model:acme-treasury:om_2026_q2",
+  "lifecycle_state": "controlled_production",
+  "jurisdiction": ["GB", "DE", "FR"],
+  "created_at": "2026-03-01T00:00:00Z",
+  "updated_at": "2026-05-12T11:00:00Z"
+}

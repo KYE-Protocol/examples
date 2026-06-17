@@ -1,0 +1,83 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.component_manifest.v1.json",
+  "schema": "kye.component_manifest.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-06-01T00:00:00Z",
+  "constitution_ref": "constitution/04-DESIGN-SYSTEM.md",
+  "notes": [
+    "Illustrative example of the KYE Component Manifest — an index over per-class UI component registries. Not a replacement for the per-class registries; those remain the source of truth."
+  ],
+  "component_classes": [
+    {
+      "class_id": "kye:component-class:panels",
+      "class_name": "Dashboard Panels",
+      "description": "Reusable dashboard panels bound to a data source and a visualization kind.",
+      "source_of_truth": {
+        "registry_path": "internal",
+        "schema_path": "internal",
+        "gate": "panels-canonical",
+        "item_count_field": "panels"
+      },
+      "governance": {
+        "constitution_ref": "constitution/08-APPS-DASHBOARDS.md",
+        "dictionary_path": "internal"
+      }
+    },
+    {
+      "class_id": "kye:component-class:buttons",
+      "class_name": "Buttons / CTAs",
+      "description": "Canonical button and CTA variant registry. CTA labels resolved via kye:dictionary:cta-labels.",
+      "source_of_truth": {
+        "registry_path": "internal",
+        "schema_path": "internal",
+        "gate": "component-manifest-canonical",
+        "item_count_field": "items"
+      },
+      "governance": {
+        "constitution_ref": "constitution/04-DESIGN-SYSTEM.md",
+        "dictionary_path": "internal"
+      },
+      "items": [
+        {
+          "id": "kye:btn:primary",
+          "name": "Primary CTA",
+          "kind": "filled",
+          "intent": "primary-cta",
+          "description": "High-emphasis filled button for the primary action on a surface."
+        },
+        {
+          "id": "kye:btn:ghost",
+          "name": "Ghost CTA",
+          "kind": "ghost",
+          "intent": "ghost-cta",
+          "description": "Low-emphasis text-only button for tertiary discovery."
+        }
+      ]
+    },
+    {
+      "class_id": "kye:component-class:animations",
+      "class_name": "Animations / Motion Effects",
+      "description": "Canonical animation and motion-effect registry for KYE Protocol surfaces.",
+      "source_of_truth": {
+        "registry_path": "internal",
+        "schema_path": "internal",
+        "gate": "component-manifest-canonical",
+        "item_count_field": "items"
+      },
+      "governance": {
+        "constitution_ref": "constitution/04-DESIGN-SYSTEM.md",
+        "dictionary_path": "internal"
+      },
+      "items": [
+        {
+          "id": "kye:anim:action-capture-hero",
+          "name": "Action Capture Hero",
+          "kind": "canvas-animation",
+          "mount": "[data-kye-action-capture]",
+          "js_module": "public/site/assets/action-capture-hero.js",
+          "description": "WAAPI + CSS animation demonstrating the Decision Engine authority resolution flow."
+        }
+      ]
+    }
+  ]
+}

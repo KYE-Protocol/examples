@@ -1,0 +1,14 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:evidence-replay",
+  "slug": "evidence-replay",
+  "display_name": "KYE Evidence & Replay Profile™",
+  "layer": "runtime",
+  "derives_from": "kye:profile:core",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md#section-2",
+  "conformance_contract": "Binds the resilience-loop primitives declared in constitution/13-RESILIENCE-LOOP.md; concrete mechanism content is held under internal pre-filing and is not publicly disclosed.",
+  "required_objects": ["Evidence", "Decision", "Replay"],
+  "required_engines": ["kye:engine:evidence-pack", "kye:engine:replay-proof"],
+  "status": "active",
+  "adopted_at": "2026-05-15"
+}

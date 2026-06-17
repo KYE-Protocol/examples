@@ -1,0 +1,23 @@
+{
+  "event_id":     "kye:event:st-marys-nhs:dae-2026-06-06-c4a1f9e2",
+  "event_type":   "kye.data_access_evidence_event.v1",
+  "decision_id":  "kye:decision:st-marys-nhs:c4a1f9e2-7b3d-4e1a-8c92-1f6a5d3b2c70",
+  "actor":        "kye:agent:st-marys-nhs:cardio-cohort-builder",
+  "principal":    "kye:org:st-marys-nhs",
+  "asset_id":     "kye:data_asset:st-marys-nhs:meds.patient_timeline_stream",
+  "action":       "read",
+  "classification": "special_category_data",
+  "purpose":      "regulatory_compliance",
+  "manifest_id":  "kye:data_use_manifest:st-marys-nhs:agent-cardio-cohort-2026-q2",
+  "data_subject_ref": {
+    "ref_type":       "pseudonymous_id",
+    "ref_value_hash": "3c8e1a5d9f0b2c4e6a8d0f1b3c5e7a9d1f0b2c4e6a8d0f1b3c5e7a9d1f0b2c4e"
+  },
+  "row_count":      842,
+  "field_set_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90112233445566778899aabbccddeeff00",
+  "decision":       "allow",
+  "decision_reason_codes": [],
+  "jurisdiction":   "GB",
+  "evidence_pack_id": "kye:evidence_pack:st-marys-nhs:ep-2026-06-06-c4a1f9e2",
+  "occurred_at":    "2026-06-06T09:14:05Z"
+}

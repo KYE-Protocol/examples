@@ -1,0 +1,23 @@
+{
+  "id": "kye:partnership-adapter:cerbos",
+  "version": 1,
+  "partner_name": "Cerbos",
+  "partner_url": "https://www.cerbos.dev",
+  "connector_term": "cerbos",
+  "adapter_path": "public/oss/connector-cerbos/src/index.mjs",
+  "test_path": "public/oss/connector-cerbos/test",
+  "language_parity": ["javascript", "typescript", "python", "go"],
+  "partnership_brief_path": "internal",
+  "license": "Apache-2.0",
+  "status": "shipping",
+  "outreach_status": "not_initiated",
+  "registered_at": "2026-05-24T19:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:kye-protocol:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ],
+  "constitution_ref": "constitution/15-MCP-AND-SDK.md"
+}

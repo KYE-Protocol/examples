@@ -1,0 +1,51 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.regional_data_plane.v1.json",
+  "schema": "kye.regional_data_plane.v1",
+  "manifest_id": "kye:registry:regional-data-plane",
+  "adopted_at": "2026-06-10",
+  "last_reviewed": "2026-06-10",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md#section-12-regional-data-plane-topology",
+  "description": "Illustrative two-region (eu + us) regional data-plane example showing a jurisdiction-restricted EU R2 bucket and an in-jurisdiction partial failover posture per region.",
+  "owners": ["kye:team:edge-governance", "kye:role:dpo"],
+  "regions": [
+    {
+      "region": "eu",
+      "status": "live",
+      "infra_region": "eu-west-1",
+      "jurisdiction_notes": "EU/EEA GDPR Chapter V. Primary eu-west-1, in-jurisdiction standby eu-central-1.",
+      "d1": { "binding": "DB_EU", "database_name": "kye-prod-eu", "kind": "d1", "provisioned": false },
+      "r2": {
+        "binding": "EVIDENCE_EU",
+        "bucket_name": "kye-evidence-eu",
+        "kind": "r2",
+        "jurisdiction_restricted": true,
+        "location_hint": "eu",
+        "provisioned": false
+      },
+      "kv": { "binding": "RESIDENCY_KV_EU", "namespace_name": "kye-residency-eu", "kind": "kv", "provisioned": false },
+      "failover": {
+        "posture": "partial",
+        "failover_to": ["eu"],
+        "spof_component_id": "region-failover-eu",
+        "rpo_seconds": 3600,
+        "rto_seconds": 900
+      }
+    },
+    {
+      "region": "us",
+      "status": "live",
+      "infra_region": "us-east-1",
+      "jurisdiction_notes": "US us-east-1 primary, us-west-2 in-jurisdiction standby.",
+      "d1": { "binding": "DB_US", "database_name": "kye-prod-us", "kind": "d1", "provisioned": false },
+      "r2": { "binding": "EVIDENCE_US", "bucket_name": "kye-evidence-us", "kind": "r2", "jurisdiction_restricted": false, "provisioned": false },
+      "kv": { "binding": "RESIDENCY_KV_US", "namespace_name": "kye-residency-us", "kind": "kv", "provisioned": false },
+      "failover": {
+        "posture": "partial",
+        "failover_to": ["us"],
+        "spof_component_id": "region-failover-us",
+        "rpo_seconds": 3600,
+        "rto_seconds": 900
+      }
+    }
+  ]
+}

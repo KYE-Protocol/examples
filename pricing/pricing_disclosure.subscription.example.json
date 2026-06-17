@@ -1,0 +1,26 @@
+{
+  "schema": "kye.pricing_disclosure.v1",
+  "sku_id": "KYE-STARTER-ANNUAL-001",
+  "pricing_envelope_ref": "kye.commercial.value_based_pricing.v1#/envelopes/by-sku/KYE-STARTER-ANNUAL-001",
+  "pricing_model": "subscription",
+  "currency": "GBP",
+  "internal_price_band": {
+    "floor": 60000,
+    "ceiling": 90000,
+    "default": 75000
+  },
+  "public_disclosure": {
+    "mode": "from",
+    "displayed_value": 75000
+  },
+  "negotiable": true,
+  "volume_discounts": [
+    { "threshold": 10, "threshold_basis": "workflows",  "discount_pct": 5,  "description": "5% off list for 10+ workflows" },
+    { "threshold": 25, "threshold_basis": "workflows",  "discount_pct": 12, "description": "12% off list for 25+ workflows" }
+  ],
+  "effective_from": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "review_cadence_days": 90,
+  "owners": ["ceo", "finance-controller", "commercial-lead"],
+  "rationale": "Public floor anchors the annual platform tier above the audit pilot. Volume discounts apply at owner approval below the floor."
+}

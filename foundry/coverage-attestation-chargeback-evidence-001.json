@@ -1,0 +1,36 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:chargeback-evidence-coverage:2026-06-11",
+  "emitted_at": "2026-06-11T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "REG_E",
+    "REG_Z",
+    "PSD2_SCA_DISPUTES",
+    "VISA_CE30",
+    "MASTERCARD_DISPUTE_RULES"
+  ],
+  "subject": "kye:powered-pack:chargeback-evidence:v1",
+  "mode": "static",
+  "run_id": "chargeback-evidence-001-coverage-2026-06-11",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:chargeback-evidence:v1",
+    "claim_count": 6,
+    "bound_rule_packs": ["kye:rule-pack:chargeback-evidence"],
+    "bound_dictionaries": ["kye:dictionary:chargeback-evidence"],
+    "bound_sector_packs": ["kye:sector-pack:chargeback-evidence"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "chargeback-evidence-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

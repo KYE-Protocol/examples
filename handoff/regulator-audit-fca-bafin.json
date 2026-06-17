@@ -1,0 +1,29 @@
+{
+  "schema": "kye.handoff.envelope.v1",
+  "handoff_id": "kye:handoff:regulator-audit-001",
+  "originating_jurisdiction": "uk",
+  "target_jurisdiction": "de",
+  "act_type": "regulator-audit-pack",
+  "framework_mappings": [
+    {
+      "recognition_id": "kye:jfr:uk-smcr-mifid",
+      "source_framework": "UK_SMCR",
+      "target_framework": "EU_MIFID_II",
+      "recognition_type": "deference"
+    }
+  ],
+  "controls_satisfied": [
+    "UK_SMCR.SMF_DESIGNATION",
+    "UK_SMCR.REASONABLE_STEPS_EVIDENCE_PACK"
+  ],
+  "attestation_chain_root": "0000000000000000000000000000000000000000000000000000000000000000",
+  "signature_suite_ref": "kye:sig-suite:ed25519-hsm-2026-05",
+  "emitted_at": "2026-05-31T12:00:00Z",
+  "policy_ref": "kye:handoff-policy:regulator-audit-pack",
+  "verdict": "admitted",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-handoff-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-HANDOFF-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

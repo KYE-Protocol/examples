@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.continuity_decision.v1",
+  "decision_id": "kye:decision:continuity_001",
+  "continuity_id": "kye:continuity:001",
+  "decision": "continuity_preserved",
+  "reason_code": "intent_authority_scope_state_aligned",
+  "actor_entity_id": "kye:entity:agent:shopping_agent_456",
+  "principal_entity_id": "kye:entity:person:customer_123",
+  "capability_id": "kye:capability:card_purchase",
+  "checked_dimensions": {
+    "intent_alignment": "matched",
+    "authority_alignment": "matched",
+    "scope_alignment": "matched",
+    "state_alignment": "matched",
+    "capability_alignment": "matched",
+    "incentive_alignment": "no_conflict_detected",
+    "pressure_context": "no_pressure_detected",
+    "oversight_state": "not_required"
+  },
+  "continuity_score": {
+    "score": 0.96,
+    "scale": "0_to_1",
+    "interpretation": "high_continuity"
+  },
+  "obligations": [
+    "emit_audit_event",
+    "bind_continuity_context",
+    "generate_evidence_pack"
+  ],
+  "decision_map_id": "kye:decision-map:continuity_001",
+  "evidence_pack_ref": "kye:evidence-pack:continuity_001",
+  "decided_at": "2026-05-06T12:03:10Z"
+}

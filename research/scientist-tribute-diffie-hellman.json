@@ -1,0 +1,16 @@
+{
+  "schema": "kye.research.scientist_tribute.v1",
+  "tribute_id": "kye:scientist-tribute:diffie-hellman",
+  "name": "Whitfield Diffie & Martin Hellman",
+  "field": "Cryptography",
+  "contribution": "Introduced public-key cryptography, enabling parties to establish trust without a shared secret.",
+  "relevance_to_kye": "Public-key verification is how a KYE Protocol™ Evidence Pack™ is replay-checked from public keys alone.",
+  "source": {
+    "title": "New Directions in Cryptography",
+    "publisher_or_venue": "IEEE Transactions on Information Theory",
+    "year": 1976,
+    "url": "https://ee.stanford.edu/~hellman/publications/24.pdf"
+  },
+  "medallion": "classical-male",
+  "status": "active"
+}

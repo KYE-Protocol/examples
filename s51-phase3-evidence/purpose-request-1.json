@@ -1,0 +1,11 @@
+{
+  "id": "kye:purpose-req:platform:01HFD7P4QXM2N8R6YZ5VWLQ9P3R",
+  "actor": "kye:ent:agent-architecture-spof-phase3",
+  "purpose": "kye:purpose-class:platform.spof.phase3-path-to-full",
+  "action": "author-path-to-full-runbook",
+  "resource": "kye:res:platform:constitution:51-no-spof:phase3",
+  "data_classes": ["constitution.amendment", "spof.registry.row", "spof.path_to_full.runbook"],
+  "requested_at": "2026-05-27T18:00:00Z",
+  "claimed_grant_id": "kye:purpose:platform:architecture:constitutional-amendment-2026q2",
+  "tool_call_hash": "sha256:9c1e7af0a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcdef0123456789"
+}

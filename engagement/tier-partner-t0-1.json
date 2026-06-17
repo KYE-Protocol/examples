@@ -1,0 +1,44 @@
+{
+  "schema": "kye.engagement.tier.v1",
+  "sku_id": "KYE-PARTNER-T0",
+  "engagement_type": "partner",
+  "display_name": "KYE Strategic Partner™ · Tier-1 / Custom",
+  "tier_rank": 0,
+  "price_band": "tier-1-custom",
+  "published_price_gbp": null,
+  "pricing_disclosure_policy": "contact-for-pricing",
+  "closed_registration": true,
+  "price": {
+    "amount_minor": 0,
+    "currency": "GBP",
+    "period": "year"
+  },
+  "obligations": [
+    "kye:obligation:partner:nda",
+    "kye:obligation:partner:accurate-representation",
+    "kye:obligation:partner:deal-registration",
+    "kye:obligation:partner:lead-time-enterprise",
+    "kye:obligation:partner:training-currency",
+    "kye:obligation:partner:customer-data-segregation",
+    "kye:obligation:partner:disclosure-conflicts",
+    "kye:obligation:partner:incident-cooperation",
+    "kye:obligation:partner-t0:dual-channel-signoff",
+    "kye:obligation:partner-t0:named-engineer-assignment",
+    "kye:obligation:partner-t0:quarterly-attestation-cadence",
+    "kye:obligation:partner-t0:regulator-bound-retention"
+  ],
+  "state_machine_states_required": [
+    "received",
+    "triaged",
+    "approved",
+    "invoice_issued",
+    "invoice_paid",
+    "access_provisioning",
+    "access_granted",
+    "entitlement_active",
+    "entitlement_ending",
+    "expired",
+    "renewed"
+  ],
+  "summary": "Bespoke top-tier partnership for global SIs, Big-4, sovereign integrators, and regulated-cloud partners. NDA + scoping call set the boundary; bespoke SKU; dual-channel sign-off; named partner engineer; quarterly attestation; regulator-bound retention. Pricing disclosed under NDA only."
+}

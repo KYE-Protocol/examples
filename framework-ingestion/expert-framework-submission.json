@@ -1,0 +1,11 @@
+{
+  "schema": "kye.expert_framework_submission.v1",
+  "submission_id": "kye:framework-submission:sample-expert-001",
+  "submitter_id": "kye:expert:sample-framework-author",
+  "title": "Expert AI Governance Framework (sample submission)",
+  "intake_format": "kye-canonical-intake",
+  "provenance": "expert_framework",
+  "content_hash": "c6f3113b95c5b5ddc5f462a7baf82dc4e4f3031354cf6cf0b4912f3360a8f7d2",
+  "submitted_at": "2026-05-31T12:00:00Z",
+  "status": "received"
+}

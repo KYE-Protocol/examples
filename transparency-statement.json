@@ -1,0 +1,12 @@
+{
+  "statement_id": "kye:stmt:acme.example:01JYSTMT00000000000000000",
+  "subject_type": "proof_bundle",
+  "subject_id": "kye:prf:acme.example:01JYPRF0000000000000000000",
+  "issuer_entity_id": "kye:ent:acme.example:transparency_issuer:01JYISS00000000000000000",
+  "statement_hash": "sha256:d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1",
+  "payload": {
+    "bundle_hash": "sha256:c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1",
+    "policy_decision_id": "kye:pdc:acme.example:01JYPDC0000000000000000000"
+  },
+  "submitted_at": "2026-04-15T12:30:03Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "evt_1QSTRIPESUB003000000",
+  "object": "event",
+  "api_version": "2024-11-20.acacia",
+  "created": 1759276799,
+  "livemode": false,
+  "type": "customer.subscription.deleted",
+  "data": {
+    "object": {
+      "id": "sub_1QHOOLIPAYABCDEF",
+      "object": "subscription",
+      "customer": "cus_1QHOOLIPAYABC",
+      "status": "canceled",
+      "canceled_at": 1759276799,
+      "ended_at": 1759276799,
+      "current_period_end": 1767139199,
+      "cancellation_details": { "reason": "cancellation_requested", "feedback": "switching_provider" },
+      "metadata": {
+        "kye_customer_kyeid": "kye:ent:hooli.pay",
+        "kye_tenant_id": "kye:tenant:hooli-pay"
+      }
+    }
+  },
+  "request": { "id": "req_1QREQHOOLI", "idempotency_key": null }
+}

@@ -1,0 +1,33 @@
+{
+  "capability_id": "kye:cap:acme.example:playbook:01JYCAP000000000000000XZ",
+  "capability_kind": "playbook",
+  "name": "credit-decisioning-v2",
+  "version": "2.4.1",
+  "owner_entity_id": "kye:ent:acme.example:business:acme-credit",
+  "permitted_actions": ["credit.evaluate", "credit.recommend"],
+  "side_effect_level": "medium",
+  "data_classes_touched": ["pii.full_name", "pii.gov_id", "credit.score"],
+  "risk_classification": "high",
+  "ai_system_id": "kye:ent:acme.example:ai_system:01JYAI0000000000000000XZ",
+  "annex_iii_use_cases": ["5b-credit_scoring"],
+  "human_oversight_required": true,
+  "transparency_disclosure_required": true,
+  "approval_state": "approved",
+  "sampling_budget": {
+    "max_messages_per_invocation": 16,
+    "max_tokens_per_message": 4096,
+    "max_tokens_per_invocation": 32768,
+    "allowed_model_profiles": ["kye:cap:acme.example:model_profile:gpt-credit-v2"]
+  },
+  "dependencies": [
+    { "capability_id": "kye:cap:acme.example:tool:01JY...", "version_min": "1.2.0" },
+    { "capability_id": "kye:cap:acme.example:mcp_tool:01JZ...", "version_pin": "0.4.1" }
+  ],
+  "supply_chain": {
+    "issuer_entity_id": "kye:ent:acme.example:business:acme-credit",
+    "build_provenance_attestation_id": "kye:att:acme.example:01JYATT000000000000000XZ",
+    "source_repository": "https://github.com/acme/credit-decisioning",
+    "kye_sbom_hash": "kye:sbom:acme.example:01JYSBM000000000000000XZ"
+  },
+  "documentation_urls": ["https://acme.example/playbooks/credit-decisioning"]
+}

@@ -1,0 +1,13 @@
+{
+  "trust_domain_id": "kye:td:acme.example",
+  "display_name": "Acme Primary Trust Domain",
+  "jurisdiction": "GB",
+  "issuer_set": [
+    "kye:iss:acme.example:primary",
+    "kye:iss:acme.example:workload"
+  ],
+  "transparency_service": "kye:ts:acme.example:main",
+  "jwks_uri": "https://issuer.acme.example/.well-known/jwks.json",
+  "federation_metadata_uri": "https://issuer.acme.example/.well-known/kye/federation",
+  "status": "active"
+}

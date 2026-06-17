@@ -1,0 +1,40 @@
+{
+  "schema_version": "kye.discoverability_profile.v1",
+  "profile_id": "kye:profile:discoverability",
+  "display_name": "KYE Discoverability Profile™",
+  "category": "delegated_agency_discovery",
+  "version": "1.0.0",
+  "description": "Defines policy-filtered discovery of KYE entities, authorities, delegations, capabilities, states, decisions, evidence packs, profiles, connectors, apps and plugins.",
+  "required_kye_profiles": [
+    "kye.core.v1",
+    "kye.authority.v1",
+    "kye.state.v1",
+    "kye.graph.v1",
+    "kye.evidence.v1",
+    "kye.signals.v1"
+  ],
+  "required_objects": [
+    "KYEEntity",
+    "KYEAuthorityGrant",
+    "KYEDelegation",
+    "KYECapabilityManifest",
+    "KYEStateSnapshot",
+    "KYEPolicyDecision",
+    "KYEAuditEvent",
+    "KYEEvidencePack",
+    "KYEDiscoveryQuery",
+    "KYEDiscoveryResult",
+    "KYEDirectoryEntry",
+    "KYEDiscoveryPolicy"
+  ],
+  "discovery_modes": [
+    "private_tenant",
+    "workspace",
+    "cross_workspace",
+    "federated",
+    "public_registry",
+    "certification_registry"
+  ],
+  "access_model": "policy_filtered",
+  "status": "active"
+}

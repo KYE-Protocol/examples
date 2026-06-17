@@ -1,0 +1,33 @@
+{
+  "schema": "kye.scenario_run.v1",
+  "id": "kye:scenario-run:payment-agent-scope-expansion.2026-05-14",
+  "version": 1,
+  "scenario_id": "kye:scenario:payment-agent-scope-expansion",
+  "run_mode": "what_if",
+  "target_object": {
+    "object_id": "kye:agent:acme-bank.payment-orchestrator",
+    "object_schema": "kye.entity.agent.v1"
+  },
+  "resolved_inputs": {
+    "current_per_tx_limit_usd": 10000,
+    "proposed_per_tx_limit_usd": 50000,
+    "rail": "fednow"
+  },
+  "started_at": "2026-05-14T09:05:00Z",
+  "ended_at":   "2026-05-14T09:05:42Z",
+  "outcome": {
+    "admit_count": 1842,
+    "deny_count": 17,
+    "escalate_count": 41,
+    "risk_score": 0.34,
+    "summary": "Expansion to $50k per-tx admits 1842/1900 simulated transactions; 41 escalate to human review under burst-throughput stressor; 17 denied by rail-side velocity controls.",
+    "consequence_map_id": "kye:consequence-map:payment-agent-scope-expansion.2026-05-14"
+  },
+  "divergence_from_baseline": true,
+  "signed_by": "kye:agent:scenario-runner",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:scenario-runner-2026-05",
+    "value_b64": "TG9yZW1zY2VuYXJpb1J1blNpZ25hdHVyZUV4YW1wbGVfMQ"
+  }
+}

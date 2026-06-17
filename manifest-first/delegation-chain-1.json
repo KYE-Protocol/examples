@@ -1,0 +1,52 @@
+{
+  "schema_version": "kye.delegation_chain.v1",
+  "chain_id": "kye:delegation-chain:acme.20260515.001",
+  "tenant_id": "kye:tenant:acme-bank",
+  "leaf_actor_id": "kye:agent:acme-payments-agent",
+  "root_principal_id": "kye:org:acme-bank",
+  "hops": [
+    {
+      "delegator": "kye:org:acme-bank",
+      "grantee": "kye:ent:acme-bank.payments-line-of-business",
+      "grant_id": "kye:authority:acme.lob.payments.charter",
+      "scope_refinement": {
+        "actions": ["payments.outbound.*"],
+        "constraints": { "daily_cap_eur": 50000000 }
+      },
+      "status_at_decision": "active",
+      "not_before": "2026-01-01T00:00:00Z",
+      "not_after":  "2026-12-31T23:59:59Z"
+    },
+    {
+      "delegator": "kye:ent:acme-bank.payments-line-of-business",
+      "grantee": "kye:ent:acme.payments.runbook-owner",
+      "grant_id": "kye:authority:acme.payments.runbook-owner.charter",
+      "scope_refinement": {
+        "actions": ["payments.outbound.execute", "payments.outbound.pause", "payments.outbound.escalate"],
+        "constraints": { "daily_cap_eur": 5000000 }
+      },
+      "status_at_decision": "active",
+      "not_before": "2026-01-01T00:00:00Z",
+      "not_after":  "2026-12-31T23:59:59Z"
+    },
+    {
+      "delegator": "kye:ent:acme.payments.runbook-owner",
+      "grantee": "kye:agent:acme-payments-agent",
+      "grant_id": "kye:authority:acme.payments-agent.outbound-payments",
+      "scope_refinement": {
+        "actions": ["payments.outbound.execute", "payments.outbound.pause", "payments.outbound.escalate"],
+        "constraints": { "single_payment_cap_eur": 250000 }
+      },
+      "status_at_decision": "active",
+      "not_before": "2026-04-01T00:00:00Z",
+      "not_after":  "2026-10-01T00:00:00Z"
+    }
+  ],
+  "chain_hash": "sha384:c47a8b2d5e1f6a4c9b0d8e2a3f5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a",
+  "computed_at": "2026-05-15T09:42:12.350Z",
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:acme-bank-delegation-001",
+    "value_b64": "MEUCIQDuCnBE3eP3hM0YtbCfO2CnAn1f9S3saqBi5a0s2Q6MshLkB8nH6xY3d7I4f4i9H1d1z5eG7J0a2c9O5n2P3q4rT5sU"
+  }
+}

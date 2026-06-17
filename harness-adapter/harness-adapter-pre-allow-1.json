@@ -1,0 +1,19 @@
+{
+  "schema": "kye.harness_adapter.v1",
+  "adapter_id": "kye:harness-adapter:claude-code-generic",
+  "tool_call_id": "toolu_01ABC123",
+  "agent_id": "general-purpose-constitutional-amendment",
+  "parent_task": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "tool_name": "mcp__github__create_pull_request",
+  "tool_type": "mcp",
+  "hook_phase": "pre",
+  "admit_verdict": "ALLOW",
+  "mcp_allow_list_checked": true,
+  "mcp_allow_list_verdict": "allowed",
+  "context_admissibility_verdict": null,
+  "evidence_pack_ref": null,
+  "refusal_ref": null,
+  "emitted_at": "2026-06-08T12:00:00.000Z",
+  "harness_shape": "claude-code",
+  "notes": "Pre-hook ALLOW: mcp__github__create_pull_request is in the constitutional-amendment pattern allow-list."
+}

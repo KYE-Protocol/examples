@@ -1,0 +1,7 @@
+{
+  "tenant_id": "kye:ent:acme.com:org:acme-corp",
+  "library_id": "kye:state-library:kye.agent.lifecycle.v1",
+  "machine_id": "kye:state-machine:kye.agent.lifecycle.v1",
+  "derivation_id": "kye:state-derivation:acme.com:agent-lifecycle:v1",
+  "adopted_at": "2026-05-14T09:00:00Z"
+}

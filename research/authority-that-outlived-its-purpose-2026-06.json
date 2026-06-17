@@ -1,0 +1,60 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:authority-that-outlived-its-purpose-2026-06",
+  "series": "roadmap_to_ai_governance",
+  "format": "why",
+  "sector": "cross-sector",
+  "audience": "counsel",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "The authority that outlived its purpose — why standing permission is the quiet governance risk",
+  "tribute_ref": "kye:scientist-tribute:shafi-goldwasser",
+  "topic_id": "kye:research-topic:authority-that-outlived-its-purpose",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:research:authority-that-outlived-its-purpose:2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "Qvb53nku8D44mSclLWSbkq6UiILm1G+k3iJBAR2oI4r6ZyWUdq5QfnzXVL9CtrjAMs08eIYTCnP7a44frjCADQ=="
+  },
+  "citations": [
+    {
+      "claim": "A zero-trust architecture treats no asset or session as inherently trusted: trust is never granted implicitly, and every access request is authenticated and authorised against current policy rather than inherited from an earlier decision (continual, per-request evaluation).",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "retrieved_at": "2026-06-16T00:00:00Z",
+      "publisher": "NIST Special Publication 800-207, Zero Trust Architecture. Cited as a published standard, not as a security or compliance recommendation by KYE Protocol™."
+    },
+    {
+      "claim": "Account-management controls require organisations to review accounts and access privileges for continued need and to disable or remove them when the conditions that justified them no longer hold — an explicit recognition that standing access persists by default.",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "retrieved_at": "2026-06-16T00:00:00Z",
+      "publisher": "NIST Special Publication 800-53 Rev. 5, control AC-2 (Account Management). Cited as a published standard, not as a security or compliance recommendation by KYE Protocol™."
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of a higher-risk AI system, discharged at the point of use rather than as a one-time sign-off.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-06-16T00:00:00Z",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-16T09:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

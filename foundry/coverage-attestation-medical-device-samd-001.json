@@ -1,0 +1,35 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-medical-device-samd-coverage:2026-06-06",
+  "emitted_at": "2026-06-06T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "MHRA_SAMD",
+    "MHRA_MDR",
+    "MHRA_PMS",
+    "EU_AI_ACT",
+    "ISO_42001"
+  ],
+  "subject": "kye:powered-pack:medical-device-samd:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-medical-device-samd-001-coverage-2026-06-06",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:medical-device-samd:v1",
+    "claim_count": 4,
+    "bound_rule_packs": ["kye:rule-pack:medical-device-samd"],
+    "bound_dictionaries": ["kye:dictionary:medical-device-samd"],
+    "bound_sector_packs": ["kye:sector-pack:medical-device-samd"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

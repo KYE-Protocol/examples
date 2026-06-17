@@ -1,0 +1,20 @@
+{
+  "schema": "kye.control_plane_operation.v1",
+  "operation_id": "kye:control-plane-op:pages-deploy-2026-06-07-001",
+  "capability": "kye:control-plane-cap:pages-deploy",
+  "resource_class": "cf-pages",
+  "risk_tier": "safe-write",
+  "actor": {
+    "entity_id": "kye:entity:admin:ops-lead",
+    "role": "admin"
+  },
+  "rationale": "Publish the rebuilt marketing site after the §50 derived-nav regeneration landed on main.",
+  "approval_mode": "none",
+  "approval_ref": null,
+  "purpose_grant_id": "kye:purpose-grant:pages-deploy-2026-06-07-001",
+  "evidence": {
+    "decision_map_ref": "kye:evidence:decision-map:control-plane-op:pages-deploy-2026-06-07-001",
+    "context_seal_ref": "kye:replay:context-seal:control-plane-op:pages-deploy-2026-06-07-001"
+  },
+  "at": "2026-06-07T10:15:00Z"
+}

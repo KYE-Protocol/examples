@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.ratchet_baselines.v1.json",
+  "schema": "kye.ratchet_baselines.v1",
+  "registry_id": "kye:registry:ratchet-baselines",
+  "adopted_at": "2026-06-11",
+  "constitution_ref": "constitution/00-INDEX.md#0.18",
+  "description": "Illustrative kye.ratchet_baselines.v1 instance — one entry per decreases-only ratchet baseline, each naming the gate that reads it.",
+  "baselines": {
+    "example_uncovered_total": {
+      "count": 42,
+      "gate": "test:example-canonical",
+      "decay_deadline": "2026-12-31",
+      "description": "Illustrative ratchet ceiling — a branch lowers this number as it covers artefacts; raising it requires the gate's justification path."
+    }
+  }
+}

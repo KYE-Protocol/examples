@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:acme.example:01J4P8Z9Q1AAAAAAAAAAAAAAAA",
+  "event_class": "kye.purpose.grant.issued",
+  "occurred_at": "2026-04-29T10:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme.example",
+    "trust_domain": "acme.example"
+  },
+  "delivery_id": "dlv_01J4P8Z9Q1XYZBBBBBBBBBBBBB",
+  "severity": "info",
+  "payload": {
+    "grant_id": "kye:purpose-grant:acme.example:onboarding:01J4P8Z9Q1",
+    "purpose_class_id": "kye:purpose-class:onboarding",
+    "principal_entity_id": "kye:ent:acme.example:person:alice",
+    "grantee_entity_id": "kye:ent:acme.example:business:acme",
+    "data_classes": ["pii.basic", "pii.contact"],
+    "valid_from": "2026-04-29T10:00:00Z",
+    "valid_until": "2027-04-29T10:00:00Z",
+    "issued_via": "consent_receipt:kye:rcpt:acme.example:01J4P8Z000",
+    "controlling_frameworks": ["GDPR", "EU_AI_ACT"]
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "5e3d09bd1c0d4c8c5e26db9f7e6c2db3a1c8a40f1f5d4e7b3a2f1c0d4c8c5e26",
+    "ts": "1745923200"
+  }
+}

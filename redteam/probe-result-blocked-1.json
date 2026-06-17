@@ -1,0 +1,28 @@
+{
+  "schema": "kye.redteam.probe_result.v1",
+  "probe_id": "kye:redteam:probe:authz-bypass-gateway-001",
+  "probe_class": "authz_bypass",
+  "target": "gateway_pep",
+  "trust_domain_id": "kye:trust-domain:kye-internal-prod",
+  "agent_id": "runtime-kye-redteam",
+  "parent_task": "7c1a0b2e-9d3f-4a8b-bc21-5e6f0a1b2c3d",
+  "run_at": "2026-06-12T00:00:00Z",
+  "outcome": "blocked",
+  "expected_control": "kye:control:gateway-pep-admissibility",
+  "summary": "boundary held: kye:control:gateway-pep-admissibility correctly blocked authz_bypass on gateway_pep — PDP DENY",
+  "evidence_pack": {
+    "schema": "kye.evidence.pack.v1",
+    "evidence_pack_id": "kye:evidence:redteam:authz-bypass-gateway-001",
+    "produced_by": "kye:prin:kye-redteam-agent",
+    "produced_at": "2026-06-12T00:00:00Z",
+    "trust_domain_id": "kye:trust-domain:kye-internal-prod",
+    "body": {
+      "probe_id": "kye:redteam:probe:authz-bypass-gateway-001",
+      "probe_class": "authz_bypass",
+      "target": "gateway_pep",
+      "outcome": "blocked",
+      "expected_control": "kye:control:gateway-pep-admissibility"
+    },
+    "content_hash": "2357eb1ba140ac87"
+  }
+}

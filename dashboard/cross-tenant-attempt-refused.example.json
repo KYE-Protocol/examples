@@ -1,0 +1,33 @@
+{
+  "_doc": "Fixture: a tenant client (acme) attempts to subscribe to dashboard stream with a forged tenant_id query parameter pointing at globex. The server MUST ignore the client-supplied value, resolve tenant_id strictly from the verified Clerk session, and refuse the cross-tenant smuggle attempt with HTTP 403. The §0.3 attestation envelope below is the audit-trace the gate scans for. Locked by constitution/08-APPS-DASHBOARDS.md §13 + §0.11 banking-grade isolation.",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/stream/dashboard?tenant_id=kye:tenant:org_2vGlobex",
+    "headers": {
+      "authorization": "Bearer eyJhbGciOiJSUzI1NiIs.<acme-tenant-jwt>.<sig>"
+    }
+  },
+  "response": {
+    "status": 403,
+    "body": {
+      "ok": false,
+      "error": "cross_tenant_smuggle_refused",
+      "reason": "Client-supplied tenant_id does not match session-resolved tenant_id. Refused per constitution §0.11."
+    }
+  },
+  "emitted_attestation": {
+    "schema": "kye.compliance.attestation.v1",
+    "attestation_id": "kye:compliance-attestation:cross-tenant-refused-2026-05-30T14-22-08Z-x91f",
+    "emitted_at": "2026-05-30T14:22:08Z",
+    "emitter": "kye:dashboard-stream:worker",
+    "framework_refs": ["constitution/08-APPS-DASHBOARDS.md#13", "constitution/00-INDEX.md#011", "SR-11-7", "ISO-27001:A.9"],
+    "subject": "kye:tenant:org_2vAcMeBank",
+    "mode": "live",
+    "verdict": "fail",
+    "summary": {
+      "refusal_reason": "cross_tenant_smuggle_refused",
+      "attempted_tenant_id": "kye:tenant:org_2vGlobex",
+      "session_tenant_id": "kye:tenant:org_2vAcMeBank"
+    }
+  }
+}

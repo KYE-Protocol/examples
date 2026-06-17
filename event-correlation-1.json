@@ -1,0 +1,24 @@
+{
+  "correlation_id": "9b7a3d8c-4e1f-4b0a-8c5d-2e6f7a8b9c10",
+  "correlation_kind": "approval_lineage",
+  "member_entry_ids": [
+    "f7e3b1d2-5c8e-4a3f-9b2d-1a0b8c4e6f10",
+    "a8d4c2e1-6f3b-4d9a-8e7c-3b5d2f1a9e80",
+    "c2e1f3a4-7b8d-4e5f-9a6c-4d8e2b1f3a70"
+  ],
+  "head_entry_id": "f7e3b1d2-5c8e-4a3f-9b2d-1a0b8c4e6f10",
+  "tail_entry_id": "c2e1f3a4-7b8d-4e5f-9a6c-4d8e2b1f3a70",
+  "actor_ids": [
+    "kye:human:prod:reviewer-a",
+    "kye:human:prod:reviewer-b",
+    "kye:agent:prod:gateway-worker:7c2d"
+  ],
+  "tenant_id": "kye:tenant:prod:acme-bank",
+  "audit_chain_ref": "kye:audit:chain:01HVK3M2NPQR8XW7TZAC9F5D2E",
+  "emitted_at_window": {
+    "start": "2026-05-19T12:34:56.789Z",
+    "end": "2026-05-19T12:38:02.155Z"
+  },
+  "framework_refs": ["sr-11-7", "eu-ai-act-art-14", "dora-art-28", "iso-42001"],
+  "produced_at": "2026-05-19T12:38:03.000Z"
+}

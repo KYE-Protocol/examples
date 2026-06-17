@@ -1,0 +1,83 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.dr_manifest.v1.json",
+  "schema_version": "kye.dr_manifest.v1",
+  "description": "Disaster-recovery manifest. Published at https://kyeprotocol.com/.well-known/kye-dr.json so any client (regulator, auditor, customer) can discover the backup hosts + alternate domains during a primary outage. Constitution §0.4 — banking-grade requires no S1 SPOF; this manifest is the public registry of mitigations.",
+  "publisher": {
+    "name": "KYE Protocol Ltd",
+    "url": "https://kyeprotocol.com/"
+  },
+  "primary": {
+    "domain": "kyeprotocol.com",
+    "api":    "https://api.kyeprotocol.com",
+    "admin":  "https://admin.kyeprotocol.com",
+    "app":    "https://app.kyeprotocol.com",
+    "schemas":"https://kyeprotocol.com/schemas/",
+    "registrar": "Cloudflare Registrar",
+    "registrar_lock": "enabled",
+    "dnssec": "enabled"
+  },
+  "alternates": [
+    {
+      "purpose": "schemas_resolver_mirror",
+      "rationale": "Backup $id resolution path for kye.*.v1.json schemas. Primary host is kyeprotocol.com; this mirror serves byte-identical schema files under the same path prefix. CI gate publish-schemas-to-mirror runs on every main commit.",
+      "url": "https://kye-protocol.github.io/schemas/",
+      "status": "active_mirror"
+    },
+    {
+      "purpose": "domain_dr",
+      "rationale": "Standby domain pre-registered so a primary-domain seizure or registrar incident does not eliminate the protocol. Promoted by DNS swap; certificate issued via ACME on activation.",
+      "domain": "kye-protocol.dev",
+      "status": "registered_parked"
+    },
+    {
+      "purpose": "verifier_lambda",
+      "rationale": "Self-contained AWS Lambda verifier bundle — any auditor can verify a signed kye.*.v1 envelope from outside the Cloudflare substrate using nothing more than the published per-tenant pubkey. Builds the multi-cloud verifier path (runbook S1-#1).",
+      "url": "https://github.com/KYE-Protocol/app/tree/main/internal",
+      "status": "published",
+      "language": "typescript",
+      "entry": "lambda-handler.mjs"
+    },
+    {
+      "purpose": "mirror_repo",
+      "rationale": "GitLab mirror of the canonical GitHub repo. Cold-DR deploy pipeline at .gitlab-ci.yml. Operator pull-mirrors hourly.",
+      "url": "https://gitlab.com/KYE-Protocol/app",
+      "status": "mirror_only_no_writes"
+    }
+  ],
+  "backup_providers": {
+    "email": {
+      "primary":   "cloudflare_email_sending",
+      "backups":   ["resend", "postmark", "sendgrid"],
+      "activation": "automatic_on_primary_failure",
+      "binding":   "MAIL_BACKUP_PROVIDER + MAIL_BACKUP_API_KEY secrets"
+    },
+    "payments": {
+      "primary":   "stripe",
+      "backups":   ["adyen", "mollie"],
+      "activation": "manual_failover",
+      "binding":   "PAYMENTS_BACKUP_PROVIDER + PAYMENTS_BACKUP_API_KEY secrets"
+    },
+    "identity": {
+      "primary":   "clerk",
+      "backups":   ["auth0"],
+      "activation": "manual_failover",
+      "binding":   "IDP_BACKUP_PROVIDER + IDP_BACKUP_API_KEY secrets"
+    }
+  },
+  "backup_data_plane": {
+    "d1_cross_region": {
+      "worker": "kye-d1-backup-worker",
+      "cadence": "hourly",
+      "secondary_r2_account": "different_cf_account_recommended",
+      "tables_protected": 19,
+      "tamper_evidence": "per_run_signed_manifest_with_sha256_per_table"
+    }
+  },
+  "constitution_refs": [
+    "constitution/00-INDEX.md §0.4 — banking-grade",
+    "constitution/30-AUDIT-WORM-RETENTION.md",
+    "internal"
+  ],
+  "last_reviewed": "2026-05-17",
+  "next_review_due": "2026-08-17"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "kye:transparency-receipt:dx-2026-05-24-9c3a",
+  "tenant_id": "kye:tenant:acme-health",
+  "receipt_id": "kye:transparency-receipt:dx-2026-05-24-9c3a",
+  "decision_id": "kye:decision-map:acme-health:dx-2026-05-24-9c3a",
+  "subject_ref": "kye:subject:patient-9631119",
+  "issued_at": "2026-05-24T12:01:00Z",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

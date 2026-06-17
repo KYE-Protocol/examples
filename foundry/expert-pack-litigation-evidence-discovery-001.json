@@ -1,0 +1,66 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:litigation-evidence-discovery:v1",
+  "partner_id": "kye:foundry-applicant:litigation-evidence-discovery-reference-partner",
+  "pack_name": "KYE Litigation Evidence & Discovery Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "litigation-evidence-discovery",
+  "bound_sector_pack_refs": ["kye:sector-pack:litigation-evidence-discovery"],
+  "bound_rule_pack_refs": ["kye:rule-pack:litigation-evidence-discovery"],
+  "bound_dictionary_refs": ["kye:dictionary:litigation-evidence-discovery"],
+  "bound_framework_refs": [
+    "kye:framework:frcp-ediscovery",
+    "kye:framework:fre-authentication",
+    "kye:framework:sedona-principles",
+    "kye:framework:uk-cpr-pd57ad",
+    "kye:framework:eu-evidence-regulation"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:litigation-evidence-discovery:2026-06-10",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-10T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-litigation-evidence-discovery-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:litigation-evidence-discovery:2026-06-10",
+  "claim_set": [
+    {
+      "claim_id": "privilege-determination-authority",
+      "claim_text": "Every AI-assisted privilege determination, production / withholding decision, or research assertion that moves toward a consequential litigation action (entering a privilege log, releasing a production set, withholding a document, certifying a discovery response) MUST map to a recorded named-authority decision — the agent, the determination artefact, the intended consequential action, and the named supervising attorney / privilege-review lead under whose authority it proceeds. Determinations lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "discovery-chain-of-custody",
+      "claim_text": "Before an AI-reviewed document proceeds to a consequential litigation action it MUST carry a recorded discovery chain-of-custody — the source custodian and collection point, every transformation (de-duplication, redaction, format conversion, AI classification) with actor and timestamp, and the integrity hash as collected and as produced — so the document can be authenticated under FRE 901/902 and the disclosure certified as complete and reasonable under FRCP 26(g) / CPR PD 57AD.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "ai-review-provenance-pin",
+      "claim_text": "Every AI-asserted fact, case citation, document characterisation, or privilege rationale that proceeds toward a consequential litigation action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs, the pinned source for each asserted fact or citation, the review basis applied, and the named-authority outcome — so no AI-asserted fact or citation is relied on without a pinned, verifiable source (the no-hallucinated-citation rule the Mata v. Avianca fake-citation sanctions made non-negotiable). An assertion without a resolvable pinned source is refused and never proceeds.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "litigation-evidence-capture",
+      "claim_text": "Every AI-reviewed item that proceeds to a consequential litigation action MUST emit a signed, replay-provable litigation Evidence Pack binding the named-authority decision, the recorded chain-of-custody, the pinned-source provenance, and the review basis under a context seal — reconstructable and valid at T=0, derivable from published keys alone, retained under WORM — the defensibility artefact a court, opposing counsel, or a regulator can verify offline when the AI-assisted work is challenged.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "contestability-record",
+      "claim_text": "Every AI-assisted litigation determination that proceeds to a consequential action MUST carry a contestability record — a stable determination identifier, the inputs and authority and evidence it rested on, and a reconstruction / challenge route — so that when the determination is challenged in court (a privilege clawback under FRE 502, a motion to compel, a spoliation / sanctions inquiry under FRCP 37, a disclosure challenge under CPR PD 57AD) it can be reconstructed exactly as made and contested through a recorded route.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs the AUTHORITY + EVIDENCE + DEFENSIBILITY of AI-assisted litigation work and PROVES it for litigation — who authorised the privilege call, the provenance of the AI review, the chain-of-custody, whether it can be reconstructed and contested. KYE does NOT do legal research, judge the legal merits, write the brief, render the privilege opinion, or replace counsel.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-10T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "proof_bundle_id": "kye:prf:acme.example:01JYPRF0000000000000000000",
+  "subject_type": "policy_decision",
+  "subject_id": "kye:pdc:acme.example:01JYPDC0000000000000000000",
+  "included_artifacts": [
+    "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+    "kye:del:acme.example:01JYABC0000000000000000000",
+    "kye:cred:acme.example:kye_agent_passport:01JYCRED0000000000000000",
+    "kye:att:acme.example:workload_attestation:01JYATT0000000000000000",
+    "kye:pdc:acme.example:01JYPDC0000000000000000000",
+    "kye:rte:acme.example:01JYRTE0000000000000000000",
+    "kye:aud:acme.example:01JYAUD0000000000000000000"
+  ],
+  "bundle_hash": "sha256:c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1",
+  "transparency_receipt_id": "kye:rcp:acme.example:01JYRCPT000000000000000000",
+  "signature": "cose:<elided>",
+  "artifact_uri": "https://proofs.acme.example/01JYPRF.bundle",
+  "created_at": "2026-04-15T12:30:02Z"
+}

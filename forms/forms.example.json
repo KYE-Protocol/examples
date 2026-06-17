@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.form.v1.json",
+  "schema": "kye.form.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/06-WEBSITE.md",
+  "notes": [
+    "Illustrative kye.form.v1 instance. The canonical full registry lives at internal"
+  ],
+  "forms": [
+    {
+      "id": "kye:form:example",
+      "name": "Example Form",
+      "surface": "public/site/example.html",
+      "submit_target": "/v1/example",
+      "audience": "buyer"
+    }
+  ]
+}

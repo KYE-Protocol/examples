@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:response_enforcement:stripe-rail-example",
+  "layer": "response_enforcement",
+  "direction": "out",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "enforcement_gateway",
+  "attestation_requirement": "required_outbound",
+  "transport": "sse",
+  "known_partners": [
+    { "partner_slug": "payment-rail-stripe", "partner_name": "Stripe payment rail", "adapter_status": "declared", "url": "https://stripe.com" }
+  ],
+  "adopted_at": "2026-05-30"
+}

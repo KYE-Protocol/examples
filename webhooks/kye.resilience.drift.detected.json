@@ -1,0 +1,33 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:acme.example:01J4P9900J1KKLLMMNNNNNNNNNN",
+  "event_class": "kye.resilience.drift.detected",
+  "occurred_at": "2026-05-09T06:00:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:acme.example",
+    "trust_domain": "acme.example"
+  },
+  "delivery_id": "dlv_01J4P9900J1KKLLMMNNNNNNNNNN",
+  "severity": "warn",
+  "payload": {
+    "drift_id": "kye:drift:acme.example:01J4P9900J1K",
+    "agent_entity_id": "kye:ent:acme.example:agent:credit-scorer",
+    "metric": "calibration.brier_score",
+    "baseline": 0.13,
+    "observed": 0.21,
+    "threshold": 0.18,
+    "window": "7d",
+    "evidence_window_pack_ids": [
+      "kye:evidence-pack:acme.example:01J4P9000A",
+      "kye:evidence-pack:acme.example:01J4P9100B"
+    ],
+    "stop_conditions_armed": ["actor.compromise_detected"],
+    "notify": ["kye:ent:acme.example:role:soc-on-call"]
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "3b4c5d6e7f80910223344556677889900aabbccddeeff1122334455667788990",
+    "ts": "1746770400"
+  }
+}

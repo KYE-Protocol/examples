@@ -1,0 +1,22 @@
+{
+  "schema_version": "kye.graph_edge.v1",
+  "edge_id": "kye:edge:delegation:acme.example:agent-007-on-behalf-of-acme:001",
+  "edge_type": "acts_on_behalf_of",
+  "source_node_id": "kye:node:agent:acme.example:finance-agent-007",
+  "target_node_id": "kye:node:org:acme.example",
+  "state": "active",
+  "valid_from": "2026-05-05T00:00:00Z",
+  "valid_until": "2026-12-31T23:59:59Z",
+  "authority_ref": "kye:authority:grant:acme.example:123",
+  "scope_ref": "kye:scope:acme.example:finance-prod",
+  "policy_refs": [
+    "kye:policy:acme.example:agent-delegation"
+  ],
+  "evidence_refs": [
+    "kye:evidence-pack:acme.example:delegation-contract-001"
+  ],
+  "metadata": {
+    "delegation_depth": 1,
+    "environment": "production"
+  }
+}

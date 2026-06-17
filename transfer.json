@@ -1,0 +1,12 @@
+{
+  "transfer_id": "kye:trn:acme.example:01JYTRN0000000000000000000",
+  "entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "from_owner_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+  "to_owner_entity_id": "kye:ent:globex.example:business:01JYGLOBEX000000000000000",
+  "from_trust_domain_id": "kye:td:acme.example",
+  "to_trust_domain_id": "kye:td:globex.example",
+  "requires_reverification": true,
+  "requires_reissue": true,
+  "status": "pending",
+  "requested_at": "2026-04-20T09:00:00Z"
+}

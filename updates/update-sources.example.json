@@ -1,0 +1,28 @@
+{
+  "schema": "kye.update_sources.v1",
+  "registry_id": "kye:registry:update-sources",
+  "display_name": "KYE Announce-able Sources™ (the features registry)",
+  "constitution_ref": "constitution/65-UPDATES-RAIL.md",
+  "sources": [
+    {
+      "source_id": "constitution-rails",
+      "kind": "rail",
+      "enabled": true,
+      "customer_facing": false,
+      "extractor": "constitution-header",
+      "scan_glob": "constitution/*.md",
+      "audience": "all",
+      "url_template": "/constitution/{slug}"
+    },
+    {
+      "source_id": "hf-models",
+      "kind": "model",
+      "enabled": false,
+      "customer_facing": true,
+      "extractor": "registry-items",
+      "audience": "developer",
+      "url_template": "/huggingface",
+      "deferred_reason": "Phase 2 — inbound Hugging Face model-publish sync; depends on the Model Governance Rail + HF sync bridge."
+    }
+  ]
+}

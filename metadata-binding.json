@@ -1,0 +1,44 @@
+{
+  "schema_version": "kye.metadata_binding.v1",
+  "binding_id": "kye:metadata-binding:acme.example:agent-007:001",
+  "subject_urn": "kye:agent:acme.example:finance-agent-007",
+  "metadata_schema_id": "kye:metadata-schema:financial_services.v1",
+  "metadata": {
+    "labels": {
+      "sector": "financial_services",
+      "environment": "production",
+      "business_unit": "finance"
+    },
+    "classifications": {
+      "data_classes": ["financial", "personal_data"],
+      "risk_state": "high",
+      "ai_risk_class": "high_risk",
+      "criticality": "tier_1",
+      "jurisdiction": "GB",
+      "side_effect_level": "move_money",
+      "regulated_status": "regulated"
+    },
+    "ownership": {
+      "business_owner_entity_id": "kye:user:acme.example:cfo-office-owner",
+      "technical_owner_entity_id": "kye:user:acme.example:platform-owner",
+      "controller_entity_id": "kye:org:acme.example",
+      "maintainer_entity_id": "kye:team:acme.example:finance-platform"
+    },
+    "lineage": {
+      "source_system": "erp",
+      "created_by_process": "agent_registration_workflow",
+      "supersedes": null
+    },
+    "compliance": {
+      "framework_refs": ["EU_AI_ACT", "ISO_42001", "SOC2", "PSD3", "DORA"],
+      "evidence_required": true,
+      "control_refs": [
+        "KYE-EUAIACT-003",
+        "KYE-EUAIACT-005",
+        "KYE-EUAIACT-006"
+      ]
+    }
+  },
+  "valid_from": "2026-05-05T00:00:00Z",
+  "valid_until": "2027-05-05T00:00:00Z"
+}

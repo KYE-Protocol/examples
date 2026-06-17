@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:product__market:kye-cloud__regulated-enterprise",
+  "relationship_type": "serves",
+  "source_class": "product",
+  "source_id": "kye-cloud",
+  "target_class": "market",
+  "target_id": "regulated-enterprise",
+  "cardinality": "many-to-many",
+  "bidirectional": false,
+  "weight": 0.95,
+  "evidence_basis": "KYE-Cloud is the canonical SaaS offering for regulated-enterprise buyers (banks, insurers, healthcare).",
+  "effective_from": "2026-05-30",
+  "owners": ["KYE Commercial Authority"],
+  "status": "active"
+}

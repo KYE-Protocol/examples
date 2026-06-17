@@ -1,0 +1,25 @@
+{
+  "schema": "kye.deploy.failover_event.v1",
+  "event_id": "kye:deploy-failover:01HFB9X7ZQK4M5R8YV3WJKQ8N2P",
+  "decided_at": "2026-05-27T13:45:12Z",
+  "decided_by": "kye:engine:deploy-failover-controller:v1",
+  "trigger": {
+    "kind": "health-probe-5xx",
+    "detail": "5xx ratio 3.2% over 92s rolling window on primary-cf-pages; SLO threshold 1% over 90s breached",
+    "probe_ids": [
+      "kye:probe:status-uptime:eu-west",
+      "kye:probe:status-uptime:us-east",
+      "kye:probe:edge-5xx-ratio:global"
+    ],
+    "duration_below_slo_seconds": 92
+  },
+  "from_tier": "primary-cf-pages",
+  "to_tier": "secondary-r2-mirror",
+  "subject_surfaces": [
+    "kyeprotocol.com",
+    "status.kyeprotocol.com"
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:platform:spof-phase2-cf-cutover-2026-05-27",
+  "verdict": "completed",
+  "notes": "Automated cutover; secondary-r2-mirror probe-canary served 200 from 4 of 5 geo-points within 67 seconds of DNS update. Dynamic API surfaces (app.kyeprotocol.com, admin.kyeprotocol.com) NOT in subject_surfaces — they continue to attempt primary and serve 503 with static incident banner. Rollback decision will be issued once primary reports sustained green for >= 600s."
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.edge.compiled-authority-bundle.v1.json",
+  "bundle_id": "kye:edge-bundle:tier1-bank:b6989088-5a30-4c6a-a8e2-97d936463920",
+  "tenant_id": "kye:tenant:tier1-bank",
+  "device_id": "kye:device:payment-fleet-alpha",
+  "not_before": "2026-05-14T18:00:00Z",
+  "not_after":  "2026-05-14T22:00:00Z",
+  "compiler": {
+    "name":    "kye-edge-bundle-compiler",
+    "version": "1.0.0",
+    "compiled_at": "2026-05-14T17:59:55Z",
+    "source_state_library_hash": "sha256-Yr2pZ8z6cWj0L8Ng2v3p4Q9rN7m1k0XyA6Y2v4Hg9bM"
+  },
+  "authority_graph": {
+    "principals": [
+      { "id": "kye:principal:fleet-alpha-7", "kind": "agent", "controller": "kye:org:tier1-bank-ops" }
+    ],
+    "delegations": [
+      {
+        "id": "kye:delegation:fleet-alpha-2026Q2",
+        "from": "kye:org:tier1-bank-ops",
+        "to":   "kye:principal:fleet-alpha-7",
+        "scope":"kye:scope:tier1-bank/treasury/eurozone-payouts",
+        "not_before": "2026-04-01T00:00:00Z",
+        "not_after":  "2026-06-30T23:59:59Z"
+      }
+    ]
+  },
+  "permitted_actions": [
+    {
+      "action": "kye:action:payment.send",
+      "scope":  "kye:scope:tier1-bank/treasury/eurozone-payouts",
+      "conditions": [
+        { "fact": "amount_eur", "op": "<=", "value": 50000 },
+        { "fact": "currency",   "op": "==", "value": "EUR" },
+        { "fact": "counterparty.country", "op": "in",
+          "value": ["DE","FR","NL","IT","ES","BE","LU","AT","PT","FI","IE","GR","CY","MT","SK","SI","EE","LV","LT"] }
+      ]
+    }
+  ],
+  "prohibited_actions": [
+    {
+      "action": "kye:action:payment.send",
+      "scope":  "kye:scope:tier1-bank/treasury/eurozone-payouts",
+      "conditions": [
+        { "fact": "counterparty.country", "op": "in", "value": ["KP","IR","SY","CU"] }
+      ]
+    }
+  ],
+  "obligations": [
+    { "obligation_urn": "kye:obligation:emit-audit-event",         "when": "on_decision" },
+    { "obligation_urn": "kye:obligation:append-offline-evidence",  "when": "on_decision" },
+    { "obligation_urn": "kye:obligation:emit-meter-event",         "when": "after_action", "params": { "meter": "payment_authorised" } }
+  ],
+  "state_transitions": [
+    {
+      "from": "kye:state:payment.draft",
+      "to":   "kye:state:payment.authorised",
+      "guard": { "all_of": [
+        { "fact": "amount_eur", "op": "<=", "value": 50000 },
+        { "fact": "sca_status", "op": "==", "value": "passed" }
+      ] },
+      "effect": { "emit": "kye:event:payment.authorised.v1" }
+    }
+  ],
+  "safety_floor": {
+    "bundle_expired":         "manual_approval",
+    "signature_invalid":      "buffer_only",
+    "authority_uncertain":    "read_only",
+    "revocation_unknown":     "quarantine",
+    "value_at_risk_exceeded": "disable_money",
+    "blast_radius_exceeded":  "pause",
+    "network_loss":           "buffer_only",
+    "clock_drift":            "pause"
+  },
+  "revocation_window": {
+    "kid": "tier1-bank-treasury-2026q2",
+    "serial_range_min": 1,
+    "serial_range_max": 50000
+  },
+  "risk_limits": {
+    "value_at_risk": { "currency": "EUR", "max_per_action": 50000, "max_per_window": 200000, "window_h": 4 },
+    "blast_radius_cap": 25,
+    "max_velocity":  { "actions_per_minute": 4, "actions_per_hour": 60 }
+  },
+  "evidence_rules": {
+    "log_every_decision": true,
+    "log_schema":         "kye.edge.offline-evidence.v1",
+    "sync_endpoint":      "https://api.kyeprotocol.com/v1/evidence/replay"
+  },
+  "signature": {
+    "alg":         "Ed25519",
+    "kid":         "kye-edge-compiler-2026q2",
+    "sig_b64":     "MEYCIQDk5n8Y6t...placeholder-detached-Ed25519...4P9Y2lk=",
+    "bundle_hash": "sha256-Yr2pZ8z6cWj0L8Ng2v3p4Q9rN7m1k0XyA6Y2v4Hg9bM"
+  }
+}

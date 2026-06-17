@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:public-sector-governance:v1",
+  "partner_id": "kye:foundry-applicant:public-sector-governance-reference-partner",
+  "pack_name": "KYE Public Sector Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "public-sector-governance",
+  "bound_sector_pack_refs": ["kye:sector-pack:public-sector-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:public-sector-governance"],
+  "bound_dictionary_refs": ["kye:dictionary:public-sector-governance"],
+  "bound_framework_refs": [
+    "kye:framework:fedramp",
+    "kye:framework:nis2",
+    "kye:framework:iso-42001",
+    "kye:framework:iso-27001",
+    "kye:framework:uk-ai-framework"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:public-sector-governance:2026-06-09",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-09T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-public-sector-governance-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:public-sector-governance:2026-06-09",
+  "claim_set": [
+    {
+      "claim_id": "named-authority",
+      "claim_text": "Every AI-generated public-sector decision, determination, or output that moves toward a consequential action MUST map to a recorded named-authority decision — the agent, the output artefact, the intended consequential action, and the named official under whose authority it proceeds. Outputs lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "due-diligence",
+      "claim_text": "Before an AI-generated output proceeds to a consequential action it MUST carry a recorded due-diligence result — personnel-eligibility / US-persons screen (FedRAMP PS-3/PS-7) where applicable, a lawful-basis determination (UK GDPR Art.6 public-task; NIS2 governance; ISO/IEC 42001), and a FedRAMP continuous-monitoring / control-status screen (CA-7; open POA&M; SI-2). An unscreened, ineligible-personnel, unlawful-basis, or ConMon-deficient output is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-generated output that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin — produced with FIPS 140-validated cryptographic modules (FedRAMP SC-13) inside a FedRAMP boundary — binding the generating model and version, the inputs and pinned source data, the lawful-basis and ConMon status, the due-diligence result relied on, and the named-authority outcome — audit-grade, FedRAMP-aligned data-integrity provenance verifiable offline.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "signoff-gate",
+      "claim_text": "An AI-generated output MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — the responsible caseworker, system owner, or authorising official — records sign-off. The irreversible authorising-official-facing assertion (a ConMon / POA&M submission relied on for the ATO) additionally requires §36 two-person sign-off (the preparing system owner AND an approving authorising official). Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-generated public-sector output may proceed to a consequential action and PROVES the basis. KYE does not replace the FedRAMP / ATO authorisation of the system, make the policy decision, run the case-management engine, or judge whether the determination is substantively correct.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-09T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

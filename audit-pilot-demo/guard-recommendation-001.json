@@ -1,0 +1,28 @@
+{
+  "schema": "kye.operating_model.guard_recommendation.v1",
+  "id": "kye:guard-recommendation:demo.authority-gate.payments.001",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:demo.financial-services.q2-2026",
+  "closes_gap_class": "missing_authority_grant",
+  "guard_type": "authority_gate",
+  "proposed_scope": {
+    "agents":  ["kye:agent:demo.supplier-payment-agent.v1"],
+    "actions": ["payment.prepare", "payment.confirm"],
+    "data_classes": ["financial.payments", "vendor.invoice"]
+  },
+  "expected_blocked_actions": 12,
+  "rollout": {
+    "initial_mode": "shadow",
+    "promote_to_enforce_after_days": 21,
+    "rollback_plan": "Disable the Authority Gate and revert to observe stage if more than 3 false-positive deny events fire in a 24-hour window."
+  },
+  "rationale": "Twelve observed prepare actions in 60 days fired without an active Authority Grant. The Authority Gate is the narrowest fix: it requires an unrevoked grant for the single agent + action pair, leaving every other agent on the pilot untouched.",
+  "recommended_at": "2026-05-12T11:30:00Z",
+  "accepted_at": null,
+  "promoted_at": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:demo.guard-recommendation.2026",
+    "value_b64": "ZGVtb19ndWFyZF9yZWNvbW1lbmRhdGlvbl9zaWduYXR1cmVfYXV0aG9yaXR5X2dhdGVfMDAxX3BheW1lbnRzMQ"
+  }
+}

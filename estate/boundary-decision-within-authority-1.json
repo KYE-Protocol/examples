@@ -1,0 +1,16 @@
+{
+  "schema": "kye.estate.boundary_decision.v1",
+  "boundary_decision_id": "kye:estate:boundary_decision:demo-tenant:bd-2026-05-27-001",
+  "matter_id": "kye:estate:matter:demo-tenant:matter-2026-05-27-001",
+  "decided_at": "2026-05-27T09:47:02Z",
+  "decided_by": "kye:engine:demo-tenant:boundary-engine-v1",
+  "state": "manager_review_required",
+  "inputs_considered": {
+    "fact_find_id": "kye:estate:fact_find:demo-tenant:ff-2026-05-27-001",
+    "draft_manifest_id": "kye:estate:draft_manifest:demo-tenant:dm-2026-05-27-001",
+    "case_check_id": "kye:estate:case_check:demo-tenant:cc-2026-05-27-001",
+    "adviser_profile_id": "kye:estate:adviser_profile:demo-tenant:adviser-jane-boutique-v1"
+  },
+  "rationale": "AI Case Checker returned amber severity (one major finding on share substitution). Adviser-authority profile permits within_adviser_authority resolution only for green case checks; amber on a will_standard requires manager review before signing-pack issuance.",
+  "rule_fired_id": "kye:estate:rule:will-standard-amber-requires-manager-review"
+}

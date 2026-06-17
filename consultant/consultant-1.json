@@ -1,0 +1,41 @@
+{
+  "schema": "kye.consultant.v1",
+  "id": "kye:consultant:acme-trust-partners-eleanor-vance",
+  "name": "Eleanor Vance",
+  "email": "eleanor.vance@acmetrust.eu",
+  "firm_name": "Acme Trust Partners",
+  "certification": "partner",
+  "sectors": ["banking", "insurance", "fintech", "regtech"],
+  "jurisdictions": ["EU", "UK", "DE", "FR", "NL"],
+  "languages": ["en", "de", "fr", "nl"],
+  "expert_reviews": [
+    {
+      "id": "kye:expert-review:01HZN4M2Q3-aurora-bank",
+      "reviewer_id": "kye:reviewer:aurora-bank-cro",
+      "rating": 5,
+      "comment": "Eleanor's CISO+DPO advisory cut our DORA evidence pipeline lead time from 6 weeks to 4 days.",
+      "signed": true,
+      "signed_at": "2026-03-11T09:30:00Z"
+    },
+    {
+      "id": "kye:expert-review:01HZN4M2Q4-helix-insurance",
+      "reviewer_id": "kye:reviewer:helix-insurance-cdo",
+      "rating": 5,
+      "comment": "Most reliable AI-governance advisor we've engaged. Knows the AI Act Annex IV cold.",
+      "signed": true,
+      "signed_at": "2026-04-02T14:15:00Z"
+    }
+  ],
+  "assurance_cards": [
+    {
+      "id": "kye:assurance-card:01HZN4M3-bank-anon-001",
+      "tenant_anonymized_ref": "tier1-bank-eu-2026Q1",
+      "outcome": "Tier-1 readiness achieved; audit replay passed at 99.4%.",
+      "signed": true,
+      "signed_at": "2026-03-29T17:00:00Z"
+    }
+  ],
+  "created_at": "2025-09-14T10:00:00Z",
+  "updated_at": "2026-05-01T08:00:00Z",
+  "status": "active"
+}

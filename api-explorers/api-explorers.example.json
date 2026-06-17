@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.api_explorer.v1.json",
+  "schema": "kye.api_explorer.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/15-MCP-AND-SDK.md",
+  "notes": [
+    "Illustrative kye.api_explorer.v1 instance. The canonical full registry lives at internal"
+  ],
+  "api_explorers": [
+    {
+      "id": "kye:api-explorer:example",
+      "tab_key": "example",
+      "openapi_url": "/openapi/example.openapi.yaml",
+      "title": "Example",
+      "description": "Illustrative spec."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "kye.permission.v1",
+  "permission_id": "kye:permission:agent_payment_prepare",
+  "subject_entity_id": "kye:agent:finance_agent_001",
+  "principal_entity_id": "kye:org:acme_ltd",
+  "capability_id": "kye:capability:payment.prepare",
+  "permission_type": "delegated_capability_permission",
+  "scope": {
+    "max_amount": { "value": 1000, "currency": "GBP" },
+    "environment": "production",
+    "requires_human_review_above": { "value": 500, "currency": "GBP" }
+  },
+  "state_requirements": {
+    "authority_state": "active",
+    "credential_state": "valid",
+    "risk_state": ["normal", "elevated"]
+  },
+  "evidence_required": true,
+  "valid_from": "2026-05-09T00:00:00Z",
+  "valid_until": "2026-06-09T00:00:00Z",
+  "status": "active"
+}

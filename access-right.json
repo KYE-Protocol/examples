@@ -1,0 +1,17 @@
+{
+  "access_right_id": "kye:acr:acme.example:01JYACR0000000000000000000",
+  "granted_to_entity_id": "kye:ent:acme.example:ai_agent:01JY3J1D4E5A7K3JQFK4E0Q1XZ",
+  "granted_by_entity_id": "kye:ent:acme.example:person:01JYCFO0000000000000000000",
+  "subject_entity_id": "kye:ent:acme.example:business:01JYACME000000000000000000",
+  "right_key": "document.render",
+  "resource_pattern": "kye:ent:acme.example:document_template:*",
+  "scope": {
+    "scope_id": "kye:scp:acme.example:01JYFINANCE000000000000000",
+    "constraints": {
+      "workspace": "finance",
+      "environment": "prod"
+    }
+  },
+  "status": "active",
+  "expires_at": "2026-12-31T23:59:59Z"
+}

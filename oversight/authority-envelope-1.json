@@ -1,0 +1,86 @@
+{
+  "schema": "kye.authority_envelope.v1",
+  "envelope_id": "kye:authority-envelope:acme-fs:payments-reconciliation-bot",
+  "envelope_status": "active",
+  "overseer_entity_id": "kye:person:acme-fs:head-of-operational-risk",
+  "subject_entity_selector": {
+    "kind": "single_agent",
+    "entity_ids": ["kye:agent:acme-fs:payments-reconciliation-bot"],
+    "agent_class": null,
+    "trust_domain_id": "acme-fs"
+  },
+  "autonomy_tier": "A2",
+  "oversight_role": "supervisor",
+  "scope": {
+    "allowed_action_classes": ["update_crm", "create_invoice", "run_sql"],
+    "purpose_ids": ["kye:purpose:acme-fs:daily-payment-reconciliation"],
+    "data_categories": ["transaction-record", "ledger-entry"],
+    "tenant_id": "acme-fs"
+  },
+  "limits": {
+    "hard_limits": [
+      {
+        "limit_id": "max-records-per-day",
+        "dimension": "records_touched_per_window",
+        "ceiling": 50000,
+        "window_seconds": 86400
+      },
+      {
+        "limit_id": "spend-ceiling-per-run",
+        "dimension": "spend_per_window",
+        "ceiling": 0,
+        "window_seconds": 86400
+      },
+      {
+        "limit_id": "allowed-blast-radius",
+        "dimension": "blast_radius",
+        "ceiling": ["runtime", "audit"],
+        "window_seconds": null
+      }
+    ]
+  },
+  "drift_thresholds": [
+    {
+      "threshold_id": "frequency-spike",
+      "drift_type": "frequency_drift",
+      "trigger": { "metric": "actions_per_hour_vs_30d_baseline", "comparator": "gt", "value": 3 },
+      "on_breach": "alert"
+    },
+    {
+      "threshold_id": "scope-edge",
+      "drift_type": "scope_drift",
+      "trigger": { "metric": "action_class_outside_allowed_set", "comparator": "gte", "value": 1 },
+      "on_breach": "require_approval"
+    },
+    {
+      "threshold_id": "target-drift",
+      "drift_type": "target_drift",
+      "trigger": { "metric": "new_counterparty_accounts_per_day", "comparator": "gt", "value": 5 },
+      "on_breach": "escalate"
+    }
+  ],
+  "oversight_evidence_events": [
+    "kye.oversight.envelope_set.v1",
+    "kye.oversight.envelope_breach.v1",
+    "kye.oversight.drift_alert.v1",
+    "kye.oversight.envelope_revised.v1"
+  ],
+  "meta_governance": {
+    "pdp_gated": true,
+    "self_set_forbidden": true,
+    "required_governance_events": [
+      "kye.purpose.request.v1",
+      "kye.purpose.admissibility.v1",
+      "kye.evidence.decision_map.v1",
+      "kye.replay.context_seal.v1",
+      "kye.evidence.pack.v1",
+      "kye.replay.proof.v1",
+      "kye.compliance.attestation.v1"
+    ]
+  },
+  "set_at": "2026-05-31T09:15:00Z",
+  "set_evidence_pack_id": "kye:evidence-pack:acme-fs:envelope-set-20260531-0915",
+  "last_revised_at": null,
+  "revision_count": 0,
+  "framework_refs": ["eu-ai-act.A14.2", "apra.cps230.oversight", "apra.cps234.information-security-oversight"]
+}

@@ -1,0 +1,66 @@
+{
+  "pack_id":            "kye:dsar_evidence_pack:northbank:dsar-2026-05-16-c1f8",
+  "subject_request_id": "NORTHBANK-DSAR-2026-04287",
+  "subject_ref_hash":   "9a1b3c5d7e8f0a2b4c6d8e0f1a3b5c7d9e1f0a2b4c6d8e0f1a3b5c7d9e1f0a2b",
+  "tenant":             "kye:tenant:northbank",
+  "issued_at":          "2026-05-16T14:05:00Z",
+  "window": {
+    "from": "2024-05-16T00:00:00Z",
+    "to":   "2026-05-16T14:05:00Z"
+  },
+  "inclusion_policy": {
+    "inclusion_min_confidence": 0.85,
+    "third_party_redaction":    "field_level",
+    "exclude_classifications":  []
+  },
+  "evidence_rows": [
+    {
+      "event_id":         "kye:event:northbank:dae-2026-05-16-7f3c2a9d",
+      "decision_id":      "kye:decision:northbank:7f3c2a9d-4b1e-4c8a-9d12-3e6a7c5f1b88",
+      "occurred_at":      "2026-05-16T13:42:18Z",
+      "asset_id":         "kye:data_asset:northbank:retail-onboarding.customers_master",
+      "action":           "read",
+      "classification":   "personal_data",
+      "purpose":          "regulatory_compliance",
+      "decision":         "allow",
+      "redactions_applied": [
+        { "field": "internal_review_notes", "strategy": "drop",       "reason_code": "dsar_third_party_redacted" },
+        { "field": "primary_iban",          "strategy": "partial_mask","reason_code": "dsar_third_party_redacted" }
+      ],
+      "evidence_pack_id": "kye:evidence_pack:northbank:ep-2026-05-16-7f3c2a9d"
+    },
+    {
+      "event_id":         "kye:event:northbank:dae-2025-11-04-22a8e1b3",
+      "decision_id":      "kye:decision:northbank:22a8e1b3-9c4d-4e7b-8f01-5a6b9c8d0e22",
+      "occurred_at":      "2025-11-04T09:18:55Z",
+      "asset_id":         "kye:data_asset:northbank:transactions.daily_settlements",
+      "action":           "summarise",
+      "classification":   "financial_data",
+      "purpose":          "service_delivery",
+      "decision":         "allow",
+      "redactions_applied": [],
+      "evidence_pack_id": "kye:evidence_pack:northbank:ep-2025-11-04-22a8e1b3"
+    }
+  ],
+  "excluded_rows_summary": {
+    "count_excluded": 3,
+    "reason_code_distribution": {
+      "dsar_inclusion_threshold_not_met": 2,
+      "dsar_third_party_redacted":        1
+    }
+  },
+  "summary": {
+    "assets_touched":  2,
+    "actions_taken":   2,
+    "decision_distribution": {
+      "allow": 2,
+      "deny":  0
+    }
+  },
+  "content_hash": "8c7b6a5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a77",
+  "signature": {
+    "alg":       "Ed25519",
+    "kid":       "kye:key:northbank:dgp-signer-2026-q2",
+    "value_b64": "QXJZ8Vbt5kK1m6P9wDc2sT0vR8YgJjY3nq4XbVnEoZHCMa1L8VqfP9bxYZJk6XKfGwHnH3rqUzQAJp2pYRDDw0"
+  }
+}

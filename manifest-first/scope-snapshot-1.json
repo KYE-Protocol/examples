@@ -1,0 +1,36 @@
+{
+  "schema_version": "kye.scope_snapshot.v1",
+  "snapshot_id": "kye:scope-snapshot:acme.20260515.001",
+  "tenant_id": "kye:tenant:acme-bank",
+  "actor_entity_id": "kye:agent:acme-payments-agent",
+  "captured_at": "2026-05-15T09:42:12.117Z",
+  "active_grants": [
+    {
+      "grant_id": "kye:authority:acme.payments-agent.outbound-payments",
+      "status_at_capture": "active",
+      "not_after": "2026-12-31T23:59:59Z"
+    },
+    {
+      "grant_id": "kye:authority:acme.payments-agent.aml-investigations",
+      "status_at_capture": "active",
+      "not_after": "2026-12-31T23:59:59Z"
+    }
+  ],
+  "effective_capabilities": [
+    "payments.outbound.execute",
+    "payments.outbound.pause",
+    "payments.outbound.escalate",
+    "aml.watchlist.read",
+    "case.evidence.append"
+  ],
+  "effective_resources": [
+    "kye:resource:acme.payments.outbound.*",
+    "kye:resource:acme.aml.cases.*"
+  ],
+  "jurisdiction_set": ["IT", "EU"],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:acme-bank-scope-001",
+    "value_b64": "MEUCIQDpAk8B0bN0eJ7VqYZcL9ZkXk8c6P0pZmYf2X7p9N3JpgIgY5kE3uV0a4F1c1f6E8a8w2bD4G7x9z6L2k9M0n1o2pQ"
+  }
+}

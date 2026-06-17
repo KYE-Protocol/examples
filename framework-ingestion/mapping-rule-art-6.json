@@ -1,0 +1,10 @@
+{
+  "schema": "kye.mapping_rule.v1",
+  "mapping_rule_id": "kye:mapping-rule:eu-ai-act-art-6",
+  "version": "2026-05-31.1",
+  "clause_id": "kye:clause:eu-ai-act-art-6",
+  "target_rule_ref": "kye:rule-pack:eu_ai_act",
+  "target_control_ref": "EU_AI_ACT.ART_6",
+  "satisfies": "full",
+  "rationale": "Deterministic mapping of Art.6 (risk-classification) to the canonical EU AI Act rule pack."
+}

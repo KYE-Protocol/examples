@@ -1,0 +1,27 @@
+{
+  "schema_version": "kye.developer.webhook_event.v1",
+  "event_id": "kye:evt:admin.kyeprotocol.com:01J4P9M00W4XXYYZZAAAAAAAAAA",
+  "event_class": "kye.admin.tenant.frozen",
+  "occurred_at": "2026-09-15T18:42:00Z",
+  "tenant": {
+    "tenant_id": "kye:tenant:admin.kyeprotocol.com",
+    "trust_domain": "admin.kyeprotocol.com"
+  },
+  "delivery_id": "dlv_01J4P9M00W4XXYYZZAAAAAAAAAA",
+  "severity": "critical",
+  "payload": {
+    "frozen_tenant_id": "kye:tenant:newco.example",
+    "frozen_at": "2026-09-15T18:42:00Z",
+    "reason_code": "payment_overdue_90d",
+    "stop_effect": "writes_blocked",
+    "grace_period_hours": 168,
+    "frozen_by": "kye:ent:admin.kyeprotocol.com:role:billing-ops",
+    "incident_id": "kye:incident:admin.kyeprotocol.com:01J4P9M00W4X"
+  },
+  "signature": {
+    "alg": "redacted",
+    "kid": "key-2026-04",
+    "value": "6677889900aabbccddeeff11223344556677889900aabbccddeefff001122334",
+    "ts": "1758048120"
+  }
+}

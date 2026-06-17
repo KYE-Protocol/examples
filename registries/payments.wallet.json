@@ -1,0 +1,17 @@
+{
+  "id": "kye:wallet:caseworker-bot-01-purchase-card",
+  "tenant_id": "kye:tenant:acme-health",
+  "wallet_id": "kye:wallet:caseworker-bot-01-purchase-card",
+  "holder_entity_id": "kye:agent:caseworker-bot-01",
+  "instrument_kind": "purchase_card",
+  "scope_id": "kye:scope:customer-correspondence-canada",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

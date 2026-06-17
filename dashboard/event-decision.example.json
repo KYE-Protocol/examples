@@ -1,0 +1,18 @@
+{
+  "schema": "kye.dashboard.event.v1",
+  "event_id": "kye:dashboard-event:acme-d-2026-05-30T14-22-09-841Z-a91b",
+  "tenant_id": "kye:tenant:org_2vAcMeBank",
+  "subscription_id": "kye:dashboard-subscription:acme-2026-05-30T14-22-08Z-7af31c",
+  "event_class": "decision",
+  "emitted_at": "2026-05-30T14:22:09.841Z",
+  "payload": {
+    "decision_id": "kye:decision:acme-2026-05-30-841",
+    "decision": "allow",
+    "decided_at": "2026-05-30T14:22:09.840Z",
+    "agent_id": "kye:entity:agent:kyc_triage_v3",
+    "purpose_id": "kye:purpose:kyc.onboarding",
+    "capability_id": "kye:capability:read_passport",
+    "attestation_chain_root": "sha256:7b3a91f04c2d1e8b6a55f0c9e2148d3a7e9b1c4d2f6a8b3e5d1c9f7a2b4e6d8c"
+  },
+  "attestation_chain_root": "sha256:7b3a91f04c2d1e8b6a55f0c9e2148d3a7e9b1c4d2f6a8b3e5d1c9f7a2b4e6d8c"
+}

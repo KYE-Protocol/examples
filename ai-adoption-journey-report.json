@@ -1,0 +1,112 @@
+{
+  "schema_version": "kye.ai_adoption_journey_report.v1",
+  "report_id": "kye:ai-adoption-journey:example:claims-triage-2026-q2",
+  "navigator_version": "ai-adoption-navigator/1.0.0",
+  "generated_at": "2026-06-07T09:00:00Z",
+  "organisation": {
+    "name": "Example Mutual (illustrative)",
+    "sector": "insurance-claims",
+    "jurisdiction": "uk"
+  },
+  "input": {
+    "answers": [
+      {
+        "question_id": "q-use-case",
+        "value": "decisioning"
+      },
+      {
+        "question_id": "q-authority",
+        "value": "decision-support"
+      },
+      {
+        "question_id": "q-reversibility",
+        "value": "recoverable"
+      },
+      {
+        "question_id": "q-data-sensitivity",
+        "value": "personal"
+      },
+      {
+        "question_id": "q-regulated-domain",
+        "value": "sector-heavy"
+      },
+      {
+        "question_id": "q-affects-people",
+        "value": "direct"
+      },
+      {
+        "question_id": "q-autonomy-scope",
+        "value": "bounded"
+      },
+      {
+        "question_id": "q-oversight-readiness",
+        "value": "sampled"
+      },
+      {
+        "question_id": "q-value",
+        "value": "high"
+      },
+      {
+        "question_id": "q-evidence-need",
+        "value": "regulatory"
+      }
+    ]
+  },
+  "scored": {
+    "use_case_category": "decision_support",
+    "authority_overlay": "decision-support",
+    "conformance_level": "L2",
+    "authority_complexity_score": 56,
+    "risk_tier": "high",
+    "oversight_mode": "human-over-the-loop",
+    "value_signal": "high",
+    "impact_risk_quadrant": "govern-first"
+  },
+  "recommended_pilot": {
+    "title": "Controls-first pilot: decision support",
+    "rationale": "High value but high unmanaged-authority risk — adopt only once the required controls are in place. Stand up the controls, then pilot.",
+    "engagement_sku_hint": "KYE-NAVIGATOR-DIAGNOSTIC-001"
+  },
+  "required_controls": [
+    {
+      "control": "Purpose & scope check at the action boundary (Purpose Permission™)",
+      "why": "Bind every consequential action to a declared purpose before it runs (§12)."
+    },
+    {
+      "control": "Evidence Pack™ sealed per consequential action",
+      "why": "Make every decision replay-provable for audit, regulator, or dispute (§13)."
+    },
+    {
+      "control": "Human oversight envelope (in-/over-the-loop) sized to the risk tier",
+      "why": "Match human control to the authority the AI holds (§36 GovernedUI)."
+    },
+    {
+      "control": "Data-use minimisation + access controls on the data it touches",
+      "why": "Govern personal / special-category data at the moment of use (§31)."
+    },
+    {
+      "control": "Regulatory-obligation mapping for the decision domain",
+      "why": "Identify which obligations bind this use before it goes live (an abstract role you will also need)."
+    },
+    {
+      "control": "Controls-architecture pass from obligations to enforced controls",
+      "why": "Translate obligations into the concrete controls your architecture must enforce (an abstract role you will also need)."
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:ai-adoption-journey:claims-triage:2026-q2",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-05",
+    "signature_alg": "EdDSA",
+    "signature": "xStJ1kEBPgHPuyVEsuiFxpvfXQ5ShCIHrlw7X+RykIffK/B+zYoCFxvGGUkSqGohUjmwOFq7rEGTTvWy9TIHCA=="
+  },
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "attestation": {
+    "frameworks": [
+      "EU_AI_ACT",
+      "UK_GDPR",
+      "FCA_CONSUMER_DUTY"
+    ],
+    "control_id": "constitution/13-RESILIENCE-LOOP.md"
+  },
+  "status": "sealed"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "kye.audit_integrity_check.v1",
+  "check_id": "kye:audit-check:acme.example:001",
+  "period": {
+    "from": "2026-05-01T00:00:00Z",
+    "to":   "2026-05-06T00:00:00Z"
+  },
+  "events_checked": 18420,
+  "hash_chain_status": "valid",
+  "orphan_events": 0,
+  "missing_reason_codes": 0,
+  "missing_evidence_refs": 3,
+  "result": "passed_with_warnings",
+  "details": [
+    { "kind": "missing_evidence_ref", "audit_event_id": "kye:audit:acme.example:evt_92814", "reason_code": "evidence_completeness_check_pending" }
+  ]
+}

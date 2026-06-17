@@ -1,0 +1,25 @@
+{
+  "schema_version": "kye.action_admissibility_profile.v1",
+  "profile_id": "kye:profile:action_admissibility",
+  "display_name": "KYE Action Admissibility Profile™",
+  "category": "pre_action_governance",
+  "version": "1.0.0",
+  "description": "Defines pre-admission checks for proposed actions before they enter the runtime authority decision pipeline.",
+  "required_kye_profiles": [
+    "kye.core.v1", "kye.authority.v1", "kye.scope.v1",
+    "kye.state.v1", "kye.evidence.v1"
+  ],
+  "recommended_kye_profiles": [
+    "kye.ontology.v1", "kye.continuity.v1", "kye.formal_rules.v1"
+  ],
+  "required_objects": [
+    "KYEProposedAction", "KYEAdmissionGate",
+    "KYEAdmissibilityDecision", "KYEAdmissibilityEvidence"
+  ],
+  "decision_types": [
+    "admit", "reject", "require_clarification",
+    "require_human_review", "quarantine", "route_to_authority_check"
+  ],
+  "status": "active",
+  "created_at": "2026-05-10T00:00:00Z"
+}

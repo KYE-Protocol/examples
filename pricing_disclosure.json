@@ -1,0 +1,21 @@
+{
+  "schema": "kye.pricing_disclosure.v1",
+  "sku_id": "KYE-AUDIT-PILOT-001",
+  "pricing_envelope_ref": "kye.commercial.value_based_pricing.v1#/envelopes/by-sku/KYE-AUDIT-PILOT-001",
+  "pricing_model": "subscription",
+  "currency": "GBP",
+  "internal_price_band": {
+    "floor": 35000,
+    "ceiling": 50000,
+    "default": 41000
+  },
+  "public_disclosure": {
+    "mode": "hidden"
+  },
+  "negotiable": true,
+  "effective_from": "2026-05-30",
+  "last_reviewed": "2026-05-30",
+  "review_cadence_days": 90,
+  "owners": ["ceo", "commercial-lead"],
+  "rationale": "Closed-registration default per §26 publication_rule. Public surfaces display the SKU name + summary + apply CTA; the figure is shared via email commercial menu after qualification."
+}

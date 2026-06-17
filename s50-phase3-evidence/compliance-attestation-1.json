@@ -1,0 +1,36 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:platform:s50-phase3-2026-05-27",
+  "emitted_at": "2026-05-27T11:00:03Z",
+  "emitter": "kye:engine:reconciliation-engine:v1.2-build-9c1e7af0",
+  "framework_refs": [
+    "constitution/50-CONTENT-GRAPH-DISCOVERABILITY.md",
+    "constitution/00-INDEX.md#0-zero-competing-systems",
+    "constitution/02-INFORMATION-ARCHITECTURE.md",
+    "constitution/40-IMPLEMENTATION-CANONICAL.md",
+    "constitution/43-MACHINE-READABLE-BY-DEFAULT.md"
+  ],
+  "subject": "s50-phase3-closure-2026-05-27",
+  "mode": "static",
+  "run_id": "run_s50_phase3_2026_05_27_01HFC9Z0PR3M5N7Q8YW2KQ8N3R0",
+  "envelope_report_hash": "c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "closures_shipped": 6,
+    "literals_deleted_from_components_js": 2,
+    "grep_count_top-bar-and-footer-literals": 0,
+    "gate_consumers_migrated_to_derived_json": 2,
+    "new_derivation_engines_shipped": 1,
+    "new_drift_gates_wired_to_test_chain": 1,
+    "constitutional_amendments_landed": 1,
+    "cmd_k_search_filter_widened_from_47_to": 172
+  },
+  "blocking_reconcilers": [
+    { "id": "rail-canonical-alive", "verdict": "OK" },
+    { "id": "nav-score",           "verdict": "OK" },
+    { "id": "derived-nav-fresh",   "verdict": "OK" },
+    { "id": "derived-search-fresh","verdict": "OK" },
+    { "id": "content-graph-coverage","verdict": "OK" }
+  ]
+}

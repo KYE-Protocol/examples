@@ -1,0 +1,17 @@
+{
+  "schema": "kye.authority_lines.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-06-03T00:00:00Z",
+  "constitution_ref": "constitution/50-CONTENT-GRAPH-DISCOVERABILITY.md",
+  "generated_by": "scripts/build-authority-lines.mjs",
+  "generated_from": "internal",
+  "notes": [
+    "Illustrative instance — the canonical registry is internal Each value is a UNIQUE, RELEVANT KYE-voice authority line keyed by the page's canonical pathname."
+  ],
+  "count": 3,
+  "lines": {
+    "/compliance/dora.html": "Every DORA requirement, bijection-mapped to the KYE™ artefact that enforces it.",
+    "/foundry/sm-cr-authority-pack.html": "The Senior Managers & Certification Regime, governed end to end — purpose, permission, evidence and replay.",
+    "/sovereign-ai/public-sector.html": "Governance for the public sector, shaped to how the sector is actually supervised."
+  }
+}

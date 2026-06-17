@@ -1,0 +1,200 @@
+{
+  "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+  "short_name": "Margaret Lewis",
+  "chain": [
+    {
+      "schema": "kye.estate.fact_find.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:fact_find:1",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "fact_find_id": "kye:demo:estate:fact_find:sandbox:M-003",
+      "matter_type": "will_complex",
+      "version": 1,
+      "completion_status": "complete"
+    },
+    {
+      "schema": "kye.estate.draft_manifest.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:draft_manifest:2",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "draft_manifest_id": "kye:demo:estate:draft_manifest:sandbox:M-003",
+      "fact_find_id": "kye:demo:estate:fact_find:sandbox:M-003",
+      "rule_set_version": "1.0.0",
+      "clause_library_version": "1.0.0",
+      "template_version": "1.0.0",
+      "drafting_profile_version": "1.0.0",
+      "rules_fired": [
+        {
+          "rule_id": "kye:estate:rule:revocation-clause",
+          "outcome": "auto_include_clause:revocation-standard-v1"
+        },
+        {
+          "rule_id": "kye:estate:rule:executors-required",
+          "outcome": "auto_include_clause:executors-2-min-v1"
+        },
+        {
+          "rule_id": "kye:estate:rule:residuary-non-equal",
+          "outcome": "auto_include_clause:will-residuary-40-40-20-v1"
+        },
+        {
+          "rule_id": "kye:estate:rule:vulnerable-beneficiary",
+          "outcome": "include_clause_pending_solicitor_review:disc-trust-vulnerable-v1"
+        },
+        {
+          "rule_id": "kye:estate:rule:cross-border-asset",
+          "outcome": "warn:cross_border_jurisdiction_PT"
+        },
+        {
+          "rule_id": "kye:estate:rule:trust-indicator-flag",
+          "outcome": "flag:trust_required"
+        }
+      ],
+      "ai_assistance_used": false,
+      "authority_status": "draft_only"
+    },
+    {
+      "schema": "kye.agent.governance.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:agent_governance:3",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "envelope_role": "task-start",
+      "agent_id": "estate-ai-case-checker",
+      "parent_task": "kye:demo:task:sandbox:M-003",
+      "scope": {
+        "purpose": "case_check estate planning draft for matter M-003",
+        "read_paths": [
+          "matters/M-003",
+          "internal*",
+          "internal*.json",
+          "internal*.json"
+        ],
+        "write_paths": [
+          "matters/M-003/case_check/*"
+        ],
+        "mcp_allow_list": [],
+        "scope_categories_permitted": [
+          "executor_validity",
+          "beneficiary_consistency",
+          "share_arithmetic",
+          "capacity_consistency",
+          "clause_jurisdiction_match",
+          "clause_version_currency",
+          "trust_indicator",
+          "evidence_insufficient"
+        ]
+      },
+      "chapter_acknowledgements": [
+        "§0",
+        "§0.3",
+        "§47",
+        "§49",
+        "§52"
+      ],
+      "binding_manifest_ref": "internal#estate-ai-case-checker"
+    },
+    {
+      "schema": "kye.estate.case_check.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:case_check:4",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "case_check_id": "kye:demo:estate:case_check:sandbox:M-003",
+      "draft_manifest_id": "kye:demo:estate:draft_manifest:sandbox:M-003",
+      "governance_envelope_ref": {
+        "schema": "kye.agent.governance.v1",
+        "envelope_id": "kye:demo:envelope:sandbox:M-003:agent_governance:3",
+        "agent_id": "estate-ai-case-checker"
+      },
+      "checked_at": "2026-05-27T10:00:00Z",
+      "severity": "amber",
+      "scope_categories": [
+        "executor_validity",
+        "beneficiary_consistency",
+        "share_arithmetic",
+        "capacity_consistency",
+        "clause_jurisdiction_match",
+        "clause_version_currency",
+        "trust_indicator",
+        "evidence_insufficient"
+      ],
+      "findings": [
+        {
+          "finding_id": "kye:demo:finding:M-003:seed",
+          "category": "demo_summary",
+          "severity": "info",
+          "description": "See sandbox demo for full findings; this is the chain fixture.",
+          "recommended_action": "see_demo"
+        }
+      ],
+      "ai_model_version": "kye-estate-checker-demo-v1.0.0",
+      "fallback_mode": false
+    },
+    {
+      "schema": "kye.engagement.approval.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:approval:5",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:manager-paul",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "approval_id": "kye:demo:approval:sandbox:M-003",
+      "subject_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "decision": "escalate_to_solicitor",
+      "approver_role": "manager",
+      "approved_at": "2026-05-27T10:00:00Z",
+      "dual_channel_used": false
+    },
+    {
+      "schema": "kye.estate.boundary_decision.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:boundary:6",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "boundary_decision_id": "kye:demo:estate:boundary_decision:sandbox:M-003",
+      "state": "solicitor_review_required",
+      "reason": "Matter handed off to instructed solicitor for trust drafting + EU Succession Regulation opinion. No adviser-released pack.",
+      "decided_at": "2026-05-27T10:00:00Z"
+    },
+    {
+      "schema": "kye.estate.signing_pack.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:signing_pack:7",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "signing_pack_id": "kye:demo:signing_pack:sandbox:M-003",
+      "released_pack": false,
+      "signature_kid": "kye:demo:assembler-kid:estate-planning-sandbox:v1",
+      "detached_signature_ref": "public/sandbox/estate-planning/data/M-003.signed-pack.json"
+    },
+    {
+      "schema": "kye.estate.authority_finality.v1",
+      "envelope_id": "kye:demo:envelope:sandbox:M-003:finality:8",
+      "matter_id": "kye:demo:estate:matter:sandbox:M-003-margaret-lewis",
+      "emitted_at": "2026-05-27T10:00:00Z",
+      "emitted_by": "kye:demo:actor:sandbox:adviser-jane",
+      "urn_namespace": "kye:demo:",
+      "demo_only": true,
+      "authority_finality_id": "kye:demo:estate:authority_finality:sandbox:M-003",
+      "outcome": "solicitor_review_required",
+      "outcome_detail": "Matter handed off to instructed solicitor for trust drafting + EU Succession Regulation opinion. No adviser-released pack.",
+      "released_pack": false,
+      "lifecycle_state": "SOLICITOR_HANDOFF",
+      "decided_at": "2026-05-27T10:00:00Z"
+    }
+  ]
+}

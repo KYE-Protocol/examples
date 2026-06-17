@@ -1,0 +1,45 @@
+{
+  "schema": "kye.middleware_manifest.v1",
+  "schema_version": "1.0.0",
+  "manifest_id": "kye:manifest:middlewares",
+  "adopted_at": "2026-05-30",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md",
+  "description": "Minimal illustrative middleware-manifest envelope. The full production manifest lives at internal — this example shows a two-entry compose chain (cors short-circuits OPTIONS before audit emits the §0.3 envelope).",
+  "publication_rule": {
+    "policy": "public",
+    "rationale": "Schema demonstration — does not declare any internal topology."
+  },
+  "baseline_uncovered": 0,
+  "middlewares": [
+    {
+      "id": "kye:middleware:example-cors",
+      "name": "corsMiddleware",
+      "purpose": "CORS preflight and origin allow-list for a demonstration worker.",
+      "category": "cors",
+      "module_path": "internal",
+      "applies_to": ["kye:worker:example-worker"],
+      "ordering_constraint": {
+        "must_run_before": ["kye:middleware:example-audit"]
+      },
+      "request_modifications": ["short-circuits OPTIONS preflight"],
+      "response_modifications": ["sets Access-Control-Allow-Origin"],
+      "failure_mode": "short-circuit-allow",
+      "status": "shipped"
+    },
+    {
+      "id": "kye:middleware:example-audit",
+      "name": "auditMiddleware",
+      "purpose": "Emit one kye.evidence.audit_event.v1 envelope per request for the demonstration worker.",
+      "category": "audit",
+      "module_path": "internal",
+      "applies_to": ["kye:worker:example-worker"],
+      "ordering_constraint": {
+        "must_run_after": ["kye:middleware:example-cors"]
+      },
+      "envelope_emission": ["kye.evidence.audit_event.v1"],
+      "response_modifications": ["sets x-kye-request-id response header"],
+      "failure_mode": "fail-open-log",
+      "status": "shipped"
+    }
+  ]
+}

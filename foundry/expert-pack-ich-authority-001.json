@@ -1,0 +1,61 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:ich-authority:v1",
+  "partner_id": "kye:foundry-applicant:ich-authority-reference-partner",
+  "pack_name": "KYE ICH Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "ich-authority",
+  "bound_sector_pack_refs": ["kye:sector-pack:biopharma-ich"],
+  "bound_rule_pack_refs": ["kye:rule-pack:ich-authority"],
+  "bound_dictionary_refs": ["kye:dictionary:ich-authority"],
+  "bound_framework_refs": [
+    "kye:framework:ich-q9",
+    "kye:framework:ich-q10",
+    "kye:framework:ich-q7",
+    "kye:framework:ich-q2",
+    "kye:framework:ich-q8"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:ich-authority:2026-06-09",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-09T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-ich-authority-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:ich-authority:2026-06-09",
+  "claim_set": [
+    {
+      "claim_id": "named-authority",
+      "claim_text": "Every AI-generated submission-evidence artefact that moves toward a consequential action (Quality-Unit approval, reliance in a dossier, lot release, Health-Authority submission) MUST map to a recorded named-authority decision — the agent, the evidence artefact, the intended consequential action, and the named Qualified Person / Quality Unit head under whose authority it proceeds. Artefacts lacking a recorded authority decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "due-diligence",
+      "claim_text": "Before an AI-generated submission-evidence artefact proceeds to a consequential action it MUST carry a recorded due-diligence result — competence (ICH Q10), a decision / validation / justification basis (ICH Q9 / Q8), and a data-integrity / ALCOA+ screen (ICH Q7) where applicable. An unscreened, low-confidence, or data-integrity-deficient artefact is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-generated submission-evidence artefact that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs and pinned source data, the decision / validation / justification basis applied, the due-diligence result relied on, and the named-authority outcome — audit-grade, ICH Q7 data-integrity-aligned provenance verifiable offline, reconstructable and valid at T=0.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "signoff-gate",
+      "claim_text": "An AI-generated submission-evidence artefact MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — the Qualified Person, the Quality Unit head, or a responsible QA officer — records sign-off. The irreversible lot release / regulatory dossier submission additionally requires §36 two-person sign-off (the preparing quality reviewer AND an approving Qualified Person / Quality Unit head). Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "ICH tells you WHAT evidence regulators require; KYE proves HOW that evidence came into existence — who approved it, under what authority, valid at T=0, lawful delegation, replay-provable. KYE does not perform the science, run the stability study, set impurity thresholds, validate the analytical method, run the quality engine, or judge whether the quality is acceptable.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-09T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

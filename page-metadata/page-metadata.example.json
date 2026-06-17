@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.page_metadata.v1.json",
+  "schema": "kye.page_metadata.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/50-CONTENT-GRAPH-DISCOVERABILITY.md",
+  "notes": [
+    "Illustrative kye.page_metadata.v1 instance. The canonical full registry lives at internal"
+  ],
+  "fields": [
+    {
+      "id": "kye:page-meta:example",
+      "meta_name": "kye-example",
+      "enum_source": "boolean",
+      "required": false
+    }
+  ]
+}

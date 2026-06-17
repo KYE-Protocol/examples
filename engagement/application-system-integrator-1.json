@@ -1,0 +1,28 @@
+{
+  "schema": "kye.engagement.application.v1",
+  "application_id": "5c2e9a71-4b0d-4e2a-9f6c-7a1e3d5b9c20",
+  "engagement_type": "partner",
+  "applicant": {
+    "org_name": "Meridian Delivery Partners Ltd",
+    "contact_email": "partners@meridian-delivery.example",
+    "contact_name": "Priya Raman",
+    "jurisdiction": "GB",
+    "website": "https://meridian-delivery.example"
+  },
+  "requested_sku": "KYE-SI-CERTIFIED",
+  "submitted_at": "2026-06-02T10:30:00Z",
+  "obligations_acknowledged": [
+    "kye:obligation:partner-si-certified:services-liability-insurance",
+    "kye:obligation:partner-si-certified:certified-delivery-lead-per-engagement",
+    "kye:obligation:partner-si-certified:reference-deployments",
+    "kye:obligation:partner-si-certified:referral-margin-registration",
+    "kye:obligation:partner-si-certified:mark-license",
+    "kye:obligation:partner-si-certified:no-governance-compete"
+  ],
+  "notes": "Regulated-FS delivery practice in UK + Ireland; two completed KYE pilots; one currently-certified delivery lead, second in certification. Applying for Certified to deliver conformance-prep engagements and register licence opportunities.",
+  "source": "direct",
+  "consent_marketing": true,
+  "consent_followup": true,
+  "ip_hash": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+  "ua_hash": "0f1e2d3c4b5a69788776655443322110ffeeddccbbaa99887766554433221100"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "kye.framework_document.v1",
+  "document_id": "kye:framework-doc:eu-ai-act",
+  "provenance": "regulator",
+  "source_identifier": "CELEX:32024R1689",
+  "intake_format": "akoma-ntoso",
+  "title": "Regulation (EU) 2024/1689 — Artificial Intelligence Act",
+  "jurisdiction": "eu",
+  "version": "2024-1689",
+  "content_hash": "33fa16b48ba6ae1ff3543bfadde20af53e938845591b02fae5a57fca39fedab4",
+  "ingested_at": "2026-05-31T12:00:00Z",
+  "clause_count": 6
+}

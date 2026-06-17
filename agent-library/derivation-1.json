@@ -1,0 +1,28 @@
+{
+  "schema_version": "kye.agent.derivation.v1",
+  "derivation_id": "kye:agent-derivation:acme.bsa-monitor.v1",
+  "tenant_id": "kye:tenant:acme",
+  "derived_from": "kye:agent-library:banking.banking-bsa-monitor.v1",
+  "agent_local_id": "acme-bsa-monitor",
+  "added_triggers": [
+    { "kind": "cron", "schedule": "0 */2 * * *" }
+  ],
+  "added_inputs": [
+    { "kind": "d1_table", "name": "acme_accounts", "description": "Acme-internal account enrichment table" }
+  ],
+  "added_outputs": [],
+  "added_obligations": [
+    {
+      "id": "ob.acme.bsa.state_examiner_report",
+      "summary": "Quarterly SAR filing summary MUST be provided to Acme state bank examiner.",
+      "regulatory_basis": "Acme State Banking Act § 45.12"
+    }
+  ],
+  "tightened_capabilities": ["deny:read:non_acme_tenants"],
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:agent-library:tenant-derivation-seed.v1",
+    "value_b64": "PLACEHOLDER_TENANT_AGENT_DERIVATION_SIG"
+  },
+  "derived_at": "2026-05-14T10:00:00Z"
+}

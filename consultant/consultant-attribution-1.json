@@ -1,0 +1,14 @@
+{
+  "schema": "kye.consultant_attribution.v1",
+  "id": "kye:consultant-attribution:01HZN4ATTR-vance-acme-q1-evidence",
+  "evidence_pack_id": "kye:evidence-pack:01HZN4EVP-acme-bank-2026Q1-dora-readiness",
+  "consultant_id": "kye:consultant:acme-trust-partners-eleanor-vance",
+  "attestation_type": "generated_evidence",
+  "attested_at": "2026-03-28T16:45:00Z",
+  "signed": true,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-consultant-attestation-2026-03",
+    "value_b64": "MEUCIQDxC4cAttributionVanceAcmeQ1EvidenceSignatureMockBytesForFixtureValidationOnly=="
+  }
+}

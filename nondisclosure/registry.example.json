@@ -1,0 +1,38 @@
+{
+  "schema": "kye.nondisclosure_registry.v1",
+  "version": "1.0",
+  "generated_at": "2026-06-01T00:00:00Z",
+  "constitution_ref": "constitution/33-IP-OSS-LINE.md",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "REDACTED STRUCTURAL EXAMPLE. This is a shape-only fixture for the kye.nondisclosure_registry.v1 schema. It carries NO real protected-class descriptions, NO real location pointers, and an EMPTY keyword_corpus. The live registry lives only under private/ (its exact path is redacted here) and is never mirrored to public/. This example exists in public/ solely so CI can validate the schema shape; it intentionally discloses nothing."
+  },
+  "notes": [
+    "Redacted by design — see publication_rule.rationale. Real detection atoms and real pointers appear only in the private registry."
+  ],
+  "entries": [
+    {
+      "secret_class_id": "example-protected-class",
+      "display_name": "Example protected class (placeholder)",
+      "what": "Placeholder CLASS description. In the live registry this field describes a CATEGORY of protected material and never restates a secret. Here it is intentionally generic.",
+      "why": "patent",
+      "disclosure_tier": "absolute",
+      "location_pointers": ["internal"],
+      "enforcing_gates": ["patent-safety-scan", "ip-oss-line"],
+      "allowed_surfaces": ["schemas"],
+      "keyword_corpus": []
+    },
+    {
+      "secret_class_id": "example-registry-itself",
+      "display_name": "The registry itself (meta-protected placeholder)",
+      "what": "Placeholder for the meta-protected entry. The real registry is its own protected entry and never leaves private/ (its actual pointer is redacted here).",
+      "why": "security",
+      "disclosure_tier": "absolute",
+      "location_pointers": ["private/REDACTED/"],
+      "enforcing_gates": ["nondisclosure-canonical", "ip-oss-line"],
+      "allowed_surfaces": [],
+      "keyword_corpus": [],
+      "meta_protected": true
+    }
+  ]
+}

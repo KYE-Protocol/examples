@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.compliance_mapping.v1",
+  "framework": "PSD3",
+  "framework_version": "PSD3 + draft RTS (in flight)",
+  "control_ref": "PSD3_SCA_DELEGATED_AUTHORITY",
+  "control_title": "Strong Customer Authentication for delegated payment-initiation",
+  "control_summary": "Delegated payment-initiation by an authorised third-party (TPP) or AI agent on behalf of a payer MUST carry verifiable proof of the payer's authorisation under SCA, with binding to amount, beneficiary, and consent reference.",
+  "kye_controls": [
+    "kye.authority.delegation_chain",
+    "kye.authority.scope_intersection",
+    "kye.audit.signed_decision",
+    "kye.consent.binding",
+    "kye.payments.payment_intent_pre_auth"
+  ],
+  "evidence_events": [
+    "kye.payments.payment_authority_decided",
+    "kye.payments.payment_intent_decided",
+    "kye.consent.granted",
+    "kye.consent.withdrawn",
+    "kye.payments.signed_decision_emitted"
+  ],
+  "evidence_pack": "kye:evidence-pack:psd3-sca-delegated",
+  "kye_profiles_required": ["core", "pep", "kye-payments-eu-1.0", "kye-open-finance-1.0"],
+  "policy_bundle_refs": ["kye.policy.payments.psd3_sca", "kye.policy.payments.delegated_authority"],
+  "applicable_sector_profiles": ["pep"],
+  "applies_to_entity_types": ["tpp", "ai_agent", "payment_initiation_service_provider", "account_servicing_payment_service_provider"],
+  "retention_minimum_days": 1825,
+  "notes": "Per PSD2 Art. 95 + draft PSD3 record-keeping period of 5 years (1825 days). The signed Decision Map™ replays the full SCA chain offline; the supervisor verifies with the publisher's published JWKS."
+}

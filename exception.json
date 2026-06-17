@@ -1,0 +1,21 @@
+{
+  "schema_version": "kye.exception.v1",
+  "exception_id": "kye:exception:emergency_payment_override",
+  "display_name": "Emergency Payment Override",
+  "applies_to_rule_id": "kye:rule:payment_agent_approval_required",
+  "exception_type": "emergency_override",
+  "conditions": {
+    "declared_incident_state": "business_continuity_event",
+    "approver_role_required": "chief_risk_officer",
+    "max_duration_minutes": 60
+  },
+  "effect": {
+    "temporary_decision_override": "allow_with_review",
+    "additional_obligations": [
+      "second_approver_required",
+      "post_action_review_required",
+      "evidence_pack_required"
+    ]
+  },
+  "status": "active"
+}

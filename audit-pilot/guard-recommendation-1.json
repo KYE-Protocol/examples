@@ -1,0 +1,29 @@
+{
+  "schema": "kye.operating_model.guard_recommendation.v1",
+  "id": "kye:guard-recommendation:acme-bank.authority-gate.payments-agent.001",
+  "version": 1,
+  "pilot_id": "kye:audit-pilot:acme-bank.payments-agent.q3-2026",
+  "closes_gap_class": "missing_authority_grant",
+  "guard_type": "authority_gate",
+  "proposed_scope": {
+    "agents":  ["kye:agent:acme-bank.supplier-payment-agent.v3"],
+    "actions": ["payment.prepare", "payment.confirm"],
+    "data_classes": ["financial.payments", "vendor.invoice"],
+    "jurisdiction": ["GB", "EEA"]
+  },
+  "expected_blocked_actions": 12,
+  "rollout": {
+    "initial_mode": "shadow",
+    "promote_to_enforce_after_days": 21,
+    "rollback_plan": "Disable the Authority Gate and revert to observe stage if more than 3 false-positive deny events fire in any 24-hour window during the shadow rollout."
+  },
+  "rationale": "Twelve of eighteen observed prepare actions above 500 GBP fired with no active Authority Grant. The Authority Gate is the narrowest control: it requires an unrevoked grant for this agent + action pair, leaving every other agent on the pilot unaffected. Aligned to FCA SYSC 8 (outsourcing) and DORA Art. 17.",
+  "recommended_at": "2026-05-12T11:30:00Z",
+  "accepted_at": null,
+  "promoted_at": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye:key:kye-protocol.guard-recommendation.eu-prod.2026",
+    "value_b64": "ZWUyMmZkM2I0NjVlOTFmNGJmZGM2OGE0NTczNWMyZTlhOTI2NDg1ZGM4MTcwOWQ2NjY3NDM3MmExNTAwYjE2OA"
+  }
+}

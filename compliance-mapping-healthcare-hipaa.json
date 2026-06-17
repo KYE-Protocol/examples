@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.compliance_mapping.v1",
+  "framework": "HIPAA",
+  "framework_version": "45 CFR Part 164 Security Rule",
+  "control_ref": "HIPAA_164_312_b_AUDIT_CONTROLS",
+  "control_title": "Audit controls for ePHI",
+  "control_summary": "§164.312(b) — implement hardware, software, and procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+  "kye_controls": [
+    "kye.audit.runtime_decision",
+    "kye.audit.append_only_chain",
+    "kye.entity.state_transition",
+    "kye.authority.grant",
+    "kye.recovery.break_glass_grant"
+  ],
+  "evidence_events": [
+    "kye.healthcare.encounter.access_decided",
+    "kye.healthcare.break_glass.granted",
+    "kye.healthcare.break_glass.expired",
+    "kye.consent.withdrawn",
+    "kye.evidence_pack.generated"
+  ],
+  "evidence_pack": "kye:evidence-pack:hipaa-164-312-b",
+  "kye_profiles_required": ["core", "pep", "evidence-replay"],
+  "policy_bundle_refs": ["kye.policy.healthcare.hipaa_audit_controls"],
+  "applicable_sector_profiles": ["pep"],
+  "applies_to_entity_types": ["clinician", "ai_agent", "patient_workflow", "covered_entity_workflow"],
+  "retention_minimum_days": 2190,
+  "notes": "HIPAA §164.530(j)(2) requires retention of policies, procedures, and records for six years (2190 days) from the date of creation or the date when last in effect. Break-glass-granted events MUST surface in the per-encounter audit replay."
+}

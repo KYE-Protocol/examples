@@ -1,0 +1,20 @@
+{
+  "schema": "kye.control_plane_operation.v1",
+  "operation_id": "kye:control-plane-op:d1-delete-2026-06-07-002",
+  "capability": "kye:control-plane-cap:d1-delete",
+  "resource_class": "cf-d1",
+  "risk_tier": "destructive",
+  "actor": {
+    "entity_id": "kye:entity:admin:ops-lead",
+    "role": "super-admin"
+  },
+  "rationale": "Remove orphaned non-WORM staging rows flagged by the §34 reconciliation engine after tenant deprovisioning; WORM tables are untouched.",
+  "approval_mode": "two_person",
+  "approval_ref": "kye:governedui:approval:d1-delete-2026-06-07-002",
+  "purpose_grant_id": "kye:purpose-grant:d1-delete-2026-06-07-002",
+  "evidence": {
+    "decision_map_ref": "kye:evidence:decision-map:control-plane-op:d1-delete-2026-06-07-002",
+    "context_seal_ref": "kye:replay:context-seal:control-plane-op:d1-delete-2026-06-07-002"
+  },
+  "at": "2026-06-07T11:42:00Z"
+}

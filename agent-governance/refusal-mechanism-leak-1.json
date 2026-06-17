@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-content-author",
+  "parent_task": "2f0b1e88-0c1d-4b9a-9e51-3f9d65c31b8f",
+  "refused_at": "2026-05-27T09:14:48Z",
+  "chapter_ref": "§33",
+  "reason_summary": "Parent task requested copying a internal file into public/site/. §33 IP/OSS Line forbids mechanism content from appearing under public/. Refusing rather than proceeding; no mechanism payload included in this envelope.",
+  "remediation_hint": "Re-dispatch with scope.write_paths constrained to internal and remove the public/ write target; OR amend the parent task to produce a patent-safe summary that does not reference §F mechanism syntax."
+}

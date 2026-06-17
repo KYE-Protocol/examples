@@ -1,0 +1,14 @@
+{
+  "schema": "kye.control_plane_capability_token.v1",
+  "token_id": "kye:control-plane-token:pages-deploy-2026-06-07-001",
+  "capability": "kye:control-plane-cap:pages-deploy",
+  "resource_class": "cf-pages",
+  "purpose_grant_id": "kye:purpose-grant:pages-deploy-2026-06-07-001",
+  "actor_entity_id": "kye:entity:admin:ops-lead",
+  "approval_mode": "none",
+  "approval_ref": null,
+  "minted_at": "2026-06-07T10:15:00Z",
+  "expires_at": "2026-06-07T10:20:00Z",
+  "revoked": false,
+  "revoked_reason": null
+}

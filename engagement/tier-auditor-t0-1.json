@@ -1,0 +1,41 @@
+{
+  "schema": "kye.engagement.tier.v1",
+  "sku_id": "KYE-AUDITOR-T0",
+  "engagement_type": "auditor",
+  "display_name": "KYE Strategic Audit Firm™ · Tier-1 / Custom",
+  "tier_rank": 0,
+  "price_band": "tier-1-custom",
+  "published_price_gbp": null,
+  "pricing_disclosure_policy": "contact-for-pricing",
+  "closed_registration": true,
+  "price": {
+    "amount_minor": 0,
+    "currency": "GBP",
+    "period": "year"
+  },
+  "obligations": [
+    "kye:obligation:auditor:independence",
+    "kye:obligation:auditor:methodology-disclosure",
+    "kye:obligation:auditor:evidence-retention",
+    "kye:obligation:auditor:replay-proof-use",
+    "kye:obligation:auditor:findings-channelling",
+    "kye:obligation:auditor:cross-engagement-confidentiality",
+    "kye:obligation:auditor:accreditation-currency",
+    "kye:obligation:auditor-t0:dual-channel-signoff",
+    "kye:obligation:auditor-t0:named-engineer-assignment",
+    "kye:obligation:auditor-t0:quarterly-attestation-cadence",
+    "kye:obligation:auditor-t0:regulator-bound-retention"
+  ],
+  "state_machine_states_required": [
+    "received",
+    "triaged",
+    "approved",
+    "access_provisioning",
+    "access_granted",
+    "entitlement_active",
+    "entitlement_ending",
+    "expired",
+    "renewed"
+  ],
+  "summary": "Bespoke top-tier audit-firm engagement for Big-4 KYE-practice anchor partners, national supreme audit institutions, and multi-jurisdiction AI-assurance practices. NDA + scoping call set the boundary; bespoke SKU; dual-channel sign-off on every audit-methodology change; named lead engineer; quarterly attestation; regulator-bound evidence-retention windows. Pricing disclosed under NDA only."
+}

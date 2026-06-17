@@ -1,0 +1,23 @@
+{
+  "schema": "kye.prompt.outcome.v1",
+  "prompt_governance_id": "kye:prompt-gov:allowed-query-001",
+  "decision": "allowed",
+  "decision_reason": "scope-satisfied",
+  "attestation_chain_root": "0000000000000000000000000000000000000000000000000000000000000000",
+  "emitted_at": "2026-05-31T12:00:00Z",
+  "tokens": {
+    "prompt_tokens": 120,
+    "completion_tokens": 80,
+    "total_tokens": 200
+  },
+  "cost": {
+    "currency": "USD",
+    "amount": 0.004
+  },
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-prompt-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PROMPT-OUTCOME-FIXTURE-VALUE-ONLY"
+  },
+  "model_response_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+}

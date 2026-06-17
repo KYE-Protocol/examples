@@ -1,0 +1,14 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:learning_feedback:mrm-team-example",
+  "layer": "learning_feedback",
+  "direction": "out",
+  "envelope_schema_ref": "internal",
+  "integration_partner_class": "feedback_aggregator",
+  "attestation_requirement": "required_outbound",
+  "transport": "object_storage_event",
+  "known_partners": [
+    { "partner_slug": "customer-mrm", "partner_name": "Customer model-risk management team", "adapter_status": "shipping" }
+  ],
+  "adopted_at": "2026-05-30"
+}

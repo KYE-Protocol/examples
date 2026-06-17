@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.report_template.v1.json",
+  "schema": "kye.report_template.v1",
+  "version": "1.0",
+  "generated_at": "2026-05-31T00:00:00Z",
+  "constitution_ref": "constitution/13-RESILIENCE-LOOP.md",
+  "notes": [
+    "Illustrative kye.report_template.v1 instance. The canonical full registry lives at internal"
+  ],
+  "report_templates": [
+    {
+      "id": "kye:report-template:example",
+      "name": "Example",
+      "audience": "board",
+      "report_kind_ref": "compliance_posture",
+      "description": "Illustrative template."
+    }
+  ]
+}

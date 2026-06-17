@@ -1,0 +1,23 @@
+{
+  "schema": "kye.prompt.governance.v1",
+  "prompt_governance_id": "kye:prompt-gov:two-person-trade-001",
+  "agent_id": "kye:agent:trading-copilot",
+  "purpose_id": "kye:purpose:execute-trade",
+  "scope": [
+    "write:order"
+  ],
+  "target_model": "gpt-4o",
+  "prompt_class": "tool-call",
+  "prompt_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "attached_pii_categories": [],
+  "attached_kye_refs": [
+    "kye:rule-pack:sr11-7-trading-bot"
+  ],
+  "emitted_at": "2026-05-31T12:00:00Z",
+  "integration_ref": "kye:prompt-integration:openai-sdk-middleware",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-prompt-2026-05",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PROMPT-GOV-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}
