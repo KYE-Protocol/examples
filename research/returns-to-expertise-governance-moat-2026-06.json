@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "Returns to Expertise: Why Governance Is the Moat — June 2026",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
   "topic_id": "kye:research-topic:returns-to-expertise-governance-moat",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "mW8RbXQxpZdBYcKhS+zZ9nIQiW1ky+49oDvh5++XgW/2VBPfDvNk7wfRuAGHCUpaCSHmFAR90XX3ipPFBplnBQ=="
+    "signature": "Yo147MfjUOfGd//gXUppbJRUeucPbFGoZfAvJJX0wrfVzoLttWFTWFiBaQWyiCHufDgRtJZLhX7mE90XnSwUDw=="
   },
   "citations": [
     {

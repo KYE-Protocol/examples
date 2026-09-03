@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:ai-legal-brief-fsb-prompt-and-pray-2026-06",
   "report_id": "kye:research-report:ai-legal-brief-fsb-prompt-and-pray-2026-06",
   "body_sha256": "87d4152e4c61a9c6fde98a03f143d49caa7d9e17bbbe2bcc9bc5b77f1dca355d",
-  "seal_signature": "FoasuKIjz8B4T+xcKq0k//WizIhrLdwpxiDPUqcJ6c2tciKVjg4XMmDtxixTVVwBezowL30eyWUl7CGbln2VAw==",
+  "seal_signature": "HrqrJiRY+7z0T+6VA5BpcpCmPGKb3dQKODBEm0TydNrzNzvBmgbcHV+aOp13jGMz4S7KocMxCBsBgFpM6wrCAA==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

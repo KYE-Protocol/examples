@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:say-do-gap-ai-governance-2026-06",
   "report_id": "kye:research-report:say-do-gap-ai-governance-2026-06",
   "body_sha256": "9b2add6ca13de545eb8dd48ebe8fa458397aa4cf8362610d71067a31c64db386",
-  "seal_signature": "trPodWPXnnvtO/vSgDvCqTHchvKnfo906rxGGsSmdLSc7Va3Hk7OU0oQDR0/zE3rbES6aymSRPxOmyIdSVfhAg==",
+  "seal_signature": "A261INsvqdtsK29JEqf5ObnKuSnLohvo8NdsYCQs6mp3AvggEI2vqUOMzrUTHUn3AxXsvNGU8uxnpasXHYkYDg==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

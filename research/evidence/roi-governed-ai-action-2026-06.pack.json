@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:roi-governed-ai-action-2026-06",
   "report_id": "kye:research-report:roi-governed-ai-action-2026-06",
   "body_sha256": "69f3b2ff74b7df5670636dbff9c4be198310d6282bf5e42bda4181f4e85e0765",
-  "seal_signature": "uDY51PFmE7AdHTX3vakxta//QYgJaJqAmzfXQHHaijFv/wHEwizfUp6IgLTJjtRwP4jZMGagVx2rBx1lcbO8Dg==",
+  "seal_signature": "7woJrXIGXiduQshFW6TLQW03W565xy6dsPBMxBV976CW/6Zo32vJyHR1JCYJL1dUTT0LfkAeaqQxXSGWgDwCAA==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

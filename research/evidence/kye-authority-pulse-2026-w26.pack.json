@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:kye-authority-pulse-2026-w26",
   "report_id": "kye:research-report:kye-authority-pulse-2026-w26",
   "body_sha256": "ddb8b7fc84966f7f43af6816f043dd57dfbefa10bbf01d29de41eba850d58d7f",
-  "seal_signature": "s0v2h/YQ7GMvaTP8jVB1urphARMNtZL4uqQiZvh8sBEzq58IFgNr1sNrmH8WDSZLUZyOAbmEfycLkg+E8sQZDw==",
+  "seal_signature": "sLzLrq9+mvcJLtsYM3OQV4BCxpgshfkWkbNtbP65bMtCxgqloeQ7H66FlJdZ2zOnFmMlk21B/fmj92oAPKxKAw==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

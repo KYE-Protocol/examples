@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "AI Legal Brief: the FSB asks for engineered controls, not well-worded prompts — June 2026",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:leslie-lamport",
   "topic_id": "kye:research-topic:ai-legal-brief-fsb-prompt-and-pray",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "FoasuKIjz8B4T+xcKq0k//WizIhrLdwpxiDPUqcJ6c2tciKVjg4XMmDtxixTVVwBezowL30eyWUl7CGbln2VAw=="
+    "signature": "HrqrJiRY+7z0T+6VA5BpcpCmPGKb3dQKODBEm0TydNrzNzvBmgbcHV+aOp13jGMz4S7KocMxCBsBgFpM6wrCAA=="
   },
   "citations": [
     {

@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "The authority that outlived its purpose — why standing permission is the quiet governance risk",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:shafi-goldwasser",
   "topic_id": "kye:research-topic:authority-that-outlived-its-purpose",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "0CGstd/WitLlQW4nstgz3NS0HK32zXSoRiUJ+VlQnBsghwGgl+y/r3ZOmKnJbB8jlTK1RCFFT5RNu1YZxn+aDg=="
+    "signature": "OeEx7U4DgzuiPskyN2zgGjKBwDvafEUUrK9J2VgD43jk9YGB3IMxaBJMStZw6xp7dpCnDJSkjbkERmSUfn5aBw=="
   },
   "citations": [
     {

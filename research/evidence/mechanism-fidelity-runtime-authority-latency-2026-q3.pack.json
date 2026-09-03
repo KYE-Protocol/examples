@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:mechanism-fidelity-runtime-authority-latency-2026-q3",
   "report_id": "kye:research-report:mechanism-fidelity-runtime-authority-latency-2026-q3",
   "body_sha256": "7937916944ba884e92ae13769342aad8ac18ac07877283a05f1641523de4f2d9",
-  "seal_signature": "EZ5bETkoCfKtdeDB/800Y4f/3i9hdbOpvBv43N4lEXD8QL1gdfgl/DfVsGqZO8nkK7AILKaBhxLKWBm1mATxAw==",
+  "seal_signature": "DLZ0OWuwvyFt1qQF1A13Lz36d2aaZqZULobkvjAAlwGvDeXdigp2H7mz/PSyXKm4XEKYnATEvVAHvw+N2dyJAg==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

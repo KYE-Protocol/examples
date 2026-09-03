@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:returns-to-expertise-governance-moat-2026-06",
   "report_id": "kye:research-report:returns-to-expertise-governance-moat-2026-06",
   "body_sha256": "fadf0201b0f3c1c9f886cd377d4035541b40ec9d3a43ed68cfb019577761eb7f",
-  "seal_signature": "mW8RbXQxpZdBYcKhS+zZ9nIQiW1ky+49oDvh5++XgW/2VBPfDvNk7wfRuAGHCUpaCSHmFAR90XX3ipPFBplnBQ==",
+  "seal_signature": "Yo147MfjUOfGd//gXUppbJRUeucPbFGoZfAvJJX0wrfVzoLttWFTWFiBaQWyiCHufDgRtJZLhX7mE90XnSwUDw==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

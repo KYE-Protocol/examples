@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:authority-that-outlived-its-purpose-2026-06",
   "report_id": "kye:research-report:authority-that-outlived-its-purpose-2026-06",
   "body_sha256": "fbd23c3c0ccacee9c0fef21969f96d204003051defc474602b2bd732f6f42329",
-  "seal_signature": "0CGstd/WitLlQW4nstgz3NS0HK32zXSoRiUJ+VlQnBsghwGgl+y/r3ZOmKnJbB8jlTK1RCFFT5RNu1YZxn+aDg==",
+  "seal_signature": "OeEx7U4DgzuiPskyN2zgGjKBwDvafEUUrK9J2VgD43jk9YGB3IMxaBJMStZw6xp7dpCnDJSkjbkERmSUfn5aBw==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

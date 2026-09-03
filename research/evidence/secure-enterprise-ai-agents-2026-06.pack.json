@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:secure-enterprise-ai-agents-2026-06",
   "report_id": "kye:research-report:secure-enterprise-ai-agents-2026-06",
   "body_sha256": "9e253eb344f061873e1adabd876304fb5977371a00fe864bd1ec74c9b25ceba5",
-  "seal_signature": "ajzmNHhpm2MLYGQnV9KWLILqKIDRDwz9i/PvD9unmZ0BD7qio2WoaHj5WF1Dt9svqwL5PRpl9ivOeMH2vDNfAg==",
+  "seal_signature": "3gqGD2gfKbiCK1j+v1CVmp+OtTas1AnTpgud0uVhV1wjF0RFJPp8Wje/OrHehj7BMpjfIaQ+arS1Jwmx0OJtAg==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

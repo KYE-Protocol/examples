@@ -8,6 +8,7 @@
   "cadence": "weekly",
   "edition": "2026-W26",
   "title": "KYE Authority Pulse™ — what changed in the canon this week — 2026-W26",
+  "language": "en-GB",
   "topic_id": "kye:research-topic:kye-authority-pulse-weekly",
   "tier": "free",
   "authors": [
@@ -21,7 +22,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "s0v2h/YQ7GMvaTP8jVB1urphARMNtZL4uqQiZvh8sBEzq58IFgNr1sNrmH8WDSZLUZyOAbmEfycLkg+E8sQZDw=="
+    "signature": "sLzLrq9+mvcJLtsYM3OQV4BCxpgshfkWkbNtbP65bMtCxgqloeQ7H66FlJdZ2zOnFmMlk21B/fmj92oAPKxKAw=="
   },
   "citations": [
     {
