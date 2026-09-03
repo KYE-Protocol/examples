@@ -1,0 +1,21 @@
+{
+  "id": "kye:cross-border-transfer:globex-eu:20260619T090000Z",
+  "version": 1,
+  "tenant_id": "kye:tenant:globex-eu",
+  "from": "eu",
+  "to": ["us"],
+  "lawful_basis": "standard_contractual_clauses",
+  "basis_ref": "kye:document:scc-eu-2021-914-mod2-globex-2026-06-01+tia",
+  "residency_verdict": "ALLOW",
+  "decision_id": "kye:decision-map:globex-eu:dx-2026-06-19-7b21",
+  "subject_jurisdiction_canonical": "eu",
+  "subject_pii_class": "personal_data",
+  "at": "2026-06-19T09:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:globex-eu:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

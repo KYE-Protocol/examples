@@ -1,0 +1,60 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:laboratory-testing-governance:v1",
+  "partner_id": "kye:foundry-applicant:laboratory-testing-governance-reference-partner",
+  "pack_name": "KYE Laboratory & Testing Governance Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "laboratory-testing-governance",
+  "bound_sector_pack_refs": ["kye:sector-pack:laboratory-testing-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:laboratory-data-integrity"],
+  "bound_dictionary_refs": ["kye:dictionary:laboratory-governance"],
+  "bound_framework_refs": [
+    "kye:framework:clia",
+    "kye:framework:iso-17025",
+    "kye:framework:iso-15189",
+    "kye:framework:oecd-glp"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:laboratory-testing-governance:2026-06-18",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-18T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-laboratory-testing-governance-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:laboratory-testing-governance:2026-06-18",
+  "claim_set": [
+    {
+      "claim_id": "result-admissibility",
+      "claim_text": "Every AI-supported laboratory result that moves toward release, reporting, or downstream reliance as a reportable record MUST map to a recorded result-admissibility decision — the agent, the result artefact, the intended consequential action, and the authority under which it proceeds. Results lacking a recorded admissibility decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "data-integrity",
+      "claim_text": "Before an AI-supported result proceeds to release it MUST carry recorded ALCOA+ data-integrity attributes (attributable, legible, contemporaneous, original, accurate, complete, consistent, enduring, available) and an intact audit trail for the electronic record. A result whose ALCOA+ attributes are missing or whose audit trail is broken is refused.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "provenance-pin",
+      "claim_text": "Every AI-supported result that proceeds toward release MUST emit a signed, replay-derivable provenance pin binding the supporting model and version, the inputs and pinned reference data, the ALCOA+ data-integrity attributes relied on, and the result-admissibility outcome — data-integrity provenance verifiable offline.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "release-signoff",
+      "claim_text": "An AI-supported result MUST remain advisory and MUST NOT be released as a reportable record until a named human reviewer — a designated laboratory director, authorised signatory, study director, or competent technical reviewer — records release sign-off. Unreviewed AI-driven result releases are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs AI-supported result generation, release-decisioning and data-integrity/replay at the test-result-admissibility boundary and PROVES the basis. KYE does not perform testing, calibrate equipment, run proficiency testing, handle specimens, or judge the analytical validity of a result.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-18T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

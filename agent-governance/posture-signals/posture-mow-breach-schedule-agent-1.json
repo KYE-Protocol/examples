@@ -1,0 +1,20 @@
+{
+  "schema": "kye.agent.posture_signal.v1",
+  "agent_pattern": "runtime-kye-mow-breach-schedule-authority-agent",
+  "trust_domain_id": "kye:trust-domain:kye-protocol:internal",
+  "parent_task": "e2a7c9d1-4b83-4f60-9a25-6d1f8b3e70c4",
+  "window": {
+    "start": "2026-07-20T00:00:00Z",
+    "end": "2026-07-21T00:00:00Z"
+  },
+  "signals": {
+    "sensitive_data_in_context_rate": 0.06,
+    "oversharing_risk_score": 9.0,
+    "risky_usage_indicator_count": 0,
+    "cross_tenant_access_attempts": 0
+  },
+  "cadence": "daily",
+  "emitted_at": "2026-07-21T00:00:05Z",
+  "complements": ["§21", "§34"],
+  "notes": "Worked-instance daily posture signal for the MOW SOC breach-schedule authority pattern over a 24h window. The agent reads a tenant-scoped classified-access report (publisher-access data — attribution signals, not raw PII) and derives an advisory schedule; sensitive-data-in-context rate is low, zero risky-usage indicators, zero cross-tenant access attempts (§0.11 boundary clean). Cadence is daily (a publisher-access-data surface, not a live security-incident surface)."
+}

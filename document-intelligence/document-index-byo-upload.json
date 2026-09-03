@@ -1,0 +1,24 @@
+{
+  "schema_id": "kye.document_index.v1",
+  "document_id": "kye:document-index:acme-bank-ai-policy-2026q2",
+  "tenant_id": "kye:tenant:kye-protocol",
+  "sub_tenant_id": "kye:sub-tenant:acme-bank",
+  "principal_id": "kye:principal:acme-compliance-lead",
+  "source_class": "byo_policy",
+  "source_format": "docx",
+  "source_title": "Acme Bank — Internal AI Governance Policy v3",
+  "source_digest": "f79c1ea0deadbeef",
+  "index_status": "tree_indexed",
+  "tree_root_node_id": "root",
+  "tree_node_count": 47,
+  "self_hosted": true,
+  "consumer": "ontology-crossmap",
+  "cited_extracts": [
+    {
+      "tree_node_path": "root/section-4/data-governance",
+      "evidence_pin_ref": "kye:evidence:tool-call-pin:acme-data-governance-term",
+      "passage_excerpt": "All training data shall be catalogued, lawfully sourced and retained per the bank's records schedule."
+    }
+  ],
+  "created_at": "2026-06-19T00:00:00.000Z"
+}

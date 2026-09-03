@@ -1,0 +1,36 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:roadmap-ai-governance-financial-services-2026-q3",
+  "report_id": "kye:research-report:roadmap-ai-governance-financial-services-2026-q3",
+  "body_sha256": "604f76c9598627c20087cf00e4c94bcfe28aac16525cd9d4e4ef2e714085b954",
+  "seal_signature": "3F426yFo1iqxsEhOOX7fVRH531EV5X1J0tUv/j0nPKoLoFcH5hdJWaFe8AoHnqiJ3nIN2nyVSmSJJFhaMLYrDQ==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "The EU AI Act classifies AI systems used for creditworthiness assessment of natural persons as high-risk, imposing risk-management, data-governance, logging and human-oversight obligations on financial-services deployers.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework (AI RMF 1.0) organises trustworthy-AI practice into four functions — Govern, Map, Measure, Manage — that financial institutions adapt as the backbone of an AI governance programme.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "National Institute of Standards and Technology",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The UK PRA and FCA supervisory approach treats AI and machine-learning model risk within existing model-risk-management and senior-management-accountability expectations, requiring firms to evidence governance, validation and ongoing monitoring.",
+      "source_url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks",
+      "publisher": "Bank of England — Prudential Regulation Authority",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 3,
+    "pinned": 0,
+    "unpinned": 3
+  }
+}

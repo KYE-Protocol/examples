@@ -8,7 +8,7 @@
     "trust_domain": "northwind.example"
   },
   "delivery_id": "dlv_01JBL7ATT002000000000000002",
-  "severity": "warning",
+  "severity": "warn",
   "payload": {
     "seat_id": "kye:attestation-seat:northwind.eu-ai-act.2026",
     "framework": "eu_ai_act",

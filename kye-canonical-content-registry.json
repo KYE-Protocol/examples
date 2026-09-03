@@ -1,0 +1,16 @@
+{
+  "schema": "kye.canonical_content_registry.v1",
+  "version": "1.0",
+  "generated_at": "2026-08-07T09:15:00Z",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md",
+  "concepts": [
+    {
+      "concept_id": "authority-finality",
+      "display_name": "Authority Finality",
+      "trademark": "Authority Finality™",
+      "canonical_surface": "public/site/authority-finality.html",
+      "concept_class": "primitive",
+      "introduced": "2026-06-25"
+    }
+  ]
+}

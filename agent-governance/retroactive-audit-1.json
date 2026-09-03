@@ -58,7 +58,7 @@
         "_diagnostics/liveness",
         "constitution/44-LIVENESS-ENGINE.md",
         "constitution/45-SELF-DESCRIPTION-GATE.md",
-        "private/roadmap/..."
+        "<internal-roadmap-path>"
       ],
       "example_mcp_servers": [
         "mcp__github__create_pull_request"

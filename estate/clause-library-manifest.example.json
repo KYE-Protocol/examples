@@ -1,0 +1,40 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.estate.clause_library_manifest.v1.json",
+  "manifest_id": "kye:estate:clause_library:v1",
+  "library_version": "1.0.0",
+  "adopted_at": "2026-05-27",
+  "constitution_ref": "constitution/47-CANONICAL-EVERYTHING.md",
+  "jurisdiction_default": "GB-EAW",
+  "description": "Illustrative clause library. Every clause carries the statute it rests on and whether qualified legal sign-off is required before it is used.",
+  "clauses": [
+    {
+      "schema": "kye.estate.clause.v1",
+      "clause_id": "kye:estate:clause:will-revocation-v1",
+      "clause_text_template": "I {{client_full_name}} of {{client_address}} REVOKE all former wills and testamentary dispositions made by me and declare this to be my last Will.",
+      "clause_jurisdiction": "GB-EAW",
+      "clause_version": "1.0.0",
+      "source_statute": "Wills Act 1837 s.20 (revocation by later will).",
+      "applies_when": { "expression_kind": "literal_true", "expression": true },
+      "requires_review": false,
+      "review_required_by_legal": false,
+      "matter_types": ["will_standard", "will_complex"],
+      "notes": "Standard opening revocation clause."
+    },
+    {
+      "schema": "kye.estate.clause.v1",
+      "clause_id": "kye:estate:clause:residuary-gift-v1",
+      "clause_text_template": "I GIVE the residue of my estate to {{residuary_beneficiary}} absolutely.",
+      "clause_jurisdiction": "GB-EAW",
+      "clause_version": "1.0.0",
+      "source_statute": "Wills Act 1837 s.9 (formal validity of the disposition).",
+      "applies_when": {
+        "expression_kind": "jsonlogic",
+        "expression": { "==": [{ "var": "matter_type" }, "will_standard"] }
+      },
+      "requires_review": true,
+      "review_required_by_legal": true,
+      "matter_types": ["will_standard"],
+      "notes": "Residuary gifts carry the bulk of the estate; sign-off is mandatory before use."
+    }
+  ]
+}

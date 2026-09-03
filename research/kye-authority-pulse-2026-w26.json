@@ -1,0 +1,78 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:kye-authority-pulse-2026-w26",
+  "series": "roadmap_to_ai_governance",
+  "format": "trends",
+  "sector": "cross-sector",
+  "audience": "general",
+  "cadence": "weekly",
+  "edition": "2026-W26",
+  "title": "KYE Authority Pulse™ — what changed in the canon this week — 2026-W26",
+  "topic_id": "kye:research-topic:kye-authority-pulse-weekly",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:kye-authority-pulse-2026-w26",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "s0v2h/YQ7GMvaTP8jVB1urphARMNtZL4uqQiZvh8sBEzq58IFgNr1sNrmH8WDSZLUZyOAbmEfycLkg+E8sQZDw=="
+  },
+  "citations": [
+    {
+      "claim": "Constitution chapter §72 (KYE™ Jurisdiction & Data-Sovereignty Authority) carries a structured header Adopted date of 2026-06-19, making geography a first-class dimension of admissibility evaluated at the moment of use.",
+      "source_url": "https://kyeprotocol.com/constitution/72-jurisdiction-data-sovereignty",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "publisher": "KYE Protocol™ Constitution — chapter 72 (locked, Adopted 2026-06-19)"
+    },
+    {
+      "claim": "Constitution chapter §71 (KYE Document Intelligence Rail™) carries a structured header Adopted date of 2026-06-19, bringing navigating, retrieving and citing unstructured documents under one governed, replay-verifiable contract with every cited extract pinned to its source.",
+      "source_url": "https://kyeprotocol.com/constitution/71-document-intelligence-rail",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "publisher": "KYE Protocol™ Constitution — chapter 71 (locked, Adopted 2026-06-19)"
+    },
+    {
+      "claim": "The canonical KYE™ framework registry (the §70 source-of-truth root) tracks 202 frameworks, regimes and standards under mapping, with a mapping counted as enforced only when backed by a cited KYE™ artefact.",
+      "source_url": "https://kyeprotocol.com/frameworks.html",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "publisher": "KYE Protocol™ Framework Registry (kye:registry — §70 Framework Mapping Rail)"
+    },
+    {
+      "claim": "The canonical KYE™ product registry declares 59 commercial products, each a kye.product.v1 entry that fans out across the platform layers.",
+      "source_url": "https://kyeprotocol.com/products.html",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "publisher": "KYE Protocol™ Product Registry (kye.product.v1 — §68 Total Productisation Fan-Out)"
+    },
+    {
+      "claim": "The KYE Governed Research Rail™ library holds 12 published research editions, each a sealed kye.research_report.v1 instance whose claims are pinned to cited public sources.",
+      "source_url": "https://kyeprotocol.com/reports.html",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "publisher": "KYE Protocol™ Governed Research Library (§62 Governed Research Rail)"
+    },
+    {
+      "claim": "Every KYE Governed Research Rail™ edition is Ed25519-sealed over the published JWKS, so any reader can verify the seal offline from the published keys alone without any KYE™ service in the loop.",
+      "source_url": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "publisher": "KYE Protocol™ published JWKS (/trust/self-audit-jwks.json — §0.4 Replay-Proof™)"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-22T08:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published",
+  "tribute_ref": "kye:scientist-tribute:ralph-merkle"
+}

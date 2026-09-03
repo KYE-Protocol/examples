@@ -1,0 +1,11 @@
+{
+  "attribution_id": "kye:consultant-attribution:northwind-bank:att-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "consultant_id": "kye:consultant:meridian-advisory",
+  "evidence_pack_id": "evidence_pack-2026-08-0417",
+  "attested_by": "kye:consultant:meridian-advisory",
+  "attested_at": "2026-08-07T09:15:00Z",
+  "signature_alg": "ed25519",
+  "signature_kid": "kye-attribution-2026-08",
+  "attestation_hash": "sha256:9f2c4b7e1d83a05c6ef4491b27d0ac35e8b16f42c9d7530ae1f8b64c02d97a11"
+}

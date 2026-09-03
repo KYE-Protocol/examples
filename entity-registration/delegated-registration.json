@@ -1,0 +1,12 @@
+{
+  "schema": "kye.entity_registration.v1",
+  "entity_id": "kye:ent:packauth:organisation:acme-foods",
+  "entity_type": "organisation",
+  "trust_domain_id": "kye:trust-domain:packauth",
+  "display_name": "Acme Foods",
+  "registered_by_entity_id": "kye:ent:packauth:organisation:packauth",
+  "basis": "delegated_registration",
+  "delegation_id": "kye:delegation:packauth:register-customers",
+  "consequential_action_classes": ["packauth.print_release.issue"],
+  "labels": ["customer"]
+}

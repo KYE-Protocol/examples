@@ -1,0 +1,64 @@
+{
+  "schema": "kye.emulate_journey_script.v1",
+  "script_id": "kye:journey-script:customer-dashboard-emulate",
+  "voices": {
+    "narrator": "af_heart",
+    "announcer": "am_michael",
+    "speed": 1
+  },
+  "cards": {
+    "default_title": "A customer works the KYE governed dashboard — deploying and using a governed agent",
+    "subtitle": "Synthetic seed data · emulated session · every step governed by the real KYE Decision Engine",
+    "closing_narration": "This demo was governed end to end — every step sealed a replay-verifiable evidence pack. Check the evidence yourself, offline, at kye protocol dot com, slash trust.",
+    "default_deploy_label": "Synthetic Payments Screening Agent",
+    "claim_basis": {
+      "default_title": {
+        "kind": "on-screen",
+        "ref": "the clip shows exactly this journey"
+      },
+      "subtitle": {
+        "kind": "pipeline",
+        "ref": "every filmed step carries a governed decision recorded in the run record; the seed data is the Synthetic Fixtures Rail"
+      },
+      "closing_narration": {
+        "kind": "pipeline",
+        "ref": "the public evidence reference for each step, projected to the public patent-safe index"
+      },
+      "default_deploy_label": {
+        "kind": "on-screen",
+        "ref": "the agent name typed into the Register-agent form on camera"
+      },
+      "synthetic_marker": {
+        "kind": "artefact",
+        "ref": "public/examples/adoption-evidence-pack.json"
+      }
+    },
+    "synthetic_marker": "SYNTHETIC DATA — governed demo, no real customer records"
+  },
+  "steps": [
+    {
+      "slug": "emulate-dashboard",
+      "url_path": "/dashboard.html",
+      "label": "Signed in — the governance dashboard, populated from synthetic seed data",
+      "narration": "Signed in. This is the customer's governance dashboard, populated entirely from synthetic seed data.",
+      "expect": "decisions",
+      "voice_role": "narrator",
+      "claim_basis": {
+        "kind": "on-screen",
+        "ref": "the dashboard renders decision counts from the seeded tenant state (expect: \"decisions\")"
+      }
+    },
+    {
+      "slug": "emulate-authorities",
+      "url_path": "/authorities.html",
+      "label": "Team & delegated authority — filter the active grants",
+      "narration": "Here the team grants delegated authority. We filter down to the active grants.",
+      "expect": "delegat",
+      "voice_role": "narrator",
+      "claim_basis": {
+        "kind": "on-screen",
+        "ref": "the authorities page renders delegated-authority grants and the active filter (expect: \"delegat\")"
+      }
+    }
+  ]
+}

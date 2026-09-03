@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.screenshot_manifest.v1.json",
+  "schema": "kye.screenshot_manifest.v1",
+  "registry_id": "kye:registry:screenshots",
+  "adopted_at": "2026-06-14",
+  "constitution_ref": "constitution/06-WEBSITE.md",
+  "description": "Illustrative screenshot registry. Each row is a deterministic capture instruction, so the image can be reproduced from the manifest rather than being a file somebody once dropped into assets/.",
+  "phase_2_deferral": "Console dashboards behind authentication cannot be captured from a public surface and are deliberately absent rather than mocked.",
+  "screenshots": [
+    {
+      "id": "decision-map-panel",
+      "source_surface": "public/site/authority-sourcing.html",
+      "selector": "svg",
+      "out": "public/site/assets/screenshots/decision-map-panel.png",
+      "viewport": { "width": 1100, "height": 760, "dsf": 2 },
+      "alt": "A decision map panel showing the inputs that led to one governed decision, with the resulting evidence reference.",
+      "caption": "Illustrative — the decision record produced for a single governed action.",
+      "embed_on": ["public/site/authority-sourcing.html"]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "display_name": "Synthetic Fraud Screening Agent",
+    "capability_id": "transaction.screen",
+    "lifecycle_state": "production",
+    "allow_n": 243,
+    "review_n": 6,
+    "deny_n": 37,
+    "agent_ref": "REF-5F3B357E",
+    "last_seen_day_offset": -4
+  },
+  {
+    "display_name": "Synthetic Account Summariser Agent",
+    "capability_id": "transaction.screen",
+    "lifecycle_state": "pilot",
+    "allow_n": 444,
+    "review_n": 44,
+    "deny_n": 31,
+    "agent_ref": "REF-5282F835",
+    "last_seen_day_offset": -27
+  },
+  {
+    "display_name": "Synthetic KYC Triage Agent",
+    "capability_id": "collections.route",
+    "lifecycle_state": "production",
+    "allow_n": 54,
+    "review_n": 36,
+    "deny_n": 25,
+    "agent_ref": "REF-C8BA259E",
+    "last_seen_day_offset": -19
+  },
+  {
+    "display_name": "Synthetic Disclosure Drafter Agent",
+    "capability_id": "disclosure.draft",
+    "lifecycle_state": "pilot",
+    "allow_n": 419,
+    "review_n": 5,
+    "deny_n": 28,
+    "agent_ref": "REF-40EAAC43",
+    "last_seen_day_offset": -79
+  },
+  {
+    "display_name": "Synthetic KYC Triage Agent",
+    "capability_id": "disclosure.draft",
+    "lifecycle_state": "production",
+    "allow_n": 89,
+    "review_n": 59,
+    "deny_n": 37,
+    "agent_ref": "REF-FD6DC36C",
+    "last_seen_day_offset": -58
+  }
+]

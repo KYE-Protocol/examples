@@ -1,0 +1,42 @@
+{
+  "schema": "kye.legal_agent_authority_decision.v1",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md",
+  "binding_pattern": "runtime-kye-legal-evidence-authority-agent",
+  "principal_id": "kye:prin:kye-legal-evidence-authority-agent",
+  "tenant_id": "kye:tenant:acme-legal",
+  "matter": {
+    "matter_id": "kye:matter:acme-v-globex",
+    "matter_authority_resolved": true,
+    "custodian_id": "kye:custodian:j-doe",
+    "custodian_in_scope": true,
+    "jurisdiction": "us-federal",
+    "privilege_privacy_policy_passed": true
+  },
+  "requested_action_class": "kye:action-class:data-produce",
+  "human_approval": {
+    "required": true,
+    "approval_mode": "two_person_with_legal",
+    "satisfied": true
+  },
+  "decision": "allow",
+  "reason_code": "authority_resolved_approval_satisfied",
+  "authority_chain": [
+    "matter_authority:resolved",
+    "custodian_scope:in_scope",
+    "privilege_privacy_policy:passed",
+    "jurisdiction:supported",
+    "human_approval:two_person_with_legal:satisfied",
+    "evidence_capture:sealed"
+  ],
+  "pdp_decision_id": "kye:decision:9f4c1a7b2e6d0358",
+  "evidence_pack_id": "kye:evidence-pack:7c0e5a91d4b2f6a3",
+  "replay_proof_ref": "kye:replay-proof:7c0e5a91d4b2f6a3",
+  "decided_at": "2026-07-05T10:06:42Z",
+  "evidence": {
+    "kind": "audit_reference",
+    "id": "6b2f9d41-8e33-4c77-a1b2-9f0c7d5e21aa",
+    "outcome": "accepted",
+    "reason": "authority_resolved_approval_satisfied",
+    "verify_url": "https://kyeprotocol.com/trust-self-audit.html"
+  }
+}

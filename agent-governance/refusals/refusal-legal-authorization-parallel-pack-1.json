@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "c7e2b914-3f6d-4a82-9e51-2b8d4f1a6c93",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel legal / contract authority rule-pack, sector-pack, dictionary, or framework-mapping. KYE already governs contract-action authority via kye:rule-pack:legal-contract + kye:sector-pack:legal-contract + kye:dictionary:legal-contract, bound to the SRA Code of Conduct, UK GDPR Article 28, and UK contract-law reasonableness (UCTA 1977). A parallel pack is a §0 competing-systems violation; re-mapping the frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:rule-pack:legal-contract verdict under KYE authority, strictly contract-action governance (no overlap with the litigation-evidence-discovery pack). Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, kye-legal-action-authority-agent ™, governed-agents.html entry) and BIND — never re-map — the existing frameworks via kye:rule-pack:legal-contract + kye:dictionary:legal-contract."
+}

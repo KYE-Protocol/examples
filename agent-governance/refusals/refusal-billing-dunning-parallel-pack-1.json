@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "b7f1c024-9a3e-4d52-8c61-2f0a7e4b1d83",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel billing/dunning/collections rule-pack / sector-pack / dictionary and to re-map FCA CONC / FCA Consumer Duty. KYE already governs financial-services AI actions via kye:sector-pack:financial_services, and FCA CONC (kye:framework:fca-conc) + FCA Consumer Duty (kye:framework:fca-consumer-duty) are already deep-mapped. A parallel pack is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing the parallel pack and the re-map.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:sector-pack:financial_services governance under KYE authority (the runtime-kye-payment-authorization-authority-agent pattern). Add only the agent-product artefacts (§52 binding, principal, refusal, product row + fan-out, SKU, pricing, ™, gate) and BIND — never re-map — the existing FCA CONC + FCA Consumer Duty frameworks. Outbound AR/collections differs from the inbound chargeback-evidence agent and the accounting-governance ledger pack."
+}

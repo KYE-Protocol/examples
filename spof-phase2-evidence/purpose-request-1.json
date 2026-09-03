@@ -1,10 +1,14 @@
 {
+  "schema": "kye.purpose.request.v1",
   "id": "kye:purpose-req:platform:01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
   "actor": "kye:ent:agent-architecture-spof-phase2",
   "purpose": "kye:purpose-class:platform.spof.phase2-closure",
   "action": "declare-fallback-contract",
   "resource": "kye:res:platform:constitution:51-no-spof:phase2",
-  "data_classes": ["constitution.amendment", "spof.registry.row"],
+  "data_classes": [
+    "constitution.amendment",
+    "spof.registry.row"
+  ],
   "requested_at": "2026-05-27T10:00:00Z",
   "claimed_grant_id": "kye:purpose:platform:architecture:constitutional-amendment-2026q2",
   "tool_call_hash": "sha256:7b9e3c4f1a2d5e6f8b0c9a1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f"

@@ -1,0 +1,15 @@
+{
+  "schema_version": "kye.state.machine_derivation.v1",
+  "derivation_id": "kye:state-derivation:northwind-bank.principal.v1",
+  "tenant_scope": "kye:tenant:northwind-bank-ten-2026-08-0417",
+  "derived_from": "kye:state-library:principal.lifecycle.v1",
+  "library_version": "1.0.0",
+  "overrides": {},
+  "derived_at": "2026-08-07T09:15:00Z",
+  "derived_by": "kye:prin:northwind-bank:jordan-reyes",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-signing-2026-08",
+    "value_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+  }
+}

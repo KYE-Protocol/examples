@@ -2,21 +2,25 @@
   "schema": "kye.authority_graph.v1",
   "tenant_id": "kye:tenant:org_2vAcMeBank",
   "rendered_at": "2026-05-30T14:30:00Z",
-  "node_count": 6,
-  "edge_count": 5,
+  "node_count": 8,
+  "edge_count": 7,
   "nodes": [
     { "id": "kye:entity:principal:acme_board", "type": "principal", "label": "Acme Board", "state": "in_force", "trust_score": 1.0 },
     { "id": "kye:entity:principal:cro_office", "type": "principal", "label": "CRO Office", "state": "in_force", "trust_score": 0.99 },
     { "id": "kye:entity:agent:kyc_triage_v3", "type": "agent", "label": "KYC Triage Agent v3", "state": "in_force", "trust_score": 0.96 },
     { "id": "kye:entity:agent:payments_clearing_v2", "type": "agent", "label": "Payments Clearing v2", "state": "attenuated", "trust_score": 0.78 },
     { "id": "kye:capability:read_passport", "type": "capability", "label": "read_passport" },
-    { "id": "kye:capability:initiate_payment", "type": "capability", "label": "initiate_payment" }
+    { "id": "kye:capability:initiate_payment", "type": "capability", "label": "initiate_payment" },
+    { "id": "kye:purpose:customer_onboarding", "type": "purpose", "label": "customer_onboarding", "state": "in_force" },
+    { "id": "kye:purpose:payment_settlement", "type": "purpose", "label": "payment_settlement", "state": "expiring" }
   ],
   "edges": [
     { "from": "kye:entity:principal:acme_board", "to": "kye:entity:principal:cro_office", "relation": "delegates_to", "in_force": true, "audit_ref": "kye:audit:event:del-1" },
     { "from": "kye:entity:principal:cro_office", "to": "kye:entity:agent:kyc_triage_v3", "relation": "delegates_to", "in_force": true, "audit_ref": "kye:audit:event:del-2", "pulse": true },
     { "from": "kye:entity:principal:cro_office", "to": "kye:entity:agent:payments_clearing_v2", "relation": "delegates_to", "in_force": true, "audit_ref": "kye:audit:event:del-3" },
     { "from": "kye:entity:agent:kyc_triage_v3", "to": "kye:capability:read_passport", "relation": "scoped_by", "in_force": true, "audit_ref": "kye:audit:event:cap-1" },
-    { "from": "kye:entity:agent:payments_clearing_v2", "to": "kye:capability:initiate_payment", "relation": "constrained_by", "in_force": true, "audit_ref": "kye:audit:event:cap-2" }
+    { "from": "kye:entity:agent:payments_clearing_v2", "to": "kye:capability:initiate_payment", "relation": "constrained_by", "in_force": true, "audit_ref": "kye:audit:event:cap-2" },
+    { "from": "kye:entity:agent:kyc_triage_v3", "to": "kye:purpose:customer_onboarding", "relation": "for_purpose", "in_force": true, "audit_ref": "kye:audit:event:pp-1" },
+    { "from": "kye:entity:agent:payments_clearing_v2", "to": "kye:purpose:payment_settlement", "relation": "for_purpose", "in_force": true, "audit_ref": "kye:audit:event:pp-2" }
   ]
 }

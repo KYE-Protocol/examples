@@ -1,0 +1,82 @@
+[
+  {
+    "borrower_org": "Synthetic Test Co 001",
+    "principal_amount": 669261,
+    "currency": "GBP",
+    "decision": "approve",
+    "decision_ref": "REF-7A5BAAEF",
+    "decided_day_offset": -33
+  },
+  {
+    "borrower_org": "Synthetic Test Co 002",
+    "principal_amount": 428747,
+    "currency": "USD",
+    "decision": "approve",
+    "decision_ref": "REF-0F1C111A",
+    "decided_day_offset": -70
+  },
+  {
+    "borrower_org": "Synthetic Test Co 003",
+    "principal_amount": 48831,
+    "currency": "GBP",
+    "decision": "decline",
+    "decision_ref": "REF-EE5F57B1",
+    "decided_day_offset": -19
+  },
+  {
+    "borrower_org": "Synthetic Test Co 004",
+    "principal_amount": 213974,
+    "currency": "EUR",
+    "decision": "approve",
+    "decision_ref": "REF-3B444931",
+    "decided_day_offset": -39
+  },
+  {
+    "borrower_org": "Synthetic Test Co 005",
+    "principal_amount": 360234,
+    "currency": "GBP",
+    "decision": "refer",
+    "decision_ref": "REF-814FCB5D",
+    "decided_day_offset": -22
+  },
+  {
+    "borrower_org": "Synthetic Test Co 006",
+    "principal_amount": 229580,
+    "currency": "EUR",
+    "decision": "decline",
+    "decision_ref": "REF-EF19B99A",
+    "decided_day_offset": -84
+  },
+  {
+    "borrower_org": "Synthetic Test Co 007",
+    "principal_amount": 398570,
+    "currency": "SGD",
+    "decision": "approve",
+    "decision_ref": "REF-41F2C3E4",
+    "decided_day_offset": -69
+  },
+  {
+    "borrower_org": "Synthetic Test Co 008",
+    "principal_amount": 92737,
+    "currency": "SGD",
+    "decision": "decline",
+    "decision_ref": "REF-D79B0770",
+    "decided_day_offset": -43
+  },
+  {
+    "borrower_org": "Synthetic Test Co 009",
+    "principal_amount": 345965,
+    "currency": "SGD",
+    "decision": "decline",
+    "decision_ref": "REF-03632C20",
+    "decided_day_offset": -5
+  },
+  {
+    "borrower_org": "Synthetic Test Co 010",
+    "principal_amount": 719805,
+    "currency": "EUR",
+    "decision": "approve",
+    "decision_ref": "REF-A13D1B63",
+    "decided_day_offset": -26
+  }
+]

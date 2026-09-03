@@ -1,20 +1,69 @@
 {
+  "schema": "kye.purpose.admissibility.v1",
   "request_id": "kye:purpose-req:platform:01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
   "grant_id": "kye:purpose:platform:architecture:constitutional-amendment-2026q2",
   "admitted": true,
   "reasons": [
-    { "code": "principal_matches",      "passed": true, "detail": "request.actor's grant principal == kye:ent:agent-architecture-s50-phase4" },
-    { "code": "grantee_matches",        "passed": true, "detail": "request.actor == grant.grantee" },
-    { "code": "purpose_matches",        "passed": true, "detail": "purpose-class:platform.content-graph.phase4-extension registered under grant" },
-    { "code": "action_in_scope",        "passed": true, "detail": "ship-audience-landings-and-enriched-search-index in [ship-audience-landings, extend-search-index, add-structural-gate]" },
-    { "code": "resource_in_scope",      "passed": true, "detail": "constitution/50 + public/site/for/ + public/site/assets/derived-search-index.json under platform:constitution:50-content-graph-discoverability:*" },
-    { "code": "data_class_in_scope",    "passed": true, "detail": "constitution.amendment, site.derived.audience-landings, site.assets.derived-search-index in scope" },
-    { "code": "within_time_window",     "passed": true, "detail": "2026-05-27T13:00:00Z in [2026-04-01, 2026-09-01)" },
-    { "code": "within_jurisdiction",    "passed": true, "detail": "actor seat GB in [GB, IE, EU]" },
-    { "code": "within_rate_cap",        "passed": true, "detail": "2/30 rpm used" },
-    { "code": "not_revoked",            "passed": true, "detail": "grant.revoked_at == null" },
-    { "code": "signature_valid",        "passed": true, "detail": "COSE signature verified against architecture-lead key" },
-    { "code": "dual_control_satisfied", "passed": true, "detail": "§27 dual-channel approval pack kye:approval-evidence-pack:s50-phase4-architecture-design-system recorded" }
+    {
+      "code": "principal_matches",
+      "passed": true,
+      "detail": "request.actor's grant principal == kye:ent:agent-architecture-s50-phase4"
+    },
+    {
+      "code": "grantee_matches",
+      "passed": true,
+      "detail": "request.actor == grant.grantee"
+    },
+    {
+      "code": "purpose_matches",
+      "passed": true,
+      "detail": "purpose-class:platform.content-graph.phase4-extension registered under grant"
+    },
+    {
+      "code": "action_in_scope",
+      "passed": true,
+      "detail": "ship-audience-landings-and-enriched-search-index in [ship-audience-landings, extend-search-index, add-structural-gate]"
+    },
+    {
+      "code": "resource_in_scope",
+      "passed": true,
+      "detail": "constitution/50 + public/site/for/ + public/site/assets/derived-search-index.json under platform:constitution:50-content-graph-discoverability:*"
+    },
+    {
+      "code": "data_class_in_scope",
+      "passed": true,
+      "detail": "constitution.amendment, site.derived.audience-landings, site.assets.derived-search-index in scope"
+    },
+    {
+      "code": "within_time_window",
+      "passed": true,
+      "detail": "2026-05-27T13:00:00Z in [2026-04-01, 2026-09-01)"
+    },
+    {
+      "code": "within_jurisdiction",
+      "passed": true,
+      "detail": "actor seat GB in [GB, IE, EU]"
+    },
+    {
+      "code": "within_rate_cap",
+      "passed": true,
+      "detail": "2/30 rpm used"
+    },
+    {
+      "code": "not_revoked",
+      "passed": true,
+      "detail": "grant.revoked_at == null"
+    },
+    {
+      "code": "signature_valid",
+      "passed": true,
+      "detail": "COSE signature verified against architecture-lead key"
+    },
+    {
+      "code": "dual_control_satisfied",
+      "passed": true,
+      "detail": "§27 dual-channel approval pack kye:approval-evidence-pack:s50-phase4-architecture-design-system recorded"
+    }
   ],
   "decided_at": "2026-05-27T13:00:01Z",
   "decided_by": "kye:engine:admissibility:v1.4.2:build-9c1e7af0"

@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:ai-governance-encyclopedia-fa-v1-ch1",
+  "report_id": "kye:research-report:ai-governance-encyclopedia-fa-v1-ch1",
+  "body_sha256": "83c35052441fe9a92cc3fe3666b64645839fe96362f6fad804e642d2b73017fb",
+  "seal_signature": "QvmTUkjyWWeBGyeAo/3KMXAImsvB2SBc1APeKzxfn75/YYKsuUTcNCNhI6cf6iykC3kDqmJGNmsx+CBKAwENDQ==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "چارچوب مدیریت ریسک هوش مصنوعی NIST، فعالیت‌های مدیریت ریسک را در بالاترین سطح در چهار کارکرد حکمرانی، نگاشت، سنجش و مدیریت سازمان می‌دهد.",
+      "source_id": "kye:source:nist-ai-rmf-core-functions",
+      "source_url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/5-sec-core",
+      "publisher": "National Institute of Standards and Technology",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:69c184b33aa937f10afc21d81c77150c83f6c39fd229457598abd52728fdb55a",
+        "retrieved_at": "2026-08-31T01:05:30Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "توصیه‌نامه هوش مصنوعی OECD نخستین استاندارد بین‌الدولی در حوزه هوش مصنوعی است.",
+      "source_id": "kye:source:oecd-ai-principles",
+      "source_url": "https://oecd.ai/en/ai-principles",
+      "publisher": "Organisation for Economic Co-operation and Development",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:d85ce0d7fd38adddaac4d271fd5fa5e62fe2bcf9fc458ae119866e7a129a2be0",
+        "retrieved_at": "2026-08-31T01:06:44Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "قانون هوش مصنوعی اتحادیه اروپا برای جلوگیری از تکه‌تکه شدن بازار داخلی و کاهش عدم‌قطعیت حقوقی برای بهره‌برداران، قواعد یکسان وضع می‌کند.",
+      "source_id": "kye:source:eu-ai-act-uniform-rules",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:8ad13bdd75911c9d216dbbab5bf6f82fce82dba421c453918dc03ed7043cb662",
+        "retrieved_at": "2026-08-31T01:08:15Z",
+        "transport": "direct"
+      }
+    }
+  ],
+  "counts": {
+    "claims": 3,
+    "pinned": 3,
+    "unpinned": 0
+  }
+}

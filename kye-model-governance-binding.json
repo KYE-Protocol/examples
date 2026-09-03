@@ -1,0 +1,13 @@
+{
+  "schema": "kye.model_governance_binding.v1",
+  "binding_id": "kye:model-governance:mg-2026-08-0417",
+  "artifact_kind": "model",
+  "source": "huggingface",
+  "model_ref": "kye:model:northwind-bank-mod-2026-08-0417",
+  "governance_posture": "declared",
+  "ai_bom": {
+    "license": "Apache-2.0"
+  },
+  "status": "active",
+  "adopted_at": "2026-08-07"
+}

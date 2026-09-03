@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "9c4e2b81-6f0a-4d3e-a7b2-1e8c5d09f4a2",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel threat-response / SOC / incident-response rule-pack / sector-pack / dictionary. KYE already governs AI-assisted incident-response decisions at the action boundary via kye:rule-pack:cyber-resilience-incident + kye:sector-pack:cyber-resilience-incident + kye:dictionary:cyber-resilience-incident, bound to DORA / NIS2 / NIST CSF 2.0 / SEC cyber-disclosure / ISO 27035. A parallel pack is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:sector-pack:cyber-resilience-incident flow under KYE authority (the runtime-kye-sanctions-aml-authority-agent pattern). Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry) and BIND — never re-map — the existing DORA / NIS2 / NIST CSF 2.0 / SEC cyber-disclosure / ISO 27035 frameworks via kye:rule-pack:cyber-resilience-incident."
+}

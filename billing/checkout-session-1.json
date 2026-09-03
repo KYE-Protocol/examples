@@ -1,0 +1,11 @@
+{
+  "schema": "kye.billing.checkout_session.v1",
+  "id": "kye:checkout-session:0192fc3a4b5c6d7e8f90",
+  "stripe_checkout_session_id": "cs_test_a1B2c3D4e5F6g7H8",
+  "url": "https://checkout.stripe.com/c/pay/cs_test_a1B2c3D4e5F6g7H8",
+  "sku_id": "KYE-FOUNDRY-PACK-INSURANCE-CLAIMS-001",
+  "product_id": "insurance-claims",
+  "currency": "GBP",
+  "status": "open",
+  "tenant_id": "kye:tenant:acme-insurer"
+}

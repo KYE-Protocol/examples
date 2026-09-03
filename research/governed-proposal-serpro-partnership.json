@@ -1,0 +1,87 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:governed-proposal-serpro-partnership-2026-w26",
+  "tribute_ref": "kye:scientist-tribute:leslie-lamport",
+  "series": "roadmap_to_ai_governance",
+  "format": "proposal",
+  "sector": "financial-services",
+  "audience": "partner",
+  "cadence": "weekly",
+  "edition": "2026-W26",
+  "title": "KYE Governed Proposal Authority™: SERPRO Governed Data-Query Partnership",
+  "topic_id": "kye:research-topic:governed-proposal-serpro-partnership",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:governed-proposal-serpro-partnership-2026-w26",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "Z6IbEaBPHMI+DFUOXI0Lyg37cokxE2ILAIU43U5eC1KBks14ZLd1Q0KvN10MxCLUAHx/bGMVT246sD87Jw66AA=="
+  },
+  "citations": [
+    {
+      "claim": "CPF is personal data under Brazil's Lei Geral de Proteção de Dados (LGPD), so processing requires a purpose and a legal basis and the data must be minimised.",
+      "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "retrieved_at": "2026-06-27T08:30:00Z",
+      "publisher": "Presidência da República — Casa Civil (Brazil)"
+    },
+    {
+      "claim": "SERPRO publishes the Consulta CPF and Consulta CNPJ APIs sourced from the Receita Federal do Brasil, with a documented dummy-data sandbox available for proof-of-concept integration ahead of the credentialed production endpoint.",
+      "source_url": "https://www.gov.br/conecta/catalogo/apis/consulta-cpf",
+      "retrieved_at": "2026-06-27T08:30:00Z",
+      "publisher": "SERPRO / Governo Federal do Brasil"
+    },
+    {
+      "claim": "The Receita Federal do Brasil is the federal tax authority whose CPF and CNPJ registers SERPRO exposes — the authoritative source of the Brazilian taxpayer and company records.",
+      "source_url": "https://www.gov.br/receitafederal/pt-br",
+      "retrieved_at": "2026-06-27T08:30:00Z",
+      "publisher": "Receita Federal do Brasil"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework organises trustworthy-AI practice into four functions — Govern, Map, Measure, Manage — that a deployer adapts as the backbone of an AI governance programme.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_at": "2026-06-27T08:30:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "The OECD AI Principles call for accountability and traceability across the AI system lifecycle, supporting an evidence trail for automated decisions and the data queries that feed them.",
+      "source_url": "https://oecd.ai/en/ai-principles",
+      "retrieved_at": "2026-06-27T08:30:00Z",
+      "publisher": "Organisation for Economic Co-operation and Development"
+    },
+    {
+      "claim": "ISO/IEC 42001 specifies requirements for an AI management system, providing the management-system spine an organisation uses to govern AI-assisted entity-verification processes.",
+      "source_url": "https://www.iso.org/standard/81230.html",
+      "retrieved_at": "2026-06-27T08:30:00Z",
+      "publisher": "International Organization for Standardization"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-27T09:00:00Z",
+  "metrics": {
+    "page_count": 8,
+    "source_count": 6,
+    "visual_count": 2,
+    "visual_breakdown": {
+      "table": 1,
+      "bar": 1
+    }
+  },
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

@@ -4,13 +4,79 @@
   "registry_id": "kye:registry:ratchet-baselines",
   "adopted_at": "2026-06-11",
   "constitution_ref": "constitution/00-INDEX.md#0.18",
-  "description": "Illustrative kye.ratchet_baselines.v1 instance — one entry per decreases-only ratchet baseline, each naming the gate that reads it.",
+  "dictionary_ref": "kye:dictionary:ratchet-kinds",
+  "registry_version": 2,
+  "description": "Illustrative kye.ratchet_baselines.v1 instance — one entry per ratchet baseline, each naming the gate that reads it and declaring its `kind`. The four kinds are shown once each, because the direction of a row is exactly what a reader cannot infer from a bare number: a count of 42 means opposite things on a debt-ratchet and a coverage-floor. Also demonstrates the §0.44 monotonic-floor override shapes: a raise / deadline-extension is legitimate only as a SIGNED, reconciliation-linked act (monotonic_overrides[]), and a nonzero baseline may only be removed via retired_baselines[]. no-merge-regression enforces that vs origin/main; advisory-deadline-not-expired enforces the per-kind field rules against kye:dictionary:ratchet-kinds.",
+  "observed_against": {
+    "framework_registry_count": 249,
+    "generated_at_utc_date": "2026-08-03"
+  },
+  "retired_baselines": [
+    {
+      "key": "example_retired_ceiling",
+      "retired_from_count": 3,
+      "authorised_by": "kye:person:platform-ops",
+      "reason": "Illustrative retirement — the ratchet reached its target (debt genuinely paid) so its key was removed rather than kept at 0.",
+      "reconciliation_ref": "private/roadmap/reconciliation/2026-08-02-ratchet-monotonic-floor.md",
+      "retired_at": "2026-08-02"
+    }
+  ],
   "baselines": {
     "example_uncovered_total": {
+      "kind": "debt-ratchet",
       "count": 42,
       "gate": "test:example-canonical",
       "decay_deadline": "2026-12-31",
-      "description": "Illustrative ratchet ceiling — a branch lowers this number as it covers artefacts; raising it requires the gate's justification path."
+      "target": 0,
+      "previous_count": 50,
+      "last_reduced_at": "2026-07-07",
+      "owner": "platform-ops",
+      "description": "Illustrative DEBT-RATCHET — a measured count of violations that may only fall toward target. A branch lowers this number as it covers artefacts; raising it requires a signed monotonic_overrides[] entry. Because count (42) exceeds target (0), a decay_deadline is mandatory: a transition ramp with no end is permanent debt by construction. The active-burn-down fields let advisory-deadline-not-expired flag a baseline that stalls flat as its deadline nears — here count fell 50 to 42 with the reduction recorded on last_reduced_at."
+    },
+    "example_coverage_floor": {
+      "kind": "coverage-floor",
+      "count": 209,
+      "gate": "test:example-canonical",
+      "owner": "platform-ops",
+      "description": "Illustrative COVERAGE-FLOOR — a measured count of ACHIEVED coverage that may only rise. Higher is better, so there is nothing to burn down and both target and decay_deadline are forbidden. That prohibition is not cosmetic: the stall check reads count>target as outstanding work, so a deadline here would eventually demand a REDUCTION in the very measure the floor protects from regressing. Dropping below 209 hard-fails; raising it requires real coverage gains."
+    },
+    "example_config_threshold": {
+      "kind": "config-threshold",
+      "count": 400,
+      "gate": "test:example-canonical",
+      "owner": "platform-ops",
+      "description": "Illustrative CONFIG-THRESHOLD — a parameter the gate CONSUMES (here, max body-keyword characters captured per page), not a measurement of the repo. It lives in the registry rather than hardcoded at the point of use (§0.9), and has no trajectory in either direction. Distinguish from a debt-ratchet by asking whether the gate compares something measured against this value, or simply uses it."
+    },
+    "example_hold_the_line": {
+      "kind": "hold-the-line",
+      "count": 11,
+      "gate": "test:example-canonical",
+      "decay_deadline": "2026-12-31",
+      "owner": "platform-ops",
+      "hold_reason": "Illustrative — the honest denominator is not yet measurable, so no numeric target is claimed. The count may not rise (that invariant is real and enforceable), but 11 is not asserted to be debt. A per-clause classification on the owning registry would make the denominator measurable; until it lands, asserting a reachable-looking 0 would be a §70 honesty failure dressed as automation.",
+      "description": "Illustrative HOLD-THE-LINE — a non-increase invariant whose resting state is not yet knowable. A target is forbidden and hold_reason is required, which is what stops this kind becoming a silent escape from debt-ratchet's obligations. The decay_deadline here is a REVIEW date for the work that would make a target claimable, never a burn-down clock, so the stall check does not apply to it."
+    },
+    "example_measurement_corrected": {
+      "kind": "debt-ratchet",
+      "count": 60,
+      "gate": "test:example-canonical",
+      "decay_deadline": "2026-12-31",
+      "target": 0,
+      "previous_count": 55,
+      "last_reduced_at": "2026-07-07",
+      "owner": "platform-ops",
+      "monotonic_overrides": [
+        {
+          "kind": "count-raise",
+          "from": "55",
+          "to": "60",
+          "authorised_by": "kye:person:platform-ops",
+          "reason": "Illustrative corrected measurement — the enforcer was under-counting its domain by 5; the ceiling rose to the true number, no new debt admitted (§0.49).",
+          "reconciliation_ref": "private/roadmap/reconciliation/2026-08-02-ratchet-monotonic-floor.md",
+          "raised_at": "2026-08-02"
+        }
+      ],
+      "description": "Illustrative signed raise — a ceiling may only rise above main when a corrected measurement or expanded declared scope is signed here, with a reconciliation_ref that exists on disk. no-merge-regression cross-checks that `from` equals main's committed count; a stale from or a dangling ref fails. Note the nested monotonic_overrides[].kind is a different, override-scoped vocabulary (count-raise / deadline-extension) from the entry-level ratchet kind above it."
     }
   }
 }

@@ -9,14 +9,14 @@
   },
   "approver": "kye:person:acme-bank.cro",
   "knowledge_snapshot_id": "kye:approver-knowledge-snapshot:payment-agent-scope-expansion.cro.2026-05-14",
-  "consequence_map_id":    "kye:consequence-map:payment-agent-scope-expansion.2026-05-14",
+  "consequence_map_id": "kye:consequence-map:payment-agent-scope-expansion.2026-05-14",
   "supporting_scenario_runs": [
     "kye:scenario-run:payment-agent-scope-expansion.2026-05-14"
   ],
   "recommended_decision": "approved_with_restrictions",
   "validity": {
     "not_before": "2026-05-14T10:00:00Z",
-    "not_after":  "2026-05-21T10:00:00Z"
+    "not_after": "2026-05-21T10:00:00Z"
   },
   "issued_at": "2026-05-14T09:30:00Z",
   "issued_by": "kye:agent:approval-brief-assembler",
@@ -24,5 +24,6 @@
     "alg": "EdDSA",
     "kid": "kye:key:approval-brief-2026-05",
     "value_b64": "TG9yZW1hcHByb3ZhbEJyaWVmU2lnbmF0dXJlRXhhbXBsZV8x"
-  }
+  },
+  "approver_decision_right": "kye:decision-right:payment-agent-authority-scope-approve"
 }

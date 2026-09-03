@@ -1,0 +1,13 @@
+{
+  "article_id": "payment-release",
+  "title": "Payment release authority",
+  "slug": "payment-release",
+  "section": "concepts",
+  "kind": "explainer",
+  "pillar": "ai-governance",
+  "published_at": "2026-08-07",
+  "last_attested_at": "2026-08-07",
+  "next_attestation_due": "2026-08-07",
+  "schema_org_type": "Article",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md"
+}

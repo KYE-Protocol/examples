@@ -1,0 +1,15 @@
+{
+  "id": "kye:action-class:transfer",
+  "entity_class": "action-class",
+  "label": "funds transfer",
+  "definition": "Move funds between accounts. Irreversible once settled — §0.4 banking-grade dual-channel sign-off.",
+  "plane": "commerce",
+  "reversibility": "irreversible",
+  "consequence_tier": "critical",
+  "default_approval_mode": "two_person",
+  "evidence_required": true,
+  "framework_refs": [
+    "psd2",
+    "soc2.cc8.1"
+  ]
+}

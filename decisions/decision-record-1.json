@@ -1,0 +1,22 @@
+{
+  "schema": "kye.decision.record.v1",
+  "decision_id": "kye:decision:9f3c1a7e42b85d06c1ae7b39",
+  "decision_map_fragment_id": "kye:decision-map-fragment:acme:2026-08-02:9f3c1a7e",
+  "policy_set_id": "kye:policy-set:acme:payments-2026q3",
+  "compilation_seal": "sha256:4e1d9b7a2c5f8036e1b4d7a90c2f5e83b6d1a4c7f0e3b6d9a2c5f8031e4b7d0a",
+  "request_hash": "sha256:a7c92d1e4b6f8a0d3c5e7f9a1b3d5e7f9c1a3b5d7e9f1a3c5b7d9e1f3a5c7b9d",
+  "outcome": "require_approval",
+  "obligations": [
+    "kye:obligation:dual-control",
+    "kye:obligation:notify-treasury"
+  ],
+  "rules_fired": [
+    "kye:rule:payment-value-threshold",
+    "kye:rule:counterparty-first-payment"
+  ],
+  "evidence_pack_id": "kye:evidence-pack:acme:9f3c1a7e42b85d06",
+  "sealed_at": "2026-08-02T09:14:22.318Z",
+  "pdp_runtime_version": "2.0.0",
+  "decision_map_jws": "eyJhbGciOiJFZERTQSIsImtpZCI6Imt5ZTprZXk6cGRwOjIwMjZxMyJ9..7Kq2mNfR8vXcYzB3aLdJ4hPw1TgE6sUnC0iOx9VpQrM5yZkH2bWtF3eA8cD1jS4v",
+  "decision_map_sha256": "sha256:c3f81b0d5e7a9c2f4b6d8e0a2c4e6f8b0d2f4a6c8e0b2d4f6a8c0e2b4d6f8a0c"
+}

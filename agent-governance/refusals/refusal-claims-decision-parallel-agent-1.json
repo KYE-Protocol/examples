@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "b72e5d38-9c1f-4a56-8e02-3d6b4f9a7c25",
+  "refused_at": "2026-07-02T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked for a NEW claims agent manifest parallel to the Insurance Claim Orchestrator in the KYE Agent Library™, plus a claims rule-pack and a loss-estimation model. The orchestrator already exists (kye:agent-library:insurance.insurance-claim-orchestrator.v1) and kye:rule-pack:insurance-underwriting-claims already governs claims determinations — a parallel claims agent or pack violates §0; a damage / loss model violates the honest scope. Refusing all three.",
+  "remediation_hint": "Build it as a Governed Agent PRODUCT that ABSORBS the governance face of the existing Insurance Claim Orchestrator: the orchestrator stays the adoptable reference workflow, the agent governs its consequential transitions (FNOL triage, reserve setting, settle/deny/partial, payment release, litigation + SIU referral) against the EXISTING kye:rule-pack:insurance-underwriting-claims verdict. Add only agent-product artefacts and BIND — never re-map — the existing insurance frameworks."
+}

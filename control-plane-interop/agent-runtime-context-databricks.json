@@ -1,0 +1,25 @@
+{
+  "schema": "kye.agent_runtime_context.v1",
+  "context_id": "kye:agent-runtime-context:databricks-acme-2026-07-24-0001",
+  "supplied_by_plane": "databricks-unity-catalog",
+  "tenant": "acme",
+  "trust_domain_id": "acme",
+  "agent_ref": "kye:agent:acme:data-use-copilot",
+  "session_ref": "dbx-run-8f3a21c0-2026-07-24",
+  "model": "anthropic/claude-opus@2026-01",
+  "tools": [
+    "mcp__unity_catalog__list_tables",
+    "mcp__unity_catalog__grant_share",
+    "mcp__kye__request_authority"
+  ],
+  "prompt_class": "data-export",
+  "invocation_at": "2026-07-24T14:59:55Z",
+  "supersedes_ref": null,
+  "boundary": "A registered agent is not an authorised actor. Supplying runtime context is an input to the KYE authority decision, not a grant.",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "databricks-uc-signing-2026",
+    "jwks_ref": "https://trust.databricks.example/uc/.well-known/jwks.json",
+    "signature_b64": "b2Nv1QpVhZ3n1oQpXwB2r4cV8mNf6TjL0aYyE9sQ7dW1uGpKcRbHhtZ2xXfMnLpQeR0sUvWyZ1aBcDeFgHiJk"
+  }
+}

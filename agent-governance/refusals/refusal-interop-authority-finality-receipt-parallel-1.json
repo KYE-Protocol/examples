@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-control-plane-interop",
+  "parent_task": "f80423b0-276f-4267-a931-6cf9f592a525",
+  "refused_at": "2026-07-24T15:10:10Z",
+  "chapter_ref": "§13",
+  "reason_summary": "The §73 spec proposed a new authority_finality_receipt schema. That duplicates the §13 Evidence Pack + Replay-Proof. Refusing to mint a parallel finality artefact; the finality receipt IS the signed Evidence Pack.",
+  "remediation_hint": "REUSE the §13 kye.evidence.pack.v1 + kye.replay.proof.v1 canonicals (Resilience Loop). Map authority_finality_receipt to them in the §73 profile manifest instead of minting a new schema."
+}

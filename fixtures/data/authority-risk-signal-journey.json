@@ -1,0 +1,51 @@
+[
+  {
+    "subject_id": "kye:subject:synthetic:2615",
+    "subject_class": "agent",
+    "risk_band": "critical",
+    "signal_ref": "REF-D82D2E9B",
+    "raised_day_offset": -45
+  },
+  {
+    "subject_id": "kye:subject:synthetic:5459",
+    "subject_class": "human",
+    "risk_band": "high",
+    "signal_ref": "REF-A3527BDC",
+    "raised_day_offset": -76
+  },
+  {
+    "subject_id": "kye:subject:synthetic:9591",
+    "subject_class": "agent",
+    "risk_band": "critical",
+    "signal_ref": "REF-22BACE71",
+    "raised_day_offset": -15
+  },
+  {
+    "subject_id": "kye:subject:synthetic:1164",
+    "subject_class": "system",
+    "risk_band": "low",
+    "signal_ref": "REF-49CDB80B",
+    "raised_day_offset": -77
+  },
+  {
+    "subject_id": "kye:subject:synthetic:1580",
+    "subject_class": "system",
+    "risk_band": "low",
+    "signal_ref": "REF-58E6FF7A",
+    "raised_day_offset": -34
+  },
+  {
+    "subject_id": "kye:subject:synthetic:4183",
+    "subject_class": "system",
+    "risk_band": "low",
+    "signal_ref": "REF-4B43942B",
+    "raised_day_offset": -4
+  },
+  {
+    "subject_id": "kye:subject:synthetic:2006",
+    "subject_class": "system",
+    "risk_band": "high",
+    "signal_ref": "REF-6F90619D",
+    "raised_day_offset": -13
+  }
+]

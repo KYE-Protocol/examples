@@ -1,0 +1,7 @@
+{
+  "schema": "kye.admin.workflow.review_started.v1",
+  "id": "kye:admin-action:northwind-bank-aa-2026-08-0417",
+  "workflow_id": "workflow-2026-08-0417",
+  "operator": "kye:principal:northwind-bank:jordan-reyes",
+  "emitted_at": "2026-08-07T09:15:00Z"
+}

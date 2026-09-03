@@ -1,0 +1,33 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.sector_kit.v1.json",
+  "schema": "kye.sector_kit.v1",
+  "registry_id": "kye:registry:sector-kit:example",
+  "constitution_ref": "constitution/54-SECTOR-PACK-FOUNDRY.md#sector-kit",
+  "description": "ILLUSTRATIVE public example of kye.sector_kit.v1 \u2014 the banking Sector Kit (complete: Foundry pack + 7 governed agents + product + dashboard + framework mappings).",
+  "kits": [
+    {
+      "sector": "banking",
+      "display_name": "Banking Agent Authority",
+      "completeness_state": "complete",
+      "foundry_pack_ref": "public/examples/foundry/expert-pack-aml-financial-crimes-001.json",
+      "sector_pack_ref": "kye:sector-pack:aml-financial-crimes",
+      "agent_refs": [
+        "fraud-decision-authority-agent",
+        "treasury-authority-agent",
+        "account-opening-cdd-authority-agent",
+        "pension-liquidity-authority-agent",
+        "billing-dunning-authority-agent",
+        "payment-authorization-authority-agent",
+        "sanctions-aml-authority-agent"
+      ],
+      "product_ref": "aml-financial-crimes",
+      "dashboard_ref": "public/app/decisions.html",
+      "framework_mapping_refs": [
+        "UK_SMCR",
+        "PSD2_PSD3",
+        "FATF",
+        "BCBS_239"
+      ]
+    }
+  ]
+}

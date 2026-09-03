@@ -1,0 +1,46 @@
+{
+  "schema_version": "kye.connector.evidence_import.v1",
+  "import_id": "kye:import:acme-bank.servicenow-grc-export.2026-06-21",
+  "tenant_id": "kye:tenant:acme-bank",
+  "source_tool": "servicenow_grc",
+  "imported_at": "2026-06-21T09:30:00Z",
+  "row_count": 4,
+  "items": [
+    {
+      "kind": "control",
+      "control_id": "CC6.1",
+      "framework": "soc_2",
+      "name": "Logical access — least privilege",
+      "description": "Imported from the customer's ServiceNow GRC control catalog during onboarding. KYE auto-maps its runtime Evidence Pack to this existing control via the §70 framework crosswalk; ServiceNow GRC stays the system of record.",
+      "status": "pass",
+      "owner": "kye:ent:acme-bank.ciso"
+    },
+    {
+      "kind": "control",
+      "control_id": "A.5.15",
+      "framework": "iso_27001",
+      "name": "Access control",
+      "description": "Imported from the customer's ServiceNow GRC ISO 27001 authority document mapping. Crosswalks to the same KYE artefact as SOC 2 CC6.1 via the §70 NIST 800-53 hub.",
+      "status": "pass",
+      "owner": "kye:ent:acme-bank.ciso"
+    },
+    {
+      "kind": "obligation",
+      "obligation_id": "eu-ai-act-art-72",
+      "framework": "eu_ai_act",
+      "citation": "EU AI Act Art. 72",
+      "text": "Post-market monitoring of high-risk AI systems by providers.",
+      "control_refs": ["CC6.1"]
+    },
+    {
+      "kind": "ai_system",
+      "system_id": "kye:agent:acme-bank.supplier-payment-agent.v3",
+      "name": "Supplier Payment Agent",
+      "risk_tier": "high",
+      "owner": "kye:ent:acme-bank.payments-lead",
+      "lifecycle_stage": "production",
+      "framework_refs": ["eu_ai_act", "dora", "iso_42001"]
+    }
+  ],
+  "errors": []
+}

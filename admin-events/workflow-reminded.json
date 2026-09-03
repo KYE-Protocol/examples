@@ -1,0 +1,11 @@
+{
+  "schema": "kye.admin.workflow.reminded.v1",
+  "id": "kye:admin-action:9f2c41a8-3d55-4c7e-9a10-6b2f8e4d1c07",
+  "workflow_id": "kye:onboarding-workflow:3b7e21c4-8a19-4f60-b2d5-71c9a4e30f88",
+  "application_id": "kye:onboarding-application:a41f9d02",
+  "tenant_id": null,
+  "current_stage": "operating_model_drafted",
+  "operator": "kye:ent:kye-protocol.operator.onboarding",
+  "reason": "Operating model draft awaiting customer sign-off for 6 days",
+  "emitted_at": "2026-07-28T11:42:09Z"
+}

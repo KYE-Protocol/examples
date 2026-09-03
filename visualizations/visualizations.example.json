@@ -14,6 +14,17 @@
       "name": "Example viz",
       "library": "recharts",
       "description": "Illustrative viz."
+    },
+    {
+      "id": "kye:viz:example-projection",
+      "kind": "doctrine_ladder",
+      "name": "Example derived infographic",
+      "library": "antv-infographic",
+      "description": "Illustrative antv-infographic row: a viz that is a PROJECTION of a canonical registry rather than hand-authored content. The extra fields are what make that mechanical — the row names the registry it depicts, the projection that reads it, and where the derived artefact pair lands. source_registry reads \"internal\" here because the registry it points at is on the IP track (§33): a public example carries the SHAPE of the contract, never a path into private/.",
+      "template": "list-grid-ribbon-card",
+      "projection": "doctrine-ladder",
+      "source_registry": "internal",
+      "output": "public/site/assets/infographics/doctrine-ladder"
     }
   ]
 }

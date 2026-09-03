@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.schema_registry.v1.json",
+  "registry_id": "kye:registry:schemas",
+  "generated_by": "scripts/build-schema-registry.mjs",
+  "total": 2,
+  "exemplified_total": 1,
+  "unexemplified_total": 1,
+  "schemas": [
+    {
+      "path": "internal",
+      "canonical": true,
+      "exemplified": true
+    },
+    {
+      "path": "internal",
+      "canonical": true,
+      "exemplified": false
+    }
+  ]
+}

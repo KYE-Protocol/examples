@@ -1,0 +1,8 @@
+{
+  "link_id": "kye:consultant-tenant-link:northwind-bank:link-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "consultant_id": "kye:consultant:meridian-advisory",
+  "revoked_by": "kye:principal:northwind-bank:security-lead",
+  "revoked_at": "2026-08-07T09:15:00Z",
+  "reason": "Engagement completed. Tenant access was revoked at the contracted end date."
+}

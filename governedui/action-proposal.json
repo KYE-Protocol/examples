@@ -1,0 +1,12 @@
+{
+  "schema": "kye.governedui.action_proposal.v1",
+  "action_id": "kye:action-proposal:northwind-bank-ap-2026-08-0417",
+  "actor_id": "actor-2026-08-0417",
+  "actor_type": "agent",
+  "action_type": "send_email",
+  "target_system": "payments-ledger",
+  "risk_level": "low",
+  "approval_mode": "none",
+  "tenant_id": "tenant-2026-08-0417",
+  "proposed_at": "2026-08-07T09:15:00Z"
+}

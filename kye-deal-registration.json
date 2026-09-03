@@ -1,0 +1,11 @@
+{
+  "schema_id": "kye.deal_registration.v1",
+  "deal_id": "kye:deal:northwind-bank-dea-2026-08-0417",
+  "partner_id": "partner-2026-08-0417",
+  "customer": "Northwind Bank plc",
+  "stage": "qualifying",
+  "share_pct": 0,
+  "registered_at": "2026-08-07T09:15:00Z",
+  "signed_by_kid": "kye-signing-2026-08",
+  "signature_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+}

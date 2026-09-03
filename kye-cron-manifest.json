@@ -1,0 +1,17 @@
+{
+  "schema": "https://kyeprotocol.com/",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:reg-2026-08-0417",
+  "adopted_at": "2026-08-07",
+  "description": "Illustrative instance for the Northwind Bank reference tenant.",
+  "crons": [
+    {
+      "cron_id": "kye:cron:cro-2026-08-0417",
+      "workflow_path": ".github/workflows/autofix-branch-gc.yml",
+      "cron_expression": "17 6 * * *",
+      "periodic_invariant": "retention_sweep",
+      "rationale": "Recorded so the decision can be re-derived by someone who was not present when it was taken.",
+      "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md"
+    }
+  ]
+}

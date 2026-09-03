@@ -1,0 +1,70 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:mechanism-fidelity-runtime-authority-latency-2026-q3",
+  "series": "roadmap_to_ai_governance",
+  "format": "deep_dive",
+  "sector": "financial-services",
+  "audience": "regulator",
+  "cadence": "quarterly",
+  "edition": "2026-Q3",
+  "title": "Mechanism-Fidelity for Computed Research Claims — a Worked Governed-Agent Example",
+  "tribute_ref": "kye:scientist-tribute:diffie-hellman",
+  "topic_id": "kye:research-topic:mechanism-fidelity-computed-claim",
+  "tier": "paid",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:mechanism-fidelity-runtime-authority-latency-2026-q3",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "EZ5bETkoCfKtdeDB/800Y4f/3i9hdbOpvBv43N4lEXD8QL1gdfgl/DfVsGqZO8nkK7AILKaBhxLKWBm1mATxAw=="
+  },
+  "citations": [
+    {
+      "claim": "The NIST AI Risk Management Framework organises trustworthy-AI practice into four core functions — Govern, Map, Measure, Manage — where Govern is the foundational, continuous function establishing accountability and oversight rather than a one-time control.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "The NIST AI RMF Generative AI Profile (NIST-AI-600-1, July 2024) provides more than 200 suggested actions organised by RMF function for twelve generative-AI risk areas including Human-AI Configuration and Information Integrity, making governance substantially more operational than the base framework.",
+      "source_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "retrieved_at": "2026-06-03T12:30:00Z",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "claim": "A KYE research-agent re-derived the runtime-authority decision latency budget (sub-50ms PDP decision at the action boundary) by simulation over the canonical decision-engine fixture; the claim was verified mechanism-faithful, not merely correct-looking.",
+      "source_url": "https://arxiv.org/abs/2606.23175",
+      "retrieved_at": "2026-06-24T09:00:00Z",
+      "publisher": "Mechanism-fidelity method — 'Correct Answer, Wrong Mechanism'",
+      "claim_basis": "agent_computation"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-30T08:00:00Z",
+  "status": "planned",
+  "mechanism_fidelity": {
+    "verdict": "mechanism_confirmed",
+    "regime_shift_check": {
+      "performed": true,
+      "condition_varied": "decision-engine fixture swapped to the high-load tenant profile (10x request rate) — a one-step regime shift",
+      "claim_survived": true
+    },
+    "companion_recompute": {
+      "performed": true,
+      "replay_proof_ref": "kye:replay-proof:research:runtime-authority-latency:companion-1",
+      "agreed": true
+    },
+    "method_ref": "https://arxiv.org/abs/2606.23175"
+  }
+}

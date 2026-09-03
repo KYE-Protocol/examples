@@ -10,17 +10,39 @@
   "host_map": {
     "site": "kyeprotocol.com"
   },
+  "auth_contract": {
+    "sdk_ready_path": [
+      "AuthSdk",
+      "loaded"
+    ],
+    "sign_in_control_selectors": [
+      "[data-signin-mount] input",
+      "input[type=\"email\"]"
+    ],
+    "entry_paths": [
+      "/",
+      "/index.html"
+    ],
+    "timeout_ms": 25000
+  },
   "surface_classes": [
     {
       "class_id": "kye:smoke:class:site",
       "label": "Marketing site",
       "description": "Example surface class.",
       "source_registry": "internal",
-      "selector": { "kind": "page-manifest-surface", "surface": "site" },
+      "selector": {
+        "kind": "page-manifest-surface",
+        "surface": "site"
+      },
       "probe_contract": {
         "expect_http": 200,
-        "positive_content_tokens": ["data-kye-header"],
-        "negative_content_tokens": ["Download Protocol v0.1"],
+        "positive_content_tokens": [
+          "data-kye-header"
+        ],
+        "negative_content_tokens": [
+          "Download Protocol v0.1"
+        ],
         "require_chrome_mounted": true,
         "chrome_token": "data-kye-header",
         "require_light_default": true,
@@ -42,12 +64,36 @@
       },
       "probe_contract": {
         "expect_http": 200,
-        "positive_content_tokens": ["<title"],
+        "positive_content_tokens": [
+          "<title"
+        ],
         "negative_content_tokens": [],
         "require_chrome_mounted": false,
         "require_light_default": true,
         "forbid_mask_tokens": true,
         "require_canonical_og": false
+      }
+    },
+    {
+      "class_id": "kye:smoke:class:app",
+      "label": "Example login-walled surface",
+      "description": "A login-walled class: probe_contract.require_auth_live turns on the wall arm, which EXECUTES the sign-in page in a browser and asserts a customer could get in. The text-level fields beside it only assert the wall renders — a dead wall and a working one serve identical HTML.",
+      "source_registry": "internal",
+      "selector": {
+        "kind": "page-manifest-surface",
+        "surface": "app"
+      },
+      "probe_contract": {
+        "expect_http": 200,
+        "positive_content_tokens": [
+          "<title"
+        ],
+        "negative_content_tokens": [],
+        "require_chrome_mounted": false,
+        "require_light_default": true,
+        "forbid_mask_tokens": true,
+        "require_canonical_og": false,
+        "require_auth_live": true
       }
     }
   ]

@@ -1,0 +1,51 @@
+{
+  "schema": "kye.counterparty_handshake.v1",
+  "handshake_id": "kye:handshake:buyer-acme-supplier-globex-net10-2pct",
+  "entity_class": "handshake",
+  "parties": [
+    {
+      "role": "initiator",
+      "principal_entity_id": "kye:org:acme-manufacturing-gb",
+      "agent_entity_id": "kye:agent:acme-treasury-agent",
+      "authority_proof": {
+        "claim": "may commit to net-terms changes and early-payment discounts up to GBP 500,000 for procurement of direct materials, mandate M-2026-07",
+        "delegation_ref": "kye:delegation:acme-treasury-mandate-m-2026-07",
+        "evidence_pack_id": "kye:evidence-pack:acme7a1c9e2f4b8d0c31",
+        "coordinate": "z=commitment/estate=acme-treasury/frame=procurement/position=mandate-M-2026-07",
+        "valid_until": "2026-08-28T18:00:00Z"
+      }
+    },
+    {
+      "role": "counterparty",
+      "principal_entity_id": "kye:org:globex-components-gb",
+      "agent_entity_id": "kye:agent:globex-treasury-agent",
+      "authority_proof": {
+        "claim": "may accept early-payment-discount offers up to 3% and shorten receivable terms to Net-7 for approved customers, mandate G-2026-06",
+        "delegation_ref": "kye:delegation:globex-receivables-mandate-g-2026-06",
+        "evidence_pack_id": "kye:evidence-pack:globex3f5b7d9a1c2e4680",
+        "coordinate": "z=concession/estate=globex-treasury/frame=receivables/position=mandate-G-2026-06",
+        "valid_until": "2026-08-28T18:00:00Z"
+      }
+    }
+  ],
+  "negotiation_intent": {
+    "action_class": "kye:action-class:commit-terms",
+    "economic_effect": "commitment",
+    "subject": "Net-30 -> Net-10 with 2% early-payment discount on the open PO run",
+    "jurisdiction": "GB"
+  },
+  "mutually_admissible_action_space": {
+    "allowed_effects": ["commitment", "concession"],
+    "max_amount_minor": 50000000,
+    "currency": "GBP",
+    "valid_window": { "from": "2026-08-28T09:00:00Z", "until": "2026-08-28T18:00:00Z" }
+  },
+  "commitment_gate": "kye:commit-boundary:financial-terms-commit",
+  "resolution": {
+    "final_authority_decision": "kye:decision:6b2e0af7d94c15803ab6",
+    "evidence_pack_id": "kye:evidence-pack:handshake9c7e1a2b4d6f8031"
+  },
+  "status": "committed",
+  "created_at": "2026-08-28T09:12:00Z",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md · constitution/13-RESILIENCE-LOOP.md · constitution/00-INDEX.md §0.30"
+}

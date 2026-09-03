@@ -1,0 +1,42 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.governance_coverage_matrix.v1.json",
+  "schema": "kye.governance_coverage_matrix.v1",
+  "registry_id": "kye:registry:governance-coverage-matrix",
+  "adopted_at": "2026-07-01",
+  "constitution_ref": "constitution/00-INDEX.md §0.40",
+  "description": "Illustrative minimal §0.40 governance coverage matrix — one dimension per axis, each bound to a live enforcing gate. The canonical matrix carries the full 18-dimension set.",
+  "axes": [
+    { "axis_id": "horizontal", "name": "Horizontal — breadth at a layer", "description": "No ungoverned peer at a layer." },
+    { "axis_id": "vertical", "name": "Vertical — depth through the authority layers", "description": "Identity → authority → action → evidence → finality." },
+    { "axis_id": "end-to-end", "name": "End-to-end — the full lifecycle", "description": "Declare → build → deploy → runtime → self-run → retention." }
+  ],
+  "dimensions": [
+    {
+      "dimension_id": "kye:governance-dimension:horizontal-cf-resources",
+      "axis": "horizontal",
+      "name": "Every deployed Cloudflare resource governed",
+      "description": "Every Worker/D1/KV/R2/queue is a governed KYE-ID citizen.",
+      "layer": "infra",
+      "enforcing_gates": ["test:cf-resource-governance-coverage"],
+      "governed_by": ["§0.36", "§0.34"]
+    },
+    {
+      "dimension_id": "kye:governance-dimension:vertical-runtime-emission",
+      "axis": "vertical",
+      "name": "Runtime-emission layer governed",
+      "description": "Every privileged Worker emits the §0.3 audit chain.",
+      "layer": "runtime-emission",
+      "enforcing_gates": ["test:audit-chain-emission-coverage"],
+      "governed_by": ["§0.3"]
+    },
+    {
+      "dimension_id": "kye:governance-dimension:e2e-retention",
+      "axis": "end-to-end",
+      "name": "Retention stage governed",
+      "description": "Every audit record is WORM-enforced and retained per §30.",
+      "layer": "retention",
+      "enforcing_gates": ["test:audit-worm-enforced"],
+      "governed_by": ["§30"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_id": "kye.report_run.v1",
+  "run_id": "kye:report-run:7f1c0a02-1d64-4a9e-9c2e-2b6d4a1f9e30",
+  "tenant_id": "kye:tenant:acme-bank",
+  "template_id": "kye:report-template:governance-summary",
+  "period_start": "2026-07-01T00:00:00Z",
+  "period_end": "2026-07-31T23:59:59Z",
+  "output_format": "html",
+  "status": "completed",
+  "started_at": "2026-08-01T09:14:02Z",
+  "completed_at": "2026-08-01T09:14:05Z",
+  "r2_key": "kye:tenant:acme-bank/7f1c0a02-1d64-4a9e-9c2e-2b6d4a1f9e30.html",
+  "byte_size": 48213,
+  "failure_reason": null,
+  "sealed_report_id": null
+}

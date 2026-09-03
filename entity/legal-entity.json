@@ -1,0 +1,10 @@
+{
+  "schema_version": "kye.entity.legal_entity.v1",
+  "id": "kye:lglent:northwind-bank-lgl-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "legal_name": "Northwind Bank plc",
+  "form": "ltd",
+  "country_code": "GB",
+  "state": "unverified",
+  "created_at": "2026-08-07T09:15:00Z"
+}

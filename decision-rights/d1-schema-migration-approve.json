@@ -1,0 +1,38 @@
+{
+  "schema": "kye.decision_right.v1",
+  "decision_right_id": "kye:decision-right:d1-schema-migration-approve",
+  "tenant_id": null,
+  "holder": {
+    "entity_id": "kye:org:kye_protocol:publisher",
+    "holder_kind": "organisation",
+    "role_label": "KYE Protocol Ltd"
+  },
+  "on_behalf_of": "kye:org:kye_protocol:publisher",
+  "decision_class": "kye:decision-class:d1-schema-migration",
+  "stages": [
+    "approve",
+    "escalate"
+  ],
+  "limits": {
+    "jurisdictions": [
+      "GB"
+    ],
+    "scope_tags": [
+      "d1-migration"
+    ],
+    "requires_second_approver": true
+  },
+  "prohibited": [
+    "approve a migration the same holder initiated",
+    "approve a migration that drops a WORM-retained table"
+  ],
+  "authority_source": {
+    "grant_id": "kye:grant:kye-publisher-operator-authority",
+    "grant_schema": "https://kyeprotocol.com/schemas/kye.authority.grant.v1.json",
+    "policy_ref": "constitution/30-AUDIT-WORM-RETENTION.md"
+  },
+  "effective_from": "2026-07-28T00:00:00Z",
+  "expires_at": "2027-07-28T00:00:00Z",
+  "status": "active",
+  "constitution_ref": "constitution/30-AUDIT-WORM-RETENTION.md"
+}

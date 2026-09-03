@@ -1,0 +1,57 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:kye-authority-pulse-2026-w26",
+  "report_id": "kye:research-report:kye-authority-pulse-2026-w26",
+  "body_sha256": "ddb8b7fc84966f7f43af6816f043dd57dfbefa10bbf01d29de41eba850d58d7f",
+  "seal_signature": "s0v2h/YQ7GMvaTP8jVB1urphARMNtZL4uqQiZvh8sBEzq58IFgNr1sNrmH8WDSZLUZyOAbmEfycLkg+E8sQZDw==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "Constitution chapter §72 (KYE™ Jurisdiction & Data-Sovereignty Authority) carries a structured header Adopted date of 2026-06-19, making geography a first-class dimension of admissibility evaluated at the moment of use.",
+      "source_url": "https://kyeprotocol.com/constitution/72-jurisdiction-data-sovereignty",
+      "publisher": "KYE Protocol™ Constitution — chapter 72 (locked, Adopted 2026-06-19)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "Constitution chapter §71 (KYE Document Intelligence Rail™) carries a structured header Adopted date of 2026-06-19, bringing navigating, retrieving and citing unstructured documents under one governed, replay-verifiable contract with every cited extract pinned to its source.",
+      "source_url": "https://kyeprotocol.com/constitution/71-document-intelligence-rail",
+      "publisher": "KYE Protocol™ Constitution — chapter 71 (locked, Adopted 2026-06-19)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The canonical KYE™ framework registry (the §70 source-of-truth root) tracks 202 frameworks, regimes and standards under mapping, with a mapping counted as enforced only when backed by a cited KYE™ artefact.",
+      "source_url": "https://kyeprotocol.com/frameworks.html",
+      "publisher": "KYE Protocol™ Framework Registry (kye:registry — §70 Framework Mapping Rail)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The canonical KYE™ product registry declares 59 commercial products, each a kye.product.v1 entry that fans out across the platform layers.",
+      "source_url": "https://kyeprotocol.com/products.html",
+      "publisher": "KYE Protocol™ Product Registry (kye.product.v1 — §68 Total Productisation Fan-Out)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The KYE Governed Research Rail™ library holds 12 published research editions, each a sealed kye.research_report.v1 instance whose claims are pinned to cited public sources.",
+      "source_url": "https://kyeprotocol.com/reports.html",
+      "publisher": "KYE Protocol™ Governed Research Library (§62 Governed Research Rail)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "Every KYE Governed Research Rail™ edition is Ed25519-sealed over the published JWKS, so any reader can verify the seal offline from the published keys alone without any KYE™ service in the loop.",
+      "source_url": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+      "publisher": "KYE Protocol™ published JWKS (/trust/self-audit-jwks.json — §0.4 Replay-Proof™)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 6,
+    "pinned": 0,
+    "unpinned": 6
+  }
+}

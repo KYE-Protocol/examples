@@ -1,0 +1,27 @@
+{
+  "schema": "kye.capture_target_set.v1",
+  "registry_id": "kye:registry:capture-target-sets",
+  "target_sets": [
+    {
+      "mode": "dashboards",
+      "surface_root": "public/site",
+      "auth": "none",
+      "purpose": "Committed governed dashboard ILLUSTRATIONS for the landing: the most dashboard-like PUBLIC surfaces, filmed as real rendered pages (never hand-drawn mockups) into public/site/assets/dashboard-captures/ with a sha256 + a public verify link per image. The ONE canonical dashboard-visual source the §0-consolidated gallery stage reuses.",
+      "min_png_bytes": 15000,
+      "targets": [
+        {
+          "slug": "platform-map",
+          "path": "/platform-map.html",
+          "label": "Platform Map",
+          "expect": "platform"
+        },
+        {
+          "slug": "self-governance",
+          "path": "/self-governance.html",
+          "label": "Self-Governance",
+          "expect": "govern"
+        }
+      ]
+    }
+  ]
+}

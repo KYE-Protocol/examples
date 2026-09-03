@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:ai-governance-financial-services:2026-q3",
+  "evidence_pack_ref": "kye:evidence-pack:roadmap-ai-governance-financial-services-2026-q3",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "Ac7BmPsRzOTX+JDz8VVPap4Q0BlCxQBLRj/ZREd6xQYK+wId3iQOCWAoTqBUtDNGUJV2AKqkd3k7/gLN38N1BA=="
+    "signature": "3F426yFo1iqxsEhOOX7fVRH531EV5X1J0tUv/j0nPKoLoFcH5hdJWaFe8AoHnqiJ3nIN2nyVSmSJJFhaMLYrDQ=="
   },
   "citations": [
     {

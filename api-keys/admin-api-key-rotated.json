@@ -1,0 +1,13 @@
+{
+  "schema": "kye.admin.api_key.rotated.v1",
+  "id": "kye:admin-action:api-key-rotated:7c3f9a2e",
+  "key_id": "kye:api-key:7c3f9a2e-1b44-4de1-9a0e-2f6b8c1d4e55",
+  "successor_key_id": "kye:api-key:d4e5f6a7-2c55-4ef2-8b1f-3a7c9d2e5f66",
+  "tenant_id": "kye:tenant:acme-fs",
+  "scope": "runtime:read,runtime:write,evidence:read",
+  "label": "Production runtime — payments service",
+  "grace_seconds": 3600,
+  "operator": "ops@acme.example",
+  "emitted_at": "2026-07-12T12:00:00Z",
+  "reason": "scheduled 90-day rotation"
+}

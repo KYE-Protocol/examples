@@ -1,0 +1,35 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-authority-adapter-coverage:2026-06-20",
+  "emitted_at": "2026-06-20T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "EU_AI_ACT",
+    "NIST_AI_RMF",
+    "ISO_IEC_42001",
+    "SOC2"
+  ],
+  "subject": "kye:powered-pack:enterprise-ai-authority-adapter:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-authority-adapter-001-coverage-2026-06-20",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:enterprise-ai-authority-adapter:v1",
+    "claim_count": 5,
+    "bound_rule_packs": [],
+    "bound_dictionaries": ["kye:dictionary:host-platform-adapters", "kye:dictionary:integrations"],
+    "bound_sector_packs": [],
+    "bound_manifest": "kye:manifest:host-platform-adapters",
+    "bijection_verdict": "claim-set is bijective with the host-platform-adapters manifest + the single governed envelope (kye.harness_adapter.v1)",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical",              "verdict": "OK", "drift": 0 },
+    { "id": "host-platform-adapter-canonical",     "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical",              "verdict": "OK", "drift": 0 }
+  ]
+}

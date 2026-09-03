@@ -1,0 +1,18 @@
+{
+  "schema": "kye.commercial.transition.v1",
+  "id": "kye:commercial-transition:northwind-bank:ct-2026-08-0417",
+  "version": 1,
+  "workflow_id": "kye:commercial-workflow:northwind-bank:cw-2026-08-0417",
+  "from": "genesis",
+  "to": "received",
+  "at": "2026-08-07T09:15:00Z",
+  "by": "kye:prin:northwind-bank:jordan-reyes",
+  "reason": "Superseded by a narrower grant issued at the quarterly authority review.",
+  "predecessor_hash": "c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f3902",
+  "this_hash": "c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f3902",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-signing-2026-08",
+    "value_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+  }
+}

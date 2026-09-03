@@ -1,0 +1,34 @@
+[
+  {
+    "app_ref": "REF-703310E2",
+    "display_name": "Synthetic KYC Copilot",
+    "category": "copilot",
+    "mode": "guarded",
+    "calls_24h": 1533,
+    "status": "active"
+  },
+  {
+    "app_ref": "REF-3B41CC77",
+    "display_name": "Synthetic KYC Copilot",
+    "category": "operations",
+    "mode": "advisory",
+    "calls_24h": 4125,
+    "status": "active"
+  },
+  {
+    "app_ref": "REF-8E71BE31",
+    "display_name": "Synthetic Support Drafter",
+    "category": "drafting",
+    "mode": "shadow",
+    "calls_24h": 1002,
+    "status": "suspended"
+  },
+  {
+    "app_ref": "REF-0D6916ED",
+    "display_name": "Synthetic Ops Navigator",
+    "category": "operations",
+    "mode": "guarded",
+    "calls_24h": 1290,
+    "status": "suspended"
+  }
+]

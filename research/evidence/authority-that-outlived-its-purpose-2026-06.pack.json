@@ -1,0 +1,36 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:authority-that-outlived-its-purpose-2026-06",
+  "report_id": "kye:research-report:authority-that-outlived-its-purpose-2026-06",
+  "body_sha256": "fbd23c3c0ccacee9c0fef21969f96d204003051defc474602b2bd732f6f42329",
+  "seal_signature": "0CGstd/WitLlQW4nstgz3NS0HK32zXSoRiUJ+VlQnBsghwGgl+y/r3ZOmKnJbB8jlTK1RCFFT5RNu1YZxn+aDg==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "A zero-trust architecture treats no asset or session as inherently trusted: trust is never granted implicitly, and every access request is authenticated and authorised against current policy rather than inherited from an earlier decision (continual, per-request evaluation).",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "publisher": "NIST Special Publication 800-207, Zero Trust Architecture. Cited as a published standard, not as a security or compliance recommendation by KYE Protocol™.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "Account-management controls require organisations to review accounts and access privileges for continued need and to disable or remove them when the conditions that justified them no longer hold — an explicit recognition that standing access persists by default.",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "publisher": "NIST Special Publication 800-53 Rev. 5, control AC-2 (Account Management). Cited as a published standard, not as a security or compliance recommendation by KYE Protocol™.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of a higher-risk AI system, discharged at the point of use rather than as a one-time sign-off.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 3,
+    "pinned": 0,
+    "unpinned": 3
+  }
+}

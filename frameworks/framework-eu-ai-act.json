@@ -5,6 +5,7 @@
   "name": "EU AI Act — Artificial Intelligence Regulation",
   "short_name": "EU AI Act",
   "regime": "EU legal instrument",
+  "regime_canonical": "eu-legal-instrument",
   "version": "Regulation (EU) 2024/1689",
   "jurisdiction": "eu",
   "category": "ai-governance",

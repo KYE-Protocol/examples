@@ -1,0 +1,7 @@
+{
+  "role": "decide",
+  "governance_layers": ["access-control", "human-oversight"],
+  "stages": ["operate"],
+  "audiences": ["ciso"],
+  "consumed": false
+}

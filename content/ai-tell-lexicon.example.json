@@ -1,0 +1,23 @@
+{
+  "schema": "kye.ai_tell_lexicon.v1",
+  "registry_id": "kye:registry:ai-tell-lexicon",
+  "title": "KYE AI-Tell Lexicon — example instance",
+  "description": "Illustrative instance showing the tell shape (phrase + word, with severities and an allow_context whitelist).",
+  "version": "1.0.0",
+  "owner": "content",
+  "constitution_refs": ["11", "0.3"],
+  "scoring": { "high": 3, "medium": 2, "low": 1, "note": "weighted hit = severity weight; gate ratchets a decreases-only site-wide total." },
+  "phrases": [
+    { "pattern": "in today's (?:fast-paced )?world", "severity": "high", "why": "throat-clearing filler opener — the canonical AI intro" },
+    { "pattern": "let's (?:dive in|explore)", "severity": "high", "why": "chatbot narration; copy shows, doesn't announce" }
+  ],
+  "words": [
+    { "pattern": "delve", "severity": "high", "why": "the single strongest AI-authorship signal" },
+    { "pattern": "seamless(?:ly)?", "severity": "medium", "why": "AI adjective; rarely true, never specific" },
+    { "pattern": "gateway to", "severity": "low", "why": "metaphor slop", "allow_context": ["MCP Gateway"] }
+  ],
+  "excluded_from_scan": {
+    "note": "operator/data surfaces + redirect stubs are exempt",
+    "files": ["404.html", "reset.html"]
+  }
+}

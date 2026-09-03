@@ -1,0 +1,72 @@
+{
+  "schema": "kye.platform_map.v1",
+  "generated_by": "scripts/build-platform-map.mjs",
+  "note": "Illustrative kye.platform_map.v1 instance — a §0.10 projection over the §53 cascade graph. The live artefact is public/site/assets/derived-platform-map.json (994 nodes).",
+  "source_roots": [
+    "§53 cohesion cascade graph",
+    "§34 canonical graph",
+    "§55 component-class taxonomy",
+    "§55 colour-mapping",
+    "§0.36 entity-id registry",
+    "§50 stage dictionary",
+    "§68/§0.27 fan-out domains"
+  ],
+  "axes": {
+    "layer": {
+      "source": "constitution/53-COHESION-CASCADE.md §3.2 (cohesion kind)",
+      "values": ["source-of-truth", "derived", "peer-equivalence"]
+    },
+    "rail": {
+      "source": "constitution/68 · §0.27 fan-out domains",
+      "values": ["data_and_contracts", "policy_and_decision", "rails_engines_agents", "commerce", "surfaces", "integration", "comms_and_legal", "runtime_and_infra", "governance_and_evidence"]
+    },
+    "stage": {
+      "source": "constitution/50-CONTENT-GRAPH-DISCOVERABILITY.md §2 (kye-stage)",
+      "values": ["evaluate", "build", "operate", "audit", "learn", "reference"]
+    }
+  },
+  "nodes": [
+    {
+      "kye_id": "kye:cascade:framework-mapping-agent",
+      "entity_type": "agent",
+      "class": "agent",
+      "axes": { "layer": "source-of-truth", "rail": "rails_engines_agents", "stage": "operate" },
+      "color_role": "agent",
+      "health": "ok"
+    },
+    {
+      "kye_id": "kye:cascade:agent-binding-manifest",
+      "entity_type": "agent-governance",
+      "class": "agent",
+      "axes": { "layer": "source-of-truth", "rail": "rails_engines_agents", "stage": "operate" },
+      "color_role": "agent",
+      "health": "ok"
+    }
+  ],
+  "edges": [
+    {
+      "src": "kye:cascade:agent-binding-manifest",
+      "dst": "kye:cascade:agent-mcp-allow-list",
+      "relationship": "interacts-with",
+      "resolved": true
+    }
+  ],
+  "diagnostics": {
+    "counts": {
+      "nodes": 2,
+      "edges": 1,
+      "by_health": { "ok": 2 },
+      "unresolved_edges": 0
+    },
+    "density": {
+      "by_stage": { "evaluate": 0, "build": 0, "operate": 2, "audit": 0, "learn": 0, "reference": 0 },
+      "by_layer": { "source-of-truth": 2, "derived": 0, "peer-equivalence": 0 },
+      "by_rail": { "data_and_contracts": 0, "policy_and_decision": 0, "rails_engines_agents": 2, "commerce": 0, "surfaces": 0, "integration": 0, "comms_and_legal": 0, "runtime_and_infra": 0, "governance_and_evidence": 0 }
+    },
+    "gaps": [
+      { "stage": "evaluate", "layer": "derived", "rail": "commerce" }
+    ],
+    "gap_cells": 1,
+    "canonical_graph_health": { "orphans": 6, "dangling": 0, "observations": 160 }
+  }
+}

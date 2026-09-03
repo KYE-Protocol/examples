@@ -1,0 +1,29 @@
+{
+  "schema": "kye.commercial.lifecycle.v1",
+  "version": 1,
+  "initial_state": "enquiry",
+  "terminal_states": [
+    "terminal states"
+  ],
+  "states": [
+    {
+      "id": "enquiry",
+      "human_label": "Enquiry received",
+      "entry_actions": [
+        {
+          "kind": "emit_audit_event"
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "from": "draft",
+      "to": "active",
+      "event": "enquiry.qualified",
+      "actor_kinds": [
+        "agent"
+      ]
+    }
+  ]
+}

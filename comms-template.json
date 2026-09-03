@@ -1,0 +1,16 @@
+{
+  "template_id": "payment-release-approved.v1",
+  "channel": "email",
+  "category": "transactional",
+  "persona": "admin",
+  "subject": {
+    "block_ref": "subject.payment-release-approved"
+  },
+  "body_blocks": [
+    "body.payment-release-approved",
+    "cta.view-evidence"
+  ],
+  "from_block": "from.governance",
+  "audit_event_family": "kye.comms.message_sent.v1",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md"
+}

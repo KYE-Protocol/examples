@@ -15,5 +15,6 @@
   ],
   "evidence_pack_ref": "kye:evidence-pack:partnership-approval:1f3c8b40-0a1f-4f5b-9c4e-bd24b48f4f01",
   "reason": "Strong FS book of business, existing DORA practice, references checked.",
-  "channel": "admin_panel"
+  "channel": "admin_panel",
+  "approver_decision_right": "kye:decision-right:engagement-admission-approve"
 }

@@ -1,0 +1,10 @@
+{
+  "schema_version": "kye.entity.policy.v1",
+  "id": "kye:pol:northwind-bank-pol-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "regime": "pra",
+  "version": "1.0",
+  "state": "draft",
+  "compilation_seal": "sha256:c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f3902",
+  "created_at": "2026-08-07T09:15:00Z"
+}

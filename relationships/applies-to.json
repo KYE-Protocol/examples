@@ -1,0 +1,8 @@
+{
+  "schema_version": "kye.relationship.applies_to.v1",
+  "policy_id": "kye:pol:northwind-bank-pol-2026-08-0417",
+  "target_class": "tenant",
+  "scope": {
+    "kind": "tenant"
+  }
+}

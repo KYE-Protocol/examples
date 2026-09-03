@@ -1,0 +1,23 @@
+{
+  "schema": "kye.demo_spec.v1",
+  "demo_id": "kye:demo:authority-risk-signal-agent",
+  "subject": {
+    "kind": "agent",
+    "id": "kye:agent:risk-agent"
+  },
+  "sector": null,
+  "audience": "auditor",
+  "synthetic_seed": "kye:fixtures:risk-agent-assessments",
+  "target_surfaces": [
+    "public/site/authority-risk-signal.html"
+  ],
+  "capture_mode": "default",
+  "clip_storyboard": null,
+  "render_formats": [
+    "gif"
+  ],
+  "publish_targets": [
+    "linkedin"
+  ],
+  "purpose": "Show an auditor how the KYE Risk Agent turns synthetic subject risk assessments into governed, evidence-sealed authority signals on the Authority Risk Signal surface — populated entirely from synthetic data, never real customer data."
+}

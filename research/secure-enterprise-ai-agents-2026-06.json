@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:secure-enterprise-ai-agents:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:secure-enterprise-ai-agents-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "QMet4tMm+L0Om8pYHInCDe6M8ZnBGHMhPDcm+cpZVbNF1mEWnFVLG1xWslllctp+QJlENG+vMqylWjpBHYKWCw=="
+    "signature": "ajzmNHhpm2MLYGQnV9KWLILqKIDRDwz9i/PvD9unmZ0BD7qio2WoaHj5WF1Dt9svqwL5PRpl9ivOeMH2vDNfAg=="
   },
   "citations": [
     {

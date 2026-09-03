@@ -1,0 +1,23 @@
+{
+  "schema": "kye.external_authority_assertion.v1",
+  "assertion_id": "agnic-mandate-7f3a1c9e2b4d",
+  "assertion_type": "agnic.mandate",
+  "issuer": "did:web:agnic.id",
+  "subject_entity_id": "kye:agent:acme-procurement-agent",
+  "claims": {
+    "controller": "did:web:acme.example",
+    "spend_cap_minor": 500000,
+    "currency": "GBP",
+    "scope": "procurement.office-equipment"
+  },
+  "raw_ref": "kye:evidence-pack:agnicraw3f5b7d9a1c2e4680",
+  "observed_at": "2026-08-28T10:15:00Z",
+  "expires_at": "2026-08-28T18:00:00Z",
+  "confidence": "attested",
+  "resolution": {
+    "decision_ref": "kye:decision:9c7e1a2b4d6f80315a2b4c6d",
+    "evidence_pack_id": "kye:evidence-pack:assert9c7e1a2b4d6f8031",
+    "verdict": "admitted"
+  },
+  "entity_class": "external-authority-assertion"
+}

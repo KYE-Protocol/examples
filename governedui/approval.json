@@ -1,0 +1,9 @@
+{
+  "schema": "kye.governedui.approval.v1",
+  "approval_id": "kye:approval:northwind-bank-app-2026-08-0417",
+  "action_id": "kye:action-proposal:northwind-bank-ap-2026-08-0417",
+  "approver_id": "approver-2026-08-0417",
+  "decision": "approved",
+  "decided_at": "2026-08-07T09:15:00Z",
+  "approver_decision_right": "kye:decision-right:tenant-onboarding-admission-approve"
+}

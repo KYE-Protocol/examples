@@ -1,0 +1,43 @@
+{
+  "schema": "kye.policy_engine_adapter.v1",
+  "adapter_id": "kye:policy-engine-adapter:opa",
+  "engine_kind": "opa",
+  "display_name": "Open Policy Agent (OPA) Adapter",
+  "status": "supported",
+  "invocation": {
+    "mode": "embedded-wasm",
+    "request_shape": "opa-input-document",
+    "endpoint_ref": "binding:OPA_WASM_BUNDLE",
+    "timeout_ms": 250,
+    "fail_mode": "fail-closed",
+    "local_verdict": "not-applicable-in-process"
+  },
+  "response_mapping": {
+    "decision_vocab_ref": "https://kyeprotocol.com/schemas/common.json#/$defs/Decision",
+    "allow_maps_to": "allow",
+    "deny_maps_to": "deny",
+    "obligation_passthrough": true
+  },
+  "evidence_emission": {
+    "required": true,
+    "envelope_family": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.tool_call.v1",
+      "kye.evidence.pack.v1",
+      "kye.replay.context_seal.v1"
+    ],
+    "records_raw_engine_verdict": true
+  },
+  "kill_switch": {
+    "endpoint": "POST /v1/pdp/adapters/opa/kill",
+    "on_kill": "fallback-native-deny-by-default"
+  },
+  "kye_retains_above": [
+    "purpose-permission",
+    "authority-resolution",
+    "authority-finality",
+    "evidence-pack",
+    "replay-proof"
+  ],
+  "notes": "KYE marshals the PdpDecisionRequest into an OPA input document, evaluates the Rego bundle in-process via WASM, maps result.allow back to a KYE DecisionOutcome, carries result.obligations onto the DecisionMap, and seals the raw Rego verdict in the Evidence Pack so the mapping is replay-provable."
+}

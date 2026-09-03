@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:secure-enterprise-ai-agents-2026-06",
+  "report_id": "kye:research-report:secure-enterprise-ai-agents-2026-06",
+  "body_sha256": "9e253eb344f061873e1adabd876304fb5977371a00fe864bd1ec74c9b25ceba5",
+  "seal_signature": "ajzmNHhpm2MLYGQnV9KWLILqKIDRDwz9i/PvD9unmZ0BD7qio2WoaHj5WF1Dt9svqwL5PRpl9ivOeMH2vDNfAg==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "Industry guidance on securing enterprise AI agents recommends engineered controls across the agent lifecycle — distinct agent identity, least-privilege and scoped capability/tool access, human approval for consequential actions, and end-to-end auditability/observability of what an agent did.",
+      "source_url": "https://www.ibm.com/think",
+      "publisher": "IBM + Anthropic, guidance on securing enterprise AI agents. Cited as published guidance, not as a security or compliance recommendation by KYE Protocol™.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of an AI system, discharged at the point of use rather than in a later review.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 2,
+    "pinned": 0,
+    "unpinned": 2
+  }
+}

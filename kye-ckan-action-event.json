@@ -1,0 +1,15 @@
+{
+  "schema_version": "kye.ckan_action_event.v1",
+  "event_id": "kye:ckan-action-event:northwind-bank:cae-2026-08-0417",
+  "connection_id": "kye:connector:ckan:northwind-bank:con-2026-08-0417",
+  "ckan_action": "package_create",
+  "actor_entity_id": "kye:user:northwind-bank",
+  "principal_entity_id": "kye:org:northwind-bank",
+  "target_object": {
+    "type": "dataset",
+    "ref": "constitution/12-PURPOSE-PERMISSION.md"
+  },
+  "purpose": "open-data-publication",
+  "decision": "allow",
+  "occurred_at": "2026-08-07T09:15:00Z"
+}

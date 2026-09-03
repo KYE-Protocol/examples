@@ -1,0 +1,40 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.runtime_node.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:runtime-nodes:example",
+  "adopted_at": "2026-08-24",
+  "description": "Illustrative runtime-node registry with one node of each kind.",
+  "runtime_nodes": [
+    {
+      "runtime_node_id": "kye:runtime-node:epdp:epdp",
+      "entity_class": "runtime-node",
+      "node_kind": "epdp",
+      "name": "Embedded Policy Decision Point — epdp",
+      "runtime_path": "internal",
+      "constitution_ref": "internal",
+      "deployable": false,
+      "package_name": "@kye/epdp",
+      "depends_on": [
+        "kye:runtime-node:pdp:pdp"
+      ],
+      "source_files": 8
+    },
+    {
+      "runtime_node_id": "kye:runtime-node:pdp:kye-pdp-worker",
+      "entity_class": "runtime-node",
+      "node_kind": "pdp",
+      "name": "Policy Decision Point — kye-pdp-worker",
+      "runtime_path": "internal",
+      "constitution_ref": "internal",
+      "deployable": true,
+      "worker_ref": "kye:worker:kye-pdp-worker",
+      "package_name": "@kye/pdp-runtime-worker",
+      "depends_on": [
+        "@kye/crypto",
+        "kye:runtime-node:pdp:pdp",
+        "@kye/rules-gateway"
+      ],
+      "source_files": 3
+    }
+  ]
+}

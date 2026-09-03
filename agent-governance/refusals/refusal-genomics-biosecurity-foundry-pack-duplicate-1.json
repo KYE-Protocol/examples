@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "e1a7c92d-3f48-4b60-9d25-7c8b1e30a4f6",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to build a §54 Genomics-Biosecurity Authority Foundry Pack binding kye:sector-pack:bio-chem-governance + kye:rule-pack:bio-chem-governance + the nucleic-acid-synthesis-screening / Australia-Group / CWC-BWC frameworks. KYE already ships KYE-FOUNDRY-PACK-BIO-CHEM-GOVERNANCE-001, the §54 foundry expert-pack productising the SAME sector pack + rule pack + biosecurity framework set. A second foundry pack over the same canon is a §0 / §0.10 competing system. Refusing the duplicate.",
+  "remediation_hint": "Adopt the existing kye:powered-pack:bio-chem-governance:v1 (SKU KYE-FOUNDRY-PACK-BIO-CHEM-GOVERNANCE-001, landing public/site/foundry/bio-chem-governance-pack.html). If a genomics-specific surface is genuinely distinct, graft it as a sector specialization INSIDE the existing bio-chem-governance spine (the manifest declares protein-design / generative-chemistry / molecular-biology specializations, NOT parallel packs) — never a second foundry pack over the same sector+rule packs and framework set."
+}

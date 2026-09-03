@@ -1,0 +1,47 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.page_region_ownership.v1.json",
+  "schema": "kye.page_region_ownership.v1",
+  "registry_id": "kye:registry:page-region-ownership",
+  "adopted_at": "2026-08-17",
+  "constitution_ref": [
+    "constitution/53-COHESION-CASCADE.md#§3.3",
+    "constitution/00-INDEX.md#§0.20",
+    "constitution/00-INDEX.md#§0.46",
+    "constitution/00-INDEX.md#§0.49"
+  ],
+  "description": "ILLUSTRATIVE EXAMPLE of kye:registry:page-region-ownership. One worked row, not the full set — the live registry is the source of truth and is not duplicated here (§0). Present so the schema has a validated instance a reader and the ajv corpus can both use.",
+  "doctrine": {
+    "preserve": "A writer emitting a whole page MUST carry forward every region it does not own. Enforced mechanically in scripts/lib/public-redaction.mjs writePublicArtefact() — the one path every governed public write takes — so preservation does not depend on each generator remembering.",
+    "compare": "A freshness check MUST compare modulo the regions its generator does not own, via normaliseDerived() from scripts/lib/archetypes.mjs. Comparing raw bytes reports another writer's legitimate output as staleness, and the remedy it then prints ('regenerate and commit') DELETES that output.",
+    "never_order": "Step order in the propagator registry is a dependency statement, not an ownership mechanism. Order alone failed in the observable way: a chain interrupted between the page generators and the region writer left 628 pages stripped, and the tree looked settled."
+  },
+  "regions": [
+    {
+      "region_id": "KYE-ARCHETYPE",
+      "owner": "scripts/build-page-archetypes.mjs",
+      "marker": "<!-- KYE-ARCHETYPE:BEGIN --> … <!-- KYE-ARCHETYPE:END -->",
+      "anchor": "after the page's </h1>, else the top of <main>",
+      "contains": "The §0.46 reader affordances derived from the page's own content — section index over its headings, filter over its largest table or list, audience router over the §50 graph.",
+      "freshness_gate": "test:engagement-coverage",
+      "applies_to": "every page carrying a §50 kye-kind the affordance contract governs"
+    }
+  ],
+  "page_writers": [
+    {
+      "writer": "scripts/build-astro-pages.mjs",
+      "emits": "601 converted pages from site/src",
+      "preserves_via": "FOREIGN_OWNED_REGIONS + anchor re-insertion",
+      "compares_via": "norm() + normRegions() in --check"
+    }
+  ],
+  "enforcement": {
+    "gate": "scripts/gates/region-ownership-canonical.mjs",
+    "npm_ref": "test:region-ownership-canonical",
+    "rule_code": "ROC001",
+    "contract": "Every declared region resolves to an owner that exists on disk and a freshness gate that is wired into npm test. Every declared page writer names a preservation mechanism and a comparison mechanism, and its source must actually reference them — a writer that claims to preserve and does not is the failure this registry exists to make impossible.",
+    "derives_from": [
+      "regions",
+      "page_writers"
+    ]
+  }
+}

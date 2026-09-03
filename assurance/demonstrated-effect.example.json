@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.demonstrated_effect.v1.json",
+  "schema": "kye.demonstrated_effect.v1",
+  "version": "1.0.0",
+  "constitution_ref": "constitution/00-INDEX.md §0.50",
+  "notes": [
+    "Illustrative kye.demonstrated_effect.v1 instance. A mechanism is real only when its effect is demonstrated by execution."
+  ],
+  "effects": [
+    {
+      "effect_id": "kye:effect:example-enforcer-bites",
+      "entity_class": "effect",
+      "effect_class": "bite",
+      "subject": "scripts/gates/example-canonical.mjs",
+      "proof": {
+        "probe": "example-canonical.mjs",
+        "expects": "rejected"
+      }
+    }
+  ]
+}

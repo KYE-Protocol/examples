@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "runtime-kye-mow-breach-schedule-authority-agent",
+  "parent_task": "b7e3f1a2-5c9d-4e08-8a1b-2f6c4d90e5a3",
+  "refused_at": "2026-07-20T00:00:00Z",
+  "chapter_ref": "§70",
+  "reason_summary": "Prompt asked the agent to invoice unattributed (unknown-category) access and to present the £500-per-Product schedule as a debt owed with certainty. Both cross the §70 honesty bar: unknown/unattributed access is NEVER invoiced (no phantom liability), possible-spoof events are SURFACED not treated as certain, and the schedule is ADVISORY — KYE proves the breach; the publisher and counsel claim the debt. Refusing to inflate the advisory schedule into an adjudicated invoice.",
+  "remediation_hint": "Release the schedule exactly as the ONE canonical breach-schedule engine derives it: licensed-vs-breach split, per-operator distinct-Product accrual at the £500 default (Clause 14 override honoured), unknown events excluded from any accrual, and possible-spoof events surfaced per operator. Present it as ADVISORY, seal it as a replay-provable Evidence Pack™, and route the debt claim to the publisher + counsel — never as a KYE-adjudicated invoice. The SOC stays MOW's (never re-hosted / re-drafted)."
+}

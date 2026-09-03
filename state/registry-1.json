@@ -1,0 +1,17 @@
+{
+  "schema_version": "kye.state.registry.v1",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "machines": [
+    {
+      "machine_id": "kye:state-machine:northwind-bank:sm-2026-08-0417",
+      "entity_class": "principal",
+      "scope": "platform",
+      "states": [
+        {
+          "name": "Northwind Bank payments release",
+          "kind": "initial"
+        }
+      ]
+    }
+  ]
+}

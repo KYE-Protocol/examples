@@ -1,4 +1,5 @@
 {
+  "schema": "kye.replay.proof.v1",
   "id": "kye:replay-proof:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",
   "version": 1,
   "seal_ref": "kye:replay-seal:mercy-health.01HKA3Q7ZQK4M5R8YV3WJKQ8N2P",

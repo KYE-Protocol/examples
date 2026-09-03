@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:roi-governed-ai-action:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:roi-governed-ai-action-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "uldsr025h9iPJRf0qomMIdq4krWDZ6dKUzaazXU2OT6a221PzWCCbgRDHFxzesiKZzILmxAgPQrl4IGRtm/KCQ=="
+    "signature": "uDY51PFmE7AdHTX3vakxta//QYgJaJqAmzfXQHHaijFv/wHEwizfUp6IgLTJjtRwP4jZMGagVx2rBx1lcbO8Dg=="
   },
   "citations": [
     {

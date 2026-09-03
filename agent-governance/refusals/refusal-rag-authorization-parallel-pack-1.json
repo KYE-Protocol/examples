@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "b7d2e9a1-4c83-4e21-9f60-5a1c8d73e2b9",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel RAG-grounding / citation-provenance rule-pack and a second source-pin schema. KYE already governs cited retrieval and the no-hallucination floor: the §71 Document Intelligence Rail navigates and cites unstructured sources, and every claim pins to its source via kye.evidence.tool_call_pin.v1 (§62 Governed Research Rail — no claim without a cited, pinned source). A parallel grounding pack or a second pin schema is a §0 competing-systems violation. Refusing the duplicate.",
+  "remediation_hint": "Build a Governed Agent PRODUCT that RUNS the existing verdict: admit each RAG-output use, decide it against the EXISTING kye.evidence.tool_call_pin.v1 source-pin (§62 no-hallucination floor) over the §71 cited-extract contract, record the disposition, seal an Evidence Pack. Add only the agent-product artefacts (§52 binding, principal, product row, SKU, pricing, ™, landing entry); BIND — never re-map — the EU AI Act / NIST AI RMF / ISO 42001 deep-stores. Reuse the pin schema; never fork it."
+}

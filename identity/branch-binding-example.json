@@ -1,0 +1,12 @@
+{
+  "schema": "kye.branch_binding.v1",
+  "binding_id": "kye:branch-binding:example-illustrative-only",
+  "agent_id": "kye:agent:onboarding-agent",
+  "repository": "KYE-Protocol/app",
+  "branch": "claude/example-illustrative-branch",
+  "signing_key_id": "kye:key:authority-issuance-fixture-2026-08",
+  "issued_at": "2026-08-21T00:00:00.000Z",
+  "expires_at": null,
+  "signature": "ILLUSTRATIVE-NOT-A-REAL-SIGNATURE-do-not-verify",
+  "revoked": false
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "kye.developer.webhook_event.v1",
-  "event_id": "kye:evt:acme-bank.example:01J4PZZZZZZZZZZZZZZZZZZ5T",
+  "event_id": "kye:evt:acme-acme-bank.example:01J4PZZZZZZZZZZZZZZZZZZ5T",
   "event_class": "kye.onboarding.shadow_mode_active",
   "occurred_at": "2026-05-12T09:14:22Z",
   "tenant": {

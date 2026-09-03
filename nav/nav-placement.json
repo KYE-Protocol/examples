@@ -3,7 +3,7 @@
   "manifest_id": "kye:registry:nav-placement",
   "version": "1.0.0",
   "adopted": "2026-06-03",
-  "constitution_ref": "constitution/55-TAXONOMY-RAIL.md",
+  "constitution_ref": "constitution/74-TAXONOMY-RAIL.md",
   "description": "Example kye.nav_placement.v1 instance — the Home + Platform macro slice of the canonical nav placement registry. The full registry lives at internal; menu-tree.json is its derived projection.",
   "primary_cta": {
     "id": "apply-audit-pilot",

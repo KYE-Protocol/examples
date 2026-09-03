@@ -5,7 +5,7 @@
   "occurred_at": "2026-05-15T10:14:22Z",
   "tenant": {
     "tenant_id": "kye:tenant:acme-bank",
-    "trust_domain": "acme-bank.example"
+    "trust_domain": "acme-acme-bank.example"
   },
   "delivery_id": "dlv_01JBL7SUB002000000000000002",
   "severity": "info",

@@ -1,0 +1,19 @@
+{
+  "id": "payment-release",
+  "legal_name": "Northwind Bank plc",
+  "services": [
+    {
+      "name": "Northwind Bank payments release",
+      "description": "Illustrative instance for the Northwind Bank reference tenant."
+    }
+  ],
+  "data_categories": [
+    "marketing-website-analytics"
+  ],
+  "region": [
+    "eu"
+  ],
+  "risk_tier": "critical",
+  "transfer_mechanism": "adequacy-decision",
+  "engagement_status": "planned"
+}

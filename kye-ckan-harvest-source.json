@@ -1,0 +1,10 @@
+{
+  "schema_version": "kye.ckan_harvest_source.v1",
+  "harvest_source_id": "kye:ckan-harvest-source:northwind-bank:chs-2026-08-0417",
+  "connection_id": "kye:connector:ckan:northwind-bank:con-2026-08-0417",
+  "ckan_harvest_source_id": "ckan_harvest_source-2026-08-0417",
+  "source_url": "https://kyeprotocol.com/",
+  "source_type": "ckan",
+  "owning_organization_id": "kye:org:northwind-bank",
+  "status": "active"
+}

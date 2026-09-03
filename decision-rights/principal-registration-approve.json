@@ -1,0 +1,41 @@
+{
+  "schema": "kye.decision_right.v1",
+  "decision_right_id": "kye:decision-right:principal-registration-approve",
+  "tenant_id": null,
+  "holder": {
+    "entity_id": "kye:org:kye_protocol:publisher",
+    "holder_kind": "organisation",
+    "role_label": "KYE Protocol Ltd — operator of record (bootstrap authority)"
+  },
+  "on_behalf_of": "kye:org:kye_protocol:publisher",
+  "decision_class": "kye:decision-class:principal-registration",
+  "stages": [
+    "approve",
+    "execute",
+    "escalate"
+  ],
+  "limits": {
+    "jurisdictions": [
+      "GB"
+    ],
+    "scope_tags": [
+      "authority-bearing"
+    ],
+    "requires_second_approver": false,
+    "requires_distinct_initiator": true
+  },
+  "prohibited": [
+    "register a principal that expands the registering party's own authority (self-grant)",
+    "register a principal outside the authority-bearing category declared in kye:dictionary:entity-id-classes",
+    "approve a registration this same holder initiated"
+  ],
+  "authority_source": {
+    "grant_id": "kye:grant:kye-publisher-operator-authority",
+    "grant_schema": "https://kyeprotocol.com/schemas/kye.authority.grant.v1.json",
+    "policy_ref": "constitution/00-INDEX.md#§0.37"
+  },
+  "effective_from": "2026-07-28T00:00:00Z",
+  "expires_at": "2028-07-28T00:00:00Z",
+  "status": "active",
+  "constitution_ref": "constitution/00-INDEX.md §0.37 · §0.3 · §0.34"
+}

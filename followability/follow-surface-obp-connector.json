@@ -1,0 +1,19 @@
+{
+  "schema": "kye.follow_surface.v1",
+  "surface_id": "kye:follow-surface:engagement:obp-open-banking-connector",
+  "entity_class": "follow-surface",
+  "entity_ref": "kye:engagement:obp-open-banking-connector",
+  "coordinate_ref": "kye:coordinate:private:engagement:active",
+  "followable_state_classes": [
+    "engagement:status-transition",
+    "obligation:review-completed",
+    "connector:contract-version-published"
+  ],
+  "push_channels": ["webhook", "email-digest"],
+  "pull_endpoint": "/api/v1/partner/engagements/obp-open-banking-connector/events",
+  "visibility_default": "overt",
+  "consent_rule_ref": "kye:rule:follow-grant:partner-engagement-default",
+  "weight_disclosure": "scalar",
+  "participation_dependency": "none",
+  "tenant_id": "kye:tenant:kye-self"
+}

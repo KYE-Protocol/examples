@@ -1,0 +1,17 @@
+{
+  "id": "kye:widget:authority-gap-detector-v1",
+  "tenant_id": "kye:tenant:platform",
+  "widget_id": "kye:widget:authority-gap-detector-v1",
+  "publisher_tenant_id": "kye:tenant:platform",
+  "embed_url": "https://kyeprotocol.com/widgets/authority-gap-detector/embed",
+  "required_purpose_id": "kye:purpose:authority-audit",
+  "version": 1,
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
+  ]
+}

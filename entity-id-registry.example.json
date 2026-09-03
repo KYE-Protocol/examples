@@ -1,0 +1,44 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.entity_id_registry.v1.json",
+  "registry_id": "kye:registry:entity-id",
+  "description": "Illustrative excerpt of the KYE-ID entity backbone (kye.entity_id_registry.v1). The full registry is generated and assigns one stable kye: URN to every canonical artefact + platform page. The records below show public-track artefacts; the full registry also covers IP-track artefact classes, addressed by the same kye: URN scheme.",
+  "constitution_ref": "constitution/00-INDEX.md",
+  "generated_by": "scripts/build-entity-ids.mjs",
+  "id_format_ref": "public/id-format/README.md",
+  "counts": {
+    "total": 4,
+    "minted": 3,
+    "reused": 1,
+    "per_class": {
+      "page": 2,
+      "gate": 1,
+      "nav-leaf": 1
+    }
+  },
+  "records": [
+    {
+      "kye_id": "kye:page:site:platform/how-it-works",
+      "artefact_class": "page",
+      "artefact_path": "public/site/platform/how-it-works.html",
+      "source": "minted"
+    },
+    {
+      "kye_id": "kye:page:site:index",
+      "artefact_class": "page",
+      "artefact_path": "public/site/index.html",
+      "source": "minted"
+    },
+    {
+      "kye_id": "kye:gate:entity-id-canonical",
+      "artefact_class": "gate",
+      "artefact_path": "scripts/gates/entity-id-canonical.mjs",
+      "source": "minted"
+    },
+    {
+      "kye_id": "kye:term:nav-leaf:action-admissibility",
+      "artefact_class": "nav-leaf",
+      "artefact_path": "public/id-format/README.md",
+      "source": "reused"
+    }
+  ]
+}

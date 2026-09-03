@@ -1,0 +1,23 @@
+{
+  "schema": "kye.tier1_readiness.v1",
+  "version": "1.0.0",
+  "as_of": "2026-08-07",
+  "summary": {
+    "total_items": 0,
+    "shipped": 0,
+    "partial": 0,
+    "missing": 0
+  },
+  "evidence_artefacts": [
+    {
+      "category": "penetration-test",
+      "items": [
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "name": "Northwind Bank payments release",
+          "status": "external-work-required"
+        }
+      ]
+    }
+  ]
+}

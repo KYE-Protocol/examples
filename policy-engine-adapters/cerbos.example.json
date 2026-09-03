@@ -1,0 +1,44 @@
+{
+  "schema": "kye.policy_engine_adapter.v1",
+  "adapter_id": "kye:policy-engine-adapter:cerbos",
+  "engine_kind": "cerbos",
+  "display_name": "Cerbos Adapter",
+  "status": "supported",
+  "invocation": {
+    "mode": "sidecar-http",
+    "request_shape": "cerbos-check-resources",
+    "endpoint_ref": "binding:CERBOS_PDP_ENDPOINT",
+    "timeout_ms": 250,
+    "fail_mode": "fail-closed",
+    "local_verdict": "local-policy-set",
+    "admitted_as": "kye:action-class:tool-call"
+  },
+  "response_mapping": {
+    "decision_vocab_ref": "https://kyeprotocol.com/schemas/common.json#/$defs/Decision",
+    "allow_maps_to": "allow",
+    "deny_maps_to": "deny",
+    "obligation_passthrough": true
+  },
+  "evidence_emission": {
+    "required": true,
+    "envelope_family": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.tool_call.v1",
+      "kye.evidence.pack.v1",
+      "kye.replay.context_seal.v1"
+    ],
+    "records_raw_engine_verdict": true
+  },
+  "kill_switch": {
+    "endpoint": "POST /v1/pdp/adapters/cerbos/kill",
+    "on_kill": "fallback-native-deny-by-default"
+  },
+  "kye_retains_above": [
+    "purpose-permission",
+    "authority-resolution",
+    "authority-finality",
+    "evidence-pack",
+    "replay-proof"
+  ],
+  "notes": "KYE marshals the PdpDecisionRequest into a Cerbos CheckResources request (principal, resource kind + attributes, actions), evaluates it against your Cerbos policy bundle via the Cerbos PDP sidecar, maps EFFECT_ALLOW/EFFECT_DENY back to a KYE DecisionOutcome, carries Cerbos outputs/obligations onto the DecisionMap, and seals the raw Cerbos verdict in the Evidence Pack so the mapping is replay-provable."
+}

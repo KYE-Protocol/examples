@@ -1,0 +1,8 @@
+{
+  "schema": "kye.agency_drift.event.v1",
+  "drift_event_id": "kye:drift-event:northwind-bank-de-2026-08-0417",
+  "drift_type": "intent_drift",
+  "severity": "low",
+  "actor_entity_id": "actor_entity-2026-08-0417",
+  "detected_at": "2026-08-07T09:15:00Z"
+}

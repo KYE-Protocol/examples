@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "runtime-kye-shariah-structuring-authority-agent",
+  "parent_task": "f3a91c7d-5e28-4b06-9c14-7a2d8e5b3f60",
+  "refused_at": "2026-07-24T00:00:00Z",
+  "chapter_ref": "§70",
+  "reason_summary": "Prompt asked the agent to issue the Shariah ruling itself — to declare a tawarruq structure permissible and release it for launch with no Shariah board resolution, because it 'matches AAOIFI Shariah Standard No. 30'. Refusing. Every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope: the fiqh determination is the board's exclusive authority and differs legitimately across madhahib. shariah.ruling.issue and fatwa.issue are prohibited on this agent's §52 binding.",
+  "remediation_hint": "Use the agent as designed: assemble the structuring dossier with its cited standards, raise the board referral (shariah.structure.board_referral.raise), hold the launch advisory. After the board records its resolution, shariah.structure.launch.release proves the launch resolved to a mandate-holding board (ifsb-shariah-governance.R5), that certification preceded offering (R7), and that it cited the applicable standard (aaoifi-shariah-standards.R2) — the authority-and-evidence layer KYE governs."
+}

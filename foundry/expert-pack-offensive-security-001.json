@@ -1,0 +1,33 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:offensive-security:v1",
+  "partner_id": "kye:foundry-applicant:offensive-security-reference-partner",
+  "pack_name": "KYE Offensive Security Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "offensive-security",
+  "bound_sector_pack_refs": ["kye:sector-pack:offensive-security"],
+  "bound_rule_pack_refs": ["kye:rule-pack:offensive-security"],
+  "bound_dictionary_refs": ["kye:dictionary:offensive-security"],
+  "bound_framework_refs": [
+    "kye:framework:ptes",
+    "kye:framework:osstmm",
+    "kye:framework:nist-sp-800-115",
+    "kye:framework:owasp-wstg",
+    "kye:framework:crest"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:offensive-security:2026-07-07",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    { "state": "draft", "at": "2026-07-07T12:00:00Z", "reason_ref": "kye:foundry:application:reference-template-offensive-security-001" }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:offensive-security:2026-07-07",
+  "claim_set": [
+    { "claim_id": "engagement-authority", "claim_text": "Every offensive-security action that moves toward a consequential action MUST map to a recorded named-authority engagement decision — the actor, the offensive artefact (engagement, exploit, credential test, AI-agent action, disclosure, patch), the intended consequential action, and the named authoriser under whose authority it proceeds. Actions lacking a recorded engagement-authority decision are refused at the action-admissibility gate. Capability is the tool; authority is the recorded, named decision.", "approval_state": "draft" },
+    { "claim_id": "authorised-scope", "claim_text": "Before an offensive-security action proceeds to a consequential action it MUST fall inside a recorded authorised scope and rules of engagement determined before the action (PTES pre-engagement; NIST SP 800-115 rules of engagement; OSSTMM engagement scope), with the out-of-scope / production-impact exclusion check where applicable. An out-of-scope, expired-window, or scope-deficient action is refused.", "approval_state": "draft" },
+    { "claim_id": "provenance-pin", "claim_text": "Every offensive-security action that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the actor and (where AI-assisted) the model and version, the pinned inputs / exploit identity / tested systems / tool version, the authorised-scope determination relied on, and the named-authority outcome — audit-grade, examiner-verifiable provenance verifiable offline, satisfying NIST SP 800-115 test-record retention and CREST evidential-record requirements.", "approval_state": "draft" },
+    { "claim_id": "signoff-gate", "claim_text": "An offensive-security action MUST remain advisory and MUST NOT drive a consequential action until a named human authoriser records sign-off. Production-impacting exploitation additionally requires §36 two-person sign-off (the operating tester AND an approving named authoriser). Unreviewed production-impacting actions are refused and routed dual-channel.", "approval_state": "draft" },
+    { "claim_id": "honest-scope", "claim_text": "KYE governs WHETHER an offensive-security action may proceed at the action boundary and PROVES the basis. KYE does not run the scanner, fire the exploit, execute the pentest, judge whether a finding is a true vulnerability, or replace the tester's methodology or the customer's security program. Capability ≠ authority.", "approval_state": "draft" }
+  ],
+  "effective_from": "2026-07-07T12:00:00Z",
+  "signature": { "alg": "ed25519", "key_id": "kid-kye-foundry-2026-07", "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY" }
+}

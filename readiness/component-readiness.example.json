@@ -22,6 +22,7 @@
   "components": [
     {
       "component_id": "example-edge-worker",
+      "entity_class": "component",
       "kind": "worker",
       "path": "runtime/example-edge-worker",
       "tested": true,
@@ -30,6 +31,7 @@
     },
     {
       "component_id": "example-batch-worker",
+      "entity_class": "component",
       "kind": "worker",
       "path": "runtime/example-batch-worker",
       "tested": false,

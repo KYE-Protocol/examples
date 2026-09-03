@@ -3,6 +3,8 @@
   "assertion_id": "kye:semantic:assertion:001",
   "subject_ref": "kye:decision:payment_001",
   "assertion_type": "decision_semantics",
+  "epistemic_status": "verified",
+  "epistemic_basis": "check:kye:pdp:authority-resolution — deterministic re-derivation of the delegated-payment authority chain against the register at decision time",
   "terms": [
     { "term_id": "kye:term:authority:delegated_payment_authority", "applies": true, "confidence": 0.97 },
     { "term_id": "kye:term:scope:amount_limit", "applies": true, "confidence": 1.00 },

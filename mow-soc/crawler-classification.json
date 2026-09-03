@@ -1,0 +1,61 @@
+{
+  "schema_id": "kye.crawler_classification.v1",
+  "source": "log-ingest",
+  "retrospective": true,
+  "generated_at": "2026-07-19T12:00:00.000Z",
+  "publisher_host": "publisher-site.kyeprotocol.com",
+  "registry_version": "1.0",
+  "totals": {
+    "requests_seen": 3,
+    "records_reported": 2,
+    "unknown": 1,
+    "parse_failures": 0,
+    "by_category": {
+      "ai-training": 1,
+      "search": 1,
+      "unknown": 1
+    },
+    "by_operator": {
+      "OpenAI": 1,
+      "Google": 1
+    }
+  },
+  "records": [
+    {
+      "line_no": 1,
+      "observed_at": "2026-07-10T13:55:36.000Z",
+      "remote_addr": "52.230.152.9",
+      "method": "GET",
+      "path": "/articles/one",
+      "status": 200,
+      "bytes": 2326,
+      "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.2; +https://openai.com/gptbot",
+      "classification": {
+        "operator": "OpenAI",
+        "category": "ai-training",
+        "licensed": false,
+        "signature_id": "openai-gptbot",
+        "matched_token": "GPTBot",
+        "ip_verified": true
+      }
+    },
+    {
+      "line_no": 2,
+      "observed_at": "2026-07-10T13:56:01.000Z",
+      "remote_addr": "66.249.66.5",
+      "method": "GET",
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 512,
+      "user_agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+      "classification": {
+        "operator": "Google",
+        "category": "search",
+        "licensed": true,
+        "signature_id": "google-googlebot",
+        "matched_token": "Googlebot",
+        "ip_verified": true
+      }
+    }
+  ]
+}

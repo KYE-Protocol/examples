@@ -7,7 +7,7 @@
     "kye:iss:acme.example:workload"
   ],
   "transparency_service": "kye:ts:acme.example:main",
-  "jwks_uri": "https://issuer.acme.example/.well-known/jwks.json",
-  "federation_metadata_uri": "https://issuer.acme.example/.well-known/kye/federation",
+  "jwks_uri": "https://acme-payments.example/.well-known/jwks.json",
+  "federation_metadata_uri": "https://acme-payments.example/.well-known/kye/federation",
   "status": "active"
 }

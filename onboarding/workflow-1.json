@@ -10,8 +10,16 @@
     "kye:onboarding-transition:acme-bank.payments-agent.q3-2026.0002"
   ],
   "approvers": [
-    { "role": "owner", "kyeid": "kye:ent:kye-protocol.operator.eu-onboarding" },
-    { "role": "customer_signer", "kyeid": "kye:ent:acme-bank.ciso" }
+    {
+      "role": "owner",
+      "kyeid": "kye:ent:kye-protocol.operator.eu-onboarding",
+      "approver_decision_right": "kye:decision-right:onboarding-workflow-own"
+    },
+    {
+      "role": "customer_signer",
+      "kyeid": "kye:ent:acme-bank.ciso",
+      "approver_decision_right": "kye:decision-right:customer-onboarding-signoff"
+    }
   ],
   "scheduled_kickoff": "2026-05-13T15:00:00Z",
   "target_workflows": [

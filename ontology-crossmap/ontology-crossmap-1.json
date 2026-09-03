@@ -1,0 +1,132 @@
+{
+  "schema_version": "kye.ontology_crossmap.v1",
+  "report_id": "kye:ontology:crossmap:f79c1ea0",
+  "produced_by": "kye:engine:ontology-crossmap",
+  "produced_at": "2026-06-19T00:00:00.000Z",
+  "tier": "free",
+  "deterministic": true,
+  "honesty_bar": "KYE maps and flags only. KYE never asserts the customer's domain truth — every verdict reports how a customer term relates to the canonical KYE spine, not whether the customer's definition is correct.",
+  "source_ontology": {
+    "label": "Acme Bank — AI Governance Glossary",
+    "kind": "glossary",
+    "format": "glossary_text",
+    "term_count": 6,
+    "digest": "f79c1ea0"
+  },
+  "spine": {
+    "framework_registry_ref": "https://kyeprotocol.com/regulatory-coverage.html",
+    "taxonomy_ref": "https://kyeprotocol.com/taxonomies.html",
+    "match_threshold": 0.5
+  },
+  "entries": [
+    {
+      "customer_term": "Data governance",
+      "normalised": "data governance",
+      "verdict": "aligned",
+      "matches": [
+        {
+          "target_kind": "framework_requirement",
+          "target_ref": "eu-ai-act#data-data-governance",
+          "target_label": "Data and data governance",
+          "mapping_type": "equivalent",
+          "similarity": 1,
+          "match_basis": "token_overlap"
+        }
+      ],
+      "customer_definition": "Controls on training and inference data.",
+      "note": "Customer term aligns with the canonical KYE spine term \"Data and data governance\"."
+    },
+    {
+      "customer_term": "Human oversight",
+      "normalised": "human oversight",
+      "verdict": "aligned",
+      "matches": [
+        {
+          "target_kind": "framework",
+          "target_ref": "ai-solutions-framework",
+          "target_label": "AI Solutions Framework",
+          "mapping_type": "equivalent",
+          "similarity": 1,
+          "match_basis": "alias"
+        }
+      ],
+      "customer_definition": "A person can intervene in or override the model decision.",
+      "note": "Customer term aligns with the canonical KYE spine term \"AI Solutions Framework\"."
+    },
+    {
+      "customer_term": "Human oversight controls",
+      "normalised": "human oversight controls",
+      "verdict": "divergent",
+      "matches": [
+        {
+          "target_kind": "framework",
+          "target_ref": "ai-solutions-framework",
+          "target_label": "AI Solutions Framework",
+          "mapping_type": "related_not_identical",
+          "similarity": 0.6667,
+          "match_basis": "token_overlap"
+        }
+      ],
+      "customer_definition": "Our specific control set for keeping a human in the loop.",
+      "note": "Customer term is related but not identical to \"AI Solutions Framework\" — review before relying on the mapping. KYE flags; it does not resolve."
+    },
+    {
+      "customer_term": "Record-keeping",
+      "normalised": "record keeping",
+      "verdict": "aligned",
+      "matches": [
+        {
+          "target_kind": "framework_requirement",
+          "target_ref": "eu-ai-act#record-keeping",
+          "target_label": "Record-keeping",
+          "mapping_type": "equivalent",
+          "similarity": 1,
+          "match_basis": "exact"
+        }
+      ],
+      "customer_definition": "Logs of model decisions retained for audit.",
+      "note": "Customer term aligns with the canonical KYE spine term \"Record-keeping\"."
+    },
+    {
+      "customer_term": "Sector",
+      "normalised": "sector",
+      "verdict": "conflict",
+      "matches": [
+        {
+          "target_kind": "taxonomy_term",
+          "target_ref": "kye:term:component-class:sector",
+          "target_label": "Sector",
+          "mapping_type": "not_equivalent",
+          "similarity": 1,
+          "match_basis": "exact"
+        }
+      ],
+      "customer_definition": "We use Sector to mean an internal R&D unit, not an industry vertical.",
+      "note": "Customer term collides with \"Sector\" under a meaning the customer marked as not-equivalent — a conflict KYE flags but never resolves."
+    },
+    {
+      "customer_term": "Vibe check",
+      "normalised": "vibe check",
+      "verdict": "gap",
+      "matches": [],
+      "customer_definition": "Our internal informal model sign-off ritual.",
+      "note": "No canonical KYE spine term matched at or above the declared threshold. KYE flags the gap; it does not assert the customer's term is wrong."
+    }
+  ],
+  "gaps": [
+    {
+      "customer_term": "Vibe check",
+      "direction": "customer_only",
+      "note": "A concept in the customer ontology the canonical KYE spine does not map. Surfaced for the paid full-mapping engagement; never asserted as a customer deficiency."
+    }
+  ],
+  "summary": {
+    "total_terms": 6,
+    "aligned": 3,
+    "divergent": 1,
+    "gap": 1,
+    "conflict": 1,
+    "alignment_score": 0.5833,
+    "coverage_score": 0.8333
+  }
+}

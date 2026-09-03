@@ -1,0 +1,28 @@
+{
+  "schema": "kye.propagator.v1",
+  "version": "1.0",
+  "constitution_ref": "constitution/00-INDEX.md §0.20 · §0.9 · §0.18 · §53",
+  "doctrine": "The propagation ORDER and MEMBERSHIP decide whether the whole tree is fresh, and they were hand-maintained JS arrays inside the runner itself — the same defect class as the three hand-typed repository lists that had already drifted. This registry is now the source of truth; build-derived-all is the ENGINE that reads it. Adding a generator means adding a row.",
+  "phases": [
+    {
+      "phase": "P1",
+      "purpose": "Source-of-truth generators that write Astro SOURCE fragments and standalone manifests. Run first because later phases read what they produce."
+    }
+  ],
+  "propagators": [
+    {
+      "propagator_id": "kye:propagator:build-public-schemas",
+      "script": "scripts/build-public-schemas.mjs",
+      "phase": "P1",
+      "order": 1,
+      "rationale": "§70 coverage dashboard — coverage-report.generated.json (+ public mirror), coverage.html, and every per-framework public/site/compliance/<fw>.html. FIRST in P1 because it writes pages the P2 page-registry must scan, and it produces the coverage-report that coverage-attestation (end of P3) consumes. FOLDED IN 2026-06-26 (governed-codebase cascade): now deterministic (reconcile-on-write generated_at), so it belongs in the ONE canonical regen.  §0.20 — projects the public contract schema set into public/schemas/ so every schema `$id` under https://kyeprotocol.com/schemas/ resolves (the Pages deploy already mirrors that dir; it was simply never populated). Independent of the page chain, so it runs first and cheaply.",
+      "entity_class": "propagator"
+    }
+  ],
+  "excluded": [
+    {
+      "script": "scripts/build-derived-all.mjs",
+      "reason": "this orchestrator"
+    }
+  ]
+}

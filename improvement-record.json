@@ -1,0 +1,16 @@
+{
+  "id": "kye:improvement:northwind-bank:payments:reduce-false-denies",
+  "version": 1,
+  "loop_iteration_id": "loop_iteration-2026-08-0417",
+  "emitted_at": "2026-08-07T09:15:00Z",
+  "change_class": "rule_update",
+  "change_target": {
+    "kind": "rule_bundle",
+    "ref": "constitution/12-PURPOSE-PERMISSION.md"
+  },
+  "before": {},
+  "after": {},
+  "rationale": "Recorded so the decision can be re-derived by someone who was not present when it was taken.",
+  "signed_off_by": "kye:ent:northwind-bank:ent-2026-08-0417",
+  "signature": "sha256:c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f3902"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "kye.venture_studio.equity_terms.v1",
+  "envelope_id": "kye:venture-studio:equity-terms:forge-default",
+  "tier_id": "kye:venture-studio-program:forge",
+  "venture_id": "kye:venture:authority-native-reference",
+  "consideration_model": "equity-and-revenue-share",
+  "equity_terms": {
+    "equity_pct_band": {
+      "floor": 5,
+      "ceiling": 12
+    },
+    "tranches": [
+      {
+        "tranche_id": "kye:venture-studio:tranche:forge-thesis",
+        "milestone": "thesis-validated",
+        "equity_pct_of_total": 25
+      },
+      {
+        "tranche_id": "kye:venture-studio:tranche:forge-mvp",
+        "milestone": "authority-native-mvp-live",
+        "equity_pct_of_total": 50
+      },
+      {
+        "tranche_id": "kye:venture-studio:tranche:forge-launch",
+        "milestone": "first-governed-launch",
+        "equity_pct_of_total": 25
+      }
+    ]
+  },
+  "revenue_share": {
+    "kye_pct": 8,
+    "applies_to": "net revenue of the venture's KYE-governed product line",
+    "term_months": 36
+  },
+  "pro_rata_rights": true,
+  "vesting": {
+    "vesting_months": 24,
+    "cliff_months": 6
+  },
+  "claim_approval_required": true,
+  "wind_down_terms": {
+    "buy_back_permitted": true,
+    "rail_offboarding_clause": true
+  },
+  "effective_from": "2026-06-27T00:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kye:key:venture-studio:forge-default",
+    "value": "ZXhhbXBsZS1zaWduYXR1cmUtcGxhY2Vob2xkZXItbm90LWEtcmVhbC1rZXk"
+  }
+}

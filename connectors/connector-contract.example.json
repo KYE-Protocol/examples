@@ -1,0 +1,42 @@
+{
+  "schema_version": "kye.connector_contract.v1",
+  "connector_id": "kye:connector:ticketing-change-approval",
+  "display_name": "KYE Connector Contract — change-approval importer (generic ITSM shape)",
+  "version": "1.0.0",
+  "constitution_ref": "constitution/15-MCP-AND-SDK.md",
+  "contract_only": true,
+  "live_runtime_status": "deferred-external",
+  "description": "CONTRACT (schema + mapping) — NOT a live runtime — for importing an approved change record from an ITSM tool so the approval it carries can be resolved against the KYE authority chain before a production action is admitted.",
+  "direction": "inbound-import",
+  "source_system": {
+    "name": "IT service-management tool (generic change-approval shape)",
+    "kind": "change-management / approval-workflow platform"
+  },
+  "target_model": {
+    "entity_hierarchy_ref": "constitution/00-INDEX.md#section-0-30-agents-as-first-class-principals",
+    "evidence_model_refs": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.pack.v1"
+    ]
+  },
+  "bound_standards": [
+    {
+      "framework": "itil-4-change-enablement",
+      "role": "the change-authority assessment whose outcome this connector imports"
+    }
+  ],
+  "binding_chain": "approved change record -> authority: an imported approval is a claim about who authorised what, and is admitted only once it resolves to a principal holding the decision right for that action class. An unresolved approver makes the record evidence of a request, never of an authority.",
+  "import_map_ref": "internal",
+  "evidence_emission": [
+    "kye.purpose.request.v1",
+    "kye.purpose.admissibility.v1",
+    "kye.evidence.decision_map.v1",
+    "kye.evidence.pack.v1"
+  ],
+  "status": "contract-shipped",
+  "external_dependency": {
+    "what": "The ITSM tool itself. KYE does not run it and does not hold its credentials.",
+    "why_deferred": "A live import needs a tenant-held credential that is not in-repo (§0.29 — an external dependency is the only admissible incompleteness)."
+  },
+  "honest_scope": "KYE governs whether an imported approval may authorise an action. It does not verify that the change described in the ticket is a good idea, and it does not replace the ITSM tool's own workflow."
+}

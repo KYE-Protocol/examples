@@ -7,6 +7,6 @@
   "severity": "high",
   "affected_dimensions": ["tool_use", "delegation_scope"],
   "deviation_metric": 0.82,
-  "evidence_url": "https://observability.example/runs/abc123",
+  "evidence_url": "https://observability.acme.example/runs/abc123",
   "observed_at": "2026-06-11T20:00:00Z"
 }

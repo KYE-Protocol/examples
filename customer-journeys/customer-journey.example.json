@@ -1,0 +1,52 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.customer_journey.v1.json",
+  "schema": "kye.customer_journey.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-07-19T00:00:00Z",
+  "constitution_ref": "constitution/13-RESILIENCE-LOOP.md",
+  "journeys": [
+    {
+      "journey_id": "kye:customer-journey:authority-risk-signal",
+      "product_id": "authority-risk-signal",
+      "user_journey_ref": "kye:journey:compliance-officer",
+      "description": "Risk officer discovers the add-on, submits a subject risk assessment, and lists assessments back.",
+      "steps": {
+        "discover": {
+          "landing_path": "public/site/authority-risk-signal.html",
+          "cta_required": true
+        },
+        "evaluate": {
+          "paths": [
+            "public/openapi/app.yaml"
+          ]
+        },
+        "use": {
+          "calls": [
+            {
+              "endpoint": "public/app/functions/api/v1/risk.js",
+              "method": "POST",
+              "url_path": "/api/v1/risk",
+              "payload": {
+                "subject_id": "kye:agent:meridian-lending:underwriting:credit-officer-1",
+                "reason_codes": [
+                  "velocity_anomaly"
+                ]
+              }
+            },
+            {
+              "endpoint": "public/app/functions/api/v1/risk.js",
+              "method": "GET",
+              "url_path": "/api/v1/risk",
+              "payload": null
+            }
+          ]
+        },
+        "receive": {
+          "max_status": 299,
+          "evidence_expected": true,
+          "patent_safe": true
+        }
+      }
+    }
+  ]
+}

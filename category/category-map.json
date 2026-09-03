@@ -1,0 +1,147 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.category_map.v1.json",
+  "schema": "kye.category_map.v1",
+  "registry_id": "kye:registry:category-map",
+  "adopted_at": "2026-06-25",
+  "constitution_ref": "constitution/00-INDEX.md#0.33",
+  "description": "ILLUSTRATIVE public example of kye.category_map.v1 (\u00a70.33). The canonical instance with precise internal artefact paths is IP-track and kept off the public surface; this public copy points each lifecycle stage at its public constitution chapter.",
+  "category": {
+    "name": "Authority Finality",
+    "trademark": "Authority Finality\u2122",
+    "kye_root": true,
+    "one_liner": "The runtime protocol that proves every consequential action was authorised, purpose-bound, evidenced, replayable and final before it changed the world.",
+    "frame": "KYE = Know Your Entity + Authority Finality\u2122. KYE does not run agents; KYE governs whether an agent's action may become final."
+  },
+  "doctrine_ladder": [
+    "Output is not authority.",
+    "Evidence is not authority.",
+    "Identity is not authority.",
+    "Access is not authority.",
+    "Capability is not authority.",
+    "No authority, no finality."
+  ],
+  "lifecycle_spine": [
+    {
+      "stage": "entity",
+      "label": "Entity & Principal",
+      "question": "Who/what exists and acts?",
+      "kye_artefact": "constitution/01-NAMING.md",
+      "chapter_ref": "constitution/01-NAMING.md"
+    },
+    {
+      "stage": "principal",
+      "label": "Agent as Principal",
+      "question": "Is the actor a first-class governed principal?",
+      "kye_artefact": "constitution/00-INDEX.md",
+      "chapter_ref": "constitution/00-INDEX.md"
+    },
+    {
+      "stage": "delegated_authority",
+      "label": "Delegated Authority Chain",
+      "question": "Who authorised whom, for what scope?",
+      "kye_artefact": "constitution/52-DELEGATED-AGENT-BINDING.md",
+      "chapter_ref": "constitution/52-DELEGATED-AGENT-BINDING.md"
+    },
+    {
+      "stage": "purpose",
+      "label": "Purpose & Scope",
+      "question": "Does the action match an approved purpose?",
+      "kye_artefact": "constitution/12-PURPOSE-PERMISSION.md",
+      "chapter_ref": "constitution/12-PURPOSE-PERMISSION.md"
+    },
+    {
+      "stage": "data_tool_model",
+      "label": "Allowed Data / Tool / Model",
+      "question": "Is the data/tool/model allowed for this actor?",
+      "kye_artefact": "constitution/31-DATA-GOVERNANCE-PACK.md",
+      "chapter_ref": "constitution/31-DATA-GOVERNANCE-PACK.md"
+    },
+    {
+      "stage": "approval",
+      "label": "Human Approval Gate",
+      "question": "Was required human approval obtained?",
+      "kye_artefact": "constitution/36-GOVERNEDUI.md",
+      "chapter_ref": "constitution/36-GOVERNEDUI.md"
+    },
+    {
+      "stage": "decision",
+      "label": "Decision Map\u2122",
+      "question": "What inputs/policy/evidence/actor produced the verdict?",
+      "kye_artefact": "constitution/13-RESILIENCE-LOOP.md",
+      "chapter_ref": "constitution/13-RESILIENCE-LOOP.md"
+    },
+    {
+      "stage": "evidence",
+      "label": "Evidence Pack\u2122",
+      "question": "Is there a signed action-level proof bundle?",
+      "kye_artefact": "constitution/13-RESILIENCE-LOOP.md",
+      "chapter_ref": "constitution/13-RESILIENCE-LOOP.md"
+    },
+    {
+      "stage": "replay",
+      "label": "Replay Proof\u2122",
+      "question": "Can it be reconstructed without trusting the vendor?",
+      "kye_artefact": "constitution/13-RESILIENCE-LOOP.md",
+      "chapter_ref": "constitution/13-RESILIENCE-LOOP.md"
+    },
+    {
+      "stage": "finality",
+      "label": "Finality Gate",
+      "question": "May the action become final/relied-upon?",
+      "kye_artefact": "constitution/27-COMMERCIAL-LIFECYCLE.md",
+      "chapter_ref": "constitution/27-COMMERCIAL-LIFECYCLE.md"
+    },
+    {
+      "stage": "drift_revocation",
+      "label": "Drift / Expiry / Revocation",
+      "question": "Has the authority drifted, expired or been revoked?",
+      "kye_artefact": "constitution/34-RECONCILIATION-ENGINE.md",
+      "chapter_ref": "constitution/34-RECONCILIATION-ENGINE.md"
+    }
+  ],
+  "adjacencies": [
+    {
+      "name": "OSYRA",
+      "relation": "contained-by-kye",
+      "kye_root": true,
+      "what_they_own": "the regulated output-to-action boundary checkpoint",
+      "positioning_line": "OSYRA controls the boundary where AI output becomes action \u2014 one gate in KYE's chain. KYE proves the full authority chain behind the action, end to end to finality."
+    },
+    {
+      "name": "RiCo (Runtime Integrity Control)",
+      "relation": "contained-by-kye",
+      "kye_root": true,
+      "what_they_own": "the transition between possibility and consequence (context/authority/execution/admissibility/continuity integrity at the point of execution)",
+      "positioning_line": "RiCo governs the single transition to consequence; that is KYE's Finality Gate. KYE governs the whole lifecycle that earns the right to reach it \u2014 entity, delegation, purpose, evidence, replay \u2014 not just the last checkpoint."
+    },
+    {
+      "name": "SEILX",
+      "relation": "input-layer",
+      "kye_root": true,
+      "what_they_own": "tamper-evident AI decision-time evidence integrity (the black box)",
+      "positioning_line": "SEILX proves what happened at decision time \u2014 an input to KYE's evidence layer. KYE proves whether the action had authority and may become final."
+    },
+    {
+      "name": "Benchmarks.bio",
+      "relation": "input-layer",
+      "kye_root": true,
+      "what_they_own": "capability assurance for biology agents (can the agent do the work?)",
+      "positioning_line": "Benchmarks.bio proves capability; KYE proves authority. Capability evidence is a precondition that scopes authority via the Benchmark-to-Authority Gate \u2014 never permission to act."
+    },
+    {
+      "name": "Donald Andrechek / TTP",
+      "relation": "input-layer",
+      "kye_root": true,
+      "what_they_own": "the thesis that AI governance must include evidence integrity",
+      "positioning_line": "Evidence can be polished; authority cannot be faked. KYE's Replay Proof\u2122 is reconstructable from public keys alone \u2014 the evidence-integrity bar TTP calls for, made non-repudiable."
+    }
+  ],
+  "follower_dilution_denylist": [
+    "execution-control architecture",
+    "action boundary governance",
+    "ai governance tool",
+    "ai governance platform",
+    "model governance suite"
+  ],
+  "follower_dilution_note": "These are the diluted shared-middle terms OSYRA/RiCo/generic-GRC occupy. KYE primary positioning (hero/lede) MUST lead with the owned category (Authority Finality\u2122) + the doctrine ladder, never with a lone denylisted phrase. Advisory scan over public hero/positioning surfaces (\u00a70.33 invariant 3)."
+}

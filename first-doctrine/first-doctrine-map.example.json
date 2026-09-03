@@ -1,0 +1,147 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.first_doctrine_map.v1.json",
+  "schema": "kye.first_doctrine_map.v1",
+  "registry_id": "kye:registry:first-doctrine-map",
+  "adopted_at": "2026-07-12",
+  "constitution_ref": "constitution/00-INDEX.md \u00a70.45",
+  "description": "Illustrative valid instance of the \u00a70.45 \"-First\" Doctrine map \u2014 all thirteen '-first' primitives, each binding an existing enforcing gate.",
+  "primitives": [
+    {
+      "primitive_id": "schema-first",
+      "question": "Does the schema land before the code that consumes its instances?",
+      "grafts": "\u00a70.9 + \u00a70.18",
+      "contribution": "graft",
+      "build_order": 1,
+      "enforcing_gates": [
+        "test:canonical-first",
+        "test:canonical-triple-coverage"
+      ]
+    },
+    {
+      "primitive_id": "dictionary-first",
+      "question": "Does the vocabulary land before terms are used?",
+      "grafts": "\u00a70.9 + \u00a70.18",
+      "contribution": "graft",
+      "build_order": 2,
+      "enforcing_gates": [
+        "test:canonical-triple-coverage"
+      ]
+    },
+    {
+      "primitive_id": "registry-first",
+      "question": "Does the registry land before instances are authored?",
+      "grafts": "\u00a70.9 + \u00a70.18",
+      "contribution": "graft",
+      "build_order": 3,
+      "enforcing_gates": [
+        "test:canonical-first",
+        "test:canonical-triple-coverage"
+      ]
+    },
+    {
+      "primitive_id": "manifest-first",
+      "question": "Does the manifest land before the runtime that reads it?",
+      "grafts": "\u00a70.9 + \u00a70.18",
+      "contribution": "graft",
+      "build_order": 4,
+      "enforcing_gates": [
+        "test:canonical-triple-coverage"
+      ]
+    },
+    {
+      "primitive_id": "api-first",
+      "question": "Is the OpenAPI operation declared with its handler, never post-facto?",
+      "grafts": "NEW \u2014 bijection named as doctrine",
+      "contribution": "new",
+      "build_order": 5,
+      "enforcing_gates": [
+        "test:openapi-functions-bijection"
+      ]
+    },
+    {
+      "primitive_id": "machine-readable-first",
+      "question": "Is every consumed artefact structured + schema'd?",
+      "grafts": "\u00a743",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:canonical-triple-coverage"
+      ]
+    },
+    {
+      "primitive_id": "agentic-first",
+      "aliases": [
+        "ai-first"
+      ],
+      "question": "Is every agent a first-class principal?",
+      "grafts": "\u00a70.30",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:agent-native-principal-canonical"
+      ]
+    },
+    {
+      "primitive_id": "callable-first",
+      "question": "Is every capability exposed via a governed callable surface?",
+      "grafts": "\u00a70.30 + \u00a715 + \u00a769",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:openapi-functions-bijection",
+        "test:agent-native-principal-canonical"
+      ]
+    },
+    {
+      "primitive_id": "discoverable-by-agents-first",
+      "question": "Is every surface machine-discoverable by agents from ship?",
+      "grafts": "\u00a743 \u00a74d + \u00a750",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:agent-readable-canonical",
+        "test:content-graph-coverage"
+      ]
+    },
+    {
+      "primitive_id": "entity-first",
+      "question": "Does every entity carry a KYE-ID under governance?",
+      "grafts": "\u00a70.36 + \u00a70.37",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:entity-id-canonical"
+      ]
+    },
+    {
+      "primitive_id": "cloudflare-first",
+      "question": "Is every hot-path component edge-native?",
+      "grafts": "\u00a716",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:cf-resource-governance-coverage"
+      ]
+    },
+    {
+      "primitive_id": "stripe-first",
+      "question": "Is every commercial surface metered on Stripe (no access before invoice.paid)?",
+      "grafts": "\u00a727",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:stripe-canonical"
+      ]
+    },
+    {
+      "primitive_id": "governed-and-governable-first",
+      "question": "Does every privileged component run the real Decision Engine at t=0?",
+      "grafts": "\u00a70.3 + \u00a70.40 + \u00a70.34",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:governed-inventory-coverage"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "kye.policy_engine_adapter.v1",
+  "adapter_id": "kye:policy-engine-adapter:aws-verified-permissions",
+  "engine_kind": "aws-verified-permissions",
+  "display_name": "AWS Verified Permissions Adapter",
+  "status": "supported",
+  "invocation": {
+    "mode": "remote-http",
+    "request_shape": "avp-is-authorized",
+    "endpoint_ref": "binding:AVP_POLICY_STORE",
+    "timeout_ms": 400,
+    "fail_mode": "fail-closed",
+    "local_verdict": "local-policy-set",
+    "admitted_as": "kye:action-class:tool-call"
+  },
+  "response_mapping": {
+    "decision_vocab_ref": "https://kyeprotocol.com/schemas/common.json#/$defs/Decision",
+    "allow_maps_to": "allow",
+    "deny_maps_to": "deny",
+    "obligation_passthrough": true
+  },
+  "evidence_emission": {
+    "required": true,
+    "envelope_family": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.tool_call.v1",
+      "kye.evidence.pack.v1"
+    ],
+    "records_raw_engine_verdict": true
+  },
+  "kill_switch": {
+    "endpoint": "POST /v1/pdp/adapters/aws-verified-permissions/kill",
+    "on_kill": "fallback-native-deny-by-default"
+  },
+  "kye_retains_above": [
+    "purpose-permission",
+    "authority-resolution",
+    "authority-finality",
+    "evidence-pack",
+    "replay-proof",
+    "tenant-isolation"
+  ],
+  "notes": "KYE marshals the decision into an AWS Verified Permissions IsAuthorized request (principal, action, resource, context, policy store id) over the remote-http transport, maps the Cedar-backed ALLOW/DENY back to a KYE DecisionOutcome, and seals the raw AVP verdict in the Evidence Pack. AWS is an external runtime integrated by clean contract (§0.28) — no AWS infrastructure is coupled into KYE canon; the live policy-store binding is supplied by the adopter at deploy time."
+}

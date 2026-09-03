@@ -1,0 +1,86 @@
+[
+  {
+    "actor_subject_id": "kye:subject:synthetic:7349",
+    "action": "account.open",
+    "outcome": "refused",
+    "decision_ref": "REF-B8BD8FB9",
+    "decided_day_offset": -31
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:9812",
+    "action": "payment.prepare",
+    "outcome": "admitted",
+    "decision_ref": "REF-4A9F809D",
+    "decided_day_offset": -50
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:1668",
+    "action": "data.export",
+    "outcome": "admitted",
+    "decision_ref": "REF-06F70A48",
+    "decided_day_offset": -12
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:0807",
+    "action": "data.export",
+    "outcome": "review",
+    "decision_ref": "REF-383FB478",
+    "decided_day_offset": -23
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:3069",
+    "action": "payment.prepare",
+    "outcome": "review",
+    "decision_ref": "REF-5D377D5E",
+    "decided_day_offset": -61
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:8401",
+    "action": "payment.prepare",
+    "outcome": "admitted",
+    "decision_ref": "REF-97EF4842",
+    "decided_day_offset": -76
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:2660",
+    "action": "model.deploy",
+    "outcome": "refused",
+    "decision_ref": "REF-2A8D2BEA",
+    "decided_day_offset": -46
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:0213",
+    "action": "account.open",
+    "outcome": "refused",
+    "decision_ref": "REF-D234E8D5",
+    "decided_day_offset": -37
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:5022",
+    "action": "model.deploy",
+    "outcome": "refused",
+    "decision_ref": "REF-3895C97B",
+    "decided_day_offset": -42
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:9660",
+    "action": "data.export",
+    "outcome": "admitted",
+    "decision_ref": "REF-753AC611",
+    "decided_day_offset": -81
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:7863",
+    "action": "model.deploy",
+    "outcome": "refused",
+    "decision_ref": "REF-20DA6623",
+    "decided_day_offset": -32
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:5792",
+    "action": "data.export",
+    "outcome": "refused",
+    "decision_ref": "REF-201061AC",
+    "decided_day_offset": -54
+  }
+]

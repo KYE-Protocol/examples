@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.enforcer_scope.v1.json",
+  "schema": "kye.enforcer_scope.v1",
+  "registry_id": "kye:registry:enforcer-scopes",
+  "adopted_at": "2026-07-05",
+  "constitution_ref": "constitution/00-INDEX.md §0.43",
+  "description": "Illustrative minimal §0.43 enforcer-scope registry — one domain-spanning enforcer declaring its full domain_root plus the required scope markers and forbidden narrowings the no-blind-spots meta-gate checks against its source. Public-safe: the illustrated enforcer scans the public tree only.",
+  "declared_only_baseline_key": null,
+  "enforcers": [
+    {
+      "enforcer_id": "patent-safety-scan",
+      "enforcer_script": "scripts/patent-safety-scan.sh",
+      "enforcer_npm_ref": null,
+      "concept": "mechanism-keyword leakage into any public surface (Hard rule #1 / §33)",
+      "domain_root": "public",
+      "forbidden_narrowings": ["find public/site -type f"],
+      "required_scope_markers": ["find public -type f"],
+      "status": "covered",
+      "notes": "public carries 8 surfaces (site/admin/app/dev/sandbox/status/oss/widgets) plus content libraries. The patent-safety concept spans the WHOLE public tree, so the scan must walk it end-to-end. Narrowing the walk to just one surface would blind it to a leak in the others — the exact §0.43 under-scoping class."
+    }
+  ]
+}

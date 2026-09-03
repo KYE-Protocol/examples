@@ -8,7 +8,7 @@
     "trust_domain": "pied-piper.example"
   },
   "delivery_id": "dlv_01JBL7INV003000000000000003",
-  "severity": "warning",
+  "severity": "warn",
   "payload": {
     "invoice_id": "kye:invoice:pied-piper.2026-05",
     "stripe_invoice_id": "in_1QPIEDPIPERABCDEF",

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.agent_comms_authority_profile.v1.json",
+  "schema": "kye.agent_comms_authority_profile.v1",
+  "profile_id": "kye:authority-profile:agent-comms",
+  "name": "KYE Agent Comms Authority Profile™",
+  "doctrine": "An agent can have a mailbox; whether it may send is an authority decision.",
+  "tenant_scoped": true,
+  "governed_actions": [
+    {
+      "action": "REGISTER_MAILBOX",
+      "action_class": "kye:action-class:register-mailbox",
+      "summary": "Provision a mailbox / address for a delegated agent at an external agent-mailbox provider. Capability acquisition only — send authority is never implied (capability is not authority, §0.33).",
+      "approval_mode": "single_approver",
+      "evidence_required": true
+    },
+    {
+      "action": "BIND_MAILBOX_TO_PRINCIPAL",
+      "action_class": "kye:action-class:bind-mailbox-to-principal",
+      "summary": "Bind a registered mailbox to exactly one Principal in one Tenant (§0.11/§0.30) — the identity precondition every subsequent mailbox action resolves through.",
+      "approval_mode": "single_approver",
+      "evidence_required": true
+    },
+    {
+      "action": "READ_INBOX",
+      "action_class": "kye:action-class:read-inbox",
+      "summary": "Read inbound messages from a bound mailbox into agent context — posture-tracked ingress (§52 posture signal), tenant-keyed.",
+      "approval_mode": "delegated",
+      "evidence_required": true
+    },
+    {
+      "action": "DRAFT_MESSAGE",
+      "action_class": "kye:action-class:draft-message",
+      "summary": "Compose a draft in a bound mailbox without dispatch — the pre-send stage of the draft→govern→approve→send lifecycle (§36 action-proposal pattern). No trust-boundary crossing until send.",
+      "approval_mode": "none",
+      "evidence_required": true
+    },
+    {
+      "action": "SEND_MESSAGE",
+      "action_class": "kye:action-class:send-message",
+      "summary": "Dispatch a message from a bound mailbox to a known in-scope recipient. Routine internal sends may run delegated within purpose scope; escalation rules raise the floor before finality. Resolves to the EXISTING root class kye:action-class:send-message (§0 — reused, never re-minted).",
+      "approval_mode": "delegated",
+      "evidence_required": true
+    },
+    {
+      "action": "REPLY",
+      "action_class": "kye:action-class:reply",
+      "summary": "Reply within an existing thread to established correspondents — the lowest-risk send variant, still governed and evidence-sealed at the action boundary.",
+      "approval_mode": "delegated",
+      "evidence_required": true
+    },
+    {
+      "action": "FORWARD",
+      "action_class": "kye:action-class:forward",
+      "summary": "Forward received content onward — content redistribution whose blast radius is the forwarded content's sensitivity, escalated when the recipient is external.",
+      "approval_mode": "delegated",
+      "evidence_required": true
+    },
+    {
+      "action": "SUBSCRIBE",
+      "action_class": "kye:action-class:subscribe",
+      "summary": "Subscribe the bound mailbox to a list, feed, or thread — an ongoing ingress commitment governed as a purpose-scoped data-access decision.",
+      "approval_mode": "delegated",
+      "evidence_required": true
+    },
+    {
+      "action": "ATTACH_FILE",
+      "action_class": "kye:action-class:attach-file",
+      "summary": "Attach a file to an outbound message — data leaving the trust boundary with the send; always escalated by the attachment_present condition.",
+      "approval_mode": "delegated",
+      "evidence_required": true
+    },
+    {
+      "action": "BULK_SEND",
+      "action_class": "kye:action-class:bulk-send",
+      "summary": "One-to-many dispatch from a bound mailbox — consequential by fan-out; human approval before finality, never auto.",
+      "approval_mode": "single_approver",
+      "evidence_required": true
+    },
+    {
+      "action": "EXTERNAL_RECIPIENT_SEND",
+      "action_class": "kye:action-class:external-recipient-send",
+      "summary": "Send to a recipient outside the tenant trust domain — irreversible once delivered; human approval before finality, escalated further for financial or legal content.",
+      "approval_mode": "single_approver",
+      "evidence_required": true
+    }
+  ],
+  "escalation_rules": [
+    {
+      "condition": "external_recipient",
+      "min_approval_mode": "single_approver",
+      "rationale": "A message leaving the tenant trust domain cannot be recalled — a human approves before the crossing becomes final."
+    },
+    {
+      "condition": "bulk_send",
+      "min_approval_mode": "single_approver",
+      "rationale": "Fan-out multiplies the blast radius of a single authority mistake; one governed approval covers the batch, per-recipient evidence still seals."
+    },
+    {
+      "condition": "financial_or_legal_content",
+      "min_approval_mode": "two_person_with_legal",
+      "rationale": "Content that commits the principal financially or legally is an external representation (kye:action-class:represent-externally posture) — dual sign-off with legal before finality."
+    },
+    {
+      "condition": "new_recipient_domain",
+      "min_approval_mode": "single_approver",
+      "rationale": "A first-ever recipient domain is an untested trust edge — a human confirms the correspondent before the agent's send authority extends to it."
+    },
+    {
+      "condition": "attachment_present",
+      "min_approval_mode": "single_approver",
+      "rationale": "An attachment moves data out with the message; the send decision must cover the data leaving, not only the text."
+    }
+  ],
+  "connector_contract": {
+    "provider_class": "agent-mailbox-provider",
+    "swappable": true,
+    "no_provider_runtime": true,
+    "required_capabilities": [
+      "mailbox provisioning and deprovisioning per agent, tenant-keyed",
+      "inbox read with per-message identifiers stable enough to pin as evidence",
+      "draft persistence separate from dispatch (draft is not send)",
+      "deferred dispatch — the provider MUST be able to withhold dispatch until the governing decision returns ALLOW",
+      "per-message dispatch receipt (message id + timestamp) for the evidence seal",
+      "recipient and thread metadata sufficient to evaluate escalation conditions before dispatch"
+    ],
+    "boundary_ref": "kye:boundary:email-outbound"
+  },
+  "bindings": {
+    "action_class_registry": "kye:registry:action-classes",
+    "approval_mode_enum": "kye.governedui.action_proposal.v1#approval_mode",
+    "channel_vocabulary": "kye.comms.dispatch.v1#channel",
+    "agent_envelopes": "kye.agent.governance.v1",
+    "purpose_scope": "kye.purpose.admissibility.v1",
+    "evidence_replay": "kye.evidence.pack.v1"
+  }
+}

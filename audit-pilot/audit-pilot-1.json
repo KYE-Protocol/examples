@@ -21,7 +21,7 @@
   "started_at": "2026-05-12T09:00:00Z",
   "ends_at": "2026-07-11T09:00:00Z",
   "consent": {
-    "accepted_clauses": ["tos", "privacy", "aup", "authority", "dpa"],
+    "accepted_clauses": ["tos", "privacy", "aup", "authority", "dpa", "mutual_evaluation"],
     "policy_version_hash": "f3a1c0b7d29e4561",
     "ip_hash": "9b8a7c6d5e4f3210112233445566778899aabbccddeeff0011223344556677",
     "ua_hash": "1122334455667788991122334455667788991122334455667788991122334455",

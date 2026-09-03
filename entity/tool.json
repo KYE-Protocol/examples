@@ -1,0 +1,15 @@
+{
+  "schema_version": "kye.entity.tool.v1",
+  "id": "kye:tool:northwind-bank-too-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "name": "Northwind Bank payments release",
+  "function_signature": "releasePayment(paymentId: string, amount: Money): ReleaseResult",
+  "declared_capabilities": [
+    "payment.release"
+  ],
+  "side_effects": [
+    "read"
+  ],
+  "state": "draft",
+  "created_at": "2026-08-07T09:15:00Z"
+}

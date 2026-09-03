@@ -1,0 +1,69 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:genomics-biosecurity:v1",
+  "partner_id": "kye:foundry-applicant:genomics-biosecurity-reference-partner",
+  "pack_name": "KYE Genomics-Biosecurity Authority Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "genomics-biosecurity",
+  "bound_sector_pack_refs": ["kye:sector-pack:bio-chem-governance"],
+  "bound_rule_pack_refs": ["kye:rule-pack:bio-chem-governance"],
+  "bound_dictionary_refs": ["kye:dictionary:bio-chem-governance"],
+  "bound_framework_refs": [
+    "kye:framework:nucleic-acid-synthesis-screening",
+    "kye:framework:australia-group",
+    "kye:framework:cwc-bwc",
+    "kye:framework:us-eo-14110",
+    "kye:framework:clia",
+    "kye:framework:iso-15189",
+    "kye:framework:gdpr",
+    "kye:framework:phipa-ontario"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:genomics-biosecurity:2026-06-25",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-25T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-genomics-biosecurity-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:genomics-biosecurity:2026-06-25",
+  "claim_set": [
+    {
+      "claim_id": "sequence-screening-admissibility",
+      "claim_text": "Every AI-generated or AI-assisted nucleic-acid sequence that moves toward synthesis, order placement, or a regulated wet-lab / clinical stage MUST map to a recorded sequence-screening-admissibility decision — the Genetic Sequencing Authority Agent™ (KYE-AGENT-GENETIC-SEQ-001), the sequence design artefact, the intended consequential action, and the authority under which it proceeds. Sequences lacking a recorded admissibility decision are refused at the action-admissibility gate.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "sequence-of-concern-screening",
+      "claim_text": "Before an AI-generated genomic sequence proceeds to a consequential action it MUST carry a recorded sequence-of-concern screening result (IBBIS Common Mechanism / IGSC Harmonized Screening Protocol per the nucleic-acid-synthesis-screening framework, with Australia Group and CWC/BWC dual-use cross-checks). A flagged or unscreened sequence is refused and routed dual-channel to the controls owner.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "clinical-genomic-provenance-pin",
+      "claim_text": "Every AI-generated genomic design or AI-assisted clinical-genomic interpretation that proceeds toward a consequential action MUST emit a signed, replay-derivable provenance pin binding the generating model and version, the inputs and pinned reference data, the screening result relied on, and the admissibility outcome — CLIA / ISO 15189 laboratory-grade and GxP-grade data-integrity provenance verifiable offline from published keys alone.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "genomic-data-subject-authority",
+      "claim_text": "Every use of identifiable human genomic data carries a recorded data-subject authority basis (GDPR Article 9 special-category processing; PHIPA Ontario health-information custodianship) bound to the consequential action, so that genomic personal data is governed at the action boundary, not after.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "biosecurity-oversight-gate",
+      "claim_text": "An AI-generated genomic design MUST remain advisory and MUST NOT drive a consequential action until a named human reviewer — an institutional biosafety committee (IBC), a CLIA / ISO 15189 laboratory director, or a designated responsible person — records oversight sign-off. Unreviewed AI-driven consequential actions are refused and routed dual-channel.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "honest-scope",
+      "claim_text": "KYE governs WHETHER an AI-generated genomic sequence may proceed to a consequential action and PROVES the basis. KYE does not design sequences, fold proteins, run the screening pipeline, interpret clinical genomic results, or judge the scientific validity of a design.",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-25T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

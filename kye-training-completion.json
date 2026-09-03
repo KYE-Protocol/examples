@@ -1,0 +1,11 @@
+{
+  "schema_id": "kye.training.completion.v1",
+  "completion_id": "kye:training-completion:northwind-bank-tc-2026-08-0417",
+  "trainer_org_id": "trainer_org-2026-08-0417",
+  "cohort_id": "cohort-2026-08-0417",
+  "partner_user_id": "partner_user-2026-08-0417",
+  "verdict": "pass",
+  "sealed_at": "2026-08-07T09:15:00Z",
+  "signed_by_kid": "kye-signing-2026-08",
+  "signature_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+}

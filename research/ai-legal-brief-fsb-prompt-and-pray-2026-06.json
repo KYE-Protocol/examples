@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:ai-legal-brief-fsb-prompt-and-pray:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:ai-legal-brief-fsb-prompt-and-pray-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "lE9rvEQqC9VSe396HVKPtFIlejXXJGu803KsWiG5ZQ70gZCP7sjARfNhmNP4COWltM8kSqoQHYlexVlfvqYlDw=="
+    "signature": "FoasuKIjz8B4T+xcKq0k//WizIhrLdwpxiDPUqcJ6c2tciKVjg4XMmDtxixTVVwBezowL30eyWUl7CGbln2VAw=="
   },
   "citations": [
     {

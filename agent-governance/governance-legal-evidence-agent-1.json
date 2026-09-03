@@ -1,0 +1,23 @@
+{
+  "schema": "kye.agent.governance.v1",
+  "agent_id": "runtime-kye-legal-evidence-authority-agent",
+  "parent_task": "6b2f9d41-8e33-4c77-a1b2-9f0c7d5e21aa",
+  "dispatched_at": "2026-07-05T10:04:11Z",
+  "purpose": "Govern WHETHER the bound AI legal agent may act on evidence in matter kye:matter:acme-v-globex — resolve matter authority, custodian scope, privilege/privacy policy, jurisdiction, and the §36 human-approval requirement for each proposed kye:action-class:data* evidence action, then allow/deny/escalate at the §52 boundary via the real §12 PDP and seal the Authority Finality receipt (§13/§21). Never judge the evidence's truth; never practise law; never replace counsel.",
+  "scope": {
+    "read_paths": [
+      "matters/acme-v-globex/custodians/*",
+      "matters/acme-v-globex/evidence_manifest/*",
+      "matters/acme-v-globex/legal_hold/*",
+      "internal**"
+    ],
+    "write_paths": [
+      "matters/acme-v-globex/authority_decision/*",
+      "_diagnostics/legal-evidence-authority/**"
+    ]
+  },
+  "mcp_allow_list": [],
+  "constitutional_acknowledgement": ["§0", "§0.3", "§0.11", "§0.30", "§0.33", "§0.35", "§12", "§13", "§21", "§36", "§52"],
+  "binding_manifest_ref": "internal#runtime-kye-legal-evidence-authority-agent",
+  "notes": "Illustrative §52 task-start binding envelope for the KYE AI Legal Agent Authority Gate™. The per-task scope narrows the binding-manifest default to a single matter trust domain (§0.11). mcp_allow_list is CLOSED — the gate runs the authorized-internal §12 PDP over the EXISTING kye:action-class:data* classes, no external tool calls."
+}

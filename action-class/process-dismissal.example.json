@@ -1,0 +1,16 @@
+{
+  "id": "kye:action-class:process-dismissal",
+  "entity_class": "action-class",
+  "label": "process dismissal",
+  "definition": "Process a dismissal of an employee. Irreversible and critical — unfair-dismissal liability under the Employment Rights Act turns on a fair reason and a fair process; §0.4 banking-grade dual-channel sign-off with legal review applies before finality.",
+  "plane": "employment",
+  "reversibility": "irreversible",
+  "consequence_tier": "critical",
+  "default_approval_mode": "two_person_with_legal",
+  "evidence_required": true,
+  "parent_action_class": "kye:action-class:employment",
+  "framework_refs": [
+    "era-1996.s98",
+    "acas-cop-1"
+  ]
+}

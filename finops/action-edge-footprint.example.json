@@ -1,0 +1,35 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.action_edge_footprint.v1.json",
+  "schema": "kye.action_edge_footprint.v1",
+  "registry_id": "kye:registry:action-edge-footprint",
+  "adopted_at": "2026-07-07",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md",
+  "description": "Illustrative instance — the per-governed-action edge footprint + per-kind throughput classes from which every product cost-to-serve model is generated (never hand-authored per product).",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "Unit-economics modelling primitive."
+  },
+  "default_markup_multiple": 10,
+  "tenant_classes": [
+    {
+      "product_kind": "foundry-pack",
+      "tenant_tier": "medium",
+      "monthly_governed_actions": 50000,
+      "rationale": "A §54 Foundry sector pack governs a mid-size sector customer's action stream."
+    }
+  ],
+  "per_action_factors": [
+    {
+      "factor": "workers_invocation",
+      "per_action_ratio": 6,
+      "driver": "PDP admissibility + evidence-pack + replay-seal + comms + reconcile handlers (§12/§13/§34/§38)",
+      "basis": "§0.3 evidence-event family: one Worker invocation per pipeline stage a governed action traverses."
+    },
+    {
+      "factor": "d1_row_write",
+      "per_action_ratio": 8,
+      "driver": "WORM audit appends + decision-map + evidence rows (§30 append-only)",
+      "basis": "§30 WORM append-only audit: one D1 append per §0.3 evidence event persisted for the action."
+    }
+  ]
+}

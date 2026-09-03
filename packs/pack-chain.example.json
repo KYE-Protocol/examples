@@ -1,0 +1,44 @@
+{
+  "schema": "kye.pack_chain.v1",
+  "chain_id": "kye:pack-chain:governance-packs",
+  "genesis": "sha384:4c965adec8b5ca350469fe55e468613b0652b466c2c1350c4ce2fbc2f41a1453c5849325f1a9b20c0abab5bed71b4499",
+  "count": 3,
+  "head": "sha384:3f7dd217825d8a5b75c59433579047fcfb33a704b9cc83ea4f9d830f72430327b6d8b6055563dbb165533d2ec5059638",
+  "hash_algo": "sha384",
+  "generated_by": "scripts/build-pack-chain.mjs",
+  "families": [
+    "rule-pack",
+    "sector-pack",
+    "starter-pack"
+  ],
+  "entries": [
+    {
+      "entry_index": 0,
+      "family": "rule-pack",
+      "pack_id": "kye:rule-pack:accounting-governance",
+      "slug": "accounting-governance",
+      "prev_hash": "sha384:4c965adec8b5ca350469fe55e468613b0652b466c2c1350c4ce2fbc2f41a1453c5849325f1a9b20c0abab5bed71b4499",
+      "payload_hash": "sha384:7aa40069c1011082f9b2b1d8f3a1216c2c71528c523c5843a0db021c37744b5622e83d818de588a871221fc3048df096",
+      "entry_hash": "sha384:5c332e2d93f8efe3b55c8d6846b17940bf6cead957db5eb48f17f704c2e271dbc41f5ce39861699101cba6f3d185584d"
+    },
+    {
+      "entry_index": 1,
+      "family": "rule-pack",
+      "pack_id": "kye:rule-pack:action_admissibility",
+      "slug": "action-admissibility",
+      "prev_hash": "sha384:5c332e2d93f8efe3b55c8d6846b17940bf6cead957db5eb48f17f704c2e271dbc41f5ce39861699101cba6f3d185584d",
+      "payload_hash": "sha384:f914a89eba64138a90b4faef4411ed6c59aeafa6643300bcfacbb72154eca725697d353970936842293faf6e17fd6cc8",
+      "entry_hash": "sha384:edddcc44d5d22b557df1fe3aa3957be005837292b73efdffcbec59a6c0bf4a838293d5e642028d9a8b939043cdc95570"
+    },
+    {
+      "entry_index": 2,
+      "family": "rule-pack",
+      "pack_id": "kye:rule-pack:agentic-lending",
+      "slug": "agentic-lending",
+      "prev_hash": "sha384:edddcc44d5d22b557df1fe3aa3957be005837292b73efdffcbec59a6c0bf4a838293d5e642028d9a8b939043cdc95570",
+      "payload_hash": "sha384:1ca649dd275cafa9b5f560721ddc81a65863cd5cb5373c5c6e1e45afd94826d9f49657a2a623af4b987db8c5c7dd097a",
+      "entry_hash": "sha384:3f7dd217825d8a5b75c59433579047fcfb33a704b9cc83ea4f9d830f72430327b6d8b6055563dbb165533d2ec5059638"
+    }
+  ],
+  "entity_class": "pack-chain"
+}

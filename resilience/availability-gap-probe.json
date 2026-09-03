@@ -1,0 +1,26 @@
+{
+  "schema": "kye.resilience.availability_gap.v1",
+  "gap_id": "kye:availability-gap:kye-pdp-worker:4f2a91c8b3d07e6512aa09fe",
+  "engine_ref": "kye:worker:kye-pdp-worker",
+  "window": {
+    "from": "2026-07-29T02:14:05.000Z",
+    "to": "2026-07-29T02:19:41.000Z"
+  },
+  "failure_class": "timeout",
+  "response_budget_ms": 2000,
+  "probe_count": 11,
+  "consecutive_failures": 11,
+  "last_known_good_at": "2026-07-29T02:13:35.000Z",
+  "detection_source": "probe",
+  "reported_by": null,
+  "detected_at": "2026-07-29T02:14:07.412Z",
+  "decision_classes_blocked": [
+    "kye:decision-class:principal-registration",
+    "kye:decision-class:artefact-registration",
+    "kye:decision-class:production-deploy"
+  ],
+  "reconciliation": null,
+  "incident_ref": "kye:incident:availability:kye-pdp-worker:2026-07-29",
+  "evidence_pack_id": "kye:evidence-pack:9c41d0e2ab6f38715d24c8f0",
+  "tenant_id": null
+}

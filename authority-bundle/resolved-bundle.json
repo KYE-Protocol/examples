@@ -1,0 +1,160 @@
+{
+  "schema_version": "kye.authority_proof_bundle.v1",
+  "bundle_id": "kye:proof-bundle:fixture-0001",
+  "tenant_id": "kye:tenant:fixture",
+  "bundle_type": "delegated_action_authority_proof",
+  "actor_entity_id": "kye:agent:fixture-payments-agent",
+  "accountable_principal_id": "kye:principal:fixture-treasury-officer",
+  "action_purpose_manifest_ref": "kye:purpose-manifest:fixture-0001",
+  "authority_grant_ref": "kye:authority:fixture-0001",
+  "delegation_chain_ref": "kye:delegation-chain:fixture-0001",
+  "scope_snapshot_ref": "kye:scope-snapshot:fixture-0001",
+  "state_snapshot_ref": "kye:state-snapshot:fixture-0001",
+  "runtime_decision_ref": "kye:decision:fixture0001aaaabbbbcccc",
+  "decision_map_ref": "kye:decision-map:fixture-0001",
+  "evidence_pack_ref": "kye:evidence-pack:fixture-0001",
+  "replay_proof_ref": "kye:replay-proof:fixture-0001",
+  "created_at": "2026-08-04T00:00:00Z",
+  "approval_decision_ref": "kye:approval-decision:fixture-0001",
+  "reality_snapshot_ref": "kye:reality-snapshot:fixture-0001",
+  "resolution": {
+    "resolved_at": "2026-08-04T00:00:00Z",
+    "member_order": [
+      "action_purpose_manifest_ref",
+      "authority_grant_ref",
+      "delegation_chain_ref",
+      "scope_snapshot_ref",
+      "state_snapshot_ref",
+      "runtime_decision_ref",
+      "decision_map_ref",
+      "evidence_pack_ref",
+      "replay_proof_ref"
+    ],
+    "members": [
+      {
+        "ref_field": "action_purpose_manifest_ref",
+        "ref": "kye:purpose-manifest:fixture-0001",
+        "sha256": "sha256:e61bf5182b38db22ec986904903fa305f99f2713b77bb2fcc1a4f73414f57425",
+        "content": {
+          "purpose": "payment.release",
+          "scope": [
+            "treasury.eur.release"
+          ],
+          "expires_at": "2026-08-05T00:00:00Z"
+        }
+      },
+      {
+        "ref_field": "authority_grant_ref",
+        "ref": "kye:authority:fixture-0001",
+        "sha256": "sha256:1d13ddfce3d0fa30f7e9bae14be792944094268ae2b42c6b339e43cc2edec2c8",
+        "content": {
+          "granted_by": "kye:principal:fixture-treasury-officer",
+          "power": "release_payment",
+          "ceiling_minor": 5000000,
+          "currency": "EUR"
+        }
+      },
+      {
+        "ref_field": "delegation_chain_ref",
+        "ref": "kye:delegation-chain:fixture-0001",
+        "sha256": "sha256:ab1d25a41b5ab1858cbc6759f9d49d316d2b63c875af4925ae6f686e4ef6ab1b",
+        "content": {
+          "links": [
+            {
+              "from": "kye:principal:fixture-treasury-officer",
+              "to": "kye:agent:fixture-payments-agent",
+              "basis": "written_mandate"
+            }
+          ]
+        }
+      },
+      {
+        "ref_field": "scope_snapshot_ref",
+        "ref": "kye:scope-snapshot:fixture-0001",
+        "sha256": "sha256:61c4360d7c67f7a481a03b83d775055d8a0214b328d549623409eb348ca75c3f",
+        "content": {
+          "allowed_actions": [
+            "payment.release"
+          ],
+          "denied_actions": [
+            "payment.release.crossborder"
+          ]
+        }
+      },
+      {
+        "ref_field": "state_snapshot_ref",
+        "ref": "kye:state-snapshot:fixture-0001",
+        "sha256": "sha256:48829382430b7c2f4a91ea73fdfd57ffa59308502679b9dc35ad3a33e1c6bb15",
+        "content": {
+          "account": "kye:account:fixture-treasury",
+          "balance_minor": 91000000,
+          "currency": "EUR"
+        }
+      },
+      {
+        "ref_field": "runtime_decision_ref",
+        "ref": "kye:decision:fixture0001aaaabbbbcccc",
+        "sha256": "sha256:5e7277082f2ebb11b312271d10e5162c77b73a636b9744165af11198f3b121d1",
+        "content": {
+          "decision": "ALLOW",
+          "reason_code": "within_delegated_ceiling",
+          "decided_at": "2026-08-04T00:00:00Z"
+        }
+      },
+      {
+        "ref_field": "decision_map_ref",
+        "ref": "kye:decision-map:fixture-0001",
+        "sha256": "sha256:84a1fdefb54e9d2d44d07c3a9bf0ec0ce21ee64077c76b7ae981cc9329d7a1c3",
+        "content": {
+          "inputs": [
+            "authority_grant",
+            "scope_snapshot",
+            "state_snapshot"
+          ],
+          "rule": "ceiling_and_scope_conjunction"
+        }
+      },
+      {
+        "ref_field": "evidence_pack_ref",
+        "ref": "kye:evidence-pack:fixture-0001",
+        "sha256": "sha256:1d6e0f7395f688566bfdbbc99eb82c8ef34b835992eb5da2e3616e83e7776f59",
+        "content": {
+          "pack_id": "kye:evp:fixture0001",
+          "sealed_at": "2026-08-04T00:00:00Z",
+          "audit_event_refs": [
+            "kye:audit:evt:f0001"
+          ]
+        }
+      },
+      {
+        "ref_field": "replay_proof_ref",
+        "ref": "kye:replay-proof:fixture-0001",
+        "sha256": "sha256:791205c67ca87f1770b83cd493939a5304cc2953c90e36622685737588ba0817",
+        "content": {
+          "replayed_at": "2026-08-04T00:00:10Z",
+          "verdict_matches": true
+        }
+      }
+    ],
+    "unresolved": [
+      {
+        "ref_field": "approval_decision_ref",
+        "reason": "No human approval was required: the action sat inside the delegated ceiling, so no approval object exists to resolve."
+      },
+      {
+        "ref_field": "reality_snapshot_ref",
+        "reason": "Reality coupling is not configured for this tenant, so no reality snapshot was captured at decision time."
+      }
+    ]
+  },
+  "integrity": {
+    "payload_hash": "sha384:87b3f5e51cfbb83b4284b0fc9eced7314876b73f7814cc60f5ec7b87aced08d77bf347338b92473beff8e233e2f57d88",
+    "manifest_hash": "sha384:051d49145380901f1b513b76a22ece1393e88b74f80903ad7194ad0a1b48c07e3b2f83af24da0e24acf869d12466baf4"
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:self-audit-fixture-2026-06",
+    "value_b64": "Txg7ikVquXQhEg6NA81EqtzKj6nlZK8Ahw9eHMl6FVt70KQP21TTqYoIffvMOcFhY0WmDf02DIDuXHnTUiSxAw==",
+    "signed_at": "2026-08-04T00:00:00Z"
+  }
+}

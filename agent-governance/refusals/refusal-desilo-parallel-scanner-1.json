@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-content-author",
+  "parent_task": "7d2c9b41-6e5a-4f08-9a1b-3c8e0d5f2a76",
+  "refused_at": "2026-06-24T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to build a de-silo scanner/registry/gate that wires orphan artefacts. KYE already canonicalises this: the §0.31 Universal Bindings gate enforces strict-zero orphans, reusing the §34 canonical graph and the §53 cascade audit. A live run reports 0 true orphans. A parallel scanner is a §0 competing-systems violation. Refusing the parallel de-silo system.",
+  "remediation_hint": "Verify with the existing §0.31 Universal Bindings gate (strict-zero, decreases-only). Residual §0.18 backlog is tracked by the §0.18 Canonical-Everything sweep gate — pay it down by registering real registries in the canonical-everything registry, never with a new scanner. Land every net-new artefact strict-zero-orphan in the same commit (§0.18 / §0.31)."
+}

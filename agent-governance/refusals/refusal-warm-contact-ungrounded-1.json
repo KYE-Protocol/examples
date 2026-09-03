@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-warm-contact-scenario",
+  "parent_task": "51829802-167f-50a9-8fb2-9a0bdc22f94d",
+  "refused_at": "2026-08-07T00:00:00Z",
+  "chapter_ref": "§70",
+  "reason_summary": "Proposed beat \"wc-their-stack\" narrated the recipient's platform as \"WSO2 API Platform\" — a plausible product name that appears nowhere in this recipient's evidence. The profile carries Agent Platform, Identity Platform, AI Gateway and API Manager, each pinned to the page on their own domain that states it. A name the recipient does not use, said back to them as their own, is exactly the failure the grounding guardrail exists to catch. Beat discarded rather than repaired.",
+  "remediation_hint": "Write only names that appear verbatim in the recipient's profile (organisation.stack / offers / api_surface) or in the KYE artefacts offered as evidence symbols. Regenerate with: node --import tsx/esm scripts/build-warm-contact-journey.mjs --contact <slug>"
+}

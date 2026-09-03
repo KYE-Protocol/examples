@@ -1,0 +1,27 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.explainer_class.v1.json",
+  "schema": "kye.explainer_class.v1",
+  "registry_id": "kye:registry:explainer-classes",
+  "adopted_at": "2026-08-05",
+  "constitution_ref": "constitution/39-LEARN-RAIL.md · constitution/00-INDEX.md §0.9 · §0.49",
+  "description": "Illustrative kye.explainer_class.v1 instance showing both class shapes: one that projects every row of its registry, and one that filters with a declarative eligibility rule plus the reason its excluded rows are excluded. Both classes here project the PUBLIC vocabulary registry: a public example may not cite an IP-track path (§33 / Hard rule #1), so the live registry — whose classes mostly project internal registries — is not reproduced here.",
+  "classes": [
+    {
+      "kind": "vocabulary",
+      "registry": "public/vocabulary/trademarks.json",
+      "audience": "general",
+      "eligible": {
+        "field": "class",
+        "in": ["wordmark", "concept", "category", "capability"]
+      },
+      "ineligible_reason": "descriptive vocabulary row, not a named mark — only a mark warrants its own explainer",
+      "purpose_template": "Explain the term {name}: what it means, why it is named that, and what it is NOT."
+    },
+    {
+      "kind": "concept",
+      "registry": "public/vocabulary/trademarks.json",
+      "audience": "builder",
+      "purpose_template": "Explain the concept {name} to someone integrating against it, in the terms their own system already uses."
+    }
+  ]
+}

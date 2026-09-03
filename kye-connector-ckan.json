@@ -1,0 +1,8 @@
+{
+  "schema_version": "kye.connector.ckan.v1",
+  "profile_id": "kye:profile:northwind-bank:pro-2026-08-0417",
+  "display_name": "Northwind Bank",
+  "category": "data_portal_governance_connector",
+  "version": "1.0.0",
+  "status": "active"
+}

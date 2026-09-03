@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "runtime-kye-treasury-authority-agent",
+  "parent_task": "b3a9d52f-6c81-4e07-9d34-1f8b2c7e6a90",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0.30",
+  "reason_summary": "Prompt asked the Treasury Authority Agent to run the TMS: move cash, execute the FX hedge, place the MMF, sweep the intercompany balance, pledge collateral. KYE governs WHETHER a corporate-treasury action may proceed (within mandate/limit, authorised, in-scope, evidenced) and proves the basis; it does NOT move funds, execute trades, place investments, or run a TMS. A TMS engine is a §0.30 competing system, and a parallel treasury rule-pack would fork the existing kye:rule-pack:treasury (§0).",
+  "remediation_hint": "Re-scope to the bounded governance act: admit -> decide (§12) against the existing kye:rule-pack:treasury (incl. kye:rule:treasury_dual_control_above_100k) -> record disposition (§21) -> seal Evidence Pack + Treasury Authority Proof (§13) -> hold the irreversible FX-hedge, MMF investment, intercompany funding, and collateral pledge/recall advisory until §36 two-person sign-off by a named treasurer. The TMS, dealing platform, and bank rails stay the customer's; bind the existing DORA + PRA SS1/23 maps."
+}

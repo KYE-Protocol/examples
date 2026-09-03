@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "c53d6e49-0a2b-4f67-9d13-4e7c5a0b8d36",
+  "refused_at": "2026-07-02T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked for a parallel quote-and-bind rule-pack / dictionary and a premium-calculation engine. KYE already governs insurance authority via kye:rule-pack:insurance-underwriting-claims; a parallel distribution pack violates §0, re-mapping Colorado SB21-169 / NAIC / EU AI Act insurance / FCA Consumer Duty violates §70, and a rating engine violates the honest scope (KYE governs whether the override, the discount, or the bind may proceed — it does not calculate premiums). Refusing all three.",
+  "remediation_hint": "Build it as a Governed Agent PRODUCT that governs the rating-factor override, the discount authority, and the quote-to-bind moment as an explicit finality gate against the EXISTING kye:rule-pack:insurance-underwriting-claims verdict. Add only agent-product artefacts (§52 binding, principal, refusal, product row, SKU, pricing, ™, gate) and BIND — never re-map — the existing insurance frameworks."
+}

@@ -1,0 +1,9 @@
+{
+  "drift_event_id": "kye:stable-drift-event:northwind-bank:sde-2026-08-0417",
+  "check_id": "kye:reality-coupling-check:northwind-bank:rcc-2026-08-0417",
+  "action_id": "kye:principal:northwind-bank:jordan-reyes",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "drift_type": "stable_drift",
+  "severity": "low",
+  "detected_at": "2026-08-07T09:15:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "kye.change_calendar.v1",
+  "version": "1.0.0",
+  "as_of": "2026-08-07",
+  "policy": {
+    "min_notice_days_breaking": 90,
+    "min_notice_days_subprocessor": 30,
+    "min_notice_days_maintenance": 7
+  },
+  "entries": [
+    {
+      "id": "cc-2026-08-07-payments-release-window",
+      "kind": "breaking-change",
+      "title": "Payment release authority",
+      "announced_at": "2026-08-07",
+      "effective_at": "2026-08-07",
+      "status": "scheduled"
+    }
+  ]
+}

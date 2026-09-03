@@ -1,0 +1,9 @@
+{
+  "schema": "kye.partner_admin_action.v1",
+  "action_id": "kye:partner-admin-action:northwind-bank-paa-2026-08-0417",
+  "partner_id": "kye:partner:northwind-bank-par-2026-08-0417",
+  "action_type": "apply",
+  "performer_id": "performer-2026-08-0417",
+  "evidence_pack_id": "kye:evidence-pack:northwind-bank-ep-2026-08-0417",
+  "performed_at": "2026-08-07T09:15:00Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "kye:loop:northwind-bank:payments:iteration-0417",
+  "version": 1,
+  "drift_event_ids": [
+    "kye:drift-event:northwind-bank:de-2026-08-0417"
+  ],
+  "opened_at": "2026-08-07T09:15:00Z",
+  "status": "open",
+  "stages": {
+    "detect": {
+      "completed_at": "2026-08-07T09:15:00Z",
+      "drift_event_ids": [
+        "kye:drift-event:northwind-bank:de-2026-08-0417"
+      ]
+    },
+    "revoke": {
+      "completed_at": "2026-08-07T09:15:00Z",
+      "revoked_grant_ids": [
+        "kye:purpose-grant:northwind-bank:pg-2026-08-0401"
+      ],
+      "cascade_depth": 0
+    },
+    "regrant": {
+      "completed_at": "2026-08-07T09:15:00Z",
+      "new_grant_ids": [
+        "kye:purpose-grant:northwind-bank:pg-2026-08-0417"
+      ]
+    },
+    "replay": {
+      "completed_at": "2026-08-07T09:15:00Z",
+      "replayed_decision_count": 0,
+      "diverged_count": 0
+    },
+    "improve": {
+      "completed_at": "2026-08-07T09:15:00Z",
+      "improvement_record_id": "improvement_record-2026-08-0417"
+    }
+  }
+}

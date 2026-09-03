@@ -1,0 +1,20 @@
+{
+  "schema": "kye.uniqueness_scope.v1",
+  "version": "1.0",
+  "constitution_ref": "constitution/00-INDEX.md \u00a70 \u00b7 \u00a70.49",
+  "doctrine": "Zero duplicates permitted; the rule is declared once, never re-implemented per gate.",
+  "scopes": [
+    {
+      "scope_id": "kye:uniqueness:dom-anchor",
+      "entity_class": "uniqueness-uniqueness-scopes",
+      "identifier": "a DOM anchor (id attribute) on a public HTML surface",
+      "extractor": "html-attribute",
+      "selector": "id",
+      "corpus": [
+        "public/**/*.html"
+      ],
+      "unique_within": "file",
+      "rationale": "A duplicate id is invalid HTML and makes every occurrence after the first unreachable by its own #anchor."
+    }
+  ]
+}

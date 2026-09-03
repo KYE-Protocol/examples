@@ -7,6 +7,7 @@
   "constitution_ref": "constitution/16-EDGE-RUNTIME.md + constitution/20-ANALYTICS-PLANE.md + constitution/30-AUDIT-WORM-RETENTION.md",
   "tables": [
     {
+      "entity_class": "databases-tenancy-manifest",
       "table_name": "taxonomy_terms",
       "database_id": "kye:database:d1:kye-core",
       "migration_ref": "kye:migration:004-init_taxonomy_metadata_graph_payload",
@@ -19,6 +20,7 @@
       "notes": "Controlled vocabulary; read-mostly; mutated only by privileged migration."
     },
     {
+      "entity_class": "databases-tenancy-manifest",
       "table_name": "data_use_manifests",
       "database_id": "kye:database:d1:kye-core",
       "migration_ref": "kye:migration:021-data_governance_pack",
@@ -34,6 +36,7 @@
       "notes": "Every SELECT MUST include tenant_id predicate; cross-tenant aggregations require purpose grant + tool_call audit."
     },
     {
+      "entity_class": "databases-tenancy-manifest",
       "table_name": "audit_events",
       "database_id": "kye:database:d1:kye-core",
       "migration_ref": "kye:migration:001-init_core",
@@ -52,6 +55,7 @@
       "notes": "Tenancy inherited through runtime_events → entities.trust_domain_id chain. Queries must join the parent chain."
     },
     {
+      "entity_class": "databases-tenancy-manifest",
       "table_name": "tenant_dedicated_credentials",
       "database_id": "kye:database:d1:kye-regulated-banking-tier",
       "migration_ref": "kye:migration:001-init_core",
@@ -67,6 +71,7 @@
       "notes": "Hypothetical regulated-tenant binding — one D1 database per tenant; isolation is binding-level, no query-time predicate needed."
     },
     {
+      "entity_class": "databases-tenancy-manifest",
       "table_name": "consultant_leads",
       "database_id": "kye:database:d1:kye-core",
       "migration_ref": "kye:migration:008-consultant_programme",
@@ -77,7 +82,9 @@
       "cross_tenant_query_allowed": true,
       "cross_tenant_query_audit_required": true,
       "isolation_class": "weak_email_scoped",
-      "pii_columns": ["submitter_email"],
+      "pii_columns": [
+        "submitter_email"
+      ],
       "notes": "Pre-tenancy inbound submission; promoted to a tenant-keyed row after onboarding completes."
     }
   ]

@@ -1,0 +1,11 @@
+{
+  "schema_version": "kye.hop.v1",
+  "hop_id": "kye:hop:tenant-crossing-4b7e21",
+  "kind": "tenant",
+  "from_boundary": "kye:tenant:acme-legal",
+  "to_boundary": "kye:tenant:acme-legal-eu",
+  "status": "admitted",
+  "authority_delta": "narrowed",
+  "delegation_chain_ref": "kye:delegation-chain:8fc2a10d",
+  "occurred_at": "2026-08-23T17:41:07Z"
+}

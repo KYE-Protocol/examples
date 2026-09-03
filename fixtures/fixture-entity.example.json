@@ -1,0 +1,21 @@
+{
+  "schema": "kye.fixture_entity.v1",
+  "version": "1.0",
+  "constitution_ref": "constitution/00-INDEX.md §0.9",
+  "doctrine": "Zero invented names.",
+  "entities": [
+    {
+      "entity_id": "kye:fixture-entity:acme-bank",
+      "display_name": "Acme Bank",
+      "role": "bank",
+      "domain": "acme-bank.example",
+      "rationale": "A regulated deposit-taking institution, for payment, mandate and AML examples.",
+      "aliases": [
+        "bank.example",
+        "acme-credit.example",
+        "globalbank.example",
+        "sanctions-mirror.globalbank.example"
+      ]
+    }
+  ]
+}

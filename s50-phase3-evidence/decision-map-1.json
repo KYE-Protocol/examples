@@ -1,4 +1,5 @@
 {
+  "schema": "kye.evidence.decision_map.v1",
   "id": "kye:decision-map:platform.s50-phase3.01HFC9Z0PR3M5N7Q8YW2KQ8N3R0",
   "version": 1,
   "decision_id": "kye:decision:platform.s50-phase3.01HFC9Z0PR3M5N7Q8YW2KQ8N3R0",
@@ -107,25 +108,101 @@
     }
   ],
   "edges": [
-    { "from": "in.request",                          "to": "rule.zero-competing-systems", "kind": "feeds" },
-    { "from": "in.derived-nav-sidecar",              "to": "rule.zero-competing-systems", "kind": "feeds" },
-    { "from": "in.derived-footer-sidecar",           "to": "rule.zero-competing-systems", "kind": "feeds" },
-    { "from": "in.derived-nav-sidecar",              "to": "rule.seven-cap-preserved",    "kind": "feeds" },
-    { "from": "in.derived-footer-sidecar",           "to": "rule.seven-cap-preserved",    "kind": "feeds" },
-    { "from": "in.constitutional-amendment-draft",   "to": "rule.zero-competing-systems", "kind": "feeds" },
-    { "from": "in.constitutional-amendment-draft",   "to": "rule.no-stub-introduced",     "kind": "feeds" },
-    { "from": "rule.zero-competing-systems",         "to": "obl.delete-top-bar-literal", "kind": "triggers" },
-    { "from": "rule.zero-competing-systems",         "to": "obl.delete-footer-literal",  "kind": "triggers" },
-    { "from": "rule.zero-competing-systems",         "to": "obl.migrate-nav-score-gate", "kind": "triggers" },
-    { "from": "rule.zero-competing-systems",         "to": "obl.migrate-rail-canonical-reconciler", "kind": "triggers" },
-    { "from": "rule.no-stub-introduced",             "to": "obl.ship-search-derivation", "kind": "triggers" },
-    { "from": "rule.seven-cap-preserved",            "to": "obl.wire-cmd-k-to-derived-search", "kind": "triggers" },
-    { "from": "obl.delete-top-bar-literal",          "to": "out.decision", "kind": "satisfies" },
-    { "from": "obl.delete-footer-literal",           "to": "out.decision", "kind": "satisfies" },
-    { "from": "obl.migrate-nav-score-gate",          "to": "out.decision", "kind": "satisfies" },
-    { "from": "obl.migrate-rail-canonical-reconciler","to": "out.decision", "kind": "satisfies" },
-    { "from": "obl.ship-search-derivation",          "to": "out.decision", "kind": "satisfies" },
-    { "from": "obl.wire-cmd-k-to-derived-search",    "to": "out.decision", "kind": "satisfies" }
+    {
+      "from": "in.request",
+      "to": "rule.zero-competing-systems",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.derived-nav-sidecar",
+      "to": "rule.zero-competing-systems",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.derived-footer-sidecar",
+      "to": "rule.zero-competing-systems",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.derived-nav-sidecar",
+      "to": "rule.seven-cap-preserved",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.derived-footer-sidecar",
+      "to": "rule.seven-cap-preserved",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.constitutional-amendment-draft",
+      "to": "rule.zero-competing-systems",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.constitutional-amendment-draft",
+      "to": "rule.no-stub-introduced",
+      "kind": "feeds"
+    },
+    {
+      "from": "rule.zero-competing-systems",
+      "to": "obl.delete-top-bar-literal",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.zero-competing-systems",
+      "to": "obl.delete-footer-literal",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.zero-competing-systems",
+      "to": "obl.migrate-nav-score-gate",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.zero-competing-systems",
+      "to": "obl.migrate-rail-canonical-reconciler",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.no-stub-introduced",
+      "to": "obl.ship-search-derivation",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.seven-cap-preserved",
+      "to": "obl.wire-cmd-k-to-derived-search",
+      "kind": "triggers"
+    },
+    {
+      "from": "obl.delete-top-bar-literal",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.delete-footer-literal",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.migrate-nav-score-gate",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.migrate-rail-canonical-reconciler",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.ship-search-derivation",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.wire-cmd-k-to-derived-search",
+      "to": "out.decision",
+      "kind": "satisfies"
+    }
   ],
   "output_node_id": "out.decision",
   "created_at": "2026-05-27T11:00:02Z"

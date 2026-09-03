@@ -1,0 +1,24 @@
+{
+  "schema": "kye.agent.mcp_allow_list.v1",
+  "manifest_id": "payment-release",
+  "version": "1.0",
+  "generated_at": "2026-08-07T09:15:00Z",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md",
+  "patterns": [
+    {
+      "task_pattern": "payment-release",
+      "allowed_mcp_servers": [
+        {
+          "server_name": "payment-release",
+          "purpose_justification": "The framework-mapping agent reads published regulatory source documents. It holds no tenant data and writes nothing back."
+        }
+      ],
+      "disallowed_reasons": [
+        {
+          "server_name": "payment-release",
+          "reason": "Superseded by a narrower grant issued at the quarterly authority review."
+        }
+      ]
+    }
+  ]
+}

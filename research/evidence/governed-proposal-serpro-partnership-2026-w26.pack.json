@@ -1,0 +1,57 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:governed-proposal-serpro-partnership-2026-w26",
+  "report_id": "kye:research-report:governed-proposal-serpro-partnership-2026-w26",
+  "body_sha256": "e45c79c42160794165c9b6e7da88fa799ee5000052ef6871fc3c464e20482221",
+  "seal_signature": "Z6IbEaBPHMI+DFUOXI0Lyg37cokxE2ILAIU43U5eC1KBks14ZLd1Q0KvN10MxCLUAHx/bGMVT246sD87Jw66AA==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "CPF is personal data under Brazil's Lei Geral de Proteção de Dados (LGPD), so processing requires a purpose and a legal basis and the data must be minimised.",
+      "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "publisher": "Presidência da República — Casa Civil (Brazil)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "SERPRO publishes the Consulta CPF and Consulta CNPJ APIs sourced from the Receita Federal do Brasil, with a documented dummy-data sandbox available for proof-of-concept integration ahead of the credentialed production endpoint.",
+      "source_url": "https://www.gov.br/conecta/catalogo/apis/consulta-cpf",
+      "publisher": "SERPRO / Governo Federal do Brasil",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The Receita Federal do Brasil is the federal tax authority whose CPF and CNPJ registers SERPRO exposes — the authoritative source of the Brazilian taxpayer and company records.",
+      "source_url": "https://www.gov.br/receitafederal/pt-br",
+      "publisher": "Receita Federal do Brasil",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework organises trustworthy-AI practice into four functions — Govern, Map, Measure, Manage — that a deployer adapts as the backbone of an AI governance programme.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "National Institute of Standards and Technology",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The OECD AI Principles call for accountability and traceability across the AI system lifecycle, supporting an evidence trail for automated decisions and the data queries that feed them.",
+      "source_url": "https://oecd.ai/en/ai-principles",
+      "publisher": "Organisation for Economic Co-operation and Development",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "ISO/IEC 42001 specifies requirements for an AI management system, providing the management-system spine an organisation uses to govern AI-assisted entity-verification processes.",
+      "source_url": "https://www.iso.org/standard/81230.html",
+      "publisher": "International Organization for Standardization",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 6,
+    "pinned": 0,
+    "unpinned": 6
+  }
+}

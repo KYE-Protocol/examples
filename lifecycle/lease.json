@@ -1,0 +1,11 @@
+{
+  "schema_version": "kye.lease.v1",
+  "lease_id": "kye:lease:ep-matter-draft-0f31c9",
+  "decision_id": "kye:decision:9a41c0e7b2",
+  "subject": "kye:agent:estate-ai-case-checker",
+  "status": "active",
+  "issued_at": "2026-08-23T17:41:02Z",
+  "lease_expires_at": "2026-08-23T17:41:32Z",
+  "revalidate_on": ["tool-call", "api-call", "hop"],
+  "seal": { "alg": "ed25519", "value": "z3PmR7qKd1yWnT4XvB8hLc2FgJ6sA9eU0oQiZrN5MkYw" }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "runtime-kye-muzaraa-authority-agent",
+  "parent_task": "c4b7e015-8d3a-42f9-b6e1-90c5a7d2f814",
+  "refused_at": "2026-07-24T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked for a muzara'a rule pack plus a parallel Islamic-finance framework store carrying an invented 'AAOIFI Shariah Standard on Muzara'a' row, so the agent could claim a mapped fiqh basis. Refusing twice over. §0: framework-registry.json plus the deep KYE compliance stores are the ONE source-of-truth. §70 honesty: KYE's mapped substrate has no muzara'a-specific row, and fabricating one to inflate coverage is fraud.",
+  "remediation_hint": "Bind only what exists: the partnership, gharar and possession citations (AAOIFI Shariah Standard No. 12, No. 31, No. 18) plus the enforced governance rows (ifsb-shariah-governance.R5/R6/R7/R13, aaoifi-shariah-standards.R1/R2/R3, aaoifi-governance-standards.GS1/GS9), and state on every surface that the muzara'a-specific fiqh basis is NOT a claimed KYE mapping. If a muzara'a standard is later deep-mapped, add a row to the EXISTING registry, never a new store."
+}

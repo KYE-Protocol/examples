@@ -1,0 +1,18 @@
+{
+  "$schema_ref": "kye.package_namespace.v1",
+  "id": "kye:registry:package-namespace",
+  "title": "KYE package namespace — minimal illustrative instance",
+  "conventions": {
+    "npm": { "scope": "@kye", "shape": "@kye/<name>", "rule": "Every KYE npm package is published under the @kye scope." },
+    "pypi": { "prefix": "kye-", "shape": "kye-<name>", "rule": "Every KYE Python package is prefixed kye-." },
+    "go": { "module_root": "github.com/kye-protocol/", "shape": "github.com/kye-protocol/<name>", "rule": "Lowercase org." }
+  },
+  "packages": [
+    {
+      "product": "sdk",
+      "title": "KYE SDK™",
+      "canonical": { "npm": "@kye/sdk", "pypi": "kye-sdk", "go": "github.com/kye-protocol/sdk-go" },
+      "forbidden_aliases": ["@kye-protocol/sdk", "kye-protocol"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "7a1f0c2e-9b3d-4e5a-8c6f-2d1e4b7a9c30",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel sanctions-aml rule-pack / sector-pack / dictionary. KYE already governs AML / sanctions-screening / SAR-filing / PEP via kye:rule-pack:aml-financial-crimes + kye:sector-pack:aml-financial-crimes + kye:dictionary:aml-financial-crimes (rules incl. the SAR/STR §36 two-person sign-off gate), bound to FATF-40 / EU 6AMLD / US BSA-FinCEN / Wolfsberg. A parallel pack is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the Sanctions & AML Authority Agent as a Governed Agent PRODUCT that RUNS the existing kye:sector-pack:aml-financial-crimes flow under KYE authority (the runtime-kye-chargeback-evidence-agent pattern). Add only the agent-product artefacts (governed-agents dictionary, §52 binding, principal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry) and BIND — never re-map — the existing FATF-40 / EU 6AMLD / US BSA-FinCEN / Wolfsberg frameworks."
+}

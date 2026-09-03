@@ -1,0 +1,10 @@
+{
+  "schema": "kye.integration.v1",
+  "integration_id": "kye:integration:ticketing:northwind-bank",
+  "layer": "sensing",
+  "direction": "in",
+  "envelope_schema_ref": "kye.evidence.decision_map.v1",
+  "integration_partner_class": "observability_platform",
+  "attestation_requirement": "none",
+  "adopted_at": "2026-08-07"
+}

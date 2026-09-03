@@ -24,5 +24,6 @@
     "alg": "EdDSA",
     "kid": "kye:key:cro-acme-bank-2026-05",
     "value_b64": "TG9yZW1hcHByb3ZhbERlY2lzaW9uU2lnbmF0dXJlRXhhbXBsZV8x"
-  }
+  },
+  "approver_decision_right": "kye:decision-right:payment-agent-authority-scope-approve"
 }

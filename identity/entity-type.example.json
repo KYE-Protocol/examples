@@ -1,0 +1,16 @@
+{
+  "type": "sdk",
+  "entity_class": "entity-type",
+  "id_namespace": "kye:sdk:",
+  "count": 4,
+  "citizenship": "minted",
+  "governance": {
+    "mechanism": "pdp-governed-inventory",
+    "ref": "scripts/smoke/governed-inventory.mjs (§0.34 — real PDP, evidence-sealed)"
+  },
+  "axis": {
+    "layer": "backend",
+    "plane": "runtime",
+    "lifecycle": "deployed"
+  }
+}

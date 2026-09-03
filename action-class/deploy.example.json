@@ -1,0 +1,14 @@
+{
+  "id": "kye:action-class:deploy",
+  "entity_class": "action-class",
+  "label": "surface deploy",
+  "definition": "A deploy of a surface version to the edge (Cloudflare Pages/Workers). The t=0 decision attaches finality to a specific production version; rollback is the compensating action.",
+  "plane": "dev",
+  "reversibility": "compensable",
+  "consequence_tier": "high",
+  "default_approval_mode": "single_approver",
+  "evidence_required": true,
+  "framework_refs": [
+    "nist-800-53.cm-3"
+  ]
+}

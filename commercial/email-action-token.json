@@ -1,0 +1,6 @@
+{
+  "workflow_id": "kye:commercial-workflow:northwind-bank:cw-2026-08-0417",
+  "action": "approve",
+  "exp": 1,
+  "kid": "kye-signing-2026-08"
+}

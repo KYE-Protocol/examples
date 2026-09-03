@@ -1,4 +1,5 @@
 {
+  "schema": "kye.evidence.decision_map.v1",
   "id": "kye:decision-map:platform.s52-phase2.01HFC9YM4QZ7N8T0WX5XKLR9P4R",
   "version": 1,
   "decision_id": "kye:decision:platform.s52-phase2.01HFC9YM4QZ7N8T0WX5XKLR9P4R",
@@ -92,22 +93,86 @@
     }
   ],
   "edges": [
-    { "from": "in.request",                       "to": "rule.subset-not-superset",           "kind": "feeds" },
-    { "from": "in.phase1-binding-manifest",       "to": "rule.subset-not-superset",           "kind": "feeds" },
-    { "from": "in.mcp-allow-list-manifest-draft", "to": "rule.subset-not-superset",           "kind": "feeds" },
-    { "from": "in.mcp-allow-list-manifest-draft", "to": "rule.empty-list-safe-baseline",      "kind": "feeds" },
-    { "from": "in.request",                       "to": "rule.preflight-and-postflight",      "kind": "feeds" },
-    { "from": "rule.subset-not-superset",         "to": "obl.emit-mcp-allow-list-manifest",   "kind": "triggers" },
-    { "from": "rule.subset-not-superset",         "to": "obl.emit-mcp-allow-list-schema",     "kind": "triggers" },
-    { "from": "rule.empty-list-safe-baseline",    "to": "obl.emit-mcp-allow-list-manifest",   "kind": "triggers" },
-    { "from": "rule.preflight-and-postflight",    "to": "obl.emit-preflight-script",          "kind": "triggers" },
-    { "from": "rule.preflight-and-postflight",    "to": "obl.emit-post-flight-gate",          "kind": "triggers" },
-    { "from": "rule.preflight-and-postflight",    "to": "obl.register-self-description",      "kind": "triggers" },
-    { "from": "obl.emit-mcp-allow-list-manifest", "to": "out.decision",                       "kind": "satisfies" },
-    { "from": "obl.emit-mcp-allow-list-schema",   "to": "out.decision",                       "kind": "satisfies" },
-    { "from": "obl.emit-preflight-script",        "to": "out.decision",                       "kind": "satisfies" },
-    { "from": "obl.emit-post-flight-gate",        "to": "out.decision",                       "kind": "satisfies" },
-    { "from": "obl.register-self-description",    "to": "out.decision",                       "kind": "satisfies" }
+    {
+      "from": "in.request",
+      "to": "rule.subset-not-superset",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.phase1-binding-manifest",
+      "to": "rule.subset-not-superset",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.mcp-allow-list-manifest-draft",
+      "to": "rule.subset-not-superset",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.mcp-allow-list-manifest-draft",
+      "to": "rule.empty-list-safe-baseline",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.request",
+      "to": "rule.preflight-and-postflight",
+      "kind": "feeds"
+    },
+    {
+      "from": "rule.subset-not-superset",
+      "to": "obl.emit-mcp-allow-list-manifest",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.subset-not-superset",
+      "to": "obl.emit-mcp-allow-list-schema",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.empty-list-safe-baseline",
+      "to": "obl.emit-mcp-allow-list-manifest",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.preflight-and-postflight",
+      "to": "obl.emit-preflight-script",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.preflight-and-postflight",
+      "to": "obl.emit-post-flight-gate",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.preflight-and-postflight",
+      "to": "obl.register-self-description",
+      "kind": "triggers"
+    },
+    {
+      "from": "obl.emit-mcp-allow-list-manifest",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.emit-mcp-allow-list-schema",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.emit-preflight-script",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.emit-post-flight-gate",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.register-self-description",
+      "to": "out.decision",
+      "kind": "satisfies"
+    }
   ],
   "output_node_id": "out.decision",
   "created_at": "2026-05-27T11:00:02Z"

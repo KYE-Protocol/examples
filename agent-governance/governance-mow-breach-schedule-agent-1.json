@@ -1,0 +1,21 @@
+{
+  "schema": "kye.agent.governance.v1",
+  "agent_id": "runtime-kye-mow-breach-schedule-authority-agent",
+  "parent_task": "d1c8a4b6-9e02-4f37-b5a1-7c3e5f8d216b",
+  "dispatched_at": "2026-07-20T09:00:00Z",
+  "purpose": "Govern the release of the invoice-ready unlicensed-access schedule for a publisher: admit the request, decide admissibility under the §12 Search-Only licence, derive the schedule by calling the ONE canonical breach-schedule engine, record the contestable disposition, and seal a replay-provable Evidence Pack™ — advisory throughout (§70). Never crawl, detect, attribute, or adjudicate.",
+  "scope": {
+    "read_paths": [
+      "internal",
+      "internal",
+      "internal"
+    ],
+    "write_paths": [
+      "_diagnostics/governed-agents/mow-breach-schedule/**"
+    ]
+  },
+  "mcp_allow_list": [],
+  "constitutional_acknowledgement": ["§0", "§0.3", "§0.11", "§0.30", "§12", "§13", "§52", "§70"],
+  "binding_manifest_ref": "internal#runtime-kye-mow-breach-schedule-authority-agent",
+  "notes": "Illustrative emission shape. The agent_id maps to the task-pattern in the binding manifest; the per-task scope here tightens the default (read paths redacted as 'internal' — the IP-track binding manifest / registries are never named in a public fixture, §33). MCP allow-list is closed ([]): the derivation is an authorized-internal call to the pure breach-schedule engine, not an MCP tool call."
+}

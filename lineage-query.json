@@ -1,0 +1,53 @@
+{
+  "schema": "kye.lineage.v1",
+  "query": {
+    "node": "kye:ent:kye-self",
+    "direction": "both",
+    "planes": [
+      "build",
+      "runtime"
+    ],
+    "window": {
+      "from": "2026-09-01T00:00:00.000Z",
+      "to": "2026-09-02T00:00:00.000Z"
+    }
+  },
+  "edges": [
+    {
+      "from": "kye:ent:kye-self:devplane:kye:action-class:tool-call:https:--www.edpb.europa.eu-news-cef-2026-edpb-launches-coordinated-enforcement-a",
+      "to": "https://www.edpb.europa.eu/news/cef-2026-edpb-launches-coordinated-enforcement-action-on-transparency-and-information_en -> 200 (direct)",
+      "relationship": "handshake",
+      "plane": "runtime",
+      "basis": "stream:dev-plane-events",
+      "observed_at": "2026-09-01T12:10:07.431Z",
+      "action_class": "kye:action-class:tool-call",
+      "decision_id": "kye:decision:8199085b5f44014cc494d3b2",
+      "evidence_pack_id": "kye:evidence-pack:6c7eeb34d10a12e306741054"
+    },
+    {
+      "from": "kye:ent:kye-self:devplane:kye:action-class:tool-call:https:--github.com-typeorm-typeorm----200--direct-",
+      "to": "https://github.com/typeorm/typeorm -> 200 (direct)",
+      "relationship": "handshake",
+      "plane": "runtime",
+      "basis": "stream:dev-plane-events",
+      "observed_at": "2026-09-01T12:10:08.548Z",
+      "action_class": "kye:action-class:tool-call",
+      "decision_id": "kye:decision:5604fc5e520d0f42e419ad52",
+      "evidence_pack_id": "kye:evidence-pack:322aecd7d6b826da2b2d0297"
+    },
+    {
+      "from": "kye:ent:kye-self:devplane:kye:action-class:tool-call:https:--github.com-temporalio-sdk-typescript----200--direct-",
+      "to": "https://github.com/temporalio/sdk-typescript -> 200 (direct)",
+      "relationship": "handshake",
+      "plane": "runtime",
+      "basis": "stream:dev-plane-events",
+      "observed_at": "2026-09-01T12:10:09.704Z",
+      "action_class": "kye:action-class:tool-call",
+      "decision_id": "kye:decision:1c5002328a8efaaca059a4dc",
+      "evidence_pack_id": "kye:evidence-pack:246da1f245f3c55136eeba3f"
+    }
+  ],
+  "unwindowed_streams": [
+    "builder-pep"
+  ]
+}

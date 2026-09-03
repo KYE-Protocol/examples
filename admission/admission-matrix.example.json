@@ -1,0 +1,48 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.admission_matrix.v1.json",
+  "schema": "kye.admission_matrix.v1",
+  "registry_id": "kye:registry:admission-matrix",
+  "generated_by": "scripts/build-admission-matrix.mjs",
+  "adopted_at": "2026-08-09",
+  "constitution_ref": "constitution/00-INDEX.md §0.51",
+  "description": "Illustrative two-class excerpt of the §0.51 artefact-class corpus. The live registry is generated and spans both planes; this fixture is PUBLIC, so it pins the SHAPE using public-plane classes only — no IP-track path appears here (§33). It shows one class whose identity is probed and one whose records are keyed by a composite and therefore carries an explicit unprobed_reason rather than a silent skip.",
+  "discovery": {
+    "roots": [
+      "public"
+    ],
+    "registry_name_pattern": "(_manifest|_registry|-manifest|-registry)\\.json$",
+    "excluded_dirs": {
+      "examples": "illustrative fixtures validated against schemas — an example of a registry is not a source of truth"
+    },
+    "excluded_files": {
+      "dictionary.json": "a controlled vocabulary, not an instance registry — governed as the dictionary OF the class it serves"
+    }
+  },
+  "evidence": {
+    "ledger": "the per-gate verdict ledger written by the gate runner at emission",
+    "note": "Obligation verdicts derive from that ledger plus the sweep's own probes — no obligation is satisfied by declaration."
+  },
+  "classes": [
+    {
+      "class_id": "public-widgets-manifest",
+      "entity_class": "admission-class",
+      "registry_path": "public/widgets/manifest.json",
+      "plane": "public",
+      "instances_key": "widgets",
+      "id_field": "widget_id",
+      "id_pattern": "^kye:widget:[a-z0-9][a-z0-9._:-]*$",
+      "path_fields": []
+    },
+    {
+      "class_id": "public-oss-manifest",
+      "entity_class": "admission-class",
+      "registry_path": "public/oss/manifest.json",
+      "plane": "public",
+      "instances_key": "packages",
+      "id_field": null,
+      "id_pattern": null,
+      "path_fields": [],
+      "unprobed_reason": "Identity is not probed: no single property carries the instance identifier for this class — its records are keyed by a composite of fields, so there is no field for a pattern to bind to."
+    }
+  ]
+}
