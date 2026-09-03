@@ -1,0 +1,36 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:ai-legal-brief-fsb-prompt-and-pray-2026-06",
+  "report_id": "kye:research-report:ai-legal-brief-fsb-prompt-and-pray-2026-06",
+  "body_sha256": "87d4152e4c61a9c6fde98a03f143d49caa7d9e17bbbe2bcc9bc5b77f1dca355d",
+  "seal_signature": "FoasuKIjz8B4T+xcKq0k//WizIhrLdwpxiDPUqcJ6c2tciKVjg4XMmDtxixTVVwBezowL30eyWUl7CGbln2VAw==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "On 10 June 2026 the Financial Stability Board published a consultation, 'Sound Practices for Responsible Adoption of Artificial Intelligence', a deliberately non-binding and proportionate menu of sound practices for financial institutions, open for comment until 22 July 2026 with a final report due October 2026.",
+      "source_url": "https://www.fsb.org/",
+      "publisher": "Financial Stability Board (consultation report). Publisher-level citation; deep-link to be pinned.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "US model risk management guidance (SR 11-7) sets out principles — control proportionate to risk, independent effective challenge by parties with the incentive, competence and access to find what is wrong, governance across the model lifecycle, and a named owner of the outcome.",
+      "source_url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm",
+      "publisher": "Board of Governors of the Federal Reserve System / OCC (SR 11-7)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "Commentary has named the pattern of treating a paragraph of instructions as a control — instruction plus an LLM-as-judge review plus a human sign-off plus a green dashboard — 'prompt and pray', and argued that strengthening the prompt converges to a longer prompt over the same unfixed bottleneck.",
+      "source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6932339",
+      "publisher": "Agus Sudjianto, 'Unified Prompt and Pray Framework' (SSRN). Cited as commentary, not as a statement of law.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 3,
+    "pinned": 0,
+    "unpinned": 3
+  }
+}

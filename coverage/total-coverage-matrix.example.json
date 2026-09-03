@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.total_coverage_matrix.v1.json",
+  "schema": "kye.total_coverage_matrix.v1",
+  "registry_id": "kye:registry:total-coverage-matrix",
+  "adopted_at": "2026-07-05",
+  "constitution_ref": "constitution/00-INDEX.md §0.42",
+  "description": "Illustrative minimal §0.42 total-coverage matrix — one coverage class bound to a live enforcing gate with its transition ramp. The canonical matrix carries the full five-class set (covered · linked · exampled · tested · canonical).",
+  "classes": [
+    {
+      "class_id": "linked",
+      "question": "Does every artefact carry >=1 binding (no orphan)?",
+      "enforcing_gate": "test:universal-bindings-canonical",
+      "baseline_key": "universal_bindings_orphans",
+      "decay_deadline": "2026-08-28",
+      "target": 0,
+      "current": 0,
+      "note": "§0.31 Universal Bindings — true-orphan count is 0; decreases-only ratchet to strict-zero."
+    }
+  ]
+}

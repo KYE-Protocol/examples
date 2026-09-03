@@ -4,10 +4,10 @@
   "applicant_id": "kye:foundry-applicant:meridian-clinical-risk",
   "applicant_profile": {
     "org_name": "Meridian Clinical Risk Advisory Ltd",
-    "contact_email": "partnerships@meridian-clinical.example",
+    "contact_email": "partnerships@acme-health.example",
     "contact_name": "Dr Helena Ashford",
     "jurisdictions": ["uk", "eu"],
-    "website": "https://meridian-clinical.example",
+    "website": "https://acme-health.example",
     "linkedin": "https://www.linkedin.com/in/helena-ashford-example"
   },
   "framework_name": "Meridian Clinical Risk Governance Framework",
@@ -17,7 +17,7 @@
     {
       "claim": "Former NHS Digital Clinical Safety Officer (2016–2021); chaired the DCB0129 review board for the South-East region.",
       "evidence_kind": "named-prior-role",
-      "url": "https://meridian-clinical.example/about"
+      "url": "https://acme-health.example/about"
     },
     {
       "claim": "11 NHS Trust clinical-decision-support deployments under DCB0129/0160 assurance since 2019; zero serious-incident clinical safety failures attributable to the framework.",

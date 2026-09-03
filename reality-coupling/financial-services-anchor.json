@@ -26,7 +26,7 @@
   ],
   "source": {
     "kind": "stream",
-    "uri": "https://sanctions-mirror.globalbank.example/api/v1/ofac/sdn/stream",
+    "uri": "https://acme-acme-bank.example/api/v1/ofac/sdn/stream",
     "credential_ref": "kye:credential:globalbank:sanctions-mirror-readonly"
   },
   "tags": ["sanctions", "ofac", "aml", "financial-services", "critical"],

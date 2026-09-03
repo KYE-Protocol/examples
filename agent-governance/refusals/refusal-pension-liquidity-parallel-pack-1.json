@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "5a1f7c93-2d84-4e16-bf30-9c6e0a2d7b41",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel pension rule-pack / sector-pack / dictionary and to mint TPR / EIOPA IORP II framework rows to claim coverage. KYE already governs pension obligations via kye:rule-pack:pension (regimes TPR/FCA) bound into kye:sector-pack:financial_services; FCA COBS is already deep-mapped (kye:framework:fca-cobs). A parallel pension pack is a §0 violation; minting a TPR / IORP II row to imply unmapped enforcement is a §70 honesty-bar violation. Refusing both.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:rule-pack:pension flow (the runtime-kye-payment-authorization-authority-agent pattern): add only the agent-product artefacts (§52 binding, principal, refusal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry, gate) and BIND — never re-map — kye:framework:fca-cobs. Declare TPR and EIOPA IORP II honest out-of-scope (§70) until a real deep-map lands; never fabricate a row to fake coverage."
+}

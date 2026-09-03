@@ -1,0 +1,58 @@
+[
+  {
+    "subject_id": "kye:subject:synthetic:5982",
+    "reason_code": "structuring_signal",
+    "risk_score": 22,
+    "assessment_ref": "REF-4B94DB99",
+    "observed_day_offset": -12
+  },
+  {
+    "subject_id": "kye:subject:synthetic:7521",
+    "reason_code": "velocity_anomaly",
+    "risk_score": 20,
+    "assessment_ref": "REF-22FAE13C",
+    "observed_day_offset": -6
+  },
+  {
+    "subject_id": "kye:subject:synthetic:1152",
+    "reason_code": "dormant_reactivation",
+    "risk_score": 37,
+    "assessment_ref": "REF-FA60EF08",
+    "observed_day_offset": -8
+  },
+  {
+    "subject_id": "kye:subject:synthetic:4015",
+    "reason_code": "velocity_anomaly",
+    "risk_score": 57,
+    "assessment_ref": "REF-C679E84C",
+    "observed_day_offset": -39
+  },
+  {
+    "subject_id": "kye:subject:synthetic:6119",
+    "reason_code": "dormant_reactivation",
+    "risk_score": 33,
+    "assessment_ref": "REF-30800DAD",
+    "observed_day_offset": -17
+  },
+  {
+    "subject_id": "kye:subject:synthetic:9297",
+    "reason_code": "dormant_reactivation",
+    "risk_score": 40,
+    "assessment_ref": "REF-11AB0120",
+    "observed_day_offset": -60
+  },
+  {
+    "subject_id": "kye:subject:synthetic:2237",
+    "reason_code": "structuring_signal",
+    "risk_score": 100,
+    "assessment_ref": "REF-EFB2DC70",
+    "observed_day_offset": -10
+  },
+  {
+    "subject_id": "kye:subject:synthetic:0599",
+    "reason_code": "velocity_anomaly",
+    "risk_score": 21,
+    "assessment_ref": "REF-76318FEC",
+    "observed_day_offset": -58
+  }
+]

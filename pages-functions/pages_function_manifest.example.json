@@ -15,9 +15,12 @@
   "handlers": [
     {
       "file_path": "public/admin/functions/api/v1/agent-library.js",
+      "entity_class": "pages-functions-pages-function-manifest",
       "surface": "admin",
       "url_pattern": "/api/v1/agent-library",
-      "methods": ["GET"],
+      "methods": [
+        "GET"
+      ],
       "operationId": "admin-list-agent-library",
       "auth_required": "owner_only",
       "purpose_check_required": false,
@@ -25,16 +28,22 @@
         "request_id": null,
         "response_id": "kye.agent.library_entry.v1"
       },
-      "audit_events_emitted": ["kye.agent.library_entry.v1"],
+      "audit_events_emitted": [
+        "kye.agent.library_entry.v1"
+      ],
       "rate_limit_class": "admin_default",
       "tenant_scoped": false,
       "status": "active"
     },
     {
       "file_path": "public/admin/functions/api/v1/tenants.js",
+      "entity_class": "pages-functions-pages-function-manifest",
       "surface": "admin",
       "url_pattern": "/api/v1/tenants",
-      "methods": ["GET", "POST"],
+      "methods": [
+        "GET",
+        "POST"
+      ],
       "operationId": "admin.listTenants",
       "auth_required": "owner_only",
       "purpose_check_required": true,
@@ -52,9 +61,12 @@
     },
     {
       "file_path": "public/app/functions/api/v1/sessions/new.js",
+      "entity_class": "pages-functions-pages-function-manifest",
       "surface": "app",
       "url_pattern": "/api/v1/sessions/new",
-      "methods": ["POST"],
+      "methods": [
+        "POST"
+      ],
       "operationId": null,
       "auth_required": "session",
       "purpose_check_required": true,

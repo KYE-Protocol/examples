@@ -1,0 +1,25 @@
+{
+  "requirement_id": "cert-in-directions-2022.SIX-HOUR-CLOCK",
+  "title": "Specified cyber incidents reported to CERT-In within six hours of noticing",
+  "framework": "cert-in-directions-2022",
+  "framework_version": "Directions dated 28 April 2022 under s.70B(6), Information Technology Act, 2000",
+  "framework_category": "CERT-In Cyber Security Directions",
+  "level": "mandatory",
+  "primary_role": "D",
+  "kye_enforcement": {
+    "audit_events": [
+      "kye.resilience.availability_gap.v1",
+      "kye.evidence.pack.v1",
+      "kye.replay.context_seal.v1",
+      "kye.compliance.attestation.v1"
+    ],
+    "constitution_refs": [
+      "constitution/13-RESILIENCE-LOOP.md"
+    ]
+  },
+  "coverage_status": "enforced",
+  "verification": {
+    "npm_gate": "test:audit-chain-emission-coverage"
+  },
+  "notes": "The six-hour window is the sharpest India obligation in KYE's scope because it is a hard deadline on an incident lifecycle. KYE timestamps and seals each governed step (detect -> triage -> contain -> evidence -> notify) so the elapsed time against the clock is provable rather than asserted. KYE does NOT detect the incident and does NOT file the report."
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "kye.action_plan.v1",
+  "plan_id": "req-gui-approvals-042#plan",
+  "request_id": "req-gui-approvals-042",
+  "tenant_id": "kye:tenant:northbank.example",
+  "actor_entity_id": "kye:ent:northbank.example:agent:aml-closer-01",
+  "evaluated_at": "2026-09-01T12:00:00.000Z",
+  "entries": [
+    {
+      "requested_action": "alert.close",
+      "decision": "allow",
+      "reason_codes": ["chain_ok", "purpose_admitted"],
+      "decision_id": "kye:decision:8f9db130361f80ae9bb586df",
+      "evidence_pack_id": "kye:evidence-pack:5ef3d2acae99d47bb572778b"
+    },
+    {
+      "requested_action": "payments.settle",
+      "decision": "deny",
+      "reason_codes": ["action_outside_purpose_class"],
+      "decision_id": "kye:decision:e9d09934900dd54da98dd777",
+      "evidence_pack_id": "kye:evidence-pack:6971ac74c3cba69cc39f2d1a"
+    },
+    {
+      "requested_action": "case.escalate",
+      "decision": "require_approval",
+      "reason_codes": ["two_person_rule"],
+      "decision_id": "kye:decision:4f58d4e972db6321522656f9",
+      "evidence_pack_id": "kye:evidence-pack:4082643f96f8d6a8d5a56c13"
+    }
+  ]
+}

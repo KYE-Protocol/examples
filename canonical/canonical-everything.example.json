@@ -1,0 +1,32 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.canonical_everything.v1.json",
+  "schema": "https://kyeprotocol.com/schemas/kye.canonical_everything.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:canonical-everything",
+  "adopted_at": "2026-05-24",
+  "constitution_ref": "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+  "description": "Illustrative minimal §0.18 canonical-everything registry — one concept row showing the {manifest, dictionary, schema} triple plus its enforcing gate. The canonical registry carries the full concept set, is IP-track, and is GENERATED from its source-of-truth registry rather than hand-edited (§53 §3.2). KYE Protocol™.",
+  "coverage_vocabulary": [
+    "complete",
+    "schema_pending",
+    "dictionary_pending",
+    "manifest_pending"
+  ],
+  "counts": {
+    "total_concepts": 1,
+    "complete": 1,
+    "schema_pending": 0,
+    "dictionary_pending": 0
+  },
+  "concepts": [
+    {
+      "concept": "constitution-amendments",
+      "constitution_ref": "constitution/43-MACHINE-READABLE-BY-DEFAULT.md",
+      "manifest": "constitution/amendments_manifest.json",
+      "dictionary": "constitution/amendments_dictionary.json",
+      "schema": "constitution/amendments_manifest.schema.json",
+      "coverage": "complete",
+      "gate": "canonical-triple-coverage"
+    }
+  ]
+}

@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:say-do-gap-ai-governance:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:say-do-gap-ai-governance-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "w6GECO0jPmaLyjqYHFbs+uwOdVAWnOerdZAU1dge/5oI80XDAKX9ycl5D/01egIGSA/yVKZlPyarThq6yRwTBw=="
+    "signature": "trPodWPXnnvtO/vSgDvCqTHchvKnfo906rxGGsSmdLSc7Va3Hk7OU0oQDR0/zE3rbES6aymSRPxOmyIdSVfhAg=="
   },
   "citations": [
     {

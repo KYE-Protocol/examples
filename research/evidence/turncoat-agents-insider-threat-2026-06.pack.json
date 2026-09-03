@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:turncoat-agents-insider-threat-2026-06",
+  "report_id": "kye:research-report:turncoat-agents-insider-threat-2026-06",
+  "body_sha256": "5706f7d033c870a61ad28c26fe216ea45a0b1644ab721896915e96ce71f345a7",
+  "seal_signature": "wVP4iWmAhh8erM4kAU8KWqc61tIshxdYqqnJ3p9rd7DoEV0ViK6QamJXtYyZhdj4JPaIjHaznyOyAqFOHElaCQ==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "AI agents are described as 2026's biggest insider threat: a single well-crafted prompt injection or a tool-misuse vulnerability can turn a trusted autonomous agent into an autonomous insider at an attacker's command — able to silently execute trades, delete backups, or exfiltrate a customer database — and roughly 40% of enterprise applications are expected to integrate task-specific AI agents by the end of 2026, up from under 5% in 2025.",
+      "source_url": "https://www.theregister.com/2026/01/04/ai_agents_insider_threats_panw/",
+      "publisher": "The Register, reporting comments by Palo Alto Networks' Chief Security Intelligence Officer. Cited as published security commentary, not as a security or compliance recommendation by KYE Protocol™.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The EU AI Act places logging and human-oversight duties on the deployer of an AI system, discharged at the point of use rather than in a later review.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2024/1689)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 2,
+    "pinned": 0,
+    "unpinned": 2
+  }
+}

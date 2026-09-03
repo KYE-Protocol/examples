@@ -16,7 +16,6 @@
     "Quarterly drill envelope landed in WORM with verdict=ok and replay-proof verifiable from public keys alone.",
     "no-spof-coverage gate sees the registry row fallback_status='full' with the path_to_full runbook archived (not deleted)."
   ],
-  "decay_deadline": "2026-11-23",
   "owner": "Architecture",
   "decision_needed": "Commercial: confirm the backup-provider contract terms before step 1 can execute. Procurement-bound, not engineering-bound.",
   "supersedes_partial_ref": "public/admin/functions/_lib/example-provider.js",

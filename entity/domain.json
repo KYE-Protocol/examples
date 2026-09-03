@@ -1,0 +1,8 @@
+{
+  "schema_version": "kye.entity.domain.v1",
+  "id": "kye:dom:northwind-bank-dom-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "fqdn": "northwind-bank.co.uk",
+  "state": "pending",
+  "created_at": "2026-08-07T09:15:00Z"
+}

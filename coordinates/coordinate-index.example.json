@@ -1,0 +1,152 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.coordinate_index.v1.json",
+  "schema": "kye.coordinate_index.v1",
+  "registry_id": "kye:registry:coordinate-index",
+  "generated_by": "scripts/build-coordinate-index.mjs",
+  "adopted_at": "2026-08-09",
+  "constitution_ref": "constitution/00-INDEX.md §0.52",
+  "description": "Illustrative excerpt of the §0.52 position-and-connection index. The live index is generated; this fixture pins the SHAPE — the four axis declarations, the `t` block that says which map version a coordinate was placed against, two occupied cells, and the global connectivity block whose strict-zero classes (orphan, island, generation cycle, undeclared verb) are the ones no per-node check can see.",
+  "axes": [
+    {
+      "axis": "plane",
+      "symbol": "x",
+      "source": "derived from the artefact path",
+      "owner": "constitution/33-IP-OSS-LINE.md"
+    },
+    {
+      "axis": "class",
+      "symbol": "y",
+      "source": "the entity's artefact_class in the entity-id registry",
+      "owner": "constitution/00-INDEX.md §0.36"
+    },
+    {
+      "axis": "lifecycle",
+      "symbol": "z",
+      "source": "the entity lifecycle stage (§0.29 readiness / §34 estate; declared when neither)",
+      "owner": "constitution/00-INDEX.md"
+    },
+    {
+      "axis": "projection",
+      "symbol": "p",
+      "source": "the §53 cascade node's `kind` for this path — canonical root, or a projection of one; a path the graph does not carry is unplaced, never assumed a root",
+      "owner": "constitution/53-COHESION-CASCADE.md"
+    },
+    {
+      "axis": "version",
+      "symbol": "v",
+      "source": "the `.v<n>` segment of the artefact's own identity, which §0.49 binding 3 requires to equal its `$id`; no segment is `unversioned`, never defaulted to v1",
+      "owner": "constitution/00-INDEX.md §0.49"
+    },
+    {
+      "axis": "provenance",
+      "symbol": "provenance",
+      "source": "`source` + `reused_from` in the §0.36 entity-id registry — minted here, or reused from where it already existed",
+      "owner": "constitution/00-INDEX.md §0.36"
+    },
+    {
+      "axis": "direction",
+      "symbol": "d",
+      "source": "inbound/outbound degree at this node, from the same derivation the connectivity block uses, with each verb's directionality declared in kye:dictionary:relationships",
+      "owner": "constitution/53-COHESION-CASCADE.md"
+    },
+    {
+      "axis": "t",
+      "source": "content address over the canonical inputs this map was computed from (deterministic; never a clock, never git metadata)",
+      "owner": "constitution/00-INDEX.md §0.52"
+    }
+  ],
+  "t": {
+    "basis": "sha256:0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+    "inputs": [
+      {
+        "path": "internal",
+        "sha256": "sha256:2122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40"
+      },
+      {
+        "path": "internal",
+        "sha256": "sha256:4142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f60"
+      },
+      {
+        "path": "internal",
+        "sha256": "sha256:6162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f80"
+      }
+    ]
+  },
+  "total_entities": 2,
+  "duplicate_ids": 0,
+  "unplaced_entities": 0,
+  "connectivity": {
+    "nodes": 2,
+    "orphan": 0,
+    "terminal": 1,
+    "source_only": 1,
+    "islands": 0,
+    "island_paths": 0,
+    "mainland_size": 2,
+    "dependency_edges": 1,
+    "generation_cycle_nodes": 0,
+    "generation_self_loops": 0,
+    "undeclared_verbs": []
+  },
+  "cells": [
+    {
+      "plane": "private",
+      "class": "schema",
+      "entities": 729,
+      "paths": 729,
+      "unmapped_paths": 4,
+      "orphan_paths": 0,
+      "terminal_paths": 471,
+      "island_paths": 0,
+      "projection_roots": 723,
+      "projection_derived": 2,
+      "versioned_paths": 563,
+      "minted_entities": 729,
+      "reused_entities": 0,
+      "inbound_only_paths": 471,
+      "outbound_only_paths": 0,
+      "bidirectional_paths": 254
+    }
+  ],
+  "naturalisation": {
+    "axes": {
+      "plane": {
+        "resolved": 15573,
+        "unresolved": 0,
+        "unresolved_as": "null"
+      },
+      "class": {
+        "resolved": 15573,
+        "unresolved": 0,
+        "unresolved_as": "unclassified"
+      },
+      "lifecycle": {
+        "resolved": 15573,
+        "unresolved": 0,
+        "unresolved_as": null
+      },
+      "projection": {
+        "resolved": 15558,
+        "unresolved": 15,
+        "unresolved_as": "unplaced"
+      },
+      "version": {
+        "resolved": 15573,
+        "unresolved": 0,
+        "unresolved_as": null
+      },
+      "provenance": {
+        "resolved": 15573,
+        "unresolved": 0,
+        "unresolved_as": "undeclared"
+      },
+      "direction": {
+        "resolved": 15558,
+        "unresolved": 15,
+        "unresolved_as": "unplaced"
+      }
+    },
+    "fully_addressed": 15558,
+    "partially_addressed": 15
+  }
+}

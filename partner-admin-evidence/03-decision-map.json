@@ -1,24 +1,56 @@
 {
   "schema": "kye.evidence.decision_map.v1",
   "id": "kye:decision-map:2026-05-28-partner-revoke-legacy-001",
-  "decision_id": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f",
-  "emitted_at": "2026-05-28T13:45:30Z",
-  "subject": "kye:partner:legacy-consulting-llp.9d1c4b",
-  "action": "revoke",
-  "edges": [
-    { "from": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB", "to": "kye:admissibility:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB", "kind": "request_admitted_by", "weight": 1.0 },
-    { "from": "kye:admissibility:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB", "to": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f", "kind": "decision_authorised_by", "weight": 1.0 },
-    { "from": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f", "to": "partner_entities.legacy-consulting-llp.9d1c4b.status:active->offboarding", "kind": "mutation_applied", "weight": 1.0 },
-    { "from": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f", "to": "kye:compliance-attestation:2026-05-28-partner-revoke-legacy-001", "kind": "evidence_emitted", "weight": 1.0 }
+  "version": 1,
+  "decision_id": "kye:decision:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f",
+  "nodes": [
+    {
+      "id": "n_purpose_request",
+      "type": "input",
+      "label": "Purpose request — revoke partner legacy-consulting-llp",
+      "payload_ref": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB",
+      "payload_hash": "sha256:a7c92d1e4b6f8a0d3c5e7f9a1b3d5e7f9c1a3b5d7e9f1a3c5b7d9e1f3a5c7b9d",
+      "signature": "ed25519:7Kq2mNfR8vXcYzB3aLdJ4hPw1TgE6sUnC0iOx9VpQrM5yZkH2bWtF3eA8cD1jS4v"
+    },
+    {
+      "id": "n_partner_state",
+      "type": "input",
+      "label": "Partner registry row — status active, T1 tier",
+      "payload_ref": "kye:partner:legacy-consulting-llp.9d1c4b",
+      "payload_hash": "sha256:c3f81b0d5e7a9c2f4b6d8e0a2c4e6f8b0d2f4a6c8e0b2d4f6a8c0e2b4d6f8a0c",
+      "signature": "ed25519:3Fj9pQwZ2vLmK7sXtN1cRhY5bE8dU0aGiO4xVrJ6yTkH9nWqB2eA5cD3jS7uM1z"
+    },
+    {
+      "id": "n_admissibility",
+      "type": "rule",
+      "label": "Purpose Permission admissibility — 7 checks, all passed",
+      "payload_ref": "kye:purpose-adm:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB",
+      "payload_hash": "sha256:e5a72c9f1b3d5e7a9c1f3b5d7e9a1c3f5b7d9e1a3c5f7b9d1e3a5c7f9b1d3e5a",
+      "signature": "ed25519:9Zx4tRbW6yGkP1mQjN8sLcHv3aE5dU7iO0fXrV2yTnB4qWeA6cD8jS0uM3pK5vF"
+    },
+    {
+      "id": "n_dual_control",
+      "type": "obligation",
+      "label": "Dual-channel sign-off — second approver distinct from performer (§0.4)",
+      "payload_hash": "sha256:b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5b7d9f1a3c5e7b9d1f3a5c7e9b1d3",
+      "signature": "ed25519:2Wq7nMfT5vYcXzA9bKdH3gPw4RgE1sUnC8iOx6VpQrL0yZkJ5bWtD7eA2cF4jS9u"
+    },
+    {
+      "id": "n_revocation",
+      "type": "output",
+      "label": "Revoke — partner_entities.status active → offboarding",
+      "payload_ref": "kye:partner-admin-action:f48a921c-6b30-4d57-91ef-2c3b4a5d6e7f",
+      "payload_hash": "sha256:d4f6a8c0e2b4d6f8a0c2e4b6d8f0a2c4e6b8d0f2a4c6e8b0d2f4a6c8e0b2d4f6",
+      "signature": "ed25519:6Yk1sPaV8xFjN4mRhQ2cLbGu7dE9iU3oT0zXwB5nJ6qMeA1cD4jS8uK7vF2pW5tZ"
+    }
   ],
-  "factors": {
-    "constitutional_basis": ["constitution/10-PARTNER.md §8.1", "constitution/00-INDEX.md §0.3", "constitution/00-INDEX.md §0.4"],
-    "framework_refs": ["partner-agreement-v1.4 §6.3 (lapsed-attestation revocation)", "SOC2 CC1.4"],
-    "blast_radius": ["partner_directory_listing", "deal_attribution_pipeline", "marketplace_listing_visibility"],
-    "compensating_actions": [
-      "kye.lifecycle.compensating.v1 enqueued: stop deal-attribution payouts at end of current period",
-      "kye.comms.dispatch.v1 enqueued: notify partner primary_contact_email of revocation + appeal window",
-      "kye.directory.entry.update.v1 enqueued: flip listing visibility to 'lapsed'"
-    ]
-  }
+  "edges": [
+    { "from": "n_purpose_request", "to": "n_admissibility", "kind": "feeds" },
+    { "from": "n_partner_state", "to": "n_admissibility", "kind": "feeds" },
+    { "from": "n_admissibility", "to": "n_dual_control", "kind": "triggers" },
+    { "from": "n_dual_control", "to": "n_revocation", "kind": "satisfies" },
+    { "from": "n_admissibility", "to": "n_revocation", "kind": "produces" }
+  ],
+  "output_node_id": "n_revocation",
+  "created_at": "2026-05-28T13:45:30Z"
 }

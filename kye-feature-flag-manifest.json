@@ -1,0 +1,26 @@
+{
+  "schema": "https://kyeprotocol.com/schemas/kye.feature_flag_manifest.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:reg-2026-08-0417",
+  "adopted_at": "2026-08-07",
+  "description": "Illustrative instance for the Northwind Bank reference tenant.",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md",
+  "flags": [
+    {
+      "id": "kye:feature-flag:ff-2026-08-0417",
+      "name": "PAYMENT_RELEASE_DUAL_APPROVAL",
+      "status": "pending",
+      "introduced_date": "2026-08-07",
+      "owners": [
+        "kye:principal:northwind-bank:jordan-reyes"
+      ],
+      "current_value": {
+        "default": "off"
+      },
+      "consumers": [
+        "public/app/functions/api/v1/payments.js"
+      ],
+      "rationale": "Recorded so the decision can be re-derived by someone who was not present when it was taken."
+    }
+  ]
+}

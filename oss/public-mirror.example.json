@@ -1,0 +1,49 @@
+{
+  "schema": "kye.public_mirror.v1",
+  "version": "1.0",
+  "constitution_ref": "constitution/33-IP-OSS-LINE.md · §0.18 · §0.49 · §70",
+  "doctrine": "Illustrative instance showing all three publication states. A row may only be advertised on a public surface when state=published.",
+  "states": {
+    "published": "A real public repository exists and carries the mirrored content.",
+    "site-only": "Content is published at a URL but no repository exists; verify by URL, never by clone.",
+    "not-published": "Neither exists; the row must not be presented as verifiable."
+  },
+  "mirrors": [
+    {
+      "mirror_id": "kye:public-mirror:examples",
+      "repo": "KYE-Protocol/examples",
+      "state": "published",
+      "source_path": "public/examples",
+      "label": "Examples gallery",
+      "claim": "Every schema carries at least one illustrative example payload.",
+      "count_key": "example_payloads",
+      "verified_at": "2026-08-03",
+      "verified_by": "content published and confirmed by clone"
+    },
+    {
+      "mirror_id": "kye:public-mirror:schemas",
+      "repo": "KYE-Protocol/schemas",
+      "state": "published",
+      "source_path": "public/schemas",
+      "published_url": "https://kyeprotocol.com/schemas/",
+      "label": "JSON Schemas",
+      "claim": "Every published schema is served at its canonical $id.",
+      "count_key": "public_schemas",
+      "note": "Reached `published` only once the repository CARRIED the content — an empty repository does not satisfy the state.",
+      "verified_at": "2026-08-03",
+      "verified_by": "content published and confirmed by clone"
+    },
+    {
+      "mirror_id": "kye:public-mirror:webhook-verifier-go",
+      "repo": null,
+      "state": "not-published",
+      "source_path": null,
+      "label": "Go webhook verifier",
+      "claim": null,
+      "count_key": null,
+      "note": "Neither a repository nor a published URL exists; the row is tracked so the gap stays visible instead of being advertised. A `not-published` row never names its source path on a public surface (§33).",
+      "verified_at": "2026-08-03",
+      "verified_by": "github org enumeration"
+    }
+  ]
+}

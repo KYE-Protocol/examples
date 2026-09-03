@@ -1,0 +1,27 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.corroboration.v1.json",
+  "schema": "kye.corroboration.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-06-24T00:00:00Z",
+  "constitution_ref": "constitution/39-LEARN-RAIL.md",
+  "disclaimer": "Independent observations about the problem space KYE operates in. Quoted verbatim with attribution. Inclusion here is not an endorsement of KYE Protocol by any author or organisation.",
+  "sources": [
+    {
+      "source_id": "nist-ai-rmf-1",
+      "author_or_org": "NIST",
+      "publication": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "year": "2023",
+      "kind": "standards-body",
+      "color_role": "jurisdiction"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "kye:corroboration:nist-accountability-transparency",
+      "source_id": "nist-ai-rmf-1",
+      "quote": "Trustworthy AI depends upon accountability. Accountability presupposes transparency.",
+      "page": "p.15",
+      "kye_concept_echoed": "accountability grounded in transparent, traceable evidence"
+    }
+  ]
+}

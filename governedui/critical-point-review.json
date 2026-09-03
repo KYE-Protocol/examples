@@ -1,0 +1,7 @@
+{
+  "schema": "kye.governedui.critical_point_review.v1",
+  "review_id": "kye:critical-review:northwind-bank-cr-2026-08-0417",
+  "action_id": "kye:action-proposal:northwind-bank-ap-2026-08-0417",
+  "approval_mode": "two_person",
+  "started_at": "2026-08-07T09:15:00Z"
+}

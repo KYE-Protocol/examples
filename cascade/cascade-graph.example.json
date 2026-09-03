@@ -1,0 +1,104 @@
+{
+  "schema_version": "kye.cascade_graph.v1",
+  "registry_id": "kye:registry:cascade-graph",
+  "adopted_at": "2026-05-28",
+  "constitution_ref": "constitution/53-COHESION-CASCADE.md",
+  "description": "Illustrative three-node slice of the KYE Cohesion Cascade graph, showing the two edge provenances a real graph carries: a hand-declared edge (the design-token \u2192 theme-CSS regeneration lockstep) and a machine-derived edge (a gate that literally reads a token file on disk, so the binding is evidence rather than assertion). The full graph is internal architecture and stays private; this example exists so the schema has a public conformance fixture.",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "The real cascade graph enumerates every canonical artefact and its derivation anchors \u2014 internal architecture. This illustrative slice is the public conformance fixture for the schema."
+  },
+  "bot_marker": "@cascade-regenerated",
+  "counts": {
+    "total_nodes": 4,
+    "source_of_truth_nodes": 2,
+    "derived_nodes": 1,
+    "peer_equivalence_nodes": 0,
+    "total_edges": 2,
+    "down_edges": 2,
+    "up_edges": 0,
+    "peer_edges": 0
+  },
+  "node_derivation_policy": {
+    "min_referrers": 2,
+    "derivable_extensions": [
+      "json",
+      "mjs",
+      "js",
+      "md"
+    ],
+    "excluded_extensions": [
+      {
+        "extension": "html",
+        "reason": "\u00a750 owns the page/content graph; page\u2194page links are content relationships, not producer/consumer dataflow."
+      }
+    ],
+    "always_node_paths": [
+      {
+        "path_prefix": "scripts/",
+        "extensions": [
+          "mjs"
+        ],
+        "reason": "Every executable script is a component and must be a node whether or not another node names it \u2014 otherwise a generator stays invisible and its output cannot be known to be generated."
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "node_id": "kye:cascade:design-tokens-json",
+      "kind": "source-of-truth",
+      "path": "design-system/tokens/color.json",
+      "summary": "Canonical design tokens (color). Hand-edited.",
+      "category": "design_token",
+      "chapter_refs": [
+        "constitution/04-DESIGN-SYSTEM.md",
+        "constitution/43-MACHINE-READABLE-BY-DEFAULT.md"
+      ]
+    },
+    {
+      "node_id": "kye:cascade:theme-light-css",
+      "kind": "derived",
+      "path": "public/site/theme/light.css",
+      "summary": "Light-theme CSS custom properties generated from the canonical color tokens. Hand-edits are rejected and routed back to the token file.",
+      "source_of_truth": "design-system/tokens/color.json",
+      "regenerator": "npm:build:derived-all",
+      "category": "design",
+      "chapter_refs": [
+        "constitution/04-DESIGN-SYSTEM.md"
+      ]
+    },
+    {
+      "node_id": "kye:cascade:gate-color-canonical",
+      "kind": "source-of-truth",
+      "path": "scripts/gates/color-canonical.mjs",
+      "summary": "CI gate color-canonical (hand-authored enforcer). Reads the canonical token file and verifies the generated theme CSS matches it.",
+      "category": "gate_script"
+    },
+    {
+      "node_id": "kye:cascade:auto-example-generated-registry-json",
+      "kind": "derived",
+      "path": "design-system/tokens/color.json",
+      "summary": "Derived node \u2014 generated artefact written by scripts/build-example.mjs. Edit the source, never this file.",
+      "source_of_truth": "scripts/build-example.mjs",
+      "derivation": "derived"
+    }
+  ],
+  "edges": [
+    {
+      "from": "kye:cascade:design-tokens-json",
+      "to": "kye:cascade:theme-light-css",
+      "direction": "down",
+      "relationship": "produces",
+      "derivation": "declared",
+      "summary": "A change to the canonical color tokens MUST regenerate the light-theme CSS in the same commit."
+    },
+    {
+      "from": "kye:cascade:gate-color-canonical",
+      "to": "kye:cascade:design-tokens-json",
+      "direction": "down",
+      "relationship": "consumes",
+      "derivation": "derived",
+      "summary": "Derived binding \u2014 scripts/gates/color-canonical.mjs references design-system/tokens/color.json."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "kye.entity.billing_account.v1",
+  "id": "kye:bill:northwind-bank-bil-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "billing_email": "ops@example.invalid",
+  "currency": "GBP",
+  "state": "trial",
+  "created_at": "2026-08-07T09:15:00Z"
+}

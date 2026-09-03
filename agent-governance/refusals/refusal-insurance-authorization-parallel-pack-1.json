@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "c4e7a812-9d36-4f50-b18a-2e6c5f1d9a73",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel insurance underwriting / claims rule-pack / sector-pack / dictionary / framework-mapping. KYE already governs insurance authority via kye:rule-pack:insurance-underwriting-claims + kye:sector-pack:insurance-underwriting-claims + kye:dictionary:insurance-underwriting-claims, bound to NAIC / NYDFS / EU AI Act insurance / FCA Consumer Duty. A parallel pack is a §0 competing-systems violation; re-mapping the frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:rule-pack:insurance-underwriting-claims verdict (covering BOTH underwriting and claims) under KYE authority. Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, kye-insurance-action-authority-agent ™, governed-agents.html entry) and BIND — never re-map — the existing frameworks via kye:rule-pack:insurance-underwriting-claims + kye:dictionary:insurance-underwriting-claims."
+}

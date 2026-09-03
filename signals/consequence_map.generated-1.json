@@ -1,0 +1,10 @@
+{
+  "consequence_map_id": "kye:consequence-map:cm-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "target_object": {
+    "object_id": "kye:principal:northwind-bank:jordan-reyes",
+    "object_schema": "kye.payment_release.v1"
+  },
+  "version": 1,
+  "generated_at": "2026-08-07T09:15:00Z"
+}

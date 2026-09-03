@@ -1,0 +1,31 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.clip_script.v1.json",
+  "schema": "kye.clip_script.v1",
+  "registry_id": "kye:registry:clip-scripts",
+  "display_name": "KYE Clip Scripts — shape example",
+  "description": "An ILLUSTRATIVE instance of kye.clip_script.v1, showing the anatomy of a ~30-second explainer: a nerve, a specific moment, a sentence from someone other than KYE, what KYE does about it, and the mark. The operational registry is private; this example exists so the SHAPE is public and machine-readable (§43) without publishing the working scripts.",
+  "duration_contract": {
+    "target_seconds": 30,
+    "words_per_minute": 150,
+    "max_words": 90,
+    "rationale": "30 seconds at an unhurried 150 wpm is ~75 words; the ceiling leaves headroom without letting a script become a 45-second clip that gets cut where nobody chose."
+  },
+  "clips": [
+    {
+      "clip_id": "kye:clip:example-shape-only",
+      "title": "An example clip, showing the section anatomy only.",
+      "stakeholder_class": ["counsel"],
+      "category": "evidence-workflow",
+      "cites": "kye:source:example-verified-source",
+      "script": [
+        { "section": "hook", "text": "A named thing that has already gone wrong, in the viewer's own words." },
+        { "section": "moment", "text": "The next fifteen seconds of that scenario, where the viewer recognises what their own team actually does." },
+        { "section": "citation", "text": "Someone other than KYE says it: an exact sentence, quoted verbatim.", "quote": "an exact sentence, quoted verbatim" },
+        { "section": "capability", "text": "What the viewer gets — outcome only. Mechanism never appears on a public surface." },
+        { "section": "mark", "text": "Know Your Entity™." }
+      ],
+      "status": "draft",
+      "notes": "Illustrative only. The `cites` id is deliberately not a real source: this file demonstrates the schema shape and is NOT checked by clip-registry-canonical, which reads the private operational registry and requires every citation to resolve to a fetched, hashed sentence."
+    }
+  ]
+}

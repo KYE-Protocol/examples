@@ -1,0 +1,43 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.ingest_submission.v1.json",
+  "schema": "kye.ingest_submission.v1",
+  "registry_id": "kye:registry:ingest-submissions",
+  "display_name": "KYE Ingest Submissions — shape example",
+  "description": "An ILLUSTRATIVE instance of kye.ingest_submission.v1, showing the four states a submission moves through and what each one is allowed to claim. The operational queue is private; this example publishes the SHAPE so it is machine-readable (§43) without exposing submitter addresses or refusal reasons.",
+  "sender_policy": {
+    "rule": "Accepted only from an authenticated owner: the Clerk JWT with role=owner in the console, or a DMARC-passing From address on the owner allow-list by email.",
+    "rationale": "An intake address reachable by anyone is an open write-path toward a public citation unless the sender is actually verified.",
+    "verified_sender_required": true
+  },
+  "submissions": [
+    {
+      "submission_id": "kye:ingest:url-0000000000000001",
+      "channel": "url",
+      "state": "queued",
+      "submitted_by": "owner@acme.example",
+      "url": "https://regulator.acme.example/guidance/example-document",
+      "received_at": "2026-08-09T09:00:00Z",
+      "notes": "Accepted and queued. NOT yet a source — nothing has been fetched, hashed, or checked for the sentence to be quoted."
+    },
+    {
+      "submission_id": "kye:ingest:url-0000000000000002",
+      "channel": "email-attachment",
+      "state": "acquired",
+      "submitted_by": "owner@acme.example",
+      "url": "https://regulator.acme.example/guidance/another-document",
+      "received_at": "2026-08-09T09:05:00Z",
+      "resolved_source_id": "kye:source:example-verified-source",
+      "notes": "The canonical acquire path fetched it, hashed it, and confirmed the quoted sentence is present. resolved_source_id being set is the proof it went through the one verifier rather than around it."
+    },
+    {
+      "submission_id": "kye:ingest:url-0000000000000003",
+      "channel": "url",
+      "state": "refused",
+      "submitted_by": "owner@acme.example",
+      "url": "https://regulator.acme.example/guidance/moved-document",
+      "received_at": "2026-08-09T09:10:00Z",
+      "refusal_reason": "HTTP 404 — the URL did not answer. A link that does not resolve is not a source, and the refusal is kept so the same one is not resubmitted next month.",
+      "notes": "Refusals are retained deliberately. A deleted refusal is an invitation to try the same bad source again, having forgotten why it failed."
+    }
+  ]
+}

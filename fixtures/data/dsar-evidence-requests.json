@@ -1,0 +1,50 @@
+[
+  {
+    "requester_name": "Synthetic Person 001",
+    "requester_email": "user-871@example.invalid",
+    "request_type": "erasure",
+    "state": "in_review",
+    "case_ref": "REF-5E0CCC88",
+    "opened_day_offset": -52
+  },
+  {
+    "requester_name": "Synthetic Person 002",
+    "requester_email": "user-730@example.invalid",
+    "request_type": "portability",
+    "state": "fulfilled",
+    "case_ref": "REF-6092C2D6",
+    "opened_day_offset": -20
+  },
+  {
+    "requester_name": "Synthetic Person 003",
+    "requester_email": "user-810@example.invalid",
+    "request_type": "portability",
+    "state": "evidence_sealed",
+    "case_ref": "REF-A4BC4DFD",
+    "opened_day_offset": -53
+  },
+  {
+    "requester_name": "Synthetic Person 004",
+    "requester_email": "user-380@example.invalid",
+    "request_type": "erasure",
+    "state": "fulfilled",
+    "case_ref": "REF-9D742687",
+    "opened_day_offset": -84
+  },
+  {
+    "requester_name": "Synthetic Person 005",
+    "requester_email": "user-585@example.invalid",
+    "request_type": "portability",
+    "state": "in_review",
+    "case_ref": "REF-40E708DF",
+    "opened_day_offset": -15
+  },
+  {
+    "requester_name": "Synthetic Person 006",
+    "requester_email": "user-719@example.invalid",
+    "request_type": "rectification",
+    "state": "in_review",
+    "case_ref": "REF-99310C57",
+    "opened_day_offset": -5
+  }
+]

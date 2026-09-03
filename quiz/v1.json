@@ -1,0 +1,82 @@
+{
+  "id": "payment-release",
+  "title": "Payment release authority",
+  "persona": "buyer",
+  "estimated_seconds": 30,
+  "questions": [
+    {
+      "id": "northwind-bank-2026-08-0417",
+      "prompt": "For one consequential action taken last quarter, can you name the principal whose authority admitted it?",
+      "type": "single",
+      "options": [
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "label": "Payment release",
+          "score": 1
+        },
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "label": "Payment release",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "northwind-bank-2026-08-0417",
+      "prompt": "If that principal's authority had been revoked the day before, would the action have been refused?",
+      "type": "single",
+      "options": [
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "label": "Payment release",
+          "score": 1
+        },
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "label": "Payment release",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "northwind-bank-2026-08-0417",
+      "prompt": "Could someone who was not present re-derive that decision from the evidence alone?",
+      "type": "single",
+      "options": [
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "label": "Payment release",
+          "score": 1
+        },
+        {
+          "id": "northwind-bank-2026-08-0417",
+          "label": "Payment release",
+          "score": 1
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_possible": 1,
+    "bands": [
+      {
+        "min": 1,
+        "label": "Payment release",
+        "verdict": "Authority is attributed but not yet evidenced end to end.",
+        "recommendation": "Start by sealing evidence for one consequential action class, then widen."
+      },
+      {
+        "min": 1,
+        "label": "Payment release",
+        "verdict": "Authority is attributed but not yet evidenced end to end.",
+        "recommendation": "Start by sealing evidence for one consequential action class, then widen."
+      },
+      {
+        "min": 1,
+        "label": "Payment release",
+        "verdict": "Authority is attributed but not yet evidenced end to end.",
+        "recommendation": "Start by sealing evidence for one consequential action class, then widen."
+      }
+    ]
+  }
+}

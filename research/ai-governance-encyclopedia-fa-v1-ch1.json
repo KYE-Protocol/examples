@@ -1,0 +1,61 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:ai-governance-encyclopedia-fa-v1-ch1",
+  "entity_class": "research-report",
+  "series": "roadmap_to_ai_governance",
+  "format": "deep_dive",
+  "sector": "cross-sector",
+  "audience": "general",
+  "cadence": "monthly",
+  "edition": "2026-08",
+  "title": "فصل ۱ — انقلاب هوش مصنوعی و مسئله حکمرانی",
+  "language": "fa-IR",
+  "topic_id": "kye:research-topic:ai-governance-encyclopedia-fa-v1-ch1",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:ai-governance-encyclopedia-fa-v1-ch1",
+  "citations": [
+    {
+      "claim": "چارچوب مدیریت ریسک هوش مصنوعی NIST، فعالیت‌های مدیریت ریسک را در بالاترین سطح در چهار کارکرد حکمرانی، نگاشت، سنجش و مدیریت سازمان می‌دهد.",
+      "source_id": "kye:source:nist-ai-rmf-core-functions",
+      "source_url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/5-sec-core",
+      "retrieved_at": "2026-08-31T01:05:30Z",
+      "publisher": "National Institute of Standards and Technology",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "توصیه‌نامه هوش مصنوعی OECD نخستین استاندارد بین‌الدولی در حوزه هوش مصنوعی است.",
+      "source_id": "kye:source:oecd-ai-principles",
+      "source_url": "https://oecd.ai/en/ai-principles",
+      "retrieved_at": "2026-08-31T01:06:44Z",
+      "publisher": "Organisation for Economic Co-operation and Development",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "قانون هوش مصنوعی اتحادیه اروپا برای جلوگیری از تکه‌تکه شدن بازار داخلی و کاهش عدم‌قطعیت حقوقی برای بهره‌برداران، قواعد یکسان وضع می‌کند.",
+      "source_id": "kye:source:eu-ai-act-uniform-rules",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-08-31T01:08:15Z",
+      "publisher": "Official Journal of the European Union",
+      "claim_basis": "cited_literature"
+    }
+  ],
+  "render_targets": [
+    "web",
+    "pdf",
+    "epub"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-08-30T00:00:00Z",
+  "status": "planned",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "QvmTUkjyWWeBGyeAo/3KMXAImsvB2SBc1APeKzxfn75/YYKsuUTcNCNhI6cf6iykC3kDqmJGNmsx+CBKAwENDQ=="
+  }
+}

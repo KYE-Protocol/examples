@@ -1,0 +1,8 @@
+{
+  "schema_version": "kye.ckan_resource_binding.v1",
+  "resource_binding_id": "kye:ckan-resource-binding:northwind-bank:crb-2026-08-0417",
+  "dataset_binding_id": "kye:ckan-dataset-binding:northwind-bank:cdb-2026-08-0417",
+  "ckan_resource_id": "ckan_resource-2026-08-0417",
+  "kye_resource_entity_id": "kye:data-resource:northwind-bank:dr-2026-08-0417",
+  "status": "active"
+}

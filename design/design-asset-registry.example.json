@@ -1,0 +1,23 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.design_asset_registry.v1.json",
+  "schema": "kye.design_asset_registry.v1",
+  "registry_id": "kye:registry:design-assets",
+  "adopted_at": "2026-08-07",
+  "constitution_ref": "constitution/04-DESIGN-SYSTEM.md",
+  "consumed_by": "scripts/gates/cypress-canonical.mjs",
+  "description": "Public projection of the design-asset registry. A locked design asset is one of which exactly one edition may exist across the ecosystem; the enforcing gate derives its constants from this declaration rather than restating them in its own source.",
+  "assets": [
+    {
+      "asset_id": "kye:design-asset:cypress",
+      "source_path": "internal",
+      "sha256": "sha256:008ed57a18adbe1c7e0409591847edae965f3a6f346c03a67f707c982e770ee9",
+      "embed_signature": "class=\"band b-purpose\"",
+      "embed_match": "<svg viewBox=\"0 0 560 640\"[\\s\\S]*?</svg>",
+      "consumers": [
+        "public/site/map-of-kye.html",
+        "public/site/simulator.html"
+      ],
+      "lock_rationale": "The KYE cypress is the Map of KYE™ tree — the single visual identity of the protocol's shape. Two surfaces render it today and more will; a second edition anywhere would mean the protocol depicts itself differently depending on which page you land on."
+    }
+  ]
+}

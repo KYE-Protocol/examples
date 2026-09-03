@@ -1,0 +1,9 @@
+{
+  "schema_version": "kye.rotation.v1",
+  "rotation_id": "kye:rotation:self-audit-signing-2026q3",
+  "subject": "kye:secret-material:self-audit-signing-key",
+  "reason": "scheduled",
+  "status": "dual-running",
+  "invalidates_leases": false,
+  "initiated_at": "2026-08-23T09:00:00Z"
+}

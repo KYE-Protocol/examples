@@ -1,0 +1,11 @@
+{
+  "schema": "kye.admin.api_key.expired.v1",
+  "id": "kye:admin-action:api-key-expired:2a9d0c11",
+  "key_id": "kye:api-key:2a9d0c11-88ef-4b02-bc31-6d5e0f7a1c22",
+  "tenant_id": "kye:tenant:acme-fs",
+  "cause": "heartbeat_missed",
+  "expires_at": "2026-07-12T11:05:00Z",
+  "operator": "kye:system:key-authority-runtime",
+  "emitted_at": "2026-07-12T11:05:01Z",
+  "reason": "agent missed 300s heartbeat — mandate lost (#160)"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "kye.state.policy_binding.v1",
+  "policy_id": "kye:pol:northwind-bank-pol-2026-08-0417",
+  "applies_when": [
+    {
+      "entity_class": "principal",
+      "state_in": [
+        "active"
+      ]
+    }
+  ]
+}

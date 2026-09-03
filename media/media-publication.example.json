@@ -1,0 +1,26 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.media_publication.v1.json",
+  "schema": "kye.media_publication.v1",
+  "registry_id": "kye:registry:media-publication",
+  "adopted_at": "2026-07-30",
+  "constitution_ref": "constitution/39-LEARN-RAIL.md",
+  "bucket": "kye-media",
+  "public_base": "https://pub-30c1415114be4c9eb5b9a1738047ec03.r2.dev",
+  "key_prefix": "demos/",
+  "publications": [
+    {
+      "demo_id": "kye:demo:risk-agent-dashboard-emulated",
+      "asset": "narration_render",
+      "ordinal": 1,
+      "surfaces": [
+        "video.html"
+      ],
+      "category": "agent-demo",
+      "tags": [
+        "governed-agent",
+        "risk-scoring"
+      ],
+      "youtube_video_id": null
+    }
+  ]
+}

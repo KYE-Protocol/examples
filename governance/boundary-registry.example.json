@@ -1,0 +1,50 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.boundary.v1.json",
+  "schema": "kye.boundary.v1",
+  "registry_id": "kye:registry:boundaries",
+  "adopted_at": "2026-06-30",
+  "constitution_ref": "constitution/00-INDEX.md §0.39",
+  "description": "Illustrative kye.boundary.v1 instance — two third-party boundaries crossed through different channels, both governed at t=0 by an existing PEP. Channel-agnostic: the git-api crossing and the http-inbound crossing share the same governance contract.",
+  "boundaries": [
+    {
+      "id": "kye:boundary:git-api",
+      "kind": "git-api",
+      "scope": "external",
+      "direction": "outbound",
+      "label": "GitHub API (push · merge)",
+      "pep": "scripts/govern/devplane-pep.mjs",
+      "evidence_schema": "kye.evidence.decision.t0.v1",
+      "governing_chapter": "constitution/00-INDEX.md §0.37 + §0.39",
+      "governed_by": ["kye:action-class:push", "kye:action-class:merge"],
+      "action_classes": ["kye:action-class:push", "kye:action-class:merge"],
+      "governed": true,
+      "description": "Every push/merge is decided at t=0 by the dev-plane PEP before the irreversible GitHub API call."
+    },
+    {
+      "id": "kye:boundary:internal-admission",
+      "kind": "trust-domain",
+      "scope": "internal",
+      "direction": "inbound",
+      "label": "internal service→surface admission",
+      "pep": "public/admin/functions/_middleware.js",
+      "evidence_schema": "kye.evidence.decision_map.v1",
+      "governing_chapter": "constitution/00-INDEX.md §0.36 + §0.39",
+      "governed_by": ["kye:middleware:edge-admin"],
+      "governed": true,
+      "description": "An INTERNAL boundary — a crossing between KYE trust domains is admitted + evidenced at t=0 before effect. Internal ≠ ungoverned (§0.39 + §0.11). (Illustrative; the canonical registry binds internal crossings to the PDP border-admission.)"
+    },
+    {
+      "id": "kye:boundary:http-inbound",
+      "kind": "http-inbound",
+      "scope": "external",
+      "direction": "inbound",
+      "label": "admin request plane",
+      "pep": "public/admin/functions/_middleware.js",
+      "evidence_schema": "kye.evidence.decision_map.v1",
+      "governing_chapter": "constitution/00-INDEX.md §0.38",
+      "governed_by": ["kye:middleware:edge-admin"],
+      "governed": true,
+      "description": "Every mutating inbound request routes through the §0.38 central middleware, kye-id'd and §0.3-evidenced before the handler runs."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-gate-author",
+  "parent_task": "a7f4c2e9-1b85-4d63-9c0a-2f6e8b1d4a90",
+  "refused_at": "2026-06-30T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to build a parallel risk engine, a parallel control library, and a parallel policy / rule-pack-compilation engine. KYE already governs each: control recommendation reads the EXISTING kye.authority_risk_profile.v1 (recommended_controls[]) and BINDS the §70 ISO 42001 / EU AI Act / NIST AI RMF deep stores; policy authoring emits to the EXISTING kye:agent-library:platform_safety.policy-compiler.v1. A parallel system is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that CONSUMES kye.authority_risk_profile.v1 (recommended_controls[]), BINDS — never re-maps — the existing ISO 42001 / EU AI Act / NIST AI RMF deep stores, and emits the authored policy to kye:agent-library:platform_safety.policy-compiler.v1 for sealed PDP-rule-pack compilation. Add only the agent-product artefacts. The agent DRAFTS / RECOMMENDS only — adoption held until §36 two-person sign-off (GDPR Art 22)."
+}

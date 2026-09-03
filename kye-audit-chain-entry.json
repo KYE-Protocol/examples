@@ -1,0 +1,11 @@
+{
+  "chain_id": "kye:audit-chain:northwind-bank:ac-2026-08-0417",
+  "entry_index": 0,
+  "event_class": "kye.evidence.decision_map.v1",
+  "at": "2026-08-07T09:15:00Z",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "prev_hash": "sha384:c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f39029f2c4b7e1d83a05c6ef4491b27d0ac35",
+  "payload_hash": "sha384:c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f39029f2c4b7e1d83a05c6ef4491b27d0ac35",
+  "entry_hash": "sha384:c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f39029f2c4b7e1d83a05c6ef4491b27d0ac35",
+  "canonical_payload": "{\"action\":\"payment.release\",\"outcome\":\"allow_with_constraints\"}"
+}

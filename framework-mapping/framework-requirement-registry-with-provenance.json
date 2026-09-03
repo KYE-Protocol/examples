@@ -1,0 +1,22 @@
+{
+  "schema": "kye.framework_requirement_registry.v1",
+  "framework": "dpdp-act-2023",
+  "framework_version": "Act No. 22 of 2023",
+  "display_name": "Digital Personal Data Protection Act, 2023",
+  "total_requirements": 8,
+  "source": "The Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023), Government of India",
+  "regulator": "Data Protection Board of India / MeitY",
+  "dictionary": "kye:dictionary:data-action",
+  "files": [
+    "requirements.json"
+  ],
+  "mapping_provenance": {
+    "produced_by": "manual:pre-provenance-legacy",
+    "produced_at": "2026-07-31T00:00:00.000Z",
+    "deterministic": false,
+    "derivation_verified_by": "kye:agent:framework-mapping-agent",
+    "requirement_count": 8,
+    "passthrough_status_count": 0,
+    "mapping_digest": "sha256:680352e710bbe50a05c64b36bf86fbb45d1ce3fb1dde03520adbd3c8ef84af83"
+  }
+}

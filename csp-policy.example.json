@@ -1,0 +1,60 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.csp_policy.v1.json",
+  "schema": "kye.csp_policy.v1",
+  "registry_id": "kye:registry:csp-policy",
+  "adopted_at": "2026-08-15",
+  "constitution_ref": "constitution/00-INDEX.md §0.49",
+  "description": "Illustrative kye.csp_policy.v1 instance: one named origin group referenced by one surface policy. Each public surface's Content-Security-Policy is emitted from a single canonical registry rather than hand-copied per surface, so a shared origin set is defined once.",
+  "origin_groups": {
+    "clerk-frontend-api": [
+      "https://*.clerk.accounts.dev",
+      "https://clerk.kyeprotocol.com",
+      "https://accounts.kyeprotocol.com"
+    ]
+  },
+  "policies": [
+    {
+      "surface": "status",
+      "headers_file": "public/status/_headers",
+      "path_rule": "/*",
+      "directives": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "https://kyeprotocol.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "@google-fonts-css",
+          "https://kyeprotocol.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "@google-fonts-files",
+          "https://kyeprotocol.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://kyeprotocol.com"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ]
+      }
+    }
+  ]
+}

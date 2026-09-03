@@ -1,0 +1,74 @@
+[
+  {
+    "counterparty_org": "Synthetic Test Co 001",
+    "transfer_amount": 543407,
+    "currency": "EUR",
+    "settlement_state": "settled",
+    "transfer_ref": "REF-C610EF49",
+    "value_day_offset": -45
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 002",
+    "transfer_amount": 3491496,
+    "currency": "USD",
+    "settlement_state": "prepared",
+    "transfer_ref": "REF-B6298269",
+    "value_day_offset": -23
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 003",
+    "transfer_amount": 4204121,
+    "currency": "SGD",
+    "settlement_state": "settled",
+    "transfer_ref": "REF-89E8584E",
+    "value_day_offset": -69
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 004",
+    "transfer_amount": 935549,
+    "currency": "USD",
+    "settlement_state": "settled",
+    "transfer_ref": "REF-37008D64",
+    "value_day_offset": -41
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 005",
+    "transfer_amount": 3351749,
+    "currency": "EUR",
+    "settlement_state": "held",
+    "transfer_ref": "REF-66D8B855",
+    "value_day_offset": -83
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 006",
+    "transfer_amount": 2447292,
+    "currency": "SGD",
+    "settlement_state": "held",
+    "transfer_ref": "REF-6EAAF9A6",
+    "value_day_offset": -9
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 007",
+    "transfer_amount": 1443077,
+    "currency": "USD",
+    "settlement_state": "authorised",
+    "transfer_ref": "REF-A4A2CFB5",
+    "value_day_offset": -70
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 008",
+    "transfer_amount": 947208,
+    "currency": "USD",
+    "settlement_state": "prepared",
+    "transfer_ref": "REF-9036AA1A",
+    "value_day_offset": -66
+  },
+  {
+    "counterparty_org": "Synthetic Test Co 009",
+    "transfer_amount": 3400129,
+    "currency": "GBP",
+    "settlement_state": "settled",
+    "transfer_ref": "REF-03BBEF69",
+    "value_day_offset": -62
+  }
+]

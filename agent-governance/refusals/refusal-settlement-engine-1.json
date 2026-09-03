@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "runtime-kye-settlement-finality-authority-agent",
+  "parent_task": "c7f1a4e2-9b30-4d8f-a612-5e3c2f9a8d41",
+  "refused_at": "2026-06-23T00:00:00Z",
+  "chapter_ref": "§0.30",
+  "reason_summary": "Prompt asked the Settlement Finality Authority Agent to run the settlement engine, clear the trade, take custody of the asset, and move the settlement leg on-chain. KYE governs WHETHER a settlement action may proceed and proves it is authorised, in-scope, evidenced, and FINAL — it does NOT clear, settle, hold custody of, or move any asset; a settlement / clearing / custody engine is a §0.30 competing system, and a parallel finality model would fork §13 (the Resilience Loop already owns finality and replay).",
+  "remediation_hint": "Re-scope to the bounded governance act: admit -> decide (§12) -> record disposition (§21) -> seal Evidence Pack + Settlement Finality Proof (§13) -> hold the ACCEPTED finality + each instruction RELEASE advisory until §36 two-person sign-off. The settlement/clearing/custody engine, the DvP/PvP leg movement, and the asset-holding ledger stay the customer's systems (or the FMI/CSD/DLT rail); the agent governs CDM-expressed actions (§0.25 peer) and binds the existing MiCA + GENIUS Act maps."
+}

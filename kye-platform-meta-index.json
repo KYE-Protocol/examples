@@ -1,0 +1,15 @@
+{
+  "schema": "kye.platform_meta_index.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-08-07T09:15:00Z",
+  "entries": [
+    {
+      "kind": "constitution-doc",
+      "name": "Northwind Bank payments release",
+      "path": "public/site/authority-finality.html",
+      "declared_in": [
+        "internal"
+      ]
+    }
+  ]
+}

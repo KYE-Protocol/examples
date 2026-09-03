@@ -1,0 +1,41 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.airgap_lifecycle.v1.json",
+  "schema": "kye.airgap_lifecycle.v1",
+  "registry_id": "kye:registry:airgap-lifecycle",
+  "adopted_at": "2026-07-24",
+  "constitution_ref": "constitution/00-INDEX.md §0.47",
+  "description": "Illustrative minimal §0.47 air-gap lifecycle registry — one hard-offline stage and one network-degradable stage, plus the network-symbol the gate matches. The canonical registry carries the full five-stage spine (decide · enforce · emit · reconcile · assure).",
+  "dictionary": "specs/dictionaries/airgap-classes.json",
+  "degradable_baseline_key": "air_gap_ability__degradable_network_sites",
+  "scanned_extensions": [".ts", ".mjs"],
+  "stages": [
+    {
+      "stage_id": "decide",
+      "name": "Decide — the Policy Decision Point",
+      "offline_class": "hard-offline",
+      "paths": ["runtime/pdp/src"],
+      "invariant": "The verdict is reached from the compiled policy bundle and the request context alone — no remote policy fetch, no remote identity lookup, no telemetry call on the verdict path."
+    },
+    {
+      "stage_id": "reconcile",
+      "name": "Reconcile — the declared-vs-deployed observer",
+      "offline_class": "network-degradable",
+      "paths": ["scripts/reconciliation"],
+      "invariant": "Observing an external deployment is this lane's purpose, so a network call is intrinsic; a probe blackout MUST degrade to a non-blocking verdict and never block a seal.",
+      "degradation_markers": ["PROBE_UNAVAILABLE"],
+      "excluded_paths": [
+        {
+          "path": "scripts/reconciliation/README.md",
+          "reason": "Prose, not an executable path — outside scanned_extensions. Declared rather than silently skipped (§0.43)."
+        }
+      ]
+    }
+  ],
+  "network_symbols": [
+    {
+      "symbol_id": "global-fetch",
+      "pattern": "(^|[^.\\w$])fetch\\s*\\(",
+      "description": "A call to the global fetch() — the most common outbound HTTP dependency."
+    }
+  ]
+}

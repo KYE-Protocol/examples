@@ -1,0 +1,138 @@
+{
+  "schema": "kye.clip_run.v1",
+  "reel_id": "kye:reel:emulated-dashboard-journey",
+  "agent_id": "kye:agent:kye-self:governed-capture",
+  "title": "A customer works the KYE dashboard — deploys and uses a governed agent (emulated, synthetic seed)",
+  "edition": "2026-07-29",
+  "generated_note": "Patent-safe kye.clip_run.v1 example — a GENERATED projection of the private kye-clip run record with internal paths + audit refs redacted (§0.35 / §33). Do not hand-edit: regenerate via `node internal`.",
+  "canvas": {
+    "width": 640,
+    "height": 400
+  },
+  "delay_cs": 220,
+  "loop": 0,
+  "total_frames": 9,
+  "governed": 10,
+  "deterministic": true,
+  "round_trip": true,
+  "gif": {
+    "path": "out/emulated-dashboard-journey.gif",
+    "bytes": 2613447,
+    "sha256": "sha256:df07f8bc276eb976a6bee2bd11c310a1e0533385e0da0968677f472d3dbb4c71"
+  },
+  "mp4": {
+    "status": "produced",
+    "path": "out/emulated-dashboard-journey.mp4",
+    "command": "ffmpeg -y -i out/emulated-dashboard-journey.gif -movflags +faststart -pix_fmt yuv420p -vf scale=trunc(iw/2)*2:trunc(ih/2)*2 out/emulated-dashboard-journey.mp4"
+  },
+  "frames": [
+    {
+      "slug": "emulate-dashboard",
+      "label": "Signed in — the governance dashboard, populated from synthetic seed data",
+      "source": "captures/emulate-dashboard.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:6d7d31fe0739",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-authorities",
+      "label": "Team & delegated authority — filter the active grants",
+      "source": "captures/emulate-authorities.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:e855d2c0b7a5",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-agents",
+      "label": "The governed AI agent roster for this tenant",
+      "source": "captures/emulate-agents.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:6e84e3eb1767",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-deploy",
+      "label": "Deploy a governed agent — the Register agent flow",
+      "source": "captures/emulate-deploy.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:7483a329d3a8",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-agent-deployed",
+      "label": "Agent registered — the new governed agent joins the roster",
+      "source": "captures/emulate-agent-deployed.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:7e94dfdcc9e3",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-agent-at-work",
+      "label": "The deployed agent at work — its governed decisions land in the audit trail",
+      "source": "captures/emulate-agent-at-work.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:bc87d11a5327",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-enforce",
+      "label": "Enforce governance — engage the kill-switch on a governed app",
+      "source": "captures/emulate-enforce.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:310dd03a6867",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-approvals",
+      "label": "The consequential-action approval queue",
+      "source": "captures/emulate-approvals.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:172dbdfda6e3",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    },
+    {
+      "slug": "emulate-evidence",
+      "label": "Every action becomes an Evidence Pack — attest one on camera",
+      "source": "captures/emulate-evidence.png",
+      "source_px": "1280x800",
+      "governed": true,
+      "public_evidence": {
+        "evidence_ref": "kye:evidence:c3b9522f4070",
+        "outcome": "admitted",
+        "verify_url": "/trust/self-audit.html"
+      }
+    }
+  ]
+}

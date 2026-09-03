@@ -1,0 +1,19 @@
+{
+  "schema": "kye.demo_scenario.v1",
+  "id": "kye:demo-scenario:trading-block-order-needs-approval",
+  "version": 1,
+  "entity_class": "demo-scenario",
+  "name": "GBP 4.2M block order — held for approval",
+  "narrative": "A macro-execution agent tries to sell a GBP 4.2M block — far above the desk's auto-approval limit. KYE holds it: the agent cannot self-authorise an order this size. The money does not move until a human approval is recorded.",
+  "substrate": "agentic-trading",
+  "evaluated_by": "public/sandbox/functions/api/v1/pdp/decide.js",
+  "reasoner_mode": { "uses_llm": false, "deterministic": true },
+  "request": {
+    "subject": "kye:agent:demo-agent",
+    "action": "trading.order_place",
+    "purpose": "place a GBP 4.2M block order",
+    "context": { "instrument": "EQ:BP.L", "side": "sell", "amount": 4200000 }
+  },
+  "expected": { "decision": "require_approval", "reason_code": "approval_threshold_breach" },
+  "tags": ["trading", "order-execution", "approval-threshold"]
+}

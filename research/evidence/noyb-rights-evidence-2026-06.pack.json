@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:noyb-rights-evidence-2026-06",
+  "report_id": "kye:research-report:noyb-rights-evidence-2026-06",
+  "body_sha256": "dbbb558fdf2a0b15f069d6cdb6dc7d292060c867dd7b528158916b100e6fd35d",
+  "seal_signature": "zM9wXmCkTZDuLbMyxrVeGPmehUVQLhXgxnucs4g3FQtazyssPf+ijPZmu0g4vlCgQLEnYQ9bePXlJIdOP4iBAA==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "noyb (None of Your Business), the European digital-rights NGO founded by Max Schrems, enforces data-protection rights through strategic litigation, standard-setting cases and complaints — pressing organisations to demonstrate, not merely assert, that they complied.",
+      "source_url": "https://noyb.eu/en/project/how-we-work",
+      "publisher": "noyb — European Center for Digital Rights. Cited as a digital-rights enforcement actor, not as a statement of law.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The GDPR gives data subjects enforceable rights — access (Article 15), rectification (16), objection (21) and the right not to be subject to a solely-automated decision with legal or similarly significant effect (22) — exercisable against the controller.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "publisher": "Official Journal of the European Union (Regulation (EU) 2016/679, GDPR)",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 2,
+    "pinned": 0,
+    "unpinned": 2
+  }
+}

@@ -2,6 +2,8 @@
   "product_id": "insurance-claims",
   "kind": "foundry-pack",
   "display_name": "KYE Claims Authority Pack",
+  "display_label": "Insurance Claims AI Governance — UK (FCA Consumer Duty)",
+  "display_qualifier": "UK (FCA Consumer Duty)",
   "sku_id": "KYE-FOUNDRY-PACK-INSURANCE-CLAIMS-001",
   "sector_specialization": "insurance-claims",
   "frameworks": ["FCA_CONSUMER_DUTY", "EU_AI_ACT", "UK_GDPR", "DORA"],
@@ -22,8 +24,23 @@
     "integration": ["N/A: sector-dedicated endpoints/SDK/CLI are Phase-2"],
     "comms_and_legal": ["N/A: the comms + email-templates manifests are the IP-track domain-7 binding"],
     "runtime_and_infra": ["N/A: shared evidence/WORM runtime; sector-dedicated worker/DB/queue are Phase-2 (governed CF deploy)"],
-    "governance_and_evidence": ["N/A: the compliance-attestation + audit-retention schemas are the IP-track domain-9 binding"]
+    "governance_and_evidence": ["N/A: the compliance-attestation + audit-retention schemas are the IP-track domain-9 binding"],
+    "road": {
+      "destination": "A regulated insurer's AI-assisted claims decisions discharged against FCA Consumer Duty, the EU AI Act, UK GDPR and DORA — every decision evidence-backed, every adverse fraud action human-gated.",
+      "discover_ref": "public/site/foundry/insurance-claims-authority-pack.html",
+      "journey_ref": "public/site/poc.html",
+      "checkout_ref": "KYE-FOUNDRY-PACK-INSURANCE-CLAIMS-001",
+      "price_id": "declared-not-wired: live Stripe price id provisioned under section-27 closed-registration at activation (Phase-2 governed deploy) — never a fabricated key (section-0.29)",
+      "metering_ref": "N/A: the billing-meter schema is the IP-track domain-4 metering binding (carried in the private product registry)",
+      "dashboard_ref": "N/A: the dashboard preset is the IP-track domain-5 binding (carried in the private product registry)",
+      "onboarding_ref": "kye:agent:onboarding-agent"
+    }
   },
   "status": "shipped",
-  "announced_at": "2026-06-06"
+  "announced_at": "2026-06-06",
+  "distribution": [
+    { "channel": "web", "state": "shipped", "ref": "public/site/foundry/insurance-claims-authority-pack.html" },
+    { "channel": "github-app", "state": "planned" },
+    { "channel": "browser-extension", "state": "n/a" }
+  ]
 }

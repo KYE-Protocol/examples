@@ -1,0 +1,27 @@
+{
+  "schema": "kye.crypto_agility.preservation_attestation.v1",
+  "attestation_id": "kye:crypto-preservation:prod:01HZQ7M4N8XR2V6B9C0D1E2F3G",
+  "original_subject_hash": "sha256:9f2c3a1b5d6e7f80912a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f80",
+  "original_envelope_ref": "kye:signing-envelope:prod:01HF8Z3Q7K2M4N6P8R0T2V4X6Z",
+  "original_algorithms": ["ed25519"],
+  "historical_action_ref": "kye:evidence-pack:prod:2026-03-14:approval-cross-border-payment-0042",
+  "deprecation_status": "algorithm_deprecated",
+  "old_receipt_cryptographically_deprecated": true,
+  "deprecated_algorithm": "ed25519",
+  "renewal": {
+    "renewed_envelope": {
+      "envelope_ref": "kye:signing-envelope:prod:01JA5H9K3M7P1R5T9V3X7Z1B5D",
+      "signing_scheme": "ed25519_plus_mldsa_hybrid_kofn",
+      "subject_hash": "sha256:9f2c3a1b5d6e7f80912a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f80",
+      "signature_algorithms": ["ed25519", "ml-dsa-65"]
+    },
+    "renewed_algorithms": ["ed25519", "ml-dsa-65"],
+    "renewed_at": "2034-11-02T09:15:00Z"
+  },
+  "continuity_statement": "The original evidence digest is preserved verbatim and the historical approval action is unchanged. This attestation records an additional hybrid Ed25519 + ML-DSA-65 (FIPS 204) seal over the same digest, so the Evidence Pack™ remains independently verifiable after Ed25519 is deprecated for new seals.",
+  "verification": {
+    "jwks_ref": "/trust/self-audit-jwks.json",
+    "public_verify_url": "https://kyeprotocol.com/trust/self-audit.html"
+  },
+  "created_at": "2034-11-02T09:15:04Z"
+}

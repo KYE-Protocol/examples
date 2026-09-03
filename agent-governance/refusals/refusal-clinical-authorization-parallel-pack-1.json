@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "b7d1f3a0-5c92-4e61-9a08-2f6e4c71d8b3",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel clinical / healthcare-AI rule-pack / sector-pack / dictionary / framework-mapping. KYE already governs AI-assisted clinical decisions at the action boundary via kye:rule-pack:clinical-ai-eu-uk + kye:sector-pack:clinical-ai-eu-uk + kye:dictionary:clinical-ai-eu-uk, bound to EU AI Act high-risk / MHRA MDR / MHRA SaMD / UK GDPR Art. 9. A parallel pack is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:sector-pack:clinical-ai-eu-uk flow under KYE authority (the runtime-kye-sanctions-aml-authority-agent pattern). Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry) and BIND — never re-map — the existing EU AI Act high-risk / MHRA MDR / MHRA SaMD / UK GDPR Art. 9 frameworks via kye:rule-pack:clinical-ai-eu-uk."
+}

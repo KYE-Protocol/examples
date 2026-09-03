@@ -1,0 +1,54 @@
+{
+  "schema_version": "kye.research_report.v1",
+  "report_id": "kye:research-report:returns-to-expertise-governance-moat-2026-06",
+  "series": "roadmap_to_ai_governance",
+  "format": "market_landscape",
+  "sector": "cross-sector",
+  "audience": "cfo",
+  "cadence": "monthly",
+  "edition": "2026-06",
+  "title": "Returns to Expertise: Why Governance Is the Moat — June 2026",
+  "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
+  "topic_id": "kye:research-topic:returns-to-expertise-governance-moat",
+  "tier": "free",
+  "authors": [
+    {
+      "name": "KYE Protocol Research",
+      "affiliation": "KYE Protocol Ltd",
+      "role": "kye"
+    }
+  ],
+  "evidence_pack_ref": "kye:evidence-pack:returns-to-expertise-governance-moat-2026-06",
+  "seal": {
+    "jwks_kid": "kye:key:self-audit-fixture-2026-06",
+    "signature_alg": "EdDSA",
+    "signature": "mW8RbXQxpZdBYcKhS+zZ9nIQiW1ky+49oDvh5++XgW/2VBPfDvNk7wfRuAGHCUpaCSHmFAR90XX3ipPFBplnBQ=="
+  },
+  "citations": [
+    {
+      "claim": "In a study of roughly 400,000 agentic-coding sessions, people made about 70% of the planning decisions (what to do) while the agent made about 80% of the execution decisions (how to do it); success was determined by how well a person understood the problem rather than whether they were trained in coding; expert-rated sessions reached verified success more than twice as often as novice ones and recovered from errors; expert users drew more than twice the work per instruction (roughly 12 actions and 3,200 words of output per prompt vs ~5 actions and ~600 words for novices); over seven months the share of sessions spent debugging nearly halved while operating software, analysing data and writing grew; and the authors note coding is a leading case — a preview of what may come as agentic tools take on other forms of knowledge work.",
+      "source_url": "https://www.anthropic.com/research/research/claude-code-expertise",
+      "retrieved_at": "2026-06-16T00:00:00Z",
+      "publisher": "Anthropic — Hitzig, Massenkoff, Lyubich, Heller & McCrory, 'Agentic coding and persistent returns to expertise' (2026-06-11). Cited as published research, not advice."
+    },
+    {
+      "claim": "Spending on AI-governance platforms was sized at $492M for 2026 and projected to surpass $1B by 2030, with AI regulation expanding to cover about 75% of the world's economies; 362 AI incidents were recorded in 2025; and AI governance is framed as the accountability layer that sits above AI security, compliance and monitoring.",
+      "source_url": "https://getaigovernance.net/",
+      "retrieved_at": "2026-06-16T00:00:00Z",
+      "publisher": "GetAIGovernance.net, 'The State of AI Governance: H1 2026' (citing a Gartner Feb 2026 forecast). Cited as a market survey, not advice."
+    }
+  ],
+  "render_targets": [
+    "web",
+    "email_html",
+    "pdf"
+  ],
+  "public_key_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+  "published_at": "2026-06-16T18:00:00Z",
+  "scannability": {
+    "has_tear_sheet": true,
+    "has_key_findings": true,
+    "has_section_tldr": false
+  },
+  "status": "published"
+}

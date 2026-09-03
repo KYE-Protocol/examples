@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "9c4e2a17-3b6d-4f81-a2c5-7e0d1b9a4f62",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel payment-authorization rule-pack / sector-pack / dictionary and to re-map PSD2/PSD3/SCA. KYE already governs payment authorization via kye:rule-pack:payments_eu (PSD2/PSD3/EBA, incl. SCA) bound into kye:sector-pack:financial_services; PSD2/PSD3 + SCA arts. 72-74,97 are already deep-mapped. A parallel pack is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing the parallel pack and the re-map.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:rule-pack:payments_eu flow under KYE authority (the runtime-kye-sanctions-aml-authority-agent pattern). Add only the agent-product artefacts (§52 binding, principal, refusal, product row + nine-domain fan-out, SKU, pricing, ™, governed-agents.html entry, gate) and BIND — never re-map — the existing PSD2/PSD3 + SCA arts. 72-74,97 + FCA Consumer Duty frameworks."
+}

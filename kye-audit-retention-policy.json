@@ -1,0 +1,20 @@
+{
+  "schema_version": "kye.audit_retention_policy.v1",
+  "policy_id": "kye:retention-policy:northwind-bank:rp-2026-08-0417",
+  "version": "1.0.0",
+  "table_policies": [
+    {
+      "source_table": "payment_release",
+      "retention_class": "kye:retention:audit_events_7y",
+      "retention_years": 1,
+      "framework_refs": [
+        {
+          "framework": "iso-iec-27001",
+          "control_id": "control-2026-08-0417",
+          "rationale": "Recorded so the decision can be re-derived by someone who was not present when it was taken."
+        }
+      ]
+    }
+  ],
+  "status": "active"
+}

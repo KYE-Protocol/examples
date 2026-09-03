@@ -1,4 +1,5 @@
 {
+  "schema": "kye.replay.proof.v1",
   "id": "kye:replay-proof:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
   "version": 1,
   "seal_ref": "kye:replay-seal:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",

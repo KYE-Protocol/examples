@@ -1,0 +1,18 @@
+{
+  "schema": "kye.ai_influence_state.v1",
+  "ai_influence_state_id": "kye:ai-influence-state:northwind-bank:ais-2026-08-0417",
+  "decision_id": "kye:decision:northwind-bank:dec-2026-08-0417",
+  "formal_authority_holder": "human",
+  "actual_influence_estimate": "none",
+  "human_review_depth": "none",
+  "human_override_available": true,
+  "affected_party_informed": "true",
+  "evidence_basis": [
+    {
+      "evidence_ref": "kye:evidence-pack:northwind-bank:ep-2026-08-0417",
+      "evidence_class": "session_timing"
+    }
+  ],
+  "attestation_chain_root": "kye:audit-chain:northwind-bank:ac-2026-08-0417",
+  "captured_at": "2026-08-07T09:15:00Z"
+}

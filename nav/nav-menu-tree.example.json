@@ -1,0 +1,50 @@
+{
+  "schema": "kye.nav_menu_tree.v1",
+  "version": "5.0.0",
+  "_example_note": "Derived slice of the canonical menu tree (one link cell + one dropdown cell, first group, first two items). The full tree is generated, never hand-edited.",
+  "primary_cta": {
+    "id": "get-api-key",
+    "label": "Get an API key",
+    "url": "https://app.kyeprotocol.com/api-keys.html",
+    "icon": "key"
+  },
+  "secondary_cta": {
+    "id": "apply-audit-pilot",
+    "label": "Apply for Audit Pilot",
+    "url": "/pilot-apply.html",
+    "icon": "rocket_launch"
+  },
+  "top_cells": [
+    {
+      "cell_id": "home",
+      "label": "Home",
+      "url": "/",
+      "icon": "home",
+      "kind": "link"
+    },
+    {
+      "cell_id": "platform",
+      "label": "Platform",
+      "kind": "dropdown",
+      "tier1_group": "platform",
+      "icon": "hub",
+      "url": "/platform.html",
+      "groups": [
+        {
+          "group_id": "platform-overview",
+          "label": "Overview",
+          "items": [
+            {
+              "label": "The platform",
+              "url": "/platform.html"
+            },
+            {
+              "label": "Protocol overview",
+              "url": "/protocol.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

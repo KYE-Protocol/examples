@@ -1,0 +1,40 @@
+{
+  "schema": "kye.host_platform_adapter_manifest.v1",
+  "schema_version": "1.0.0",
+  "manifest_id": "kye:manifest:host-platform-adapters",
+  "adopted_at": "2026-06-20",
+  "description": "Illustrative KYE Host-Platform Authority Adapter manifest fragment — one host entry showing how a host platform routes its governed action surfaces through the KYE Authority Gateway, projecting the single kye.harness_adapter.v1 envelope and sealing an Evidence Pack before the commit boundary.",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md + constitution/00-INDEX.md §0.10 + §0.25",
+  "publication_rule": {
+    "policy": "public",
+    "rationale": "Illustrative example payload (public/examples/), not the IP-track contract registry."
+  },
+  "governed_action_envelope_schema_ref": "https://kyeprotocol.com/schemas/kye.harness_adapter.v1.json",
+  "dictionary_ref": "kye:dictionary:host-platform-adapters",
+  "counts": {
+    "hosts": 1
+  },
+  "hosts": [
+    {
+      "host_id": "kye:host-platform-adapter:servicenow",
+      "host_kind": "itsm-workflow-platform",
+      "display_name": "ServiceNow",
+      "integration_class": "itsm-workflow-platform",
+      "integration_dictionary_ref": "kye:dictionary:integrations#servicenow",
+      "routed_action_types": ["tool_call", "human_in_the_loop"],
+      "gateway_route": {
+        "hook_phase": ["pre", "post"],
+        "pep_placement": "webhook_callback",
+        "transport": "remote_http"
+      },
+      "commit_boundary": "ServiceNow change-task state transition to an Implement state.",
+      "evidence_before_commit": true,
+      "fail_mode": "fail-closed",
+      "policy_engine_adapter_ref": "kye:dictionary:policy-engine-adapters#native",
+      "stack_binding_kinds": ["workflow_engine", "audit_log"],
+      "si_buildable": true,
+      "status": "declared",
+      "notes": "Illustrative host entry."
+    }
+  ]
+}

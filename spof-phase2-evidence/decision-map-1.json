@@ -1,4 +1,5 @@
 {
+  "schema": "kye.evidence.decision_map.v1",
   "id": "kye:decision-map:platform.spof-phase2.01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
   "version": 1,
   "decision_id": "kye:decision:platform.spof-phase2.01HFC9Y8ZRK5M6S9YV4WJKQ8N3Q",
@@ -78,18 +79,66 @@
     }
   ],
   "edges": [
-    { "from": "in.request",                       "to": "rule.banking-grade-admissibility", "kind": "feeds" },
-    { "from": "in.spof-registry-current",         "to": "rule.banking-grade-admissibility", "kind": "feeds" },
-    { "from": "in.constitutional-amendment-draft","to": "rule.banking-grade-admissibility", "kind": "feeds" },
-    { "from": "in.constitutional-amendment-draft","to": "rule.no-new-spof-introduced",      "kind": "feeds" },
-    { "from": "rule.banking-grade-admissibility", "to": "obl.emit-cohort-manifest",         "kind": "triggers" },
-    { "from": "rule.banking-grade-admissibility", "to": "obl.emit-deploy-manifest",         "kind": "triggers" },
-    { "from": "rule.banking-grade-admissibility", "to": "obl.emit-drafting-failover-manifest","kind": "triggers" },
-    { "from": "rule.no-new-spof-introduced",      "to": "obl.lift-spof-rows",               "kind": "triggers" },
-    { "from": "obl.emit-cohort-manifest",         "to": "out.decision",                     "kind": "satisfies" },
-    { "from": "obl.emit-deploy-manifest",         "to": "out.decision",                     "kind": "satisfies" },
-    { "from": "obl.emit-drafting-failover-manifest","to": "out.decision",                   "kind": "satisfies" },
-    { "from": "obl.lift-spof-rows",               "to": "out.decision",                     "kind": "satisfies" }
+    {
+      "from": "in.request",
+      "to": "rule.banking-grade-admissibility",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.spof-registry-current",
+      "to": "rule.banking-grade-admissibility",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.constitutional-amendment-draft",
+      "to": "rule.banking-grade-admissibility",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.constitutional-amendment-draft",
+      "to": "rule.no-new-spof-introduced",
+      "kind": "feeds"
+    },
+    {
+      "from": "rule.banking-grade-admissibility",
+      "to": "obl.emit-cohort-manifest",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.banking-grade-admissibility",
+      "to": "obl.emit-deploy-manifest",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.banking-grade-admissibility",
+      "to": "obl.emit-drafting-failover-manifest",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.no-new-spof-introduced",
+      "to": "obl.lift-spof-rows",
+      "kind": "triggers"
+    },
+    {
+      "from": "obl.emit-cohort-manifest",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.emit-deploy-manifest",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.emit-drafting-failover-manifest",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.lift-spof-rows",
+      "to": "out.decision",
+      "kind": "satisfies"
+    }
   ],
   "output_node_id": "out.decision",
   "created_at": "2026-05-27T10:00:02Z"

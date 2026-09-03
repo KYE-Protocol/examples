@@ -1,0 +1,28 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.html_sink_safety.v1.json",
+  "schema": "kye.html_sink_safety.v1",
+  "registry_id": "kye:registry:html-sink-safety-example",
+  "adopted_at": "2026-08-09",
+  "constitution_ref": "constitution/00-INDEX.md",
+  "description": "Illustrative kye.html_sink_safety.v1 instance: one surface declaring its source-of-truth root, the sinks it recognises, the untrusted classes it refuses to interpolate, and the single approved rendering strategy. Shows the shape an adopting surface declares — the live instance is internal",
+  "dictionary": "internal",
+  "canonical_strategy": "textContent-assignment",
+  "baseline_key": null,
+  "corpus_roots": [
+    {
+      "path": "site/src/fragments",
+      "why_source_of_truth": "Authored Astro fragments; the public/ HTML built from them is regenerated, so only edits here survive.",
+      "extensions": [
+        ".html"
+      ]
+    }
+  ],
+  "sinks": [
+    "innerHTML",
+    "insertAdjacentHTML"
+  ],
+  "untrusted_sources": [
+    "exception-message",
+    "url-derived"
+  ]
+}

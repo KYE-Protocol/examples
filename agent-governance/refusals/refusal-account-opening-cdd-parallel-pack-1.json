@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "b3e8d1a4-6c72-4f90-a1d5-8e2f0c4b7a61",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel account-opening / CDD rule-pack / sector-pack / dictionary and to re-map FATF R.10 CDD / EU 6AMLD. KYE already governs origination-time customer due diligence via kye:rule-pack:aml-financial-crimes + kye:sector-pack:aml-financial-crimes + kye:dictionary:aml-financial-crimes, bound to FATF-40 (incl. R.10 CDD) / EU 6AMLD / US BSA-FinCEN / Wolfsberg. A parallel pack is a §0 violation; re-mapping those frameworks is a §70 violation. Refusing the parallel pack and the re-map.",
+  "remediation_hint": "Build the Account-Opening CDD Authority Agent as a Governed Agent PRODUCT that RUNS the existing kye:sector-pack:aml-financial-crimes flow under KYE authority at origination / day-zero (the runtime-kye-sanctions-aml-authority-agent pattern at the account-opening boundary — distinct from the periodic runtime-kye-kyc-refresh-agent). Add only the agent-product artefacts and BIND — never re-map — the existing FATF-40 R.10 CDD / EU 6AMLD frameworks. FCA is honest out-of-scope (§70)."
+}

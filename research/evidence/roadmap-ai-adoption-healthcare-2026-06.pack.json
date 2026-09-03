@@ -1,0 +1,50 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:roadmap-ai-adoption-healthcare-2026-06",
+  "report_id": "kye:research-report:roadmap-ai-adoption-healthcare-2026-06",
+  "body_sha256": "947a1b826aac6582e0726f7b2f5efd9d9f69e8f5609d40424664c236c391b1ce",
+  "seal_signature": "Fsl63JrsGAwfta9sSOp2Rc738Fxet9ZPpTKu1Vq7achjhqdpAy9dnBdfeLJxbSy3MsIDV+8kBE1k4dgXfIdfDA==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "Health data is special-category data under GDPR Article 9: processing is prohibited unless a specific Article 9(2) condition applies, on top of an Article 6 lawful basis.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "publisher": "Official Journal of the European Union",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "Software intended to inform diagnosis or treatment is a medical device that must be CE-marked under the EU Medical Device Regulation (EU) 2017/745 before being placed on the market.",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj",
+      "publisher": "Official Journal of the European Union",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The MHRA regulates software and AI as a medical device in the UK and has set out a programme to reform how such products are regulated.",
+      "source_url": "https://www.gov.uk/government/publications/software-and-ai-as-a-medical-device-change-programme",
+      "publisher": "Medicines and Healthcare products Regulatory Agency",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The EU AI Act classifies AI systems that are, or are a safety component of, a regulated medical device as high-risk, attaching risk-management, data-governance, logging and human-oversight obligations to the deployer.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "The NIST AI Risk Management Framework organises trustworthy-AI practice into four functions — Govern, Map, Measure, Manage — that healthcare deployers adapt as the backbone of an AI governance programme.",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "National Institute of Standards and Technology",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 5,
+    "pinned": 0,
+    "unpinned": 5
+  }
+}

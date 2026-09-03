@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "f7a2b914-6c3e-4d18-9b2a-1e5c0d8f3a47",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked for a parallel fraud rule-pack / sector-pack / dictionary and a fraud-scoring engine. KYE already governs real-time payment control via kye:rule-pack:payments bound into kye:sector-pack:financial_services; FCA Consumer Duty + PSD2 SCA/disputes are already deep-mapped. A parallel pack violates §0; re-mapping those frameworks violates §70; a fraud-scoring/ML engine violates §0.30 honest-scope (KYE governs the authority to ACT on a fraud signal, it does not score fraud). Refusing all three.",
+  "remediation_hint": "Build it as a Governed Agent PRODUCT that governs WHETHER a fraud-control action (block/hold/release/step-up) reaches finality and PROVES the basis, deciding via §12 Purpose-Permission against the EXISTING kye:rule-pack:payments (the runtime-kye-payment-authorization-authority-agent pattern). Add only agent-product artefacts (§52 binding, principal, refusal, product row, SKU, pricing, ™, gate) and BIND — never re-map — FCA Consumer Duty + PSD2 SCA/disputes. The fraud SIGNAL is an INPUT; KYE runs no model."
+}

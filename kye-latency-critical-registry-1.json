@@ -1,0 +1,18 @@
+{
+  "schema": "https://kyeprotocol.com/",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:reg-2026-08-0417",
+  "adopted_at": "2026-08-07",
+  "description": "Illustrative instance for the Northwind Bank reference tenant.",
+  "endpoints": [
+    {
+      "endpoint_id": "kye:endpoint:authorize",
+      "path": "/api/v1/authorize",
+      "method": "GET",
+      "rationale": "Recorded so the decision can be re-derived by someone who was not present when it was taken.",
+      "latency_budget_p95_ms": 1,
+      "owning_worker": "kye:worker:wor-2026-08-0417",
+      "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md"
+    }
+  ]
+}

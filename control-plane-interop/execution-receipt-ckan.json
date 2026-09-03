@@ -1,0 +1,22 @@
+{
+  "schema": "kye.execution_receipt.v1",
+  "receipt_id": "kye:execution-receipt:ckan-acme-2026-07-24-0001",
+  "grant_ref": "kye:execution-grant:ckan-acme-2026-07-24-0001",
+  "grant_hash": "sha256:5d76bb3f73f04f717af38bbb5a314648bf07d3f168184c92a7408a1b22028cdf",
+  "idempotency_key": "ckan-dsp-2026-07-24-0001-a1b2c3",
+  "enforcement_point": "ckan",
+  "constraints_hash": "sha256:5c2abd39533fcb2afaf131ee6e002f32639c60d419b2bee618cd6a81cb8f5700",
+  "tenant": "acme",
+  "trust_domain_id": "acme",
+  "outcome": "executed",
+  "rejection_reason": null,
+  "result_ref": "ckan://acme/dataset/open-spending-2026/activity/publish-8821",
+  "executed_at": "2026-07-24T15:00:03Z",
+  "evidence_pack_ref": "kye:evidence-pack:ckan-acme-2026-07-24-0001",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "ckan-acme-connector-2026",
+    "jwks_ref": "https://data.acme.example/ckan/.well-known/jwks.json",
+    "signature_b64": "UmVjZWlwdFNpZ25hdHVyZUV4YW1wbGUwMDFrUXBWaFozbjFvUXBYd0IycjRjVjhtTmY2VGpMMGFZeUU5c1E"
+  }
+}

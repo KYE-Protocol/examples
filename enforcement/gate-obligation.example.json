@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.gate_obligation.v1.json",
+  "kye_canonical": true,
+  "registry_id": "kye:registry:gate-obligations-example",
+  "adopted_at": "2026-08-21",
+  "constitution_ref": "constitution/00-INDEX.md#section-0-18",
+  "description": "Illustrative single-row instance of the gate-obligation contract: the obligations an enforcer owes before it can be relied on. Shape only \u2014 the live registry is IP-track and not mirrored here. Exists so the contract itself is exercised by test:schemas (\u00a70.18 example slot).",
+  "obligations": [
+    {
+      "id": "enrolled",
+      "entity_class": "enforcement-gate-obligations",
+      "requirement": "Every domain-spanning enforcer is enrolled in the enforcer-scope registry \u2014 either declared-only with its identifier and script, or covered with scope markers proving it spans its full declared domain and narrowings that would re-blind it are forbidden.",
+      "enforced_by": "npm:test:no-blind-spots",
+      "constitution_ref": "constitution/00-INDEX.md#section-0-43",
+      "failure_symptom": "N domain-spanning gate(s) are NOT enrolled (ceiling 0)",
+      "authoring_note": "A forbidden narrowing must name something that shrinks the POPULATION a verdict ranges over \u2014 never something that only trims the failure OUTPUT. Banning a display truncation makes correct code illegal and forces the next author to obfuscate a working line."
+    }
+  ]
+}

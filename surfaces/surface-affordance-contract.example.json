@@ -1,0 +1,49 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.surface_affordance_contract.v1.json",
+  "schema": "kye.surface_affordance_contract.v1",
+  "registry_id": "kye:registry:surface-affordance-contract:example",
+  "adopted_at": "2026-08-17",
+  "constitution_ref": [
+    "constitution/50-CONTENT-GRAPH-DISCOVERABILITY.md#§2",
+    "constitution/00-INDEX.md#§0.42"
+  ],
+  "description": "ILLUSTRATIVE EXAMPLE of the kye.surface_affordance_contract.v1 shape — not a source of truth. The live contract is the registry kye:registry:surface-affordance-contract, which the engagement-coverage gate reads; this file shows the minimum well-formed instance — one obligated kind, one exempt kind with its reason stated, and the enforcement binding. Canonical artefacts are referenced here by registry id rather than by repository path: a public example must not name an IP-track location (§33), and an id is the stable reference anyway (§0.9).",
+  "affordance_vocabulary": {
+    "control": "A page-owned button, input, select or textarea.",
+    "form": "A page-owned form the reader can submit.",
+    "disclosure": "A page-owned <details> block.",
+    "canvas": "A page-owned drawing surface.",
+    "behaviour_script": "A page-specific behaviour script that is not canonical chrome."
+  },
+  "kinds": [
+    {
+      "kind": "landing",
+      "min_page_owned": 1,
+      "required_affordances": [
+        "control"
+      ],
+      "archetype": "none",
+      "rationale": "A landing has to let the reader do the thing it claims, not only read that the thing can be done."
+    },
+    {
+      "kind": "glossary",
+      "min_page_owned": 0,
+      "required_affordances": [],
+      "archetype": "none",
+      "rationale": "Deliberately exempt — a glossary is read by lookup and the canonical search palette already supplies that affordance at chrome level."
+    }
+  ],
+  "enforcement": {
+    "gate": "scripts/gates/engagement-coverage.mjs",
+    "npm_ref": "test:engagement-coverage",
+    "rule_code": "ENG001",
+    "contract": "Every discoverable page satisfies its kind's affordance obligation, measured from page_owned{} in the §50 page manifest.",
+    "derives_from": [
+      "kinds",
+      "affordance_vocabulary",
+      "baseline_key"
+    ]
+  },
+  "baseline_key": "surface_affordance__unsatisfied",
+  "measurement_note": "Obligations are measured against page_owned{}, never raw elements{} — the latter includes canonical chrome and would pass the great majority of the estate without opening a single page."
+}

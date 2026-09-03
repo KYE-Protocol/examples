@@ -29,5 +29,17 @@
     "source_repository": "https://github.com/acme/credit-decisioning",
     "kye_sbom_hash": "kye:sbom:acme.example:01JYSBM000000000000000XZ"
   },
-  "documentation_urls": ["https://acme.example/playbooks/credit-decisioning"]
+  "documentation_urls": ["https://acme.example/playbooks/credit-decisioning"],
+  "purpose_binding_ref": "kye:grant:acme.example:01JYGRT000000000000000XZ",
+  "finality_boundary": "recommendation",
+  "evidence_requirement": {
+    "evidence_pack_required": true,
+    "sealed_fields": ["tool_calls", "mcp_servers_called", "scope_touched", "decision_code", "finality_reached"],
+    "replay_verifiable": true
+  },
+  "revocation": {
+    "expires_at": "2027-01-01T00:00:00Z",
+    "suspendable": true,
+    "revocation_state": "active"
+  }
 }

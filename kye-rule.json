@@ -1,0 +1,15 @@
+{
+  "schema_version": "kye.rule.v1",
+  "rule_id": "kye:rule:northwind-bank:rul-2026-08-0417",
+  "display_name": "Northwind Bank",
+  "rule_type": "runtime_decision",
+  "applies_to": {},
+  "condition": {
+    "field": "action.amount.value",
+    "operator": "gt",
+    "value": 250000
+  },
+  "effect": "allow",
+  "reason_code": "authority_scope_exceeded",
+  "status": "active"
+}

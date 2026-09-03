@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:ai-legal-brief-munich-google-ai-overviews:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:ai-legal-brief-munich-google-ai-overviews-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "li8cRt44KKdXpVRz5BXjSI8BBqrMSbLSZewvoCPuPgLZ0FrEVIPCRvXN8WTyieFf57E9usA9QUqhiYxqvR3ODw=="
+    "signature": "nn6RYND12YSK3Nk6eT3HFLJfP1I/vb6GNA+FR+1Ns/UY9GS5GBwOZ7uYMz2lsZfS/x7no19uBTm/b1px0KFEDA=="
   },
   "citations": [
     {

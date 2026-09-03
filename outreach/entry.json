@@ -1,0 +1,39 @@
+{
+  "schema": "kye.outreach.v1",
+  "kye_id": "kye:outreach:meridian-gateway-systems",
+  "target": {
+    "company": "Meridian Gateway Systems (fictional)",
+    "url": "https://meridian-acme-payments.example",
+    "country": "NL",
+    "language": "en",
+    "sector": "identity-and-api-management"
+  },
+  "archetype": "gateway-identity-vendor",
+  "adjacency_ref": null,
+  "wedge_line": "Meridian authenticates the principal and issues the token; KYE decides whether that authenticated principal's action is authorised and safe to become final — identity is not authority.",
+  "artefacts": {
+    "email_draft_ref": null,
+    "diagram_ref": null,
+    "diagram_generated_at": null
+  },
+  "channel": "email",
+  "status": "researched",
+  "owner": "founder",
+  "announcement_ref": null,
+  "compliance_flags": [
+    "no-public-naming"
+  ],
+  "created_at": "2026-07-03",
+  "updated_at": "2026-07-03",
+  "notes": "Fictional entry — illustrates the record shape only; the sha256 below is the hash of the string fictional-example-diagram, not of a real artifact.",
+  "generated_artifacts": [
+    {
+      "artifact_id": "kye:outreach:meridian-gateway-systems-diagram-1",
+      "kind": "diagram",
+      "sha256": "d70f21088cb743cf21c84bb95f9dad7263a59c6084d175a67244f986d8bab9c6",
+      "generated_at": "2026-07-03",
+      "legal_block_applied": true,
+      "evidence_pack_ref": null
+    }
+  ]
+}

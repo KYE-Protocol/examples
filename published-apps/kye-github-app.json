@@ -1,0 +1,13 @@
+{
+  "id": "kye:published-app:kye-github-app",
+  "name": "KYE GitHub App™",
+  "app_kind": "github_app",
+  "status": "shipped",
+  "surface_url": "https://kyeprotocol.com/github-app.html",
+  "integration_ref": "kye:integration:github",
+  "governance": {
+    "governed": true,
+    "mechanism": "third-party-boundary",
+    "ref": "constitution/13-RESILIENCE-LOOP.md"
+  }
+}

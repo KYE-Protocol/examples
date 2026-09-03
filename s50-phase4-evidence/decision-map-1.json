@@ -1,4 +1,5 @@
 {
+  "schema": "kye.evidence.decision_map.v1",
   "id": "kye:decision-map:platform.s50-phase4.01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
   "version": 1,
   "decision_id": "kye:decision:platform.s50-phase4.01HFC9Z1QR3M5N7Q8YW2KQ8N4S1",
@@ -85,19 +86,71 @@
     }
   ],
   "edges": [
-    { "from": "in.request",                          "to": "rule.zero-competing-systems", "kind": "feeds" },
-    { "from": "in.page-manifest",                    "to": "rule.derivation-not-curation","kind": "feeds" },
-    { "from": "in.derived-search-index-v10",         "to": "rule.zero-competing-systems", "kind": "feeds" },
-    { "from": "in.request",                          "to": "rule.no-stub-introduced",     "kind": "feeds" },
-    { "from": "rule.zero-competing-systems",         "to": "obl.extend-search-index",     "kind": "triggers" },
-    { "from": "rule.derivation-not-curation",        "to": "obl.ship-audience-landings",  "kind": "triggers" },
-    { "from": "rule.no-stub-introduced",             "to": "obl.ship-audience-landings",  "kind": "triggers" },
-    { "from": "rule.derivation-not-curation",        "to": "obl.add-structural-gates",    "kind": "triggers" },
-    { "from": "rule.zero-competing-systems",         "to": "obl.amend-chapter",           "kind": "triggers" },
-    { "from": "obl.ship-audience-landings",          "to": "out.decision",                "kind": "satisfies" },
-    { "from": "obl.extend-search-index",             "to": "out.decision",                "kind": "satisfies" },
-    { "from": "obl.add-structural-gates",            "to": "out.decision",                "kind": "satisfies" },
-    { "from": "obl.amend-chapter",                   "to": "out.decision",                "kind": "satisfies" }
+    {
+      "from": "in.request",
+      "to": "rule.zero-competing-systems",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.page-manifest",
+      "to": "rule.derivation-not-curation",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.derived-search-index-v10",
+      "to": "rule.zero-competing-systems",
+      "kind": "feeds"
+    },
+    {
+      "from": "in.request",
+      "to": "rule.no-stub-introduced",
+      "kind": "feeds"
+    },
+    {
+      "from": "rule.zero-competing-systems",
+      "to": "obl.extend-search-index",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.derivation-not-curation",
+      "to": "obl.ship-audience-landings",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.no-stub-introduced",
+      "to": "obl.ship-audience-landings",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.derivation-not-curation",
+      "to": "obl.add-structural-gates",
+      "kind": "triggers"
+    },
+    {
+      "from": "rule.zero-competing-systems",
+      "to": "obl.amend-chapter",
+      "kind": "triggers"
+    },
+    {
+      "from": "obl.ship-audience-landings",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.extend-search-index",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.add-structural-gates",
+      "to": "out.decision",
+      "kind": "satisfies"
+    },
+    {
+      "from": "obl.amend-chapter",
+      "to": "out.decision",
+      "kind": "satisfies"
+    }
   ],
   "output_node_id": "out.decision",
   "created_at": "2026-05-27T13:00:02Z"

@@ -4,41 +4,80 @@
   "display_name": "Finance Payment High-Risk Human Involvement Plan",
   "description": "Where authorised humans must review, approve, limit or override the Finance Payment Preparation Agent before commit-level actions.",
   "applies_to": {
-    "assurance_card_refs": ["kye:assurance-card:finance_agent_001"],
-    "entity_authority_record_refs": ["kye:authority-record:finance_agent_001"],
-    "capabilities": ["payment.prepare", "payment.execute", "supplier.notify"],
-    "risk_tiers": ["high", "critical"]
+    "assurance_card_refs": [
+      "kye:assurance-card:finance_agent_001"
+    ],
+    "entity_authority_record_refs": [
+      "kye:authority-record:finance_agent_001"
+    ],
+    "capabilities": [
+      "payment.prepare",
+      "payment.execute",
+      "supplier.notify"
+    ],
+    "risk_tiers": [
+      "high",
+      "critical"
+    ]
   },
   "involvement_points": [
     {
       "point_id": "design_review",
       "stage": "design",
       "required_role": "ai_governance_lead",
-      "qualification": "AI governance certification + finance domain experience",
+      "qualification": "ai_governance_certified",
       "involvement_type": "approve",
-      "decision_options": ["approve", "deny", "request_changes"],
+      "decision_options": [
+        "approve",
+        "deny",
+        "request_changes"
+      ],
       "sla_minutes": 1440,
-      "evidence_required": ["reviewer_identity", "decision", "reason_code"]
+      "evidence_required": [
+        "reviewer_identity",
+        "decision",
+        "reason_code"
+      ]
     },
     {
       "point_id": "pre_commit_payment_review",
       "stage": "pre_commit",
       "required_role": "finance_manager",
-      "qualification": "Authorised payment approver",
+      "qualification": "payment_approver",
       "involvement_type": "approve",
-      "decision_options": ["approve", "deny", "request_changes", "escalate"],
+      "decision_options": [
+        "approve",
+        "deny",
+        "request_changes",
+        "escalate"
+      ],
       "sla_minutes": 1440,
-      "evidence_required": ["reviewer_identity", "approval_reason_code", "timestamp", "state_snapshot", "decision_map"]
+      "evidence_required": [
+        "reviewer_identity",
+        "approval_reason_code",
+        "timestamp",
+        "state_snapshot",
+        "decision_map"
+      ]
     },
     {
       "point_id": "incident_review",
       "stage": "incident",
       "required_role": "security_admin",
-      "qualification": "Incident-response certified",
+      "qualification": "incident_response_certified",
       "involvement_type": "limit",
-      "decision_options": ["approve", "deny", "quarantine", "escalate"],
+      "decision_options": [
+        "approve",
+        "deny",
+        "quarantine",
+        "escalate"
+      ],
       "sla_minutes": 240,
-      "evidence_required": ["reviewer_identity", "decision", "incident_ref"]
+      "evidence_required": [
+        "reviewer_identity",
+        "decision",
+        "incident_ref"
+      ]
     }
   ],
   "bypass_behaviour": {

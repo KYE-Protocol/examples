@@ -1,0 +1,45 @@
+{
+  "schema": "kye.policy_engine_adapter.v1",
+  "adapter_id": "kye:policy-engine-adapter:native",
+  "engine_kind": "native",
+  "display_name": "KYE Native Reference Adapter",
+  "status": "reference",
+  "invocation": {
+    "mode": "in-process",
+    "request_shape": "pdp-decision-request",
+    "endpoint_ref": null,
+    "timeout_ms": 50,
+    "fail_mode": "fail-closed",
+    "local_verdict": "not-applicable-in-process"
+  },
+  "response_mapping": {
+    "decision_vocab_ref": "https://kyeprotocol.com/schemas/common.json#/$defs/Decision",
+    "allow_maps_to": "allow",
+    "deny_maps_to": "deny",
+    "obligation_passthrough": true
+  },
+  "evidence_emission": {
+    "required": true,
+    "envelope_family": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.tool_call.v1",
+      "kye.evidence.pack.v1"
+    ],
+    "records_raw_engine_verdict": true
+  },
+  "kill_switch": {
+    "endpoint": "POST /v1/pdp/adapters/native/kill",
+    "on_kill": "fallback-native-deny-by-default"
+  },
+  "kye_retains_above": [
+    "purpose-permission",
+    "authority-resolution",
+    "authority-finality",
+    "evidence-pack",
+    "replay-proof",
+    "dual-control",
+    "kill-switch",
+    "tenant-isolation"
+  ],
+  "notes": "The in-tree reference adapter: the /pdp native rules evaluator wrapped in the PolicyEngineAdapter port. Zero external dependency, fully working, and the safe fallback target when any external adapter is killed."
+}

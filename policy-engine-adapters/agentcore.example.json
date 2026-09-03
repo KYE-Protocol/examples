@@ -1,0 +1,45 @@
+{
+  "schema": "kye.policy_engine_adapter.v1",
+  "adapter_id": "kye:policy-engine-adapter:agentcore",
+  "engine_kind": "agentcore",
+  "display_name": "AWS Bedrock AgentCore Adapter",
+  "status": "supported",
+  "invocation": {
+    "mode": "remote-http",
+    "request_shape": "agentcore-gateway-query",
+    "endpoint_ref": "binding:AGENTCORE_GATEWAY",
+    "timeout_ms": 500,
+    "fail_mode": "fail-closed",
+    "local_verdict": "local-policy-set",
+    "admitted_as": "kye:action-class:tool-call"
+  },
+  "response_mapping": {
+    "decision_vocab_ref": "https://kyeprotocol.com/schemas/common.json#/$defs/Decision",
+    "allow_maps_to": "allow_with_constraints",
+    "deny_maps_to": "deny",
+    "obligation_passthrough": true
+  },
+  "evidence_emission": {
+    "required": true,
+    "envelope_family": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.tool_call.v1",
+      "kye.evidence.pack.v1",
+      "kye.replay.context_seal.v1"
+    ],
+    "records_raw_engine_verdict": true
+  },
+  "kill_switch": {
+    "endpoint": "POST /v1/pdp/adapters/agentcore/kill",
+    "on_kill": "fallback-native-deny-by-default"
+  },
+  "kye_retains_above": [
+    "purpose-permission",
+    "authority-resolution",
+    "authority-finality",
+    "evidence-pack",
+    "replay-proof",
+    "tenant-isolation"
+  ],
+  "notes": "KYE does NOT run the agent (§0.30/§32 non-competition vs LangChain/CrewAI/OpenAI Agents SDK/Claude Agent SDK/Bedrock). KYE queries the AWS Bedrock AgentCore agent-gateway/identity control point over the remote-http transport, maps the AgentCore admit/deny (with guardrail obligations carried through) onto a KYE DecisionOutcome, and seals the raw AgentCore verdict into a Replay-Proof Evidence Pack — so an AgentCore-run agent becomes an authority-resolved, replay-verifiable principal. allow_maps_to is allow_with_constraints because the AgentCore guardrail layer routinely returns obligations that KYE carries onto the Decision Map. AWS is an external runtime integrated by clean contract (§0.28); the live gateway binding is supplied by the adopter at deploy time."
+}

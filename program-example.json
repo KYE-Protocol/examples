@@ -1,0 +1,13 @@
+{
+  "program_id": "kye:program:auditor",
+  "slug": "auditor",
+  "name": "KYE Auditor Program",
+  "kind": "engagement",
+  "engagement_type": "auditor",
+  "kye_id": "kye:program:auditor",
+  "source_ref": "kye.engagement.application.v1#engagement_type",
+  "landing": "public/site/auditors.html",
+  "obligations_ref": null,
+  "evidence_event_family": "kye.program.lifecycle.v1",
+  "governed": true
+}

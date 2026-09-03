@@ -1,0 +1,15 @@
+{
+  "approval_decision_id": "kye:approval-decision:northwind-bank:ad-2026-08-0417",
+  "approval_brief_id": "kye:approval-brief:ab-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "approver": "kye:principal:northwind-bank:jordan-reyes",
+  "decided_at": "2026-08-07T09:15:00Z",
+  "rationale": "Released with a per-transaction ceiling. The counterparty cleared sanctions screening, but the account has held its current limit for under 30 days, so the approver capped exposure rather than granting the full request.",
+  "restrictions": [
+    {
+      "restriction_id": "restriction-2026-08-0417",
+      "summary": "Single-transaction ceiling of USD 250,000 for 30 days. Anything above routes back for a second approver."
+    }
+  ],
+  "approver_decision_right": "kye:decision-right:tenant-onboarding-admission-approve"
+}

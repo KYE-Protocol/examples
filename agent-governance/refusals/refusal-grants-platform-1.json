@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "runtime-kye-grants-authority-agent",
+  "parent_task": "b5e2d8c1-3f7a-4c9e-9d21-6a4f8e2b1c70",
+  "refused_at": "2026-06-23T00:00:00Z",
+  "chapter_ref": "§0.30",
+  "reason_summary": "Prompt asked the Governed Grants Agent to write the grant application, run a grants-management platform, and disburse award funds. KYE governs WHETHER a grants action may proceed and proves the basis — it does NOT author applications, operate a grants-management platform, or move money; those are §0.30 competing systems.",
+  "remediation_hint": "Re-scope to the bounded governance act only: admit → decide (§12) → record disposition (§21) → seal Evidence Pack™ (§13) → hold AWARD/DISBURSEMENT/CLAWBACK advisory until §36 two-person sign-off. Application authoring, the grants-management platform, and money movement stay the customer's systems; KYE binds the kye:framework:uniform-guidance-2cfr200 deep map (2 CFR 200, Uniform Guidance) and proves the basis."
+}

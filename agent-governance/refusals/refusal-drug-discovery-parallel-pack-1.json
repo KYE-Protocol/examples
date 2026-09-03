@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "f7a2c9e1-4b86-4d30-9c17-2a5e8b41d9f3",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel pre-clinical / nonclinical drug-discovery rule-pack / sector-pack / dictionary / framework-mapping. KYE already deep-maps the nonclinical safety-study boundary via kye:framework:oecd-glp (OECD GLP + 21 CFR Part 58 — non-clinical lab data integrity) and governs research-integrity provenance via the §62 Governed Research Rail. A parallel pack is a §0 violation; re-mapping a deep-mapped framework is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:framework:oecd-glp deep-store verdict (the nonclinical study-data-integrity / study-director-oversight boundary) plus the §62 research-integrity provenance contract, under KYE authority — the runtime-kye-clinical-authorization-authority-agent pattern. Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry) and BIND — never re-map — kye:framework:oecd-glp."
+}

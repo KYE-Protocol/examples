@@ -8,7 +8,7 @@
     "trust_domain": "hooli-pay.example"
   },
   "delivery_id": "dlv_01JBL7SUB003000000000000003",
-  "severity": "warning",
+  "severity": "warn",
   "payload": {
     "subscription_id": "kye:subscription:hooli-pay-2026",
     "stripe_subscription_id": "sub_1QHOOLIPAYABCDEF",

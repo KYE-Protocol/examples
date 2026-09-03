@@ -1,0 +1,22 @@
+{
+  "schema": "kye.paid_tool_offer.v1",
+  "offer_id": "kye:paid-tool-offer:authority-check-2026-08-28-000042",
+  "tool_id": "kye_authority_check",
+  "price": { "value_in_pence": 50, "currency": "GBP" },
+  "accepted_protocols": ["x402", "mpp"],
+  "meter_class": "paid_tool_call",
+  "admissibility_precondition": {
+    "decision_ref": "kye:decision:6b2e0af7d94c15803ab6c1d2",
+    "verdict": "allow"
+  },
+  "payer_entity_id": "kye:org:acme-manufacturing-gb",
+  "issued_at": "2026-08-28T10:20:00Z",
+  "quote_valid_until": "2026-08-28T10:25:00Z",
+  "fulfilment": {
+    "protocol_used": "mpp",
+    "payment_receipt_ref": "mpp-receipt-4d6f80315a2b",
+    "meter_event_id": "meter-evt-7d9a1c2e4680aa01",
+    "evidence_pack_id": "kye:evidence-pack:paidtool4d6f80315a2b4c6d"
+  },
+  "entity_class": "paid-tool-offer"
+}

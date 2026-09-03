@@ -1,4 +1,5 @@
 {
+  "schema": "kye.evidence.pack.v1",
   "id": "kye:evidence-pack:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
   "version": 1,
   "decision_id": "kye:decision:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
@@ -39,6 +40,17 @@
   ],
   "replay_seal_ref": "kye:replay-seal:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
   "created_at": "2026-04-15T10:32:48Z",
+  "coordinate": {
+    "plane": "private",
+    "class": "agent",
+    "lifecycle": "emitting-evidence",
+    "kye_id": "kye:ent:acme-bank:agent:treasury-agent",
+    "t": {
+      "at": "2026-04-15T10:32:46Z",
+      "basis": "sha256:5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708090a0b1c"
+    },
+    "origin": "entity-registry"
+  },
   "decided_in_region": "eu",
   "stored_in_region": "eu",
   "memory_basis": [
@@ -47,14 +59,72 @@
       "content_hash": "sha256:2a4b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708090a",
       "used_as": "decision_context",
       "admissibility_state": "MEMORY_ADMISSIBLE",
-      "reasons": ["MEMORY_VALID"]
+      "reasons": [
+        "MEMORY_VALID"
+      ]
     },
     {
       "memory_id": "kye:agent-memory:acme-bank-treasury-agent-stale-fx-pref-2025-11",
       "content_hash": "sha256:3b5c6d7e8f9012345678abcdef0123456789abcdef0102030405060708090a0b",
       "used_as": "decision_context",
       "admissibility_state": "MEMORY_NOT_ADMISSIBLE",
-      "reasons": ["MEMORY_STALE"]
+      "reasons": [
+        "MEMORY_STALE"
+      ]
     }
-  ]
+  ],
+  "resolution": {
+    "resolved_at": "2026-04-15T10:32:48Z",
+    "member_order": [
+      "decision_map_ref",
+      "inputs_blob_ref",
+      "replay_seal_ref"
+    ],
+    "members": [
+      {
+        "ref_field": "decision_map_ref",
+        "ref": "kye:decision-map:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+        "sha256": "sha256:4458337f87dd1a62bf0be3314f72d8e1e32721e33cf4e3ef5ab072901f15c628",
+        "content": {
+          "decision": "ALLOW",
+          "inputs": [
+            "authority_grant",
+            "scope_snapshot",
+            "signed_state",
+            "signal:fraud-risk-v3",
+            "signal:geo-attest"
+          ],
+          "rule": "admissibility_conjunction",
+          "reason_code": "within_delegated_scope_below_risk_ceiling",
+          "decided_at": "2026-04-15T10:32:46Z"
+        }
+      },
+      {
+        "ref_field": "inputs_blob_ref",
+        "ref": "blob:cid:bafybeihq7n2x4ckm5l3rqo3v6w7h8j9k0lp1m2n3o4p5q6r7s8t9u0v1w",
+        "sha256": "sha256:c29bdb50150ddb8d89971f61d50bb4a22e04854072d53807280d3eb15c7f3087",
+        "content": {
+          "action": "payment.release",
+          "amount_minor": 4200000,
+          "currency": "EUR",
+          "counterparty": "kye:ent:acme-bank:counterparty:eu-supplier-0197",
+          "principal": "kye:ent:acme-bank:officer:treasury-ops-lead",
+          "agent": "kye:ent:acme-bank:agent:treasury-agent",
+          "requested_at": "2026-04-15T10:32:45Z"
+        }
+      },
+      {
+        "ref_field": "replay_seal_ref",
+        "ref": "kye:replay-seal:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P",
+        "sha256": "sha256:ce4597f7602749ae369840e5162abe934ea1eb2f25573bb6dc57933f4a62fb87",
+        "content": {
+          "sealed_inputs_hash": "sha256:f60718293a4b5c6d7e8f9012345678abcdef0123456789abcdef010203040506",
+          "policy_snapshot_hash": "sha256:9012345678abcdef0123456789abcdef0102030405060718293a4b5c6d7e8f90",
+          "engine_version": "kye-pdp@2026.04.2",
+          "sealed_at": "2026-04-15T10:32:47Z"
+        }
+      }
+    ],
+    "unresolved": []
+  }
 }

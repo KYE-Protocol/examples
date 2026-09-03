@@ -1,0 +1,60 @@
+{
+  "schema": "kye.kit.reasoning_review.v1",
+  "review_id": "kye:kit:reasoning-review:cache-invalidation-root-vs-symptom-0001",
+  "trigger": "root-vs-symptom",
+  "created_by": "kye:agent:general-purpose",
+  "created_at": "2026-08-04T16:20:00Z",
+  "retrieved": [
+    {
+      "source": "test run at commit 9f2a1c4 (cold-cache suite + post-write suite)",
+      "why": "to establish whether stale reads correlate with a write or with cache age",
+      "used": true
+    },
+    {
+      "source": "the write-path handlers (grep for the invalidation emit)",
+      "why": "to check whether writes invalidate the cache",
+      "used": true
+    }
+  ],
+  "reconstructed_state": [
+    {
+      "claim": "Stale reads occur only after a write, not on a cold cache.",
+      "evidence_ref": "test run at commit 9f2a1c4 — cold-cache suite green, post-write suite red",
+      "confidence": "verified"
+    },
+    {
+      "claim": "The write path updates the store but never emits the invalidation event.",
+      "evidence_ref": "search for the invalidation emit across the write handlers — zero call sites",
+      "confidence": "verified"
+    }
+  ],
+  "assumptions_challenged": [
+    {
+      "assumption": "The bug is a too-long cache TTL, so lowering the TTL fixes it.",
+      "source": "earlier turn's plan",
+      "verdict": "refuted",
+      "note": "Re-checked against the test evidence: a lower TTL only shortens the stale window, it does not close it. The reads are stale because the write path never invalidates, not because entries live too long."
+    }
+  ],
+  "drift_identified": [
+    {
+      "drift": "The plan had been tuning the TTL constant (a symptom knob).",
+      "where": "accumulated across the debugging turns",
+      "corrected_to": "The root is a missing invalidation emit on the write path; the TTL is unrelated."
+    }
+  ],
+  "re_reasoned_conclusion": "Emit the invalidation event from every write handler so a read after a write always sees fresh data; leave the TTL unchanged. This resolves the root, not the symptom.",
+  "residual_uncertainty": [
+    {
+      "unknown": "Whether a concurrent write during a read can still race the invalidation under high load.",
+      "impact": "bounded",
+      "resolve_by": "add a concurrency stress test with interleaved read/write before shipping to production"
+    }
+  ],
+  "course_changed": true,
+  "change_summary": "Switched from lowering the cache TTL to adding the missing write-path invalidation, so stale reads cannot recur.",
+  "attestation": {
+    "emitted": true,
+    "evidence_ref": "sha256:review-record-appended"
+  }
+}

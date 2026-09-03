@@ -10,8 +10,17 @@
     {
       "tool_id": "kye:tool:acme-financial:experimental-research-llm",
       "tool_display_name": "Experimental research LLM connector",
+      "entry_kind": "mcp_server",
       "mcp_server_id": "kye:mcp-server:acme-financial:research-sandbox",
       "mcp_server_display_name": "Acme Research Sandbox MCP",
+      "publisher": {
+        "publisher_id": "kye:prin:acme-financial:platform-team",
+        "publisher_display_name": "Acme Platform Team",
+        "verification_status": "kye-verified",
+        "verification_method": "signed-manifest-ed25519",
+        "verified_at": "2026-05-28T09:00:00Z"
+      },
+      "revocation_status": { "status": "active" },
       "trust_tier": "tier-0-untrusted",
       "permitted_agents": [
         "kye:agent:acme-financial:research-explorer"
@@ -152,6 +161,72 @@
       ],
       "last_assurance_review": "2026-05-20",
       "next_assurance_review": "2026-08-20"
+    },
+    {
+      "tool_id": "kye:tool:acme-financial:marketplace-summariser-skill",
+      "tool_display_name": "Document summariser skill (marketplace)",
+      "entry_kind": "skill",
+      "publisher": {
+        "publisher_id": "kye:prin:acme-financial:vendor-clearskill",
+        "publisher_display_name": "ClearSkill Ltd",
+        "verification_status": "third-party-attested",
+        "verification_method": "domain-control",
+        "verified_at": "2026-05-22T12:00:00Z"
+      },
+      "revocation_status": { "status": "active" },
+      "trust_tier": "tier-1-sandboxed",
+      "permitted_agents": [
+        "kye:agent:acme-financial:research-explorer"
+      ],
+      "permitted_actions": ["summarise"],
+      "data_access_scope": {
+        "classes": ["public-only"],
+        "regions": ["uk-south"],
+        "rate_limit_per_min": 30
+      },
+      "write_permissions": ["none"],
+      "approval_threshold": "single-approver",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json"
+      ],
+      "finality_conditions": ["read-only", "session-bounded"],
+      "last_assurance_review": "2026-05-22",
+      "next_assurance_review": "2026-08-22"
+    },
+    {
+      "tool_id": "kye:tool:acme-financial:rogue-exfil-skill",
+      "tool_display_name": "Untrusted marketplace skill (revoked — exfiltration signature)",
+      "entry_kind": "skill",
+      "publisher": {
+        "publisher_id": "kye:prin:acme-financial:vendor-unknown-marketplace",
+        "publisher_display_name": "Unknown marketplace author",
+        "verification_status": "unverified"
+      },
+      "revocation_status": {
+        "status": "revoked",
+        "reason": "Skill found to exfiltrate context to an off-tenant endpoint (Trail-of-Bits malicious-marketplace class); permanently refused at invocation even though still inside the register validity window.",
+        "revoked_at": "2026-06-25T16:30:00Z",
+        "revoked_by": "kye:prin:acme-financial:security-lead"
+      },
+      "trust_tier": "tier-0-untrusted",
+      "permitted_agents": [
+        "kye:agent:acme-financial:research-explorer"
+      ],
+      "permitted_actions": ["summarise"],
+      "data_access_scope": {
+        "classes": ["public-only"],
+        "regions": ["uk-south"],
+        "rate_limit_per_min": 0
+      },
+      "write_permissions": ["none"],
+      "approval_threshold": "super-admin",
+      "evidence_requirements": [
+        "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
+        "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json"
+      ],
+      "finality_conditions": ["revoked-entry-refused-pre-invocation"],
+      "last_assurance_review": "2026-06-25",
+      "next_assurance_review": "2026-09-25"
     }
   ],
   "signature": {

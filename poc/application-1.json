@@ -1,0 +1,10 @@
+{
+  "application_id": "3f7a1c92-8b04-4e6d-9a15-2c7e08b4d631",
+  "tier": "PoC-XS",
+  "name": "Northwind Bank payments release",
+  "email": "ops@example.invalid",
+  "company": "Northwind Bank plc",
+  "role": "cro",
+  "workflow": "Release of counterparty payments above the standing limit, currently approved by hand in the ledger tool.",
+  "submitted_at": "2026-08-07T09:15:00Z"
+}

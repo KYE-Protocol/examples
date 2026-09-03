@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "c3f8a1d6-9e24-4b75-8a13-6d2f9c40e7b1",
+  "refused_at": "2026-06-25T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel genomics / genetic-sequencing / sequence-screening rule-pack / sector-pack / dictionary. KYE already governs the AI bio-chem action boundary via kye:sector-pack:bio-chem-governance + kye:rule-pack:bio-chem-governance and deep-maps the biosecurity / genomic-data frameworks (kye:framework:nucleic-acid-synthesis-screening, australia-group, cwc-bwc). A parallel pack is a §0 violation; re-mapping a deep-mapped framework is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:sector-pack:bio-chem-governance + kye:rule-pack:bio-chem-governance canon under KYE authority. Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry) and BIND — never re-map — kye:framework:nucleic-acid-synthesis-screening and the other biosecurity / genomic-data frameworks."
+}

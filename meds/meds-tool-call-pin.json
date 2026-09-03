@@ -4,7 +4,7 @@
   "decision_id": "kye:decision:st-marys-nhs:c4a1f9e2-7b3d-4e1a-8c92-1f6a5d3b2c70",
   "tool_id": "meds-timeline.fetch",
   "tool_version": "1.2.0",
-  "tool_endpoint": "https://mcp.st-marys-nhs.example/v1/meds-timeline/fetch",
+  "tool_endpoint": "https://mcp.acme-health.example/v1/meds-timeline/fetch",
   "mcp_server_id": "kye:mcp-server:st-marys-nhs:meds-timeline:prod",
   "input_hash": "sha256:6dd7f0a3b2c1e4d5f60718293a4b5c6d7e8f90112233445566778899aabbccdd",
   "output_hash": "sha256:9f0b2c4e6a8d0f1b3c5e7a9d1f0b2c4e6a8d0f1b3c5e7a9d1f0b2c4e6a8d0f1b",

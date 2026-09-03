@@ -1,0 +1,27 @@
+{
+  "schema": "kye.control_plane_signal.v1",
+  "signal_id": "kye:control-plane-signal:praevenio-acme-2026-07-24-0001",
+  "source_plane": "praevenio",
+  "plane_role": "signal-provider",
+  "tenant": "acme",
+  "trust_domain_id": "acme",
+  "signal_kind": "detector-result",
+  "observed_at": "2026-07-24T14:59:58Z",
+  "received_at": "2026-07-24T15:00:00Z",
+  "severity": "critical",
+  "provenance": {
+    "data_ref": "acme://ehr/export/batch-2026-07-24",
+    "model_ref": "praevenio/phi-detector@2.3",
+    "policy_ref": "praevenio/policy/phi-hipaa-safeharbor",
+    "outcome": "phi-present"
+  },
+  "agent_runtime_context_ref": "kye:agent-runtime-context:databricks-acme-2026-07-24-0001",
+  "payload": { "phi_risk_score": 0.92, "identifiers_detected": ["mrn", "dob"] },
+  "boundary": "External planes provide signals and enforce decisions; KYE is the ONE authority decision point. A registered agent is not an authorised actor.",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "praevenio-signing-2026",
+    "jwks_ref": "https://northwind-risk.example/.well-known/jwks.json",
+    "signature_b64": "kQpVhZ3n1oQpXwB2r4cV8mNf6TjL0aYyE9sQ7dW1uGpKcRbHhtZ2xXfMnLpQeR0sUvWyZ1aBcDeFgHiJkLmNo"
+  }
+}

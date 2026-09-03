@@ -14,6 +14,19 @@
       "severity": "info",
       "message": "Illustrative notice.",
       "surface": "example"
+    },
+    {
+      "id": "kye:notice:example-bound-disclosure",
+      "kind": "disclosure",
+      "severity": "info",
+      "message": "Illustrative bound disclosure — a notice that carries a binding is mandatory on every surface its trigger selects, and the notices gate proves the render.",
+      "surface": "example",
+      "binding": {
+        "trigger": "unresolvable-public-identifier",
+        "marker": "data-illustrative-identifiers",
+        "baseline": 0,
+        "decay_deadline": "2026-10-28"
+      }
     }
   ]
 }

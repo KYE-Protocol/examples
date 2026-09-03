@@ -1,0 +1,13 @@
+{
+  "schema": "kye.admin.api_key.revoked.v1",
+  "id": "kye:admin-action:api-key-revoked:7c3f9a2e",
+  "key_id": "kye:api-key:7c3f9a2e-1b44-4de1-9a0e-2f6b8c1d4e55",
+  "tenant_id": "kye:tenant:acme-fs",
+  "scope": "runtime:read,runtime:write,evidence:read",
+  "label": "Production runtime — payments service",
+  "ttl_days": null,
+  "ip_allowlist": null,
+  "operator": "security@acme.example",
+  "emitted_at": "2026-07-12T13:30:00Z",
+  "reason": "compromise_suspected"
+}

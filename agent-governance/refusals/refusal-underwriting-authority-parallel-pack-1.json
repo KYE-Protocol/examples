@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "a91f4c27-5b8e-4d02-9c61-7f3a2e8d5b14",
+  "refused_at": "2026-07-02T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked for a parallel underwriting rule-pack / sector-pack / dictionary and a pricing / actuarial engine. KYE already governs insurance authority via kye:rule-pack:insurance-underwriting-claims; a parallel pack violates §0, re-mapping its frameworks violates §70, and a pricing engine violates the honest scope (KYE governs whether the acceptance may proceed within the delegated limits — it does not price risk). Refusing all three.",
+  "remediation_hint": "Build it as a Governed Agent PRODUCT that governs accept / decline / refer WITHIN the delegated underwriting-authority limits (line of business, sum insured, territory, class — the MGA / coverholder binding-authority chain) against the EXISTING kye:rule-pack:insurance-underwriting-claims verdict. Add only agent-product artefacts (§52 binding, principal, refusal, product row, SKU, pricing, ™, gate) and BIND — never re-map — the existing insurance frameworks."
+}

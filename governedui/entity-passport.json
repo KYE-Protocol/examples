@@ -1,0 +1,39 @@
+{
+  "schema": "kye.governedui.entity_passport.v1",
+  "entity_id": "kye:agent:framework-mapping-agent",
+  "entity_type": "agent",
+  "display_name": "KYE Framework-Mapping Agent",
+  "owner_id": "kye:tenant:kye-protocol",
+  "verification_status": "verified",
+  "authority_profile_id": "kye:authority-profile:framework-mapping",
+  "delegated_authority": [],
+  "allowed_capabilities": [
+    "framework.read",
+    "framework.map.propose"
+  ],
+  "restricted_actions": [
+    "framework.publish"
+  ],
+  "approval_required_actions": [
+    "framework.map.commit"
+  ],
+  "connected_systems": [
+    "kye:engine:framework-ingestion"
+  ],
+  "recent_actions": [],
+  "trust_posture": "healthy",
+  "drift_event_count_24h": 0,
+  "governance": {
+    "governed": true,
+    "mechanism": "pdp-governed-inventory",
+    "entity_type_registry_ref": "kye:registry:entity-type-registry"
+  },
+  "evidence_ref": {
+    "kind": "audit_reference",
+    "id": "b3f1c0a2-7d4e-4e91-9a3c-2f5e8d6b1a07",
+    "outcome": "accepted",
+    "reason": "governed",
+    "verify_url": "https://kyeprotocol.com/trust-self-audit.html"
+  },
+  "generated_at": "2026-06-29T00:00:00Z"
+}

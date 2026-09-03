@@ -1,0 +1,38 @@
+{
+  "schema": "kye.governedui.approval_silence.v1",
+  "silence_id": "kye:approval-silence:6f2c91ab4d70e315",
+  "action_id": "kye:action-proposal:9d41c07e5b28fa63",
+  "approval_request_id": "kye:approval:2a7f38c1d9e04b56",
+  "module_id": "kye.governedui.module.action_approval.v1",
+  "approval_mode": "two_person",
+  "action_class": "issue_refund",
+  "approvers_notified": [
+    {
+      "approver_id": "kye:principal:acme:human:finance-controller",
+      "approver_role": "finance_controller",
+      "channel": "dashboard",
+      "notified_at": "2026-07-29T09:14:00Z",
+      "delivery_confirmed": true,
+      "approver_decision_right": "kye:decision-right:issue-refund-approve"
+    },
+    {
+      "approver_id": "kye:principal:acme:human:duty-manager",
+      "approver_role": "duty_manager",
+      "channel": "email",
+      "notified_at": "2026-07-29T09:14:00Z",
+      "delivery_confirmed": true,
+      "approver_decision_right": "kye:decision-right:issue-refund-approve"
+    }
+  ],
+  "quorum_required": 2,
+  "quorum_received": 1,
+  "requested_at": "2026-07-29T09:14:00Z",
+  "deadline_at": "2026-07-29T13:14:00Z",
+  "detected_at": "2026-07-29T13:14:37Z",
+  "silent_minutes": 240.6,
+  "outcome": "blocked",
+  "escalated_to": null,
+  "detection_source": "approval-deadline-watchdog",
+  "evidence_pack_id": "kye:evidence-pack:c83b7e15a90d4f22",
+  "tenant_id": "kye:tenant:acme"
+}

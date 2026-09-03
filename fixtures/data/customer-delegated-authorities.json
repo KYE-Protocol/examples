@@ -1,0 +1,82 @@
+[
+  {
+    "grant_ref": "REF-8688F1A9",
+    "authority_class": "communication",
+    "issuer": "Synthetic Issuer Beta",
+    "subject_id": "kye:subject:synthetic:8336",
+    "capability": "payment.prepare",
+    "status": "pending",
+    "issued_day_offset": -8,
+    "expires_day_offset": -21
+  },
+  {
+    "grant_ref": "REF-2F3AE68E",
+    "authority_class": "communication",
+    "issuer": "Synthetic Issuer Alpha",
+    "subject_id": "kye:subject:synthetic:5277",
+    "capability": "disclosure.draft",
+    "status": "expired",
+    "issued_day_offset": -25,
+    "expires_day_offset": -39
+  },
+  {
+    "grant_ref": "REF-B7A8FF9A",
+    "authority_class": "data-access",
+    "issuer": "Synthetic Issuer Gamma",
+    "subject_id": "kye:subject:synthetic:5811",
+    "capability": "data.export",
+    "status": "expired",
+    "issued_day_offset": -73,
+    "expires_day_offset": -57
+  },
+  {
+    "grant_ref": "REF-B89110A5",
+    "authority_class": "communication",
+    "issuer": "Synthetic Issuer Alpha",
+    "subject_id": "kye:subject:synthetic:3973",
+    "capability": "payment.prepare",
+    "status": "expired",
+    "issued_day_offset": -72,
+    "expires_day_offset": -84
+  },
+  {
+    "grant_ref": "REF-BAEECDF7",
+    "authority_class": "payment",
+    "issuer": "Synthetic Issuer Beta",
+    "subject_id": "kye:subject:synthetic:5157",
+    "capability": "payment.prepare",
+    "status": "active",
+    "issued_day_offset": -33,
+    "expires_day_offset": -3
+  },
+  {
+    "grant_ref": "REF-D6A20B11",
+    "authority_class": "model-deploy",
+    "issuer": "Synthetic Issuer Alpha",
+    "subject_id": "kye:subject:synthetic:4871",
+    "capability": "data.export",
+    "status": "pending",
+    "issued_day_offset": -65,
+    "expires_day_offset": -32
+  },
+  {
+    "grant_ref": "REF-A333629A",
+    "authority_class": "model-deploy",
+    "issuer": "Synthetic Issuer Gamma",
+    "subject_id": "kye:subject:synthetic:2668",
+    "capability": "data.export",
+    "status": "revoked",
+    "issued_day_offset": -56,
+    "expires_day_offset": -21
+  },
+  {
+    "grant_ref": "REF-C160159D",
+    "authority_class": "data-access",
+    "issuer": "Synthetic Issuer Beta",
+    "subject_id": "kye:subject:synthetic:2243",
+    "capability": "kyc.triage",
+    "status": "active",
+    "issued_day_offset": -7,
+    "expires_day_offset": -75
+  }
+]

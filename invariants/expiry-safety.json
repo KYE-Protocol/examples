@@ -1,0 +1,12 @@
+{
+  "invariant_id": "kye:invariant:expiry-safety",
+  "name": "Expiry safety",
+  "statement": "Expired authority cannot produce a valid allow verdict.",
+  "formal_statement": "now > expires_at(grant(a)) implies decide(a).effect != allow",
+  "finality_dimension": "authority-finality",
+  "formal_method": "tla_plus",
+  "proof_status": "asserted_only",
+  "verification_ref": null,
+  "counterexample_ref": null,
+  "constitution_ref": "constitution/00-INDEX.md §0.33 · §12"
+}

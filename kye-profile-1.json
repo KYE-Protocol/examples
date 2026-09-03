@@ -1,0 +1,9 @@
+{
+  "schema_version": "kye.profile.v1",
+  "profile_id": "kye:profile:pro-2026-08-0417",
+  "slug": "payments",
+  "display_name": "Northwind Bank",
+  "layer": "kernel",
+  "constitution_ref": "constitution/29-PROFILES-LITE.md",
+  "conformance_contract": "Every payment-release action resolves to a principal holding the decision right for that amount band, and seals evidence before the release is admitted."
+}

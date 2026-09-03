@@ -1,0 +1,38 @@
+{
+  "schema_id": "kye.document_index.v1",
+  "document_id": "kye:document-index:kye-whitepaper",
+  "tenant_id": "kye:tenant:kye-protocol",
+  "sub_tenant_id": null,
+  "principal_id": null,
+  "source_class": "standard",
+  "source_format": "pdf",
+  "source_title": "KYE Protocol Whitepaper",
+  "source_digest": "sha256:18c91d049851af74f7804b5c69316647e153c3b338d5069fb2d5d8ea838b138b",
+  "index_status": "ingested",
+  "tree_root_node_id": null,
+  "tree_node_count": null,
+  "self_hosted": true,
+  "consumer": null,
+  "text_layer": {
+    "class": "full",
+    "pages_total": 52,
+    "pages_with_text": 52,
+    "extractor": "kye:extractor:pdf-inspector",
+    "extractor_version": "@firecrawl/pdf-inspector@1.12.0",
+    "epistemic_status": "declared"
+  },
+  "cited_extracts": [
+    {
+      "evidence_pin_ref": "kye:evidence:tool-call-pin:kye-whitepaper-extract-1",
+      "passage_excerpt": "Who is acting. On behalf of whom.",
+      "locator": {
+        "page": 1,
+        "char_start": 212,
+        "char_end": 245
+      },
+      "text_sha256": "sha256:d30e1deeed20a96aff1fd3d28a8e6045edd8669322e037f8eb7c5959a706777e",
+      "retrieval_basis": "direct_locator"
+    }
+  ],
+  "created_at": "2026-07-31T00:00:00Z"
+}

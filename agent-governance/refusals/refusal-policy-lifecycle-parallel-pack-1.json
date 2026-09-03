@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "d14a7f50-1b3c-4a78-8e24-5f8d6b1c9e47",
+  "refused_at": "2026-07-02T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked for a parallel policy-lifecycle rule-pack / dictionary and a policy-administration module. KYE already governs insurance authority via kye:rule-pack:insurance-underwriting-claims; a parallel lifecycle pack violates §0, re-mapping its frameworks violates §70, and a policy-admin system violates the honest scope (KYE governs whether the contract-changing act may proceed — it does not administer policies). Refusing all three.",
+  "remediation_hint": "Build it as a Governed Agent PRODUCT that governs issuance, endorsement, renewal, cancellation / non-renewal (regulated-notice authority), lapse, and reinstatement against the EXISTING kye:rule-pack:insurance-underwriting-claims verdict. Add only agent-product artefacts (§52 binding, principal, refusal, product row, SKU, pricing, ™, gate) and BIND — never re-map — the existing insurance frameworks."
+}

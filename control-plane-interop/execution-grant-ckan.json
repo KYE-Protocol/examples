@@ -1,0 +1,34 @@
+{
+  "schema": "kye.execution_grant.v1",
+  "grant_id": "kye:execution-grant:ckan-acme-2026-07-24-0001",
+  "decision_ref": "kye:decision:9f2c7a1b3d4e5f6071829304",
+  "purpose_grant_ref": "kye:purpose-grant:acme-open-data-publish",
+  "tenant": "acme",
+  "trust_domain_id": "acme",
+  "enforcement_point": "ckan",
+  "connector_binding": "kye:connector:ckan:acme",
+  "action": "dataset-publish",
+  "resource": "kye:dataset:ckan:acme:open-spending-2026",
+  "constraints": {
+    "row_filter": "jurisdiction = \"GB\"",
+    "column_mask": ["nino", "dob"],
+    "max_rows": 50000,
+    "expiry": "2026-07-24T18:00:00Z"
+  },
+  "constraints_hash": "sha256:5c2abd39533fcb2afaf131ee6e002f32639c60d419b2bee618cd6a81cb8f5700",
+  "idempotency_key": "ckan-dsp-2026-07-24-0001-a1b2c3",
+  "single_use": true,
+  "replay_forbidden": true,
+  "widening_forbidden": true,
+  "connector_swap_forbidden": true,
+  "issued_at": "2026-07-24T15:00:02Z",
+  "expires_at": "2026-07-24T15:05:02Z",
+  "revoked": false,
+  "revoked_reason": null,
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-self-audit-2026",
+    "jwks_ref": "https://kyeprotocol.com/trust/self-audit-jwks.json",
+    "signature_b64": "S3llR3JhbnRTaWduYXR1cmVFeGFtcGxlMDAxa1FwVmhaM24xb1FwWHdCMnI0Y1Y4bU5mNlRqTDBhWXlFOXNR"
+  }
+}

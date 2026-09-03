@@ -1,0 +1,40 @@
+{
+  "schema": "kye.earned_weight.v1",
+  "weight_id": "kye:earned-weight:engagement:obp-open-banking-connector:2026-08-29",
+  "entity_class": "earned-weight",
+  "entity_ref": "kye:engagement:obp-open-banking-connector",
+  "coordinate_ref": "kye:coordinate:private:engagement:active",
+  "formula_version": "kye:weight-formula:v1",
+  "value": "17/4",
+  "derivation": [
+    {
+      "event_ref": "kye:decision:3cdd224c5eb00f402b81bace",
+      "kind": "engagement:registered",
+      "base": "1/1",
+      "evidence_grade": "sealed",
+      "freshness_window": "within-90d-full",
+      "contribution": "3/2"
+    },
+    {
+      "event_ref": "kye:tool-call-pin:obp-sandbox-probe",
+      "kind": "connector:live-verified",
+      "base": "1/1",
+      "evidence_grade": "replay-verified",
+      "freshness_window": "within-90d-full",
+      "contribution": "2/1"
+    },
+    {
+      "event_ref": "kye:compliance-attestation:engagement-rail-canonical",
+      "kind": "obligation:gate-attested",
+      "base": "1/2",
+      "evidence_grade": "system-evidenced",
+      "freshness_window": "within-90d-full",
+      "contribution": "3/4"
+    }
+  ],
+  "computed_from": {
+    "events_hash": "sha256:5f1e2d3c4b5a69788796a5b4c3d2e1f00112233445566778899aabbccddeeff0",
+    "computed_at": "2026-08-29T12:00:00Z"
+  },
+  "tenant_id": "kye:tenant:kye-self"
+}

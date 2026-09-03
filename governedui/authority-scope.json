@@ -1,0 +1,17 @@
+{
+  "schema": "kye.governedui.authority_scope.v1",
+  "entity_id": "entity-2026-08-0417",
+  "can": [
+    "approve a payment release up to the standing limit"
+  ],
+  "cannot": [
+    "raise the standing limit itself"
+  ],
+  "needs_approval": [
+    {
+      "action": "payment.release",
+      "approval_mode": "single_approver"
+    }
+  ],
+  "computed_at": "2026-08-07T09:15:00Z"
+}

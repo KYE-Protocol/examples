@@ -1,0 +1,9 @@
+{
+  "schema": "kye.ops.log_pointer.v1",
+  "captured_at": "2026-08-07T09:15:00Z",
+  "bucket": "kye-logs",
+  "r2_key": "logs/2026/08/07/http-requests.ndjson.gz",
+  "size_bytes": 0,
+  "dataset": "http_requests",
+  "source": "cloudflare-logpush"
+}

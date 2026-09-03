@@ -1,0 +1,11 @@
+{
+  "schema": "kye.entity_registration.v1",
+  "entity_id": "kye:ent:kyeprotocol:organisation:kye-protocol",
+  "entity_type": "organisation",
+  "trust_domain_id": "kye:trust-domain:kyeprotocol",
+  "display_name": "KYE Protocol",
+  "registered_by_entity_id": "kye:ent:kyeprotocol:organisation:kye-protocol",
+  "basis": "bootstrap_genesis",
+  "consequential_action_classes": [],
+  "labels": ["protocol-operator"]
+}

@@ -1,0 +1,15 @@
+{
+  "response_id": "7c41d0e2-5b93-4a18-9f26-83be0d17a542",
+  "quiz_id": "quiz-2026-08-0417",
+  "answers": [
+    {
+      "question_id": "question-2026-08-0417",
+      "selected_option_ids": [
+        "q1-partly"
+      ]
+    }
+  ],
+  "score": 1,
+  "band": "developing",
+  "submitted_at": "2026-08-07T09:15:00Z"
+}

@@ -1,10 +1,15 @@
 {
+  "schema": "kye.purpose.request.v1",
   "id": "kye:purpose-req:platform:01HFC9YM4QZ7N8T0WX5XKLR9P4R",
   "actor": "kye:ent:agent-architecture-s52-phase2",
   "purpose": "kye:purpose-class:platform.s52.phase2-runtime-binding",
   "action": "declare-mcp-allow-list-manifest",
   "resource": "kye:res:platform:constitution:52-delegated-agent-binding:phase2",
-  "data_classes": ["constitution.amendment", "agent-governance.manifest", "agent-governance.gate"],
+  "data_classes": [
+    "constitution.amendment",
+    "agent-governance.manifest",
+    "agent-governance.gate"
+  ],
   "requested_at": "2026-05-27T11:00:00Z",
   "claimed_grant_id": "kye:purpose:platform:architecture:constitutional-amendment-2026q2",
   "tool_call_hash": "sha256:1a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f70819a2b3c4d5e6f7081"

@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:authority-that-outlived-its-purpose:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:authority-that-outlived-its-purpose-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "Qvb53nku8D44mSclLWSbkq6UiILm1G+k3iJBAR2oI4r6ZyWUdq5QfnzXVL9CtrjAMs08eIYTCnP7a44frjCADQ=="
+    "signature": "0CGstd/WitLlQW4nstgz3NS0HK32zXSoRiUJ+VlQnBsghwGgl+y/r3ZOmKnJbB8jlTK1RCFFT5RNu1YZxn+aDg=="
   },
   "citations": [
     {

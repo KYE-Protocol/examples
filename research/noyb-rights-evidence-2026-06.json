@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:noyb-rights-evidence:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:noyb-rights-evidence-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "9/c1TVkmFdKpwCrATajePaQS/fa2k52oomdgigzDBNnqj69H2rkMjVxV2gTPNxoJ9iQTgqH2wkv2WUHl+5szDg=="
+    "signature": "zM9wXmCkTZDuLbMyxrVeGPmehUVQLhXgxnucs4g3FQtazyssPf+ijPZmu0g4vlCgQLEnYQ9bePXlJIdOP4iBAA=="
   },
   "citations": [
     {

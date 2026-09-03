@@ -1,0 +1,13 @@
+{
+  "schema": "kye.generative_surface.v1",
+  "surface_id": "kye:generative-surface:example-deterministic-resolver",
+  "kind": "other",
+  "title": "Example deterministic resolver surface",
+  "llm_callsite_path": "scripts/lib/tech-dd-resolve.mjs",
+  "mode": "deterministic",
+  "determinism_proof": {
+    "pure": true,
+    "verifier_ref": "scripts/gates/tech-ai-dd-canonical.mjs",
+    "note": "Illustrative deterministic surface — a pure resolver whose byte-stable output is re-verified by a gate; exempt by proof, not by omission. Generative surfaces instead carry the five eval/feedback bindings."
+  }
+}

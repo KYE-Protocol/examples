@@ -1,0 +1,21 @@
+{
+  "schema": "kye.synthetic_fixtures.v1",
+  "fixture_id": "kye:fixtures:risk-agent-assessments",
+  "subject": {
+    "kind": "agent",
+    "id": "kye:agent:risk-agent"
+  },
+  "purpose": "Seed the Authority Risk Signal demo (emulate → capture → clip) with synthetic subject risk assessments so the Risk Profiler dashboard renders populated without any real customer data.",
+  "synthetic": true,
+  "honesty_label": "SYNTHETIC — generated seed/sample data, never real customer data",
+  "seed": 1032027,
+  "generator_version": "1.0.0",
+  "data_categories": [
+    "behavioral",
+    "identity",
+    "metadata"
+  ],
+  "record_count": 8,
+  "records_ref": "public/examples/fixtures/data/risk-agent-assessments.json",
+  "content_hash": "sha256:699b64f76e3ba8ff6e32aba679d218b6d8069ba930bfe9453639b3fcbe208cd4"
+}

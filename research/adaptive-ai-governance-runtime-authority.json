@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:adaptive-ai-governance-runtime-authority:2026-q3",
+  "evidence_pack_ref": "kye:evidence-pack:adaptive-ai-governance-runtime-authority-2026-q3",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "8b9vFtfqlh6925lc4cSWo1LuGwmsQBUEDtMfbkRba3XTyeVDfGLpf1DCqTV74an4kP4pkxzHNBxiaZ2BnDBVDQ=="
+    "signature": "O+H4iwc4oYN79/Jy5zpMO9h8JcTzPxzXwHdxY8d4mJzi/JiZ1yjMvafwMOd4wR+FtdPYd36Kan2J0hCJYFBGAg=="
   },
   "citations": [
     {

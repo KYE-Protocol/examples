@@ -14,16 +14,74 @@
       "source_repo": "example-org/example-open-llm-70b",
       "model_ref": "kye:model:example-open-llm-70b",
       "governance_posture": "declared",
-      "framework_refs": ["eu-ai-act", "iso-42001"],
+      "framework_refs": [
+        "eu-ai-act",
+        "iso-42001"
+      ],
       "ai_bom": {
         "parent_model_ref": "kye:model:example-base-llm",
-        "dataset_refs": ["kye:dataset:example-public-corpus"],
+        "dataset_refs": [
+          "kye:dataset:example-public-corpus"
+        ],
         "weights_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
-        "license": "apache-2.0"
+        "license": "apache-2.0",
+        "g7_sbom": {
+          "metadata": {
+            "component_name": "example-open-llm-70b",
+            "version": "1.0"
+          },
+          "models": {
+            "architecture": "transformer",
+            "model_type": "text-generation"
+          },
+          "datasets": {
+            "provenance": "public-corpus"
+          },
+          "infrastructure": {
+            "frameworks": [
+              "transformers"
+            ]
+          },
+          "security": {
+            "attestations": [
+              "provenance-declared"
+            ]
+          },
+          "system_level_properties": {
+            "intended_use": "example only"
+          },
+          "kpis": {
+            "note": "baselines at assessment"
+          }
+        }
       },
       "scope_disclaimer": "Provenance and governance posture only — not a capability, safety, or fairness claim.",
       "status": "draft",
       "adopted_at": "2026-06-05"
+    },
+    {
+      "schema": "kye.model_governance_binding.v1",
+      "binding_id": "kye:model-governance:example-kaggle-dataset",
+      "display_name": "Example Kaggle-sourced dataset governance binding",
+      "artifact_kind": "dataset",
+      "source": "kaggle",
+      "source_repo": "example-org/example-public-dataset",
+      "model_ref": "kye:model:example-kaggle-tabular-classifier",
+      "governance_posture": "declared",
+      "framework_refs": [
+        "eu-ai-act",
+        "iso-42001"
+      ],
+      "ai_bom": {
+        "parent_model_ref": "kye:model:example-base-tabular",
+        "dataset_refs": [
+          "kye:dataset:example-kaggle-public-dataset"
+        ],
+        "license": "cc-by-4.0"
+      },
+      "scope_disclaimer": "Provenance and governance posture only — not a capability, safety, or fairness claim. Demonstrates Hugging Face ↔ Kaggle source parity.",
+      "status": "draft",
+      "adopted_at": "2026-06-18"
     }
   ]
 }

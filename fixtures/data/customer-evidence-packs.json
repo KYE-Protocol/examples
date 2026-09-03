@@ -1,0 +1,50 @@
+[
+  {
+    "pack_ref": "REF-BFFF747C",
+    "window": "quarterly",
+    "actions": 227,
+    "status": "draft",
+    "signer_count": "1",
+    "sealed_day_offset": -60
+  },
+  {
+    "pack_ref": "REF-345DAB71",
+    "window": "quarterly",
+    "actions": 269,
+    "status": "sealed",
+    "signer_count": "1",
+    "sealed_day_offset": -70
+  },
+  {
+    "pack_ref": "REF-2C13FB63",
+    "window": "weekly",
+    "actions": 161,
+    "status": "awaiting_signoff",
+    "signer_count": "2",
+    "sealed_day_offset": -42
+  },
+  {
+    "pack_ref": "REF-64C18FA8",
+    "window": "daily",
+    "actions": 208,
+    "status": "draft",
+    "signer_count": "0",
+    "sealed_day_offset": -32
+  },
+  {
+    "pack_ref": "REF-ABBC37A1",
+    "window": "weekly",
+    "actions": 419,
+    "status": "sealed",
+    "signer_count": "2",
+    "sealed_day_offset": -66
+  },
+  {
+    "pack_ref": "REF-A2CD26AE",
+    "window": "weekly",
+    "actions": 169,
+    "status": "awaiting_signoff",
+    "signer_count": "3",
+    "sealed_day_offset": -33
+  }
+]

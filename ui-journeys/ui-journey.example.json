@@ -1,0 +1,24 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.ui_journey.v1.json",
+  "schema": "kye.ui_journey.v1",
+  "version": "1.0.0",
+  "generated_at": "2026-07-20T00:00:00Z",
+  "constitution_ref": "constitution/13-RESILIENCE-LOOP.md",
+  "surfaces_in_scope": ["app", "admin", "dev"],
+  "element_classes": [
+    { "class": "nav-link", "selector": "a[href]", "exercise": "resolve-destination", "description": "Navigation / menu links, classified by whether the destination resolves." },
+    { "class": "action-button", "selector": "button, [role=button]", "exercise": "click-observe", "description": "Buttons / CTAs, classified by whether an observable effect follows." },
+    { "class": "filter-select", "selector": "select", "exercise": "change-observe", "description": "Filter dropdowns." },
+    { "class": "search-input", "selector": "input[type=search]", "exercise": "type-submit-observe", "description": "Search boxes." }
+  ],
+  "render_gaps": [
+    { "page": "app/index.html", "gap_class": "auth-wall", "reason": "Cloud console sign-in surface; mounts Clerk sign-in rather than a dashboard." }
+  ],
+  "governance": {
+    "control_id": "constitution/13-RESILIENCE-LOOP.md",
+    "runner": "scripts/smoke/ui-journey-run.mjs",
+    "boot_core": "scripts/lib/functional-boot-core.mjs",
+    "governance_core": "scripts/lib/governed-run-core.mjs",
+    "ledger": "_diagnostics/ui-journeys.json"
+  }
+}

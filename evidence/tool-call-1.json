@@ -1,4 +1,5 @@
 {
+  "schema": "kye.evidence.tool_call.v1",
   "id": "kye:tool-call:acme-bank.01HF9X7ZQK4M5R8YV3WJKQ8N2P.001",
   "version": 1,
   "caller": "kye:ent:agent-clio",

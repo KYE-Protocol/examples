@@ -1,0 +1,264 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.warm_contact_profile.v1.json",
+  "schema": "kye.warm_contact_profile.v1",
+  "profile_id": "kye:warm-contact:kye-protocol-dogfood",
+  "organisation": {
+    "name": "KYE Protocol",
+    "what_they_do": {
+      "text": "Governs the authority behind consequential AI-agent actions, and seals the decision as replay-verifiable evidence.",
+      "source": {
+        "url": "https://kyeprotocol.com/authority-finality.html",
+        "retrieved_at": "2026-08-01",
+        "quote": "Authority Finality — no authority, no finality."
+      }
+    },
+    "offers": [
+      {
+        "text": "Sector Packs: expert governance frameworks productised for a specific regulated domain.",
+        "source": {
+          "url": "https://kyeprotocol.com/sector-packs.html",
+          "retrieved_at": "2026-08-01"
+        }
+      }
+    ],
+    "serves": [
+      {
+        "text": "Regulated buyers who must show a regulator why an automated action was permitted.",
+        "source": {
+          "url": "https://kyeprotocol.com/regulators.html",
+          "retrieved_at": "2026-08-01"
+        }
+      }
+    ]
+  },
+  "resolves_to": {
+    "sector_pack_ref": "agentic-lending",
+    "rule_pack_refs": [
+      "kye:rule-pack:action-admissibility"
+    ],
+    "framework_refs": [
+      "kye:framework:eu-ai-act",
+      "kye:framework:iso-42001"
+    ],
+    "product_ref": "publisher-access-ledger"
+  },
+  "value_claims": [
+    {
+      "claim": "Every automated decision your agents take becomes a record you can hand a regulator — which turns the assurance work you already do into something you can sell as a service.",
+      "because_they": {
+        "text": "They position for buyers who must show a regulator why an automated action was permitted.",
+        "source": {
+          "url": "https://kyeprotocol.com/regulators.html",
+          "retrieved_at": "2026-08-01"
+        }
+      },
+      "using_capability": "public/examples/adoption-evidence-pack.json"
+    }
+  ],
+  "cut": {
+    "synthetic_marker_required": true
+  },
+  "junctions": {
+    "resolved_at": "2026-08-06",
+    "kye_frame": {
+      "frame": "KYE = Know Your Entity + Authority Finality™. KYE does not run agents; KYE governs whether an agent's action may become final.",
+      "one_liner": "The runtime protocol that proves every consequential action was authorised, purpose-bound, evidenced, replayable and final before it changed the world.",
+      "synthesis": "A system may be safe, semantically aligned, policy-compliant, authenticated and technically permitted — and still lack valid authority to act. KYE resolves that final missing condition before execution.",
+      "wordmarks": [
+        {
+          "term": "Authority Finality",
+          "notes": "The protocol-level property: an action's chain is provably terminal — six bound fields signed and replayable."
+        },
+        {
+          "term": "Know Your Entity",
+          "notes": "Source of the KYE acronym."
+        },
+        {
+          "term": "KYE",
+          "notes": "Short form, standalone references."
+        },
+        {
+          "term": "KYE Protocol",
+          "notes": "Full name of the protocol."
+        }
+      ],
+      "adjacent_terms": [
+        {
+          "term": "KYA",
+          "definition": "The general industry term for agent attestation. KYE Protocol™ is the open contract layer that makes KYA, KYC. And KYB interoperable."
+        }
+      ]
+    },
+    "sector_pack": {
+      "ref": "agentic-lending",
+      "name": "agentic lending"
+    },
+    "governed_agents": [
+      {
+        "agent_id": "kye:agent:onboarding-agent",
+        "name": "KYE Onboarding Agent™"
+      },
+      {
+        "agent_id": "kye:agent:audit-pilot-agent",
+        "name": "KYE Audit Pilot Agent™"
+      },
+      {
+        "agent_id": "kye:agent:dsar-evidence-agent",
+        "name": "KYE DSAR Evidence Agent™"
+      },
+      {
+        "agent_id": "kye:agent:silent-compromise-agent",
+        "name": "KYE Silent Compromise Agent™"
+      },
+      {
+        "agent_id": "kye:agent:connector-onboarding-agent",
+        "name": "KYE Connector Onboarding Agent™"
+      },
+      {
+        "agent_id": "kye:agent:commercial-lifecycle-agent",
+        "name": "KYE Commercial Lifecycle Agent™"
+      },
+      {
+        "agent_id": "kye:agent:entitlements-agent",
+        "name": "KYE Entitlements Agent™"
+      },
+      {
+        "agent_id": "kye:agent:sku-lifecycle-agent",
+        "name": "KYE SKU Lifecycle Agent™"
+      },
+      {
+        "agent_id": "kye:agent:consultant-agent",
+        "name": "KYE Consultant Agent™"
+      },
+      {
+        "agent_id": "kye:agent:trainer-agent",
+        "name": "KYE Trainer Agent™"
+      },
+      {
+        "agent_id": "kye:agent:notification-agent",
+        "name": "KYE Notification Agent™"
+      },
+      {
+        "agent_id": "kye:agent:reporting-agent",
+        "name": "KYE Reporting Agent™"
+      },
+      {
+        "agent_id": "kye:agent:deal-registry-agent",
+        "name": "KYE Deal Registry Agent™"
+      },
+      {
+        "agent_id": "kye:agent:pilot-triage-agent",
+        "name": "KYE Pilot Triage Agent™"
+      },
+      {
+        "agent_id": "kye:agent:ops-agent",
+        "name": "KYE Ops Agent™"
+      },
+      {
+        "agent_id": "kye:agent:data-classification-agent",
+        "name": "KYE Data Classification Agent™"
+      },
+      {
+        "agent_id": "kye:agent:risk-agent",
+        "name": "KYE Risk Agent™"
+      },
+      {
+        "agent_id": "kye:agent:data-mapping-agent",
+        "name": "KYE Data Mapping Agent™"
+      },
+      {
+        "agent_id": "kye:agent:demo-agent",
+        "name": "KYE Demo Agent™"
+      },
+      {
+        "agent_id": "kye:agent:event-classifier-agent",
+        "name": "KYE Event Classifier Agent™"
+      },
+      {
+        "agent_id": "kye:agent:event-correlator-agent",
+        "name": "KYE Event Correlator Agent™"
+      },
+      {
+        "agent_id": "kye:agent:jurisdiction-resolver-agent",
+        "name": "KYE Jurisdiction Resolver Agent™"
+      },
+      {
+        "agent_id": "kye:agent:cross-border-evidence-agent",
+        "name": "KYE Cross-Border Evidence Agent™"
+      },
+      {
+        "agent_id": "kye:agent:regulator-replay-agent",
+        "name": "KYE Regulator Replay Agent™"
+      },
+      {
+        "agent_id": "kye:agent:framework-mapping-agent",
+        "name": "KYE Framework Mapping Agent™"
+      },
+      {
+        "agent_id": "kye:agent:kye-redteam-agent",
+        "name": "KYE Red-Team Agent™"
+      },
+      {
+        "agent_id": "kye:agent:training-agent",
+        "name": "KYE Training Agent™"
+      },
+      {
+        "agent_id": "kye:agent:dsar-agent",
+        "name": "KYE DSAR Agent™"
+      },
+      {
+        "agent_id": "kye:agent:research-gather-agent",
+        "name": "KYE Research Gather Agent™"
+      },
+      {
+        "agent_id": "kye:agent:document-intelligence-agent",
+        "name": "KYE Document Intelligence Agent™"
+      },
+      {
+        "agent_id": "kye:agent:audit-replay-orchestrator",
+        "name": "KYE Audit Replay Orchestrator™"
+      },
+      {
+        "agent_id": "kye:agent:drift-detector",
+        "name": "KYE Drift Detector™"
+      },
+      {
+        "agent_id": "kye:agent:kye-self:governed-capture",
+        "name": "KYE Governed Capture Agent™"
+      }
+    ],
+    "frameworks": [
+      {
+        "ref": "kye:framework:eu-ai-act",
+        "name": "EU AI Act — Artificial Intelligence Regulation",
+        "mapping_state": "ingested"
+      },
+      {
+        "ref": "kye:framework:iso-42001",
+        "name": "ISO/IEC 42001 — AI Management System",
+        "mapping_state": "deep-mapped"
+      }
+    ],
+    "rule_packs": [
+      {
+        "ref": "kye:rule-pack:action-admissibility",
+        "name": "action admissibility"
+      }
+    ],
+    "doctrine_ladder": [
+      "Output is not authority.",
+      "Evidence is not authority.",
+      "Identity is not authority.",
+      "Access is not authority.",
+      "Capability is not authority.",
+      "Safety is not authority.",
+      "Semantic alignment is not authority.",
+      "Policy compliance is not authority.",
+      "Behavioural conformance is not authority.",
+      "Permission is not mandate.",
+      "Technical authority is not institutional authority.",
+      "No authority, no finality.",
+      "Legitimate authority at the exact moment of consequence."
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "schema_id": "kye.conformance_run_request.v1",
+  "request_id": "kye:conformance-run-request:3c9e1f74-52b0-4a1d-9e77-8b41d2a6c015",
+  "tenant_id": "kye:tenant:acme-bank",
+  "trigger_kind": "cron",
+  "triggered_at": "2026-08-13T01:00:00Z",
+  "completed_at": "2026-08-13T01:04:18Z",
+  "result": "pass",
+  "conformance_run_id": "kye:conformance-run:2026-08-13.acme-bank.01"
+}

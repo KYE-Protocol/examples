@@ -17,10 +17,20 @@
       "what": "Placeholder CLASS description. In the live registry this field describes a CATEGORY of protected material and never restates a secret. Here it is intentionally generic.",
       "why": "patent",
       "disclosure_tier": "absolute",
-      "location_pointers": ["internal"],
-      "enforcing_gates": ["patent-safety-scan", "ip-oss-line"],
-      "allowed_surfaces": ["schemas"],
-      "keyword_corpus": []
+      "location_pointers": [
+        "internal"
+      ],
+      "enforcing_gates": [
+        "patent-safety-scan",
+        "ip-oss-line"
+      ],
+      "allowed_surfaces": [
+        "schemas"
+      ],
+      "keyword_corpus": [],
+      "detection": {
+        "mode": "keyword_corpus"
+      }
     },
     {
       "secret_class_id": "example-registry-itself",
@@ -28,11 +38,21 @@
       "what": "Placeholder for the meta-protected entry. The real registry is its own protected entry and never leaves private/ (its actual pointer is redacted here).",
       "why": "security",
       "disclosure_tier": "absolute",
-      "location_pointers": ["private/REDACTED/"],
-      "enforcing_gates": ["nondisclosure-canonical", "ip-oss-line"],
+      "location_pointers": [
+        "private/REDACTED/"
+      ],
+      "enforcing_gates": [
+        "nondisclosure-canonical",
+        "ip-oss-line"
+      ],
       "allowed_surfaces": [],
       "keyword_corpus": [],
-      "meta_protected": true
+      "meta_protected": true,
+      "detection": {
+        "mode": "gate_rule",
+        "rule_ref": "scripts/gates/example-gate.mjs:EXAMPLE_RULE_RX",
+        "note": "Illustrative only. In the canonical registry this resolves to a real gate symbol and the enforcer fails if it does not."
+      }
     }
   ]
 }

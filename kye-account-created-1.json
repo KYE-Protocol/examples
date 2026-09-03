@@ -1,0 +1,9 @@
+{
+  "event_id": "kye:evt:northwind-bank-evt-2026-08-0417",
+  "event_type": "kye.account.created.v1",
+  "account_id": "kye:account:northwind-bank-acc-2026-08-0417",
+  "email": "ops@example.invalid",
+  "organisation": "Northwind Bank plc",
+  "api_key_prefix": "kye_pk_A1b2C3d4",
+  "created_at": "2026-08-07T09:15:00Z"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:fedramp-baselines",
+  "adopted_at": "2026-08-07",
+  "baselines": [
+    {
+      "id": "fedramp_low",
+      "name": "Northwind Bank payments release",
+      "impact_level": "low",
+      "headline_controls": [
+        "AC-2(1)"
+      ]
+    }
+  ]
+}

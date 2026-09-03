@@ -1,0 +1,72 @@
+[
+  {
+    "actor_subject_id": "kye:subject:synthetic:9661",
+    "action_type": "model.deploy",
+    "target_system": "synthetic-core-banking",
+    "payload_summary": "Synthetic account closure batch",
+    "risk_level": "low",
+    "approval_mode": "two_person_with_legal",
+    "state": "escalated",
+    "proposed_day_offset": -72
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:3539",
+    "action_type": "payment.prepare",
+    "target_system": "synthetic-data-warehouse",
+    "payload_summary": "Synthetic bulk data export",
+    "risk_level": "low",
+    "approval_mode": "single_approver",
+    "state": "rejected",
+    "proposed_day_offset": -45
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:6026",
+    "action_type": "data.export",
+    "target_system": "synthetic-ml-platform",
+    "payload_summary": "Synthetic model deployment",
+    "risk_level": "low",
+    "approval_mode": "single_approver",
+    "state": "rejected",
+    "proposed_day_offset": -26
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:3140",
+    "action_type": "data.export",
+    "target_system": "synthetic-core-banking",
+    "payload_summary": "Synthetic bulk data export",
+    "risk_level": "medium",
+    "approval_mode": "two_person_with_legal",
+    "state": "rejected",
+    "proposed_day_offset": -59
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:7896",
+    "action_type": "model.deploy",
+    "target_system": "synthetic-data-warehouse",
+    "payload_summary": "Synthetic model deployment",
+    "risk_level": "low",
+    "approval_mode": "two_person",
+    "state": "rejected",
+    "proposed_day_offset": -2
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:5439",
+    "action_type": "payment.prepare",
+    "target_system": "synthetic-payments-gateway",
+    "payload_summary": "Synthetic payment batch release",
+    "risk_level": "high",
+    "approval_mode": "two_person",
+    "state": "rejected",
+    "proposed_day_offset": -12
+  },
+  {
+    "actor_subject_id": "kye:subject:synthetic:1712",
+    "action_type": "payment.prepare",
+    "target_system": "synthetic-data-warehouse",
+    "payload_summary": "Synthetic payment batch release",
+    "risk_level": "high",
+    "approval_mode": "auto",
+    "state": "rejected",
+    "proposed_day_offset": -53
+  }
+]

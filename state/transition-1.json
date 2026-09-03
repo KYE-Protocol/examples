@@ -1,0 +1,8 @@
+{
+  "schema_version": "kye.state.transition.v1",
+  "transition_id": "kye:state-transition:northwind-bank:st-2026-08-0417",
+  "machine_id": "kye:state-machine:northwind-bank:sm-2026-08-0417",
+  "from": "draft",
+  "to": "active",
+  "actor_role_required": "owner"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "kye.research_evidence_pack.v1",
+  "pack_id": "kye:evidence-pack:returns-to-expertise-governance-moat-2026-06",
+  "report_id": "kye:research-report:returns-to-expertise-governance-moat-2026-06",
+  "body_sha256": "fadf0201b0f3c1c9f886cd377d4035541b40ec9d3a43ed68cfb019577761eb7f",
+  "seal_signature": "mW8RbXQxpZdBYcKhS+zZ9nIQiW1ky+49oDvh5++XgW/2VBPfDvNk7wfRuAGHCUpaCSHmFAR90XX3ipPFBplnBQ==",
+  "emitted_by": "scripts/sign-research-report.mjs",
+  "claims": [
+    {
+      "claim": "In a study of roughly 400,000 agentic-coding sessions, people made about 70% of the planning decisions (what to do) while the agent made about 80% of the execution decisions (how to do it); success was determined by how well a person understood the problem rather than whether they were trained in coding; expert-rated sessions reached verified success more than twice as often as novice ones and recovered from errors; expert users drew more than twice the work per instruction (roughly 12 actions and 3,200 words of output per prompt vs ~5 actions and ~600 words for novices); over seven months the share of sessions spent debugging nearly halved while operating software, analysing data and writing grew; and the authors note coding is a leading case — a preview of what may come as agentic tools take on other forms of knowledge work.",
+      "source_url": "https://www.anthropic.com/research/research/claude-code-expertise",
+      "publisher": "Anthropic — Hitzig, Massenkoff, Lyubich, Heller & McCrory, 'Agentic coding and persistent returns to expertise' (2026-06-11). Cited as published research, not advice.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    },
+    {
+      "claim": "Spending on AI-governance platforms was sized at $492M for 2026 and projected to surpass $1B by 2030, with AI regulation expanding to cover about 75% of the world's economies; 362 AI incidents were recorded in 2025; and AI governance is framed as the accountability layer that sits above AI security, compliance and monitoring.",
+      "source_url": "https://getaigovernance.net/",
+      "publisher": "GetAIGovernance.net, 'The State of AI Governance: H1 2026' (citing a Gartner Feb 2026 forecast). Cited as a market survey, not advice.",
+      "pinned": false,
+      "unpinned_reason": "citation names no source_id — bound to a URL string, not a retrieved page"
+    }
+  ],
+  "counts": {
+    "claims": 2,
+    "pinned": 0,
+    "unpinned": 2
+  }
+}

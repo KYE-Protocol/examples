@@ -1,0 +1,34 @@
+{
+  "schema": "kye.compliance.attestation.v1",
+  "attestation_id": "kye:compliance-attestation:foundry-pack-laboratory-testing-governance-coverage:2026-06-18",
+  "emitted_at": "2026-06-18T12:00:00Z",
+  "emitter": "kye:foundry:coverage-attestor",
+  "framework_refs": [
+    "constitution/54-SECTOR-PACK-FOUNDRY.md §13",
+    "CLIA",
+    "ISO_IEC_17025",
+    "ISO_15189",
+    "OECD_GLP"
+  ],
+  "subject": "kye:powered-pack:laboratory-testing-governance:v1",
+  "mode": "static",
+  "run_id": "foundry-pack-laboratory-testing-governance-001-coverage-2026-06-18",
+  "envelope_report_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "envelope_signature_alg": "ed25519",
+  "verdict": "ok",
+  "summary": {
+    "pack_id": "kye:powered-pack:laboratory-testing-governance:v1",
+    "claim_count": 5,
+    "bound_rule_packs": ["kye:rule-pack:laboratory-data-integrity"],
+    "bound_dictionaries": ["kye:dictionary:laboratory-governance"],
+    "bound_sector_packs": ["kye:sector-pack:laboratory-testing-governance"],
+    "bijection_verdict": "claim-set is bijective with bound canonical artefacts",
+    "uncovered_claims": [],
+    "orphan_artefacts": []
+  },
+  "blocking_reconcilers": [
+    { "id": "foundry-rail-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "rule-pack-canonical", "verdict": "OK", "drift": 0 },
+    { "id": "sku-manifest-canonical", "verdict": "OK", "drift": 0 }
+  ]
+}

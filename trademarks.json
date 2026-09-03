@@ -1,9 +1,10 @@
 {
   "$schema": "https://kyeprotocol.com/schemas/vocabulary/trademarks.v1.json",
   "schema_version": "kye.trademarks.v1",
-  "description": "Single source of truth for KYE Protocol™ protected marks. The audit script scripts/audit-trademarks.mjs reads this file and enforces first-prominent-use ™ on every public-facing surface.",
+  "description": "ILLUSTRATIVE EXAMPLE of the kye.trademarks.v1 shape — not a source of truth. The canonical register of KYE Protocol™ protected marks is public/vocabulary/trademarks.json, which canonical-everything.json records as the manifest for this concept and which the audit (scripts/audit-trademarks.mjs) actually reads. This file previously described itself as the \"single source of truth\" while carrying a diverged subset of the marks; that wording is corrected here rather than left to drift further.",
   "policy": {
     "rule": "Every prose occurrence of any protected mark on a public page must carry the ™ symbol. The audit script enforces this on every occurrence in body text (excluding <code>, <pre>, <script>, <style>, <svg>, the universal footer notice, HTML attribute values, and the document <head>).",
+    "enforcement_mode": "first-prominent-use",
     "markup_canonical": "<span class=\"tm\">™</span>",
     "markup_acceptable": [
       "™",
@@ -13,778 +14,1457 @@
   },
   "marks": [
     {
+      "id": "kye-publisher-access-ledger",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Publisher Access Ledger",
+      "class": "wordmark",
+      "notes": "KYE's operator product (KYE-MOW-SOC-001) for the Movement for an Open Web (MOW) Search Only Terms Contract (SOC): classifies automated access against the licence, seals each Access Event as evidence, and derives the ADVISORY invoice-ready unlicensed-access schedule (£500/Product, Clause 14 override). A NEW public-facing PRODUCT over EXISTING rails (§12 Purpose-Permission + §13 Evidence + the shared mow-soc-collector). §70 honesty: KYE proves the breach; the publisher and counsel claim the debt — the SOC remains MOW's (never re-hosted/re-drafted). REUSES kye:dictionary:open-access-authority (no parallel vocabulary, §0/§0.10)."
+    },
+    {
+      "id": "kye-agentic-lending-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Agentic Lending Authority Pack",
+      "class": "wordmark",
+      "notes": "§49 §9 sector-pilot product (KYE-PILOT-AGENTIC-LENDING-001) governing AI agents that make or assist consumer-credit & lending decisions (underwriting, pricing, adverse action, arrears) on the consumer-lending framework spine (ECOA / Regulation B, FCRA, Fed SR 11-7, FCA Consumer Duty PRIN 2A, FCA CONC). Governs the lending agent's authority-to-act and the adverse-action audit trail (Decision Map™ + contestability), not the credit model's statistical correctness. Constitution §49 §9 + §68."
+    },
+    {
+      "id": "kye-consumer-reporting-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Consumer-Reporting & Adverse-Action Authority Pack",
+      "class": "wordmark",
+      "notes": "§49 §9 sector-pilot product (KYE-PILOT-CONSUMER-REPORTING-001) governing AI agents that procure or act on a consumer report for employment or tenant screening on the consumer-reporting framework spine (FCRA, California ICRAA). Governs the agent's authority-to-act (permissible purpose, ICRAA written consent) and the adverse-action audit trail (Decision Map™ naming the consumer reporting agency + contestability). KYE is NOT a consumer reporting agency and does not generate the report or judge its accuracy. Constitution §49 §9 + §68 + §70."
+    },
+    {
       "id": "kye",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE",
       "class": "wordmark",
       "notes": "Short form, standalone references."
     },
     {
       "id": "kye-realtime-dashboard",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Realtime Dashboard",
       "class": "app",
       "notes": "The realtime customer dashboard view at app.kyeprotocol.com/dashboard.html — locked by constitution/08-APPS-DASHBOARDS.md §13. Streams decision / authority_change / metric_tick / density_cell events over SSE with banking-grade tenant isolation per §0.11."
     },
     {
       "id": "kye-protocol",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Protocol",
       "class": "wordmark",
       "notes": "Full name of the protocol."
     },
     {
       "id": "know-your-entity",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Know Your Entity",
       "class": "wordmark",
       "notes": "Source of the KYE acronym."
     },
     {
       "id": "authority-finality",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Authority Finality",
       "class": "concept",
       "notes": "The protocol-level guarantee."
     },
     {
       "id": "authority-graph",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Authority Graph",
       "class": "concept",
       "notes": "Graph projection of authority."
     },
     {
+      "id": "kye-managed-authority-operations",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Managed Authority Operations",
+      "class": "product",
+      "notes": "Productised delivery mode: KYE operates the customer's governance / authority / evidence control plane plus a staffed oversight desk on their behalf. KYE runs the governance plane, NOT the customer's AI agents (§0 / §0.30 / §32)."
+    },
+    {
       "id": "kye-authority-risk-signal",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Authority Risk Signal",
       "class": "product",
       "notes": "Governed, Ed25519-signed feed of authority-failure events for boards, insurers, and risk-quant platforms. Counts + signed references, never financial-risk quantification (§0)."
     },
     {
       "id": "authority-risk-signal-feed",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Authority Risk Signal Feed",
       "class": "wordmark",
       "notes": "The signed feed-record stream itself (kye.authority_risk_signal.v1). Channels into the Insurance pack and external risk platforms. Counts only, never dollar values."
     },
     {
       "id": "decision-map",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Decision Map",
       "class": "concept",
       "notes": "Per-decision projection."
     },
     {
       "id": "evidence-graph",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Evidence Graph",
       "class": "concept",
       "notes": "Evidence projection."
     },
     {
       "id": "blast-radius-map",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Blast Radius Map",
       "class": "concept",
       "notes": "Compromise-cascade projection."
     },
     {
       "id": "compliance-map",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Compliance Map",
       "class": "concept",
       "notes": "Framework-control projection."
     },
     {
       "id": "kye-compliance-mapping-rail",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Compliance Mapping Rail",
       "class": "infrastructure",
       "notes": "Runtime → control binding."
     },
     {
       "id": "kye-cloud-gateway",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Cloud Gateway",
       "class": "commercial",
       "notes": "Hosted commercial offering."
     },
     {
       "id": "kye-conformant",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Conformant",
       "class": "certification",
       "notes": "L3 conformance badge."
     },
     {
       "id": "kye-certified",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Certified",
       "class": "certification",
       "notes": "L4 certification badge."
     },
     {
+      "id": "kye-certified-agentic-governance-practitioner",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Certified Agentic Governance Practitioner",
+      "class": "certification",
+      "notes": "Capstone KYE Academy™ credential spanning the five authority tracks (AI Builders, GRC/Risk, Sector Experts, SIs/Consultants). Proves the holder can take an AI agent from deployment to a replay-verifiable authority claim end-to-end. First-use surfaces: public/site/certification.html + public/site/training.html."
+    },
+    {
       "id": "kye-self-tested",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Self-Tested",
       "class": "certification",
       "notes": "L1 self-test badge."
     },
     {
       "id": "kye-self-attested",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Self-Attested",
       "class": "certification",
       "notes": "L2 self-attestation badge."
     },
     {
       "id": "kye-core-conformant",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Core Conformant",
       "class": "certification",
       "notes": "Capability-scoped conformance: Core authority + delegation + scope + state + audit + decision-code fixtures. Program in development."
     },
     {
       "id": "kye-authority-conformant",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Authority Conformant",
       "class": "certification",
       "notes": "Capability-scoped conformance: Authority Finality™ binding tested end-to-end. Program in development."
     },
     {
       "id": "kye-capability-conformant",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Capability Conformant",
       "class": "certification",
       "notes": "Capability-scoped conformance: capability registry + grant + invoke + quarantine + cascade fixtures. Program in development."
     },
     {
       "id": "kye-evidence-conformant",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Evidence Conformant",
       "class": "certification",
       "notes": "Capability-scoped conformance: Evidence Pack™ generation, signing, replay and OSCAL projection. Program in development."
     },
     {
       "id": "kye-sovereign-ai-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Sovereign AI Profile",
       "class": "profile",
       "notes": "Umbrella connector profile family for sovereign / national AI ecosystems. v1.1 preview."
     },
     {
       "id": "kye-public-sector-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Public Sector Profile",
       "class": "profile",
       "notes": "Agency + civil-servant + citizen-service authority binding. v1.1 preview."
     },
     {
       "id": "kye-national-ai-agent-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE National AI Agent Profile",
       "class": "profile",
       "notes": "Registry + capability + permitted-action binding for AI agents at national scale. v1.1 preview."
     },
     {
       "id": "kye-government-api-authority-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Government API Authority Profile",
       "class": "profile",
       "notes": "Pre-authorisation hook for government APIs. v1.1 preview."
     },
     {
       "id": "kye-public-services-evidence-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Public Services Evidence Profile",
       "class": "profile",
       "notes": "Evidence-pack format for citizen-impacting AI-assisted decisions. v1.1 preview."
     },
     {
       "id": "kye-sovereign-data-access-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Sovereign Data Access Profile",
       "class": "profile",
       "notes": "Dataset + data-space authority + provenance binding. v1.1 preview."
     },
     {
       "id": "kye-sovereign-model-registry-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Sovereign Model Registry Profile",
       "class": "profile",
       "notes": "Model entity + risk state + permitted-action binding. v1.1 preview."
     },
     {
       "id": "kye-cross-agency-delegation-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Cross-Agency Delegation Profile",
       "class": "profile",
       "notes": "Ministerial + agency + regulatory delegation binding. v1.1 preview."
     },
     {
       "id": "kye-national-sandbox-profile",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE National Sandbox Profile",
       "class": "profile",
       "notes": "Supervisor + participant authority binding for regulated sandboxes. v1.1 preview."
     },
     {
       "id": "kye-sovereign-ai-authority-gateway",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Sovereign AI Authority Gateway",
       "class": "app",
       "notes": "Runtime authority gateway for sovereign AI ecosystems. Planned commercial app."
     },
     {
       "id": "kye-national-ai-agent-registry",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE National AI Agent Registry",
       "class": "app",
       "notes": "Register and govern AI agents, models, datasets at national scale. Planned commercial app."
     },
     {
       "id": "kye-public-sector-decision-map",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Public Sector Decision Map",
       "class": "app",
       "notes": "Replay AI-assisted public-sector decisions. Planned commercial app."
     },
     {
       "id": "kye-sovereign-ai-evidence-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Sovereign AI Evidence Pack",
       "class": "app",
       "notes": "Evidence-pack format + viewer for sovereign AI ecosystems. Planned commercial app."
     },
     {
       "id": "kye-national-sandbox-authority-harness",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE National Sandbox Authority Harness",
       "class": "app",
       "notes": "Sandbox harness for regulated national AI / open-finance / healthcare programs. Planned commercial app."
     },
     {
       "id": "kye-counterparty-governance-rail",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Counterparty Governance Rail",
       "class": "wordmark",
       "notes": "Runtime governance for every external party acting on the customer's behalf — partners, suppliers, 3rd-party AI agents. Renamed from KYE Partner Rail™ on 2026-05-28; broader scope, same primitives."
     },
     {
       "id": "kye-runtime-console",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Runtime Console",
       "class": "wordmark",
       "notes": "Read-only operator console projecting the six-row PDP state (Authority · Scope · Delegation · Policy · Decision · Evidence) for every privileged AI-agent action."
     },
     {
       "id": "kye-trace-replay",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Trace Replay",
       "class": "wordmark",
       "notes": "v1.1 evidence contract — model + seed + tool versions + input content hashes captured so Evidence Packs are independently re-runnable offline."
     },
     {
       "id": "kye-federation-cross-org-delegation",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Federation Cross-Org Delegation",
       "class": "wordmark",
       "notes": "v1.1 federation envelope binding multi-tenant delegation chains; each hop independently signed and offline-verifiable."
     },
     {
       "id": "kye-model-capability-binding",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Model Capability Binding",
       "class": "wordmark",
       "notes": "v1.1 upstream binding — declared model capability + risk class + permitted tool families, signed and bound to per-call evidence."
     },
     {
       "id": "kye-model-influence-envelope",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Model Influence Envelope",
       "class": "wordmark",
       "notes": "v1.1 mid-stream binding — system prompt + RAG corpus + tool manifest + adapter hashes captured per decision, with drift detection vs prior envelope."
     },
     {
       "id": "kye-authority-risk-register",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Authority Risk Register",
       "class": "wordmark",
       "notes": "Board-facing aggregation of open authority gaps observed across the tenant — one row per (subject, gap_class) tuple. Rows bind back to signed evidence envelopes that prove the gap. Derived from §0.3 audit events."
     },
     {
       "id": "kye-sector-pack-foundry",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Sector Pack Foundry",
       "class": "wordmark",
       "notes": "Productisation pathway turning expert governance frameworks into KYE-Powered Packs. Three-tier invite-only commercial program. §54."
     },
     {
+      "id": "kye-authority-native-venture-studio",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Authority-Native Venture Studio",
+      "class": "wordmark",
+      "notes": "Invite-only partner program that co-creates and incubates NEW authority-native ventures built on KYE's authority-finality rails, for equity/revenue-share. Three tiers (Spark/Forge/Launch). §49 §9 specialization=venture-studio. Distinct from KYE for Startups™ (credits), KYE Design Partner™ (founding-customer co-design), and the §54 Sector Pack Foundry (expert-pack productisation)."
+    },
+    {
       "id": "kye-powered-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Powered Pack",
       "class": "wordmark",
       "notes": "Public badge for any sector pack productised through the KYE Sector Pack Foundry. Carries the KYE bijection enforcement guarantee."
     },
     {
       "id": "kye-publishing-authority-track",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Publishing Authority Track",
       "class": "wordmark",
       "notes": "Research-publishing specialisation (research-publishing) of the KYE Sector Pack Foundry. Productises governed AI research — synthesised through the §62 Governed Research Rail evidence pipeline — into published authority for universities, research institutes, labs, think-tanks, standards bodies, and academic press. A track inside the one Foundry, not a separate foundry. Constitution §54 §15."
     },
     {
       "id": "governed-by-kye",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Governed by KYE",
       "class": "wordmark",
       "notes": "Licensed, revocable embed mark for Solution Provider / ISV partners (kye:partner-type:solution-provider-isv) who embed KYE Protocol inside their own product. Conditioned on conformance + §0.19 disclosure compliance + no-governance-compete; revoked on bijection failure. Partner taxonomy badge — internal §49 §9 + §54 §7 badge state machine."
     },
     {
       "id": "kye-starter-packs",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Starter Packs",
       "class": "wordmark",
       "notes": "Turn-key bundles for canonical sector × role × jurisdiction buyer contexts. Each pack bundles rule packs + sector packs + dictionaries + comms templates + dashboard widgets + pre-configured purposes by reference and activates through the canonical KYE Onboarding Agent. §22 §13."
     },
     {
       "id": "kye-senior-manager-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Senior Manager Authority Pack",
       "class": "wordmark",
       "notes": "First canonical KYE Sector Pack Foundry™ reference expert-pack template (KYE-FOUNDRY-PACK-SM-CR-001) for UK financial-services Senior Managers & Certification Regime. Constitution §54 §13."
     },
     {
+      "id": "kye-host-platform-authority-adapter-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Host-Platform Authority Adapter Pack",
+      "class": "wordmark",
+      "notes": "§54 Foundry authority-adapter track expert pack (KYE-FOUNDRY-PACK-AUTHORITY-ADAPTER-001). The KYE-powered authority adapter a System Integrator ships to route a host platform's tool-calls / RAG / document-processing / HITL steps through the KYE Authority Gateway, projecting the single §52 governed envelope and sealing an Evidence Pack™ before the commit boundary. §0.25 integrate-not-compete. Constitution §54 §13."
+    },
+    {
       "id": "kye-canada-health-authority-pilot",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Canada-Health Authority Pilot",
       "class": "wordmark",
       "notes": "§49 §9 sector-pilot product (KYE-PILOT-CANADA-HEALTH-001) governing AI-assisted actions over personal health information on the Canada jurisdiction framework spine (PHIPA Ontario, PIPEDA, AIDA). Synthetic/demo data only. Constitution §49 §9."
     },
     {
       "id": "kye-hiring-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Hiring Governance Pack",
       "class": "wordmark",
       "notes": "§49 §9 sector-pilot product (KYE-PILOT-HR-RECRUITMENT-001) governing AI agents across the hiring lifecycle (sourcing, CV/resume screening, ranking, scheduling, assessment, offer, onboarding) on the employment-AI framework spine (EU AI Act Annex III, NYC Local Law 144, GDPR Art. 22, UK Equality Act 2010, EEOC Uniform Guidelines). Constitution §49 §9 + §68."
     },
     {
       "id": "kye-contract-workflow-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Contract Workflow Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ legal expert-pack (KYE-FOUNDRY-PACK-LEGAL-CONTRACT-001) for AI-assisted contract workflow governance in UK legal practice. Constitution §54 §14."
     },
     {
       "id": "kye-value-based-pricing-model",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Value-Based Pricing Model",
       "class": "commercial",
       "notes": "Locked 2026-05-29 by constitution/27-COMMERCIAL-LIFECYCLE.md §12 (five-component model). Extended 2026-05-30 by §13 (Platform-vs-Professional fee split) to a ten-component + two-artefact model. Platform fees (ratable ARR): entry / annual runtime / annual renewal / pack maintenance / certification program. Professional fees (milestone-billed): onboarding / smoke test / consulting / document evaluation / certification engagement. Lifecycle artefacts: IP attestation + payout policy. Envelope schema: kye.commercial.value_based_pricing.v1 (v1.1)."
     },
     {
       "id": "kye-minimum-authority-controls",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Minimum Authority Controls",
       "class": "concept",
       "notes": "Canonical 12-control taxonomy KAC-1..KAC-12 — KYE Protocol's mirror of ADG's minimum-controls packaging, scoped to runtime authority."
     },
     {
       "id": "kac",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KAC",
       "class": "wordmark",
       "notes": "Short form of KYE Minimum Authority Controls — KAC-1 through KAC-12."
     },
     {
       "id": "kye-autonomy-tiers",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Autonomy Tiers",
       "class": "concept",
       "notes": "Canonical 4-tier autonomy ladder A0/A1/A2/A3 — sharpens ADG HITL/HOTL/HOOTL with explicit per-tier KAC floor."
     },
     {
       "id": "kye-tool-and-mcp-authority-register",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Tool & MCP Authority Register",
       "class": "app",
       "notes": "Tenant-scoped register declaring every tool and MCP server an agent may invoke. Productises ADG MC-7 as a runtime-bound artefact. SKU KYE-PILOT-TOOL-MCP-REGISTER."
     },
     {
       "id": "kye-seal",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Seal",
       "class": "concept",
       "notes": "Periodic compliance attestation envelope (KAC-12) that binds the operating control set to the named regulatory frameworks for the attestation window."
     },
     {
       "id": "kye-state-engine",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE State Engine",
       "class": "infrastructure",
       "notes": "The convergence point of all input states across the §55 10-layer execution stack — sensed events + capability profile + influence state + machine attestation + policy version converge into the Authority Resolution decision."
     },
     {
       "id": "kye-ai-influence-state",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "AI Influence State",
       "class": "concept",
       "notes": "Canonical primitive distinguishing formal authority holder from the actual estimate of agent influence on a decision (none / advised / recommended / ranked / decided / rubber_stamped). §55 §2.3 owned-layer primitive. Schema: kye.ai_influence_state.v1."
     },
     {
       "id": "kye-action-admissibility",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Action Admissibility",
       "class": "concept",
       "notes": "The signed decision envelope KYE emits at the Response/Enforcement Layer boundary. Canonical schema: admissibility-decision.json. Trademark formalisation; the schema pre-dates the §55 chapter."
     },
     {
       "id": "kye-authority-resolution",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Authority Resolution",
       "class": "concept",
       "notes": "Companion to Authority Finality™ — the runtime resolution of which authority chain admits the proposed action. §55 §2.7 owned-layer primitive."
     },
     {
       "id": "kye-evidence-finality",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Evidence Finality",
       "class": "concept",
       "notes": "Companion to Authority Finality™ — the property that an Evidence Pack™ + Replay Proof™ are derivable from public keys alone (no platform trust required). §55 §2.10 owned-layer primitive."
     },
     {
       "id": "kye-delegation-envelope",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Delegation Envelope",
       "class": "concept",
       "notes": "The signed envelope binding an authority delegation (principal → actor → resource → time window). Distinct from Evidence Pack™ (which binds a decision to its evidence). §55 §2.7 owned primitive."
     },
     {
       "id": "kye-machine-state-adapter",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Machine State Adapter",
       "class": "infrastructure",
       "notes": "The integration primitive at the §55 Machine State Layer that validates AMD-SEV / Intel-SGX / Nitro / GCP-CVM hardware attestations and binds the attested code-hash into the decision-bound Evidence Pack™."
     },
     {
       "id": "kye-layer-integration-contract",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Layer Integration Contract",
       "class": "concept",
       "notes": "The canonical envelope schema (kye.integration.v1) governing every adjacent-layer integration boundary in the §55 architecture — single shape parameterised by layer / direction / partner class / attestation requirement."
     },
     {
       "id": "agentic-governance",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Agentic Governance",
       "class": "concept",
       "notes": "Primary positioning mark (Wave-AgenticGovernanceMarks, locked 2026-05-30). Broader than Agent Governance: governance FOR agentic systems, including hybrid humans-with-AI-agency. The canonical category KYE Protocol™ owns. Marketing leads with Agentic; technical specs use Agent. Pairs with Authority Finality™ in the canonical hero tagline “Agentic Governance™ with Authority Finality™.” Canonical: internal"
     },
     {
       "id": "agent-governance",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Agent Governance",
       "class": "concept",
       "notes": "Defensive secondary mark (Wave-AgenticGovernanceMarks, locked 2026-05-30). Covers the narrower “governance OF autonomous agents” framing used in technical contracts. Superseded by Agentic Governance™ as the primary marketing surface; both stand to lock the category. Canonical: internal"
     },
     {
       "id": "agentic-era",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Agentic Era",
       "class": "concept",
       "notes": "Positioning macro-context mark (Wave-AgenticGovernanceMarks, locked 2026-05-30). The era in which autonomous and hybrid AI-agency systems take consequential action on behalf of people and organisations. Agentic Governance™ is the protocol layer the Agentic Era™ requires."
     },
     {
       "id": "agentic-governance-protocol",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Agentic Governance Protocol",
       "class": "concept",
       "notes": "Technical / regulator form of the primary mark (Wave-AgenticGovernanceMarks, locked 2026-05-30). Used when the surface is a regulator submission, an SDO contribution, or a technical specification audience that requires the “protocol” suffix. Marketing surfaces use Agentic Governance™; spec / regulator surfaces may use Agentic Governance Protocol™."
     },
     {
       "id": "kye-biopharma-pharmacovigilance-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Biopharma Pharmacovigilance Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ biopharma expert-pack (KYE-FOUNDRY-PACK-BIOPHARMA-PV-001) governing AI agents across pharmacovigilance / GxP / clinical-trial conduct under EMA GVP, MHRA, FDA 21 CFR Part 11, and ICH E6(R3) GCP. Constitution §54 §13."
     },
     {
       "id": "kye-medical-imaging-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Medical Imaging Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ medical-imaging expert-pack (KYE-FOUNDRY-PACK-MEDICAL-IMAGING-001) governing AI agents across radiology and medical imaging under MHRA SaMD supervision, the MHRA Medical Devices Regulations, the EU AI Act, and UK GDPR. Constitution §54 §13."
     },
     {
       "id": "kye-digital-pathology-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Digital Pathology Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ digital-pathology expert-pack (KYE-FOUNDRY-PACK-DIGITAL-PATHOLOGY-001) governing AI agents across digital and computational pathology under MHRA SaMD supervision, the MHRA Medical Devices Regulations, the EU AI Act, and UK GDPR. Constitution §54 §13."
     },
     {
       "id": "kye-clinical-ai-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Clinical AI Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ clinical-AI market-entry expert-pack (KYE-FOUNDRY-PACK-CLINICAL-AI-EU-UK-001) governing AI clinical decision support / medical question-answering agents operating in the EU and UK under the EU AI Act (Annex III high-risk health), EU MDR / UK MHRA (clinical decision support as a regulated medical device), and GDPR Article 9 (health special-category data). KYE governs authority-to-inform and proves the basis; it does not assess clinical truth. Constitution §54 §13."
     },
     {
       "id": "kye-medical-device-samd-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Medical Device SaMD Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ medical-device expert-pack (KYE-FOUNDRY-PACK-MEDICAL-DEVICE-SAMD-001) governing AI agents that function as, or inside, Software as a Medical Device under MHRA SaMD supervision, the MHRA Medical Devices Regulations, MHRA post-market surveillance, the EU AI Act, and ISO/IEC 42001. Constitution §54 §13."
     },
     {
       "id": "kye-mica-custody-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE MiCA Custody Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ Crypto Foundry expert-pack (KYE-FOUNDRY-PACK-MICA-CUSTODY-001) for EU crypto-asset custody under MiCA Art 70-77. Constitution §54 §14."
     },
     {
       "id": "kye-travel-rule-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Travel Rule Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ Crypto Foundry expert-pack (KYE-FOUNDRY-PACK-TRAVEL-RULE-001) for VASP Travel Rule compliance under FATF Recommendation 16. Constitution §54 §14."
     },
     {
       "id": "kye-trading-bot-model-risk-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Trading-Bot Model-Risk Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ Crypto Foundry expert-pack (KYE-FOUNDRY-PACK-SR11-7-TRADING-001) for AI trading-bot model risk under SR 11-7 + EBA + PRA SS1/23. Constitution §54 §14."
     },
     {
       "id": "kye-hse-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE HSE Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-HSE-SAFETY-001) governing AI agents that author/interpret/approve safety-critical HSE documents — permits-to-work, risk assessments, method statements / SWMS, COSHH assessments, RIDDOR reports — under ISO 45001 + ISO 14001 + COSHH + permit-to-work + RIDDOR. Constitution §68."
     },
     {
       "id": "kye-ai-bio-chem-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE AI Bio-Chem Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-BIO-CHEM-GOVERNANCE-001) governing AI-designed biological sequences and chemical structures at the action boundary — the moment a design moves toward synthesis, wet-lab, or a regulated stage — under US EO 14110 (biosecurity), nucleic-acid synthesis screening (IBBIS / IGSC), Australia Group export controls, CWC/BWC, and FDA/EMA AI-provenance expectations. KYE governs whether the design may proceed, screened against dual-use controls, with replay-provable provenance; it does not fold proteins, design molecules, or judge scientific validity. Constitution §54 §13 / §68."
     },
     {
+      "id": "kye-genomics-biosecurity-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Genomics-Biosecurity Authority Pack",
+      "class": "wordmark",
+      "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-GENOMICS-BIOSECURITY-001) governing AI-generated and AI-assisted genomic sequences at the action boundary — the moment a sequence moves toward synthesis, order placement, or a regulated wet-lab / clinical stage — under nucleic-acid synthesis screening (IBBIS / IGSC), Australia Group export controls, CWC/BWC, US EO 14110 biosecurity, CLIA / ISO 15189 laboratory quality, and GDPR Article 9 / PHIPA Ontario genomic-data authority bases. A genomics specialization on the bio-chem-governance spine bound to the Genetic Sequencing Authority Agent™ (KYE-AGENT-GENETIC-SEQ-001). KYE governs whether the sequence may proceed and proves the basis; it does not design sequences, fold proteins, run the screening pipeline, or interpret clinical genomic results. Constitution §54 §13 / §68."
+    },
+    {
+      "id": "kye-laboratory-testing-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Laboratory & Testing Governance Pack",
+      "class": "wordmark",
+      "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-LAB-TESTING-001) governing AI-supported actions in laboratories of all types — testing, calibration, clinical / medical, and GLP non-clinical — at the test-result-admissibility boundary: the moment an AI-supported result is generated, released, or relied on as a reportable record — under CLIA, ISO/IEC 17025, ISO 15189, and OECD GLP. KYE governs AI-supported result generation, release-decisioning and ALCOA+ data-integrity/replay under a named reviewer's authority, with replay-provable provenance; it does not perform testing, calibrate equipment, run proficiency testing, handle specimens, or judge the analytical validity of a result. Constitution §54 §13 / §68."
+    },
+    {
+      "id": "kye-property-transaction-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Property Transaction Authority Pack",
+      "class": "wordmark",
+      "notes": "KYE §49 §9 sector pilot (KYE-PILOT-PROPERTY-TRANSACTION-001) governing AI agents acting in UK residential property transactions, conveyancing and shared ownership — at the transaction-step-admissibility boundary: the moment an AI-assisted step is taken, finalised, or relied on — under FCA MCOB, FCA Consumer Duty, UK MLR 2017, the Law Society Conveyancing Protocol, the CLC Code of Conduct, HM Land Registry (Safe Harbour) and the Homes England Capital Funding Guide. KYE governs the AI agent's authority to act + the evidence/replay of that action under a named conveyancer's authority; it does not perform searches, verify identity, calculate affordability, or determine the legal correctness of the conveyance. Constitution §49 §9 / §70."
+    },
+    {
+      "id": "kye-tender-procurement-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Tender & Procurement Authority Pack",
+      "class": "wordmark",
+      "notes": "KYE §49 §9 sector pilot (KYE-PILOT-TENDER-001) governing AI agents acting in a public / enterprise tender and procurement lifecycle — at the action-admissibility boundary: the moment an AI-assisted procurement action is taken, finalised, or relied on. Governs issuing a tender, scoring/evaluating bids, shortlisting, awarding, and handling disputes, each proven authorised + purpose-bound + evidenced + replay-provable (dispute-defensible) before it becomes final, under the AI-governance framework spine (EU AI Act, NIST AI RMF, UK AI Testing & Assurance for the public sector). KYE governs the AI agent's authority to act + the evidence/replay of that action under a named procurement officer's authority; it does not decide value-for-money, set procurement law, or determine the legal correctness of an award. Constitution §49 §9 / §70."
+    },
+    {
+      "id": "kye-tender-procurement-authority-console",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Tender & Procurement Authority Console",
+      "class": "wordmark",
+      "notes": "The governed customer workspace shipped with the KYE Tender & Procurement Authority Pack — the surface through which a procurement team runs AI-assisted tender, evaluation, award and dispute actions under recorded authority, published-criteria binding and named-officer finality. Constitution §49 §9 / §08."
+    },
+    {
+      "id": "kye-property-transaction-authority-console",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Property Transaction Authority Console",
+      "class": "wordmark",
+      "notes": "The governed customer workspace shipped with the KYE Property Transaction Authority Pack — the surface through which a conveyancing firm runs AI-assisted transaction steps under recorded authority, source-of-funds evidence and named-conveyancer sign-off. Constitution §49 §9 / §08."
+    },
+    {
       "id": "kye-tax-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Tax Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-TAX-GOVERNANCE-001) governing AI-generated tax positions, filings, and advice at the action boundary — the moment a position moves toward being filed with a tax authority, advised to a client, or booked as a financial-statement reserve — under IRS Circular 230 (preparer due diligence / competence / written advice), OECD Pillar Two GloBE rules, EU DAC6/DAC7 mandatory disclosure, UK Making Tax Digital, SOX §404 tax-provision controls, and AICPA SSTS. KYE governs whether the position may proceed under a named preparer's authority, with due diligence recorded before the action and replay-provable provenance; it does not compute tax, determine the correct treatment, or judge whether a position is correct. Constitution §54 §13 / §68."
     },
     {
       "id": "kye-investment-decision-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Investment Decision Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-INVESTMENT-DECISION-AUTHORITY-001) governing AI-assisted investment decisions and actions at the action boundary — the moment an AI-generated thesis, portfolio recommendation, trade recommendation, committee paper, or client research note moves toward a consequential action (a portfolio change committed, a trade routed, an investment committee approval recorded, or research served to a client) — under the Investment Policy Statement / discretionary mandate (the authority anchor), MiFID II, the FCA COBS, the SEC investment-adviser fiduciary duty (Advisers Act of 1940), AIFMD / UCITS fund-management limits, and (reused for the model-risk + accountability anchors) OSFI Guideline E-23 model risk and SOX §404 review controls. The killer consequential action is the irreversible investment committee approval, gated by §36 two-person sign-off. KYE governs whether the decision/action is within mandate, authorised, evidenced, contestable, and final under a named portfolio manager's / investment committee's authority, with the mandate check recorded before the action and replay-provable provenance; it does not produce investment intelligence, judge whether a thesis is correct, render any view on alpha / returns / suitability of outcome, and is not an investment adviser. Constitution §54 §13 / §68."
     },
     {
       "id": "kye-accounting-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Accounting Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-ACCOUNTING-GOVERNANCE-001) governing AI-generated financial entries, statements, and statutory filings at the action boundary — the moment an entry / set of accounts / filing moves toward being posted to the ledger, approved as the statutory accounts, or filed with Companies House — under the UK Companies Act 2006 (adequate records s.386, true-and-fair s.393, director responsibility s.414, filing with the Registrar s.441/s.442), UK GAAP FRS 102/105 recognition / measurement / disclosure, ISA (UK) auditing standards, the FRC Ethical Standard, SOX §404 review controls, and UK Making Tax Digital. The killer consequential action is the irreversible Companies House filing, gated by §36 two-person sign-off. KYE governs whether the entry/statement/filing may proceed under a named accountant's / director's authority, with due diligence recorded before the action and replay-provable provenance; it does not compute the numbers, prepare the accounts, or judge whether the accounts are correct. Constitution §54 §13 / §68."
     },
     {
       "id": "kye-chain-of-authority-insight-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Chain of Authority",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry expert-pack (KYE-FOUNDRY-PACK-CHAIN-OF-AUTHORITY-INSIGHT-001) governing whether a record custodied / classified in Iron Mountain InSight DXP may drive a consequential AI action — under a named human's authority, with the InSight custody/classification context bound into the decision (Chain of Custody to Chain of Authority), due diligence (including the classification-raised authority bar) recorded before the action, replay-provable evidence, and named-human sign-off (§36, two-person on regulated/restricted classifications) on the irreversible action. Iron Mountain proves where information travelled; KYE proves who was authorised to act on it. AI-ready data is not enough — you need authority-ready AI. Built on the records-management standards spine (ISO 15489, ISO 16175, ISO 23081, DoD 5015.02, MoReq2010). §0 boundary: KYE never does IDP / storage / records-retention / classification; it retains proof-of-governance, not the records. No Iron Mountain infrastructure or credentials are claimed. Constitution §54 §13 / §70."
     },
     {
       "id": "kye-public-sector-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Public Sector Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-PUBLIC-SECTOR-GOVERNANCE-001) governing AI-generated decisions, determinations, and outputs in government and public-sector systems at the action boundary — the moment an output moves toward being served to a citizen, disclosed under a transparency / FOIA request, committed inside a FedRAMP-authorised boundary, or submitted to an authorising official — under FedRAMP (continuous monitoring CA-7, FIPS 140-validated cryptography SC-13, personnel screening PS-3/PS-7), NIS2, ISO/IEC 42001 AI management, ISO/IEC 27001, and the UK AI regulatory framework. ONE coherent spine with us-federal / uk / eu jurisdiction specializations, consolidating and retiring the prior two incomplete public-sector packs (§0.10). The killer consequential action is the irreversible authorising-official ConMon / POA&M submission, gated by §36 two-person sign-off. KYE governs whether the output may proceed under a named official's authority, with due diligence recorded before the action and replay-provable provenance; it does not replace the FedRAMP / ATO authorisation, make the policy decision, or judge whether the determination is substantively correct. Constitution §54 §13 / §68."
     },
     {
       "id": "kye-mas-digital-asset-treasury-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE MAS Digital-Asset Treasury Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ Crypto Foundry expert-pack (KYE-FOUNDRY-PACK-MAS-DIGITAL-ASSET-001) for Singapore digital-asset treasury under MAS PS-N02/PS-N04. Constitution §54 §14."
     },
     {
       "id": "kye-eu-ai-act-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE EU AI Act Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-EU-AI-ACT-001) — worked instance of the §59 deterministic Framework Ingestion Engine (CELEX:32024R1689). Constitution §59 §6."
     },
     {
       "id": "open-agent-governance-foundation",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Open Agent Governance Foundation",
       "class": "concept",
       "notes": "Open working-group venue standardising Agentic Governance™ (Ralph-Final PR2, 2026-05-31). Open schemas + conformance + replay-from-public-keys. First-use surface: public/site/open-agent-governance-foundation.html. Canonical: internal"
     },
     {
       "id": "kye-powered-directory",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Powered Directory",
       "class": "infrastructure",
       "notes": "Public, consent-gated registry of organisations adopting KYE Protocol™ / Agentic Governance™ (Ralph-Final PR2, 2026-05-31). Seeded empty; grows by explicit public consent only. First-use surface: public/site/kye-powered-directory.html. Registry: internal"
     },
     {
       "id": "kye-certified-operational-runtime-partner",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Certified Operational Runtime Partner",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for Connector / Technology partners (kye:partner-type:connector-technology). §54 §7 badge state machine; revoked on conformance failure / §0.19 breach / no-governance-compete breach."
     },
     {
       "id": "kye-certified-reseller",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Certified Reseller",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for Reseller partners (kye:partner-type:reseller). §54 §7 badge state machine."
     },
     {
       "id": "kye-certified-system-integrator",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Certified System Integrator",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for System Integrator partners (kye:partner-type:system-integrator). §54 §7 badge state machine."
     },
     {
       "id": "kye-system-integrator",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE System Integrator",
       "class": "wordmark",
       "notes": "Programme wordmark for the productised System Integrator delivery track (kye:partner-type:system-integrator). Three delivery-capability tiers — Associate / Certified / Premier — per §49 §9.A. Distinct from the KYE-Certified System Integrator badge mark (the certified-state badge)."
     },
     {
       "id": "kye-certified-distributor",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Certified Distributor",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for Distributor partners (kye:partner-type:distributor). §54 §7 badge state machine."
     },
     {
       "id": "kye-strategic-partner",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Strategic Partner",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for Strategic / OEM partners (kye:partner-type:strategic-oem). §54 §7 badge state machine."
     },
     {
       "id": "kye-certified-trainer",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Certified Trainer",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for Trainer partners (kye:partner-type:trainer). §49 trainer channel; §54 §7 badge state machine."
     },
     {
       "id": "kye-accredited-auditor",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE-Accredited Auditor",
       "class": "wordmark",
       "notes": "Licensed, revocable certification mark for Auditor partners (kye:partner-type:auditor). §49 auditor channel; §54 §7 badge state machine."
     },
     {
       "id": "kye-referral-partner",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Referral Partner",
       "class": "wordmark",
       "notes": "Light, licensed, revocable mark for Referral / Affiliate partners (kye:partner-type:referral-affiliate); introduction-only, no delivery authority. §54 §7 badge state machine (revoked on §0.19 breach / no-governance-compete breach)."
     },
     {
       "id": "kye-learn",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Learn",
       "class": "app",
       "notes": "§39 Learn Rail — KYE Learn™ AI-governance education centre."
     },
     {
       "id": "kye-claims-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Claims Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ insurance-claims expert-pack (KYE-FOUNDRY-PACK-INSURANCE-CLAIMS-001) governing AI agents across the insurance claims lifecycle under the FCA Consumer Duty, the EU AI Act, UK GDPR, and DORA. Constitution §54 §13."
     },
     {
       "id": "kye-ai-adoption-navigator",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE AI Adoption Navigator",
       "class": "commercial",
       "notes": "Top-of-funnel, PRE-adoption (greenfield) self-assessment product: maps opportunity x authority-risk + authority-overlay onto a recommended first governed pilot and the required KYE controls, producing the signed AI Adoption Journey Report™. Canonically distinct from the KYE Authority Risk Profiler™ (a diagnostic of authority gaps on EXISTING uses). Constitution §39 + §68."
     },
     {
+      "id": "kye-github-app",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE GitHub App",
+      "class": "commercial",
+      "notes": "Installable, customer-facing PR-time governance check: at every pull request that touches a privileged change, the App asks the one KYE Policy Decision Point whether the change carries the required authority/evidence, then posts a governed GitHub Check Run with a §0.3 replay-provable evidence link. §0 boundary: the App CALLS the KYE governance engine — it never reimplements governance. Constitution §13 + §12 + §68."
+    },
+    {
       "id": "kye-ai-adoption-journey-report",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "AI Adoption Journey Report",
       "class": "concept",
       "notes": "The signed, replay-provable output of the KYE AI Adoption Navigator™ (kye.ai_adoption_journey_report.v1): scored use-case category, authority overlay (L1-L5), risk tier, oversight mode, recommended first governed pilot, and required controls, sealed with an Ed25519 §13 context seal verifiable from the published JWKS alone (§0.4 Replay-Proof™). Constitution §13 + §39 + §68."
     },
     {
       "id": "kye-governed-knowledge-assistant",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Governed Knowledge Assistant",
       "class": "commercial",
       "notes": "Horizontal, drop-in governance onramp (kind: addon) that places a third-party document-QA / retrieval-augmented (RAG) knowledge assistant under KYE authority + evidence at the execution boundary: every retrieval and answer flows through admit → decide → pin → evidence → replay-proof. Free onramp + paid Team/Enterprise tiers. §63/§31 honest scope: KYE governs WHETHER the assistant's answer/action may proceed and proves the basis it relied on; it does NOT judge whether the content is factually true. Constitution §39 + §68."
     },
     {
       "id": "kye-framework-mapping-rail",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Framework Mapping Rail",
       "class": "infrastructure",
       "notes": "§70 canonical registry-first track unifying the scattered framework-mapping pieces under one source-of-truth registry (coverage tri-state + deep per-requirement manifests + §55 label map + §59 ingestion)."
     },
     {
       "id": "kye-framework-mapping-agent",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Framework Mapping Agent",
       "class": "infrastructure",
       "notes": "§70 §0.3-governed, §52-bound deep-mapping agent that emits kye.framework_mapping.v1 with honest enforced/designed/out-of-scope states (never inflated)."
     },
     {
+      "id": "kye-document-intelligence-rail",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Document Intelligence Rail",
+      "class": "infrastructure",
+      "notes": "§71 the ONE rail for navigating, retrieving, and CITING UNSTRUCTURED documents (long prose / PDF) via self-hosted PageIndex (vectorless, reasoning-based, citable tree retrieval). NEVER re-indexes KYE's STRUCTURED canon (registries / taxonomies / nav / page-manifest) — that is the §50/§55 deterministic index. §0.25 integrate-not-compete: PageIndex is integrated self-hosted, never a reimplemented RAG/vector engine."
+    },
+    {
+      "id": "kye-document-tree-index",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Document Tree Index",
+      "class": "infrastructure",
+      "notes": "§71 the self-hosted PageIndex hierarchical table-of-contents tree index over an ingested unstructured document; the tree-node path is the citation, pinned via kye.evidence.tool_call_pin.v1 (§62 reuse) for replay-derivable evidence."
+    },
+    {
+      "id": "kye-offensive-security-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Offensive Security Authority Pack",
+      "class": "wordmark",
+      "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-OFFSEC-001) governing offensive-security actions at the action boundary — a penetration-test engagement, an exploit, a credential test, an autonomous AI pentest agent action, a vulnerability disclosure, or a remediation / patch — under PTES, OSSTMM, NIST SP 800-115, OWASP WSTG, and CREST. The doctrine is capability ≠ authority: CyberVelX (and every offensive-security tool) is capability; KYE is authority. The killer consequential action is production-impacting exploitation, gated by §36 two-person sign-off. KYE governs whether the offensive action may proceed under a named authoriser's authority, within an agreed scope and rules of engagement recorded before the action, with replay-provable provenance and Authority Finality™; it does not run the scanner, fire the exploit, execute the pentest, judge whether a finding is a true vulnerability, or replace the tester's methodology or the customer's security program. Constitution §54 §13 / §68."
+    },
+    {
       "id": "kye-aml-financial-crimes-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE AML & Financial-Crimes Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-AML-FINANCIAL-CRIMES-001) governing AI-assisted anti-money-laundering and financial-crimes actions at the action boundary — alert triage, sanctions screening, SAR/STR drafting, and KYC/CDD — under the FATF 40 Recommendations, the EU 6th Anti-Money Laundering Directive, the US Bank Secrecy Act / FinCEN, and the Wolfsberg Group principles. The killer consequential action is the SAR/STR filing, gated by §36 two-person sign-off (FATF R.16 Travel Rule reused via the existing travel-rule-fatf-r16 rule pack). KYE governs whether the AML action may proceed under a named compliance officer's / MLRO's authority, with due diligence recorded before the action and replay-provable provenance; it does not run transaction-monitoring models, decide whether a transaction is truly money-laundering, or replace the institution's AML program. Constitution §54 §13 / §68."
     },
     {
       "id": "kye-ich-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE ICH Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-ICH-AUTHORITY-001) governing how AI-generated submission evidence under the ICH Q-series quality guidelines comes into existence at the action boundary — the moment an AI-generated quality-risk-management output (ICH Q9), pharmaceutical-quality-system record (ICH Q10), API GMP batch record (ICH Q7), analytical-method-validation package (ICH Q2), or development-report content (ICH Q8) moves toward being approved by the Quality Unit, relied on in a regulatory dossier, released as a lot, or submitted to a Health Authority. The killer consequential action is the irreversible lot release / regulatory dossier submission, gated by §36 two-person sign-off. ICH tells you WHAT evidence regulators require; KYE proves HOW that evidence came into existence (who approved it, under what named authority, valid at T=0, lawful delegation, replay-provable); it does not perform the science, run the stability study, set impurity thresholds, validate the analytical method, or judge whether the quality is acceptable. KYE-owned mark; 'ICH' is never trademarked. Constitution §54 §13 / §68."
     },
     {
       "id": "kye-ai-solutions-framework-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE AI Solutions Framework Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-AI-SOLUTIONS-FRAMEWORK-AUTHORITY-001) turning the AI Solutions Framework — an enterprise AI-adoption control framework of ~90 safeguards across AI governance & accountability, risk management, AI safety, data privacy/lineage, compliance monitoring, and audit & evidence (IG1–IG3 maturity) — into executable authority flows at the action boundary. Positioning: frameworks define what should happen; KYE resolves who may make it happen, under what authority, and proves it later. §70 honesty bar: KYE governs ONLY the runtime-authority-resolvable subset (approval workflow, attestation, human-oversight stage gate, exception register — 6 enforced action-boundary controls); the organisational safeguards (governance board, AI inventory, policy authorship, training, risk committee) and the deploy-time infrastructure-posture / CSPM safeguards (model-logging, encryption, IAM least-privilege, network egress) are out of scope and honestly ceded to their owning roles. KYE COMPLEMENTS a deploy-time posture/CSPM layer — never claims it. Coverage is never inflated to 100%. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "systemic-authority-risk",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Systemic Authority Risk",
       "class": "concept",
       "notes": "The umbrella category Governance for the AI Web™ addresses: the inability to reconstruct who authorised what, under what delegation, relying on which models/vendors, across a shared AI ecosystem. Distinct from systemic financial risk and systemic model risk — it is the risk that accountability itself cannot be reassembled after an AI-mediated action. KYE Protocol™ reduces it with the EXISTING rails (canonical ID format, §17 Directory, §13 Evidence Pack™, §30 WORM, Authority Finality™, §52/§0.30 delegated-agent binding). §0.25 honest boundary: KYE asserts only verifiable facts — evidenced / governed / disclosed / authority-exists — never a truth score. Constitution §0.16 positioning canon."
     },
     {
       "id": "kye-lens",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Lens",
       "class": "product",
       "notes": "The web/consumer channel of the Governance for the AI Web™ category: a privacy-by-design browser extension that overlays authority + evidence onto the web a person and their agents browse. Local processing, no user-browsing exfiltration, opt-in telemetry only. Positioning arc: secure browsing → trusted browsing → governed browsing. A NEW public-facing PRODUCT over EXISTING rails — it surfaces the canonical kye:<class>:<trust-domain>:<subclass>:<local> ID, the §17 Directory projection, and §13 Evidence Pack™ provenance, and adds no new authority machinery. §0.25 / §70 honesty bar: it shows evidenced / governed / disclosed / authority-exists, NEVER a true/false truth score. Constitution §0.16 positioning canon."
     },
     {
       "id": "kye-site-authority",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Site Authority",
       "class": "product",
       "notes": "The web/publisher channel of the Governance for the AI Web™ category: a site scan + badge that lets a publisher disclose the authority and evidence posture of a site, with public lookup via the KYE Site Authority Registry™. The site UUID IS the canonical kye:<class>:<trust-domain>:<subclass>:<local> ID (reused, never forked); the registry is a §17 Directory projection; the disclosed evidence is a §13 Evidence Pack™ under §30 WORM with Authority Finality™. §0.25 / §70 honesty bar: the badge attests evidenced / governed / disclosed / authority-exists — never a truth score. Privacy-by-design. A NEW public-facing PRODUCT over EXISTING rails. Constitution §0.16 positioning canon."
     },
     {
       "id": "kye-site-authority-registry",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Site Authority Registry",
       "class": "product",
       "notes": "The public registry behind KYE Site Authority™: a §17 Directory projection that lets anyone look up a site's disclosed authority + evidence posture by its canonical kye:<class>:<trust-domain>:<subclass>:<local> site UUID. Reuses the EXISTING Directory rail — a projection, not a parallel registry (§0). §0.25 / §70 honesty bar: entries assert evidenced / governed / disclosed / authority-exists, never a truth score. Constitution §0.16 positioning canon."
     },
     {
       "id": "kye-build-release-authority",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Build-Release Authority",
       "class": "product",
       "notes": "The software-supply-chain channel of the Governance for the AI Web™ category: a GitHub App governing the authority, evidence, and provenance of software supply-chain changes — builds, dependency updates, and releases. A NEW public-facing PRODUCT over EXISTING rails: change provenance is a §13 Evidence Pack™ under §30 WORM with Authority Finality™; the actor (human or agent) resolves to a canonical principal via the kye:<class>:<trust-domain>:<subclass>:<local> ID and §52/§0.30 delegated-agent binding. §0.25 / §70 honesty bar: it proves who authorised the change and what evidence it relied on — evidenced / governed / disclosed / authority-exists — never a truth score. Constitution §0.16 positioning canon."
     },
     {
       "id": "kye-production-action-authority",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Production Action Authority",
       "class": "product",
       "notes": "The DevOps/runtime channel of the Governance for the AI Web™ category: governing the authority of SRE / incident / production actions (e.g. an autoheal-partner integration acting on production). A NEW public-facing PRODUCT over EXISTING rails: each production action's authority and evidence is a §13 Evidence Pack™ under §30 WORM with Authority Finality™; the acting human or agent resolves to a canonical principal via the kye:<class>:<trust-domain>:<subclass>:<local> ID and §52/§0.30 delegated-agent binding. §0.25 / §70 honesty bar: it proves who authorised the production action and on what basis — evidenced / governed / disclosed / authority-exists — never a truth score. Constitution §0.16 positioning canon."
     },
     {
       "id": "kye-production-action-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Production Action Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-PRODUCTION-ACTION-AUTHORITY-001) governing the authority and evidence of AI SRE / incident / production actions at the action boundary — the moment an AI-generated incident response moves from finding a fix toward EXECUTING a production action (a mitigation applied, a rollback, a hotfix deployed, an infra-change committed, an alert suppressed, a customer status posted). The DevOps/runtime channel of Governance for the AI Web™. The killer consequential action is the irreversible / high-blast-radius production rollback / hotfix deploy, gated by §36 two-person sign-off. Bound to ITIL 4 change enablement, ISO/IEC 20000-1 §8.5.1, NIST 800-53 CM-3, SOC 2 CC8.1, and Google SRE change management. KYE governs whether the action may proceed under a named SRE's / change-owner's delegated authority, with change-class due diligence recorded before the action and replay-provable provenance; it does not detect the incident, perform RCA, monitor the system, or judge whether the fix is technically correct (Autoheal finds the fix; KYE proves the fix had authority). Distinct from the category mark kye-production-action-authority (the productised Pack vs the positioning category). Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-chatbot-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Chatbot Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-CHATBOT-AUTHORITY-001) governing the AUTHORITY + EVIDENCE of consumer / customer chatbot safeguard actions at the moment a chatbot interaction occurs — under the emerging US state AI-chatbot laws (13+ states; 7 carry a private right of action at roughly $1,000 per violation; four recurring themes: mental-health / crisis protocols, minor protections, deception / disclosure / anthropomorphism, liability) plus EU AI Act (Regulation (EU) 2024/1689) Article 50 chatbot transparency. The differentiator is jurisdiction-aware execution: resolve the user location to the applicable regime and its safeguard set, then PROVE — when sued — that the crisis-escalation was authorised & triggered, the minor-profile applied, the disclosure shown, the applicable jurisdiction resolved, and a replay-provable Evidence Pack captured at the moment the interaction occurred. KYE governs the authority + evidence of the safeguard actions; it does not provide the chatbot / LLM, the clinical crisis-counselling content, or the GRC program (§0 complement-not-compete). Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-litigation-evidence-discovery-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Litigation Evidence & Discovery Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-LITIGATION-EVIDENCE-DISCOVERY-001) — flagship of the legal beachhead — governing the AUTHORITY + EVIDENCE of AI-assisted litigation and discovery at the action boundary, so the AI-assisted work is defensible when challenged in court. The wedge is defensibility: AI now performs privilege review, document production, and legal research, and courts demand the work be reconstructable and defensible when challenged (the Mata v. Avianca fake-citation problem; AI privilege-call reconstruction). KYE governs whether an AI-assisted privilege determination / production decision / research assertion may proceed to a consequential litigation action — under which named attorney authorised it, with discovery chain-of-custody recorded, with no AI-asserted fact relied on without a pinned source (no-hallucinated-citation / authority-to-rely), with a signed replay-provable litigation Evidence Pack per reviewed item, and a contestability record so any determination can be reconstructed and challenged. Bound to FRCP e-discovery (Rules 26/34/37 + FRE 502), FRE 901/902 authentication, the Sedona Principles, UK CPR Part 31 / PD 57AD disclosure, and the EU Evidence Regulation 2020/1783 + eIDAS. KYE governs the authority + evidence + defensibility of the AI-assisted legal work and PROVES it for litigation; it does NOT do legal research, judge the legal merits, write the brief, or replace counsel (§0 complement-not-compete vs Westlaw / Lexis / Harvey / counsel). KYE-owned mark; the rule names (FRCP, FRE, Sedona, CPR) are never trademarked. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-insurance-underwriting-claims-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Insurance Underwriting & Claims Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-INSURANCE-UW-CLAIMS-001) governing the AUTHORITY + EVIDENCE of AI-assisted insurance underwriting and claims decisions at the action boundary, so the decision is defensible, fair, and auditable when challenged (anti-discrimination / adverse-action explainability / appeal rights). KYE governs whether an AI-assisted underwriting decision (decline, adverse rate, exclusion) or claims determination (denial, reduction, fraud-flag, rescission) may proceed to a consequential adverse action — under which named underwriter / adjuster authorised it, with a recorded adverse-action reason-code, with proxy-discrimination / fairness-evidence captured, with a signed replay-provable Evidence Pack per decision, and an appeal / contestability record so any decision can be reconstructed and contested. Bound to the NAIC Model Bulletin on the Use of AI by Insurers, Colorado SB21-169, the EU AI Act Annex III high-risk insurance use-cases, the NYDFS Insurance Circular Letter on AI, and GDPR Art. 22. KYE governs the authority + evidence + defensibility of the AI-assisted insurance decision and PROVES it is fair and contestable; it does NOT price risk, write the policy, set the risk appetite, or replace the actuary / underwriter / adjuster (§0 complement-not-compete). KYE-owned mark; the regulator names (NAIC, NYDFS, Colorado, GDPR) are never trademarked. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-fairness-evidence-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Fairness Evidence Pack",
       "class": "wordmark",
       "notes": "The replay-provable fairness-evidence artefact emitted by the KYE Insurance Underwriting & Claims Authority Pack™ — binding the proxy-discrimination check applied, the disparate-impact / unfair-discrimination check result, the data fields tested, and the named-authority outcome to every consequential AI-assisted insurance decision, so the decision is provably tested against unfair discrimination and the evidence is verifiable offline when challenged. A projection of the §13 Evidence Pack™ specialised for the insurance fairness slice; KYE proves the fairness check evidence was captured, it does not design the carrier's discrimination-testing methodology. KYE-owned mark. Constitution §54 §13 / §70."
     },
     {
       "id": "kye-cyber-resilience-incident-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Cyber Resilience & Incident Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-CYBER-RESILIENCE-INCIDENT-001) governing the AUTHORITY + EVIDENCE of AI-assisted cybersecurity / SOC / incident-response decisions at the action boundary, so the AI-assisted work is defensible when challenged by a regulator, an insurer, or in court. The wedge is defensibility: AI now triages alerts, proposes containment, and drafts breach notifications, and regulators and insurers demand the decisions be reconstructable and defensible when challenged (who authorised the isolation; what evidence the classification rested on; whether the 24h/72h regulator clock decision was authority-bound). KYE governs whether an AI-assisted containment / classification / disclosure decision may proceed to a consequential incident action — under which named incident commander authorised it, with incident-evidence chain-of-custody recorded, with no AI-asserted incident classification relied on without a pinned signal source, with a signed replay-provable incident Evidence Pack per decision, and a contestability record so any decision can be reconstructed and challenged. Bound to DORA ICT incident reporting (Article 19), NIS2 24h/72h reporting (Article 23), NIST CSF 2.0 RESPOND/RECOVER, SEC Item 1.05 four-business-day disclosure, and ISO/IEC 27035 incident management. KYE governs the authority + evidence + defensibility of the AI-assisted cybersecurity work and PROVES it; it does NOT detect threats, run the SIEM/EDR, perform forensics, remediate, or replace the SOC analyst (§0 complement-not-compete vs CrowdStrike / Microsoft Sentinel / Splunk / Palo Alto / the SOC). KYE-owned mark; the framework names (DORA, NIS2, NIST CSF, SEC, ISO) are never trademarked. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-whistleblower-speakup-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Whistleblower & Speak-Up Authority Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-WHISTLEBLOWER-SPEAKUP-001) governing the AUTHORITY + EVIDENCE of AI-assisted whistleblower / speak-up intake, triage, and case-handling at the action boundary, so confidentiality, anti-retaliation, and timeliness are defensible and auditable. The wedge is defensibility: speak-up programmes increasingly use AI to intake, classify, and triage reports, and regulators demand reporter confidentiality, anti-retaliation, and statutory acknowledgement / feedback clocks be defensible and auditable when challenged. KYE governs WHO / WHAT may access a report and a reporter's identity, WHO authorised closing or escalating a case, and whether a retaliation-risk assessment was recorded BEFORE any adverse action on a reporter — under a named authority, on a recorded need-to-know basis, with confidentiality and retaliation-risk evidence captured, a signed replay-provable Evidence Pack per consequential action, and a contestability record so any disposition can be reconstructed and challenged. Bound to the EU Whistleblower Directive (Directive (EU) 2019/1937), SOX §806 (18 U.S.C. §1514A), the Dodd-Frank §922 SEC whistleblower programme, UK PIDA (Public Interest Disclosure Act 1998), and the GDPR whistleblowing slice (special-category + data-minimisation). KYE governs the authority + evidence + defensibility of the AI-assisted intake / triage / case-handling and PROVES it; it does NOT investigate the substance, judge the allegation, decide whether wrongdoing occurred, or replace the ethics / legal / compliance officer (§0 complement-not-compete). KYE-owned mark; the framework names (EU Whistleblower Directive, SOX, Dodd-Frank, PIDA, GDPR) are never trademarked. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-speak-up-authority",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Speak-Up Authority",
       "class": "wordmark",
       "notes": "Companion mark for the KYE Whistleblower & Speak-Up Authority Pack™ (KYE-FOUNDRY-PACK-WHISTLEBLOWER-SPEAKUP-001) — names the authority + evidence governance layer for AI-assisted speak-up intake, triage, and case-handling: need-to-know access authority on a reporter's identity, confidentiality evidence, retaliation-risk records before adverse action, authority-bound case disposition, and a replay-provable Evidence Pack + contestability record per consequential action. KYE governs the authority + evidence + defensibility of the AI-assisted handling and PROVES it; it does NOT investigate the substance, judge the allegation, or replace the ethics / legal / compliance officer (§0 complement-not-compete). KYE-owned mark. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-chargeback-evidence",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Chargeback Evidence",
       "class": "wordmark",
       "notes": "KYE Chargeback Evidence™ — standalone functional app (own dashboard) + Stripe App distribution wrapper (KYE-CHARGEBACK-EVIDENCE-001) governing the AUTHORITY + EVIDENCE of the card-dispute / chargeback flow at the action boundary. KYE governs whether a refund / representment / liability acceptance may proceed — under which named authority an AI agent or person authorised it, with the dispute evidence (order, delivery confirmation, AVS/CVV, customer comms) captured as evidence events at transaction time, the representment bundle sealed as a signed, hash-bound, WORM-retained, replay-verifiable Evidence Pack™ (the evidence set Visa Compelling Evidence 3.0 representments turn on), and liability acceptance recorded as a contestable decision. Bound to Reg E (12 CFR 1005.11), Reg Z (12 CFR 1026.13), PSD2 Arts. 72-74 + 97, Visa Compelling Evidence 3.0, and the Mastercard Chargeback Standards. Honest scope: KYE does NOT decide whether to fight a dispute, auto-generate dispute narratives, judge the dispute outcome, or do fraud scoring (§0 complement-not-compete vs the dispute-management ecosystem and the card networks). KYE-owned mark; the network programme names (Visa, Mastercard, CE3.0) are never trademarked by KYE. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-chargeback-evidence-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Chargeback Evidence Pack",
       "class": "wordmark",
       "notes": "KYE Chargeback Evidence Pack™ — the signed, hash-bound, WORM-retained, replay-verifiable representment evidence bundle assembled by KYE Chargeback Evidence™: the transaction-time evidence events (order, delivery, AVS/CVV, comms), the named-authority decisions (refund / representment / liability), and the assembly basis bound under a context seal over canonical JSON — verifiable offline, valid at T=0, derivable from published keys alone. The cryptographically provable form of the Visa Compelling Evidence 3.0 / Mastercard second-presentment evidence set. A product-scoped instance of the canonical Evidence Pack™ artefact (§13) — no parallel sealing system (§0). Constitution §54 §13 / §68 / §70."
     },
     {
+      "id": "kye-chargeback-evidence-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Chargeback Evidence Agent",
+      "class": "wordmark",
+      "notes": "KYE Chargeback Evidence Agent™ — the bounded, single-purpose Governed Agent (KYE-AGENT-CHARGEBACK-EVIDENCE-001) that RUNS the KYE Chargeback Evidence™ flow under KYE authority: it assembles the representment Evidence Pack™ for a card dispute (order, delivery, AVS/CVV, comms) at the action boundary, emitting the §0.3 evidence chain for every assembly. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-chargeback-evidence-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE (authority + evidence + finality), not raw agent capability — KYE governs WHETHER the representment may proceed and proves the basis; it does NOT decide whether to fight a dispute, auto-generate narratives, or judge the outcome (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the KYE Chargeback Evidence™ Foundry pack (kye:sector-pack:chargeback-evidence) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-companies-house-lookup-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Companies House Lookup Agent",
+      "class": "wordmark",
+      "notes": "KYE Companies House Lookup Agent™ — the bounded, single-purpose Governed Agent (KYE-AGENT-COMPANIES-HOUSE-001) that performs UK company verification under KYE authority: a governed lookup against the UK Companies House register (company number, status, registered office, officers, PSC) where every lookup is admitted, decided, pinned, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal, §52-bound (binding pattern runtime-kye-companies-house-lookup-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the lookup may proceed and proves the cited source/basis; it does NOT score, adjudicate, or replace the KYC analyst's judgement (§0 complement-not-compete; §32 §0 red-line 6 carve-out). Companies House is HM Government's UK registrar; the registrar name is never trademarked by KYE. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-kyc-refresh-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE KYC-Refresh Agent",
+      "class": "wordmark",
+      "notes": "KYE KYC-Refresh Agent™ — the bounded, single-purpose Governed Agent (KYE-AGENT-KYC-REFRESH-001) that drives periodic re-verification of a customer/entity record under KYE authority: a governed, scheduled re-check of an entity's KYC state where each refresh act is admitted, decided, pinned, and sealed as a replay-provable Evidence Pack™ with the contestable disposition recorded. A §0.30 first-class principal, §52-bound (binding pattern runtime-kye-kyc-refresh-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER a re-verification act may proceed and proves the basis; it does NOT make the KYC risk decision, run sanctions/PEP screening engines, or replace the compliance officer (§0 complement-not-compete; §32 §0 red-line 6 carve-out). KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-threat-response-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Threat Response Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Threat Response Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-THREAT-RESPONSE-001) that governs the CONSEQUENTIAL SOC / incident-response / cyber-threat-response decision at the action boundary — block IP/domain · revoke API key/token · isolate/quarantine a workload · disable an account · escalate an incident · notify a regulator/customer · trigger a fraud/payment control — under KYE authority: each proposed response action is admitted, decided against the existing kye:rule-pack:cyber-resilience-incident verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™ with chain-of-custody, with the irreversible containment finality and the regulator-notification-clock release held advisory until §36 two-person sign-off by a named incident commander / CISO. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-threat-response-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential response action may proceed and proves the basis; it does NOT detect threats, run the SIEM/EDR, perform forensics, remediate, or replace the SOC analyst / incident commander (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE Cyber Resilience & Incident Governance pack (kye:sector-pack:cyber-resilience-incident, bound to DORA ICT-incident / NIS2-incident / NIST CSF 2.0 RESPOND-RECOVER / SEC cyber-disclosure / ISO 27035) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-sanctions-aml-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Sanctions & AML Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Sanctions & AML Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SANCTIONS-AML-001) that governs the CONSEQUENTIAL AML decision at the action boundary — block / release / escalate / file-SAR — under KYE authority: each proposed AML action is admitted, decided against the existing kye:rule-pack:aml-financial-crimes verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the SAR/STR filing held advisory until §36 two-person sign-off by a named MLRO / BSA officer. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-sanctions-aml-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential AML action may proceed and proves the basis; it does NOT run sanctions/PEP screening, run transaction-monitoring models, decide whether a transaction is truly money-laundering, or replace the institution's AML program / MLRO judgement (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE AML & Financial-Crimes Governance pack (kye:sector-pack:aml-financial-crimes, bound to FATF-40 / EU 6AMLD / US BSA-FinCEN / Wolfsberg) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-fraud-decision-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Fraud Decision Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Fraud Decision Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-FRAUD-DECISION-001) that governs the CONSEQUENTIAL real-time fraud-control decision at the action boundary — block / hold / release / step-up a transaction or account on a fraud signal — under KYE authority: each proposed fraud-control action is admitted, decided against the existing kye:rule-pack:payments verdict (bound into kye:sector-pack:financial_services), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-fraud-decision-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential fraud-control action may proceed and proves the basis; it does NOT run fraud-scoring models / ML, execute payments, move funds, run a payment processor / PSP / acquirer, or replace the institution's fraud-risk program (the fraud signal / score is an input it acts on, never one it computes; §0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). Distinct from the payment-authorization agent (which carves fraud out — this agent fills that carve-out), the sanctions & AML authority agent (regulatory financial-crime / SAR-MLRO decision — no SAR/MLRO obligation here), and the threat-response authority agent (SOC/security-ops, which hands fraud/payment control to this agent). REUSES the existing KYE financial-services payments governance (kye:rule-pack:payments bound into kye:sector-pack:financial_services, bound to FCA Consumer Duty / PSD2 SCA & unauthorised-transaction disputes) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-payment-authorization-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Payment Authorization Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Payment Authorization Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-PAYMENT-AUTH-001) that governs the CONSEQUENTIAL payment-authorization decision at the action boundary — authorize / hold / step-up (SCA) / decline a payment or payment-initiation — under KYE authority: each proposed authorization action is admitted, decided against the existing kye:rule-pack:payments_eu verdict (PSD2/PSD3/EBA, incl. kye:rule:psd2_sca_required_above_30eur), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-payment-authorization-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential payment-authorization action may proceed and proves the basis; it does NOT execute payments, move funds, run a payment processor / PSP / acquirer, run fraud-scoring models, or replace the institution's payment-risk program (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE EU Payments governance (kye:rule-pack:payments_eu + kye:rule-pack:payments bound into kye:sector-pack:financial_services, bound to PSD2 / PSD3 / SCA arts. 72-74,97 / FCA Consumer Duty) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-clinical-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Clinical Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Clinical Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-CLINICAL-AUTH-001) that governs the CONSEQUENTIAL clinical / healthcare-AI decision at the action boundary — release a clinical-decision-support output to a clinician · flag/triage a patient case · surface a treatment/medication recommendation · escalate to a human clinician · share a clinical analysis externally — under KYE authority: each proposed clinical action is admitted, decided against the existing kye:rule-pack:clinical-ai-eu-uk verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the patient-facing clinical-answer release and the external clinical-analysis share held advisory until §36 two-person sign-off by a named responsible clinician. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-clinical-authorization-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential clinical action may proceed and proves the basis; it does NOT diagnose, decide clinical truth, practise medicine, act as a medical device, or replace the clinician (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE Clinical AI Governance pack (kye:sector-pack:clinical-ai-eu-uk, bound to EU AI Act high-risk / MHRA MDR / MHRA SaMD / UK GDPR Art. 9) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-pii-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE PII Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE PII Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-PII-AUTH-001) that governs the CONSEQUENTIAL personal-data decision at the action boundary — use · disclose · transfer (incl. cross-border) · retain-beyond-purpose · profile-with · delete personal data — under KYE authority: each proposed personal-data action is admitted, decided against the existing §31 kye:rule-pack:data-governance-base verdict (the data_use PDP stage), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with external disclosure and cross-border transfer held advisory until §36 two-person sign-off by a named data-protection owner. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-pii-authorization-authority-agent), §17-discoverable, §23-metered, kill-switched. The runtime counterpart to the Collibra integration story: the catalog says what the data is and how it should be governed; this agent proves whether a given use of it was authorised at the moment it happened. The product is the GOVERNANCE — KYE governs WHETHER the consequential personal-data action may proceed and proves the basis; it does NOT classify or scan data (not a DLP / discovery tool), decide the truth or accuracy of the data, or replace the DPO or the data-protection program (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing §31 KYE Data Governance Pack™ (kye:rule-pack:data-governance-base, bound to GDPR / UK GDPR / CCPA; §31 carries the explicit non-competition lock vs Purview / Collibra / Alation) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §31 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-pharmacovigilance-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Pharmacovigilance Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Pharmacovigilance Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-BIOPHARMA-PV-001) that governs the CONSEQUENTIAL post-market drug-safety / pharmacovigilance decision at the action boundary — file · release an ICSR (individual case safety report) or adverse-event report · escalate or downgrade a safety signal · submit a periodic safety report (PSUR / PBRER) · trigger a label-change or recall notification — under KYE authority: each proposed PV action is admitted, decided against the existing kye:rule-pack:biopharma-pharmacovigilance verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the ICSR / aggregate-report regulatory submission and the label-change / recall notification held advisory until §36 two-person sign-off by a named qualified person for pharmacovigilance (QPPV). A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-pharmacovigilance-action-authority-agent), §17-discoverable, §23-metered, kill-switched. Stays strictly post-market — it does not overlap clinical-trial conduct or clinical-decision-support. The product is the GOVERNANCE — KYE governs WHETHER the consequential PV reporting action may proceed and proves the basis; it does NOT assess medical causality, decide whether a drug is truly unsafe, or replace the QPPV (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE biopharma pharmacovigilance pack (kye:rule-pack:biopharma-pharmacovigilance, bound to EMA GVP / MHRA / FDA 21 CFR Part 11 / ICH E6(R3) GCP) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-legal-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Legal Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Legal Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-LEGAL-AUTH-001) that governs the CONSEQUENTIAL legal / contract decision at the action boundary — approve or execute a contract clause · release a legal position or opinion to a counterparty · accept a counterparty obligation · trigger a notice or termination right · sign or counter-sign — under KYE authority: each proposed legal action is admitted, decided against the existing kye:rule-pack:legal-contract verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the contract execution / signature and the external legal-position release held advisory until §36 two-person sign-off by a named supervising lawyer or release-authority holder. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-legal-action-authority-agent), §17-discoverable, §23-metered, kill-switched. Stays strictly contract-action — it does not overlap litigation-evidence-discovery. The product is the GOVERNANCE — KYE governs WHETHER the consequential legal action may proceed and proves the basis; it does NOT give legal advice, does NOT practise law, does NOT decide the law, and does NOT replace counsel (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE legal-contract pack (kye:rule-pack:legal-contract, bound to the SRA Code of Conduct / UK GDPR Article 28 / UCTA 1977 reasonableness) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-clinical-trial-conduct-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Clinical Trial Conduct Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Clinical Trial Conduct Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-CLINICAL-TRIAL-001) that governs the CONSEQUENTIAL GCP clinical-trial-conduct decision at the action boundary — enroll/randomize a subject · unblind a treatment assignment · record/release a protocol deviation · lock or release trial data · submit a trial-status or safety report to an IRB/ethics committee — under KYE authority: each proposed trial-conduct action is admitted, decided against the existing ICH-GCP governance verdict (kye:rule-pack:ich-authority), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™ with chain-of-custody, with the irreversible unblinding and the IRB/ethics-committee submission held advisory until §36 two-person sign-off by a named investigator / sponsor quality authority. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-clinical-trial-conduct-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential trial-conduct action may proceed and proves the basis; it does NOT design the protocol, decide clinical or scientific outcomes, or replace the investigator, sponsor, or ethics committee (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). Stays strictly GCP trial-conduct (ICH E6): post-market pharmacovigilance, pre-clinical research, and clinical-decision-support are owned by sibling packs. REUSES the existing KYE ICH Authority Pack™ (kye:rule-pack:ich-authority bound into kye:sector-pack:biopharma-ich + kye:dictionary:ich-authority) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-genetic-sequencing-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Genetic Sequencing Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Genetic Sequencing Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-GENETIC-SEQ-001) that governs the CONSEQUENTIAL genomic action at the action boundary — approve a DNA/RNA synthesis order · disposition a sequence-of-concern / pathogen screening result (block / flag / release) · authorise a genomic-data sharing / release against recorded consent + purpose · release a clinical genomic test result — under KYE authority: each proposed action is admitted, decided against the existing kye:sector-pack:bio-chem-governance + kye:rule-pack:bio-chem-governance canon and the deep-mapped biosecurity / genomic-data frameworks (nucleic-acid synthesis screening, Australia Group, CWC/BWC, US EO 14110, CLIA, ISO 15189, GDPR + GDPR automated-decision, PHIPA Ontario), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with releasing a synthesis-order approval, a genomic-data release, and a clinical genomic test-result release held advisory until §36 two-person sign-off. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-genetic-sequencing-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential genomic action may proceed and proves the basis (provenance, declared purpose, biosecurity gating); it does NOT run the BLAST/HMM screening pipeline, sequence DNA, judge whether a sequence is of concern, or interpret the genomic result (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing bio-chem-governance canon + the deep-mapped biosecurity / genomic-data frameworks — does not duplicate them; the boundary is strictly the GENOMIC action (distinct from pre-clinical / nonclinical research and human-facing clinical decisions). KYE-owned mark. Constitution §0.30 / §52 / §68 / §70."
+    },
+    {
+      "id": "kye-drug-discovery-research-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Drug Discovery Research Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Drug Discovery Research Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-DRUG-DISCOVERY-001) that governs the CONSEQUENTIAL pre-clinical / nonclinical drug-discovery RESEARCH decision at the action boundary — advance a candidate compound to the next research stage · release / publish a pre-clinical research claim · use a research / assay dataset for a decision · register a nonclinical safety finding — under KYE authority: each proposed research action is admitted, decided against the existing kye:framework:oecd-glp nonclinical study-data-integrity verdict (OECD GLP + 21 CFR Part 58) plus the §62 Governed Research Rail research-integrity provenance contract, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with releasing a pre-clinical research claim and registering a nonclinical safety finding held advisory until §36 two-person sign-off by a named study director. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-drug-discovery-research-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential research action may proceed and proves the basis (provenance, declared purpose, nonclinical-safety gating); it does NOT do the science, decide whether a compound truly works or is safe, or replace the research scientist or the study director (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing kye:framework:oecd-glp nonclinical deep-store + the §62 Governed Research Rail — does not duplicate them; the boundary is strictly PRE-CLINICAL / NONCLINICAL (distinct from ICH Q-series quality/manufacturing, human-trial clinical decisions, and post-market pharmacovigilance). KYE-owned mark. Constitution §0.30 / §52 / §62 / §68 / §70."
+    },
+    {
+      "id": "kye-governed-agents",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Governed Agents",
+      "class": "wordmark",
+      "notes": "KYE Governed Agents™ — the product family of bounded, single-purpose, governance-first agents KYE OPERATES as products (Chargeback Evidence Agent™, Companies House Lookup Agent™, KYC-Refresh Agent™). Each is a §0.30 first-class principal, §52-bound, §17-discoverable, §23-metered, kill-switched, with the full §0.3 evidence chain. The family carve-out under §32 §0 red-line 6: KYE may operate a bounded few agents as products without running a general-purpose agent framework (the §0/§32 non-competition lock vs LangChain / CrewAI / OpenAI Agents SDK / Claude Agent SDK is intact). The product is the GOVERNANCE (authority + evidence + finality), not raw agent capability. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
       "id": "kye-model-risk-data-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Model & Risk-Data Governance Pack",
       "class": "wordmark",
       "notes": "KYE Sector Pack Foundry™ expert-pack (KYE-FOUNDRY-PACK-MODEL-RISK-DATA-001) — the financial-services wave — governing the AUTHORITY + EVIDENCE of model-driven decisions and risk-data flows at the action boundary, so the work is provable when the supervisor asks. The wedge is supervisory defensibility: banks run AI/ML models inside decisioning and risk aggregation, and Fed SR 11-7 / PRA SS1/23 / BCBS 239 demand the model's authority status and the report's data lineage be provable. KYE governs whether a model-driven output may proceed to a consequential decision — only a currently-validated model used within its approved scope, model version changes as named-authority decisions with evidence, every risk report bound to its data-lineage evidence chain (BCBS 239 P3/P4/P6), every consequential decision recording model_id + version + validation reference (no untraceable model output proceeds), and restructuring actions satisfying declared regulatory + internal-policy obligations with the basis recorded. Bound to Fed SR 11-7 / OCC 2011-12 model risk management, PRA SS1/23 model risk management principles (incl. explicit AI/ML scope), and BCBS 239 risk data aggregation & reporting (all 14 principles mapped). KYE governs the authority + evidence and PROVES it for the supervisor; it does NOT build or validate quantitative models, compute capital or liquidity ratios, judge model quality, or advise on portfolio composition — not investment advice (§0 complement-not-compete vs the bank's quant / risk / validation teams and their model stack). KYE-owned mark; the regime names (SR 11-7, SS1/23, BCBS) are never trademarked. Constitution §54 §13 / §68 / §70."
     },
     {
       "id": "kye-open-access-authority",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Open Access Authority",
       "class": "commercial",
       "notes": "Agent↔resource access-admissibility product: answers at the action boundary whether an agent principal may access / rely upon / invoke / cite / transact with a resource (API, MCP server, website, dataset, service, marketplace, knowledge base), under its rights and the applicable jurisdiction. A PROJECTION of the §12 Purpose-Permission admissibility decision onto the access question — NOT a second decision engine; every verdict emits the §0.3 evidence chain. Constitution §12 + §52 + §17 + §68."
     },
     {
       "id": "kye-resource-authority-badge",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Resource Authority Badge",
       "class": "concept",
       "notes": "The Open Access Authority™ trust state of a resource: unverified → authority-asserted → authority-evidenced → suspended. 'Authority-evidenced' means access decisions against the resource emit §13 Evidence Packs and are Replay-Proof™ from public keys alone."
     },
     {
       "id": "kye-authority-discovery",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Authority Discovery",
       "class": "commercial",
       "notes": "Free top-of-funnel assessment that inventories an organisation's authority relationships across employees, contractors, agents, copilots, RAG systems, vendors, workflows and external APIs, and scores the sprawl (Authority Sprawl Score™, Delegation Risk Score™, Jurisdiction Exposure Score™, Evidence Gap Score™). Inventory only — converts into KYE Open Access Authority™ runtime enforcement. Constitution §39 + §68 + §17."
     },
     {
       "id": "kye-authority-sprawl-score",
+      "entity_class": "public-vocabulary-trademarks",
       "term": "Authority Sprawl Score",
       "class": "concept",
       "notes": "0-100 measure of how many authority-bearing actors can take consequential actions relative to how many are governed. The headline output of KYE Authority Discovery™."
+    },
+    {
+      "id": "kye-runtime-proxy-adapter",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Runtime Proxy Adapter",
+      "class": "commercial",
+      "notes": "Commercial adapter product (add-on): turns an external runtime proxy / LLM gateway / content firewall into a Policy Enforcement Point (PEP) that calls the KYE Policy Decision Point inline and enforces the returned authority decision at the wire, while KYE keeps Purpose Permission™ + Evidence Pack™ + Replay-Proof™ + Authority Finality™. The proxy is the hands; KYE owns the decision. Productises the existing policy-engine adapter port + the KYE MCP Gateway™ (§15) + the Edge Arbiter™ (§25) — adds no new engine. Canonical surface: runtime-proxy-adapter.html."
+    },
+    {
+      "id": "kye-compliance-observability-adapter",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Compliance Observability Adapter",
+      "class": "commercial",
+      "notes": "Commercial adapter product (add-on): pulls GRC / observability / eval telemetry into KYE as admissibility inputs + evidence (consume-the-front-half), turning sensed signals into authority decisions. Extends the integration catalogue + the KYE continuous posture-signal envelope (§52) + the §13/§62 AI-quality generative-surfaces register. §0 boundary: KYE is not an observability platform and not a GRC tool. Canonical surface: compliance-observability-adapter.html."
+    },
+    {
+      "id": "kye-model-dataset-governance-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Model & Dataset Governance Pack",
+      "class": "commercial",
+      "notes": "The §67 Model Governance Rail productised: binds a model or dataset (Hugging Face, Kaggle, self-hosted, …) to its AI Bill of Materials and the obligations its use carries (declared → assessed → certified), so regulated buyers can adopt it. One catalog, many sources (§0.10). Distinct from the KYE Model & Risk-Data Governance Pack™ (SR 11-7 / Basel model-RISK). Constitution §67."
+    },
+    {
+      "id": "kye-bring-your-own-ontology-cross-map",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Bring-Your-Own-Ontology Cross-Map",
+      "class": "commercial",
+      "notes": "Freemium 'seeing is believing' product: a customer uploads their own ontology / taxonomy / glossary / control framework and KYE cross-maps each term against the §70 framework + jurisdiction spine and the §55 taxonomy, returning a per-term verdict (aligned / divergent / gap / conflict), an alignment + coverage score and a gap list. Deterministic + replay-proof; KYE maps and flags, never asserts the customer's domain truth (§0/§70 honesty bar). Free report runs in-browser; the paid tier (KYE-ONTOLOGY-CROSSMAP-001) adds the §13 Evidence Pack™ seal + ongoing sync. Constitution §55 + §70 + §13."
+    },
+    {
+      "id": "kye-mas-mindforge-banking-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE MAS MindForge Banking Authority Pack",
+      "class": "wordmark",
+      "notes": "§49 §9 sector-pilot product (KYE-PILOT-MAS-MINDFORGE-001) operationalising the MAS Project MindForge AI Risk Management: Operationalisation Handbook at runtime for Singapore financial institutions — the three human-oversight modes as machine-enforceable finality gates, the AI action-authority inventory, escalation-before-finality, external/vendor-AI authority binding, and replay-provable provenance on every consequential AI action. KYE operationalises MindForge — it does not replace it (§0.25 integrate-not-compete). Constitution §49 §9 + §68."
+    },
+    {
+      "id": "kye-occ-filing-readiness-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE OCC Filing Readiness Pack",
+      "class": "wordmark",
+      "notes": "§49 §9 sector-pilot product (KYE-PILOT-OCC-AI-SUPERVISION-001) operationalising the U.S. Office of the Comptroller of the Currency (OCC) supervisory expectations for banks deploying consequential AI at runtime (OCC 2011-12 / SR 11-7 model-risk lineage, OCC 2013-29 + Interagency TPRM third-party risk, heightened-standards accountability, new-activity / examiner / filing readiness) — approved-use authority as a machine-enforceable finality gate, the AI action-authority inventory, escalation-before-finality, external/vendor-AI authority binding, and replay-provable provenance verifiable by an OCC examiner on every consequential AI action. KYE operationalises the OCC's expectations — it does not replace them, run the bank's MRM program, or make the bank's filing (§0.25 integrate-not-compete). Constitution §49 §9 + §68."
+    },
+    {
+      "id": "kye-rag-output-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE RAG Output Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE RAG Output Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-RAG-AUTH-001) that governs the CONSEQUENTIAL decision to USE a retrieval-augmented-generation output at the action boundary — release a RAG answer to a user or system · act on a retrieved-and-synthesised claim · feed it into another agent — under KYE authority: each proposed use is admitted, decided against the existing KYE grounding / citation-provenance verdict (is every claim pinned to a cited source — kye.evidence.tool_call_pin.v1, the §62 no-hallucination floor — over the §71 cited-extract contract, within the declared purpose), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the release of an un-pinned answer held advisory until §36 two-person sign-off by a named output owner. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-rag-output-authority-agent), §17-discoverable, §23-metered, kill-switched. The retrieval engine (the §71 PageIndex tool) produces the cited extract; this agent proves whether every claim is pinned before the output is used. The product is the GOVERNANCE — KYE governs WHETHER the RAG output may be used or acted on and proves the basis; it does NOT build the vector index, run retrieval or embeddings, judge the factual truth of sources, or act as a RAG engine (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing §62 evidence-pin family (kye.evidence.tool_call_pin.v1) + the §71 Document Intelligence Rail™ cited-extract contract, bound to EU AI Act / NIST AI RMF / ISO 42001 — does not duplicate them, and forks no pin schema (§0). KYE-owned mark. Constitution §0.30 / §52 / §62 / §68 / §71."
+    },
+    {
+      "id": "kye-mortgage-lending-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Mortgage Lending Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Mortgage Lending Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-MORTGAGE-AUTH-001) that governs the CONSEQUENTIAL secured home-loan / mortgage origination decision at the action boundary — approve or decline a mortgage application · set the rate or terms · issue an adverse-action notice · trigger an affordability / forbearance action · release a credit decision to the applicant — under KYE authority: each proposed mortgage action is admitted, decided against the existing kye:rule-pack:agentic-lending verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the decline / adverse-action notice and the rate-or-terms decision held advisory until §36 two-person sign-off by a named underwriter. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-mortgage-lending-action-authority-agent), §17-discoverable, §23-metered, kill-switched. Stays strictly secured home-loan / mortgage origination — a sibling agent owns unsecured credit-card decisions on the same pack. The product is the GOVERNANCE — KYE governs WHETHER the consequential mortgage origination action may proceed and proves the basis (fair-lending, affordability, adverse-action, declared purpose); it does NOT score credit, price risk, decide who is creditworthy, or replace the underwriter (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE agentic-lending pack (kye:rule-pack:agentic-lending, bound to ECOA / Regulation B / FCRA / fair-lending / FCA Consumer Duty / MCOB) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-credit-card-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Credit Card Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Credit Card Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-CREDIT-CARD-AUTH-001) that governs the CONSEQUENTIAL unsecured revolving-credit (credit-card) decision at the action boundary — approve or decline a card application · set or change a credit limit · reprice APR · issue an adverse-action notice · suspend or close an account for credit reasons — under KYE authority: each proposed credit-line action is admitted, decided against the existing kye:rule-pack:agentic-lending verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the decline / adverse-action notice / APR reprice / account closure held advisory until §36 two-person sign-off by a named lending-governance owner. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-credit-card-action-authority-agent), §17-discoverable, §23-metered, kill-switched. Governs UNSECURED REVOLVING credit decisions only — it does not authorise individual card payments (the KYE Payment Authorization Authority Agent™ owns payment authorization) and is distinct from secured home-loan origination. The product is the GOVERNANCE — KYE governs WHETHER the consequential credit-line action may proceed and proves the basis (fair-lending, adverse-action, ability-to-pay, declared purpose); it does NOT score credit, decide creditworthiness, or replace the credit-risk team (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE agentic-lending pack (kye:rule-pack:agentic-lending, bound to the card-distinct CARD Act / Reg-Z, FCRA, ECOA Reg-B, FCA Consumer Duty / CONC regimes) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-insurance-action-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Insurance Action Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Insurance Action Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-INSURANCE-AUTH-001) that governs the CONSEQUENTIAL insurance underwriting / claims decision at the action boundary — accept · decline · rate a risk at underwriting · approve · deny · adjust a claim · issue an adverse underwriting decision · trigger a fraud-investigation hold · release a coverage determination to the policyholder — under KYE authority: each proposed insurance action is admitted, decided against the existing kye:rule-pack:insurance-underwriting-claims verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the adverse underwriting decision and the policyholder coverage determination held advisory until §36 two-person sign-off by a named underwriter or claims adjuster. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-insurance-action-authority-agent), §17-discoverable, §23-metered, kill-switched. Covers BOTH underwriting and claims — reuses the broader underwriting+claims pack, not the narrower kye:rule-pack:insurance-claims. The product is the GOVERNANCE — KYE governs WHETHER the consequential insurance action may proceed and proves the basis (fair-pricing / anti-discrimination, adverse-action, declared purpose); it does NOT price risk, decide claim validity, build actuarial models, or replace the underwriter or adjuster (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE insurance underwriting/claims pack (kye:rule-pack:insurance-underwriting-claims, bound to NAIC Model Bulletin on AI / NYDFS Insurance Circular Letter on AI / EU AI Act insurance / FCA Consumer Duty) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-governed-grants-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Governed Grants Agent",
+      "class": "wordmark",
+      "notes": "KYE Governed Grants Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-GRANTS-001) that governs the CONSEQUENTIAL grants-lifecycle decision at the action boundary — confirm eligibility · submit · score/review · award · disburse · accept a grant report · trigger audit / clawback — under KYE authority: each proposed grants action is admitted, decided via the §12 Purpose-Permission verdict, the contestable disposition recorded (§21), and sealed as a replay-provable Evidence Pack™ (§13), with the irreversible AWARD finality, each DISBURSEMENT, and the CLAWBACK trigger held advisory until §36 two-person sign-off by a named grants / programme officer. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-grants-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential grants action may proceed (authorised · in-budget/scope · approved · evidenced · final) and proves the basis; it does NOT write grant applications, does NOT run a grants-management platform, and does NOT move or disburse money (§0.30 — those would be competing systems). Bound to (never re-mapping another runtime's coverage) US 2 CFR 200 (Uniform Guidance) — allowability of costs §200.403, internal controls §200.303, subrecipient monitoring §200.332, audit §200.501; it mints NO grants rule-pack / sector-pack / grant-object schema and governs over the existing §12 / §13 / §21 primitives (§0). KYE-owned mark. Constitution §0.30 / §52 / §68 / §70."
+    },
+    {
+      "id": "kye-settlement-finality-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Settlement Finality Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Settlement Finality Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SETTLEMENT-001) that governs the CONSEQUENTIAL settlement-lifecycle decision at the action boundary — trade-capture · netting · collateral/margin call · settlement-instruction · proposed → executed → accepted (FINALITY) · fail/retry · reconciliation — under KYE authority: each proposed settlement action is admitted, decided via the §12 Purpose-Permission verdict (authorised · in-scope · approved · evidenced · FINAL/revocable), the contestable disposition recorded (§21), and sealed as a replay-provable Evidence Pack™ + Settlement Finality Proof™ (§13), with the irreversible ACCEPTED settlement finality and each settlement-instruction RELEASE held advisory until §36 two-person sign-off by a named settlement / operations officer. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-settlement-finality-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE + FINALITY PROOF — KYE governs WHETHER the consequential settlement action may proceed and is FINAL, and proves the basis; it does NOT clear, settle, hold custody of, or move any asset, does NOT run a settlement / clearing / custody engine, and does NOT operate a DvP/PvP movement rail (§0.30 — those would be competing systems). The proposed/executed/accepted/final state-machine IS §13 Resilience Loop™ (no parallel finality model); ISDA CDM (Common Domain Model) is governed as a §0.25 peer data model, never re-defined. Bound to (reused, never re-mapped) MiCA (Reg (EU) 2023/1114) custody/CASP conduct + GENIUS Act (Pub. L. 119-27) redemption/reserve disclosure; it mints NO settlement rule-pack / sector-pack / settlement-instruction schema and governs over the existing §12 / §13 / §21 primitives (§0). KYE-owned mark. Constitution §0.30 / §52 / §68 / §70."
+    },
+    {
+      "id": "kye-settlement-finality-proof",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "Settlement Finality Proof",
+      "class": "wordmark",
+      "notes": "Settlement Finality Proof™ — the replay-provable, public-key-verifiable proof the KYE Settlement Finality Authority Agent™ (KYE-AGENT-SETTLEMENT-001) seals for each governed settlement-lifecycle act, asserting WHETHER the settlement action was authorised + in-scope + evidenced AND whether the transfer reached ACCEPTED finality (irrevocable) or remained revocable. A §0.10 positioning name (projection) over the existing §13 Resilience Loop™ proposed/executed/accepted/final state-machine + the §0.3 Evidence Pack™ / Replay-Proof™ families — NO new rail/schema. It proves the finality of the DECISION/authority, not the on-ledger movement of assets (KYE clears/settles/moves NOTHING); aligned with the operational/legal/contractual finality distinction (ISDA Future Leaders in Derivatives, 'Digital Assets and Derivatives', June 2026). KYE-owned mark. Constitution §0.3 / §0.10 / §13 / §52."
+    },
+    {
+      "id": "kye-governed-organization",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Governed Organization",
+      "class": "wordmark",
+      "notes": "§66 entity-level certificate program (kind=organization, self-attested entry tier). Awarded to an organization that operates its AI agents under KYE governance and emits the §0.3 evidence chain; the honest self-attested on-ramp to the audited Certified Governed Organization mark. Evidence-backed, never pay-to-display (§0.2/§0.29). Award reuses certification-record.v1. Constitution §66 + §0.30 + §17."
+    },
+    {
+      "id": "kye-certified-governed-organization",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Certified Governed Organization",
+      "class": "wordmark",
+      "notes": "§66 entity-level certificate program (kind=organization, externally-audited premium tier) — the AI-governance counterpart to SOC 2 / ISO 27001 at the organizational level. Awarded only after an independent §21 Delegated Auditability audit confirms the org's governed-agent estate emits the full §0.3 evidence chain, Replay-Proof™ from public keys. Audit-gated, never pay-to-display. Constitution §66 + §21 + §0.4 + §17."
+    },
+    {
+      "id": "kye-account-opening-cdd-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Account-Opening CDD Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Account-Opening CDD Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-ACCOUNT-OPENING-001) that governs the CONSEQUENTIAL origination-time (day-zero) account-opening customer-due-diligence decision at the action boundary — open / decline / refer-for-EDD / conditionally-open an account at onboarding — under KYE authority: each proposed account-opening action is admitted, decided against the existing kye:rule-pack:aml-financial-crimes verdict (FATF R.10 customer due diligence / EU 6AMLD), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the refer-for-EDD escalation held advisory until §36 two-person sign-off by a named MLRO / compliance officer. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-account-opening-cdd-authority-agent), §17-discoverable, §23-metered, kill-switched. This is the day-zero onboarding decision — distinct from the periodic KYE KYC-Refresh Agent™ (ongoing re-verification). The product is the GOVERNANCE — KYE governs WHETHER the consequential account-opening action may proceed and proves the basis; it does NOT run the screening / identity-verification engine, decide CDD risk truth, or replace the institution's onboarding / KYC program (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE AML & Financial-Crimes Governance pack (kye:sector-pack:aml-financial-crimes, bound to FATF R.10 CDD / EU 6AMLD) — does not duplicate it; FCA is honest out-of-scope (§70). KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-treasury-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Treasury Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Treasury Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-TREASURY-001) that governs the CONSEQUENTIAL FIAT corporate-treasury decision at the action boundary — intraday-liquidity drawdown · FX hedge execution · MMF/excess-cash investment · intercompany funding · collateral pledge/recall — under KYE authority: each proposed treasury action is admitted, decided against the existing kye:rule-pack:treasury verdict (within mandate · within limit · authorised · in-scope · approved · evidenced, incl. kye:rule:treasury_dual_control_above_100k), the contestable disposition recorded (§21), and sealed as a replay-provable Evidence Pack™ + Treasury Authority Proof™ (§13), with the irreversible FX-hedge execution / MMF-excess-cash investment / intercompany funding / collateral pledge-recall held advisory until §36 two-person sign-off by a named treasurer / treasury officer. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-treasury-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential treasury action may proceed within mandate/limit and proves the basis; it does NOT move funds, execute trades, place investments, run a treasury-management system (TMS) / dealing platform / collateral-management system, or replace the institution's treasury-risk program (§0.30 — those would be competing systems). This is the firm's OWN balance-sheet, FIAT treasury (cash/FX/MMF/collateral) — distinct from kye:sector-pack:mas-digital-asset-treasury (crypto/DPT hot-wallet treasury). It RUNS the existing KYE Treasury Rule Pack™ over the §12 / §13 / §21 primitives — it mints NO parallel treasury pack / TMS engine (§0). Bound to (reused, never re-mapped) DORA + PRA SS1/23; EBA liquidity standards and BCBS intraday-liquidity (BCBS 248) stay honestly out-of-scope (§70). KYE-owned mark. Constitution §0.30 / §52 / §68 / §70."
+    },
+    {
+      "id": "kye-treasury-authority-proof",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "Treasury Authority Proof",
+      "class": "wordmark",
+      "notes": "Treasury Authority Proof™ — the replay-provable, public-key-verifiable proof the KYE Treasury Authority Agent™ (KYE-AGENT-TREASURY-001) seals for each governed corporate-treasury act, asserting WHETHER the treasury action (intraday-liquidity drawdown / FX hedge execution / MMF-excess-cash investment / intercompany funding / collateral pledge-recall) was within mandate + within limit + authorised + in-scope + evidenced at the moment it was decided. A §0.10 positioning name (projection) over the existing §13 Resilience Loop™ + the §0.3 Evidence Pack™ / Replay-Proof™ families — NO new rail/schema. It proves the authority basis of the DECISION, not the movement of cash or the execution of the trade (KYE moves/executes/places NOTHING). KYE-owned mark. Constitution §0.3 / §0.10 / §13 / §52."
+    },
+    {
+      "id": "kye-billing-dunning-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Billing & Dunning Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Billing & Dunning Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-BILLING-DUNNING-001) that governs the CONSEQUENTIAL outbound billing / collections decision at the action boundary — issue invoice/fee · apply late fee · escalate dunning stage · suspend service · send to collections · write-off — under KYE authority: each proposed billing/collections action is admitted, decided against the existing kye:sector-pack:financial_services governance under FCA CONC (Consumer Credit Sourcebook — responsible lending CONC 5; arrears & forbearance CONC 7) and FCA Consumer Duty (PRIN 2A — fair treatment, foreseeable-harm, consumer-understanding), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-billing-dunning-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential billing/collections action may proceed and proves the basis; it does NOT run a billing engine, run a dunning-automation platform, issue invoices, take payments, or replace the firm's collections / credit-control program (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). Outbound AR/collections is the opposite flow to the inbound chargeback-evidence agent and distinct from the accounting-governance ledger pack. REUSES the existing KYE Financial Services governance (kye:sector-pack:financial_services, bound to FCA CONC / FCA Consumer Duty) — does not duplicate it. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-pension-liquidity-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Pension Liquidity Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Pension Liquidity Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-PENSION-LIQUIDITY-001) that governs the CONSEQUENTIAL pension-liquidity decision at the action boundary — an LDI collateral call · a forced asset sale · member-payment or redemption gating · a buy-in / buy-out trigger — under KYE authority and within the scheme's funding / liquidity policy: each proposed liquidity action is admitted, decided against the existing kye:rule-pack:pension verdict (regimes TPR/FCA, incl. kye:rule:pension_evidence_required_on_member_change), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-pension-liquidity-authority-agent), §17-discoverable, §23-metered, kill-switched. The product is the GOVERNANCE — KYE governs WHETHER the consequential pension-liquidity action may proceed and proves the basis under named trustee / fiduciary authority; it does NOT execute trades, move assets, run a liquidity model, or run an LDI / collateral-management program (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE pension governance (kye:rule-pack:pension bound into kye:sector-pack:financial_services, bound to FCA COBS; TPR and EIOPA IORP II honest out-of-scope until a real §70 deep-map lands) — does not duplicate it, and mints no framework row to inflate coverage. KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68 / §70."
+    },
+    {
+      "id": "kye-governed-proposal-authority",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Governed Proposal Authority",
+      "class": "wordmark",
+      "notes": "KYE Governed Proposal Authority™ (KYE-PROPOSAL-AUTHORITY-001) — the deterministic, evidence-sealed, replay-verifiable proposal capability and the responder/bidder-side companion to the Tender/Procurement pack. Input = a partner/engagement context record (§49) + commercial terms (§26); output = a governed proposal whose every factual claim is grounded in a pinned source, rendered byte-deterministically, and sealed into a Replay-Proof™ Evidence Pack verifiable from the published JWKS alone. 'A proposal you can prove, not just generate.' This is a REUSE — a new 'proposal' FORMAT on the §62 Governed Research Rail (kye:dictionary:report-format + kye.research_report.v1), NOT a new engine, renderer or key system; it inherits §62's §0 non-competition lock vs the §14 Reporting Engine. §0/§70 honest boundary: the mark governs that a proposal is grounded · deterministic · evidence-sealed; it does NOT auto-write novel strategy or positioning (human judgment stays human). KYE-owned mark. Constitution §62 / §26 / §49 / §0.3 / §0.27 / §13 / §14."
+    },
+    {
+      "id": "kye-hardware-electronics-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Hardware & Electronics Engineering Authority Pack",
+      "class": "wordmark",
+      "notes": "KYE §49 §9 sector pilot (KYE-PILOT-HARDWARE-001) governing AI agents acting across the hardware / electronics development lifecycle — at the action-admissibility boundary: the moment an AI-assisted engineering action is taken, finalised, or relied on. Governs releasing a PCB to fab, approving a chip tapeout, approving or pushing a firmware OTA release, approving a component substitution (obsolescence / EOL), approving a BOM change, declaring EMC / FCC / CE compliance, and releasing to manufacturing, each proven authorised + purpose-bound + evidenced + replay-provable (recall- and change-dispute-defensible) before it becomes final, under the AI-governance + functional-safety framework spine (EU AI Act, NIST AI RMF, IEC 61508). KYE governs the AI agent's authority to act + the evidence/replay of that action under a named engineer's authority; it does not perform EDA/CAD layout, design-rule checking, physical test, or RF/EMC measurement (authority finality, not the layout tool). Constitution §49 §9 / §70."
+    },
+    {
+      "id": "kye-financial-ai-authority-finality-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Financial AI Authority Finality Pack",
+      "class": "wordmark",
+      "notes": "KYE §49 §9 sector pilot (KYE-PILOT-FINANCIAL-AI-001) governing AI agents taking consequential financial actions — recommendation execution, portfolio rebalancing, DeFi/on-chain execution, model-risk dispositions, model-driven limit changes, advice distribution — at the action-admissibility boundary against the Singapore financial-AI framework spine (SFA, MAS AI-risk consultation guidelines, MAS FEAT). Authority finality, not the model and not the venue."
+    },
+    {
+      "id": "kye-control-policy-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Governed Control & Policy Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Governed Control & Policy Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-CONTROL-POLICY-001) that, from a customer's read-only authority-risk profile, governs TWO bounded consequential acts at the action boundary under KYE authority: (a) RECOMMEND compliance controls and (b) DRAFT an enforceable policy. Each act is admitted, decided via the §12 Purpose-Permission verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. The differentiator: an authored policy is emitted to the existing Policy Compiler (kye:agent-library:platform_safety.policy-compiler.v1) which compiles + seals it to a machine-enforceable PDP rule-pack the Decision Engine verifies — KYE writes the rule, enforces it, and proves enforcement. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-control-policy-authority-agent), §17-discoverable, §23-metered, kill-switched. KEY GUARDRAIL: the agent DRAFTS / RECOMMENDS but NEVER ADOPTS / APPROVES — adoption is held advisory until §36 GovernedUI two-person sign-off (GDPR Article 22 — no solely-automated decision; opt-in only; §0.11 tenant-isolated). REUSES the existing Risk Profiler output (kye.authority_risk_profile.v1, recommended_controls[]) + §70 ISO 42001 / EU AI Act / NIST AI RMF deep stores (BOUND, never re-mapped) + the existing Policy Compiler — does not duplicate any of them (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §32 §0 / §52 / §68."
+    },
+    {
+      "id": "kye-underwriting-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Underwriting & Risk-Acceptance Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Underwriting & Risk-Acceptance Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-UNDERWRITING-001) that governs the CONSEQUENTIAL act at the action boundary — accept or decline or refer a risk within the delegated underwriting-authority limits (line of business · sum insured · territory · class) · enforce the MGA / coverholder binding-authority chain at runtime · refuse an act exceeding the delegated authority before it binds the carrier — under KYE authority: each proposed act is admitted, decided against the existing kye:rule-pack:insurance-underwriting-claims verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the decline and any act exceeding the delegated authority held advisory until §36 two-person sign-off by a named underwriter. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-underwriting-authority-agent), §17-discoverable, §23-metered, kill-switched. §0 distinctness: fills the AUTHORITY-LIMITS carve-out of the Insurance Action Authority Agent™ (runtime-kye-insurance-action-authority-agent), which keeps the single accept-or-decline determination and the adverse-decision record; distinct from the Quote & Bind Authority Agent™ (distribution-side overrides / discounts / the bind moment) and the Policy Lifecycle Authority Agent™ (post-bind contract-changing acts). THIS agent owns the question a binder makes concrete: does THIS principal hold delegated authority for THIS risk — line of business, sum insured, territory, class — before any acceptance is admitted. The product is the GOVERNANCE — KYE governs WHETHER the consequential act may proceed and proves the basis; it does NOT price risk, does NOT run actuarial or catastrophe models, and does NOT replace the underwriter (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE insurance underwriting/claims pack (kye:rule-pack:insurance-underwriting-claims, bound to NAIC Model Bulletin on AI / NYDFS Insurance Circular Letter on AI / EU AI Act insurance / FCA Consumer Duty / UK SM&CR) — does not duplicate it; the Lloyd's delegated-authority minimum standards for coverholders are on the framework-mapping roadmap — a stated plan, never a claimed mapping (§70). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-claims-decision-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Claims Decision Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Claims Decision Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-CLAIMS-DECISION-001) that governs the CONSEQUENTIAL act at the action boundary — FNOL triage disposition · reserve setting · settle or deny or partial decision · payment release against declared thresholds · litigation + SIU fraud referral — under KYE authority: each proposed act is admitted, decided against the existing kye:rule-pack:insurance-underwriting-claims verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the denial, the partial settlement, and any payment release above the declared threshold held advisory until §36 two-person sign-off by a named claims adjuster. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-claims-decision-authority-agent), §17-discoverable, §23-metered, kill-switched. §0 distinctness: fills the CLAIMS-LIFECYCLE carve-out of the Insurance Action Authority Agent™ (runtime-kye-insurance-action-authority-agent), which keeps the underwriting-side adverse decision and the coverage-determination release; ABSORBS the governance face of the Insurance Claim Orchestrator reference workflow (kye:agent-library:insurance.insurance-claim-orchestrator.v1) — the orchestrator stays the adoptable workflow in the KYE Agent Library™, this agent is the authority over its consequential transitions (NO parallel claims agent, §0); distinct from the Underwriting & Risk-Acceptance Authority Agent™ (pre-bind risk acceptance) and the Policy Lifecycle Authority Agent™ (contract-changing acts). The product is the GOVERNANCE — KYE governs WHETHER the consequential act may proceed and proves the basis; it does NOT assess damage, does NOT estimate loss, does NOT run claims or fraud models, and does NOT replace the adjuster (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE insurance underwriting/claims pack (kye:rule-pack:insurance-underwriting-claims, bound to NAIC Model Bulletin on AI / NYDFS Insurance Circular Letter on AI / EU AI Act insurance / FCA Consumer Duty) — does not duplicate it; the NAIC Unfair Claims Settlement Practices Model Act and FCA ICOBS 8 claims handling are on the framework-mapping roadmap — a stated plan, never a claimed mapping (§70). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-quote-bind-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Quote & Bind Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Quote & Bind Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-QUOTE-BIND-001) that governs the CONSEQUENTIAL act at the action boundary — rating-factor override · discount within declared discount authority · the quote-to-bind moment as an explicit finality gate (cover exists only after the governed bind act reaches finality) — under KYE authority: each proposed act is admitted, decided against the existing kye:rule-pack:insurance-underwriting-claims verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with any rating override or discount beyond the declared authority, and the bind act itself, held advisory until §36 two-person sign-off by a named distribution-governance owner. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-quote-bind-authority-agent), §17-discoverable, §23-metered, kill-switched. §0 distinctness: fills the DISTRIBUTION carve-out of the Insurance Action Authority Agent™ (runtime-kye-insurance-action-authority-agent — underwriting/claims determinations) and ends where the Underwriting & Risk-Acceptance Authority Agent™ begins: that agent governs whether the risk may be ACCEPTED within delegated limits; THIS agent governs what may be QUOTED, DISCOUNTED, and BOUND — the rating-factor override, the discount authority, and the quote→bind moment as an explicit finality gate. Distinct from the Policy Lifecycle Authority Agent™, which begins at issuance, after the governed bind. The product is the GOVERNANCE — KYE governs WHETHER the consequential act may proceed and proves the basis; it does NOT calculate premiums, does NOT rate risks, and does NOT replace the pricing actuary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE insurance underwriting/claims pack (kye:rule-pack:insurance-underwriting-claims, bound to Colorado SB21-169 ECDIS / NAIC Model Bulletin on AI / EU AI Act insurance / FCA Consumer Duty fair value) — does not duplicate it; FCA ICOBS and the EU Insurance Distribution Directive are on the framework-mapping roadmap — a stated plan, never a claimed mapping (§70). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-policy-lifecycle-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Policy Lifecycle Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Policy Lifecycle Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-POLICY-LIFECYCLE-001) that governs the CONSEQUENTIAL act at the action boundary — issuance · endorsement · renewal · cancellation / non-renewal as regulated-notice authority · lapse · reinstatement — under KYE authority: each proposed act is admitted, decided against the existing kye:rule-pack:insurance-underwriting-claims verdict, the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™, with the cancellation and the non-renewal notice held advisory until §36 two-person sign-off by a named policy-governance owner. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-policy-lifecycle-authority-agent), §17-discoverable, §23-metered, kill-switched. §0 distinctness: begins where the Quote & Bind Authority Agent™ ends — after the governed bind, every CONTRACT-CHANGING act on the policy (issuance · endorsement · renewal · cancellation / non-renewal · lapse · reinstatement) runs through THIS agent; the Insurance Action Authority Agent™ (runtime-kye-insurance-action-authority-agent) keeps the underwriting and claims determinations, and the Underwriting & Risk-Acceptance Authority Agent™ keeps pre-bind risk acceptance. Cancellation and non-renewal are governed as REGULATED-NOTICE authority — the automated-decision exposure the GDPR automated-decision regime already deep-maps. The product is the GOVERNANCE — KYE governs WHETHER the consequential act may proceed and proves the basis; it does NOT administer policies, does NOT issue documents, and does NOT replace the policy-administration system (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). REUSES the existing KYE insurance underwriting/claims pack (kye:rule-pack:insurance-underwriting-claims, bound to NAIC Model Bulletin on AI / NYDFS Insurance Circular Letter on AI / FCA Consumer Duty / GDPR automated-decision) — does not duplicate it; the US state cancellation and non-renewal notice statutes and FCA ICOBS renewal transparency are on the framework-mapping roadmap — a stated plan, never a claimed mapping (§70). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-certified-agentic-delivery-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Certified Agentic Delivery Pack",
+      "class": "wordmark",
+      "notes": "Channel product for consultancies / digital agencies / systems integrators / transformation teams building agentic AI for regulated buyers. A §49 §9 partner engagement (specialization=agentic-delivery) declared as one kye.product.v1 row (SKU KYE-PARTNER-DELIVERY-001), bundle composed of existing rails (§32 ADK · §52/action-classes · §36 GovernedUI · §13 evidence · §55/§70 · §21/§30 audit). KYE-Certified Delivery badge reuses the §54 KYE-Powered Pack™ badge state machine. Positioning: the partner builds the AI product; KYE proves it had authority to act — authority layer over MCP/A2A/A2UI/AP2/UCP interop."
+    },
+    {
+      "id": "kye-uk-tribunal-evidence-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE UK Tribunal Evidence Authority Pack",
+      "class": "wordmark",
+      "notes": "§68 UK-employment sector product (SKU KYE-SECTOR-UK-TRIBUNAL-001) declared as one kye.product.v1 row. An authority-and-responsibility map over eight post-hire employment action classes (schedule-shift · change-payroll-status · alter-rota · issue-employment-letter · handle-grievance · process-disciplinary · process-dismissal · respond-to-evidence-request), each REUSED from the §52 action-class root. The ACAS/employment-tribunal evidence bundle is assembled from the EXISTING §13 Evidence Pack + Replay Proof — never a new evidence store (§0). Distinct from the litigation-evidence-discovery pack (US FRCP e-discovery) and the pre-hire HR recruitment product (§0 non-overlap)."
+    },
+    {
+      "id": "kye-shariah-screening-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Shariah Screening Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Shariah Screening Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SHARIAH-SCREENING-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing a Shariah screening verdict on an instrument, counterparty, or portfolio line for a downstream consequential action (admit to a Shariah-compliant book, permit a trade, or exclude) — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-shariah-screening-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: shariah.screening.evaluate, shariah.screening.verdict.release, shariah.purification.quantum.prepare; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, instrument.trade.execute, portfolio.rebalance. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and the individual index-provider screening methodologies (Dow Jones Islamic Market, S&P Shariah, FTSE Shariah, MSCI Islamic) are NOT mapped frameworks. §0 distinctness: It screens; it does not structure (that is the Shariah Structuring Authority Agent™) and it does not run the ongoing review function (that is the Shariah Operations Authority Agent™). It PREPARES the non-compliant-income quantum for purification; the purification determination itself is the board's substantive act and is recorded out-of-scope for KYE (§70). REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-shariah-structuring-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Shariah Structuring Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Shariah Structuring Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SHARIAH-STRUCTURING-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing a proposed product structure into the Shariah Supervisory Board approval queue and, after a recorded approval, releasing the structure for launch — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance, iifm-documentation-standards), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-shariah-structuring-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: shariah.structure.dossier.assemble, shariah.structure.board_referral.raise, shariah.structure.launch.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, shariah.structure.approve, product.launch.execute. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and the individual national Shariah-board resolution corpora (e.g. a specific SAC or DSN-MUI fatwa series) are NOT mapped frameworks. §0 distinctness: It prepares and routes the structure; the approval itself is the board's act, and post-launch conformance is the Shariah Operations Authority Agent™'s. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-shariah-operations-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Shariah Operations Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Shariah Operations Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SHARIAH-OPERATIONS-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — recording a Shariah non-compliance (SNC) event, escalating it to the Shariah Supervisory Board, and releasing the board-directed remediation and purification act — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-auditing-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-shariah-operations-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: shariah.snc.record, shariah.snc.escalate, shariah.remediation.release, shariah.review.evidence.assemble; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, shariah.snc.dismiss, shariah.audit.opinion.issue. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and the internal audit charters of individual institutions are not frameworks and are never claimed. §0 distinctness: It runs the ongoing review and SNC lane; it never issues the Shariah audit opinion (ASIFI 7 / GS10 are out-of-scope substantive rows) and never screens or structures. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-takaful-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Takaful Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Takaful Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-TAKAFUL-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the operator-side acts on a takaful risk fund: contribution acceptance, surplus distribution, and the qard advance from operator to a deficit risk fund — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-takaful-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: takaful.contribution.accept, takaful.surplus.distribution.release, takaful.qard.advance.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, takaful.claim.adjudicate, takaful.risk.price. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and IFSB-8 (takaful governance), IFSB-11 (takaful solvency) and IFSB-14 are NOT mapped frameworks — a stated plan, never a claimed mapping. §0 distinctness: It governs the participant-fund boundary acts. It does NOT adjudicate claims, price risk, or replace the takaful administration system; the KYE Claims Decision Authority Agent™ keeps the conventional claims lane. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-sukuk-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Sukuk Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Sukuk Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SUKUK-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the sukuk lifecycle acts: issuance against a recorded board certification, the tradability determination release, and periodic distribution — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance, iifm-documentation-standards), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-sukuk-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: sukuk.issuance.release, sukuk.tradability.determination.release, sukuk.distribution.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, sukuk.price, sukuk.rate.set, sukuk.trade.execute. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and IOSCO capital-markets conduct, the Malaysian SC LOLA sukuk framework and individual exchange listing rules are NOT mapped frameworks. §0 distinctness: It governs the sukuk authority acts against the certification and the IIFM master documentation. It does NOT price, rate, structure de novo, or execute trades. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-islamic-embedded-finance-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Islamic Embedded Finance Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Islamic Embedded Finance Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-ISLAMIC-EMBEDDED-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing a Shariah-compliant embedded-finance offer at a third-party point of sale, and holding an offer whose structure has drifted from the certified template — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-islamic-embedded-finance-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: islamic.embedded.offer.release, islamic.embedded.offer.hold, islamic.embedded.disclosure.assemble; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, islamic.embedded.offer.price, merchant.contract.execute. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and the consumer-credit conduct regimes of each embedding jurisdiction are mapped separately where KYE has mapped them and are never assumed. §0 distinctness: It governs the distribution boundary — the moment a certified structure is offered through a channel the institution does not own. The underlying contract acts stay with the Murabaha, Islamic Mortgage and Islamic Microfinance agents. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-islamic-microfinance-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Islamic Microfinance Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Islamic Microfinance Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-ISLAMIC-MICROFINANCE-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing a qard hasan or micro-murabaha disbursement, and governing the late-payment treatment so that no penalty accrues to the institution's own income — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-islamic-microfinance-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: islamic.microfinance.disbursement.release, islamic.microfinance.late_treatment.release, islamic.microfinance.zakah.allocation.prepare; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, islamic.microfinance.penalty.income.recognise, islamic.microfinance.rate.set. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and the national microfinance-institution licensing regimes are NOT mapped frameworks. §0 distinctness: It governs the small-ticket, financial-inclusion lane. Full commercial murabaha sequence control stays with the KYE Murabaha Authority Agent™. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-murabaha-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Murabaha Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Murabaha Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-MURABAHA-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing each step of the murabaha sequence in order — asset acquisition, the institution's possession, cost-and-markup disclosure, and the sale to the customer — refusing any release that would run out of sequence — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-murabaha-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: murabaha.acquisition.release, murabaha.possession.record, murabaha.disclosure.release, murabaha.sale.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, murabaha.sequence.override, murabaha.markup.set. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and commodity-broker platform rulebooks (e.g. a specific tawarruq platform) are NOT mapped frameworks. §0 distinctness: It is the sequence authority for the commercial murabaha. It does NOT set the markup, source commodities, or run the tawarruq broker; the Islamic Microfinance Authority Agent™ keeps the micro-ticket lane and the Islamic Trade Finance Authority Agent™ keeps the documentary-credit lane. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-islamic-trade-finance-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Islamic Trade Finance Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Islamic Trade Finance Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-ISLAMIC-TRADE-FINANCE-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the Shariah-governed trade-finance acts: documentary-credit issuance, document-presentation acceptance, and the guarantee or kafalah release — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance, iifm-documentation-standards), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-islamic-trade-finance-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: islamic.tradefinance.credit.issue.release, islamic.tradefinance.presentation.accept, islamic.tradefinance.guarantee.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, islamic.tradefinance.fee.set, islamic.tradefinance.sanctions.determine. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and ICC UCP 600 / URDG 758 are trade-practice rules, not KYE-mapped regulatory frameworks, and are never claimed as mapped. §0 distinctness: It governs the Shariah authority over trade-finance instruments. Sanctions and AML screening stay with the KYE Sanctions & AML Authority Agent™ — this agent never determines a sanctions outcome. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-islamic-mortgage-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Islamic Mortgage Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Islamic Mortgage Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-ISLAMIC-MORTGAGE-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the home-finance lifecycle acts under a diminishing-musharaka or ijarah muntahia bittamleek structure: origination, each ownership-transfer tranche, and the final title transfer — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-islamic-mortgage-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: islamic.mortgage.origination.release, islamic.mortgage.tranche.release, islamic.mortgage.title_transfer.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, islamic.mortgage.rental.set, islamic.mortgage.repossession.execute. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and the national mortgage-conduct regimes (e.g. FCA MCOB) are mapped separately only where KYE has mapped them, and are never assumed for this agent. §0 distinctness: It governs the Shariah authority over the home-finance acts. The KYE Mortgage Lending Action Authority Agent™ keeps the conventional credit-decision lane — this agent does not duplicate it. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-istisna-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Istisna Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Istisna Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-ISTISNA-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the istisna' construction-finance acts: each progress payment against certified completion, the delivery-and-acceptance act, and the parallel-istisna' independence check — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-istisna-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: istisna.progress_payment.release, istisna.delivery_acceptance.release, istisna.parallel.independence.verify; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, istisna.completion.certify, istisna.specification.amend. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and construction-contract standards (e.g. FIDIC) are not regulatory frameworks and are never claimed as mapped. §0 distinctness: It governs the release authority over progress and delivery. It does NOT certify physical completion — that is the engineer's or surveyor's act, and the agent consumes that certificate as an input it never issues. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-salam-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Salam Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Salam Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-SALAM-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the salam acts: full capital payment at contract, the delivery-acceptance act, and the parallel-salam independence check that keeps the two contracts unlinked — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-accounting-standards, aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-salam-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: salam.capital_payment.release, salam.delivery_acceptance.release, salam.parallel.independence.verify; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, salam.capital_payment.defer, salam.commodity.price. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and commodity-exchange and agricultural-marketing-board rulebooks are NOT mapped frameworks. §0 distinctness: It governs the salam release authority, including refusing a deferred capital payment. It does NOT price the commodity or run the delivery logistics. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-wakala-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Wakala Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Wakala Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-WAKALA-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing an act taken under a wakala mandate only when it falls inside the recorded scope of that mandate, and refusing an act that exceeds it — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-prudential-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-wakala-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: wakala.mandate.scope.verify, wakala.act.release, wakala.fee.disclosure.assemble; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, wakala.mandate.widen, wakala.capital.guarantee. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and investment-management conduct regimes (e.g. MiFID II, FCA COBS) are mapped separately only where KYE has mapped them. §0 distinctness: It is the mandate-scope authority for agency relationships — the Islamic-finance instance of the delegated-authority pattern. Where the operator model is a takaful wakala, the KYE Takaful Authority Agent™ keeps the risk-fund acts. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-muzaraa-authority-agent",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Muzaraa Authority Agent",
+      "class": "wordmark",
+      "notes": "KYE Muzaraa Authority Agent™ — the bounded, single-purpose, GOVERNANCE-FIRST Governed Agent (KYE-AGENT-MUZARAA-001) in the Islamic finance sector that governs the CONSEQUENTIAL act at the action boundary — releasing the muzara'a agricultural partnership acts: the crop-share ratio release against the board-certified template, the input-provision act, and the harvest-share distribution — under KYE authority: each proposed act is admitted, decided against the EXISTING §70 Shariah-governance deep-map (aaoifi-governance-standards, aaoifi-shariah-standards, ifsb-shariah-governance), the contestable disposition recorded, and sealed as a replay-provable Evidence Pack™. A §0.30 first-class principal (principal_class=agent), §52-bound (binding pattern runtime-kye-muzaraa-authority-agent), §17-discoverable, §23-metered, kill-switched. Bounded allowed actions: muzaraa.share_ratio.release, muzaraa.input_provision.release, muzaraa.harvest_distribution.release; explicit prohibitions: shariah.ruling.issue, fatwa.issue, shariah.board.membership.modify, policy.modify, delegation.create, arbitrary.execution, muzaraa.share_ratio.set, muzaraa.yield.forecast. HUMAN-AUTHORITY BOUNDARY: the agent advises and prepares; the fatwa-bearing determination routes to the institution's Shariah Supervisory Board (or the jurisdiction's central Shariah authority) and the act is held advisory until a recorded board authorisation resolves — the agent NEVER issues an independent Shariah ruling. §70 honesty: every AAOIFI Shariah Standard row in KYE's substrate is coverage_status=out-of-scope; they are bound only as the standards a board certification must CITE (aaoifi-shariah-standards.R2), never as rules KYE enforces, and KYE's mapped AAOIFI Shariah Standards substrate contains NO muzara'a-specific standard row — the muzara'a-specific fiqh basis is therefore NOT a claimed KYE mapping; this agent binds only the general partnership, gharar and possession citations plus the Shariah-governance requirements, and routes every muzara'a-specific question to the board. §0 distinctness: It governs the agricultural partnership release acts. It does NOT set the crop-share ratio (a board-certified term) and does NOT forecast yield. REUSES the existing §70 Shariah-governance deep-map + kye:dictionary:shariah-governance — no parallel framework store, ruling engine or dictionary (§0 complement-not-compete; §32 §0 red-line 6 carve-out — bounded governed agent as product, never a general-purpose agent framework). KYE-owned mark. Constitution §0.30 / §52 / §54 / §68 / §70."
+    },
+    {
+      "id": "kye-regulator-watch",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE Regulator Watch",
+      "class": "wordmark",
+      "notes": "KYE Regulator Watch™ — the productised standing-witness follow-edge (constitution/75-FOLLOWABILITY-RAIL.md §6): a supervisor holds a continuous, governed, evidence-sealed watch over the entities it oversees, and every governed action on a watched entity appears on the supervisor's feed as a Replay-Proof™ Evidence Pack™ reference. §0/§0.10 non-competition: REUSES the §75 Followability Rail™ verbatim — the standing-witness edge kind in kye.follow_edge.v1, the follow-surface registry, §37 Event Engine emission, §21 Delegated Auditability read, and the §17 Directory Search™ served pull surface — it ships NO parallel feed engine, event system, schema or vocabulary. n=1 soundness (§75 §4): full supervisory value for one regulator with zero integration asked of the supervised entity. Two active watch surfaces at launch: the IoDE Armenia agentic-finance pilot (synthetic-data-only) and the Open Bank Project connector co-design (sandbox-only). §70 honest scope: followable is not monitored — KYE emits the governed-action evidence its own estate produces and claims nothing about external systems; the regulator forms its own supervisory conclusions. KYE-owned mark. Constitution §0.59 / §75 / §21 / §17 / §37."
     }
-  ]
+  ],
+  "enforcement": {
+    "gate": "scripts/audit-trademarks.mjs",
+    "npm_ref": "test:trademarks",
+    "rule_code": "TM001",
+    "contract": "Every prose occurrence obligation is decided by policy.enforcement_mode, never by a rule written into the audit script.",
+    "derives_from": [
+      "policy.enforcement_mode",
+      "policy.compound_exception",
+      "marks"
+    ]
+  }
 }

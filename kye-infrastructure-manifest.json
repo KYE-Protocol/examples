@@ -1,0 +1,37 @@
+{
+  "schema": "kye.infrastructure_manifest.v1",
+  "registry_id": "kye:registry:control-plane-operations",
+  "constitution_ref": "constitution/12-PURPOSE-PERMISSION.md",
+  "adopted_at": "2026-08-07",
+  "governance_invariants": [
+    "Every release resolves to a principal holding the decision right for that amount band.",
+    "No release is admitted before its evidence is sealed.",
+    "A revoked authority takes effect on the next decision, not on the next deploy.",
+    "Tenant data never crosses a trust-domain boundary without an explicit audited join.",
+    "A refused action is recorded as fully as an allowed one.",
+    "The verdict path makes no outbound network call."
+  ],
+  "approval_modes": [
+    "none"
+  ],
+  "risk_tiers": [
+    "read"
+  ],
+  "resource_inventory": [
+    {
+      "resource_class": "cf-pages",
+      "label": "Payment release",
+      "owner_chapter": "constitution/16-EDGE-RUNTIME.md"
+    }
+  ],
+  "capabilities": [
+    {
+      "capability": "kye:control-plane-cap:cpc-2026-08-0417",
+      "label": "Payment release",
+      "resource_class": "cf-pages",
+      "risk_tier": "read",
+      "approval_mode": "none",
+      "enabled": true
+    }
+  ]
+}

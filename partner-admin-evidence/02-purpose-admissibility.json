@@ -1,18 +1,17 @@
 {
   "schema": "kye.purpose.admissibility.v1",
-  "id": "kye:admissibility:kye-protocol:01HQR3T9XEPHRQ4MKQ8N2P5VAB",
-  "purpose_request_id": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB",
-  "decided_at": "2026-05-28T13:45:15Z",
-  "decider": "kye:engine:purpose-permission-pdp",
-  "verdict": "admit",
-  "scope_checks": [
-    { "check": "actor_has_role_owner", "outcome": "pass", "evidence_ref": "clerk:user:owner-ops@kyeprotocol.com:public_metadata.role==owner" },
-    { "check": "purpose_class_in_actor_grant", "outcome": "pass", "evidence_ref": "kye:purpose:kye-protocol:owner-ops:partner-revoke-2026q2" },
-    { "check": "second_approver_distinct_from_performer", "outcome": "pass", "evidence_ref": "owner+program@kyeprotocol.com != owner+ops@kyeprotocol.com" },
-    { "check": "reason_meets_minimum_length", "outcome": "pass", "evidence_ref": "reason_text.length >= 20" },
-    { "check": "partner_row_exists", "outcome": "pass", "evidence_ref": "kye_partner_registry.partner_entities.id == kye:partner:legacy-consulting-llp.9d1c4b" },
-    { "check": "partner_currently_active", "outcome": "pass", "evidence_ref": "partner_entities.status == 'active'" }
+  "request_id": "kye:purpose-req:kye-protocol:01HQR3T9X4Y8Z7M2K6V5N1P0AB",
+  "grant_id": "kye:purpose:kye-protocol:owner-ops:partner-revoke-2026q2",
+  "admitted": true,
+  "reasons": [
+    { "code": "principal_matches", "passed": true, "detail": "Clerk public_metadata.role == owner for the requesting operator." },
+    { "code": "purpose_matches", "passed": true, "detail": "kye:purpose-class:partner.programme.revoke is listed in the claimed grant's scope." },
+    { "code": "action_in_scope", "passed": true, "detail": "revoke is a permitted action under the claimed grant." },
+    { "code": "resource_in_scope", "passed": true, "detail": "partner_entities row kye:partner:legacy-consulting-llp.9d1c4b exists and is in scope." },
+    { "code": "not_revoked", "passed": true, "detail": "Partner status is 'active'; the grant itself is unrevoked at decision time." },
+    { "code": "dual_control_satisfied", "passed": true, "detail": "Second approver is distinct from the performer (§0.4 dual-channel sign-off on an irreversible)." },
+    { "code": "within_time_window", "passed": true, "detail": "Decision taken inside the grant's validity window; admissibility expires 2026-05-28T13:50:15Z." }
   ],
-  "expires_at": "2026-05-28T13:50:15Z",
-  "policy_version": "kye-purpose-pdp/2026-05-12-v1.4.0"
+  "decided_at": "2026-05-28T13:45:15Z",
+  "decided_by": "kye:engine:purpose-permission-pdp"
 }

@@ -1,0 +1,25 @@
+{
+  "schema_version": "kye.proof_bundle_verification_result.v1",
+  "verification_id": "kye:verification:northwind-bank:ver-2026-08-0417",
+  "bundle_id": "kye:proof-bundle:northwind-bank:pb-2026-08-0417",
+  "verified_by_entity_id": "kye:prin:northwind-bank",
+  "verification_result": "valid",
+  "checks": {
+    "schema_valid": true,
+    "signature_valid": true,
+    "manifest_hash_valid": true,
+    "payload_hash_valid": true,
+    "authority_grant_valid_at_decision_time": true,
+    "scope_snapshot_present": true,
+    "state_snapshot_present": true,
+    "evidence_pack_present": true,
+    "replay_proof_valid": true,
+    "conformance_profiles_valid": true
+  },
+  "verified_at": "2026-08-07T09:15:00Z",
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kye:key:northwind-bank:key-2026-08-0417",
+    "value_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+  }
+}

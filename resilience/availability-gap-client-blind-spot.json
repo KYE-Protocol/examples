@@ -1,0 +1,28 @@
+{
+  "schema": "kye.resilience.availability_gap.v1",
+  "gap_id": "kye:availability-gap:kye-gateway-worker:7be03d914cc2f5a8e6014b2d",
+  "engine_ref": "kye:worker:gateway-worker",
+  "window": {
+    "from": "2026-07-29T09:02:00.000Z",
+    "to": "2026-07-29T09:03:30.000Z"
+  },
+  "failure_class": "timeout",
+  "response_budget_ms": 2000,
+  "probe_count": 0,
+  "consecutive_failures": 3,
+  "last_known_good_at": null,
+  "detection_source": "client_report",
+  "reported_by": "kye:external-app:packauth",
+  "detected_at": "2026-07-29T09:41:12.008Z",
+  "decision_classes_blocked": [
+    "kye:decision-class:production-deploy"
+  ],
+  "reconciliation": {
+    "status": "blind_spot",
+    "matched_gap_id": null,
+    "note": "Caller ledger shows three unanswered authority resolutions in the window; no overlapping engine-side probe gap exists. The engine failed AND the watchdog failed to see it — surfaced as its own violation class rather than left to an audit to find."
+  },
+  "incident_ref": "kye:incident:availability:gateway-worker:2026-07-29",
+  "evidence_pack_id": "kye:evidence-pack:e5b7c20941fd8a36027d19cc",
+  "tenant_id": null
+}

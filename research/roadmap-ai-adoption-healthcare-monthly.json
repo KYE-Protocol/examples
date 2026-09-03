@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:ai-adoption-healthcare:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:roadmap-ai-adoption-healthcare-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "BBkMbETNTzTttIY/CzyjPdTHI5Z4JltOyKsGxhsFxkDFqyXZ3Ynu/o8DJhko9J0VDepzDkUoYJsXgZnppyI8Cw=="
+    "signature": "Fsl63JrsGAwfta9sSOp2Rc738Fxet9ZPpTKu1Vq7achjhqdpAy9dnBdfeLJxbSy3MsIDV+8kBE1k4dgXfIdfDA=="
   },
   "citations": [
     {

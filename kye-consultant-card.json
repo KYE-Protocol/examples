@@ -1,0 +1,10 @@
+{
+  "schema_id": "kye.consultant_card.v1",
+  "card_id": "kye:consultant-card:northwind-bank-cc-2026-08-0417",
+  "consultant_id": "consultant-2026-08-0417",
+  "display_name": "Northwind Bank",
+  "certification_level": "applicant",
+  "signed_by_kid": "kye-signing-2026-08",
+  "sealed_at": "2026-08-07T09:15:00Z",
+  "signature_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+}

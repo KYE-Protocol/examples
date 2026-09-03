@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "f7a2c9e4-1b58-4d36-9c20-6e8b1f53a7d2",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel clinical-trial-conduct rule-pack / sector-pack / dictionary / framework-mapping. KYE already governs ICH-GCP trial-conduct authority via kye:rule-pack:ich-authority + kye:sector-pack:biopharma-ich + kye:dictionary:ich-authority, bound to the ICH Q-series quality guidelines. A parallel trial pack is a §0 competing-systems violation; re-mapping the bound frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build the agent as a Governed Agent PRODUCT that RUNS the existing kye:rule-pack:ich-authority verdict under KYE authority (the runtime-kye-clinical-trial-conduct-authority-agent pattern). Add only the agent-product artefacts (§52 binding, principal, product row + fan-out, SKU, pricing, ™, governed-agents.html entry) and BIND — never re-map — the existing ICH frameworks via kye:rule-pack:ich-authority + kye:dictionary:ich-authority."
+}

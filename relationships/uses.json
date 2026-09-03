@@ -1,0 +1,7 @@
+{
+  "schema_version": "kye.relationship.uses.v1",
+  "agent_id": "kye:prin:northwind-bank-pri-2026-08-0417",
+  "used_id": "kye:model:northwind-bank",
+  "usage_kind": "model",
+  "allowed": true
+}

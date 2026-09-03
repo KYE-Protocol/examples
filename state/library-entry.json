@@ -1,0 +1,51 @@
+{
+  "schema_version": "kye.state.library_entry.v1",
+  "library_id": "kye:state-library:principal.lifecycle.v1",
+  "category": "banking",
+  "title": "Payment release authority",
+  "version": "1.0.0",
+  "description": "Illustrative instance for the Northwind Bank reference tenant.",
+  "authors": [
+    {
+      "name": "Northwind Bank payments release"
+    }
+  ],
+  "regulatory_alignment": [
+    "FCA SYSC 6 — accountability for a controlled function"
+  ],
+  "applies_to_entity_class": "principal",
+  "license": "MIT",
+  "states": [
+    {
+      "name": "draft",
+      "kind": "initial"
+    },
+    {
+      "name": "active",
+      "kind": "initial"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "draft",
+      "to": "active",
+      "guards": [
+        "requires_two_person_approval"
+      ],
+      "actor_role_required": "tenant_admin"
+    }
+  ],
+  "platform_locked_obligations": [
+    {
+      "id": "northwind-bank-2026-08-0417",
+      "summary": "Release of counterparty payments above the standing limit."
+    }
+  ],
+  "machine_seal": "sha256:c47a10e2f9b638d5417ce0ba296f83d1027e54ab6913f80c5d2ea7461b8f3902",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-signing-2026-08",
+    "value_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+  },
+  "published_at": "2026-08-07T09:15:00Z"
+}

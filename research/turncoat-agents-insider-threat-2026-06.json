@@ -18,11 +18,11 @@
       "role": "kye"
     }
   ],
-  "evidence_pack_ref": "kye:evidence-pack:research:turncoat-agents-insider-threat:2026-06",
+  "evidence_pack_ref": "kye:evidence-pack:turncoat-agents-insider-threat-2026-06",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "VIMrS2u2sQZdngAmWP7i35FdRLeICi+mar4nizva3tYr160bB1yQd4vGklWOIzgg7Ogzjht8jZ2wdjrZoMogCA=="
+    "signature": "wVP4iWmAhh8erM4kAU8KWqc61tIshxdYqqnJ3p9rd7DoEV0ViK6QamJXtYyZhdj4JPaIjHaznyOyAqFOHElaCQ=="
   },
   "citations": [
     {

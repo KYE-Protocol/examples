@@ -1,0 +1,14 @@
+{
+  "schema": "kye.follow_edge.v1",
+  "edge_id": "kye:follow-edge:auditor-standing-witness-001",
+  "entity_class": "follow-edge",
+  "follower_ref": "kye:ent:kye-self:auditor:independent-assessor-001",
+  "followee_ref": "kye:engagement:iode-armenia-agentic-finance",
+  "edge_kind": "standing-witness",
+  "visibility": "overt",
+  "granted_by": "kye:delegation:audit-standing-armenia-pilot",
+  "decision_ref": "kye:decision:0f4c1a2b3d5e6f7a8b9c0d1e",
+  "tenant_id": "kye:tenant:kye-self",
+  "created_at": "2026-08-29T12:00:00Z",
+  "expires_at": "2027-08-29T12:00:00Z"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "kye.foundry.expert_pack.v1",
+  "pack_id": "kye:powered-pack:enterprise-ai-authority-adapter:v1",
+  "partner_id": "kye:foundry-applicant:authority-adapter-reference-partner",
+  "pack_name": "KYE Host-Platform Authority Adapter Pack",
+  "pack_version": "v1.0.0",
+  "sector_specialization": "enterprise-ai-authority-adapter",
+  "bound_sector_pack_refs": [],
+  "bound_dictionary_refs": [
+    "kye:dictionary:host-platform-adapters",
+    "kye:dictionary:integrations"
+  ],
+  "bound_framework_refs": [
+    "kye:framework:eu-ai-act",
+    "kye:framework:nist-ai-rmf",
+    "kye:framework:iso-iec-42001",
+    "kye:framework:soc-2"
+  ],
+  "coverage_attestation_ref": "kye:evidence:coverage-attestation:enterprise-ai-authority-adapter:2026-06-20",
+  "kye_powered_badge_state": "draft",
+  "badge_history": [
+    {
+      "state": "draft",
+      "at": "2026-06-20T12:00:00Z",
+      "reason_ref": "kye:foundry:application:reference-template-authority-adapter-001"
+    }
+  ],
+  "commercial_envelope_ref": "kye:foundry:revenue-share:enterprise-ai-authority-adapter:2026-06-20",
+  "claim_set": [
+    {
+      "claim_id": "single-governed-envelope",
+      "claim_text": "Every governed action across every host platform the Pack supports emits the single canonical KYE governed tool-call envelope (kye.harness_adapter.v1) — no per-host envelope is invented (§0).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "evidence-before-commit",
+      "claim_text": "For every consequential AI action, a sealed, replay-derivable Evidence Pack is emitted before the host platform's commit boundary, proving the action stayed inside its approval at action time (Authority Finality).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "host-coverage",
+      "claim_text": "The Pack routes tool-calls, RAG retrievals, document-processing steps, and human-in-the-loop approvals through the KYE Authority Gateway across enterprise-AI, data-and-AI, ontology-operations, ITSM-workflow, and SI-bespoke host platforms declared in the host-platform-adapters manifest.",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "fail-closed-consequential",
+      "claim_text": "Consequential action surfaces fail closed when the Authority Gateway is unreachable; fail-open-with-evidence is restricted to explicitly non-consequential read surfaces (§51 No-SPOF).",
+      "approval_state": "draft"
+    },
+    {
+      "claim_id": "integrate-not-compete",
+      "claim_text": "The Pack integrates the host platform with KYE governance and governs agents as principals; it does not run agents and is not a competing agent runtime (§0.25 / §0.30 / §32 boundary).",
+      "approval_state": "draft"
+    }
+  ],
+  "effective_from": "2026-06-20T12:00:00Z",
+  "signature": {
+    "alg": "ed25519",
+    "key_id": "kid-kye-foundry-2026-06",
+    "value": "BASE64URL-ED25519-SIGNATURE-OVER-PACK-ENVELOPE-FIXTURE-VALUE-ONLY"
+  }
+}

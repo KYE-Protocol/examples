@@ -1,0 +1,19 @@
+{
+  "schema": "kye.surface_class.v1.example",
+  "description": "Illustrative surface-coverage evaluation for one deep-mapped framework instance under the kye.surface_class.v1 registry. A deep-mapped framework REQUIRES page + deep-store + search; a registered framework requires none (state-aware honesty — a not-yet-deep-mapped framework has zero surface requirements, so coverage is never faked).",
+  "instance": { "entity_class": "framework", "slug": "aaoifi-shariah-standards", "mapping_state": "deep-mapped" },
+  "required_surfaces": ["page", "deep-store", "search"],
+  "resolved": {
+    "page": "present — public compliance page for the framework",
+    "deep-store": "present — per-requirement deep-store manifest for the framework",
+    "search": "present — indexed in the derived search surface"
+  },
+  "verdict": "all required surfaces present",
+  "contrast_registered_state": {
+    "entity_class": "framework",
+    "slug": "oecd-ai-principles",
+    "mapping_state": "registered",
+    "required_surfaces": [],
+    "note": "A registered (not-yet-deep-mapped) framework has ZERO surface requirements — forcing a page would fake coverage."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "kye.state.event.v1",
+  "event_id": "kye:state-event:northwind-bank:se-2026-08-0417",
+  "entity_id": "kye:principal:northwind-bank-jordan-reyes",
+  "machine_id": "kye:state-machine:northwind-bank:sm-2026-08-0417",
+  "from": "draft",
+  "to": "active",
+  "transition_id": "kye:state-transition:northwind-bank:st-2026-08-0417",
+  "decided_at": "2026-08-07T09:15:00Z",
+  "decided_by": "kye:prin:northwind-bank:jordan-reyes",
+  "signature": {
+    "alg": "EdDSA",
+    "kid": "kye-signing-2026-08",
+    "value_b64": "TFRSTkRXM0FLU0RGOTBaWEJVQ1FSSFRZSktMTU5PUFE9PQ=="
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "kye.tech_dd_inventory.v1",
+  "dd_request_id": "kye:tech-dd-req:acme-target-2026q2",
+  "tenant_id": "kye:tenant:acme-acquirer",
+  "as_of": "2026-06-17T00:00:00Z",
+  "subject": "acquisition-target",
+  "sector": "financial-services",
+  "jurisdictions": ["EU", "UK"],
+  "components": [
+    { "component_ref": "core-ledger", "category": "data-store", "processes_personal_data": true, "internet_facing": false, "consequential": true },
+    { "component_ref": "customer-portal", "category": "service", "processes_personal_data": true, "internet_facing": true, "consequential": false }
+  ],
+  "ai_systems": [
+    { "ai_system_ref": "aml-triage-agent", "purpose": "Triage AML alerts and recommend dispositions", "uses_genai": true, "autonomous_actions": true, "high_risk_use": true, "human_oversight_declared": false }
+  ],
+  "data_flows": [
+    { "flow_ref": "kyc-to-screening-vendor", "contains_personal_data": true, "cross_border": true, "to_third_party": true }
+  ],
+  "declared_controls": [
+    { "requirement_group_ref": "honest-not-applicable", "control_note": "Target already documents NA scope for self-assessment questionnaires." }
+  ]
+}

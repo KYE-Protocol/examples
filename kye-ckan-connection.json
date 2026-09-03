@@ -1,0 +1,24 @@
+{
+  "schema_version": "kye.ckan_connection.v1",
+  "connection_id": "kye:connector:ckan:northwind-bank:con-2026-08-0417",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "portal_url": "https://kyeprotocol.com/",
+  "ckan_version": "2.10",
+  "connection_mode": "read_only",
+  "auth_mode": "api_key",
+  "sync_config": {
+    "sync_organizations": true,
+    "sync_datasets": true,
+    "sync_resources": true,
+    "sync_harvest_sources": true,
+    "sync_datastore_metadata": true,
+    "sync_activity": true
+  },
+  "governance_mode": {
+    "shadow_mode": true,
+    "enforcement_enabled": true,
+    "evidence_pack_enabled": true
+  },
+  "status": "active",
+  "created_at": "2026-08-07T09:15:00Z"
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "kye.execution_layers.v1",
+  "manifest_id": "kye:execution-layers-manifest:northwind-bank:elm-2026-08-0417",
+  "adopted_at": "2026-08-07",
+  "layers": [
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where an action is proposed — the surface or agent that requests it.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where authority is resolved — the principal and the right it rests on.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where the decision is taken — the policy decision point.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where the decision is enforced — the boundary that admits or refuses the action.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where the evidence is sealed — the record a reviewer re-derives the decision from.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where drift is reconciled — declared state checked against deployed state.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where assurance is proven — the gates that run over the whole chain.",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where an action is proposed — the surface or agent that requests it (layer 8).",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where authority is resolved — the principal and the right it rests on (layer 9).",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    },
+    {
+      "layer_id": "sensing",
+      "ordinal": 1,
+      "name": "Northwind Bank payments release",
+      "definition": "Where the decision is taken — the policy decision point (layer 10).",
+      "kye_role": "owns",
+      "integration_partner_classes": [
+        "observability_platform"
+      ]
+    }
+  ],
+  "owned_primitives": [
+    {
+      "primitive_id": "kye:owned-primitive:northwind-bank-op-2026-08-0417",
+      "name": "Northwind Bank payments release",
+      "layer_id": "sensing",
+      "canonical_schema_ref": "kye.evidence.decision_map.v1"
+    }
+  ],
+  "anti_dilution_clauses": [
+    {
+      "clause_id": "kye:anti-dilution:northwind-bank-ad-2026-08-0417",
+      "text": "Yes — named, and the evidence is sealed"
+    },
+    {
+      "clause_id": "kye:anti-dilution:northwind-bank-ad-2026-08-0417",
+      "text": "Partly — we could reconstruct it"
+    },
+    {
+      "clause_id": "kye:anti-dilution:northwind-bank-ad-2026-08-0417",
+      "text": "No — we would be guessing"
+    },
+    {
+      "clause_id": "kye:anti-dilution:northwind-bank-ad-2026-08-0417",
+      "text": "Yes — named, and the evidence is sealed"
+    },
+    {
+      "clause_id": "kye:anti-dilution:northwind-bank-ad-2026-08-0417",
+      "text": "Partly — we could reconstruct it"
+    },
+    {
+      "clause_id": "kye:anti-dilution:northwind-bank-ad-2026-08-0417",
+      "text": "No — we would be guessing"
+    }
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "payment-release"
+  }
+}

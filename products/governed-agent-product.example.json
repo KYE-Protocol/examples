@@ -1,0 +1,57 @@
+{
+  "product_id": "sanctions-aml-authority-agent",
+  "kind": "addon",
+  "display_name": "KYE Sanctions & AML Authority Agent",
+  "display_label": "Sanctions & AML Authority Agent — governed block/release/escalate/file-SAR",
+  "governed_agent_card": {
+    "heading_html": "KYE Sanctions & AML Authority Agent<span class=\"tm\">™</span>",
+    "body_html": "governs the consequential AML decision (block / release / escalate / file-SAR) at the action boundary, bound to FATF 40, the EU 6AMLD, US BSA / FinCEN, and the Wolfsberg Principles. KYE Protocol<span class=\"tm\">™</span> proves the basis; it does not run sanctions or PEP screening."
+  },
+  "sku_id": "KYE-AGENT-SANCTIONS-AML-001",
+  "jurisdiction": "global",
+  "nav_sector": "banking",
+  "announced_at": "2026-06-22",
+  "trademark_id": "kye-sanctions-aml-authority-agent",
+  "landing_path": "public/site/governed-agents/sanctions-aml-authority-agent.html",
+  "bound": {
+    "dictionary": "kye:dictionary:governed-agents"
+  },
+  "fanout": {
+    "data_and_contracts": [
+      "kye:dictionary:governed-agents",
+      "kye:sector-pack:aml-financial-crimes",
+      "kye:dictionary:aml-financial-crimes"
+    ],
+    "policy_and_decision": [
+      "constitution/12-PURPOSE-PERMISSION.md",
+      "kye:rule-pack:aml-financial-crimes",
+      "N/A: the §52 binding + mcp-allow-list manifests are the IP-track domain-2 bindings (carried in the private product registry)"
+    ],
+    "rails_engines_agents": [
+      "constitution/52-DELEGATED-AGENT-BINDING.md",
+      "constitution/36-GOVERNEDUI.md",
+      "N/A: the evidence + replay engines are the IP-track domain-3 bindings"
+    ],
+    "commerce": [
+      "KYE-AGENT-SANCTIONS-AML-001",
+      "N/A: the pricing-disclosure record is the IP-track domain-4 binding"
+    ],
+    "surfaces": [
+      "public/site/governed-agents/sanctions-aml-authority-agent.html"
+    ],
+    "integration": [
+      "N/A: the agent governs the CONSEQUENTIAL decision over the EXISTING kye:rule-pack:aml-financial-crimes verdict; MCP allow-list closed []"
+    ],
+    "comms_and_legal": [
+      "N/A: the comms + email-template manifests are the IP-track domain-7 bindings"
+    ],
+    "runtime_and_infra": [
+      "N/A: the live Governed-Agent runtime worker is Phase-2 (governed CF deploy, §16+§0.3)"
+    ],
+    "governance_and_evidence": [
+      "kye:dictionary:governed-agents",
+      "N/A: the attestation + retention schemas + WORM migration are the IP-track domain-9 bindings"
+    ]
+  },
+  "status": "shipped"
+}

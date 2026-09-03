@@ -3,7 +3,7 @@
   "schema_version": "1.0.0",
   "manifest_id": "kye:manifest:integrations-example",
   "adopted_at": "2026-05-30",
-  "description": "Reference fixture for kye.integration_manifest.v1. Shows two minimal-but-complete integration entries (one outbound payment, one inbound KMS signer) covering every required field across both representative categories. Validates against the schema in CI.",
+  "description": "Reference fixture for kye.integration_manifest.v1. Shows three minimal-but-complete integration entries (one outbound payment, one inbound KMS signer, one Integration Catalog model/inference target) covering every required field plus the optional Integration Catalog fields (relationship_type, host_kind, readiness_status). Validates against the schema in CI.",
   "constitution_ref": "constitution/16-EDGE-RUNTIME.md §11",
   "publication_rule": {
     "policy": "private",
@@ -44,6 +44,27 @@
       "fallback_behavior": "switch_to_alternate_provider",
       "data_residency_constraints": ["us", "eu"],
       "status": "active"
+    },
+    {
+      "id": "kye:integration:example-cohere",
+      "name": "Cohere (example)",
+      "provider": "Cohere Inc.",
+      "category": "model-inference",
+      "host_kind": "model-inference",
+      "relationship_type": "authority-adapter",
+      "dictionary_term": "cohere",
+      "workers_using": [],
+      "endpoints_provided": [],
+      "outbound_endpoints_called": [],
+      "required_for_surfaces": ["none"],
+      "secrets_required": [],
+      "rate_limit_quota": { "limit": 0, "period": "second", "notes": "Live per-tenant API rate limits apply downstream; the catalog row sets no quota of its own." },
+      "cost_model": { "pricing_model": "free", "notes": "Integration Catalog listing — KYE governs the action, not the model." },
+      "fallback_behavior": "fail_closed",
+      "data_residency_constraints": ["tenant_specific"],
+      "readiness_status": "declared-not-wired",
+      "status": "active",
+      "notes": "Integration Catalog model/inference target (§0.25). KYE governs the data + purpose binding at inference and seals an Evidence Pack before the call commits. Live per-tenant API wiring is declared-not-wired (creds not in-repo)."
     }
   ]
 }

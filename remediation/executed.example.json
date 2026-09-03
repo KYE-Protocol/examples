@@ -9,7 +9,7 @@
   "execution_mode": "human-ack",
   "actor": {
     "kind": "github-actor",
-    "identifier": "m.marandi@gmail.com"
+    "identifier": "owner@example.invalid"
   },
   "mutations_executed": [
     {

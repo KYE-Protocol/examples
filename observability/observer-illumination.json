@@ -1,0 +1,53 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.observer.v1.json",
+  "schema": "kye.observer.v1",
+  "registry_id": "kye:registry:observers:example",
+  "adopted_at": "2026-08-29",
+  "constitution_ref": "constitution/00-INDEX.md#section-0-43",
+  "description": "Worked example of an observer registry: one observer that ranges over the ONE population, and one that declares in words why it cannot. The declared limit is the governance; the private walk with no declaration is the blind spot.",
+  "population_source": {
+    "resolver": "resolvePopulation",
+    "rationale": "The denominator is derived from the corpus DISCOVERED on disk rather than declared by hand. Every other candidate is itself an observer private view, and choosing one would make the denominator a party to the dispute it exists to settle.",
+    "measured_2026_08_29": {
+      "total_rows": 85421,
+      "classes": 339,
+      "undeclared_class_rows": 0,
+      "non_edge_rows": 39487
+    }
+  },
+  "observers": [
+    {
+      "observer_id": "admission",
+      "entity_class": "observer",
+      "mechanism": "(internal registry — path withheld per §33 IP/OSS line)",
+      "generator": "scripts/build-admission-matrix.mjs",
+      "question_answered": "May this class and its instances enter the estate at all (t=0 entry gate)?",
+      "corpus_derivation": "resolvePopulation (IS the derivation source — discovered from disk)",
+      "covers_population": true,
+      "measured_coverage_2026_08_29": {
+        "class_registries": 300,
+        "rows": 85409,
+        "undeclared_entity_class": 0
+      },
+      "holds_entities_individually": true,
+      "note": "The only observer whose corpus is DISCOVERED rather than declared, which is why it is the denominator."
+    },
+    {
+      "observer_id": "illumination",
+      "entity_class": "observer",
+      "mechanism": "(internal registry — path withheld per §33 IP/OSS line)",
+      "generator": "scripts/build-coordinate-index.mjs",
+      "question_answered": "Where do the holes cluster across the estate (aggregate density + graph connectivity)?",
+      "corpus_derivation": "declared: currently derives its own cells from a plane×class projection and its connectivity from the §53 cascade graph — NOT from resolvePopulation. This is the defect measured on 2026-08-29 and is the first migration target.",
+      "covers_population": false,
+      "measured_coverage_2026_08_29": {
+        "entities": 15916,
+        "pct_of_non_edge": 18.7,
+        "connectivity_nodes": 5166
+      },
+      "holds_entities_individually": false,
+      "note": "Holds COUNTS in 215 cells, not entities. No per-entity property (such as 'this machine has no transition table') is representable, which is why 168/176 hollow machines sat in a perfectly clean cell."
+    }
+  ],
+  "patent_safety_note": "Capability and outcome only. The internal artefact paths behind each observer are IP-track and are deliberately not published here (Hard rule #1 / §33 / §0.35): the example demonstrates the CONTRACT — every observer declares how its corpus is derived, or declares why it cannot — not the mechanism."
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.separation_of_duties.v1.json",
+  "schema": "kye.separation_of_duties.v1",
+  "registry_id": "kye:registry:separation-of-duties",
+  "adopted_at": "2026-08-17",
+  "constitution_ref": [
+    "constitution/00-INDEX.md#§0.20",
+    "constitution/00-INDEX.md#§0.43",
+    "constitution/00-INDEX.md#§0.44",
+    "constitution/00-INDEX.md#§0.49"
+  ],
+  "description": "ILLUSTRATIVE EXAMPLE of kye:registry:separation-of-duties. One worked row, not the full set — the live registry is the source of truth and is not duplicated here (§0). Present so the schema has a validated instance a reader and the ajv corpus can both use.",
+  "duty_pairs": [
+    {
+      "duty_id": "page-generation",
+      "produces": "public/** pages",
+      "producer_class": "scripts/build-*.mjs page writers",
+      "verifier": "test:derived-all-fresh",
+      "independence": "distinct-file",
+      "buys": "A page writer's own --check compares its fresh output to disk, which cannot see that a DIFFERENT writer's region was destroyed on the way — the producer has no reason to know a region it does not own exists. The umbrella verifier runs every generator and diffs the whole tree, so a page that lost bytes to another writer surfaces even though each writer individually reports clean. This is the pair that failed in the observable way: 628 pages were stripped and every individual generator was green."
+    }
+  ],
+  "anti_patterns": [
+    {
+      "name": "self-certifying generator",
+      "definition": "A generator whose --check is the only thing verifying its output. Cheap and useful as a first signal; fatal as the sole one, because it can only compare against the shape it just produced."
+    }
+  ],
+  "honest_scope": "This binds KYE's OWN duty pairs. It does not claim organisational separation of duties for a customer deployment — that is a §36 GovernedUI approval-mode question (two_person, two_person_with_legal), governed elsewhere and not restated here (§0). Conflating the two would let an engineering-hygiene gate read as a control attestation, which is the §70 dishonesty line.",
+  "enforcement": {
+    "gate": "scripts/gates/separation-of-duties.mjs",
+    "npm_ref": "test:separation-of-duties",
+    "rule_code": "SOD001",
+    "contract": "Every duty pair names a producer and a verifier that is a DIFFERENT actor, and that verifier must resolve on disk AND be wired into npm test. A verifier that is the producer, does not exist, or is not runnable is self-certification with a second name on it.",
+    "derives_from": [
+      "duty_pairs",
+      "anti_patterns"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-sector-product-canonical",
+  "parent_task": "c4d7e0a1-9b32-4f6e-8d05-2a7c1e9f3b48",
+  "refused_at": "2026-06-22T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Prompt asked to create a parallel credit-card / consumer-credit rule-pack / sector-pack / dictionary / framework-mapping. KYE already governs the consumer-credit decision via kye:rule-pack:agentic-lending + kye:sector-pack:agentic-lending + kye:dictionary:agentic-lending, bound to ECOA Reg-B / FCRA / Fed SR 11-7 / FCA Consumer Duty / FCA CONC. A parallel pack is a §0 competing-systems violation; re-mapping the frameworks is a §70 violation. Refusing the parallel pack.",
+  "remediation_hint": "Build a Governed Agent PRODUCT that RUNS the existing kye:rule-pack:agentic-lending verdict under KYE authority, bounded to UNSECURED REVOLVING credit-line decisions (card issuance / credit-limit / APR reprice / adverse action / account closure). Add only the agent-product artefacts (§52 binding, principal, product row, SKU, pricing, ™, landing entry) and BIND — never re-map — the card-distinct regimes via kye:dictionary:agentic-lending. Stay distinct from the Payment Authorization Authority Agent."
+}

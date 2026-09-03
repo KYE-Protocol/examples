@@ -1,0 +1,5 @@
+{
+  "block": "equation",
+  "text": "اقدام مجاز  ⇔  اختیار(عامل, کنش) ∧ هدف(کنش) ⊆ دامنه ∧ شواهد(تصمیم) ≠ ∅",
+  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>A</mi><mo>&#x21D4;</mo><mi>auth</mi><mo>&#x2227;</mo><mi>purpose</mi><mo>&#x2286;</mo><mi>scope</mi><mo>&#x2227;</mo><mi>evidence</mi><mo>&#x2260;</mo><mi>&#x2205;</mi></mrow></math>"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "kye.crawler_signature_registry.v1",
+  "version": "1.0",
+  "as_of": "2026-07-19",
+  "framework": "mow-search-only-contract",
+  "source_policy": "Illustrative excerpt of the canonical registry. Only user-agent product tokens the operator itself publishes in its own crawler documentation are admitted; every entry cites that documentation URL. IP ranges are advisory hints only — a user-agent match is attribution, not proof; the ip_hints_source URL is the live source of truth.",
+  "categories": ["search", "ai-training", "ai-inference", "archive", "unknown"],
+  "licensed_meaning": "licensed_under_soc reflects the operator's DECLARED crawl purpose measured against the Search Only Terms Contract's licence scope (Search Indexing only, socw/2 Clause 4). This is a classification aid, not legal advice.",
+  "signatures": [
+    {
+      "signature_id": "google-googlebot",
+      "operator": "Google",
+      "ua_token": "Googlebot",
+      "ua_patterns": ["googlebot"],
+      "category": "search",
+      "licensed_under_soc": true,
+      "robots_token_only": false,
+      "doc_url": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+      "ip_range_hints": ["66.249.64.0/19"],
+      "ip_hints_source": "https://developers.google.com/static/search/apis/ipranges/googlebot.json",
+      "notes": "Google Search index crawler. Google publishes the authoritative range list as JSON (ip_hints_source)."
+    },
+    {
+      "signature_id": "openai-gptbot",
+      "operator": "OpenAI",
+      "ua_token": "GPTBot",
+      "ua_patterns": ["gptbot"],
+      "category": "ai-training",
+      "licensed_under_soc": false,
+      "robots_token_only": false,
+      "doc_url": "https://platform.openai.com/docs/bots",
+      "ip_range_hints": ["52.230.152.0/24", "52.233.106.0/24"],
+      "ip_hints_source": "https://openai.com/gptbot.json",
+      "notes": "OpenAI's crawler for content that may be used to train generative models. OpenAI publishes the authoritative egress ranges as JSON (ip_hints_source)."
+    },
+    {
+      "signature_id": "apple-applebot-extended",
+      "operator": "Apple",
+      "ua_token": "Applebot-Extended",
+      "ua_patterns": [],
+      "category": "ai-training",
+      "licensed_under_soc": false,
+      "robots_token_only": true,
+      "doc_url": "https://support.apple.com/en-us/119829",
+      "ip_range_hints": [],
+      "ip_hints_source": null,
+      "notes": "robots.txt control token: Apple documents that Applebot-Extended does not crawl webpages itself — it governs whether Applebot-crawled content may train Apple foundation models. Will not match live traffic; kept for robots audits and declaration tooling."
+    }
+  ]
+}

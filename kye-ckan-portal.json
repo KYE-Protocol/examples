@@ -1,0 +1,9 @@
+{
+  "schema_version": "kye.ckan_portal.v1",
+  "portal_id": "kye:ckan-portal:northwind-bank:cp-2026-08-0417",
+  "connection_id": "kye:connector:ckan:northwind-bank:con-2026-08-0417",
+  "display_name": "Northwind Bank",
+  "portal_type": "public_sector_open_data",
+  "owner_entity_id": "kye:org:northwind-bank",
+  "status": "active"
+}

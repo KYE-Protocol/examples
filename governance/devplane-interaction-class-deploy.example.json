@@ -1,0 +1,11 @@
+{
+  "id": "kye:action-class:deploy",
+  "interaction_kind": "action",
+  "label": "surface deploy",
+  "description": "A deploy of a surface version to the edge (Cloudflare Pages/Workers). The t=0 decision attaches finality to a specific version.",
+  "governing_chapter": "constitution/00-INDEX.md §0.37",
+  "t0_governor": "KYE Governance Engine — Purpose Permission™ Decision Point",
+  "meter_ref": "kye:meter:github-actions-minutes",
+  "finality_semantics": "surface version live on production",
+  "citizen": true
+}

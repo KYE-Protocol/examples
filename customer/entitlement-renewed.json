@@ -1,0 +1,7 @@
+{
+  "schema": "kye.customer.entitlement.renewed.v1",
+  "id": "kye:customer-action:northwind-bank-ca-2026-08-0417",
+  "workflow_id": "workflow-2026-08-0417",
+  "customer": "kye:customer:9f2c4b7e1d83a05c",
+  "emitted_at": "2026-08-07T09:15:00Z"
+}

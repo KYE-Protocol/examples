@@ -1,0 +1,12 @@
+{
+  "schema": "kye.entity_registration.v1",
+  "entity_id": "kye:ent:kyeprotocol:endpoint:runtime-evaluate",
+  "entity_type": "endpoint",
+  "trust_domain_id": "kye:trust-domain:kyeprotocol",
+  "display_name": "POST /api/v1/runtime/evaluate",
+  "registered_by_entity_id": "kye:ent:kyeprotocol:organisation:kye-protocol",
+  "basis": "agent_nomination_admitted",
+  "nomination_ref": "kye:nomination:kyeprotocol:scan-001:runtime-evaluate",
+  "consequential_action_classes": ["data.export"],
+  "labels": ["authority-bearing-surface"]
+}

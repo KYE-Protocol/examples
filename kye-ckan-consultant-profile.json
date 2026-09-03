@@ -1,0 +1,9 @@
+{
+  "schema_version": "kye.ckan_consultant_profile.v1",
+  "consultant_id": "kye:consultant:meridian-advisory",
+  "display_name": "Northwind Bank",
+  "specialisms": [
+    "ckan_deployment"
+  ],
+  "status": "pending"
+}

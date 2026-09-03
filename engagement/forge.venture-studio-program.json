@@ -1,0 +1,33 @@
+{
+  "schema": "kye.venture_studio_program.v1",
+  "tier_id": "kye:venture-studio-program:forge",
+  "display_name": "KYE Authority-Native Venture Studio™ — Forge",
+  "engagement_type": "partner",
+  "specialization": "venture-studio",
+  "studio_commitment": {
+    "build_support": "Co-build the authority-native MVP: KYE integrates the venture onto the authority-finality rails (Purpose Permission™ admissibility, Evidence Pack™, Replay-Proof™, §0.3 evidence family), scaffolds any governed agents via the §32 Agent Dev Kit so they are first-class principals, and stands up the venture's governed product surface.",
+    "cadence": "weekly studio build sessions plus a monthly venture review",
+    "studio_stage": "forge"
+  },
+  "venture_terms": {
+    "consideration_model": "equity-and-revenue-share",
+    "venture_must_be_authority_native": true,
+    "agents_governed_as_principals": true
+  },
+  "cohort_cap": 4,
+  "term_months": 9,
+  "studio_benefits": {
+    "rail_integration": true,
+    "founder_access": true,
+    "directory_listing": true
+  },
+  "eligibility": {
+    "authority_native_thesis_required": true,
+    "eligibility_note": "Founders with a validated authority-native thesis ready to co-build the MVP on KYE's rails. Meeting the profile qualifies you to apply; the cohort is capped at 4 and admission is §49 application-reviewed."
+  },
+  "sku_ref": "KYE-VENTURE-STUDIO-FORGE-001",
+  "equity_terms_ref": "kye:venture-studio:equity-terms:forge-default",
+  "obligations_ref": "kye:obligation-manifest:partner:venture-studio-forge",
+  "constitution_ref": "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md §9",
+  "status": "active"
+}

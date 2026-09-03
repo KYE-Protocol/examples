@@ -1,0 +1,45 @@
+{
+  "registry_id": "canonical-graph",
+  "schema_version": "1.0",
+  "summary": {
+    "nodes": 0,
+    "edges": 0,
+    "nodes_by_kind": {},
+    "orphans": 0,
+    "observations": 0,
+    "dangling": 0
+  },
+  "orphans": [
+    {
+      "kind": "authority",
+      "id": "northwind-bank-2026-08-0417"
+    }
+  ],
+  "observations": [
+    {
+      "kind": "authority",
+      "id": "northwind-bank-2026-08-0417"
+    }
+  ],
+  "dangling": [
+    {
+      "kind": "authority",
+      "from": "draft",
+      "missing": "kye:cascade:example-node-not-on-disk"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "northwind-bank-2026-08-0417",
+      "kind": "automation",
+      "name": "Northwind Bank payments release"
+    }
+  ],
+  "edges": [
+    {
+      "from": "draft",
+      "to": "active",
+      "relation": "fires"
+    }
+  ]
+}

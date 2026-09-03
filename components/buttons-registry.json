@@ -1,0 +1,189 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.button.v1.json",
+  "schema": "kye.button.v1",
+  "registry_id": "kye:registry:buttons",
+  "constitution_ref": "constitution/04-DESIGN-SYSTEM.md",
+  "description": "Per-class source of truth for the buttons component class. Buttons were the only component class (with animations) declaring their items INLINE in the component index, while panels/forms/icons/notices/snippets/visualizations each delegate to their own registry. Inline declaration is why extending the class meant hand-editing an index with no generator. Variants carry COLOUR/intent only; size_modifiers is the one axis permitted to carry geometry (scripts/gates/control-geometry-canonical.mjs derives both sets from here).",
+  "variants": [
+    {
+      "id": "kye:btn:primary",
+      "name": "Primary CTA",
+      "kind": "filled",
+      "intent": "primary-cta",
+      "description": "High-emphasis filled button. Resolves its visible label via kye:dictionary:cta-labels. Used for the single most-important action on a surface."
+    },
+    {
+      "id": "kye:btn:secondary",
+      "name": "Secondary CTA",
+      "kind": "outlined",
+      "intent": "secondary-cta",
+      "description": "Medium-emphasis outlined button. Resolves its label via kye:dictionary:cta-labels. Used for important-but-not-primary actions."
+    },
+    {
+      "id": "kye:btn:ghost",
+      "name": "Ghost CTA",
+      "kind": "ghost",
+      "intent": "ghost-cta",
+      "description": "Low-emphasis text-only button. Resolves its label via kye:dictionary:cta-labels. Used for tertiary discovery actions."
+    },
+    {
+      "id": "kye:btn:destructive",
+      "name": "Destructive Action",
+      "kind": "filled-destructive",
+      "intent": "destructive",
+      "description": "High-emphasis filled button in the error/danger semantic color. Used for irreversible actions (revoke, delete, reject). Requires dual-channel sign-off per §0.4 banking-grade."
+    },
+    {
+      "id": "kye:btn:icon-only",
+      "name": "Icon-only Button",
+      "kind": "icon-only",
+      "intent": "icon-only",
+      "description": "Square icon-only affordance. Must carry an aria-label resolved from kye:dictionary:cta-labels. Used for compact toolbar or card-level actions."
+    },
+    {
+      "id": "kye:btn:gui-approve",
+      "name": "GovernedUI Approve & Sign",
+      "kind": "filled",
+      "intent": "primary-cta",
+      "cta_term": "gui-approve-sign",
+      "description": "§36 KYE GovernedUI™ approval-action button. Emits the HSM-backed signature envelope. data-gui-action='approve'."
+    },
+    {
+      "id": "kye:btn:gui-escalate",
+      "name": "GovernedUI Escalate",
+      "kind": "outlined",
+      "intent": "secondary-cta",
+      "cta_term": "gui-escalate",
+      "description": "§36 KYE GovernedUI™ escalation-action button. Routes grant to next approver tier. data-gui-action='escalate'."
+    },
+    {
+      "id": "kye:btn:gui-reject",
+      "name": "GovernedUI Reject",
+      "kind": "ghost",
+      "intent": "ghost-cta",
+      "cta_term": "gui-reject",
+      "description": "§36 KYE GovernedUI™ rejection-action button. Denies a pending authority grant and emits the refusal envelope. data-gui-action='reject'."
+    }
+  ],
+  "control_families": [
+    {
+      "id": "kye:control-family:chrome-topbar",
+      "name": "Top-bar chrome control family",
+      "description": "The Row-1 cluster emitted by kyeHeader() in public/site/assets/components.js: the two CTAs, sign-in, the GitHub link, the theme toggle, the drawer toggle, the updates bell and the search control. They sit side by side and read as one row, so they are one control family and must share one box. They were NOT one box: .signin-btn/.tb-cta-apply/.tb-cta-secondary each hand-declared height:var(--space-10) (40px), .tb-cta and .drawer-toggle hardcoded 36px, .theme-toggle and .tb-bell hardcoded a 36px square, .tb-search set min-height:36px with 8px 12px padding, and .nav-cta set 7px 14px with no height at all — three heights, four paddings, and .theme-toggle/.tb-bell/.drawer-toggle still on --radius-pill in a row of --radius-button rectangles. 36px is not a step in design-system/tokens/spacing.json, so every 36px here was a magic number; --space-10 (40px) is the on-scale value the CTAs already used and is the family height. Six of these nine also carried margin-left:6px on top of the container's own gap:8px, so the row's spacing alternated 14px/8px. Geometry is now generated ONCE into the css_seam below from this declaration; a member rule carries colour and intent only.",
+      "css_seam": "chrome-control-geometry",
+      "height_token": "--space-10",
+      "gap_token": "--space-2",
+      "font_size_token": "--type-13",
+      "font_weight": "600",
+      "border_width": "1px",
+      "compaction": [
+        {
+          "max_width": "1500px",
+          "inline_padding_token": "--space-3",
+          "description": "First squeeze: the row keeps its height and gives up horizontal padding (16px -> 12px). Replaces the 1600px/1500px/1320px overrides that each trimmed a different subset."
+        },
+        {
+          "max_width": "900px",
+          "height_token": "--space-8",
+          "inline_padding_token": "--space-2",
+          "description": "Below the mega breakpoint Row 2 collapses into the drawer and the remaining controls shrink together (40px -> 32px, padding 8px). Replaces the 900px/720px/700px/600px/480px/380px overrides, which between them forced .theme-toggle to 32px at 700px, back to 36px at 600px, and to 36px !important at 380px."
+        }
+      ],
+      "shapes": [
+        {
+          "id": "kye:control-shape:label",
+          "radius_role": "button",
+          "square": false,
+          "inline_padding_token": "--space-4",
+          "description": "A control carrying a text label. Height from the family, inline padding from the spacing scale, shape from radius.json roles.button."
+        },
+        {
+          "id": "kye:control-shape:icon",
+          "radius_role": "button",
+          "square": true,
+          "description": "An icon-only affordance. Square (width = the family height), no inline padding. Shape still resolves through roles.button: these are chrome controls in a row of buttons, not badges, so --radius-pill was the wrong role rather than a smaller pill."
+        },
+        {
+          "id": "kye:control-shape:input",
+          "radius_role": "input",
+          "square": false,
+          "inline_padding_token": "--space-4",
+          "description": "The search control. Same height and padding as a labelled control, but shape resolves through radius.json roles.input because it is an input. Both roles are `md` today — which is precisely why a role beats a hand-picked step."
+        }
+      ],
+      "members": [
+        {
+          "css_class": "tb-cta-apply",
+          "shape": "kye:control-shape:label",
+          "description": "PRIMARY CTA (data-tb=\"primary-cta\"). Solid accent."
+        },
+        {
+          "css_class": "tb-cta-secondary",
+          "shape": "kye:control-shape:label",
+          "description": "SECONDARY CTA (data-tb=\"secondary-cta\"). Outline ghost."
+        },
+        {
+          "css_class": "signin-btn",
+          "shape": "kye:control-shape:label",
+          "description": "Return path for existing users. Outline weight — not a second primary."
+        },
+        {
+          "css_class": "tb-cta",
+          "shape": "kye:control-shape:label",
+          "description": "Outline-ghost chrome link (GitHub). Was the 36px member that made the row uneven."
+        },
+        {
+          "css_class": "drawer-toggle",
+          "shape": "kye:control-shape:label",
+          "description": "Drawer opener. Labelled below the mega breakpoint, so a labelled control, not an icon one."
+        },
+        {
+          "css_class": "nav-cta",
+          "shape": "kye:control-shape:label",
+          "description": "Legacy/OSS-site nav CTA. Retained in the family because dropping a class the enforcer already claimed would be a §0.43 narrowing."
+        },
+        {
+          "css_class": "theme-toggle",
+          "shape": "kye:control-shape:icon",
+          "description": "Light/dark toggle. Icon-only square."
+        },
+        {
+          "css_class": "tb-bell",
+          "shape": "kye:control-shape:icon",
+          "description": "§65 Updates Rail bell. Icon-only square carrying an absolutely-positioned badge."
+        },
+        {
+          "css_class": "tb-search",
+          "shape": "kye:control-shape:input",
+          "description": "Cmd-K palette opener. .tb-md-view and .tb-md-copy reuse this class rather than declaring a second one."
+        }
+      ]
+    }
+  ],
+  "size_modifiers": {
+    "description": "The size axis of the buttons class, declared canonically so enforcement derives it instead of restating it. A colour VARIANT (items[] above) owns colour only; a SIZE MODIFIER is the one kind of class permitted to set geometry, because changing size is its entire purpose. scripts/gates/control-geometry-canonical.mjs reads this list — hardcoding the names in the gate would have made the gate a second declaration of the same set (§0/§0.49).",
+    "css_class_prefix": "btn-",
+    "modifiers": [
+      {
+        "id": "kye:btn-size:lg",
+        "css_class": "btn-lg",
+        "description": "Large control. Padding and type from the canonical spacing/type scales."
+      },
+      {
+        "id": "kye:btn-size:sm",
+        "css_class": "btn-sm",
+        "description": "Small control."
+      },
+      {
+        "id": "kye:btn-size:xs",
+        "css_class": "btn-xs",
+        "description": "Extra-small control."
+      },
+      {
+        "id": "kye:btn-size:block",
+        "css_class": "btn-block",
+        "description": "Full-width control — sets width, not shape."
+      }
+    ]
+  }
+}

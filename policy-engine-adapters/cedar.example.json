@@ -1,0 +1,42 @@
+{
+  "schema": "kye.policy_engine_adapter.v1",
+  "adapter_id": "kye:policy-engine-adapter:cedar",
+  "engine_kind": "cedar",
+  "display_name": "Cedar Adapter",
+  "status": "supported",
+  "invocation": {
+    "mode": "embedded-wasm",
+    "request_shape": "cedar-authorization-request",
+    "endpoint_ref": "binding:CEDAR_POLICY_STORE",
+    "timeout_ms": 200,
+    "fail_mode": "fail-closed",
+    "local_verdict": "not-applicable-in-process"
+  },
+  "response_mapping": {
+    "decision_vocab_ref": "https://kyeprotocol.com/schemas/common.json#/$defs/Decision",
+    "allow_maps_to": "allow",
+    "deny_maps_to": "deny",
+    "obligation_passthrough": false
+  },
+  "evidence_emission": {
+    "required": true,
+    "envelope_family": [
+      "kye.evidence.decision_map.v1",
+      "kye.evidence.tool_call.v1",
+      "kye.evidence.pack.v1"
+    ],
+    "records_raw_engine_verdict": true
+  },
+  "kill_switch": {
+    "endpoint": "POST /v1/pdp/adapters/cedar/kill",
+    "on_kill": "fallback-native-deny-by-default"
+  },
+  "kye_retains_above": [
+    "purpose-permission",
+    "authority-resolution",
+    "authority-finality",
+    "evidence-pack",
+    "replay-proof"
+  ],
+  "notes": "KYE marshals the decision into a Cedar authorization request (principal, action, resource, context), evaluates the Cedar policy store in-process, and maps the Cedar Allow/Deny back to a KYE DecisionOutcome. The same adapter shape backs AWS Verified Permissions over the remote-http transport."
+}

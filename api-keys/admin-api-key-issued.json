@@ -1,0 +1,13 @@
+{
+  "schema": "kye.admin.api_key.issued.v1",
+  "id": "kye:admin-action:api-key-issued:7c3f9a2e",
+  "key_id": "kye:api-key:7c3f9a2e-1b44-4de1-9a0e-2f6b8c1d4e55",
+  "tenant_id": "kye:tenant:acme-fs",
+  "scope": "production",
+  "label": "Production runtime — payments service",
+  "ttl_days": 90,
+  "ip_allowlist": ["203.0.113.0/24"],
+  "operator": "ops@acme.example",
+  "emitted_at": "2026-07-12T09:00:00Z",
+  "reason": "new production integration"
+}

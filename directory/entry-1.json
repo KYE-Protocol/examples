@@ -10,11 +10,11 @@
   "endpoints": [
     {
       "kind": "well_known",
-      "url": "https://acme-bank.example/.well-known/kye"
+      "url": "https://acme-acme-bank.example/.well-known/kye"
     },
     {
       "kind": "metadata",
-      "url": "https://acme-bank.example/kye/metadata.json"
+      "url": "https://acme-acme-bank.example/kye/metadata.json"
     }
   ]
 }
