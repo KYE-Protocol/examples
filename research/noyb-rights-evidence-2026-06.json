@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "The noyb question: proving rights, consent and contestability at execution time — June 2026",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
   "topic_id": "kye:research-topic:noyb-rights-evidence",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "zM9wXmCkTZDuLbMyxrVeGPmehUVQLhXgxnucs4g3FQtazyssPf+ijPZmu0g4vlCgQLEnYQ9bePXlJIdOP4iBAA=="
+    "signature": "56qqTNmo0UcN7/AgB8tSIEETn5YyKMWwPGMSWyekNu2HzQ7EUEyB6AB1zV6RlQqa63pdoelC6aiHr46nAm0DDA=="
   },
   "citations": [
     {

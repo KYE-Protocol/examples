@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "The ROI of Governed AI Action — governance is the unlock, not the tax — June 2026",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:shafi-goldwasser",
   "topic_id": "kye:research-topic:roi-governed-ai-action",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "uDY51PFmE7AdHTX3vakxta//QYgJaJqAmzfXQHHaijFv/wHEwizfUp6IgLTJjtRwP4jZMGagVx2rBx1lcbO8Dg=="
+    "signature": "7woJrXIGXiduQshFW6TLQW03W565xy6dsPBMxBV976CW/6Zo32vJyHR1JCYJL1dUTT0LfkAeaqQxXSGWgDwCAA=="
   },
   "citations": [
     {

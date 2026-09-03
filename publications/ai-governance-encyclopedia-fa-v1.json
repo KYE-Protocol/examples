@@ -5,13 +5,13 @@
   "kind": "encyclopedia_volume",
   "language": "fa-IR",
   "text_normalization": "nfc+script",
-  "title": "دانشنامه حکمرانی هوش مصنوعی — جلد یکم: چیستی و مبانی",
-  "subtitle": "چارچوب ملی، سازمانی، داده، ریسک و تاب‌آوری در عصر هوش مصنوعی",
+  "title": "دانشنامه حکمرانی هوش مصنوعی — جلد یکم: مبانی و فلسفه حکمرانی هوش مصنوعی",
+  "subtitle": "از فناوری هوشمند تا زیرساخت تصمیم‌گیری",
   "set": {
     "set_id": "kye:publication-set:ai-governance-encyclopedia-fa",
     "set_title": "دانشنامه حکمرانی هوش مصنوعی",
     "volume_number": 1,
-    "total_volumes": 8,
+    "total_volumes": 14,
     "entity_class": "publication-set"
   },
   "authors": [
@@ -24,8 +24,8 @@
     {
       "order": 1,
       "report_id": "kye:research-report:ai-governance-encyclopedia-fa-v1-ch1",
-      "chapter_title": "فصل ۱ — انقلاب هوش مصنوعی و مسئله حکمرانی",
-      "seal_digest": "sha256:111c0e473fc63ec8baf983b838f79b2d3af4bed646f7f75414b7b0c254b2641c",
+      "chapter_title": "فصل اول — هوش مصنوعی؛ فناوری یا نهاد جدید تصمیم‌گیری؟",
+      "seal_digest": "sha256:5b35336fcdbe8a8c0230cbc8b84b369bee9412ff8bd4ff32ebc121a4529edc6f",
       "entity_class": "research-report"
     }
   ],

@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "Roadmap to AI Adoption in Healthcare — June 2026 Edition",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:shafi-goldwasser",
   "topic_id": "kye:research-topic:ai-adoption-healthcare-monthly",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "Fsl63JrsGAwfta9sSOp2Rc738Fxet9ZPpTKu1Vq7achjhqdpAy9dnBdfeLJxbSy3MsIDV+8kBE1k4dgXfIdfDA=="
+    "signature": "sUiUpaHcVsogu47x6eTMSPIfX/2w6LQykVsuVx/MRexBa4kfq00rwajrIgQy2PqoFh4qWDJYJhh4KUYAFaWqDA=="
   },
   "citations": [
     {

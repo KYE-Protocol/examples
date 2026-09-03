@@ -2,12 +2,116 @@
   "schema_version": "kye.research_evidence_pack.v1",
   "pack_id": "kye:evidence-pack:ai-governance-encyclopedia-fa-v1-ch1",
   "report_id": "kye:research-report:ai-governance-encyclopedia-fa-v1-ch1",
-  "body_sha256": "83c35052441fe9a92cc3fe3666b64645839fe96362f6fad804e642d2b73017fb",
-  "seal_signature": "QvmTUkjyWWeBGyeAo/3KMXAImsvB2SBc1APeKzxfn75/YYKsuUTcNCNhI6cf6iykC3kDqmJGNmsx+CBKAwENDQ==",
+  "body_sha256": "461be53b880b52dc481200f9f16da233308c983f98839c876891f4a8dfd0f28f",
+  "seal_signature": "5Q+TbArY+egfz2MYC3s4Gk/X4anAOK1xFW7NI0usinyuIHKHtCpZ8Ow74rBPM8WXjjD8gq0HO8452rAnkVhCBg==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {
-      "claim": "چارچوب مدیریت ریسک هوش مصنوعی NIST، فعالیت‌های مدیریت ریسک را در بالاترین سطح در چهار کارکرد حکمرانی، نگاشت، سنجش و مدیریت سازمان می‌دهد.",
+      "claim": "تعریف مشترک سامانه هوش مصنوعی شرط هم‌کنش‌پذیری میان حوزه‌های قضایی است.",
+      "source_id": "kye:source:oecd-ai-system-definition-interop",
+      "source_url": "https://oecd.ai/en/wonk/ai-system-definition-update",
+      "publisher": "OECD",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:b7d36a033b884e4f7cb657890ace44f461b50ca9e48c616922a6361d348395bf",
+        "retrieved_at": "2026-08-31T11:01:23Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "حکمرانی در چارچوب مدیریت ریسک NIST کارکردی عرضی است که در سه کارکرد دیگر تزریق می‌شود.",
+      "source_id": "kye:source:nist-rmf-govern-crosscutting",
+      "source_url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/5-sec-core",
+      "publisher": "National Institute of Standards and Technology",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:e51f21987e2813a8960234d53ce0fecccf883139a0fe58f401840d7f8b4eb3de",
+        "retrieved_at": "2026-08-31T11:01:21Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "قواعد ملی واگرا بازار داخلی را تکه‌تکه می‌کند و قطعیت حقوقی را کاهش می‌دهد.",
+      "source_id": "kye:source:eu-ai-act-uniform-rules",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+      "publisher": "Official Journal of the European Union",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:8ad13bdd75911c9d216dbbab5bf6f82fce82dba421c453918dc03ed7043cb662",
+        "retrieved_at": "2026-08-31T01:08:15Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "عامل‌های مدل زبانی در برخی وظایف برنامه‌نویسی با بودجه زمانی محدود از انسان بهتر عمل کردند.",
+      "source_id": "kye:source:ai-index-2025-agents",
+      "source_url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "publisher": "Stanford Institute for Human-Centered AI",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:a13ca74dfd156317b335a80c669eceb7ad9aa5d0b0f2e5611c092a3aab00e31e",
+        "retrieved_at": "2026-08-31T11:02:57Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "احراز هویت و اجازه‌دهی کارکردهایی مجزا هستند که پیش از برقراری نشست انجام می‌شوند.",
+      "source_id": "kye:source:nist-sp-800-207-zero-trust",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:350b460209d0144249edbb99e7f4208493b02548142417b374ae4cdd534d6736",
+        "retrieved_at": "2026-08-09T01:34:55Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "چارچوب NIST برای مدیریت ریسک هوش مصنوعی نسبت به افراد، سازمان‌ها و جامعه تدوین شده است.",
+      "source_id": "kye:source:nist-ai-rmf-purpose",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "National Institute of Standards and Technology",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:4d0f567ed39d4c0a1846bf2b0ca921219a40c50ddd49f8fcd8a91133bbebdf16",
+        "retrieved_at": "2026-08-31T11:02:03Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "توصیه‌نامه یونسکو نخستین استاندارد جهانی اخلاق هوش مصنوعی است که ۱۹۳ کشور عضو آن را تصویب کردند.",
+      "source_id": "kye:source:unesco-ethics-recommendation",
+      "source_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "publisher": "UNESCO",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:66012dbe557585f0e2fb0fc09058a8a46190837b8ac603a3e3ffa0dadcea4e30",
+        "retrieved_at": "2026-08-31T10:46:12Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "قانون هوش مصنوعی اتحادیه اروپا نخستین چارچوب حقوقی جامع درباره هوش مصنوعی در جهان است.",
+      "source_id": "kye:source:eu-ai-act-first-comprehensive",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "publisher": "European Commission",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:7f3c3fe9986f33b047a23c2f0f21d0f37df5d7fa6f5523d4eb0a090411c04a38",
+        "retrieved_at": "2026-08-31T11:02:54Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "چارچوب NIST فعالیت‌های مدیریت ریسک را در چهار کارکرد حکمرانی، نگاشت، سنجش و مدیریت سازمان می‌دهد.",
       "source_id": "kye:source:nist-ai-rmf-core-functions",
       "source_url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/5-sec-core",
       "publisher": "National Institute of Standards and Technology",
@@ -20,7 +124,7 @@
       }
     },
     {
-      "claim": "توصیه‌نامه هوش مصنوعی OECD نخستین استاندارد بین‌الدولی در حوزه هوش مصنوعی است.",
+      "claim": "توصیه‌نامه OECD نخستین استاندارد بین‌الدولی در حوزه هوش مصنوعی است.",
       "source_id": "kye:source:oecd-ai-principles",
       "source_url": "https://oecd.ai/en/ai-principles",
       "publisher": "Organisation for Economic Co-operation and Development",
@@ -33,22 +137,125 @@
       }
     },
     {
-      "claim": "قانون هوش مصنوعی اتحادیه اروپا برای جلوگیری از تکه‌تکه شدن بازار داخلی و کاهش عدم‌قطعیت حقوقی برای بهره‌برداران، قواعد یکسان وضع می‌کند.",
-      "source_id": "kye:source:eu-ai-act-uniform-rules",
-      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
-      "publisher": "Official Journal of the European Union",
+      "claim": "قانون هوش مصنوعی اتحادیه اروپا رویکردی مبتنی بر ریسک اتخاذ می‌کند.",
+      "source_id": "kye:source:eu-ai-act-risk-based",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "publisher": "European Commission",
       "pinned": true,
       "retrieval": {
         "http_status": 200,
-        "content_sha256": "sha256:8ad13bdd75911c9d216dbbab5bf6f82fce82dba421c453918dc03ed7043cb662",
-        "retrieved_at": "2026-08-31T01:08:15Z",
+        "content_sha256": "sha256:7f3c3fe9986f33b047a23c2f0f21d0f37df5d7fa6f5523d4eb0a090411c04a38",
+        "retrieved_at": "2026-08-31T11:02:55Z",
         "transport": "direct"
+      }
+    },
+    {
+      "claim": "بریتانیا رویکرد نوآوری‌محور مبتنی بر تنظیم‌گران بخشی موجود را در سند ۲۹ مارس ۲۰۲۳ ارائه کرد.",
+      "source_id": "kye:source:uk-pro-innovation-approach",
+      "source_url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper",
+      "publisher": "UK Department for Science, Innovation and Technology",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:a86bc3d0dc34153dd2bc9d5d84d634ddaedab2af207d044d5969e929df880c93",
+        "retrieved_at": "2026-08-31T11:02:05Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "اعتباردهندگان نمی‌توانند به فهرست آماده دلایل اتکا کنند اگر دلیل اصلی را مشخص و دقیق نشان ندهد.",
+      "source_id": "kye:source:cfpb-circular-2023-03",
+      "source_url": "https://www.govinfo.gov/content/pkg/FR-2024-04-17/html/2024-08003.htm",
+      "publisher": "Consumer Financial Protection Bureau, published in the Federal Register (govinfo)",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:9712cebc1a11e32eac92c67defef02e4f993c921d7af018669b91e37662354ce",
+        "retrieved_at": "2026-08-09T01:30:06Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "قانون محلی ۱۴۴ نیویورک ممیزی سوگیری ظرف یک سال پیش از استفاده را شرط به‌کارگیری ابزار خودکار استخدامی می‌کند.",
+      "source_id": "kye:source:nyc-local-law-144-aedt",
+      "source_url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+      "publisher": "New York City Department of Consumer and Worker Protection",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:02669f1c5598aeb04e82507b9a1131279fb1d9d2a0d011437ff4a52bbfb77280",
+        "retrieved_at": "2026-08-09T01:31:23Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "تراکنش پرداخت تنها با رضایت پرداخت‌کننده مجاز تلقی می‌شود.",
+      "source_id": "kye:source:uk-psr-2017-reg-67-consent",
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/752/regulation/67/made",
+      "publisher": "UK Statutory Instruments (legislation.gov.uk, King's Printer version)",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:bfa415ed699a797ba762c5a1b5df949eb7b54c024fa045a2a9360ddc798791c2",
+        "retrieved_at": "2026-08-09T01:33:09Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "در تراکنش غیرمجاز، ارائه‌دهنده خدمات پرداخت باید مبلغ را بازگرداند.",
+      "source_id": "kye:source:uk-psr-2017-reg-76-liability",
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/752/regulation/76/made",
+      "publisher": "UK Statutory Instruments (legislation.gov.uk, King's Printer version)",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:87c95c239e4cb2c2d99a901f702989694088ebf64847e27dba9f3991477daae7",
+        "retrieved_at": "2026-08-09T01:33:18Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "نگهداری سوابق پشتیبان کافی برای بازسازی تراکنش الزامی است.",
+      "source_id": "kye:source:uk-mlr-2017-reg-40-reconstruct",
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/40/made",
+      "publisher": "UK Statutory Instruments (legislation.gov.uk, King's Printer version)",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:67d259f97a470f0a5babd664e190f62a29cd86242e74208e8be9b98b6840c08e",
+        "retrieved_at": "2026-08-09T01:34:26Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "کنترل‌کننده باید بتواند رعایت اصول را اثبات کند.",
+      "source_id": "kye:source:uk-gdpr-art-5-2-accountability",
+      "source_url": "https://www.legislation.gov.uk/eur/2016/679/article/5",
+      "publisher": "legislation.gov.uk (UK retained EU legislation)",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:b4580779d3995fa088ea877e6819b4b3bfbd6eda1c704cb5f64b0bbf16a4a22d",
+        "retrieved_at": "2026-08-09T01:34:03Z",
+        "transport": "direct"
+      }
+    },
+    {
+      "claim": "تعهدات شفافیت باید پیش از آغاز پردازش در نظر گرفته شوند.",
+      "source_id": "kye:source:ico-ai-transparency",
+      "source_url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-transparency-in-ai/",
+      "publisher": "Information Commissioner's Office",
+      "pinned": true,
+      "retrieval": {
+        "http_status": 200,
+        "content_sha256": "sha256:c2e341e863090eb043d5b3218356b5bab6f729674e0c07a315b2c80adb4f44ce",
+        "retrieved_at": "2026-08-08T19:00:00Z"
       }
     }
   ],
   "counts": {
-    "claims": 3,
-    "pinned": 3,
+    "claims": 19,
+    "pinned": 19,
     "unpinned": 0
   }
 }

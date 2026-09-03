@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "The Say-Do Gap in AI Governance: why stated controls fail their first incident — June 2026",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:diffie-hellman",
   "topic_id": "kye:research-topic:say-do-gap-ai-governance",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "trPodWPXnnvtO/vSgDvCqTHchvKnfo906rxGGsSmdLSc7Va3Hk7OU0oQDR0/zE3rbES6aymSRPxOmyIdSVfhAg=="
+    "signature": "A261INsvqdtsK29JEqf5ObnKuSnLohvo8NdsYCQs6mp3AvggEI2vqUOMzrUTHUn3AxXsvNGU8uxnpasXHYkYDg=="
   },
   "citations": [
     {

@@ -9,6 +9,7 @@
   "cadence": "weekly",
   "edition": "2026-W26",
   "title": "KYE Governed Proposal Authority™: SERPRO Governed Data-Query Partnership",
+  "language": "en-GB",
   "topic_id": "kye:research-topic:governed-proposal-serpro-partnership",
   "tier": "free",
   "authors": [
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "Z6IbEaBPHMI+DFUOXI0Lyg37cokxE2ILAIU43U5eC1KBks14ZLd1Q0KvN10MxCLUAHx/bGMVT246sD87Jw66AA=="
+    "signature": "qNsLLDK+6/qGzUm/1iQKsUfUyk6dQd5JmMae+jNw1Hf3lVxBfh5IksUuXNKlwIKBtncJxbHCFDyGIsF3S05kAA=="
   },
   "citations": [
     {

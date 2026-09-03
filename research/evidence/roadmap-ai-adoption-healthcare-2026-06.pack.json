@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:roadmap-ai-adoption-healthcare-2026-06",
   "report_id": "kye:research-report:roadmap-ai-adoption-healthcare-2026-06",
   "body_sha256": "947a1b826aac6582e0726f7b2f5efd9d9f69e8f5609d40424664c236c391b1ce",
-  "seal_signature": "Fsl63JrsGAwfta9sSOp2Rc738Fxet9ZPpTKu1Vq7achjhqdpAy9dnBdfeLJxbSy3MsIDV+8kBE1k4dgXfIdfDA==",
+  "seal_signature": "sUiUpaHcVsogu47x6eTMSPIfX/2w6LQykVsuVx/MRexBa4kfq00rwajrIgQy2PqoFh4qWDJYJhh4KUYAFaWqDA==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

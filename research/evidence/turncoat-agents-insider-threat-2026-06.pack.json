@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:turncoat-agents-insider-threat-2026-06",
   "report_id": "kye:research-report:turncoat-agents-insider-threat-2026-06",
   "body_sha256": "5706f7d033c870a61ad28c26fe216ea45a0b1644ab721896915e96ce71f345a7",
-  "seal_signature": "wVP4iWmAhh8erM4kAU8KWqc61tIshxdYqqnJ3p9rd7DoEV0ViK6QamJXtYyZhdj4JPaIjHaznyOyAqFOHElaCQ==",
+  "seal_signature": "osikN3M0f1EKXRMtL++7i9RO2zKFOJ1oFjini5LKDK6X4/LleZ7ewXbyKj21Ay+Rxy5nBKIcvXoUpdeYDqHsCw==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

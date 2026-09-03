@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:governed-proposal-serpro-partnership-2026-w26",
   "report_id": "kye:research-report:governed-proposal-serpro-partnership-2026-w26",
   "body_sha256": "e45c79c42160794165c9b6e7da88fa799ee5000052ef6871fc3c464e20482221",
-  "seal_signature": "Z6IbEaBPHMI+DFUOXI0Lyg37cokxE2ILAIU43U5eC1KBks14ZLd1Q0KvN10MxCLUAHx/bGMVT246sD87Jw66AA==",
+  "seal_signature": "qNsLLDK+6/qGzUm/1iQKsUfUyk6dQd5JmMae+jNw1Hf3lVxBfh5IksUuXNKlwIKBtncJxbHCFDyGIsF3S05kAA==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

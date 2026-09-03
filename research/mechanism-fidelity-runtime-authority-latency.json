@@ -8,6 +8,7 @@
   "cadence": "quarterly",
   "edition": "2026-Q3",
   "title": "Mechanism-Fidelity for Computed Research Claims — a Worked Governed-Agent Example",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:diffie-hellman",
   "topic_id": "kye:research-topic:mechanism-fidelity-computed-claim",
   "tier": "paid",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "EZ5bETkoCfKtdeDB/800Y4f/3i9hdbOpvBv43N4lEXD8QL1gdfgl/DfVsGqZO8nkK7AILKaBhxLKWBm1mATxAw=="
+    "signature": "DLZ0OWuwvyFt1qQF1A13Lz36d2aaZqZULobkvjAAlwGvDeXdigp2H7mz/PSyXKm4XEKYnATEvVAHvw+N2dyJAg=="
   },
   "citations": [
     {

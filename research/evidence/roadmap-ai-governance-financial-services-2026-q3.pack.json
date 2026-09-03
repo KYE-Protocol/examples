@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:roadmap-ai-governance-financial-services-2026-q3",
   "report_id": "kye:research-report:roadmap-ai-governance-financial-services-2026-q3",
   "body_sha256": "604f76c9598627c20087cf00e4c94bcfe28aac16525cd9d4e4ef2e714085b954",
-  "seal_signature": "3F426yFo1iqxsEhOOX7fVRH531EV5X1J0tUv/j0nPKoLoFcH5hdJWaFe8AoHnqiJ3nIN2nyVSmSJJFhaMLYrDQ==",
+  "seal_signature": "BocTpaccEMdUZDyzgEO0nr7uIdw+IheVk/L+EIqge0kebt0hWMPIbG/upvIi6aHC1FGROlxZsl3Ql2ZN2t/7Bg==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

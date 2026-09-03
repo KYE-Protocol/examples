@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "Securing enterprise AI agents: where the controls live, and where authority begins — June 2026",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
   "topic_id": "kye:research-topic:secure-enterprise-ai-agents",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "ajzmNHhpm2MLYGQnV9KWLILqKIDRDwz9i/PvD9unmZ0BD7qio2WoaHj5WF1Dt9svqwL5PRpl9ivOeMH2vDNfAg=="
+    "signature": "3gqGD2gfKbiCK1j+v1CVmp+OtTas1AnTpgud0uVhV1wjF0RFJPp8Wje/OrHehj7BMpjfIaQ+arS1Jwmx0OJtAg=="
   },
   "citations": [
     {

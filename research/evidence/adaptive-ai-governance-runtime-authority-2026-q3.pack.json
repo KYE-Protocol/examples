@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:adaptive-ai-governance-runtime-authority-2026-q3",
   "report_id": "kye:research-report:adaptive-ai-governance-runtime-authority-2026-q3",
   "body_sha256": "621a1fd4ce3c2318a66a15f33aa5c847d2148597ccfd1365e6e7ecb0f4058e37",
-  "seal_signature": "O+H4iwc4oYN79/Jy5zpMO9h8JcTzPxzXwHdxY8d4mJzi/JiZ1yjMvafwMOd4wR+FtdPYd36Kan2J0hCJYFBGAg==",
+  "seal_signature": "QRrWeB8E0077tzGalMZmVaD6gUri1ntUNlpZsFYB1PZHNwOnSHsB771qfcWh2YA4iwOarr7V9xELxo5OvkIUDA==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

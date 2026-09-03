@@ -8,6 +8,7 @@
   "cadence": "quarterly",
   "edition": "2026-Q3",
   "title": "Roadmap to AI Governance for Financial Services — Q3 2026 Edition",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:cynthia-dwork",
   "topic_id": "kye:research-topic:ai-governance-financial-services-q3",
   "tier": "paid",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "3F426yFo1iqxsEhOOX7fVRH531EV5X1J0tUv/j0nPKoLoFcH5hdJWaFe8AoHnqiJ3nIN2nyVSmSJJFhaMLYrDQ=="
+    "signature": "BocTpaccEMdUZDyzgEO0nr7uIdw+IheVk/L+EIqge0kebt0hWMPIbG/upvIi6aHC1FGROlxZsl3Ql2ZN2t/7Bg=="
   },
   "citations": [
     {

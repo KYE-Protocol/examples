@@ -3,7 +3,7 @@
   "pack_id": "kye:evidence-pack:noyb-rights-evidence-2026-06",
   "report_id": "kye:research-report:noyb-rights-evidence-2026-06",
   "body_sha256": "dbbb558fdf2a0b15f069d6cdb6dc7d292060c867dd7b528158916b100e6fd35d",
-  "seal_signature": "zM9wXmCkTZDuLbMyxrVeGPmehUVQLhXgxnucs4g3FQtazyssPf+ijPZmu0g4vlCgQLEnYQ9bePXlJIdOP4iBAA==",
+  "seal_signature": "56qqTNmo0UcN7/AgB8tSIEETn5YyKMWwPGMSWyekNu2HzQ7EUEyB6AB1zV6RlQqa63pdoelC6aiHr46nAm0DDA==",
   "emitted_by": "scripts/sign-research-report.mjs",
   "claims": [
     {

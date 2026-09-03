@@ -8,7 +8,7 @@
   "audience": "general",
   "cadence": "monthly",
   "edition": "2026-08",
-  "title": "فصل ۱ — انقلاب هوش مصنوعی و مسئله حکمرانی",
+  "title": "فصل اول — هوش مصنوعی؛ فناوری یا نهاد جدید تصمیم‌گیری؟",
   "language": "fa-IR",
   "topic_id": "kye:research-topic:ai-governance-encyclopedia-fa-v1-ch1",
   "tier": "free",
@@ -21,7 +21,71 @@
   "evidence_pack_ref": "kye:evidence-pack:ai-governance-encyclopedia-fa-v1-ch1",
   "citations": [
     {
-      "claim": "چارچوب مدیریت ریسک هوش مصنوعی NIST، فعالیت‌های مدیریت ریسک را در بالاترین سطح در چهار کارکرد حکمرانی، نگاشت، سنجش و مدیریت سازمان می‌دهد.",
+      "claim": "تعریف مشترک سامانه هوش مصنوعی شرط هم‌کنش‌پذیری میان حوزه‌های قضایی است.",
+      "source_id": "kye:source:oecd-ai-system-definition-interop",
+      "source_url": "https://oecd.ai/en/wonk/ai-system-definition-update",
+      "retrieved_at": "2026-08-31T11:01:23Z",
+      "publisher": "OECD",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "حکمرانی در چارچوب مدیریت ریسک NIST کارکردی عرضی است که در سه کارکرد دیگر تزریق می‌شود.",
+      "source_id": "kye:source:nist-rmf-govern-crosscutting",
+      "source_url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/5-sec-core",
+      "retrieved_at": "2026-08-31T11:01:21Z",
+      "publisher": "National Institute of Standards and Technology",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "قواعد ملی واگرا بازار داخلی را تکه‌تکه می‌کند و قطعیت حقوقی را کاهش می‌دهد.",
+      "source_id": "kye:source:eu-ai-act-uniform-rules",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+      "retrieved_at": "2026-08-31T01:08:15Z",
+      "publisher": "Official Journal of the European Union",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "عامل‌های مدل زبانی در برخی وظایف برنامه‌نویسی با بودجه زمانی محدود از انسان بهتر عمل کردند.",
+      "source_id": "kye:source:ai-index-2025-agents",
+      "source_url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "retrieved_at": "2026-08-31T11:02:57Z",
+      "publisher": "Stanford Institute for Human-Centered AI",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "احراز هویت و اجازه‌دهی کارکردهایی مجزا هستند که پیش از برقراری نشست انجام می‌شوند.",
+      "source_id": "kye:source:nist-sp-800-207-zero-trust",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "retrieved_at": "2026-08-09T01:34:55Z",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "چارچوب NIST برای مدیریت ریسک هوش مصنوعی نسبت به افراد، سازمان‌ها و جامعه تدوین شده است.",
+      "source_id": "kye:source:nist-ai-rmf-purpose",
+      "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "retrieved_at": "2026-08-31T11:02:03Z",
+      "publisher": "National Institute of Standards and Technology",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "توصیه‌نامه یونسکو نخستین استاندارد جهانی اخلاق هوش مصنوعی است که ۱۹۳ کشور عضو آن را تصویب کردند.",
+      "source_id": "kye:source:unesco-ethics-recommendation",
+      "source_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "retrieved_at": "2026-08-31T10:46:12Z",
+      "publisher": "UNESCO",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "قانون هوش مصنوعی اتحادیه اروپا نخستین چارچوب حقوقی جامع درباره هوش مصنوعی در جهان است.",
+      "source_id": "kye:source:eu-ai-act-first-comprehensive",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "retrieved_at": "2026-08-31T11:02:54Z",
+      "publisher": "European Commission",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "چارچوب NIST فعالیت‌های مدیریت ریسک را در چهار کارکرد حکمرانی، نگاشت، سنجش و مدیریت سازمان می‌دهد.",
       "source_id": "kye:source:nist-ai-rmf-core-functions",
       "source_url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/5-sec-core",
       "retrieved_at": "2026-08-31T01:05:30Z",
@@ -29,7 +93,7 @@
       "claim_basis": "cited_literature"
     },
     {
-      "claim": "توصیه‌نامه هوش مصنوعی OECD نخستین استاندارد بین‌الدولی در حوزه هوش مصنوعی است.",
+      "claim": "توصیه‌نامه OECD نخستین استاندارد بین‌الدولی در حوزه هوش مصنوعی است.",
       "source_id": "kye:source:oecd-ai-principles",
       "source_url": "https://oecd.ai/en/ai-principles",
       "retrieved_at": "2026-08-31T01:06:44Z",
@@ -37,11 +101,75 @@
       "claim_basis": "cited_literature"
     },
     {
-      "claim": "قانون هوش مصنوعی اتحادیه اروپا برای جلوگیری از تکه‌تکه شدن بازار داخلی و کاهش عدم‌قطعیت حقوقی برای بهره‌برداران، قواعد یکسان وضع می‌کند.",
-      "source_id": "kye:source:eu-ai-act-uniform-rules",
-      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
-      "retrieved_at": "2026-08-31T01:08:15Z",
-      "publisher": "Official Journal of the European Union",
+      "claim": "قانون هوش مصنوعی اتحادیه اروپا رویکردی مبتنی بر ریسک اتخاذ می‌کند.",
+      "source_id": "kye:source:eu-ai-act-risk-based",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "retrieved_at": "2026-08-31T11:02:55Z",
+      "publisher": "European Commission",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "بریتانیا رویکرد نوآوری‌محور مبتنی بر تنظیم‌گران بخشی موجود را در سند ۲۹ مارس ۲۰۲۳ ارائه کرد.",
+      "source_id": "kye:source:uk-pro-innovation-approach",
+      "source_url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper",
+      "retrieved_at": "2026-08-31T11:02:05Z",
+      "publisher": "UK Department for Science, Innovation and Technology",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "اعتباردهندگان نمی‌توانند به فهرست آماده دلایل اتکا کنند اگر دلیل اصلی را مشخص و دقیق نشان ندهد.",
+      "source_id": "kye:source:cfpb-circular-2023-03",
+      "source_url": "https://www.govinfo.gov/content/pkg/FR-2024-04-17/html/2024-08003.htm",
+      "retrieved_at": "2026-08-09T01:30:06Z",
+      "publisher": "Consumer Financial Protection Bureau, published in the Federal Register (govinfo)",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "قانون محلی ۱۴۴ نیویورک ممیزی سوگیری ظرف یک سال پیش از استفاده را شرط به‌کارگیری ابزار خودکار استخدامی می‌کند.",
+      "source_id": "kye:source:nyc-local-law-144-aedt",
+      "source_url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+      "retrieved_at": "2026-08-09T01:31:23Z",
+      "publisher": "New York City Department of Consumer and Worker Protection",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "تراکنش پرداخت تنها با رضایت پرداخت‌کننده مجاز تلقی می‌شود.",
+      "source_id": "kye:source:uk-psr-2017-reg-67-consent",
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/752/regulation/67/made",
+      "retrieved_at": "2026-08-09T01:33:09Z",
+      "publisher": "UK Statutory Instruments (legislation.gov.uk, King's Printer version)",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "در تراکنش غیرمجاز، ارائه‌دهنده خدمات پرداخت باید مبلغ را بازگرداند.",
+      "source_id": "kye:source:uk-psr-2017-reg-76-liability",
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/752/regulation/76/made",
+      "retrieved_at": "2026-08-09T01:33:18Z",
+      "publisher": "UK Statutory Instruments (legislation.gov.uk, King's Printer version)",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "نگهداری سوابق پشتیبان کافی برای بازسازی تراکنش الزامی است.",
+      "source_id": "kye:source:uk-mlr-2017-reg-40-reconstruct",
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/40/made",
+      "retrieved_at": "2026-08-09T01:34:26Z",
+      "publisher": "UK Statutory Instruments (legislation.gov.uk, King's Printer version)",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "کنترل‌کننده باید بتواند رعایت اصول را اثبات کند.",
+      "source_id": "kye:source:uk-gdpr-art-5-2-accountability",
+      "source_url": "https://www.legislation.gov.uk/eur/2016/679/article/5",
+      "retrieved_at": "2026-08-09T01:34:03Z",
+      "publisher": "legislation.gov.uk (UK retained EU legislation)",
+      "claim_basis": "cited_literature"
+    },
+    {
+      "claim": "تعهدات شفافیت باید پیش از آغاز پردازش در نظر گرفته شوند.",
+      "source_id": "kye:source:ico-ai-transparency",
+      "source_url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-transparency-in-ai/",
+      "retrieved_at": "2026-08-08T19:00:00Z",
+      "publisher": "Information Commissioner's Office",
       "claim_basis": "cited_literature"
     }
   ],
@@ -55,7 +183,9 @@
   "status": "planned",
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
-    "signature_alg": "EdDSA",
-    "signature": "QvmTUkjyWWeBGyeAo/3KMXAImsvB2SBc1APeKzxfn75/YYKsuUTcNCNhI6cf6iykC3kDqmJGNmsx+CBKAwENDQ=="
+    "signature_alg": "ed25519",
+    "signature": "5Q+TbArY+egfz2MYC3s4Gk/X4anAOK1xFW7NI0usinyuIHKHtCpZ8Ow74rBPM8WXjjD8gq0HO8452rAnkVhCBg==",
+    "sealed_at": "2026-09-03T02:37:36.251Z",
+    "payload_digest": "sha256:d019a69ef75703b0a54b04c3fc3dc9912d2421ce3917ed88645e612b305fb003"
   }
 }

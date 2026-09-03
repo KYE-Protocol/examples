@@ -8,6 +8,7 @@
   "cadence": "monthly",
   "edition": "2026-06",
   "title": "Turncoat agents: the AI insider threat — and why authority, not trust, is the control",
+  "language": "en-GB",
   "tribute_ref": "kye:scientist-tribute:leslie-lamport",
   "topic_id": "kye:research-topic:turncoat-agents-insider-threat",
   "tier": "free",
@@ -22,7 +23,7 @@
   "seal": {
     "jwks_kid": "kye:key:self-audit-fixture-2026-06",
     "signature_alg": "EdDSA",
-    "signature": "wVP4iWmAhh8erM4kAU8KWqc61tIshxdYqqnJ3p9rd7DoEV0ViK6QamJXtYyZhdj4JPaIjHaznyOyAqFOHElaCQ=="
+    "signature": "osikN3M0f1EKXRMtL++7i9RO2zKFOJ1oFjini5LKDK6X4/LleZ7ewXbyKj21Ay+Rxy5nBKIcvXoUpdeYDqHsCw=="
   },
   "citations": [
     {
