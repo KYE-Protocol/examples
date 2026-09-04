@@ -1,0 +1,56 @@
+{
+  "schema_version": "kye.agent.workflow.v1",
+  "workflow_id": "kye:workflow:onboarding-agent",
+  "agent_ref": "kye:agent:onboarding-agent",
+  "version": "1.0.0",
+  "description": "Illustrative kye.agent.workflow.v1 fixture for the KYE Onboarding Agent™ (§22): guide a new tenant through entity registration, authority-graph bootstrap, Operating Model declaration and first pilot SKU activation. Every hop names its principal, purpose scope, approval mode and evidence obligation; engine calls go through the engine API; the human checkpoint is an explicit signal step; the outcome is sealed by the Evidence Engine, never by the workflow.",
+  "replay_class": "deterministic",
+  "execution_backend": "cloudflare-workflows",
+  "steps": [
+    {
+      "step_id": "register-tenant-entity",
+      "kind": "engine_call",
+      "engine": "entity",
+      "principal": "kye:agent:onboarding-agent",
+      "purpose_scope": "kye:purpose:onboarding:register-tenant",
+      "approval_mode": "none",
+      "evidence_obligation": ["kye.purpose.request.v1", "kye.purpose.admissibility.v1", "kye.evidence.decision_map.v1"],
+      "timeout_ms": 5000,
+      "retry_policy": { "max_attempts": 3, "backoff": "exponential-with-jitter" }
+    },
+    {
+      "step_id": "bootstrap-authority-graph",
+      "kind": "engine_call",
+      "engine": "authority",
+      "principal": "kye:agent:onboarding-agent",
+      "purpose_scope": "kye:purpose:onboarding:bootstrap-authority",
+      "approval_mode": "single_approver",
+      "evidence_obligation": ["kye.purpose.admissibility.v1", "kye.evidence.decision_map.v1", "kye.replay.context_seal.v1"],
+      "timeout_ms": 5000,
+      "retry_policy": { "max_attempts": 3, "backoff": "exponential-with-jitter" }
+    },
+    {
+      "step_id": "tenant-approves-operating-model",
+      "kind": "human_checkpoint",
+      "principal": "kye:prin:tenant:operating-model-owner",
+      "purpose_scope": "kye:purpose:onboarding:declare-operating-model",
+      "approval_mode": "single_approver",
+      "evidence_obligation": ["kye.evidence.tool_call.v1"],
+      "timeout_ms": 604800000,
+      "retry_policy": { "max_attempts": 1, "backoff": "none" }
+    },
+    {
+      "step_id": "activate-first-sku",
+      "kind": "activity",
+      "principal": "kye:agent:onboarding-agent",
+      "purpose_scope": "kye:purpose:onboarding:activate-sku",
+      "approval_mode": "auto",
+      "evidence_obligation": ["kye.evidence.tool_call.v1", "kye.evidence.pack.v1"],
+      "timeout_ms": 10000,
+      "retry_policy": { "max_attempts": 2, "backoff": "fixed" },
+      "idempotency_key": "tenant_id:sku_id"
+    }
+  ],
+  "finality": { "stage": "finality", "sealed_by": "evidence-engine" },
+  "human_checkpoints": ["tenant-approves-operating-model"]
+}
