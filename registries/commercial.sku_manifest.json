@@ -1,17 +1,42 @@
 {
-  "id": "kye:sku-manifest:current",
-  "tenant_id": "kye:tenant:platform",
-  "manifest_version": "2026.05.24",
-  "pilot_skus": [],
-  "annual_skus": [],
-  "sector_packs": [],
-  "version": 1,
-  "created_at": "2026-05-24T12:00:00Z",
-  "signatures": [
+  "$schema": "https://kyeprotocol.com/schemas/kye.commercial.sku_manifest.v1.json",
+  "title": "KYE commercial SKU manifest v1",
+  "version": "1.0.0",
+  "adopted_at": "2026-05-15",
+  "description": "Illustrative envelope for the KYE Protocol commercial SKU catalogue: one pilot row and one annual row in the real shape, so the example demonstrates the contract rather than an empty container. The live catalogue is the private registry the contract governs; prices here are the published band only, per the closed-registration disclosure policy below.",
+  "currency": "GBP",
+  "publication_rule": {
+    "policy": "closed-registration",
+    "policy_adopted_at": "2026-05-15",
+    "rationale": "KYE is a closed-registration product for regulated enterprises. The commercial menu is shared with qualified applicants after a pilot-apply submission rather than published as a price list."
+  },
+  "pilot_skus": [
     {
-      "alg": "EdDSA",
-      "kid": "kye:key:acme-health:active",
-      "sig": "stub-ed25519-signature-placeholder"
+      "sku_id": "KYE-DISCOVERY-001",
+      "name": "KYE Discovery Workshop\u2122",
+      "announced_at": "2026-05-15",
+      "duration_days": 7,
+      "price_band": "contact-for-pricing",
+      "published_price_gbp": null,
+      "pricing_disclosure_policy": "contact-for-pricing",
+      "closed_registration": true,
+      "period": "engagement",
+      "buyer_segment": ["grc-leaders"],
+      "summary": "Defines the use case, authority problem, pilot scope, and commercial path."
     }
+  ],
+  "annual_skus": [
+    {
+      "sku_id": "KYE-STARTER-ANNUAL-001",
+      "name": "KYE Starter",
+      "price_from": 75000,
+      "period": "year",
+      "buyer_segment": ["post-pilot-conversion"],
+      "summary": "First production use: one tenant, two governed workflows."
+    }
+  ],
+  "constitution_refs": [
+    "constitution/26-COMMERCIAL.md",
+    "constitution/27-COMMERCIAL-LIFECYCLE.md"
   ]
 }

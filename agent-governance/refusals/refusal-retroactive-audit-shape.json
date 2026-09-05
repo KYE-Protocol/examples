@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-devplane-pep",
+  "parent_task": "3349a161-fe89-5bf3-ac01-282f8b203f42",
+  "refused_at": "2026-09-03T00:00:00Z",
+  "chapter_ref": "§0",
+  "reason_summary": "Refused to record three dev-plane breaches (unapproved two_person merge, unevidenced push, ungoverned agent-terminate) as kye.agent.retroactive_audit.v1: that schema is the OUTPUT of the transcript scanner scripts/agent-governance/retroactive-audit.mjs (additionalProperties:false; taxonomy = paths_outside_scope / mcp_calls_outside_allow_list / missing_completion_envelope) and cannot express an irreversible two_person act by one principal. Encoding it there fabricates a count or buries substance in notes[].",
+  "remediation_hint": "Recorded instead in the dev-plane action ledger (kye.devplane_action_ledger.v1 breaches[]; shape: public/examples/governance/devplane-action-ledger.example.json): action_class, action_ref, declared approval_mode/reversibility/consequence_tier, missing[] from kye:dictionary:devplane-governance-gaps, retro_approved:false. Full rationale lives in the reconciliation entry for the dev-plane PEPs."
+}

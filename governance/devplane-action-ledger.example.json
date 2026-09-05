@@ -1,0 +1,54 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.devplane_action_ledger.v1.json",
+  "schema": "kye.devplane_action_ledger.v1",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:devplane-action-ledger-example",
+  "adopted_at": "2026-09-03",
+  "constitution_ref": "constitution/00-INDEX.md §0.37 + §0.3",
+  "entity_class": "ledger",
+  "description": "Illustrative instance showing BOTH shapes the ledger carries: a merge that received its declared two-person quorum, and a merge that did not. The approved row is what a governed landing looks like — two DISTINCT approving principals and a sealed evidence pack id. The breach row cannot claim approval: retro_approved is pinned false by the schema, so an irreversible action performed without its approver can only be recorded, never retro-blessed.",
+  "enforcement_boundary": {
+    "enforced_from_date": "2026-09-03",
+    "reason": "Illustrative boundary. Commits landing before the enforcement point existed are honestly out of scope rather than silently excluded.",
+    "entity_class": "ledger"
+  },
+  "approvals": [
+    {
+      "approval_id": "kye:devplane-approval:example-0001",
+      "action_class": "kye:action-class:merge",
+      "action_ref": "0000000000000000000000000000000000000001",
+      "approval_mode": "two_person",
+      "approvers": [
+        "kye:ent:kye-self:person:approver-a",
+        "kye:ent:kye-self:person:approver-b"
+      ],
+      "decided_at": "2026-09-03T10:00:00.000Z",
+      "evidence_pack_id": "kye:evidence-pack:0000000000000000example01",
+      "decision_id": "kye:decision:0000000000000000example01",
+      "entity_class": "devplane-approval"
+    }
+  ],
+  "breaches": [
+    {
+      "breach_id": "kye:devplane-breach:example-0001",
+      "action_class": "kye:action-class:merge",
+      "action_ref": "0000000000000000000000000000000000000002",
+      "occurred_at": "2026-09-03",
+      "actor": "kye:ent:kye-self:agent:example-agent",
+      "declared_approval_mode": "two_person",
+      "declared_reversibility": "irreversible",
+      "declared_consequence_tier": "high",
+      "missing": [
+        "approver_quorum",
+        "evidence_pack",
+        "t0_decision"
+      ],
+      "retro_approved": false,
+      "remediated_by": [
+        "scripts/gates/devplane-t0-enforced.mjs"
+      ],
+      "note": "Illustrative breach row. A landing recorded here is a permanent admission, not a variance and not a waiver: the gate stops failing on it because it is DECLARED, never because it was excused.",
+      "entity_class": "devplane-breach"
+    }
+  ]
+}

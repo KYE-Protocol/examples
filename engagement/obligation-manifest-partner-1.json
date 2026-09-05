@@ -1,0 +1,39 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.engagement.obligation_manifest.v1.json",
+  "$comment": "Illustrative partner-engagement obligation manifest — the CONTAINER shape. The envelope carries engagement metadata; every element of obligations[] is a kye.engagement.obligation.v1 row, referenced (never redefined) by the container schema.",
+  "engagement_type": "partner",
+  "specialization": "system-integrator",
+  "tier": "associate",
+  "version": "1.0.0",
+  "adopted_at": "2026-09-03",
+  "constitution_ref": "constitution/49-UNIVERSAL-ENGAGEMENT-RAIL.md",
+  "review_cadence_days": 365,
+  "sku_id": "KYE-PARTNER-SI-T1-001",
+  "disclosure_class": "contract-not-internals",
+  "evidence_artefacts": [
+    "kye.evidence.pack.v1",
+    "kye.compliance.attestation.v1"
+  ],
+  "obligations": [
+    {
+      "schema": "kye.engagement.obligation.v1",
+      "obligation_id": "kye:obligation:partner:nda",
+      "engagement_type": "partner",
+      "clause": "Partner shall execute and uphold the KYE Mutual NDA covering all non-public materials, customer data, roadmap disclosures, and pre-release SDK access shared during the engagement.",
+      "verifiable_by": "document-upload",
+      "frequency": "once",
+      "severity": "critical",
+      "regulatory_anchor": "Common-law confidentiality"
+    },
+    {
+      "schema": "kye.engagement.obligation.v1",
+      "obligation_id": "kye:obligation:partner:annual-recertification",
+      "engagement_type": "partner",
+      "clause": "Partner shall re-certify each named delivery engineer against the current KYE Conformance Pack release and submit the passing conformance run as evidence once every twelve months.",
+      "verifiable_by": "api-evidence",
+      "frequency": "annually",
+      "severity": "major",
+      "regulatory_anchor": "constitution/10-PARTNER.md certification currency"
+    }
+  ]
+}
