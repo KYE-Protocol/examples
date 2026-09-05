@@ -1,0 +1,29 @@
+{
+  "schema": "kye.engagement.application.v1",
+  "application_id": "b04a7f61-2c93-4e58-a1d7-6f0b83e29c15",
+  "engagement_type": "pilot",
+  "applicant": {
+    "org_name": "Acme Corporation",
+    "contact_email": "operations@acme.example",
+    "contact_name": "Ifeoma Adeyemi",
+    "jurisdiction": "GB",
+    "website": "https://acme.example"
+  },
+  "requested_sku": "KYE-DISCOVERY-001",
+  "submitted_at": "2026-09-02T15:45:00Z",
+  "obligations_acknowledged": [
+    "kye:obligation:pilot:scoped-data",
+    "kye:obligation:pilot:named-owner"
+  ],
+  "introduction": {
+    "introducer_of_record": "self-introduced",
+    "assertion_basis": "none-asserted",
+    "reliance_posture": "no-reliance",
+    "introduced_at": "2026-09-02T15:45:00Z",
+    "notes": "Arrived directly from the public site. Recorded explicitly so 'nobody vouched' stays distinguishable from 'nobody recorded who vouched'."
+  },
+  "notes": "Evaluating governed authority for adviser-facing AI drafting.",
+  "source": "search",
+  "consent_marketing": false,
+  "consent_followup": true
+}

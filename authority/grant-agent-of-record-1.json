@@ -1,0 +1,41 @@
+{
+  "id": "kye:authority:acme-bank.payments-governance.agent-clio.of-record.2026q3",
+  "version": 1,
+  "principal": "kye:ent:acme-bank",
+  "grantee": "kye:agent:payment-authorization-authority-agent",
+  "scope": {
+    "actions": ["payment.authorization.release", "payment.authorization.refuse"],
+    "resources": ["kye:res:acme-bank:payments:corporate-treasury"],
+    "constraints": {
+      "max_value_per_action_gbp": 250000
+    }
+  },
+  "agent_of_record": {
+    "designation_state": "of-record",
+    "accountable_owner": "kye:ent:acme-bank:officer:head-of-payments-governance",
+    "of_record_for": ["payment.authorization.release", "payment.authorization.refuse"],
+    "designated_at": "2026-07-01T00:00:00Z"
+  },
+  "jurisdiction": ["GB"],
+  "not_before": "2026-07-01T00:00:00Z",
+  "not_after": "2026-10-01T00:00:00Z",
+  "issued_at": "2026-06-24T10:05:00Z",
+  "issued_by": "kye:ent:acme-bank:officer:head-of-payments-governance",
+  "signature": "sig:cose:MEUCIQCw8kR2mZ4tL7xN0aB3vJ9pQ6sD1yH5cF8gE2nT4uK7iAIgX3bV6oP1rM9dS0wC5hL8jY2fN7aQ4eR1tG6uZ3kD9mB",
+  "revocation_chain": [
+    {
+      "grant_id": "kye:authority:acme-bank.board.payments-governance.2025",
+      "issuer": "kye:ent:acme-bank:board",
+      "status": "active",
+      "revoked_at": null
+    },
+    {
+      "grant_id": "kye:authority:acme-bank.root.board.charter-2018",
+      "issuer": "kye:ent:acme-bank",
+      "status": "active",
+      "revoked_at": null
+    }
+  ],
+  "revoked_at": null,
+  "revoked_reason": null
+}

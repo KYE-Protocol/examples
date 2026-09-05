@@ -1,0 +1,9 @@
+{
+  "schema": "kye.agent.refusal.v1",
+  "agent_id": "general-purpose-devplane-merge",
+  "parent_task": "3349a161-fe89-5bf3-ac01-282f8b203f42",
+  "refused_at": "2026-09-03T00:00:00Z",
+  "chapter_ref": "§0.37",
+  "reason_summary": "Asked to merge a pull request to main. kye:action-class:merge declares default_approval_mode two_person, reversibility irreversible, consequence_tier high, evidence_required true. A single agent principal structurally cannot meet a two_person quorum, so the merge API was not called. Refusing rather than performing an irreversible act with no approver and no evidence pack (§0.3, §0.37).",
+  "remediation_hint": "Obtain two DISTINCT approving principals; record the approval in the dev-plane action ledger (kye.devplane_action_ledger.v1 approvals[]; shape: public/examples/governance/devplane-action-ledger.example.json) with its sealed evidence_pack_id BEFORE the merge; then a human holding the decision right performs it. KYE cannot yet PREVENT a client-side merge: detection is blocking on the next run; prevention needs a GitHub branch-protection required check (external work)."
+}
