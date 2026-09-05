@@ -5,7 +5,7 @@
   "entity_ref": "kye:engagement:obp-open-banking-connector",
   "coordinate_ref": "kye:coordinate:private:engagement:active",
   "formula_version": "kye:weight-formula:v1",
-  "value": "17/4",
+  "value": "11/4",
   "derivation": [
     {
       "event_ref": "kye:decision:3cdd224c5eb00f402b81bace",
@@ -13,7 +13,7 @@
       "base": "1/1",
       "evidence_grade": "sealed",
       "freshness_window": "within-90d-full",
-      "contribution": "3/2"
+      "contribution": "1/1"
     },
     {
       "event_ref": "kye:tool-call-pin:obp-sandbox-probe",
@@ -21,7 +21,7 @@
       "base": "1/1",
       "evidence_grade": "replay-verified",
       "freshness_window": "within-90d-full",
-      "contribution": "2/1"
+      "contribution": "3/2"
     },
     {
       "event_ref": "kye:compliance-attestation:engagement-rail-canonical",
@@ -29,7 +29,7 @@
       "base": "1/2",
       "evidence_grade": "system-evidenced",
       "freshness_window": "within-90d-full",
-      "contribution": "3/4"
+      "contribution": "1/4"
     }
   ],
   "computed_from": {
