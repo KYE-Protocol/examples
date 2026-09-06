@@ -3,6 +3,7 @@
   "tenant_id": "kye:tenant:acme-health",
   "delegator_entity_id": "kye:human:caseworker-123",
   "delegatee_entity_id": "kye:agent:caseworker-bot-01",
+  "direction": "outward",
   "purpose_id": "kye:purpose:customer-correspondence",
   "capability_id": "kye:capability:send-customer-email",
   "not_before": "2026-05-24T12:00:00Z",
