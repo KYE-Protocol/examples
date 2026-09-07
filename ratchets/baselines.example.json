@@ -14,6 +14,7 @@
   "retired_baselines": [
     {
       "key": "example_retired_ceiling",
+      "entity_class": "retired-baseline",
       "retired_from_count": 3,
       "authorised_by": "kye:person:platform-ops",
       "reason": "Illustrative retirement — the ratchet reached its target (debt genuinely paid) so its key was removed rather than kept at 0.",

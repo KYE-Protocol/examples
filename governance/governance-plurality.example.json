@@ -1,0 +1,75 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.governance_plurality.v1.json",
+  "schema": "kye.governance_plurality.v1",
+  "registry_id": "kye:registry:governance-plurality",
+  "adopted_at": "2026-09-04",
+  "constitution_ref": "constitution/00-INDEX.md §0.17",
+  "description": "Illustrative minimal governance-plurality registry — one axis proven by a repeated field on the governed thing, one proven by a collection of records each referencing the one thing, and one field that must stay singular. The canonical registry carries the full axis set.",
+  "provenance": "source: illustrative example, hand-authored.",
+  "dictionary": "specs/dictionaries/plurality-forms.json",
+  "measurement": {
+    "command": "node scripts/gates/governance-plurality-canonical.mjs --list",
+    "measured_at": "2026-09-04",
+    "schema_corpus": 769,
+    "note": "Every schema parsed in full and walked to any depth, so a nested repeated field is not mistaken for a missing one."
+  },
+  "axes": [
+    {
+      "plurality_id": "jurisdiction",
+      "name": "Multi-jurisdiction",
+      "question": "Can one evidence record hold every jurisdiction whose law applied to the decision at the same moment?",
+      "plurality_form": "array-field",
+      "proof": {
+        "schema": "specs/schemas/kye.evidence.pack.v1.json",
+        "property_path": ".jurisdictions"
+      }
+    },
+    {
+      "plurality_id": "auditor",
+      "name": "Multi-auditor",
+      "question": "Can several auditors independently stand on one sealed record, each reaching their own conclusion?",
+      "plurality_form": "many-side-collection",
+      "proof": {
+        "record_schema": "specs/schemas/kye.proof_bundle_verification_result.v1.json",
+        "attaches_via": "bundle_id",
+        "attaches_to": "the bundle that carries the sealed record"
+      }
+    },
+    {
+      "plurality_id": "tenant",
+      "name": "Tenant identity — singular by design",
+      "question": "Should a tenant-scoped record carry several tenant ids at once? No, and the reason is recorded here.",
+      "plurality_form": "singular-by-design",
+      "proof": {
+        "field": "tenant_id",
+        "reason": "Isolation is a predicate over exactly one tenant. A predicate over a set is not an isolation boundary, so making this field repeated would turn a tenancy control into an unaudited cross-tenant read."
+      }
+    }
+  ],
+  "declared_arity_caps": [
+    {
+      "schema": "specs/schemas/kye.execution_layers.v1.json",
+      "property_path": ".layers",
+      "max_items": 10,
+      "cap_class": "closed-canonical-set",
+      "reason": "The set is closed by the canon at ten members, so the cap encodes an enumeration rather than a limit on how many may apply at once."
+    }
+  ],
+  "evidence_grade_ladder": {
+    "dictionary_ref": "specs/dictionaries/plurality-forms.json",
+    "grades": [
+      "self-asserted",
+      "system-evidenced",
+      "sealed",
+      "replay-verified",
+      "externally-verifiable"
+    ],
+    "bound_schemas": [
+      {
+        "schema": "specs/schemas/kye.earned_weight.v1.json",
+        "property_path": ".derivation.items.evidence_grade"
+      }
+    ]
+  },
+  "entity_class": "registry"
+}

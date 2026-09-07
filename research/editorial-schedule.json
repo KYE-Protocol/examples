@@ -1,0 +1,52 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.research_schedule.v1.json",
+  "schema": "kye.research_schedule.v1",
+  "generated_by": "scripts/build-research-schedule.mjs",
+  "registry_id": "kye:registry:research-editorial-schedule",
+  "display_name": "KYE Governed Research Editorial Schedule™ (derived)",
+  "constitution_ref": "constitution/62-GOVERNED-RESEARCH-RAIL.md",
+  "description": "EXAMPLE instance of kye.research_schedule.v1 — two published editions of the §62 schedule, in the exact shape scripts/build-research-schedule.mjs emits. Planned-but-unpublished topics are commercial intent and are not mirrored here.",
+  "source_of_truth": "kye:registry:research-topics",
+  "cadence_source": "kye:dictionary:research-cadence",
+  "counts": {
+    "total": 2,
+    "published": 2,
+    "planned": 0,
+    "free": 2,
+    "paid": 0
+  },
+  "editions": [
+    {
+      "topic_id": "kye:research-topic:kye-authority-pulse-weekly",
+      "title": "KYE Authority Pulse — what changed in the canon this week",
+      "series": "roadmap_to_ai_governance",
+      "format": "trends",
+      "sector": "cross-sector",
+      "audience": "general",
+      "cadence": "weekly",
+      "tier": "free",
+      "status": "published",
+      "lifecycle_stage": "published",
+      "edition_anchor": "2026-06-22",
+      "next_edition_date": "2026-06-29",
+      "last_published_at": "2026-06-22T08:00:00Z",
+      "report_path": "/library/kye-authority-pulse-2026-w26.html"
+    },
+    {
+      "topic_id": "kye:research-topic:governed-proposal-serpro-partnership",
+      "title": "KYE Governed Proposal Authority™: SERPRO Governed Data-Query Partnership",
+      "series": "roadmap_to_ai_governance",
+      "format": "proposal",
+      "sector": "financial-services",
+      "audience": "partner",
+      "cadence": "weekly",
+      "tier": "free",
+      "status": "published",
+      "lifecycle_stage": "published",
+      "edition_anchor": "2026-06-27",
+      "next_edition_date": "2026-07-04",
+      "last_published_at": "2026-06-27T09:00:00Z",
+      "report_path": "/library/governed-proposal-serpro-partnership.html"
+    }
+  ]
+}

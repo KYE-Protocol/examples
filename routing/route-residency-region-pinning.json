@@ -1,0 +1,47 @@
+{
+  "schema": "kye.route.v1",
+  "route_id": "kye:route:residency-region-pinning",
+  "entity_class": "route",
+  "subject": "which residency region a tenant's request may be decided in",
+  "routing_class": "authority",
+  "arity": "select-one",
+  "strategy_class": "static",
+  "candidate_source": {
+    "kind": "registry",
+    "ref": "specs/<residency-manifest>"
+  },
+  "fallback": {
+    "behaviour": "fail-closed",
+    "reason": "Every unresolved case returns allow:false with a stable reason code — no-policy-configured, unknown-colo, tenant-not-pinned, current-region-unknown, cross-region-egress."
+  },
+  "implementation": [
+    "runtime/<residency-router>/jurisdiction-policy",
+    "runtime/<residency-router>/region-pinning"
+  ],
+  "verdict_path": true,
+  "locality": "co-located-with-decision",
+  "dimensions": [
+    {
+      "axis": "tenant",
+      "enumerated_by": "specs/<entity-id-classes>",
+      "cardinality": "single",
+      "crossing": "forbidden",
+      "reason": "§0.11 zero contamination: the pin is resolved for ONE trust domain and anything else is refused; a residency verdict spanning tenants would leak one tenant's policy into another's decision."
+    },
+    {
+      "axis": "region",
+      "enumerated_by": "specs/<residency-manifest>",
+      "cardinality": "single",
+      "crossing": "forbidden",
+      "reason": "Live cross-region routing is never permitted: cross-region-egress is a refusal reason, and a signed transfer clause covers batch export only, never live routing."
+    }
+  ],
+  "evidence": {
+    "emits": [
+      "kye.purpose.admissibility.v1",
+      "kye.compliance.attestation.v1"
+    ],
+    "note": "Both envelopes are built by pure constructors with the timestamp injected, so the selection stays deterministic and replay-proof."
+  },
+  "note": "The worked AUTHORITY route: static strategy, fail-closed fallback, co-located with the decision, evidence-emitting. Implementation and candidate_source are shown in ILLUSTRATIVE form — this example is OSS-track (§33) and a public artefact does not enumerate IP-track runtime paths. The real paths live on the route's row in the private route registry, which is where an enforcer resolves them against disk. `dimensions.enumerated_by` is likewise shown in illustrative form; the private row binds each axis to the registry that enumerates it."
+}

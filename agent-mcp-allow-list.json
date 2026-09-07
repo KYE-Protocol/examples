@@ -1,6 +1,6 @@
 {
   "schema": "kye.agent.mcp_allow_list.v1",
-  "manifest_id": "payment-release",
+  "manifest_id": "kye:manifest:agent-mcp-allow-list-example",
   "version": "1.0",
   "generated_at": "2026-08-07T09:15:00Z",
   "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md",

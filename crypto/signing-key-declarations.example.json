@@ -1,0 +1,32 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.signing_key_declaration.v1.json",
+  "schema": "kye.signing_key_declaration.v1",
+  "registry_id": "kye:registry:signing-key-declarations",
+  "adopted_at": "2026-09-05",
+  "constitution_ref": "constitution/00-INDEX.md §0.47 · §0.49 · §0.51",
+  "provenance": "source: declared. Custody and purpose are decisions about a key, not properties of its public bytes.",
+  "description": "Illustrative signing-key declaration showing one local-custody key and one remote-custody key.",
+  "declaration_rule": "Every kid published in the JWKS has a row here, and every row names a published kid; the projection fails closed in both directions.",
+  "keys": [
+    {
+      "key_id": "kye:key:example-local-2026-09",
+      "entity_class": "signing-key-declaration",
+      "key_class": "production",
+      "custody": "local-enclave",
+      "lifecycle_state": "active",
+      "attributed": true,
+      "private_half_ref": "private/_custody/kye_key_example-local-2026-09.jwk",
+      "purpose": "Seals evidence on the hard-offline emit stage; material never leaves the host that signs."
+    },
+    {
+      "key_id": "kye:key:example-remote-2026-09",
+      "entity_class": "signing-key-declaration",
+      "key_class": "production",
+      "custody": "external-secret",
+      "lifecycle_state": "active",
+      "attributed": true,
+      "purpose": "Signs from a deploy-injected secret.",
+      "custody_note": "Remote by declaration: the material is injected at deploy time, so it does not exist at t=0 and cannot satisfy a hard-offline seal."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "schema": "kye.ingest_submission.v1",
   "registry_id": "kye:registry:ingest-submissions",
   "display_name": "KYE Ingest Submissions — shape example",
-  "description": "An ILLUSTRATIVE instance of kye.ingest_submission.v1, showing the four states a submission moves through and what each one is allowed to claim. The operational queue is private; this example publishes the SHAPE so it is machine-readable (§43) without exposing submitter addresses or refusal reasons.",
+  "description": "An ILLUSTRATIVE instance of kye.ingest_submission.v1, showing the five states a submission moves through and what each one is allowed to claim, across the three doors (console, mailbox, governed session). The operational queue is private; this example publishes the SHAPE so it is machine-readable (§43) without exposing submitter addresses or refusal reasons.",
   "sender_policy": {
     "rule": "Accepted only from an authenticated owner: the Clerk JWT with role=owner in the console, or a DMARC-passing From address on the owner allow-list by email.",
     "rationale": "An intake address reachable by anyone is an open write-path toward a public citation unless the sender is actually verified.",
@@ -38,6 +38,25 @@
       "received_at": "2026-08-09T09:10:00Z",
       "refusal_reason": "HTTP 404 — the URL did not answer. A link that does not resolve is not a source, and the refusal is kept so the same one is not resubmitted next month.",
       "notes": "Refusals are retained deliberately. A deleted refusal is an invitation to try the same bad source again, having forgotten why it failed."
+    },
+    {
+      "submission_id": "kye:ingest:url-0000000000000004",
+      "channel": "session-message",
+      "state": "assessed",
+      "submitted_by": "kye:identity:owner:example-owner",
+      "url": "https://standards.acme.example/spec/example-protocol",
+      "sent_at": "2026-09-03",
+      "received_at": "2026-09-06T10:00:00Z",
+      "resolved_source_id": "kye:source:example-assessed-source",
+      "assessment": {
+        "verdict": "validates",
+        "rationale": "Confirms the declared-contract posture the estate already holds; nothing is built from it.",
+        "basis": "excerpt",
+        "assessed_by": "https://claude.ai/code/session_example",
+        "on_behalf_of": "kye:identity:owner:example-owner",
+        "assessed_at": "2026-09-06T10:05:00Z"
+      },
+      "notes": "A governed session is an intake door like the other two: it records the submission, drives the one acquire path, and writes the verdict on the row at the moment it is formed — never only in the conversation."
     }
   ]
 }
