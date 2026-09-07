@@ -2,7 +2,7 @@
   "$schema": "https://kyeprotocol.com/schemas/kye.commercial.sku_manifest.v1.json",
   "title": "KYE commercial SKU manifest v1",
   "version": "1.0.0",
-  "adopted_at": "2026-05-15",
+  "adopted_at": "2026-05-24",
   "description": "Illustrative envelope for the KYE Protocol commercial SKU catalogue: one pilot row and one annual row in the real shape, so the example demonstrates the contract rather than an empty container. The live catalogue is the private registry the contract governs; prices here are the published band only, per the closed-registration disclosure policy below.",
   "currency": "GBP",
   "publication_rule": {
@@ -13,7 +13,7 @@
   "pilot_skus": [
     {
       "sku_id": "KYE-DISCOVERY-001",
-      "name": "KYE Discovery Workshop\u2122",
+      "name": "KYE Discovery Workshop™",
       "announced_at": "2026-05-15",
       "duration_days": 7,
       "price_band": "contact-for-pricing",
@@ -21,7 +21,9 @@
       "pricing_disclosure_policy": "contact-for-pricing",
       "closed_registration": true,
       "period": "engagement",
-      "buyer_segment": ["grc-leaders"],
+      "buyer_segment": [
+        "grc-leaders"
+      ],
       "summary": "Defines the use case, authority problem, pilot scope, and commercial path."
     }
   ],
@@ -31,12 +33,27 @@
       "name": "KYE Starter",
       "price_from": 75000,
       "period": "year",
-      "buyer_segment": ["post-pilot-conversion"],
+      "buyer_segment": [
+        "post-pilot-conversion"
+      ],
       "summary": "First production use: one tenant, two governed workflows."
     }
   ],
   "constitution_refs": [
     "constitution/26-COMMERCIAL.md",
     "constitution/27-COMMERCIAL-LIFECYCLE.md"
+  ],
+  "registry_id": "kye:registry:commercial-sku-manifest-example",
+  "id": "kye:sku-manifest:current",
+  "tenant_id": "kye:tenant:platform",
+  "manifest_version": "2026.05.24",
+  "sector_packs": [],
+  "created_at": "2026-05-24T12:00:00Z",
+  "signatures": [
+    {
+      "alg": "EdDSA",
+      "kid": "kye:key:acme-health:active",
+      "sig": "stub-ed25519-signature-placeholder"
+    }
   ]
 }
