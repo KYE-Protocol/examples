@@ -1,0 +1,39 @@
+{
+  "schema": "kye.agent.exchange.v1",
+  "exchange_id": "kye:agent-exchange:dsar-evidence-to-audit-pilot-2026-09-07-001",
+  "entity_class": "agent-exchange",
+  "tenant_id": "kye:tenant:kye-self",
+  "action_class": "kye:action-class:send-message",
+  "sender": {
+    "agent_entity_id": "kye:agent:dsar-evidence-agent",
+    "principal_entity_id": "kye:ent:kye-self:business:kye-protocol",
+    "delegation_chain_ref": "kye:delegation-chain:kye-self:dsar-evidence-agent:2026-09"
+  },
+  "recipient": {
+    "agent_entity_id": "kye:agent:audit-pilot-agent",
+    "principal_entity_id": "kye:ent:kye-self:business:kye-protocol",
+    "delegation_chain_ref": "kye:delegation-chain:kye-self:audit-pilot-agent:2026-09",
+    "boundary": "same-tenant"
+  },
+  "payload": {
+    "kind": "document",
+    "content_hash": "sha256:3f1a0c9e4b7d2a6f8e5c1b0d9a7f3e2c4b6d8a0f1e3c5b7d9a2f4e6c8b0d1a3f",
+    "sensitivity": "confidential",
+    "resource_ref": "kye:resource:kye-self:dsar-evidence-pack-2026-09-07-0412",
+    "size_bytes": 48211
+  },
+  "purpose_class_id": "kye:purpose-class:self-governance",
+  "approval_mode": "delegated",
+  "handoff_trace_ref": "kye:handoff-trace:kye-self:dsar-2026-09-07-0412",
+  "handoff_ref": "kye:handoff:kye-self:dsar-2026-09-07-0412:003",
+  "decision_id": "kye:decision:0f3c9a1b7e2d4c6a8b0f1e3d",
+  "evidence_pack_id": "kye:evidence-pack:5a7c2e9b1d3f4a6c8e0b2d4f",
+  "transport": {
+    "kind": "mcp",
+    "tool_name": "mcp__kye_control_plane__agent_exchange",
+    "adapter_ref": "kye:harness-adapter:claude-code-generic"
+  },
+  "status": "dispatched",
+  "created_at": "2026-09-07T04:12:00Z",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md §17"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "kye.agent.exchange.v1",
+  "exchange_id": "kye:agent-exchange:onboarding-to-kyc-refresh-2026-09-07-002",
+  "entity_class": "agent-exchange",
+  "tenant_id": "kye:tenant:kye-self",
+  "action_class": "kye:action-class:agent-handoff",
+  "sender": {
+    "agent_entity_id": "kye:agent:onboarding-agent",
+    "principal_entity_id": "kye:ent:kye-self:business:kye-protocol",
+    "delegation_chain_ref": "kye:delegation-chain:kye-self:onboarding-agent:2026-09"
+  },
+  "recipient": {
+    "agent_entity_id": "kye:agent:kyc-refresh-agent",
+    "principal_entity_id": "kye:ent:kye-self:business:kye-protocol",
+    "delegation_chain_ref": "kye:delegation-chain:kye-self:onboarding-agent:2026-09:kyc-refresh-agent",
+    "boundary": "same-tenant"
+  },
+  "payload": {
+    "kind": "request",
+    "content_hash": "sha256:9b2e4d6f8a0c1e3b5d7f9a1c3e5b7d9f0a2c4e6b8d0f1a3c5e7b9d1f3a5c7e9b",
+    "sensitivity": "restricted",
+    "size_bytes": 2310
+  },
+  "purpose_class_id": "kye:purpose-class:onboarding",
+  "approval_mode": "single_approver",
+  "handoff_trace_ref": "kye:handoff-trace:kye-self:onboarding-2026-09-07-0455",
+  "handoff_ref": "kye:handoff:kye-self:onboarding-2026-09-07-0455:002",
+  "decision_id": "kye:decision:7d1e3f5a9c2b4d6e8f0a1c3e",
+  "evidence_pack_id": "kye:evidence-pack:2c4e6a8b0d1f3a5c7e9b1d3f",
+  "transport": {
+    "kind": "a2a",
+    "adapter_ref": "kye:harness-adapter:claude-code-generic"
+  },
+  "status": "received",
+  "created_at": "2026-09-07T04:55:10Z",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md §17"
+}

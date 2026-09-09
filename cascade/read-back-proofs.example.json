@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.assurance.read_back_proofs.v1.json",
+  "schema_version": "1.0",
+  "registry_id": "kye:registry:read-back-proofs",
+  "constitution_ref": "constitution/00-INDEX.md §0.60 · §0.62 · §0.44",
+  "generated_by": "scripts/prove-read-backs.mjs",
+  "description": "Illustrative one-row slice of the §0.60 direction-3 proof ledger: a public derived artefact that was deleted inside a governed, isolated worktree, rebuilt by its attributed writer, and came back byte-identical. The live ledger is internal architecture and stays private; this fixture pins the SHAPE (writer fingerprint binding, sha256 of the reproduced bytes, the one admissible verdict).",
+  "count": 1,
+  "proofs": [
+    {
+      "path": "public/app/functions/api/_lib/derived-rule-packs.js",
+      "writer": "scripts/build-derived-rule-packs.mjs",
+      "writer_fingerprint": "sha256:8982f04935f00cc2e405f4b3e0486b6e9dc10d726854159ae2ad439c3392db49",
+      "sha256": "sha256:d6621347e4aa7904a766ab85956e62c413e6ed0f70ddba2a86b0081a6a3def3e",
+      "method": "remove-and-rebuild-compare",
+      "rebuilt_by": "scripts/build-derived-rule-packs.mjs",
+      "verdict": "byte-identical",
+      "observed_at": "2026-09-08",
+      "detail": "Deleted the artefact and ran scripts/build-derived-rule-packs.mjs; it came back byte-identical (sha256 d6621347e4aa7904a766ab85956e62c413e6ed0f70ddba2a86b0081a6a3def3e). The read-back is a compare, not accumulated state."
+    }
+  ]
+}

@@ -82,6 +82,20 @@
       "summary": "Send to a recipient outside the tenant trust domain — irreversible once delivered; human approval before finality, escalated further for financial or legal content.",
       "approval_mode": "single_approver",
       "evidence_required": true
+    },
+    {
+      "action": "HANDOFF_TO_AGENT",
+      "action_class": "kye:action-class:agent-handoff",
+      "summary": "Hand work, a request or a document to ANOTHER AGENT as a kye.agent.exchange.v1 record. Owner ruling 2026-09-07: a handoff is a consequential action — decided by the PDP against BOTH principals' profiles, the delegation chain EXTENDS to the receiver so an upstream revocation reaches it, the hop is appended to the handoff trace, and one evidence pack seals it. Resolves to the EXISTING root class kye:action-class:agent-handoff (§0 — reused, never re-minted).",
+      "approval_mode": "single_approver",
+      "evidence_required": true
+    },
+    {
+      "action": "PAY_AGENT",
+      "action_class": "kye:action-class:agent-payment",
+      "summary": "Send a payment intent to another principal's agent — the money leg of the agent-to-agent exchange. Irreversible once settled: two-person approval by class default, a kye.counterparty_handshake.v1 REQUIRED before the commitment gate opens (the receiving agent proves it may bind its principal), settlement through the rail-adapter contract, the payments proof bundle as evidence. Resolves to the EXISTING root class kye:action-class:agent-payment, never the human commerce class (the actor differs).",
+      "approval_mode": "two_person",
+      "evidence_required": true
     }
   ],
   "escalation_rules": [
@@ -109,6 +123,11 @@
       "condition": "attachment_present",
       "min_approval_mode": "single_approver",
       "rationale": "An attachment moves data out with the message; the send decision must cover the data leaving, not only the text."
+    },
+    {
+      "condition": "agent_recipient",
+      "min_approval_mode": "delegated",
+      "rationale": "The recipient is another agent: the control is ADMISSIBILITY, not a higher tier — both principals must resolve with a delegation chain, the recipient's comms profile is re-decided at the receiving boundary, and a payment additionally needs a counterparty handshake. The tier stays at the row's own floor; an unresolved recipient is refused outright, never approved up."
     }
   ],
   "connector_contract": {
