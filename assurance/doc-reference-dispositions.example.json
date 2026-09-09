@@ -1,0 +1,35 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.assurance.doc_reference_dispositions.v1.json",
+  "schema": "kye.assurance.doc_reference_dispositions.v1",
+  "registry_id": "kye:registry:doc-reference-dispositions",
+  "provenance": "source: illustrative example rows, hand-written for the public schema example.",
+  "kye_canonical": true,
+  "adopted_at": "2026-09-08",
+  "constitution_ref": "constitution/00-INDEX.md",
+  "description": "Illustrative example of kye.assurance.doc_reference_dispositions.v1 — two rows, one per disposition term.",
+  "rows": [
+    {
+      "file": "constitution/06-WEBSITE.md",
+      "ref": "public/site/assets/planned-hero.css",
+      "disposition": "never-tracked",
+      "evidence": {
+        "searched": "git log --all -- <ref> (added, renamed and deleted history) returns nothing"
+      },
+      "reason": "The chapter names a stylesheet that was planned for the marketing surface and never entered the tree; the citation stays as the claim the chapter makes until the asset is built or the claim restated.",
+      "declared_at": "2026-09-08"
+    },
+    {
+      "file": "public/site/README.md",
+      "ref": "public/site/old-landing.html",
+      "disposition": "removed",
+      "evidence": {
+        "added_in": "0123abc",
+        "added_on": "2026-05-01",
+        "removed_in": "456def0",
+        "removed_on": "2026-06-15"
+      },
+      "reason": "The README records the landing page the site shipped with; git records its removal on 2026-06-15 and the citation is retained as that record rather than re-pointed to a page that no longer exists.",
+      "declared_at": "2026-09-08"
+    }
+  ]
+}

@@ -7,8 +7,8 @@
   "id_format_ref": "public/id-format/README.md",
   "counts": {
     "total": 4,
-    "minted": 3,
-    "reused": 1,
+    "issued": 3,
+    "naturalised": 1,
     "per_class": {
       "page": 2,
       "gate": 1,
@@ -20,25 +20,25 @@
       "kye_id": "kye:page:site:platform/how-it-works",
       "artefact_class": "page",
       "artefact_path": "public/site/platform/how-it-works.html",
-      "source": "minted"
+      "source": "issued"
     },
     {
       "kye_id": "kye:page:site:index",
       "artefact_class": "page",
       "artefact_path": "public/site/index.html",
-      "source": "minted"
+      "source": "issued"
     },
     {
       "kye_id": "kye:gate:entity-id-canonical",
       "artefact_class": "gate",
       "artefact_path": "scripts/gates/entity-id-canonical.mjs",
-      "source": "minted"
+      "source": "issued"
     },
     {
       "kye_id": "kye:term:nav-leaf:action-admissibility",
       "artefact_class": "nav-leaf",
       "artefact_path": "public/id-format/README.md",
-      "source": "reused"
+      "source": "naturalised"
     }
   ]
 }

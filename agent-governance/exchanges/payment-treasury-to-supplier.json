@@ -1,0 +1,40 @@
+{
+  "schema": "kye.agent.exchange.v1",
+  "exchange_id": "kye:agent-exchange:acme-treasury-to-supplier-billing-2026-09-07-003",
+  "entity_class": "agent-exchange",
+  "tenant_id": "kye:tenant:acme-corp",
+  "action_class": "kye:action-class:agent-payment",
+  "sender": {
+    "agent_entity_id": "kye:agent:acme-treasury-agent",
+    "principal_entity_id": "kye:org:acme-corp",
+    "delegation_chain_ref": "kye:delegation-chain:acme-corp:treasury-mandate-m-2026-07:acme-treasury-agent"
+  },
+  "recipient": {
+    "agent_entity_id": "kye:agent:northwind-supplier-billing-agent",
+    "principal_entity_id": "kye:org:northwind-supplies",
+    "delegation_chain_ref": "kye:delegation-chain:northwind-supplies:billing-mandate-2026-05:supplier-billing-agent",
+    "boundary": "cross-tenant"
+  },
+  "payload": {
+    "kind": "payment_intent",
+    "content_hash": "sha256:c4e6b8d0f1a3c5e7b9d1f3a5c7e9b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5",
+    "sensitivity": "confidential",
+    "payment_intent_ref": "kye:payment-intent:acme-corp:inv-2026-0912:settlement",
+    "economic_effect": "payment"
+  },
+  "purpose_class_id": "kye:purpose-class:finance.invoice.summarise",
+  "approval_mode": "two_person",
+  "handshake_ref": "kye:handshake:acme-northwind-net-terms-2026-09",
+  "handoff_trace_ref": "kye:handoff-trace:acme-corp:ap-2026-09-07-0510",
+  "handoff_ref": "kye:handoff:acme-corp:ap-2026-09-07-0510:004",
+  "decision_id": "kye:decision:b18b88665803c685e1d53db8",
+  "evidence_pack_id": "kye:evidence-pack:436b65de0f271af044f81262",
+  "transport": {
+    "kind": "a2a",
+    "adapter_ref": "kye:harness-adapter:claude-code-generic",
+    "dispatch_ref": "kye:comms:acme-corp:agent:2026-09-07-0510-004"
+  },
+  "status": "decided",
+  "created_at": "2026-09-07T05:10:42Z",
+  "constitution_ref": "constitution/52-DELEGATED-AGENT-BINDING.md §17"
+}

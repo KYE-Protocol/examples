@@ -1,147 +1,975 @@
 {
   "$schema": "https://kyeprotocol.com/schemas/kye.first_doctrine_map.v1.json",
+  "kye_canonical": true,
+
   "schema": "kye.first_doctrine_map.v1",
   "registry_id": "kye:registry:first-doctrine-map",
   "adopted_at": "2026-07-12",
-  "constitution_ref": "constitution/00-INDEX.md \u00a70.45",
-  "description": "Illustrative valid instance of the \u00a70.45 \"-First\" Doctrine map \u2014 all thirteen '-first' primitives, each binding an existing enforcing gate.",
+  "constitution_ref": "constitution/00-INDEX.md §0.45",
+  "description": "Constitution §0.45 The \"-First\" Doctrine — the ONE canonical declaration of KYE's build-order primacy law. CEO directive (2026-07-12): the entire KYE ecosystem must be agentic-first, api-first, ai-first, schema-first, machine-readable-first, callable-first, discoverable-by-agents-first, dictionary-first, manifest-first, cloudflare-first, stripe-first, entity-first, registry-first, governed-and-governable-first — all constitutional principles. §0.45 UNIFIES them (§0.10 graft, the §0.42/§0.44 pattern) into ONE ordered doctrine, NOT fourteen parallel clauses (which would be §0 + §0.10). At design time the canonical artefacts land FIRST, in order — schema -> dictionary -> registry -> manifest -> OpenAPI (api-first) — before the code that consumes them; and every artefact is agentic-first, callable-first, discoverable-by-agents-first, machine-readable-first, entity-first, cloudflare-first, stripe-first, and governed-and-governable-first. Every primitive binds the EXISTING chapter it projects + the EXISTING enforcing gate that already makes 'code without its canonical-first artefact' mechanically fail. Only api-first and the ordering framing are genuinely NEW named contributions; all other primitives are explicit graft-citations. Enforced by scripts/gates/first-doctrine-canonical.mjs. EXTENDED 2026-09-08 (CEO directive, thirty-five '-first' primitives named in one message: NAMESPACE-FIRST leads): namespace-first is build-order step 1 — the ID class, schema family or package registry an identifier lives in is declared before anything is named inside it; every primitive now records the ONE canonical root that owns its concept (`root`, resolved through canonical-paths) or declares the measured gap on the row (`root_gap`, §0.62(c)); decoupled-first (external systems are governed SUBJECTS, never hard-coded dependencies of the entity / estate / ledger) and bidirectional-first (the entity / estate / ledger never assumes communication is only inbound) are grafted onto §0.61 · §0.47 · §51 · §75 · §38 · §48. Still ONE ordered doctrine, not forty-three siloes.",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "The doctrine (§0.45) is public; this map's enforcer wiring (which internal gate enforces each primitive) is operational self-governance metadata, kept internal like the §0.44 assurance-plane and §0.43 enforcer-scopes registries."
+  },
+  "build_order_sequence": [
+    "namespace-first",
+    "dictionary-first",
+    "schema-first",
+    "contract-first",
+    "registry-first",
+    "manifest-first",
+    "api-first"
+  ],
   "primitives": [
     {
-      "primitive_id": "schema-first",
-      "question": "Does the schema land before the code that consumes its instances?",
-      "grafts": "\u00a70.9 + \u00a70.18",
-      "contribution": "graft",
+      "primitive_id": "namespace-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is the NAMESPACE an identifier lives in — its ID class, its schema family, its package registry — declared BEFORE anything is named inside it?",
+      "grafts": "§01 NAMING (§6 schema namespaces) + §0.9 Universal Canonicalisation + §0.49 binding 3 (identity derives from the canonical namespace) + the ID-class dictionary (CLAUDE.md: ID-class terms are NAMESPACES)",
+      "contribution": "new",
       "build_order": 1,
       "enforcing_gates": [
+        "test:class-declaration-canonical",
+        "test:id-grammar-binding",
+        "test:package-namespace-canonical",
+        "test:schema-guard-canonical"
+      ],
+      "root": "kye:dictionary:entity-id-classes",
+      "adopted_at": "2026-09-08",
+      "note": "Build-order step 1, before the schema: a kye:<class>:<local> identifier is parsed against a class declared in kye:dictionary:entity-id-classes (fail-closed when absent — class-declaration-canonical + admission-control), and a schema file's name derives from its $id (schema-guard-canonical). DECLARED GAP (task #87): the 17 schema families NAMING §6 locks have no machine-readable root — 786 schemas, most outside every family, scripts/audit-consistency.mjs the only reader — so this row binds the ID-class namespace only and states the schema-family gap rather than claiming it.",
+      "ladder_rank": 1,
+      "ladder_group": "identity",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "entity-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every entity carry a canonical KYE-ID and submit to KYE governance (identity + authority context) — no ungoverned pixel inside the boundary?",
+      "grafts": "§0.36 Universal Entity Governance + §0.37 Total Citizenship & t=0 Governance",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:entity-id-canonical"
+      ],
+      "note": "Posture primitive. §0.36: every concept + page carries exactly one kye:-ID (entity-id backbone). A net-new un-ID'd concept fails entity-id-canonical immediately.",
+      "root": "kye:dictionary:entity-id-classes",
+      "ladder_rank": 2,
+      "ladder_group": "identity",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "canonical-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every kye.<ns>.* term, every concept and every path RESOLVED against a landed canonical declaration before it is referenced — never a vapor reference?",
+      "grafts": "§0.3 Canonical-first + §0.9 + §0.18 Canonical-Absolute + §0.45 build order",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
         "test:canonical-first",
-        "test:canonical-triple-coverage"
-      ]
+        "test:check-canonical-references"
+      ],
+      "root": "kye:registry:canonical-concepts",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. canonical-first rejects a kye.<ns> reference with no declaration; check-canonical-references resolves every registry-bound noun and RIGHT_SIZED_EXCEPTION annotation; canonical-concepts-registry.json is the SOURCE every concept's {schema, dictionary, manifest, example, gate} triple is declared in.",
+      "ladder_rank": 3,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "vocabulary-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every controlled term (an enum value, a class term, a verdict word, a plane) declared in a dictionary BEFORE code, schema or prose uses it — with collisions recorded, never dodged?",
+      "grafts": "§24 Design Dictionary + §0.9 + kye:uniqueness:id-class-term (collision_reviewed) + CEO 2026-09-08 (vocabulary first, canonical vocabulary contract first)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:uniqueness-canonical",
+        "test:check-canonical-references",
+        "test:action-class-canonical"
+      ],
+      "root": "kye:dictionary:glossary",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive, the term-level half of dictionary-first (which binds the ARTEFACT slot). Worked cure at adoption 2026-09-08: kye.action_class.v1's plane enum carried `benefits` (20 registry rows) while kye:dictionary:action-classes — which claims to own the plane vocabulary — did not declare it; action-class-canonical now asserts every schema enum is a byte-equal projection of the dictionary's terms.",
+      "ladder_rank": 4,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
     },
     {
       "primitive_id": "dictionary-first",
-      "question": "Does the vocabulary land before terms are used?",
-      "grafts": "\u00a70.9 + \u00a70.18",
+      "entity_class": "doctrine-primitive",
+      "question": "Does the controlled vocabulary (dictionary) for a net-new concept's terms/enums land BEFORE prose or code uses those terms?",
+      "grafts": "§0.9 Universal Canonicalisation + §0.18 Canonical-Absolute",
       "contribution": "graft",
       "build_order": 2,
       "enforcing_gates": [
         "test:canonical-triple-coverage"
-      ]
+      ],
+      "note": "Step 2. §0.18's {dictionary} slot; canonical-triple-coverage rejects a registered concept whose dictionary does not resolve.",
+      "root": "kye:registry:canonical-concepts",
+      "ladder_rank": 5,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
     },
     {
-      "primitive_id": "registry-first",
-      "question": "Does the registry land before instances are authored?",
-      "grafts": "\u00a70.9 + \u00a70.18",
+      "primitive_id": "schema-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does the JSON Schema (2020-12) for a net-new named artefact land BEFORE the code that produces or consumes instances of it?",
+      "grafts": "§0.9 Universal Canonicalisation + §0.18 Canonical-Absolute",
       "contribution": "graft",
       "build_order": 3,
       "enforcing_gates": [
         "test:canonical-first",
         "test:canonical-triple-coverage"
-      ]
+      ],
+      "note": "The schema is step 1 of the build order. §0.18's quintuple birth-contract already requires a schema in the same commit; canonical-first rejects a kye.<ns> reference with no landed declaration; canonical-triple-coverage rejects a registered concept whose {schema} slot does not resolve on disk.",
+      "root": "kye:registry:schemas",
+      "ladder_rank": 6,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
     },
     {
-      "primitive_id": "manifest-first",
-      "question": "Does the manifest land before the runtime that reads it?",
-      "grafts": "\u00a70.9 + \u00a70.18",
+      "primitive_id": "contract-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every artefact declare the contract it answers to ($schema / class / derived_keys) BEFORE instances exist, and is that contract verified from BOTH ends?",
+      "grafts": "§0.60 Foundation-First (one ownership class per artefact) + §0.61 Bidirectional-Decoupled (every contract verified from both ends) + §0.36 admission matrix",
       "contribution": "graft",
       "build_order": 4,
       "enforcing_gates": [
+        "test:generated-not-source",
+        "test:admission-control",
+        "test:schema-guard-canonical"
+      ],
+      "root": "kye:registry:admission-matrix",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. The admission matrix declares per class WHERE instances live, WHICH key, WHICH id field and WHAT contract; generated-not-source verifies the ownership bijection against the build's own behaviour; the pre-commit t0-preview runs the contract-first rule (scripts/ci/t0-preview.mjs --require-declared) over every staged file.",
+      "ladder_rank": 7,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "registry-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does the canonical registry (source-of-truth manifest) for a class of artefact land BEFORE instances are authored or referenced?",
+      "grafts": "§0.9 Universal Canonicalisation + §0.18 Canonical-Absolute",
+      "contribution": "graft",
+      "build_order": 5,
+      "enforcing_gates": [
+        "test:canonical-first",
         "test:canonical-triple-coverage"
-      ]
+      ],
+      "note": "Step 3. §0.9 requires every multi-file-referenced noun to belong to a registry; §0.18 requires the registry to self-register in canonical-everything.json.",
+      "root": "kye:registry:canonical-concepts",
+      "ladder_rank": 8,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "manifest-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does the machine-readable manifest binding a rail/product/flow's parts land BEFORE the runtime that reads it?",
+      "grafts": "§0.9 Universal Canonicalisation + §0.18 Canonical-Absolute",
+      "contribution": "graft",
+      "build_order": 6,
+      "enforcing_gates": [
+        "test:canonical-triple-coverage"
+      ],
+      "note": "Step 4. The manifest slot of the §0.18 triple; a manifest that does not resolve fails canonical-triple-coverage.",
+      "root": "kye:registry:canonical-concepts",
+      "ladder_rank": 9,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
     },
     {
       "primitive_id": "api-first",
-      "question": "Is the OpenAPI operation declared with its handler, never post-facto?",
-      "grafts": "NEW \u2014 bijection named as doctrine",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every net-new callable HTTP surface have its OpenAPI operation declared in the SAME change-set as its Pages-Functions handler — never post-facto?",
+      "grafts": "GENUINELY NEW named contribution of §0.45. The OpenAPI<->Pages-Functions bijection gate already enforces the mechanical property (every handler <-> one OpenAPI op, strict drift=0); §0.45 NAMES api-first as doctrine and binds it as build-order step 5 (the API contract is a first-class canonical artefact that lands with the code, not after).",
       "contribution": "new",
-      "build_order": 5,
+      "build_order": 7,
       "enforcing_gates": [
         "test:openapi-functions-bijection"
-      ]
+      ],
+      "note": "Step 5, the last build-order artefact. openapi-functions-bijection is a RED-LINE gate (user 2026-05-19: 'nothing no component should be post facto in entire ecosystem'). §0.45's api-first framing declares this the api-first doctrine.",
+      "root_gap": "No kye:registry id resolves for the OpenAPI document set (kye:registry:openapi and kye:registry:openapi-rails are not declared); openapi-functions-bijection is the enforcer and reads the documents from disk. Owed: a registry-first root for the OpenAPI surface set, declared at t=0 in the same change-set as the next OpenAPI document.",
+      "ladder_rank": 10,
+      "ladder_group": "canon",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "jurisdiction-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every jurisdiction a declared dictionary term — and every jurisdiction-bound artefact (SKU, transfer, handoff, residency) resolved against it — before it is sold or executed?",
+      "grafts": "§72 Jurisdiction & Data-Sovereignty Authority + §57 cross-jurisdiction handoff + kye:dictionary:jurisdictions (§0.9 names jurisdiction as a canonical registry class)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:jurisdiction-authority-canonical",
+        "test:sku-jurisdiction-canonical",
+        "test:cross-jurisdiction-handoff-canonical"
+      ],
+      "root": "kye:dictionary:jurisdictions",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. kye:dictionary:jurisdictions is the vocabulary; sku-jurisdiction-canonical proves every SKU's jurisdictions resolve; jurisdiction-authority-canonical proves the §72 residency verdict is a graft, never a parallel engine.",
+      "ladder_rank": 11,
+      "ladder_group": "regime",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "regulatory-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every regulator and regime a declared term, and every regulatory artefact produced by a generator that is declared, discoverable and RUN — never present on disk only?",
+      "grafts": "§70 (regulators · regimes) + CEO 2026-08-03 (regulatory generators all canonical, zero blind spot) + kye:dictionary:regulators / regulatory-regimes",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:regulatory-generators-canonical",
+        "test:framework-coverage-bijection"
+      ],
+      "root": "kye:dictionary:regulators",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. regulatory-generators-canonical RUNS every declared regulatory generator (DPIA · ROPA · Art.22 · DORA register · SR 11-7); the regulator and regime vocabularies are dictionaries, never inline strings.",
+      "ladder_rank": 12,
+      "ladder_group": "regime",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "framework-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is a framework declared as a row of the ONE framework registry — with its mapping state — BEFORE any artefact, page or SKU cites it?",
+      "grafts": "§70 Framework Mapping Rail (registry-first, mechanical) + §59 framework ingestion",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:framework-mapping-canonical",
+        "test:framework-ingestion-canonical"
+      ],
+      "root": "kye:registry:frameworks",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. kye:registry:frameworks is the ROOT the coverage registry, the per-requirement store, the §74 label map and the §59 engine all resolve to; framework-mapping-canonical proves each mapping state names its evidence.",
+      "ladder_rank": 13,
+      "ladder_group": "regime",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "standards-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every standard KYE claims (ISO · NIST · OSCAL · conformance levels) declared in the framework registry and exported in its own machine-readable form BEFORE a page claims it?",
+      "grafts": "§70 Framework Mapping Rail (frameworks · standards · jurisdictions, one registry) + §15 Conformance Pack + §59 deterministic ingestion",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:oscal-exports-canonical",
+        "test:framework-mapping-canonical"
+      ],
+      "root": "kye:registry:conformance",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. Standards are rows of kye:registry:frameworks (§70 — 'frameworks / standards / jurisdictions' resolve to ONE root); the conformance registry declares the levels KYE itself is measured against; oscal-exports-canonical proves the OSCAL projection resolves.",
+      "ladder_rank": 14,
+      "ladder_group": "regime",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "compliance-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every compliance claim backed by a cited KYE artefact AND coverage-registry agreement — enforced / registered / out-of-scope stated honestly, never inflated?",
+      "grafts": "§0.4(d) 100% conformant with declared frameworks + §70 honesty bar (a mapping is `enforced` only with a cited artefact; out-of-scope carries no artefacts)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:framework-coverage-bijection",
+        "test:compliance-attestation"
+      ],
+      "root": "kye:registry:regulatory-coverage",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. The CEO's 2026-09-08 ask for a 'compliance framework registry' resolves to TWO existing roots: kye:registry:frameworks (what exists) and kye:registry:regulatory-coverage (the honest tri-state of how far each is mapped). framework-coverage-bijection asserts the deep per-requirement store agrees with the coverage registry.",
+      "ladder_rank": 15,
+      "ladder_group": "regime",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "decoupled-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every external system a SUBJECT the entity/estate/ledger governs — reached through a declared contract, a declared sub-processor row and a declared failure posture — never a hard-coded dependency the verdict, the ledger or the estate cannot function without?",
+      "grafts": "§0.61 Bidirectional-Decoupled + §0.47 (an external system may be the SUBJECT of governance, never a DEPENDENCY of the verdict) + §51 No-SPOF + §0.28 Inter-Project Isolation + CEO 2026-09-08 (external systems must never become hard-coded dependencies of the entity/estate/ledger)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:air-gap-ability",
+        "test:no-spof-coverage",
+        "test:inter-project-isolation",
+        "test:subprocessor-manifest-canonical"
+      ],
+      "root": "kye:registry:availability-evidence",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. air-gap-ability proves the verdict path carries zero network symbols; no-spof-coverage proves every vendor-locked path declares full / partial / none and a path-to-full; subprocessor-manifest-canonical proves every external party is a declared row; inter-project-isolation proves no sibling's name, domain or infrastructure is coupled into KYE canon. The root is the §51 SPOF registry — the declared list of what the estate depends on and what happens when each fails.",
+      "ladder_rank": 16,
+      "ladder_group": "boundary",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "bidirectional-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every boundary of the entity/estate/ledger carry BOTH directions — outbound follow · comms · webhooks and inbound intake · signals — each with a KYE-ID and a §0.3 emission, never a design that assumes communication is only inbound?",
+      "grafts": "§0.61 (every contract verified from both ends) + §75 Followability Rail (outbound follow edges: observe · audit · standing-witness · settlement) + §38 Comms Rail (every outbound communication) + §48 Signal Ingest (every inbound signal has a consumer) + CEO 2026-06-30 (inbounds outbounds must have kyeid end to end) + CEO 2026-09-08 (the entity/estate/ledger must never assume communication is only inbound)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:inbound-outbound-governance",
+        "test:followability-canonical",
+        "test:signal-sources-alive"
+      ],
+      "root": "kye:registry:follow-surfaces",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. inbound-outbound-governance proves every mutating inbound handler AND every outbound dispatch carries a KYE-ID and emits the §0.3 family; followability-canonical proves every class declares how an instance is REACHED (the outbound half of the contract); signal-sources-alive proves every declared inbound signal source has a live consumer. DECLARED GAP (task #88): the inbound / outbound / projection engines of the integration plane are not declared — the crossing is governed, the transport is not.",
+      "ladder_rank": 17,
+      "ladder_group": "boundary",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "event-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every consequential state change emit its canonical event at the moment it happens — declared in the event registry before the emitter exists, never captured post-facto?",
+      "grafts": "§37 Event Engine + §35 Streaming Logs Contract (at-emission, cron-tick capture forbidden) + §0.15 Event-Native Architecture + the §0.3 evidence-event family",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:event-registry-canonical",
+        "test:event-native-coverage",
+        "test:audit-chain-emission-coverage"
+      ],
+      "root": "kye:registry:events",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. kye:registry:events declares every event family with post_facto_forbidden; kye:registry:event-classes declares the 78 developer-facing classes. DECLARED GAP (task #86): event classes carry severity, not consequence_tier — an event's consequence is owed as a DERIVATION from the action class it reports, never a typed tier.",
+      "ladder_rank": 18,
+      "ladder_group": "boundary",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "gateway-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every crossing — an API call, an MCP tool, a builder action, a worker's gateway role — pass through a DECLARED gateway that decides before it forwards, never a direct path around it?",
+      "grafts": "§15 MCP Gateway + §16 §7.10 gateway-role assignment + §0.37 builder PEP + §69 Control-Plane MCP",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:gateway-roles-canonical",
+        "test:builder-pep-canonical"
+      ],
+      "root": "kye:registry:worker-manifest",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. gateway-roles-canonical proves every gateway-like worker declares its gateway_role; builder-pep-canonical proves the builder's t=0 PEP is wired and live. DECLARED GAP (task #78): the gate chain's own admission gateway exists and does not yet gate — recorded, not claimed.",
+      "ladder_rank": 19,
+      "ladder_group": "boundary",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "policy-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is the policy (purpose grant · rule pack · policy bundle · operating model) declared and compiled BEFORE the action it governs can be attempted — the decision reading policy, never policy inferred from the decision?",
+      "grafts": "§12 Purpose Permission + §18 Operating Model + §25 Compiled Authority Bundle + §29 rule packs + §0.62 policy-points",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:rule-pack-canonical",
+        "test:policy-points-canonical"
+      ],
+      "root": "kye:registry:rule-packs",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. rule-pack-canonical proves every rule pack is registered with its tests; policy-points-canonical proves every policy point resolves to its dictionary. DECLARED GAP: om-compiler-determinism (the operating-model compile is pure) exists and is not wired into the chain — not bound here until it runs.",
+      "ladder_rank": 20,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "invariant-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Are the soundness invariants of the authority protocol (no amplification · scope monotonicity · revocation dominance …) DECLARED in a registry and proven mechanically — before any engine claims to uphold them?",
+      "grafts": "§53 §11 cohesion invariant + CEO 2026-07-26 (governed invariants canonical mechanical) + kye:registry:authority-invariants",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:governed-invariants-canonical"
+      ],
+      "root": "kye:registry:authority-invariants",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. The invariant registry declares each property across the three finality dimensions; governed-invariants-canonical makes the declaration honest and enforceable.",
+      "ladder_rank": 21,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "deterministic-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every generator, engine and verdict a pure function of committed input — same input, same bytes, no wall-clock, PID, randomness, network or unordered iteration?",
+      "grafts": "§0.20(d) generator determinism + §0.47 Air-Gapped Governance (a verdict that cannot depend on a remote call is trivially reproducible) + §25 §5 Edge Arbiter",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:generator-determinism",
+        "test:air-gap-ability"
+      ],
+      "root": "kye:registry:propagator",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. generator-determinism runs every propagator twice (real clock + fixed future clock) and asserts byte-identical output; air-gap-ability proves the governance spine reaches its verdict with zero network symbols. The propagator registry is the declared generator population.",
+      "ladder_rank": 22,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "t0-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every consequential act DECIDED by the real engine before it happens — the decision id recorded with the content it authorised — never a decision that arrives after the content?",
+      "grafts": "§0.37 Total Citizenship & t=0 Governance + §0.34 Self-Run + the dev-plane interaction classes",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:t0-decision-recorded",
+        "test:devplane-t0-enforced",
+        "test:total-citizenship-canonical"
+      ],
+      "root": "kye:registry:devplane-interaction-classes",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. total-citizenship-canonical proves every dev-plane interaction class names a t0_governor; t0-decision-recorded proves every commit in the range carries its decision; devplane-t0-enforced reconciles main's landings to the ledger row.",
+      "ladder_rank": 23,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "concurrency-first",
+      "entity_class": "doctrine-primitive",
+      "aliases": [
+        "lock-first",
+        "lease-first"
+      ],
+      "question": "Does every mutable resource refuse a write unless the caller satisfies the resource's DECLARED concurrency policy at t=0 — one current writer under a time-bounded, fenced lease (or a matching state hash for optimistic writers), unlimited authorised readers, every lock attributable, every override evidenced, every stale writer rejected?",
+      "grafts": "§0.30.1 admission lease (kye.lease.v1 — a verdict bounded in time, sealed, revocable) + §0.37 t=0 + §16 Durable Objects (the single-writer owner of a resource) + §36 approval modes (force-unlock) + the existing legal-hold / data-preserve action classes (holds) + §0.11 / §0.35 (attribution fields policy-controlled) + CEO 2026-09-08 (lock / concurrency as a first-class rail: lease not lock, fencing tokens, gateway-enforced, custody-of-edit trail, governed force unlock, lock modes, optimistic + pessimistic)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:t0-decision-recorded",
+        "test:governed-inventory-coverage",
+        "test:audit-worm-enforced"
+      ],
+      "root_gap": "No canonical root owns write-concurrency yet: kye.lease.v1 is the admission lease (a decision bounded in time) and carries no resource, holder, mode or fencing token; no dictionary declares lock modes; no registry declares a concurrency policy per resource class; nothing declares a fencing token, an ETag / If-Match or a 423 response (measured 2026-09-08 across the specs, the constitution and the runtime). Owed, contract-first (task #89): the lock-mode dictionary → the kye.lease.v1 extension (resource · holder · mode · fencing_token · session fingerprint) → one concurrency-policy registry (rows per resource class and sector pack: mode · lease TTL · override authority · fingerprint policy) → the lock action classes (acquire · renew · release · force-release · transfer) → the lock.* event family → the Lock Rail as one §40 concept on a per-resource Durable Object → the lease + fence check as one step of the existing PEP. The three gates bound here enforce the t=0, real-engine and WORM properties every lock event must already satisfy; the concurrency check itself is not yet enforced.",
+      "adopted_at": "2026-09-08",
+      "note": "Decision-group primitive. lock-first and lease-first FOLD here (one concept, two mechanisms — three rows would be the parallel-doctrine explosion §0.45 forbids). Pessimistic (exclusive lease, humans and long workflows) and optimistic (state_hash / If-Match → 409, agents and APIs) are two admissible policies of ONE primitive. A fencing token is issued by the resource's single-writer Durable Object, monotonic per resource, and travels INTO the ledger commit so replay can prove the write was fenced. Cerbos and any other policy engine remain a PORT into the KYE PDP (policy-engine-adapter-canonical), never the deciding step above the lock rail.",
+      "ladder_rank": 24,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "governed-and-governable-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every privileged component run through the REAL Decision Engine at t=0 (emitting the §0.3 evidence family) AND kept governable (ongoing control), never asserted post-facto?",
+      "grafts": "§0.3 Self-Governance Lock + §0.40 Total Governance + §0.34 Self-Run Governance",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:governed-inventory-coverage"
+      ],
+      "note": "Posture primitive. §0.34 governed-inventory drives the real @kye/pdp DecisionPoint.decide() over every component; a net-new ungoverned component hard-fails governed-inventory-coverage.",
+      "root": "kye:registry:component-readiness",
+      "ladder_rank": 25,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "enforcer-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every registry, principle and boundary bind ≥1 live, wired enforcer that covers its FULL declared domain — a gate-less registry or a blind gate being the violation?",
+      "grafts": "§0.18 (gate-less registry anti-pattern) + §0.43 No Blind Enforcers + §0.44 Unified Assurance Plane",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:no-blind-spots",
+        "test:assurance-plane-canonical",
+        "test:canonical-triple-coverage"
+      ],
+      "root": "kye:registry:enforcer-scopes",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. enforcer-scopes declares each enforcer's domain_root + forbidden_narrowings; no-blind-spots reads the enforcer's source against them; assurance-plane-canonical proves every assurance property binds a wired gate; canonical-triple-coverage proves every concept's gate slot resolves.",
+      "ladder_rank": 26,
+      "ladder_group": "decision",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "rail-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every capability belong to a DECLARED rail (with its engines, workers and surfaces bound) before it ships — never a component that exists on disk and integrates with nothing?",
+      "grafts": "§01 NAMING (rails) + §0.6 coherent integration mandate + §55 Execution Layers + §0.8 (a new rail requires RIGHT_SIZED_EXCEPTION)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:coherent-integration-mandate",
+        "test:execution-layers-canonical"
+      ],
+      "root": "kye:registry:rails",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. kye:registry:rails is the ONE rail registry; coherent-integration-mandate proves every engine, worker and surface is referenced bidirectionally; execution-layers-canonical locks the 10-layer stack.",
+      "ladder_rank": 27,
+      "ladder_group": "flow",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "workflow-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every multi-step governed act a DECLARED workflow — steps, actors, timeouts and exits in a registry row — before any runtime executes it, so an undeclared sequence cannot run and an unexpected wait cannot go unnamed?",
+      "grafts": "§14 §4/§11 governed-agent workflow contract (kye.agent.workflow.v1: every step declares timeout_ms) + kye:registry:workflows + §0.37 + CEO 2026-09-08 (a declared timeout is the same concept as the human↔agent handshake: a wait is a declared step with a declared expiry, never an open socket)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:workflow-registry-canonical",
+        "test:workflow-governance-coverage"
+      ],
+      "root": "kye:registry:workflows",
+      "adopted_at": "2026-09-08",
+      "note": "Flow primitive. workflow-registry-canonical proves every declared workflow resolves; workflow-governance-coverage proves every workflow's privileged steps are governed at t=0. The declared timeout of a step (kye.agent.workflow.v1 $defs/step/timeout_ms) is the same contract the finality lane needs for 'confirmation never arrived' — one concept, reused, never a second timer vocabulary.",
+      "ladder_rank": 28,
+      "ladder_group": "flow",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "pipeline-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every derivation a DECLARED pipeline — ordered generator steps, each consuming its declared source in full, each verified by a freshness gate — never an ad-hoc script chain someone runs in the right order by memory?",
+      "grafts": "§0.20 cascade runner + kye:registry:propagator (page_pipeline: the ordered derived-all chain) + §0.43 pointed at derivers (governed steps) + §53 vertical-down",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:governed-step-canonical",
+        "test:generator-determinism",
+        "test:gate-manifest-fresh"
+      ],
+      "root": "kye:registry:propagator",
+      "adopted_at": "2026-09-08",
+      "note": "Flow primitive. The propagator registry's page_pipeline is the ONE declared derivation order (build-derived-all runs it; the read-back harness resolves its chain from it); governed-step-canonical proves each deriver consumes the whole of its declared source; gate-manifest-fresh proves the enforcement pipeline is derived, never hand-ordered.",
+      "ladder_rank": 29,
+      "ladder_group": "flow",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "lifecycle-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every governed class declare its lifecycle machine (states + transitions, derived from the schema's own enum) before instances move — every transition a t=0 decision, every state with a declared exit?",
+      "grafts": "§0.62 Governance State Is Governed State + §27 Commercial Lifecycle + §0.42 lifecycle coverage",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:lifecycle-state-canonical",
+        "test:lifecycle-coverage-canonical",
+        "test:entity-lifecycle-closed"
+      ],
+      "root": "kye:registry:lifecycle-machines",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. lifecycle-machines is DERIVED from every schema declaring a state/status enum (176 machines); lifecycle-state-canonical proves each is canonical · mechanical · bootable · resolving · reconciling; entity-lifecycle-closed proves the nine-stage entity chain closes.",
+      "ladder_rank": 30,
+      "ladder_group": "flow",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "evidence-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every governed decision produce a sealed, standalone, replay-verifiable evidence pack at emission — never a decision row with no pack?",
+      "grafts": "§13 Resilience Loop + §0.3 evidence-event family + CEO 2026-08-01 (a claim of end-to-end governance with zero evidence packs is a contradiction)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:audit-chain-emission-coverage",
+        "test:evidence-pack-standalone-canonical",
+        "test:decision-pack-bijection"
+      ],
+      "root": "kye:schema:kye.evidence.pack.v1",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. decision-pack-bijection proves every decision writer produces a sealable row; evidence-pack-standalone-canonical proves the pack verifies offline; audit-chain-emission-coverage proves every privileged path emits the family. The root is the pack CONTRACT — evidence instances are runtime WORM rows (§30), never a static registry (§70 anti-inflation).",
+      "ladder_rank": 31,
+      "ladder_group": "record",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "audit-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is the audit chain the FIRST consumer of every governed act — one canonical emission path, one column set, KYE recording KYE — never an audit bolted on after the act?",
+      "grafts": "§21 Delegated Auditability + §30 Audit WORM + CEO 2026-08-03 (the audit chain must exist, zero invented names)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:audit-emission-canonical",
+        "test:audit-worm-enforced"
+      ],
+      "root": "kye:registry:retention-policy",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. audit-emission-canonical proves the emission path is canonical end to end (columns · event kinds · call sites); audit-worm-enforced proves the store is append-only. The root is the retention policy that declares every protected audit table.",
+      "ladder_rank": 32,
+      "ladder_group": "record",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "worm-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every evidence and audit store append-only from the first write (D1 triggers, R2 Object Lock) with a framework-justified retention — never a mutable table someone locks later?",
+      "grafts": "§30 Audit WORM + Retention",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:audit-worm-enforced",
+        "test:audit-retention-policy"
+      ],
+      "root": "kye:registry:retention-policy",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. audit-retention-policy proves every protected table carries a framework_ref and a retention ≥ the framework's floor; audit-worm-enforced proves the append-only triggers exist.",
+      "ladder_rank": 33,
+      "ladder_group": "record",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "reporting-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every enforcer, engine and governed run emit a structured, schema'd report (a §0.3 attestation, a templated report) at emission — never a summary line someone reads later?",
+      "grafts": "§14 Reporting Engine + §0.3 attestation family (kye.compliance.attestation.v1 from every gate) + §41 Error Horizons + §43 machine-readable",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:compliance-attestation",
+        "test:report-templates-canonical"
+      ],
+      "root": "kye:registry:report-templates",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. compliance-attestation proves every gate emits the attestation envelope; kye:registry:report-templates is the ONE registry of report shapes (§14). The CEO's 2026-09-08 ask for a 'reporting registry' resolves HERE — a second one would be a §0 duplicate; a registry of report INSTANCES is the §35 streaming sink, never a spec registry.",
+      "ladder_rank": 34,
+      "ladder_group": "record",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "clearing-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every action CLEARED — admissible against a recorded purpose, scope and entitlement — BEFORE authority is invoked, so an inadmissible act never reaches the decision?",
+      "grafts": "§12 Purpose Permission (admissibility is the pure function that clears a request against a permission) + KYE Action Admissibility™ (§50 §cfo: refuses spend / contract / settlement actions BEFORE authority is invoked) + §0.34",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:governed-inventory-coverage",
+        "test:entitlement-trace"
+      ],
+      "root": "kye:registry:purposes",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. HONEST REFERENT: the constitution does not use the word 'clearing'; the concept the CEO names is the §12 admissibility stage — purpose · scope · entitlement cleared before the decision. governed-inventory-coverage drives the real DecisionPoint.decide() (admissibility inside it) over every component; entitlement-trace proves every HTTP-perimeter worker is entitlement-gated. DECLARED GAP: purpose-admissibility-vectors (the conformance vectors of the ONE admit()) exists and is not wired into the chain.",
+      "ladder_rank": 35,
+      "ladder_group": "finality",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "reconciliation-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is declared-vs-deployed reconciled from BOTH ends on every change — generate-then-verify, source-vs-runtime, declared-vs-live — never a deployment trusted because the declaration exists?",
+      "grafts": "§34 Reconciliation Engine + §0.61 (generate-then-verify · declared-vs-actual) + §0.60 direction 2 (runtime write-set)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:deployed-estate-canonical",
+        "test:generated-not-source"
+      ],
+      "root": "kye:registry:reconciliation",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. kye:registry:reconciliation declares the 22 reconcilers; deployed-estate-canonical reconciles the declared estate against what is deployed; generated-not-source reconciles the ownership bijection against the build's own write-set. DECLARED GAP (task #88): the runtime lane — external OBSERVATION → COMPARE → VARIANCE → RECONCILIATION → RESOLUTION over bank · chain · ERP facts — is not declared; it reuses this verdict envelope, never a second engine.",
+      "ladder_rank": 36,
+      "ladder_group": "finality",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "resolution-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every reference, edge and chain RESOLVE to code or data on disk — SKU → surface, engagement → obligation → SKU → landing, class → rule — a dangling reference being a build failure, never a warning?",
+      "grafts": "§0.20 Automatic Dynamic Resolution + §0.31.2 Total Resolution + §0.56 class-must-resolve",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:resolution-canonical",
+        "test:class-must-resolve"
+      ],
+      "root": "kye:registry:cascade-graph",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. resolution-canonical asserts every typed edge of the cascade graph and the whole §49 engagement chain resolve end to end; class-must-resolve is the CSS-layer case of the same law.",
+      "ladder_rank": 37,
+      "ladder_group": "finality",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "settlement-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every consequential act reach a DECLARED finality state — proposed → executed → accepted, sealed exactly once — with fail / retry / reconcile as declared exits, never an act whose settlement is assumed?",
+      "grafts": "§0.33 Authority Finality™ (no authority, no finality) + §75 Followability (settlement-watch edges) + the KYE Settlement Finality Authority Agent™ + the ONE decision seal",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:settlement-agent-canonical",
+        "test:single-decision-seal",
+        "test:category-ownership-canonical"
+      ],
+      "root": "kye:registry:category-map",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. category-ownership-canonical proves the finality stage resolves to a real artefact; single-decision-seal proves a decision is sealed exactly once by @kye/crypto; settlement-agent-canonical proves the settlement lifecycle (trade-capture · netting · instruction · finality · fail/retry · reconciliation) is governed under KYE authority without KYE clearing, settling or moving any asset.",
+      "ladder_rank": 38,
+      "ladder_group": "finality",
+      "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "graph-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is the source-of-truth a multidirectional GRAPH (typed, oriented edges) with every tree a declared projection — never a hierarchy-locked root or a hidden cross-edge?",
+      "grafts": "§0.17 Multidirectional Taxonomy + §53 Cohesion Cascade + §0.31 Universal Bindings",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:multidirectional-taxonomy",
+        "test:cascade-coverage",
+        "test:universal-bindings-canonical"
+      ],
+      "root": "kye:registry:relationships",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. kye:registry:relationships declares every M:N relationship instance; multidirectional-taxonomy proves no taxonomy is tree-locked; cascade-coverage proves every canonical node sits in the graph; universal-bindings-canonical proves no artefact stands alone.",
+      "ladder_rank": 39,
+      "ladder_group": "projection",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "query-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every navigation, search, rail and listing a QUERY over the canonical graph — derived at build, never a hand-curated list beside the graph?",
+      "grafts": "§50 Content Graph + Derived Discoverability (nav / footer / search are queries over the page-manifest) + §53 (`run-cascade --query`) + §0.10 one root, many projections",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:content-graph-coverage",
+        "test:derived-search-index-shape",
+        "test:menu-tree-canonical"
+      ],
+      "root": "kye:registry:pages",
+      "adopted_at": "2026-09-08",
+      "note": "Posture primitive. The page manifest is the graph; content-graph-coverage proves every surface is tagged into it; menu-tree-canonical and derived-search-index-shape prove the nav tree and the search index are its derived projections.",
+      "ladder_rank": 40,
+      "ladder_group": "projection",
+      "essentiality": "structural"
     },
     {
       "primitive_id": "machine-readable-first",
-      "question": "Is every consumed artefact structured + schema'd?",
-      "grafts": "\u00a743",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every artefact another system consumes structured + schema'd (data, not sentences) rather than prose-only?",
+      "grafts": "§43 Machine-Readable by Default (§1-§2)",
       "contribution": "graft",
       "build_order": null,
       "enforcing_gates": [
         "test:canonical-triple-coverage"
-      ]
-    },
-    {
-      "primitive_id": "agentic-first",
-      "aliases": [
-        "ai-first"
       ],
-      "question": "Is every agent a first-class principal?",
-      "grafts": "\u00a70.30",
-      "contribution": "graft",
-      "build_order": null,
-      "enforcing_gates": [
-        "test:agent-native-principal-canonical"
-      ]
-    },
-    {
-      "primitive_id": "callable-first",
-      "question": "Is every capability exposed via a governed callable surface?",
-      "grafts": "\u00a70.30 + \u00a715 + \u00a769",
-      "contribution": "graft",
-      "build_order": null,
-      "enforcing_gates": [
-        "test:openapi-functions-bijection",
-        "test:agent-native-principal-canonical"
-      ]
+      "note": "Posture primitive. §43 §1 requires consumed artefacts to be machine-readable with a schema where practical; canonical-triple-coverage proves each canonical artefact has a resolving schema + example (the mechanical proof of machine-readability).",
+      "root": "kye:registry:platform-meta-index",
+      "ladder_rank": 41,
+      "ladder_group": "projection",
+      "essentiality": "structural"
     },
     {
       "primitive_id": "discoverable-by-agents-first",
-      "question": "Is every surface machine-discoverable by agents from ship?",
-      "grafts": "\u00a743 \u00a74d + \u00a750",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every surface machine-discoverable by agents (agent-readable + in the §50 content-discoverability graph) from the moment it ships?",
+      "grafts": "§43 §4d Agent-Readability + §50 Content-Graph Discoverability",
       "contribution": "graft",
       "build_order": null,
       "enforcing_gates": [
         "test:agent-readable-canonical",
         "test:content-graph-coverage"
-      ]
+      ],
+      "note": "Posture primitive. §43 §4d (merged 2026-07-11) unifies agent-readability; §50 makes nav/search a query over the page-manifest graph. content-graph-coverage rejects a surface untagged above baseline.",
+      "root": "kye:registry:pages",
+      "ladder_rank": 42,
+      "ladder_group": "projection",
+      "essentiality": "structural"
     },
     {
-      "primitive_id": "entity-first",
-      "question": "Does every entity carry a KYE-ID under governance?",
-      "grafts": "\u00a70.36 + \u00a70.37",
+      "primitive_id": "callable-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every capability exposed through a governed, declared, callable surface (OpenAPI API and/or §15 MCP / §69 Control-Plane MCP), never a private un-callable function?",
+      "grafts": "§0.30 + §15 MCP Gateway + §69 Control-Plane MCP",
       "contribution": "graft",
       "build_order": null,
       "enforcing_gates": [
-        "test:entity-id-canonical"
-      ]
+        "test:openapi-functions-bijection",
+        "test:agent-native-principal-canonical"
+      ],
+      "note": "Posture primitive. A callable surface is declared (OpenAPI, bijection-enforced) and agent-callable as a first-class principal surface (§0.30). NOTE: the previously-cited roadmap agent-gateway spec (2026-07-11) does NOT exist in-repo; §15/§69 are the real callable canon.",
+      "root": "kye:registry:tool-mcp-register",
+      "ladder_rank": 43,
+      "ladder_group": "projection",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "agentic-first",
+      "entity_class": "doctrine-primitive",
+      "aliases": [
+        "agent-first",
+        "ai-first"
+      ],
+      "question": "Is every agent modelled as a first-class principal (canonical identity + §52 authority binding + evidence chain), never a second-class 'AI integration'?",
+      "grafts": "§0.30 Agents as First-Class Principals",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:agent-native-principal-canonical"
+      ],
+      "note": "Posture primitive; folds ai-first (same concept: §0.30). A parallel agent identity schema is a §0 + §0.30 violation caught by agent-native-principal-canonical. agent-first (CEO 2026-09-08) folds here too: same §0.30 concept, one row (§0).",
+      "root": "kye:registry:agent-manifest",
+      "ladder_rank": 44,
+      "ladder_group": "projection",
+      "essentiality": "structural"
     },
     {
       "primitive_id": "cloudflare-first",
-      "question": "Is every hot-path component edge-native?",
-      "grafts": "\u00a716",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every hot-path component edge-native (Cloudflare Workers / Pages Functions / D1 / KV / R2 / Queues) rather than origin-bound?",
+      "grafts": "§16 Edge Runtime (Cloudflare-Native Topology)",
       "contribution": "graft",
       "build_order": null,
       "enforcing_gates": [
         "test:cf-resource-governance-coverage"
-      ]
+      ],
+      "note": "Posture primitive. §16: 'the edge is the runtime — the origin is the slow path.' cf-resource-governance-coverage governs the declared Cloudflare resource surface.",
+      "root": "kye:registry:worker-manifest",
+      "ladder_rank": 45,
+      "ladder_group": "substrate",
+      "essentiality": "substrate"
     },
     {
       "primitive_id": "stripe-first",
-      "question": "Is every commercial surface metered on Stripe (no access before invoice.paid)?",
-      "grafts": "\u00a727",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every commercial surface metered/commerce-native on Stripe (no platform access before invoice.paid), never a bolted-on billing path?",
+      "grafts": "§27 Commercial Lifecycle + Payment-Gate (Stripe baked-in)",
       "contribution": "graft",
       "build_order": null,
       "enforcing_gates": [
         "test:stripe-canonical"
-      ]
+      ],
+      "note": "Posture primitive (applies where the artefact is commercial). §27: no Clerk user/tenant/dashboard before Stripe fires invoice.paid. stripe-canonical locks the Stripe integration canon.",
+      "root": "kye:registry:skus",
+      "ladder_rank": 46,
+      "ladder_group": "substrate",
+      "essentiality": "substrate"
+    }
+  ],
+  "ladder_groups": [
+    {
+      "group": "identity",
+      "meaning": "what a thing IS before it is shaped",
+      "members": [
+        "namespace-first",
+        "entity-first"
+      ],
+      "essentiality": "fundamental"
     },
     {
-      "primitive_id": "governed-and-governable-first",
-      "question": "Does every privileged component run the real Decision Engine at t=0?",
-      "grafts": "\u00a70.3 + \u00a70.40 + \u00a70.34",
-      "contribution": "graft",
-      "build_order": null,
-      "enforcing_gates": [
-        "test:governed-inventory-coverage"
-      ]
+      "group": "canon",
+      "meaning": "the artefacts that declare it, in landing order",
+      "members": [
+        "canonical-first",
+        "vocabulary-first",
+        "dictionary-first",
+        "schema-first",
+        "contract-first",
+        "registry-first",
+        "manifest-first",
+        "api-first"
+      ],
+      "essentiality": "fundamental"
+    },
+    {
+      "group": "regime",
+      "meaning": "the external law it binds to, stated honestly",
+      "members": [
+        "jurisdiction-first",
+        "regulatory-first",
+        "framework-first",
+        "standards-first",
+        "compliance-first"
+      ],
+      "essentiality": "fundamental"
+    },
+    {
+      "group": "boundary",
+      "meaning": "how it crosses, both ways, owned one way",
+      "members": [
+        "decoupled-first",
+        "bidirectional-first",
+        "event-first",
+        "gateway-first"
+      ],
+      "essentiality": "fundamental"
+    },
+    {
+      "group": "decision",
+      "meaning": "how authority is exercised over it",
+      "members": [
+        "policy-first",
+        "invariant-first",
+        "deterministic-first",
+        "t0-first",
+        "concurrency-first",
+        "governed-and-governable-first",
+        "enforcer-first"
+      ],
+      "essentiality": "fundamental"
+    },
+    {
+      "group": "flow",
+      "meaning": "how it moves through the estate",
+      "members": [
+        "rail-first",
+        "workflow-first",
+        "pipeline-first",
+        "lifecycle-first"
+      ],
+      "essentiality": "structural"
+    },
+    {
+      "group": "record",
+      "meaning": "what remains, immutably, at emission",
+      "members": [
+        "evidence-first",
+        "audit-first",
+        "worm-first",
+        "reporting-first"
+      ],
+      "essentiality": "fundamental"
+    },
+    {
+      "group": "finality",
+      "meaning": "how a fact becomes final",
+      "members": [
+        "clearing-first",
+        "reconciliation-first",
+        "resolution-first",
+        "settlement-first"
+      ],
+      "essentiality": "fundamental"
+    },
+    {
+      "group": "projection",
+      "meaning": "how it is seen and consumed",
+      "members": [
+        "graph-first",
+        "query-first",
+        "machine-readable-first",
+        "discoverable-by-agents-first",
+        "callable-first",
+        "agentic-first"
+      ],
+      "essentiality": "structural"
+    },
+    {
+      "group": "substrate",
+      "meaning": "the platform bindings it runs on",
+      "members": [
+        "cloudflare-first",
+        "stripe-first"
+      ],
+      "essentiality": "substrate"
     }
-  ]
+  ],
+  "ladder_note": "LOCKED ORDER (2026-09-08, CEO: 'order at your complete discretion — lock what is needed / must have / essential / fundamental'; the CEO's own sequence of the same day was a sample of thinking aloud). Ten groups, each answering one question in the order the questions must be answered: IDENTITY (what a thing is: namespace · entity) → CANON (the artefacts that declare it, in landing order: canonical · vocabulary · dictionary · schema · contract · registry · manifest · api) → REGIME (the external law it binds to, stated honestly under §70: jurisdiction · regulatory · framework · standards · compliance) → BOUNDARY (how it crosses, both ways, owned one way: decoupled · bidirectional · event · gateway) → DECISION (how authority is exercised over it: policy · invariant · deterministic · t0 · concurrency · governed-and-governable · enforcer) → FLOW (how it moves: rail · workflow · pipeline · lifecycle) → RECORD (what remains at emission: evidence · audit · worm · reporting) → FINALITY (how a fact becomes final: clearing · reconciliation · resolution · settlement) → PROJECTION (how it is seen and consumed: graph · query · machine-readable · discoverable · callable · agentic) → SUBSTRATE (cloudflare · stripe). Two deliberate departures from the sample: the dictionary lands before the schema (a schema enum is a projection of dictionary terms, asserted byte-equal by action-class-canonical — the 2026-09-08 `benefits` plane finding), and clearing precedes reconciliation → resolution → settlement (clearing is admissibility BEFORE the act; the other three are the post-observation order). Governing principle of the boundary group: BIDIRECTIONAL COMMUNICATION, UNIDIRECTIONAL AUTHORITY — every fact has exactly one authoritative source and one conflict rule; an observation never mutates canonical state; transport is governed at t=0 through an atomic ledger commit over state + outbound event (outbox → queue → connector worker). A declared timeout (kye.agent.workflow.v1 step.timeout_ms) is the one wait contract, reused by the finality lane for 'confirmation never arrived'. Essentiality: fundamental = identity · canon · regime · boundary · decision · record · finality; structural = flow · projection; substrate = cloudflare · stripe."
 }

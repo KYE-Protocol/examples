@@ -1,0 +1,329 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.schema_migration_map.v1.json",
+  "schema": "kye.schema_migration_map.v1",
+  "registry_id": "kye:registry:schema-migration-map",
+  "provenance": "source: hand-declared rows — each row is a decision that a legacy schema filename migrates to a canonical $id-derived name, recorded when the decision is taken (SCHEMA-MIGRATION.md); the rename on disk follows the row, never the reverse, so nothing generates this map.",
+  "$comment": "Machine-readable schema namespace migration map. See SCHEMA-MIGRATION.md. Contract: kye.schema_migration_map.v1; every status is a term of kye:dictionary:schema-migration.",
+  "version": 1,
+  "adopted": "2026-05-12",
+  "entries": [
+    {
+      "legacy_filename": "entity.json",
+      "new_id": "kye.entity.core.v1",
+      "new_filename": "kye.entity.core.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "agent-entity.json",
+      "new_id": "kye.entity.agent.v1",
+      "new_filename": "kye.entity.agent.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "delegation.json",
+      "new_id": "kye.authority.delegation.v1",
+      "new_filename": "kye.authority.delegation.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "authority-grant.json",
+      "new_id": "kye.authority.grant.v1",
+      "new_filename": "kye.authority.grant.v1.json",
+      "status": "shipped",
+      "pr": "126"
+    },
+    {
+      "legacy_filename": "scope.json",
+      "new_id": "kye.scope.spec.v1",
+      "new_filename": "kye.scope.spec.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "policy-decision.json",
+      "new_id": "kye.decision.record.v1",
+      "new_filename": "kye.decision.record.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "runtime-event.json",
+      "new_id": "kye.decision.runtime_event.v1",
+      "new_filename": "kye.decision.runtime_event.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "audit-event.json",
+      "new_id": "kye.audit.event.v1",
+      "new_filename": "kye.audit.event.v1.json",
+      "status": "deprecated_pending_callsite_migration",
+      "deprecation_date": "2026-05-19",
+      "note": "Canonical replacement landed 2026-05-19 (separation-of-concerns audit §0). Legacy schema carries deprecated:true. Runtime call sites in admin functions + widgets + mobile demo retain the audit_event_id field name and must migrate before legacy schema deletion."
+    },
+    {
+      "legacy_filename": "proof-bundle.json",
+      "new_id": "kye.evidence.pack.v1",
+      "new_filename": "kye.evidence.pack.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "note": "renamed from Proof Bundle to Evidence Pack per NAMING §10"
+    },
+    {
+      "legacy_filename": "decision-map.json",
+      "new_id": "kye.evidence.decision_map.v1",
+      "new_filename": "kye.evidence.decision_map.v1.json",
+      "status": "shipped",
+      "pr": "126"
+    },
+    {
+      "legacy_filename": "decision-replay.json",
+      "new_id": "kye.replay.proof.v1",
+      "new_filename": "kye.replay.proof.v1.json",
+      "status": "shipped",
+      "pr": "126"
+    },
+    {
+      "legacy_filename": "execution-context-seal.json",
+      "new_id": "kye.replay.context_seal.v1",
+      "new_filename": "kye.replay.context_seal.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "tool-call-ledger-entry.json",
+      "new_id": "kye.evidence.tool_call.v1",
+      "new_filename": "kye.evidence.tool_call.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "purpose-grant.json",
+      "new_id": "kye.purpose.grant.v1",
+      "new_filename": "kye.purpose.grant.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "purpose-request.json",
+      "new_id": "kye.purpose.request.v1",
+      "new_filename": "kye.purpose.request.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "purpose-admissibility.json",
+      "new_id": "kye.purpose.admissibility.v1",
+      "new_filename": "kye.purpose.admissibility.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "drift-event.json",
+      "new_id": "kye.resilience.drift_event.v1",
+      "new_filename": "kye.resilience.drift_event.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "operating-model-spec.json",
+      "new_id": "kye.operating_model.spec.v1",
+      "new_filename": "kye.operating_model.spec.v1.json",
+      "status": "shipped",
+      "pr": "126",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "directory-entry.json",
+      "new_id": "kye.directory.entry.v1",
+      "new_filename": "kye.directory.entry.v1.json",
+      "status": "shipped",
+      "pr": "126"
+    },
+    {
+      "legacy_filename": "discovery-policy.json",
+      "new_id": "kye.directory.policy.v1",
+      "new_filename": "kye.directory.policy.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "discovery-query.json",
+      "new_id": "kye.directory.query.v1",
+      "new_filename": "kye.directory.query.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "assurance-card.json",
+      "new_id": "kye.assurance.card.v1",
+      "new_filename": "kye.assurance.card.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "compliance-card.json",
+      "new_id": "kye.assurance.compliance_card.v1",
+      "new_filename": "kye.assurance.compliance_card.v1.json",
+      "status": "pending",
+      "file_renamed_at": "2026-09-08"
+    },
+    {
+      "legacy_filename": "connector-manifest.json",
+      "new_id": "kye.connector.manifest.v1",
+      "new_filename": "kye.connector.manifest.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "capability-manifest.json",
+      "new_id": "kye.connector.capability.v1",
+      "new_filename": "kye.connector.capability.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "webhook-event.json",
+      "new_id": "kye.developer.webhook_event.v1",
+      "new_filename": "kye.developer.webhook_event.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "mcp-tool.json",
+      "new_id": "kye.developer.mcp_tool.v1",
+      "new_filename": "kye.developer.mcp_tool.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": "metering-event.json",
+      "new_id": "kye.billing.meter_event.v1",
+      "new_filename": "kye.billing.meter_event.v1.json",
+      "status": "shipped",
+      "note": "§0 consolidation 2026-07-02: the legacy shape was removed and metering-event.json converted to a DEPRECATED REDIRECT ALIAS ($ref to the EXISTING canonical kye.billing.meter_event.v1); consumers repointed. No kye.billing.metering_event.v1 was ever created — that would have been a second parallel meter-event schema."
+    },
+    {
+      "legacy_filename": "tenant-event.json",
+      "new_id": "kye.admin.tenant_event.v1",
+      "new_filename": "kye.admin.tenant_event.v1.json",
+      "status": "pending"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.assurance.audit_pilot.v1",
+      "new_filename": "kye.assurance.audit_pilot.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21)"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.evidence.observed_action.v1",
+      "new_filename": "kye.evidence.observed_action.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21)"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.decision.shadow_evaluation.v1",
+      "new_filename": "kye.decision.shadow_evaluation.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21); production_action_blocked invariantly false"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.authority.gap.v1",
+      "new_filename": "kye.authority.gap.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21)"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.operating_model.guard_recommendation.v1",
+      "new_filename": "kye.operating_model.guard_recommendation.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21)"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.connector.stack_binding.v1",
+      "new_filename": "kye.connector.stack_binding.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21)"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.assurance.adoption_stage.v1",
+      "new_filename": "kye.assurance.adoption_stage.v1.json",
+      "status": "shipped",
+      "pr": "doc-21",
+      "note": "Delegated Auditability rail (constitution doc 21); 6-stage ladder state machine"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.onboarding.workflow.v1",
+      "new_filename": "kye.onboarding.workflow.v1.json",
+      "status": "shipped",
+      "pr": "doc-22",
+      "note": "KYE Onboarding Agent (constitution doc 22) — full workflow document, authoritative state"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.onboarding.transition.v1",
+      "new_filename": "kye.onboarding.transition.v1.json",
+      "status": "shipped",
+      "pr": "doc-22",
+      "note": "KYE Onboarding Agent (constitution doc 22) — hash-chained signed state transition"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.onboarding.kickoff_brief.v1",
+      "new_filename": "kye.onboarding.kickoff_brief.v1.json",
+      "status": "shipped",
+      "pr": "doc-22",
+      "note": "KYE Onboarding Agent (constitution doc 22) — Kickoff Brief delivered at workflow completion"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.billing.subscription.v1",
+      "new_filename": "kye.billing.subscription.v1.json",
+      "status": "shipped",
+      "pr": "doc-23",
+      "note": "KYE Billing Meters (constitution doc 23) — per-customer Stripe subscription record"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.billing.meter_event.v1",
+      "new_filename": "kye.billing.meter_event.v1.json",
+      "status": "shipped",
+      "pr": "doc-23",
+      "note": "KYE Billing Meters (constitution doc 23) — one chargeable meter event; idempotent via event_id"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.billing.invoice.v1",
+      "new_filename": "kye.billing.invoice.v1.json",
+      "status": "shipped",
+      "pr": "doc-23",
+      "note": "KYE Billing Meters (constitution doc 23) — Stripe-side invoice projection"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.billing.bps_event.v1",
+      "new_filename": "kye.billing.bps_event.v1.json",
+      "status": "shipped",
+      "pr": "doc-23",
+      "note": "KYE BPS Action (constitution doc 23 §4) — basis-points fee event for value-bearing actions, floor £5 / cap £50"
+    },
+    {
+      "legacy_filename": null,
+      "new_id": "kye.billing.attestation_seat.v1",
+      "new_filename": "kye.billing.attestation_seat.v1.json",
+      "status": "shipped",
+      "pr": "doc-23",
+      "note": "KYE Compliance Seat (constitution doc 23 §2.4) — per-framework annual attestation seat"
+    }
+  ]
+}
