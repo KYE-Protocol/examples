@@ -9,7 +9,17 @@
   "entries": [
     {
       "component_id": "example-vendor-binding",
-      "depends_on": "example-vendor",
+      "depends_on": [
+        "kye:sub-processor:cloudflare"
+      ],
+      "depends_on_undeclared": [
+        {
+          "referent": "the specific vendor resource this component is bound to",
+          "reason": "the vendor is a declared sub-processor, but the individual resource it binds to is issued no entity id — the gap is declared on the row rather than written as prose in depends_on",
+          "owed_class": "vendor-resource-class",
+          "entity_class": "spof-entry"
+        }
+      ],
       "failure_mode": "if example-vendor goes down, the illustrated component cannot serve requests",
       "fallback_status": "partial",
       "fallback_ref": "internal",
