@@ -2,22 +2,89 @@
   "schema": "kye.ai_tell_lexicon.v1",
   "registry_id": "kye:registry:ai-tell-lexicon",
   "title": "KYE AI-Tell Lexicon — example instance",
-  "description": "Illustrative instance showing the tell shape (phrase + word, with severities and an allow_context whitelist).",
-  "version": "1.0.0",
+  "description": "Illustrative instance showing all three tell dimensions: a phrase and a word (scored, with severities and an allow_context whitelist), and a punctuation tell (not scored — enforced net-new-strict on the change-set). surface_corpus shows how the scanned population is DECLARED rather than enumerated by each scanner.",
+  "version": "1.1.0",
   "owner": "content",
-  "constitution_refs": ["11", "0.3"],
-  "scoring": { "high": 3, "medium": 2, "low": 1, "note": "weighted hit = severity weight; gate ratchets a decreases-only site-wide total." },
+  "constitution_refs": [
+    "11",
+    "0.3"
+  ],
+  "scoring": {
+    "high": 3,
+    "medium": 2,
+    "low": 1,
+    "note": "weighted hit = severity weight; scored tells are judged per entity, so there is no site-wide total to bank."
+  },
   "phrases": [
-    { "pattern": "in today's (?:fast-paced )?world", "severity": "high", "why": "throat-clearing filler opener — the canonical AI intro" },
-    { "pattern": "let's (?:dive in|explore)", "severity": "high", "why": "chatbot narration; copy shows, doesn't announce" }
+    {
+      "pattern": "in today's (?:fast-paced )?world",
+      "severity": "high",
+      "why": "throat-clearing filler opener — the canonical AI intro"
+    },
+    {
+      "pattern": "let's (?:dive in|explore)",
+      "severity": "high",
+      "why": "chatbot narration; copy shows, doesn't announce"
+    }
   ],
   "words": [
-    { "pattern": "delve", "severity": "high", "why": "the single strongest AI-authorship signal" },
-    { "pattern": "seamless(?:ly)?", "severity": "medium", "why": "AI adjective; rarely true, never specific" },
-    { "pattern": "gateway to", "severity": "low", "why": "metaphor slop", "allow_context": ["MCP Gateway"] }
+    {
+      "pattern": "delve",
+      "severity": "high",
+      "why": "the single strongest AI-authorship signal"
+    },
+    {
+      "pattern": "seamless(?:ly)?",
+      "severity": "medium",
+      "why": "AI adjective; rarely true, never specific"
+    },
+    {
+      "pattern": "gateway to",
+      "severity": "low",
+      "why": "metaphor slop",
+      "allow_context": [
+        "MCP Gateway"
+      ]
+    }
   ],
-  "excluded_from_scan": {
-    "note": "operator/data surfaces + redirect stubs are exempt",
-    "files": ["404.html", "reset.html"]
-  }
+  "surface_corpus": {
+    "source": "kye:registry:pages",
+    "predicate": "indexable === true",
+    "rationale": "The page graph already declares which pages are buyer-facing, so both the voice scanner and the clarity scorer resolve one answer instead of each hand-typing a surface list and walking it non-recursively.",
+    "excluded": [
+      {
+        "path": "site/inventory.html",
+        "reason": "A generated catalogue table, not authored prose; a generator's rows are neither credited nor penalised."
+      }
+    ]
+  },
+  "punctuation": [
+    {
+      "tell_id": "em-dash-as-default-separator",
+      "entity_class": "lexicon-punctuation",
+      "character": "—",
+      "class": "copy-register",
+      "applies_to": {
+        "source_roots": [
+          "site/src/",
+          "public/"
+        ],
+        "rationale": "The authored sources of the buyer-facing corpus; generated output is excluded so one edit is counted once."
+      },
+      "why": "The em-dash is the most recognisable punctuation fingerprint of machine-authored prose. The tell is the character used as the DEFAULT clause separator, where a comma, a colon or a rewritten sentence would carry the meaning.",
+      "enforcement": {
+        "mode": "net-new-strict",
+        "basis": "Enforceable at t=0 with no stored number: the gate diffs the change-set's own range and refuses a source file that gained an occurrence. A per-page count would be a ratchet.",
+        "migration": {
+          "state": "migration-owed",
+          "owed": "The pre-existing population is declared once here, never as one rubber-stamped row per page."
+        }
+      },
+      "measured_at_declaration": {
+        "at": "2026-09-10",
+        "command": "count U+2014 in the visible prose of every buyer-facing page the corpus resolves",
+        "finding": "Measured across the declared corpus at declaration time; the figure lives on the registry row, not here."
+      }
+    }
+  ]
 }

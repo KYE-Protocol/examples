@@ -5,7 +5,11 @@
   "version": 4,
   "issued_at": "2026-05-29T00:00:00Z",
   "not_before": "2026-05-29T00:00:00Z",
-  "not_after":  "2026-08-29T00:00:00Z",
+  "not_after": "2026-08-29T00:00:00Z",
+  "skill_roots": [
+    ".claude/skills",
+    "vendor/marketplace-skills"
+  ],
   "entries": [
     {
       "tool_id": "kye:tool:acme-financial:experimental-research-llm",
@@ -20,18 +24,29 @@
         "verification_method": "signed-manifest-ed25519",
         "verified_at": "2026-05-28T09:00:00Z"
       },
-      "revocation_status": { "status": "active" },
+      "revocation_status": {
+        "status": "active"
+      },
       "trust_tier": "tier-0-untrusted",
       "permitted_agents": [
         "kye:agent:acme-financial:research-explorer"
       ],
-      "permitted_actions": ["search", "summarise"],
+      "permitted_actions": [
+        "search",
+        "summarise"
+      ],
       "data_access_scope": {
-        "classes": ["public-only"],
-        "regions": ["uk-south"],
+        "classes": [
+          "public-only"
+        ],
+        "regions": [
+          "uk-south"
+        ],
         "rate_limit_per_min": 30
       },
-      "write_permissions": ["none"],
+      "write_permissions": [
+        "none"
+      ],
       "approval_threshold": "single-approver",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json"
@@ -53,19 +68,32 @@
       "permitted_agents": [
         "kye:agent:acme-financial:onboarding-explorer"
       ],
-      "permitted_actions": ["screen", "summarise"],
+      "permitted_actions": [
+        "screen",
+        "summarise"
+      ],
       "data_access_scope": {
-        "classes": ["customer-pii-pseudonymous"],
-        "regions": ["uk-south", "eu-west"],
+        "classes": [
+          "customer-pii-pseudonymous"
+        ],
+        "regions": [
+          "uk-south",
+          "eu-west"
+        ],
         "rate_limit_per_min": 60
       },
-      "write_permissions": ["none"],
+      "write_permissions": [
+        "none"
+      ],
       "approval_threshold": "auto",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
         "https://kyeprotocol.com/schemas/kye.evidence.pack.v1.json"
       ],
-      "finality_conditions": ["read-only", "session-bounded"],
+      "finality_conditions": [
+        "read-only",
+        "session-bounded"
+      ],
       "last_assurance_review": "2026-04-15",
       "next_assurance_review": "2026-07-15"
     },
@@ -78,13 +106,24 @@
       "permitted_agents": [
         "kye:agent:acme-financial:case-handler-assistant"
       ],
-      "permitted_actions": ["read", "update-narrative", "update-status"],
+      "permitted_actions": [
+        "read",
+        "update-narrative",
+        "update-status"
+      ],
       "data_access_scope": {
-        "classes": ["customer-pii", "case-record"],
-        "regions": ["uk-south"],
+        "classes": [
+          "customer-pii",
+          "case-record"
+        ],
+        "regions": [
+          "uk-south"
+        ],
         "rate_limit_per_min": 120
       },
-      "write_permissions": ["tenant-scoped-write"],
+      "write_permissions": [
+        "tenant-scoped-write"
+      ],
       "approval_threshold": "single-approver",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
@@ -107,13 +146,24 @@
       "permitted_agents": [
         "kye:agent:acme-financial:payment-orchestrator"
       ],
-      "permitted_actions": ["submit", "reverse", "reconcile"],
+      "permitted_actions": [
+        "submit",
+        "reverse",
+        "reconcile"
+      ],
       "data_access_scope": {
-        "classes": ["payment-instruction", "wallet-state"],
-        "regions": ["uk-south"],
+        "classes": [
+          "payment-instruction",
+          "wallet-state"
+        ],
+        "regions": [
+          "uk-south"
+        ],
         "rate_limit_per_min": 240
       },
-      "write_permissions": ["external-side-effect"],
+      "write_permissions": [
+        "external-side-effect"
+      ],
       "approval_threshold": "two-person",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
@@ -139,13 +189,25 @@
       "permitted_agents": [
         "kye:agent:acme-financial:federation-orchestrator"
       ],
-      "permitted_actions": ["initiate-settlement", "release-funds"],
+      "permitted_actions": [
+        "initiate-settlement",
+        "release-funds"
+      ],
       "data_access_scope": {
-        "classes": ["payment-instruction", "counterparty-record"],
-        "regions": ["uk-south", "eu-west"],
+        "classes": [
+          "payment-instruction",
+          "counterparty-record"
+        ],
+        "regions": [
+          "uk-south",
+          "eu-west"
+        ],
         "rate_limit_per_min": 60
       },
-      "write_permissions": ["external-side-effect", "system-of-record-write"],
+      "write_permissions": [
+        "external-side-effect",
+        "system-of-record-write"
+      ],
       "approval_threshold": "two-person-with-legal",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
@@ -166,6 +228,7 @@
       "tool_id": "kye:tool:acme-financial:marketplace-summariser-skill",
       "tool_display_name": "Document summariser skill (marketplace)",
       "entry_kind": "skill",
+      "skill_ref": "vendor/marketplace-skills/marketplace-summariser",
       "publisher": {
         "publisher_id": "kye:prin:acme-financial:vendor-clearskill",
         "publisher_display_name": "ClearSkill Ltd",
@@ -173,23 +236,36 @@
         "verification_method": "domain-control",
         "verified_at": "2026-05-22T12:00:00Z"
       },
-      "revocation_status": { "status": "active" },
+      "revocation_status": {
+        "status": "active"
+      },
       "trust_tier": "tier-1-sandboxed",
       "permitted_agents": [
         "kye:agent:acme-financial:research-explorer"
       ],
-      "permitted_actions": ["summarise"],
+      "permitted_actions": [
+        "summarise"
+      ],
       "data_access_scope": {
-        "classes": ["public-only"],
-        "regions": ["uk-south"],
+        "classes": [
+          "public-only"
+        ],
+        "regions": [
+          "uk-south"
+        ],
         "rate_limit_per_min": 30
       },
-      "write_permissions": ["none"],
+      "write_permissions": [
+        "none"
+      ],
       "approval_threshold": "single-approver",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json"
       ],
-      "finality_conditions": ["read-only", "session-bounded"],
+      "finality_conditions": [
+        "read-only",
+        "session-bounded"
+      ],
       "last_assurance_review": "2026-05-22",
       "next_assurance_review": "2026-08-22"
     },
@@ -197,6 +273,7 @@
       "tool_id": "kye:tool:acme-financial:rogue-exfil-skill",
       "tool_display_name": "Untrusted marketplace skill (revoked — exfiltration signature)",
       "entry_kind": "skill",
+      "skill_ref": "vendor/marketplace-skills/rogue-exfil",
       "publisher": {
         "publisher_id": "kye:prin:acme-financial:vendor-unknown-marketplace",
         "publisher_display_name": "Unknown marketplace author",
@@ -212,19 +289,29 @@
       "permitted_agents": [
         "kye:agent:acme-financial:research-explorer"
       ],
-      "permitted_actions": ["summarise"],
+      "permitted_actions": [
+        "summarise"
+      ],
       "data_access_scope": {
-        "classes": ["public-only"],
-        "regions": ["uk-south"],
+        "classes": [
+          "public-only"
+        ],
+        "regions": [
+          "uk-south"
+        ],
         "rate_limit_per_min": 0
       },
-      "write_permissions": ["none"],
+      "write_permissions": [
+        "none"
+      ],
       "approval_threshold": "super-admin",
       "evidence_requirements": [
         "https://kyeprotocol.com/schemas/kye.evidence.tool_call_pin.v1.json",
         "https://kyeprotocol.com/schemas/kye.purpose.admissibility.v1.json"
       ],
-      "finality_conditions": ["revoked-entry-refused-pre-invocation"],
+      "finality_conditions": [
+        "revoked-entry-refused-pre-invocation"
+      ],
       "last_assurance_review": "2026-06-25",
       "next_assurance_review": "2026-09-25"
     }
