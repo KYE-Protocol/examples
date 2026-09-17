@@ -12,7 +12,23 @@
     { "class": "search-input", "selector": "input[type=search]", "exercise": "type-submit-observe", "description": "Search boxes." }
   ],
   "render_gaps": [
-    { "page": "app/index.html", "gap_class": "auth-wall", "reason": "Cloud console sign-in surface; mounts Clerk sign-in rather than a dashboard." }
+    { "page": "app/index.html", "gap_class": "auth-wall", "reason": "Cloud console sign-in surface; mounts Clerk sign-in rather than a dashboard.", "declared_at": "2026-08-22" }
+  ],
+  "declared_journeys": [
+    {
+      "journey_id": "kye:journey:example-core-denial",
+      "surface": "app",
+      "page": "app/index.html",
+      "description": "A customer picks the core scenario, resolves it against the real decision endpoint, reads the verdict and opens the Evidence Pack panel.",
+      "steps": [
+        { "kind": "click", "selector": "button[data-scenario-id=\"kye:demo-scenario:example\"]", "description": "select the scenario" },
+        { "kind": "click", "selector": "#decide" },
+        { "kind": "expect-text", "selector": "#verdict", "text": "DENY" },
+        { "kind": "click", "selector": "#evidence-pack > summary" },
+        { "kind": "expect-attribute", "selector": "#evidence-pack", "attribute": "open", "value": "" },
+        { "kind": "expect-selector", "selector": "#pack-json", "count": 1 }
+      ]
+    }
   ],
   "governance": {
     "control_id": "constitution/13-RESILIENCE-LOOP.md",

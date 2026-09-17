@@ -61,7 +61,7 @@
   "junctions": {
     "resolved_at": "2026-08-06",
     "kye_frame": {
-      "frame": "KYE = Know Your Entity + Authority Finality™. KYE does not run agents; KYE governs whether an agent's action may become final.",
+      "frame": "KYE = Know Your Entity + Authority Finality™. KYE governs whether an agent's action may become final — for the governed agents KYE itself builds, runs and sells, and for every third-party or customer agent it governs.",
       "one_liner": "The runtime protocol that proves every consequential action was authorised, purpose-bound, evidenced, replayable and final before it changed the world.",
       "synthesis": "A system may be safe, semantically aligned, policy-compliant, authenticated and technically permitted — and still lack valid authority to act. KYE resolves that final missing condition before execution.",
       "wordmarks": [

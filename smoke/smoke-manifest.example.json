@@ -47,7 +47,13 @@
         "chrome_token": "data-kye-header",
         "require_light_default": true,
         "forbid_mask_tokens": true,
-        "require_canonical_og": false
+        "require_canonical_og": false,
+        "rendered_shell": {
+          "selector_counts": {
+            "[data-kye-header]": 1,
+            "[data-kye-footer]": 1
+          }
+        }
       }
     },
     {
@@ -93,7 +99,21 @@
         "require_light_default": true,
         "forbid_mask_tokens": true,
         "require_canonical_og": false,
-        "require_auth_live": true
+        "require_auth_live": true,
+        "rendered_shell": {
+          "selector_counts": {
+            "aside.side": 1,
+            "header.topbar": 1,
+            ".kye-arch": 0
+          },
+          "chrome_owned_ref": "kye:registry:surface-affordance-contract",
+          "withhold_scripts": [
+            {
+              "path": "assets/clerk-bootstrap.js",
+              "reason": "The auth SDK loader: offline it cannot load clerk-js and the bootstrap FAILS CLOSED by design (admin blanks the page, app redirects to the wall). The wall is the --live --auth arm's assertion; this arm asserts the SHELL a signed-in customer sees, so the loader is withheld — never app.js, never the page's own scripts."
+            }
+          ]
+        }
       }
     }
   ]

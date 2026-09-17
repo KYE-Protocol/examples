@@ -644,6 +644,13 @@
       "notes": "KYE §49 §9 sector pilot (KYE-PILOT-PROPERTY-TRANSACTION-001) governing AI agents acting in UK residential property transactions, conveyancing and shared ownership — at the transaction-step-admissibility boundary: the moment an AI-assisted step is taken, finalised, or relied on — under FCA MCOB, FCA Consumer Duty, UK MLR 2017, the Law Society Conveyancing Protocol, the CLC Code of Conduct, HM Land Registry (Safe Harbour) and the Homes England Capital Funding Guide. KYE governs the AI agent's authority to act + the evidence/replay of that action under a named conveyancer's authority; it does not perform searches, verify identity, calculate affordability, or determine the legal correctness of the conveyance. Constitution §49 §9 / §70."
     },
     {
+      "id": "kye-sme-payment-authority-pack",
+      "entity_class": "public-vocabulary-trademarks",
+      "term": "KYE SME Payment Authority Pack",
+      "class": "wordmark",
+      "notes": "KYE §49 §9 sector pilot (KYE-PILOT-SME-PAYMENT-AUTHORITY-001) governing an AI payment assistant acting for an SME — at the action-admissibility boundary, BEFORE the instruction reaches a rail: whether THIS agent under THIS delegation at THIS moment may cause THIS payment, against the four conditions that make a technically-processable instruction unauthorised (amount at or above the delegated threshold · supplier bank details changed since verification · an approval that predates that payee change · an expired execution grant). Every outcome carries a supervisory-language reason code and a signed Evidence Pack™ replayable from published keys alone. KYE governs the agent's authority-to-act and the evidence trail, NOT payment settlement, custody or the rail. Founding instance: the IoDE Armenia Agentic Finance Authority Pilot, Phase One synthetic-data-only and zero-budget; no funding, procurement, regulatory approval or endorsement by any public body is requested or implied. Constitution §49 §9 / §70."
+    },
+    {
       "id": "kye-tender-procurement-authority-pack",
       "entity_class": "public-vocabulary-trademarks",
       "term": "KYE Tender & Procurement Authority Pack",

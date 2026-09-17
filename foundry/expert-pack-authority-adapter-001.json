@@ -49,7 +49,7 @@
     },
     {
       "claim_id": "integrate-not-compete",
-      "claim_text": "The Pack integrates the host platform with KYE governance and governs agents as principals; it does not run agents and is not a competing agent runtime (§0.25 / §0.30 / §32 boundary).",
+      "claim_text": "The Pack integrates the host platform with KYE governance and governs the host's agents as principals; it is not a fork of the host's agent runtime (§0.25 / §0.30 / §32 boundary — KYE's own governed agents are a separate product line).",
       "approval_state": "draft"
     }
   ],

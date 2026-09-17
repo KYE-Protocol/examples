@@ -10,7 +10,7 @@
     "trademark": "Authority Finality\u2122",
     "kye_root": true,
     "one_liner": "The runtime protocol that proves every consequential action was authorised, purpose-bound, evidenced, replayable and final before it changed the world.",
-    "frame": "KYE = Know Your Entity + Authority Finality\u2122. KYE does not run agents; KYE governs whether an agent's action may become final."
+    "frame": "KYE = Know Your Entity + Authority Finality\u2122. KYE governs whether an agent's action may become final \u2014 for the governed agents KYE itself builds, runs and sells, and for every third-party or customer agent it governs."
   },
   "doctrine_ladder": [
     "Output is not authority.",

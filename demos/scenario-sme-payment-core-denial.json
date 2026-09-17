@@ -1,0 +1,230 @@
+{
+  "schema": "kye.demo_scenario.v1",
+  "id": "kye:demo-scenario:sme-payment-core-denial",
+  "version": 1,
+  "entity_class": "demo-scenario",
+  "name": "Core denial — technically processable, unauthorised on all four conditions",
+  "narrative": "The IoDE core scenario. A 2,400,000 AMD instruction: above the threshold, to a payee whose bank details changed since verification, under an approval recorded before that change, submitted on an expired execution grant. The rail would process it. KYE denies it BEFORE rail submission with all four reason codes on the sealed decision map — authority_expired leads, and payment_threshold_approval_required, supplier_bank_details_changed and approval_superseded_by_payee_change stand beside it.",
+  "substrate": "sme-payment-authority",
+  "evaluated_by": "public/sandbox/functions/api/v1/pdp/decide.js",
+  "reasoner_mode": {
+    "uses_llm": false,
+    "deterministic": true
+  },
+  "request": {
+    "subject": "kye:agent:demo-agent",
+    "action": "payment.request",
+    "purpose": "pay synthetic invoice INV-006 — the four-condition core denial",
+    "context": {
+      "capability": "payment_request",
+      "instruction_ref": "kye:fixture:sme-payment-authority:instruction:PI-006",
+      "invoice_ref": "kye:fixture:sme-payment-authority:invoice:INV-006",
+      "purchase_order_ref": "kye:fixture:sme-payment-authority:purchase-order:PO-006",
+      "supplier_ref": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+      "action": {
+        "submitted_at": "2026-09-16T10:00:00Z",
+        "amount": {
+          "value": 2400000,
+          "currency": "AMD"
+        },
+        "payee": {
+          "bank_details_fingerprint": "fp:sha256:synthetic-sup-002-changed-0003",
+          "synthetic_account_ref": "AMXX-SYNTH-000202"
+        }
+      },
+      "authority": {
+        "delegated_payment_threshold": 500000,
+        "execution_grant": {
+          "ref": "kye:fixture:sme-payment-authority:execution-grant:GRANT-B",
+          "expires_at": "2026-09-01T00:00:00Z"
+        },
+        "chain": [
+          "kye:fixture:sme-payment-authority:role:sme-owner",
+          "kye:fixture:sme-payment-authority:role:finance-manager",
+          "kye:agent:demo-agent",
+          "kye:fixture:sme-payment-authority:tool:rail-adapter"
+        ]
+      },
+      "supplier_record": {
+        "verified_bank_details_fingerprint": "fp:sha256:synthetic-sup-002-verified-0002",
+        "bank_details_changed_at": "2026-09-10T09:00:00Z"
+      },
+      "approval": {
+        "ref": "kye:fixture:sme-payment-authority:approval:APR-006",
+        "recorded_at": "2026-09-09T15:30:00Z",
+        "approved_payee_fingerprint": "fp:sha256:synthetic-sup-002-verified-0002"
+      },
+      "approval_recorded": true
+    }
+  },
+  "expected": {
+    "decision": "deny",
+    "reason_code": "authority_expired"
+  },
+  "tags": [
+    "sme-payment",
+    "core-denial",
+    "deny",
+    "iode-armenia"
+  ],
+  "demo_surface": "sme-payment-authority",
+  "mapping": {
+    "parties": [
+      {
+        "party_id": "sme-owner",
+        "label": "SME owner (Synthetic Person 001) — root of the KYE Chain of Authority™",
+        "role": "principal",
+        "frameworks": [
+          "iso-42001",
+          "nist-ai-rmf"
+        ]
+      },
+      {
+        "party_id": "finance-manager",
+        "label": "Finance manager (Synthetic Person 002) — delegated approver",
+        "role": "principal",
+        "frameworks": [
+          "iso-42001"
+        ]
+      },
+      {
+        "party_id": "ai-payment-assistant",
+        "label": "AI payment assistant (KYE Demo Agent™)",
+        "role": "operator",
+        "frameworks": [
+          "iso-42001",
+          "nist-ai-rmf"
+        ]
+      },
+      {
+        "party_id": "supplier",
+        "label": "Synthetic Supplier 002 — payee whose bank details changed",
+        "role": "counterparty",
+        "frameworks": [
+          "psd2-psd3"
+        ]
+      },
+      {
+        "party_id": "synthetic-rail",
+        "label": "Synthetic rail — moves no money",
+        "role": "witness",
+        "frameworks": [
+          "psd2-psd3"
+        ]
+      },
+      {
+        "party_id": "iode-reviewer",
+        "label": "Institute reviewer — independent replay from published keys",
+        "role": "witness",
+        "frameworks": [
+          "iso-42001"
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "t": "T+0s",
+        "party_id": "ai-payment-assistant",
+        "event": "Step 1 — receives synthetic invoice INV-006 and extracts supplier, 2,400,000 AMD, due date, invoice number, payee account AMXX-SYNTH-000202.",
+        "kind": "action"
+      },
+      {
+        "t": "T+1s",
+        "party_id": "ai-payment-assistant",
+        "event": "Step 2 — matches INV-006 to purchase order PO-006 (amount and supplier agree).",
+        "kind": "action"
+      },
+      {
+        "t": "T+2s",
+        "party_id": "supplier",
+        "event": "Step 3 — supplier record SUP-002: verified account AMXX-SYNTH-000002; bank details changed 2026-09-10 via a portal message, unverified.",
+        "kind": "observation"
+      },
+      {
+        "t": "T+2s",
+        "party_id": "finance-manager",
+        "event": "Approval APR-006 on record — recorded 2026-09-09, the day BEFORE the bank-details change; it names the verified payee.",
+        "kind": "attestation"
+      },
+      {
+        "t": "T+3s",
+        "party_id": "ai-payment-assistant",
+        "event": "Step 4 — submits the instruction to KYE under execution grant B (expired 2026-09-01) for authority, purpose, limits, approval and execution-boundary resolution.",
+        "kind": "action",
+        "cites": [
+          "iso-42001",
+          "nist-ai-rmf"
+        ]
+      },
+      {
+        "t": "T+3s",
+        "party_id": "ai-payment-assistant",
+        "event": "Step 5 — DENY before rail submission: authority_expired; also payment_threshold_approval_required, supplier_bank_details_changed, approval_superseded_by_payee_change.",
+        "kind": "decision-deny",
+        "cites": [
+          "psd2-psd3",
+          "iso-42001"
+        ],
+        "request": {
+          "subject": "kye:agent:demo-agent",
+          "action": "payment.request",
+          "purpose": "pay synthetic invoice INV-006 — the four-condition core denial",
+          "context": {
+            "capability": "payment_request",
+            "instruction_ref": "kye:fixture:sme-payment-authority:instruction:PI-006",
+            "invoice_ref": "kye:fixture:sme-payment-authority:invoice:INV-006",
+            "purchase_order_ref": "kye:fixture:sme-payment-authority:purchase-order:PO-006",
+            "supplier_ref": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+            "action": {
+              "submitted_at": "2026-09-16T10:00:00Z",
+              "amount": {
+                "value": 2400000,
+                "currency": "AMD"
+              },
+              "payee": {
+                "bank_details_fingerprint": "fp:sha256:synthetic-sup-002-changed-0003",
+                "synthetic_account_ref": "AMXX-SYNTH-000202"
+              }
+            },
+            "authority": {
+              "delegated_payment_threshold": 500000,
+              "execution_grant": {
+                "ref": "kye:fixture:sme-payment-authority:execution-grant:GRANT-B",
+                "expires_at": "2026-09-01T00:00:00Z"
+              },
+              "chain": [
+                "kye:fixture:sme-payment-authority:role:sme-owner",
+                "kye:fixture:sme-payment-authority:role:finance-manager",
+                "kye:agent:demo-agent",
+                "kye:fixture:sme-payment-authority:tool:rail-adapter"
+              ]
+            },
+            "supplier_record": {
+              "verified_bank_details_fingerprint": "fp:sha256:synthetic-sup-002-verified-0002",
+              "bank_details_changed_at": "2026-09-10T09:00:00Z"
+            },
+            "approval": {
+              "ref": "kye:fixture:sme-payment-authority:approval:APR-006",
+              "recorded_at": "2026-09-09T15:30:00Z",
+              "approved_payee_fingerprint": "fp:sha256:synthetic-sup-002-verified-0002"
+            },
+            "approval_recorded": true
+          }
+        }
+      },
+      {
+        "t": "T+3s",
+        "party_id": "synthetic-rail",
+        "event": "Steps 6–7 — nothing reaches the synthetic rail: the decision was sealed first and it was DENY. No outcome receipt exists because nothing executed.",
+        "kind": "observation"
+      },
+      {
+        "t": "T+4s",
+        "party_id": "iode-reviewer",
+        "event": "Step 8 — the Authority Finality™ receipt (the sealed Evidence Pack™) is replayed independently: replay seed re-derived from the pack's own inputs, Ed25519 signature verified from the published key.",
+        "kind": "attestation"
+      }
+    ],
+    "lineage_root": "kye:engagement:iode-armenia-agentic-finance"
+  }
+}
