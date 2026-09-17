@@ -1,0 +1,35 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.assurance.lint_html_declarations.v1.json",
+  "schema": "kye.assurance.lint_html_declarations.v1",
+  "registry_id": "kye:registry:lint-html-declarations",
+  "provenance": "source: illustrative example rows, hand-written for the public schema example.",
+  "kye_canonical": true,
+  "adopted_at": "2026-09-16",
+  "constitution_ref": "constitution/00-INDEX.md",
+  "description": "Illustrative example of kye.assurance.lint_html_declarations.v1 — two rows in the shape the gate generates from its own --list output.",
+  "declarations": [
+    {
+      "page": "public/site/example-surface.html",
+      "entity_class": "page",
+      "errors": 2,
+      "rules": {
+        "no-implicit-input-type": 1,
+        "unique-landmark": 1
+      },
+      "state": "owed-at-source",
+      "reason": "Measured by scripts/lint-html.mjs --list: 2 html-validate error(s) on this page (1 no-implicit-input-type, 1 unique-landmark). Real defects in the page's source, owed to the drain.",
+      "declared_at": "2026-09-16"
+    },
+    {
+      "page": "public/widgets/example/v1/index.html",
+      "entity_class": "page",
+      "errors": 1,
+      "rules": {
+        "prefer-native-element": 1
+      },
+      "state": "owed-at-source",
+      "reason": "Measured by scripts/lint-html.mjs --list: 1 html-validate error(s) on this page (1 prefer-native-element). Real defect in the widget template, owed to the drain.",
+      "declared_at": "2026-09-16"
+    }
+  ]
+}

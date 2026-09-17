@@ -1,0 +1,21 @@
+{
+  "schema_version": "kye.entity.project.v1",
+  "id": "kye:prj:northwind-bank-prj-2026-09-1601",
+  "tenant_id": "kye:tenant:northwind-bank",
+  "workspace_id": null,
+  "visible_in_workspaces": [
+    "kye:wsp:northwind-bank-wsp-2026-08-0417",
+    "kye:wsp:northwind-bank-wsp-2026-08-0912"
+  ],
+  "owning_team_id": "kye:team:northwind-bank-fincrime",
+  "slug": "cross-border-aml-uplift",
+  "name": "Northwind Bank cross-border AML uplift",
+  "description": "Runs across the EU consumer and UK corporate workspaces. Reach is declared here; every acting principal still needs an acts_in row for the workspace it acts in and a granted_access_to grant for each resource it touches.",
+  "state": "active",
+  "allowed_decision_classes": [
+    "aml.alert.triage",
+    "aml.case.escalate"
+  ],
+  "created_by": "kye:principal:northwind-bank:jordan-reyes",
+  "created_at": "2026-09-16T08:30:00Z"
+}

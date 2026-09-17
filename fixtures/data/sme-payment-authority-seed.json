@@ -1,0 +1,402 @@
+[
+  {
+    "kind": "sme",
+    "id": "kye:fixture-entity:acme-corp",
+    "label": "Acme Corporation (synthetic Armenian SME)",
+    "data": {
+      "trading_name": "Acme Corporation",
+      "domain": "acme.example",
+      "jurisdiction_label": "Armenia (synthetic pilot tenant)",
+      "currency": "AMD",
+      "note": "Synthetic SME drawn from kye:registry:fixture-entity — not a real organisation; no real accounts, records or bank integration exist behind it."
+    }
+  },
+  {
+    "kind": "role",
+    "id": "kye:fixture:sme-payment-authority:role:sme-owner",
+    "label": "SME owner (Synthetic Person 001)",
+    "data": {
+      "holder": "Synthetic Person 001",
+      "chain_position": "root_principal",
+      "approval_ceiling_amd": null,
+      "may_approve": true,
+      "note": "Root of the KYE Chain of Authority™; approval ceiling null = unlimited within the SME's own mandate."
+    }
+  },
+  {
+    "kind": "role",
+    "id": "kye:fixture:sme-payment-authority:role:finance-manager",
+    "label": "Finance manager (Synthetic Person 002)",
+    "data": {
+      "holder": "Synthetic Person 002",
+      "chain_position": "delegated_approver",
+      "approval_ceiling_amd": 5000000,
+      "may_approve": true,
+      "note": "Authorised approver for instructions at or above the assistant's delegated threshold, up to the ceiling."
+    }
+  },
+  {
+    "kind": "role",
+    "id": "kye:agent:demo-agent",
+    "label": "AI payment assistant (KYE Demo Agent™)",
+    "data": {
+      "chain_position": "delegated_agent",
+      "delegated_payment_threshold_amd": 500000,
+      "may_approve": false,
+      "capabilities": [
+        "payment_prepare",
+        "payment_request"
+      ],
+      "note": "Prepares and requests payments under the finance manager's delegation; never executes, never approves."
+    }
+  },
+  {
+    "kind": "role",
+    "id": "kye:fixture:sme-payment-authority:tool:rail-adapter",
+    "label": "Synthetic rail adapter (payment tool)",
+    "data": {
+      "chain_position": "tool",
+      "invoked_by": "kye:agent:demo-agent",
+      "target": "synthetic_rail",
+      "note": "The last link of the chain for an instruction; moves no money."
+    }
+  },
+  {
+    "kind": "execution_grant",
+    "id": "kye:fixture:sme-payment-authority:execution-grant:GRANT-A",
+    "label": "Execution grant A — active",
+    "data": {
+      "grantee": "kye:agent:demo-agent",
+      "granted_by": "kye:fixture:sme-payment-authority:role:finance-manager",
+      "issued_at": "2026-09-01T00:00:00Z",
+      "expires_at": "2026-12-31T23:59:59Z",
+      "revoked_at": null,
+      "status": "active"
+    }
+  },
+  {
+    "kind": "execution_grant",
+    "id": "kye:fixture:sme-payment-authority:execution-grant:GRANT-B",
+    "label": "Execution grant B — expired",
+    "data": {
+      "grantee": "kye:agent:demo-agent",
+      "granted_by": "kye:fixture:sme-payment-authority:role:finance-manager",
+      "issued_at": "2026-06-01T00:00:00Z",
+      "expires_at": "2026-09-01T00:00:00Z",
+      "revoked_at": null,
+      "status": "expired"
+    }
+  },
+  {
+    "kind": "supplier",
+    "id": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+    "label": "Synthetic Supplier 001 (office fit-out)",
+    "data": {
+      "verified_bank_details_fingerprint": "fp:sha256:synthetic-sup-001-verified-0001",
+      "verified_at": "2026-08-15T09:00:00Z",
+      "bank_details_changed_at": null,
+      "bank_details_changes": [],
+      "synthetic_account_ref": "AMXX-SYNTH-000001"
+    }
+  },
+  {
+    "kind": "supplier",
+    "id": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+    "label": "Synthetic Supplier 002 (logistics)",
+    "data": {
+      "verified_bank_details_fingerprint": "fp:sha256:synthetic-sup-002-verified-0002",
+      "verified_at": "2026-08-20T09:00:00Z",
+      "bank_details_changed_at": "2026-09-10T09:00:00Z",
+      "bank_details_changes": [
+        {
+          "changed_at": "2026-09-10T09:00:00Z",
+          "new_fingerprint": "fp:sha256:synthetic-sup-002-changed-0003",
+          "new_synthetic_account_ref": "AMXX-SYNTH-000202",
+          "verified": false,
+          "channel": "supplier-portal-message"
+        }
+      ],
+      "synthetic_account_ref": "AMXX-SYNTH-000002"
+    }
+  },
+  {
+    "kind": "supplier",
+    "id": "kye:fixture:sme-payment-authority:supplier:SUP-003",
+    "label": "Synthetic Supplier 003 (cloud hosting)",
+    "data": {
+      "verified_bank_details_fingerprint": "fp:sha256:synthetic-sup-003-reverified-0004",
+      "verified_at": "2026-09-12T08:00:00Z",
+      "bank_details_changed_at": "2026-09-12T08:00:00Z",
+      "bank_details_changes": [
+        {
+          "changed_at": "2026-09-12T08:00:00Z",
+          "new_fingerprint": "fp:sha256:synthetic-sup-003-reverified-0004",
+          "new_synthetic_account_ref": "AMXX-SYNTH-000303",
+          "verified": true,
+          "channel": "call-back-verified"
+        }
+      ],
+      "synthetic_account_ref": "AMXX-SYNTH-000303"
+    }
+  },
+  {
+    "kind": "purchase_order",
+    "id": "kye:fixture:sme-payment-authority:purchase-order:PO-001",
+    "label": "PO-001 — office fit-out",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+      "amount_amd": 320000,
+      "currency": "AMD",
+      "issued_at": "2026-09-01T09:00:00Z"
+    }
+  },
+  {
+    "kind": "purchase_order",
+    "id": "kye:fixture:sme-payment-authority:purchase-order:PO-002",
+    "label": "PO-002 — office furniture",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+      "amount_amd": 1800000,
+      "currency": "AMD",
+      "issued_at": "2026-09-02T09:00:00Z"
+    }
+  },
+  {
+    "kind": "purchase_order",
+    "id": "kye:fixture:sme-payment-authority:purchase-order:PO-003",
+    "label": "PO-003 — freight",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+      "amount_amd": 420000,
+      "currency": "AMD",
+      "issued_at": "2026-09-03T09:00:00Z"
+    }
+  },
+  {
+    "kind": "purchase_order",
+    "id": "kye:fixture:sme-payment-authority:purchase-order:PO-004",
+    "label": "PO-004 — hosting (annual)",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-003",
+      "amount_amd": 950000,
+      "currency": "AMD",
+      "issued_at": "2026-09-04T09:00:00Z"
+    }
+  },
+  {
+    "kind": "purchase_order",
+    "id": "kye:fixture:sme-payment-authority:purchase-order:PO-005",
+    "label": "PO-005 — signage",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+      "amount_amd": 300000,
+      "currency": "AMD",
+      "issued_at": "2026-09-05T09:00:00Z"
+    }
+  },
+  {
+    "kind": "purchase_order",
+    "id": "kye:fixture:sme-payment-authority:purchase-order:PO-006",
+    "label": "PO-006 — warehouse lease deposit",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+      "amount_amd": 2400000,
+      "currency": "AMD",
+      "issued_at": "2026-09-06T09:00:00Z"
+    }
+  },
+  {
+    "kind": "invoice",
+    "id": "kye:fixture:sme-payment-authority:invoice:INV-001",
+    "label": "INV-001 — routine, within delegation",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+      "purchase_order": "kye:fixture:sme-payment-authority:purchase-order:PO-001",
+      "amount_amd": 320000,
+      "currency": "AMD",
+      "due_at": "2026-09-30",
+      "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-001-verified-0001",
+      "payee_synthetic_account_ref": "AMXX-SYNTH-000001"
+    }
+  },
+  {
+    "kind": "invoice",
+    "id": "kye:fixture:sme-payment-authority:invoice:INV-002",
+    "label": "INV-002 — above the delegated threshold",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+      "purchase_order": "kye:fixture:sme-payment-authority:purchase-order:PO-002",
+      "amount_amd": 1800000,
+      "currency": "AMD",
+      "due_at": "2026-09-30",
+      "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-001-verified-0001",
+      "payee_synthetic_account_ref": "AMXX-SYNTH-000001"
+    }
+  },
+  {
+    "kind": "invoice",
+    "id": "kye:fixture:sme-payment-authority:invoice:INV-003",
+    "label": "INV-003 — payee bank details changed since verification",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+      "purchase_order": "kye:fixture:sme-payment-authority:purchase-order:PO-003",
+      "amount_amd": 420000,
+      "currency": "AMD",
+      "due_at": "2026-09-25",
+      "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-002-changed-0003",
+      "payee_synthetic_account_ref": "AMXX-SYNTH-000202"
+    }
+  },
+  {
+    "kind": "invoice",
+    "id": "kye:fixture:sme-payment-authority:invoice:INV-004",
+    "label": "INV-004 — approval predates the payee change",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-003",
+      "purchase_order": "kye:fixture:sme-payment-authority:purchase-order:PO-004",
+      "amount_amd": 950000,
+      "currency": "AMD",
+      "due_at": "2026-09-28",
+      "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-003-reverified-0004",
+      "payee_synthetic_account_ref": "AMXX-SYNTH-000303"
+    }
+  },
+  {
+    "kind": "invoice",
+    "id": "kye:fixture:sme-payment-authority:invoice:INV-005",
+    "label": "INV-005 — execution grant expired",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-001",
+      "purchase_order": "kye:fixture:sme-payment-authority:purchase-order:PO-005",
+      "amount_amd": 300000,
+      "currency": "AMD",
+      "due_at": "2026-09-20",
+      "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-001-verified-0001",
+      "payee_synthetic_account_ref": "AMXX-SYNTH-000001"
+    }
+  },
+  {
+    "kind": "invoice",
+    "id": "kye:fixture:sme-payment-authority:invoice:INV-006",
+    "label": "INV-006 — the core denial: all four conditions",
+    "data": {
+      "supplier": "kye:fixture:sme-payment-authority:supplier:SUP-002",
+      "purchase_order": "kye:fixture:sme-payment-authority:purchase-order:PO-006",
+      "amount_amd": 2400000,
+      "currency": "AMD",
+      "due_at": "2026-09-18",
+      "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-002-changed-0003",
+      "payee_synthetic_account_ref": "AMXX-SYNTH-000202"
+    }
+  },
+  {
+    "kind": "approval",
+    "id": "kye:fixture:sme-payment-authority:approval:APR-004",
+    "label": "APR-004 — finance manager approves INV-004 (before the payee change)",
+    "data": {
+      "approver": "kye:fixture:sme-payment-authority:role:finance-manager",
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-004",
+      "recorded_at": "2026-09-11T10:00:00Z",
+      "approved_instruction": {
+        "amount_amd": 950000,
+        "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-003-verified-0000",
+        "payee_synthetic_account_ref": "AMXX-SYNTH-000003"
+      },
+      "note": "Binds the EXACT instruction shown to the approver — the old, verified payee. The payee changed on 2026-09-12; this approval does not cover the changed payee."
+    }
+  },
+  {
+    "kind": "approval",
+    "id": "kye:fixture:sme-payment-authority:approval:APR-006",
+    "label": "APR-006 — finance manager approves INV-006 (before the payee change)",
+    "data": {
+      "approver": "kye:fixture:sme-payment-authority:role:finance-manager",
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-006",
+      "recorded_at": "2026-09-09T15:30:00Z",
+      "approved_instruction": {
+        "amount_amd": 2400000,
+        "payee_bank_details_fingerprint": "fp:sha256:synthetic-sup-002-verified-0002",
+        "payee_synthetic_account_ref": "AMXX-SYNTH-000002"
+      },
+      "note": "Recorded the day before SUP-002's bank details changed; it authorises payment to the verified account, not to the account substituted afterwards."
+    }
+  },
+  {
+    "kind": "instruction",
+    "id": "kye:fixture:sme-payment-authority:instruction:PI-001",
+    "label": "PI-001 — pay INV-001",
+    "data": {
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-001",
+      "execution_grant": "kye:fixture:sme-payment-authority:execution-grant:GRANT-A",
+      "approval": null,
+      "submitted_at": "2026-09-16T10:00:00Z",
+      "scenario": "kye:demo-scenario:sme-payment-routine-within-delegation",
+      "expected": "allow"
+    }
+  },
+  {
+    "kind": "instruction",
+    "id": "kye:fixture:sme-payment-authority:instruction:PI-002",
+    "label": "PI-002 — pay INV-002",
+    "data": {
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-002",
+      "execution_grant": "kye:fixture:sme-payment-authority:execution-grant:GRANT-A",
+      "approval": null,
+      "submitted_at": "2026-09-16T10:00:00Z",
+      "scenario": "kye:demo-scenario:sme-payment-threshold-approval-required",
+      "expected": "require_approval"
+    }
+  },
+  {
+    "kind": "instruction",
+    "id": "kye:fixture:sme-payment-authority:instruction:PI-003",
+    "label": "PI-003 — pay INV-003",
+    "data": {
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-003",
+      "execution_grant": "kye:fixture:sme-payment-authority:execution-grant:GRANT-A",
+      "approval": null,
+      "submitted_at": "2026-09-16T10:00:00Z",
+      "scenario": "kye:demo-scenario:sme-payment-supplier-bank-change",
+      "expected": "deny"
+    }
+  },
+  {
+    "kind": "instruction",
+    "id": "kye:fixture:sme-payment-authority:instruction:PI-004",
+    "label": "PI-004 — pay INV-004",
+    "data": {
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-004",
+      "execution_grant": "kye:fixture:sme-payment-authority:execution-grant:GRANT-A",
+      "approval": "kye:fixture:sme-payment-authority:approval:APR-004",
+      "submitted_at": "2026-09-16T10:00:00Z",
+      "scenario": "kye:demo-scenario:sme-payment-approval-superseded",
+      "expected": "deny"
+    }
+  },
+  {
+    "kind": "instruction",
+    "id": "kye:fixture:sme-payment-authority:instruction:PI-005",
+    "label": "PI-005 — pay INV-005",
+    "data": {
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-005",
+      "execution_grant": "kye:fixture:sme-payment-authority:execution-grant:GRANT-B",
+      "approval": null,
+      "submitted_at": "2026-09-16T10:00:00Z",
+      "scenario": "kye:demo-scenario:sme-payment-execution-grant-expired",
+      "expected": "deny"
+    }
+  },
+  {
+    "kind": "instruction",
+    "id": "kye:fixture:sme-payment-authority:instruction:PI-006",
+    "label": "PI-006 — pay INV-006 (the core denial)",
+    "data": {
+      "invoice": "kye:fixture:sme-payment-authority:invoice:INV-006",
+      "execution_grant": "kye:fixture:sme-payment-authority:execution-grant:GRANT-B",
+      "approval": "kye:fixture:sme-payment-authority:approval:APR-006",
+      "submitted_at": "2026-09-16T10:00:00Z",
+      "scenario": "kye:demo-scenario:sme-payment-core-denial",
+      "expected": "deny"
+    }
+  }
+]
