@@ -2,6 +2,7 @@
   "schema": "kye.policy_engine_adapter.v1",
   "adapter_id": "kye:policy-engine-adapter:aws-verified-permissions",
   "engine_kind": "aws-verified-permissions",
+  "epistemic_status": "verified",
   "display_name": "AWS Verified Permissions Adapter",
   "status": "supported",
   "invocation": {

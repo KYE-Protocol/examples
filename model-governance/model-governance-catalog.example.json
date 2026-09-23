@@ -14,6 +14,7 @@
       "source_repo": "example-org/example-open-llm-70b",
       "model_ref": "kye:model:example-open-llm-70b",
       "governance_posture": "declared",
+      "epistemic_status": "inferred",
       "framework_refs": [
         "eu-ai-act",
         "iso-42001"
@@ -68,6 +69,7 @@
       "source_repo": "example-org/example-public-dataset",
       "model_ref": "kye:model:example-kaggle-tabular-classifier",
       "governance_posture": "declared",
+      "epistemic_status": "inferred",
       "framework_refs": [
         "eu-ai-act",
         "iso-42001"
