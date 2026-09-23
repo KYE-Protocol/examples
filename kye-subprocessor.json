@@ -15,5 +15,7 @@
   ],
   "risk_tier": "critical",
   "transfer_mechanism": "adequacy-decision",
-  "engagement_status": "planned"
+  "engagement_status": "planned",
+  "egress_hosts": [],
+  "egress_absent_reason": "Illustrative row: no live call site exists for this counterparty, so the allowlist is empty and says so. A row with a call site declares each host (or a host_var into kye:registry:secrets) with its ports and purpose, and a credential_ref the gateway injects at the boundary."
 }
