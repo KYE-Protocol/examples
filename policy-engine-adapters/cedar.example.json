@@ -2,6 +2,7 @@
   "schema": "kye.policy_engine_adapter.v1",
   "adapter_id": "kye:policy-engine-adapter:cedar",
   "engine_kind": "cedar",
+  "epistemic_status": "verified",
   "display_name": "Cedar Adapter",
   "status": "supported",
   "invocation": {

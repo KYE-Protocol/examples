@@ -5,6 +5,7 @@
   "source": "huggingface",
   "model_ref": "kye:model:northwind-bank-mod-2026-08-0417",
   "governance_posture": "declared",
+  "epistemic_status": "inferred",
   "ai_bom": {
     "license": "Apache-2.0"
   },
