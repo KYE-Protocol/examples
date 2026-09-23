@@ -11,6 +11,7 @@
   "stages": [
     {
       "stage_id": "decide",
+      "lane_id": "decide",
       "name": "Decide — the Policy Decision Point",
       "offline_class": "hard-offline",
       "paths": ["runtime/pdp/src"],
@@ -18,6 +19,7 @@
     },
     {
       "stage_id": "reconcile",
+      "lane_id": "reconcile-observer",
       "name": "Reconcile — the declared-vs-deployed observer",
       "offline_class": "network-degradable",
       "paths": ["scripts/reconciliation"],
