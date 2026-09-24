@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.payment_intents.v1.json",
+  "payment_intent_id": "payment_intent_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "wallet_entity_id": "wallet_entity_id-sample",
+  "beneficiary_entity_id": "beneficiary_entity_id-sample",
+  "merchant_entity_id": "merchant_entity_id-sample",
+  "amount_minor": 0,
+  "currency": "currency-sample",
+  "rail_type": "rail_type-sample",
+  "purpose_code": "purpose_code-sample",
+  "invoice_entity_id": "invoice_entity_id-sample",
+  "status": "status-sample",
+  "external_reference": "external_reference-sample",
+  "created_at": "created_at-sample"
+}

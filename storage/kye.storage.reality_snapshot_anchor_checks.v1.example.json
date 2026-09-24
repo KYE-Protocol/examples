@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.reality_snapshot_anchor_checks.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "snapshot_id": "snapshot_id-sample",
+  "anchor_id": "anchor_id-sample",
+  "is_fresh": 0,
+  "anchor_outcome": "anchor_outcome-sample",
+  "reason_codes_json": "{}",
+  "details_json": "{}",
+  "evaluated_at": "evaluated_at-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

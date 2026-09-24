@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.kye_widget_events.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "widget_slug": "widget_slug-sample",
+  "event_kind": "event_kind-sample",
+  "actor_hash": "actor_hash-sample",
+  "occurred_hour": "2026-09-23T00:00:00.000Z",
+  "count": 0
+}

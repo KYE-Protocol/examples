@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.connector_conformance_runs.v1.json",
+  "run_id": "run_id-sample",
+  "onboarding_id": "onboarding_id-sample",
+  "body_json": "{}",
+  "total": 0,
+  "passed": 0,
+  "failed": 0,
+  "overall": "overall-sample",
+  "issued_at": "issued_at-sample"
+}

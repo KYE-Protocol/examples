@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.policy_sets.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "compilation_seal": "compilation_seal-sample",
+  "rules_json": "{}",
+  "created_at": "created_at-sample",
+  "revoked_at": "revoked_at-sample"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.self_audit_runs.v1.json",
+  "self_audit_id": "self_audit_id-sample",
+  "implementation_id": "implementation_id-sample",
+  "organisation_entity_id": "organisation_entity_id-sample",
+  "kye_core_version": "kye_core_version-sample",
+  "profiles_tested_json": "{}",
+  "started_at": "started_at-sample",
+  "completed_at": "completed_at-sample",
+  "result": "result-sample",
+  "summary_json": "{}",
+  "findings_json": "{}",
+  "evidence_refs_json": "{}"
+}

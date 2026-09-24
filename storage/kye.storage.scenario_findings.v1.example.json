@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.scenario_findings.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "scenario_run_id": "scenario_run_id-sample",
+  "finding_kind": "finding_kind-sample",
+  "severity": "severity-sample",
+  "subject_object_id": "subject_object_id-sample",
+  "subject_object_schema": "subject_object_schema-sample",
+  "summary": "summary-sample",
+  "details_json": "{}",
+  "detected_at": "detected_at-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

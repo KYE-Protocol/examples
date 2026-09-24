@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.access_rights.v1.json",
+  "access_right_id": "access_right_id-sample",
+  "granted_to_entity_id": "granted_to_entity_id-sample",
+  "granted_by_entity_id": "granted_by_entity_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "right_key": "right_key-sample",
+  "resource_pattern": "resource_pattern-sample",
+  "scope_id": "scope_id-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "expires_at": "expires_at-sample",
+  "revoked_at": "revoked_at-sample"
+}

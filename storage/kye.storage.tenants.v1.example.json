@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.tenants.v1.json",
+  "id": "id-sample",
+  "slug": "slug-sample",
+  "name": "name-sample",
+  "env": "env-sample",
+  "clerk_org_id": "clerk_org_id-sample",
+  "owner_email": "owner_email-sample",
+  "contract_status": "contract_status-sample",
+  "sla_tier": "sla_tier-sample",
+  "region": "region-sample",
+  "state": "state-sample",
+  "stripe_customer_id": "stripe_customer_id-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "activated_at": "activated_at-sample",
+  "deleted_at": "deleted_at-sample",
+  "notes": "notes-sample"
+}

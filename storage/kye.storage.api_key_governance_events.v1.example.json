@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.api_key_governance_events.v1.json",
+  "event_id": "event_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "key_id": "key_id-sample",
+  "successor_key_id": "successor_key_id-sample",
+  "schema_name": "schema_name-sample",
+  "operation_id": "operation_id-sample",
+  "action_class": "action_class-sample",
+  "actor_urn": "actor_urn-sample",
+  "request_id": "request_id-sample",
+  "decision_id": "decision_id-sample",
+  "payload_json": "{}",
+  "emitted_at": "emitted_at-sample"
+}

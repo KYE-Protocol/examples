@@ -1,0 +1,7 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.trainer_sessions.v1.json",
+  "session_id": "session_id-sample",
+  "trainer_entity_id": "trainer_entity_id-sample",
+  "course_id": "course_id-sample",
+  "delivered_at": "delivered_at-sample"
+}

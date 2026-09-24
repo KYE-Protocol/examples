@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.capability_dependencies.v1.json",
+  "capability_id": "capability_id-sample",
+  "dependency_type": "dependency_type-sample",
+  "dependency_ref": "dependency_ref-sample",
+  "required": 0,
+  "min_version": "min_version-sample"
+}

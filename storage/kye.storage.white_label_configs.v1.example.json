@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.white_label_configs.v1.json",
+  "id": "id-sample",
+  "consultant_id": "consultant_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "brand_name": "brand_name-sample",
+  "primary_colour_hex": "primary_colour_hex-sample",
+  "secondary_colour_hex": "secondary_colour_hex-sample",
+  "logo_url": "logo_url-sample",
+  "domain": "domain-sample",
+  "support_email": "support_email-sample",
+  "legal_footer": "legal_footer-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.delegation_links.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "parent_grant_id": "parent_grant_id-sample",
+  "child_grant_id": "child_grant_id-sample",
+  "depth": 0,
+  "created_at": 0
+}

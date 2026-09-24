@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.metering_events.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "invoice_id": "invoice_id-sample",
+  "meter_kind": "meter_kind-sample",
+  "unit_count": 0,
+  "unit_micro_usd": 0,
+  "total_micro_usd": 0,
+  "reference_id": "reference_id-sample",
+  "occurred_at": "occurred_at-sample",
+  "recorded_at": "recorded_at-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

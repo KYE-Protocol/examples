@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.report_deliveries.v1.json",
+  "delivery_id": "delivery_id-sample",
+  "report_id": "report_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "recipient": "recipient-sample",
+  "delivered_at": "delivered_at-sample",
+  "channel": "channel-sample",
+  "provider_msg_id": "provider_msg_id-sample",
+  "signature_b64": "signature_b64-sample"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.dsar_request_status_history.v1.json",
+  "history_id": "history_id-sample",
+  "request_id": "request_id-sample",
+  "status": "status-sample",
+  "reason": "reason-sample",
+  "actor": "actor-sample",
+  "at": "at-sample"
+}

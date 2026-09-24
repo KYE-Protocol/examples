@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.webauthn_stepup_ledger.v1.json",
+  "user_kye_id": "user_kye_id-sample",
+  "last_verified_at": 0,
+  "last_credential_id": "last_credential_id-sample",
+  "last_counter": 0,
+  "expires_at": 0
+}

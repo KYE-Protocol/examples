@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.edge_evidence_entries.v1.json",
+  "device_id": "device_id-sample",
+  "seq": 0,
+  "prev_hash": "prev_hash-sample",
+  "this_hash": "this_hash-sample",
+  "ts_iso": "ts_iso-sample",
+  "bundle_id": "bundle_id-sample",
+  "decision_json": "{}",
+  "action_json": "{}",
+  "signature_json": "{}",
+  "received_at": "received_at-sample"
+}

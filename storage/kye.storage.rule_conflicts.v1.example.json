@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.rule_conflicts.v1.json",
+  "conflict_id": "conflict_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "conflict_kind": "conflict_kind-sample",
+  "detection_phase": "detection_phase-sample",
+  "participants_json": "{}",
+  "resolution_path": "resolution_path-sample",
+  "resolution_at": "resolution_at-sample",
+  "resolver_kid": "resolver_kid-sample",
+  "amendment_ref": "amendment_ref-sample",
+  "detected_at": "detected_at-sample",
+  "signature_b64": "signature_b64-sample"
+}

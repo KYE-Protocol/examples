@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.reports_bucket.v1.json",
+  "key": "reports_bucket/sample-key",
+  "body": {}
+}

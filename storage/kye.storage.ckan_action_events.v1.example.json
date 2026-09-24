@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ckan_action_events.v1.json",
+  "event_id": "event_id-sample",
+  "portal_id": "portal_id-sample",
+  "ckan_activity_id": "ckan_activity_id-sample",
+  "activity_type": "activity_type-sample",
+  "user_id": "user_id-sample",
+  "object_id": "object_id-sample",
+  "timestamp": "timestamp-sample",
+  "observed_at": "observed_at-sample"
+}

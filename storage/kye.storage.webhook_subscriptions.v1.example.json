@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.webhook_subscriptions.v1.json",
+  "webhook_id": "webhook_id-sample",
+  "target_url": "target_url-sample",
+  "signal_types": "signal_types-sample",
+  "target_entity_ids": "target_entity_ids-sample",
+  "status": "status-sample",
+  "consecutive_failures": 0,
+  "last_delivery_at": "last_delivery_at-sample",
+  "created_at": "created_at-sample",
+  "tenant_id": "tenant_id-sample",
+  "signing_secret": "signing_secret-sample"
+}

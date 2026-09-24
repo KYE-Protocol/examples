@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.metadata_bindings.v1.json",
+  "binding_id": "binding_id-sample",
+  "subject_urn": "subject_urn-sample",
+  "metadata_schema_id": "metadata_schema_id-sample",
+  "metadata_json": "{}",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

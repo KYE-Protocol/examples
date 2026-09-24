@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ingest_submission.v1.json",
+  "submission_id": "submission_id-sample",
+  "channel": "channel-sample",
+  "state": "state-sample",
+  "submitted_by": "submitted_by-sample",
+  "url": "url-sample",
+  "filename": "filename-sample",
+  "content_sha256": "content_sha256-sample",
+  "received_at": "received_at-sample",
+  "resolved_source_id": "resolved_source_id-sample",
+  "refusal_reason": "refusal_reason-sample",
+  "notes": "notes-sample"
+}

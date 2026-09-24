@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.partner_deals.v1.json",
+  "id": "id-sample",
+  "partner_id": "partner_id-sample",
+  "customer_tenant_id": "customer_tenant_id-sample",
+  "deal_stage": "deal_stage-sample",
+  "arr_micro_usd": 0,
+  "region": "region-sample",
+  "vertical": "vertical-sample",
+  "opened_at": "opened_at-sample",
+  "closed_at": "closed_at-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

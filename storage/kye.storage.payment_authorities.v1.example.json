@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.payment_authorities.v1.json",
+  "payment_authority_id": "payment_authority_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "wallet_entity_id": "wallet_entity_id-sample",
+  "basis": "basis-sample",
+  "allowed_actions_json": "{}",
+  "forbidden_actions_json": "{}",
+  "scope_id": "scope_id-sample",
+  "status": "status-sample",
+  "revocable": 0,
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "revoked_at": "revoked_at-sample",
+  "created_at": "created_at-sample"
+}

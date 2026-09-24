@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-directory.directory_index_descriptors.v1.json",
+  "id": "id-sample",
+  "index_name": "index_name-sample",
+  "schema_version": "schema_version-sample",
+  "primary_key_field": "primary_key_field-sample",
+  "searchable_fields_json": "{}",
+  "filterable_fields_json": "{}",
+  "sortable_fields_json": "{}",
+  "faceting_fields_json": "{}",
+  "ranking_rules_json": "{}",
+  "synonyms_json": "{}",
+  "stop_words_json": "{}",
+  "vector_index_name": "vector_index_name-sample",
+  "vector_dim": 0,
+  "state": "state-sample",
+  "built_at": "built_at-sample",
+  "retired_at": "retired_at-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

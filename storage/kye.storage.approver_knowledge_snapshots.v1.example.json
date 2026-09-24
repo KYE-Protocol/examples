@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.approver_knowledge_snapshots.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "version": 0,
+  "approver": "approver-sample",
+  "captured_at": "captured_at-sample",
+  "captured_by": "captured_by-sample",
+  "source_refs_json": "{}",
+  "content_hash": "content_hash-sample",
+  "summary": "summary-sample",
+  "verified_at": "verified_at-sample",
+  "verified_by": "verified_by-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_value_b64": "signature_value_b64-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample",
+  "approver_decision_right": "approver_decision_right-sample"
+}

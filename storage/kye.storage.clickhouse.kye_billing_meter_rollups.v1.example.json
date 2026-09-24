@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.kye_billing_meter_rollups.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "meter": "meter-sample",
+  "occurred_hour": "2026-09-23T00:00:00.000Z",
+  "units": 0,
+  "cost_dollars_micro": 0
+}

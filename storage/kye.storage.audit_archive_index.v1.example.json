@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.audit_archive_index.v1.json",
+  "id": "id-sample",
+  "source_table": "source_table-sample",
+  "source_row_id": "source_row_id-sample",
+  "r2_bucket": "r2_bucket-sample",
+  "r2_object_key": "r2_object_key-sample",
+  "retention_class": "retention_class-sample",
+  "retention_until": "retention_until-sample",
+  "archived_at": "archived_at-sample",
+  "archived_by_invocation": "archived_by_invocation-sample",
+  "source_row_hash": "source_row_hash-sample",
+  "archive_content_hash": "archive_content_hash-sample"
+}

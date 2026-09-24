@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.payment_attestations.v1.json",
+  "payment_attestation_id": "payment_attestation_id-sample",
+  "payment_intent_id": "payment_intent_id-sample",
+  "issuer_entity_id": "issuer_entity_id-sample",
+  "claims_json": "{}",
+  "status": "status-sample",
+  "issued_at": "issued_at-sample",
+  "expires_at": "expires_at-sample"
+}

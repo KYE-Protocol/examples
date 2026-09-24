@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.decisions.v1.json",
+  "decision_id": "decision_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "principal_id": "principal_id-sample",
+  "resource_id": "resource_id-sample",
+  "verdict": "verdict-sample",
+  "deny_reasons": [],
+  "purpose": "purpose-sample",
+  "dual_control_approver": "dual_control_approver-sample",
+  "admitted_at": "2026-09-23T00:00:00.000Z",
+  "replay_hash": "replay_hash-sample",
+  "_inserted_at": "2026-09-23T00:00:00.000Z"
+}

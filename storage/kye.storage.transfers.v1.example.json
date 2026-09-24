@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.transfers.v1.json",
+  "transfer_id": "transfer_id-sample",
+  "entity_id": "entity_id-sample",
+  "from_owner_entity_id": "from_owner_entity_id-sample",
+  "to_owner_entity_id": "to_owner_entity_id-sample",
+  "from_trust_domain_id": "from_trust_domain_id-sample",
+  "to_trust_domain_id": "to_trust_domain_id-sample",
+  "transfer_json": "{}",
+  "status": "status-sample",
+  "requested_at": "requested_at-sample",
+  "completed_at": "completed_at-sample"
+}

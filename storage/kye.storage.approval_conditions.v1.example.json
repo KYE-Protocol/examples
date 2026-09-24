@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.approval_conditions.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "approval_decision_id": "approval_decision_id-sample",
+  "condition_id": "condition_id-sample",
+  "summary": "summary-sample",
+  "expires_at": "expires_at-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

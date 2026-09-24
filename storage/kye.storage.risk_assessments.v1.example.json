@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.risk_assessments.v1.json",
+  "assessment_id": "assessment_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "subject_id": "subject_id-sample",
+  "subject_class": "subject_class-sample",
+  "risk_tier": "risk_tier-sample",
+  "risk_score": 0,
+  "reason_codes_json": "{}",
+  "framework_floors_json": "{}",
+  "recommended_controls_json": "{}",
+  "assessor_kid": "assessor_kid-sample",
+  "assessment_method": "assessment_method-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "effective_at": "effective_at-sample",
+  "superseded_at": "superseded_at-sample",
+  "signature_b64": "signature_b64-sample"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.keys.v1.json",
+  "key_id": "key_id-sample",
+  "trust_domain": "trust_domain-sample",
+  "alg": "alg-sample",
+  "jwk_thumbprint": "jwk_thumbprint-sample",
+  "status": "status-sample",
+  "not_before": "not_before-sample",
+  "not_after": "not_after-sample",
+  "superseded_by_id": "superseded_by_id-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.commercial_transitions.v1.json",
+  "id": "id-sample",
+  "workflow_id": "workflow_id-sample",
+  "from_state": "from_state-sample",
+  "to_state": "to_state-sample",
+  "at": "at-sample",
+  "by": "by-sample",
+  "reason": "reason-sample",
+  "engine_invocations": "engine_invocations-sample",
+  "email_dispatched": "email_dispatched-sample",
+  "predecessor_hash": "predecessor_hash-sample",
+  "this_hash": "this_hash-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_value_b64": "signature_value_b64-sample"
+}

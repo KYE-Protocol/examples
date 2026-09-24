@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.evidence_packs.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "decision_id": "decision_id-sample",
+  "r2_key": "r2_key-sample",
+  "content_hash": "content_hash-sample",
+  "sealed_at": "sealed_at-sample",
+  "body_json": "{}"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.policies.v1.json",
+  "policy_id": "policy_id-sample",
+  "policy_version": "policy_version-sample",
+  "policy_bundle_json": "{}",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "compiled_at": "compiled_at-sample"
+}

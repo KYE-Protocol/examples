@@ -1,0 +1,198 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage_projection_targets.v1.json",
+  "counts": {
+    "rows": 1,
+    "unbound_store_objects": 0,
+    "with_findings": 0
+  },
+  "dictionary_ref": "kye:dictionary:storage-projection",
+  "generated_by": "scripts/build-storage-projections.mjs",
+  "source_registry": "internal",
+  "targets": [
+    {
+      "contract_ref": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.attestation_seats.v1.json",
+      "findings": [],
+      "key": "d1|kye:database:d1:kye_grants|attestation_seats",
+      "projected": [
+        {
+          "column": "seat_id",
+          "contract_type": "string",
+          "ddl": "seat_id TEXT NOT NULL",
+          "property": "seat_id",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "tenant_id",
+          "contract_type": "string",
+          "ddl": "tenant_id TEXT NOT NULL",
+          "property": "tenant_id",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "customer_kyeid",
+          "contract_type": "string",
+          "ddl": "customer_kyeid TEXT NOT NULL",
+          "property": "customer_kyeid",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "framework",
+          "contract_type": "string",
+          "ddl": "framework TEXT NOT NULL",
+          "property": "framework",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "framework_version",
+          "contract_type": "string",
+          "ddl": "framework_version TEXT NOT NULL",
+          "property": "framework_version",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "year",
+          "contract_type": "integer",
+          "ddl": "year INTEGER NOT NULL",
+          "property": "year",
+          "store_type": "INTEGER",
+          "type_rule": "d1:INTEGER"
+        },
+        {
+          "column": "annual_fee_pence",
+          "contract_type": "integer",
+          "ddl": "annual_fee_pence INTEGER NOT NULL",
+          "property": "annual_fee_pence",
+          "store_type": "INTEGER",
+          "type_rule": "d1:INTEGER"
+        },
+        {
+          "column": "currency",
+          "contract_type": "string",
+          "ddl": "currency TEXT NOT NULL",
+          "property": "currency",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "valid_from",
+          "contract_type": "string",
+          "ddl": "valid_from TEXT NOT NULL",
+          "property": "valid_from",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "valid_to",
+          "contract_type": "string",
+          "ddl": "valid_to TEXT NOT NULL",
+          "property": "valid_to",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "stripe_subscription_item_id",
+          "contract_type": [
+            "string",
+            "null"
+          ],
+          "ddl": "stripe_subscription_item_id TEXT",
+          "property": "stripe_subscription_item_id",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "status",
+          "contract_type": "string",
+          "ddl": "status TEXT NOT NULL",
+          "property": "status",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "column": "created_at",
+          "contract_type": "integer",
+          "ddl": "created_at INTEGER NOT NULL",
+          "property": "created_at",
+          "store_type": "INTEGER",
+          "type_rule": "d1:INTEGER"
+        },
+        {
+          "column": "updated_at",
+          "contract_type": "string",
+          "ddl": "updated_at TEXT NOT NULL",
+          "property": "updated_at",
+          "store_type": "TEXT",
+          "type_rule": "d1:TEXT"
+        }
+      ],
+      "store_columns": [
+        {
+          "name": "seat_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "tenant_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "customer_kyeid",
+          "type": "TEXT"
+        },
+        {
+          "name": "framework",
+          "type": "TEXT"
+        },
+        {
+          "name": "framework_version",
+          "type": "TEXT"
+        },
+        {
+          "name": "year",
+          "type": "INTEGER"
+        },
+        {
+          "name": "annual_fee_pence",
+          "type": "INTEGER"
+        },
+        {
+          "name": "currency",
+          "type": "TEXT"
+        },
+        {
+          "name": "valid_from",
+          "type": "TEXT"
+        },
+        {
+          "name": "valid_to",
+          "type": "TEXT"
+        },
+        {
+          "name": "stripe_subscription_item_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "status",
+          "type": "TEXT"
+        },
+        {
+          "name": "created_at",
+          "type": "INTEGER"
+        },
+        {
+          "name": "updated_at",
+          "type": "TEXT"
+        }
+      ],
+      "store_kind": "d1",
+      "store_ref": "kye:database:d1:kye_grants",
+      "target": "attestation_seats",
+      "target_ddl": "CREATE TABLE IF NOT EXISTS attestation_seats (\n  seat_id TEXT NOT NULL,\n  tenant_id TEXT NOT NULL,\n  customer_kyeid TEXT NOT NULL,\n  framework TEXT NOT NULL,\n  framework_version TEXT NOT NULL,\n  year INTEGER NOT NULL,\n  annual_fee_pence INTEGER NOT NULL,\n  currency TEXT NOT NULL,\n  valid_from TEXT NOT NULL,\n  valid_to TEXT NOT NULL,\n  stripe_subscription_item_id TEXT,\n  status TEXT NOT NULL,\n  created_at INTEGER NOT NULL,\n  updated_at TEXT NOT NULL\n);"
+    }
+  ],
+  "unbound_store_objects": []
+}

@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.kye_evidence_eu.v1.json",
+  "key": "kye_evidence_eu/sample-key",
+  "body": {}
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.recovery_proofs.v1.json",
+  "recovery_proof_id": "recovery_proof_id-sample",
+  "recovery_request_id": "recovery_request_id-sample",
+  "recovery_decision_id": "recovery_decision_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "evidence_refs": "evidence_refs-sample",
+  "approver_refs": "approver_refs-sample",
+  "previous_keys_revoked": "previous_keys_revoked-sample",
+  "new_keys_issued": "new_keys_issued-sample",
+  "authority_diff_json": "{}",
+  "audit_event_ids": "audit_event_ids-sample",
+  "bundle_hash": "bundle_hash-sample",
+  "transparency_receipt_id": "transparency_receipt_id-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_b64": "signature_b64-sample",
+  "created_at": "created_at-sample"
+}

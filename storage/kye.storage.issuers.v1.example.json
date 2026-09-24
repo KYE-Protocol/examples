@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.issuers.v1.json",
+  "issuer_id": "issuer_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "issuer_type": "issuer_type-sample",
+  "jwks_uri": "jwks_uri-sample",
+  "metadata_json": "{}",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

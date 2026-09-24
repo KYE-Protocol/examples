@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.idempotency_keys.v1.json",
+  "composite_key": "composite_key-sample",
+  "method": "method-sample",
+  "path": "path-sample",
+  "idem_key": "idem_key-sample",
+  "body_hash": "body_hash-sample",
+  "response_status": 0,
+  "response_json": "{}",
+  "created_at": "created_at-sample"
+}

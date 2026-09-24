@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.kye_loop_iterations.v1.json",
+  "iteration_id": "iteration_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "loop_kind": "loop_kind-sample",
+  "trigger_kind": "trigger_kind-sample",
+  "trigger_ref": "trigger_ref-sample",
+  "iteration_number": 0,
+  "state": "state-sample",
+  "started_at": "2026-09-23T00:00:00.000Z",
+  "finished_at": "2026-09-23T00:00:00.000Z",
+  "outcome_summary": "outcome_summary-sample"
+}

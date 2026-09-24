@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.proof_bundles.v1.json",
+  "proof_bundle_id": "proof_bundle_id-sample",
+  "subject_type": "subject_type-sample",
+  "subject_id": "subject_id-sample",
+  "included_artifacts_json": "{}",
+  "bundle_hash": "bundle_hash-sample",
+  "transparency_receipt_id": "transparency_receipt_id-sample",
+  "signature": "signature-sample",
+  "artifact_uri": "artifact_uri-sample",
+  "created_at": "created_at-sample"
+}

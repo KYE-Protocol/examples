@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.metadata_schemas.v1.json",
+  "metadata_schema_id": "metadata_schema_id-sample",
+  "name": "name-sample",
+  "description": "description-sample",
+  "applies_to_node_types_json": "{}",
+  "fields_json": "{}",
+  "compliance_framework_refs": "compliance_framework_refs-sample",
+  "profile_refs": "profile_refs-sample",
+  "version": "version-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

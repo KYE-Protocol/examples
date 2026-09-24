@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.delegations.v1.json",
+  "delegation_id": "delegation_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "delegator_entity_id": "delegator_entity_id-sample",
+  "authorized_by_entity_id": "authorized_by_entity_id-sample",
+  "basis": "basis-sample",
+  "allowed_actions_json": "{}",
+  "forbidden_actions_json": "{}",
+  "scope_id": "scope_id-sample",
+  "requires_approval_for_json": "{}",
+  "status": "status-sample",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "created_at": "created_at-sample",
+  "revoked_at": "revoked_at-sample",
+  "parent_delegation_id": "parent_delegation_id-sample"
+}

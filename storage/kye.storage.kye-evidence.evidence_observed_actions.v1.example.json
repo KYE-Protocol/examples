@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.evidence_observed_actions.v1.json",
+  "id": 0,
+  "tenant_id": "tenant_id-sample",
+  "observed_action_json": "{}",
+  "observed_at": "observed_at-sample",
+  "authority_gap_id": "authority_gap_id-sample"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.stress_tests.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "version": 0,
+  "name": "name-sample",
+  "description": "description-sample",
+  "target_object_id": "target_object_id-sample",
+  "target_object_schema": "target_object_schema-sample",
+  "stressors_json": "{}",
+  "severity": "severity-sample",
+  "status": "status-sample",
+  "last_run_id": "last_run_id-sample",
+  "last_run_at": "last_run_at-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

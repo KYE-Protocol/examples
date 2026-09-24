@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.demo_fixtures.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "scenario": "scenario-sample",
+  "purpose_manifest_id": "purpose_manifest_id-sample",
+  "authority_grant_id": "authority_grant_id-sample",
+  "delegation_chain_id": "delegation_chain_id-sample",
+  "scope_snapshot_id": "scope_snapshot_id-sample",
+  "state_snapshot_id": "state_snapshot_id-sample",
+  "runtime_decision_id": "runtime_decision_id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "bundle_id": "bundle_id-sample",
+  "provisioned_at": "provisioned_at-sample"
+}

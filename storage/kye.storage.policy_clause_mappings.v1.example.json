@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.policy_clause_mappings.v1.json",
+  "mapping_id": "mapping_id-sample",
+  "document_asset_ref": "document_asset_ref-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "target_framework_slug": "target_framework_slug-sample",
+  "engine_version": "engine_version-sample",
+  "generated_at": "generated_at-sample",
+  "clauses_json": "{}",
+  "coverage_json": "{}"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_machine_derivations.v1.json",
+  "derivation_id": "derivation_id-sample",
+  "tenant_scope": "tenant_scope-sample",
+  "machine_id": "machine_id-sample",
+  "derived_from": "derived_from-sample",
+  "library_version": "library_version-sample",
+  "overrides_json": "{}",
+  "derived_at": "derived_at-sample",
+  "derived_by": "derived_by-sample",
+  "signature_json": "{}",
+  "checked_at": "checked_at-sample"
+}

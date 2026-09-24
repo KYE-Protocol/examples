@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.consultant_attributions.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "consultant_id": "consultant_id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "attested_by": "attested_by-sample",
+  "attested_at": "attested_at-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_value_b64": "signature_value_b64-sample",
+  "attestation_hash": "attestation_hash-sample",
+  "notes": "notes-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

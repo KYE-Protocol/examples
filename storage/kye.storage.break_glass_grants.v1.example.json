@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.break_glass_grants.v1.json",
+  "grant_id": "grant_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "scope_id": "scope_id-sample",
+  "reason_code": "reason_code-sample",
+  "justification_text": "justification_text-sample",
+  "approvers": "approvers-sample",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "max_duration_minutes": 0,
+  "issued_by": "issued_by-sample",
+  "post_hoc_review_required": 0,
+  "post_hoc_review_deadline": "post_hoc_review_deadline-sample",
+  "evidence_pack_id": "evidence_pack_id-sample"
+}

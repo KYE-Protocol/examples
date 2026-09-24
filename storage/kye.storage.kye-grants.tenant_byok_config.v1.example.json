@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.tenant_byok_config.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "kek_provider": "kek_provider-sample",
+  "kek_arn": "kek_arn-sample",
+  "enabled": 0,
+  "enabled_at": 0,
+  "last_rotated_at": 0
+}

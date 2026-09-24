@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.trainer_revenue_shares.v1.json",
+  "id": 0,
+  "trainer_entity_id": "trainer_entity_id-sample",
+  "period_start": "period_start-sample",
+  "period_end": "period_end-sample",
+  "certified_attendees": 0,
+  "rate_per_attendee_cents": 0,
+  "amount_cents": 0,
+  "computed_at": "computed_at-sample"
+}

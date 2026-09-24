@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.governance_audit_runs.v1.json",
+  "run_id": "run_id-sample",
+  "started_at": "started_at-sample",
+  "completed_at": "completed_at-sample",
+  "audits_passed": 0,
+  "audits_failed": 0,
+  "drift_detected": 0,
+  "artefacts_signed_count": 0,
+  "transparency_log_hash": "transparency_log_hash-sample",
+  "r2_key": "r2_key-sample",
+  "canonical_hash": "canonical_hash-sample"
+}

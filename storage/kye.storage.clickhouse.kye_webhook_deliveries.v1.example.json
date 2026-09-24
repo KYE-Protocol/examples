@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.kye_webhook_deliveries.v1.json",
+  "delivery_id": "delivery_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "endpoint_url": "endpoint_url-sample",
+  "event_type": "event_type-sample",
+  "outcome": "outcome-sample",
+  "http_status": 0,
+  "latency_ms": 0,
+  "attempt": 0,
+  "delivered_at": "2026-09-23T00:00:00.000Z"
+}

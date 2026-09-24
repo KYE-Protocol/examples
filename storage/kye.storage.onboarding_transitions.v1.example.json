@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.onboarding_transitions.v1.json",
+  "id": "id-sample",
+  "workflow_id": "workflow_id-sample",
+  "from_stage": "from_stage-sample",
+  "to_stage": "to_stage-sample",
+  "emitted_at": "emitted_at-sample",
+  "reason": "reason-sample",
+  "actor": "actor-sample"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ep_matter_reviews.v1.json",
+  "review_id": "review_id-sample",
+  "matter_id": "matter_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "engagement_id": "engagement_id-sample",
+  "decision": "decision-sample",
+  "preparer_actor_urn": "preparer_actor_urn-sample",
+  "approver_actor_urn": "approver_actor_urn-sample",
+  "is_irreversible": 0,
+  "dual_channel_attestation_id": "dual_channel_attestation_id-sample",
+  "notes": "notes-sample",
+  "reviewed_at": "reviewed_at-sample"
+}

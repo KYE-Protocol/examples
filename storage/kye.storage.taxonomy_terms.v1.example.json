@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.taxonomy_terms.v1.json",
+  "term_id": "term_id-sample",
+  "taxonomy_id": "taxonomy_id-sample",
+  "key": "key-sample",
+  "label": "label-sample",
+  "description": "description-sample",
+  "parent_term": "parent_term-sample",
+  "risk_default": "risk_default-sample",
+  "side_effect_default": "side_effect_default-sample",
+  "requires_authority": 0,
+  "requires_audit": 0,
+  "requires_human_approval_default": 0,
+  "profiles_json": "{}",
+  "compliance_refs_json": "{}",
+  "version": "version-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

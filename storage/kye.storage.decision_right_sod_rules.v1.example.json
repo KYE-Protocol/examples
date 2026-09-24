@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.decision_right_sod_rules.v1.json",
+  "id": "id-sample",
+  "stage_a": "stage_a-sample",
+  "stage_b": "stage_b-sample",
+  "mode": "mode-sample",
+  "rationale": "rationale-sample",
+  "framework_refs_json": "{}",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

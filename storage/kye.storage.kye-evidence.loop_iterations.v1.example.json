@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.loop_iterations.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "loop_kind": "loop_kind-sample",
+  "trigger_kind": "trigger_kind-sample",
+  "trigger_ref": "trigger_ref-sample",
+  "rules_bundle_id": "rules_bundle_id-sample",
+  "rules_bundle_version": "rules_bundle_version-sample",
+  "iteration_number": 0,
+  "started_at": "started_at-sample",
+  "finished_at": "finished_at-sample",
+  "state": "state-sample",
+  "outcome_json": "{}",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "improvement_id": "improvement_id-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

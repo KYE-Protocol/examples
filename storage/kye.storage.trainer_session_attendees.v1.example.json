@@ -1,0 +1,6 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.trainer_session_attendees.v1.json",
+  "session_id": "session_id-sample",
+  "attendee_entity_id": "attendee_entity_id-sample",
+  "certified_at": "certified_at-sample"
+}

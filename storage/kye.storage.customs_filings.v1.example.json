@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.customs_filings.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "entity_ref": "entity_ref-sample",
+  "transition_id": "transition_id-sample",
+  "cargo_ref": "cargo_ref-sample",
+  "vessel_ref": "vessel_ref-sample",
+  "filing_regime": "filing_regime-sample",
+  "state_name": "state_name-sample",
+  "origin_country": "origin_country-sample",
+  "dest_country": "dest_country-sample",
+  "hs_code": "hs_code-sample",
+  "declared_value": 0,
+  "currency": "currency-sample",
+  "gross_weight_kg": 0,
+  "payload_hash": "payload_hash-sample",
+  "filed_at": "filed_at-sample",
+  "signal_id": "signal_id-sample"
+}

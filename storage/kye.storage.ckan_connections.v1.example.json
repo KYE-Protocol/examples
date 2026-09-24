@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ckan_connections.v1.json",
+  "connection_id": "connection_id-sample",
+  "portal_id": "portal_id-sample",
+  "base_url": "base_url-sample",
+  "api_token": "api_token-sample",
+  "status": "status-sample",
+  "harvest_interval_minutes": 0,
+  "last_harvested_at": "last_harvested_at-sample",
+  "created_at": "created_at-sample"
+}

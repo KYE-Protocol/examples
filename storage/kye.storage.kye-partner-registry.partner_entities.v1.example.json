@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.partner_entities.v1.json",
+  "id": "id-sample",
+  "legal_name": "legal_name-sample",
+  "display_name": "display_name-sample",
+  "partner_tier": "partner_tier-sample",
+  "region": "region-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "primary_contact_email": "primary_contact_email-sample",
+  "technical_contact_email": "technical_contact_email-sample",
+  "status": "status-sample",
+  "onboarded_at": "onboarded_at-sample",
+  "offboarded_at": "offboarded_at-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

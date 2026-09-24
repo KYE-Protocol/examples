@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.quiz_responses.v1.json",
+  "response_id": "response_id-sample",
+  "quiz_id": "quiz_id-sample",
+  "score": 0,
+  "band": "band-sample",
+  "answers_json": "{}",
+  "ip_hash": "ip_hash-sample",
+  "submitted_at": "submitted_at-sample",
+  "received_at": "received_at-sample"
+}

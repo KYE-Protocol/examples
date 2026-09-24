@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.expert_review_audit.v1.json",
+  "id": "id-sample",
+  "review_id": "review_id-sample",
+  "action": "action-sample",
+  "actor": "actor-sample",
+  "at": "at-sample",
+  "notes": "notes-sample"
+}

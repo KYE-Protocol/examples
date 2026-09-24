@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ep_matters.v1.json",
+  "matter_id": "matter_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "engagement_id": "engagement_id-sample",
+  "matter_type": "matter_type-sample",
+  "client_full_name": "client_full_name-sample",
+  "client_ref": "client_ref-sample",
+  "status": "status-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

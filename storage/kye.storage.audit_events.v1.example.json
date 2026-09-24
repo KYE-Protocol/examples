@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.audit_events.v1.json",
+  "audit_event_id": "audit_event_id-sample",
+  "event_type": "event_type-sample",
+  "runtime_event_id": "runtime_event_id-sample",
+  "policy_decision_id": "policy_decision_id-sample",
+  "credential_id": "credential_id-sample",
+  "delegation_id": "delegation_id-sample",
+  "entity_refs_json": "{}",
+  "causation_id": "causation_id-sample",
+  "correlation_id": "correlation_id-sample",
+  "event_sequence": 0,
+  "occurred_at": "occurred_at-sample",
+  "observed_at": "observed_at-sample",
+  "recorded_at": "recorded_at-sample",
+  "previous_event_hash": "previous_event_hash-sample",
+  "event_hash": "event_hash-sample",
+  "signature": "signature-sample",
+  "metadata_json": "{}"
+}

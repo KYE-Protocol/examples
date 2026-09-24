@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.taxonomy_mappings.v1.json",
+  "mapping_id": "mapping_id-sample",
+  "source_taxonomy_id": "source_taxonomy_id-sample",
+  "source_term": "source_term-sample",
+  "target_framework": "target_framework-sample",
+  "target_control_ref": "target_control_ref-sample",
+  "implications_json": "{}",
+  "issued_at": "issued_at-sample",
+  "version": "version-sample",
+  "status": "status-sample"
+}

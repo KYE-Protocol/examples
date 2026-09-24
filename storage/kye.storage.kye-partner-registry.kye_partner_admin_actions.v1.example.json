@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.kye_partner_admin_actions.v1.json",
+  "action_id": "action_id-sample",
+  "partner_id": "partner_id-sample",
+  "action_type": "action_type-sample",
+  "tier": "tier-sample",
+  "reason": "reason-sample",
+  "performer_id": "performer_id-sample",
+  "second_approver_id": "second_approver_id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "attestation_id": "attestation_id-sample",
+  "body_json": "{}",
+  "performed_at": "performed_at-sample",
+  "created_at": 0
+}

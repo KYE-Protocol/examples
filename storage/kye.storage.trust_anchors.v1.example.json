@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.trust_anchors.v1.json",
+  "trust_anchor_id": "trust_anchor_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "issuer_entity_id": "issuer_entity_id-sample",
+  "issuer_type": "issuer_type-sample",
+  "trusted_for": "trusted_for-sample",
+  "jwks_uri": "jwks_uri-sample",
+  "state": "state-sample",
+  "created_at": "created_at-sample"
+}

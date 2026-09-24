@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.capability_grants.v1.json",
+  "grant_id": "grant_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "principal_entity_id": "principal_entity_id-sample",
+  "capability_id": "capability_id-sample",
+  "allowed_versions": "allowed_versions-sample",
+  "allowed_actions": "allowed_actions-sample",
+  "allowed_environments": "allowed_environments-sample",
+  "limits_json": "{}",
+  "conditions_json": "{}",
+  "state": "state-sample",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "issued_by": "issued_by-sample",
+  "revoked_at": "revoked_at-sample"
+}

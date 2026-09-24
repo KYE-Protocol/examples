@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.partner_device_bindings.v1.json",
+  "id": "id-sample",
+  "partner_id": "partner_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "device_id": "device_id-sample",
+  "device_kind": "device_kind-sample",
+  "attestation_kind": "attestation_kind-sample",
+  "attestation_b64": "attestation_b64-sample",
+  "public_key_b64": "public_key_b64-sample",
+  "bound_at": "bound_at-sample",
+  "unbound_at": "unbound_at-sample",
+  "state": "state-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

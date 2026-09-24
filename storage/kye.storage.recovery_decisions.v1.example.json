@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.recovery_decisions.v1.json",
+  "recovery_decision_id": "recovery_decision_id-sample",
+  "recovery_request_id": "recovery_request_id-sample",
+  "decision": "decision-sample",
+  "restored_authority": "restored_authority-sample",
+  "reduced_authority": "reduced_authority-sample",
+  "obligations": "obligations-sample",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "approver_quorum": 0,
+  "approvers": "approvers-sample",
+  "decided_by": "decided_by-sample",
+  "decided_at": "decided_at-sample",
+  "audit_hash": "audit_hash-sample"
+}

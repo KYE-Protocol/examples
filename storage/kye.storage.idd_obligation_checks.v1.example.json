@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.idd_obligation_checks.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "entity_ref": "entity_ref-sample",
+  "transition_id": "transition_id-sample",
+  "claim_id": "claim_id-sample",
+  "state_name": "state_name-sample",
+  "obligation_type": "obligation_type-sample",
+  "cooling_off_expires": "cooling_off_expires-sample",
+  "disclosure_due_at": "disclosure_due_at-sample",
+  "disclosure_at": "disclosure_at-sample",
+  "obligation_met": 0,
+  "miss_reason": "miss_reason-sample",
+  "checked_at": "checked_at-sample",
+  "signal_id": "signal_id-sample"
+}

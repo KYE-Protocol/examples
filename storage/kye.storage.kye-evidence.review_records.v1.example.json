@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.review_records.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "review_kind": "review_kind-sample",
+  "subject_id": "subject_id-sample",
+  "subject_kind": "subject_kind-sample",
+  "reviewer_entity_id": "reviewer_entity_id-sample",
+  "outcome": "outcome-sample",
+  "rationale": "rationale-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "signed_by_kid": "signed_by_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "reviewed_at": "reviewed_at-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.stressors.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "stressor_id": "stressor_id-sample",
+  "name": "name-sample",
+  "description": "description-sample",
+  "category": "category-sample",
+  "default_severity": "default_severity-sample",
+  "parameters_json": "{}",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

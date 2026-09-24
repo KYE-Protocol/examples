@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ckan_resource_bindings.v1.json",
+  "binding_id": "binding_id-sample",
+  "dataset_binding_id": "dataset_binding_id-sample",
+  "portal_id": "portal_id-sample",
+  "ckan_resource_id": "ckan_resource_id-sample",
+  "url": "url-sample",
+  "format": "format-sample",
+  "mimetype": "mimetype-sample",
+  "size_bytes": 0,
+  "datastore_active": 0,
+  "last_modified": "last_modified-sample",
+  "observed_at": "observed_at-sample"
+}

@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.edge_bundles.v1.json",
+  "key": "edge_bundles/sample-key",
+  "body": {}
+}

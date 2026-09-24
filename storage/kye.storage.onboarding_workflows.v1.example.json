@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.onboarding_workflows.v1.json",
+  "workflow_id": "workflow_id-sample",
+  "application_id": "application_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "applicant_email": "applicant_email-sample",
+  "company": "company-sample",
+  "current_stage": "current_stage-sample",
+  "source": "source-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample",
+  "target_workflows_json": "{}",
+  "stack_bindings_json": "{}",
+  "approvers_json": "{}",
+  "operating_model_template": "operating_model_template-sample",
+  "operating_model_ref": "operating_model_ref-sample",
+  "kickoff_brief_ref": "kickoff_brief_ref-sample",
+  "first_evidence_pack_ref": "first_evidence_pack_ref-sample",
+  "consent_acceptance_ref": "consent_acceptance_ref-sample",
+  "body_json": "{}"
+}

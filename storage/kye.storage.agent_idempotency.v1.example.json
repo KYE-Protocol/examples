@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_idempotency.v1.json",
+  "agent": "agent-sample",
+  "tenant_id": "tenant_id-sample",
+  "request_id": "request_id-sample",
+  "result_json": "{}",
+  "created_at": "created_at-sample",
+  "agent_id": "agent_id-sample",
+  "idempotency_key": "idempotency_key-sample",
+  "result_ref": "result_ref-sample",
+  "idem_key": "idem_key-sample",
+  "first_seen_at": "first_seen_at-sample",
+  "status": "status-sample",
+  "attempt": 0,
+  "last_error": "last_error-sample",
+  "updated_at": "updated_at-sample"
+}

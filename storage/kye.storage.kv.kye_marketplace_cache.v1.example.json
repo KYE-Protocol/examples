@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kv.kye_marketplace_cache.v1.json",
+  "key": "kye_marketplace_cache/sample-key",
+  "body": {}
+}

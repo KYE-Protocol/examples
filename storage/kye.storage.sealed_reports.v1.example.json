@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.sealed_reports.v1.json",
+  "id": "id-sample",
+  "diagnostic_run_id": "diagnostic_run_id-sample",
+  "sealed_at": "sealed_at-sample",
+  "report_url": "report_url-sample",
+  "report_content_hash": "report_content_hash-sample",
+  "assembler_kid": "assembler_kid-sample",
+  "composite_score": 0,
+  "band": "band-sample",
+  "per_lens_summary_json": "{}",
+  "signature_value_b64": "signature_value_b64-sample"
+}

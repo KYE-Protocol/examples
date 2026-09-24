@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.kye_partner_deals.v1.json",
+  "deal_id": "deal_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "partner_kyeid": "partner_kyeid-sample",
+  "customer_kyeid": "customer_kyeid-sample",
+  "tier": "tier-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "value_dollars_micro": 0,
+  "state": "state-sample",
+  "registered_at": "2026-09-23T00:00:00.000Z",
+  "closed_at": "2026-09-23T00:00:00.000Z"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.audit_pilot_applications.v1.json",
+  "id": "id-sample",
+  "full_name": "full_name-sample",
+  "email": "email-sample",
+  "email_hash": "email_hash-sample",
+  "role": "role-sample",
+  "company": "company-sample",
+  "company_size": "company_size-sample",
+  "industry": "industry-sample",
+  "regulatory_regime": "regulatory_regime-sample",
+  "ai_workflow": "ai_workflow-sample",
+  "urgency": "urgency-sample",
+  "heard_from": "heard_from-sample",
+  "ip_hash": "ip_hash-sample",
+  "ua_hash": "ua_hash-sample",
+  "consent_id": "consent_id-sample",
+  "created_at": "created_at-sample",
+  "status": "status-sample",
+  "sku_id": "sku_id-sample",
+  "commercial_workflow_ref": "commercial_workflow_ref-sample"
+}

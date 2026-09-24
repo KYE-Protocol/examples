@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.policy_decisions.v1.json",
+  "policy_decision_id": "policy_decision_id-sample",
+  "policy_id": "policy_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "principal_entity_id": "principal_entity_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "resource_entity_id": "resource_entity_id-sample",
+  "action": "action-sample",
+  "decision": "decision-sample",
+  "reasons_json": "{}",
+  "effective_scope_json": "{}",
+  "obligations_json": "{}",
+  "stop_conditions_json": "{}",
+  "created_at": "created_at-sample"
+}

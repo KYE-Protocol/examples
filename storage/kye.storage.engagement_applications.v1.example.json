@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.engagement_applications.v1.json",
+  "application_id": "application_id-sample",
+  "engagement_type": "engagement_type-sample",
+  "specialization": "specialization-sample",
+  "applicant_name": "applicant_name-sample",
+  "applicant_email": "applicant_email-sample",
+  "org_name": "org_name-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "requested_sku": "requested_sku-sample",
+  "requested_tier": "requested_tier-sample",
+  "workflow_status": "workflow_status-sample",
+  "submitted_at": "submitted_at-sample",
+  "received_at": "received_at-sample",
+  "body_json": "{}"
+}

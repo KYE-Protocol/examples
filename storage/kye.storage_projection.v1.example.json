@@ -1,0 +1,109 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage_projection.v1.json",
+  "schema": "https://kyeprotocol.com/schemas/kye.storage_projection.v1.json",
+  "schema_version": "1.0.0",
+  "registry_id": "kye:registry:storage-projections",
+  "kye_canonical": true,
+  "adopted_at": "2026-09-23",
+  "provenance": "source: seeded once at the 2026-09-23 t=0 import by build-storage-projections --seed (every unbound store object → one row + one contract + one example) and OWNED BY HAND afterwards — rows are edited, never regenerated; projection-targets.derived.json is the derived projection of this registry (§0.51, §0.60)",
+  "description": "ONE engine-neutral row contract per persisted entity, projected into every store (D1 · ClickHouse · KV · R2). Rows are SOURCE-OF-TRUTH after the 2026-09-23 t=0 import (binding_basis imported-from-store): the contract is the root, the store is verified against it by storage-projection-canonical, and projection-targets.derived.json is the rendered projection. See constitution/16-EDGE-RUNTIME.md and the 2026-09-23 reconciliation note.",
+  "constitution_ref": "constitution/16-EDGE-RUNTIME.md + constitution/20-ANALYTICS-PLANE.md + constitution/00-INDEX.md §0.49 + §0.60 + §0.61",
+  "dictionary_ref": "kye:dictionary:storage-projection",
+  "entity_class": "storage-projections",
+  "publication_rule": {
+    "policy": "private",
+    "rationale": "Names every physical store object and its column set — operational topology."
+  },
+  "projections": [
+    {
+      "entity_class": "storage-projections",
+      "contract_ref": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.attestation_seats.v1.json",
+      "store_kind": "d1",
+      "store_ref": "kye:database:d1:kye_grants",
+      "target": "attestation_seats",
+      "binding_basis": "imported-from-store",
+      "property_map": [
+        {
+          "property": "seat_id",
+          "column": "seat_id",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "tenant_id",
+          "column": "tenant_id",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "customer_kyeid",
+          "column": "customer_kyeid",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "framework",
+          "column": "framework",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "framework_version",
+          "column": "framework_version",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "year",
+          "column": "year",
+          "type_rule": "d1:INTEGER"
+        },
+        {
+          "property": "annual_fee_pence",
+          "column": "annual_fee_pence",
+          "type_rule": "d1:INTEGER"
+        },
+        {
+          "property": "currency",
+          "column": "currency",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "valid_from",
+          "column": "valid_from",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "valid_to",
+          "column": "valid_to",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "stripe_subscription_item_id",
+          "column": "stripe_subscription_item_id",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "status",
+          "column": "status",
+          "type_rule": "d1:TEXT"
+        },
+        {
+          "property": "created_at",
+          "column": "created_at",
+          "type_rule": "d1:INTEGER"
+        },
+        {
+          "property": "updated_at",
+          "column": "updated_at",
+          "type_rule": "d1:TEXT"
+        }
+      ],
+      "binding_evidence": "imported from d1 kye:database:d1:kye_grants table attestation_seats (14 columns read by scripts/lib/d1-schema.mjs) by build-storage-projections --seed on 2026-09-23"
+    }
+  ],
+  "counts": {
+    "projections": 1,
+    "by_store_kind": {
+      "d1": 1,
+      "clickhouse": 0,
+      "kv": 0,
+      "r2": 0
+    }
+  }
+}

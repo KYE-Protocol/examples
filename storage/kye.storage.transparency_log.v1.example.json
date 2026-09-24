@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.transparency_log.v1.json",
+  "seq": 0,
+  "entry_id": "entry_id-sample",
+  "type": "type-sample",
+  "payload_canonical": "payload_canonical-sample",
+  "payload_hash": "payload_hash-sample",
+  "this_hash": "this_hash-sample",
+  "appended_at": "appended_at-sample",
+  "prev_hash": "prev_hash-sample",
+  "entry_kind": "entry_kind-sample",
+  "entry_ref": "entry_ref-sample",
+  "entry_hash": "entry_hash-sample",
+  "chain_hash": "chain_hash-sample",
+  "emitted_at": "emitted_at-sample",
+  "tenant_id": "tenant_id-sample"
+}

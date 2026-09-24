@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.diagnostic_runs.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "actor_email": "actor_email-sample",
+  "surface": "surface-sample",
+  "diagnostic_id": "diagnostic_id-sample",
+  "requested_at": "requested_at-sample",
+  "status": "status-sample",
+  "failure_reason": "failure_reason-sample",
+  "answers_payload_json": "{}",
+  "composite_score": 0,
+  "band": "band-sample"
+}

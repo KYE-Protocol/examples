@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.partner_widget_deployments.v1.json",
+  "id": "id-sample",
+  "partner_id": "partner_id-sample",
+  "descriptor_id": "descriptor_id-sample",
+  "customer_tenant_id": "customer_tenant_id-sample",
+  "host_origin": "host_origin-sample",
+  "embed_token_kid": "embed_token_kid-sample",
+  "rollout_strategy": "rollout_strategy-sample",
+  "deployed_at": "deployed_at-sample",
+  "retired_at": "retired_at-sample",
+  "state": "state-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

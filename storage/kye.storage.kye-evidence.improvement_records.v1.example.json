@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.improvement_records.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "loop_iteration_id": "loop_iteration_id-sample",
+  "improvement_kind": "improvement_kind-sample",
+  "before_hash": "before_hash-sample",
+  "after_hash": "after_hash-sample",
+  "rationale": "rationale-sample",
+  "approved_by": "approved_by-sample",
+  "approved_at": "approved_at-sample",
+  "state": "state-sample",
+  "rollout_strategy": "rollout_strategy-sample",
+  "deployment_event_id": "deployment_event_id-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

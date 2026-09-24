@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.payment_approvals.v1.json",
+  "payment_approval_id": "payment_approval_id-sample",
+  "payment_intent_id": "payment_intent_id-sample",
+  "approver_entity_id": "approver_entity_id-sample",
+  "approval_type": "approval_type-sample",
+  "decision": "decision-sample",
+  "reason": "reason-sample",
+  "created_at": "created_at-sample"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.analytics_dispatch_log.v1.json",
+  "id": "id-sample",
+  "batch_size": 0,
+  "target": "target-sample",
+  "outcome": "outcome-sample",
+  "latency_ms": 0,
+  "dispatched_at": "dispatched_at-sample"
+}

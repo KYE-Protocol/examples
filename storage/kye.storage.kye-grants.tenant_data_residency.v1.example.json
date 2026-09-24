@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.tenant_data_residency.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "primary_region": "primary_region-sample",
+  "allowed_regions": "allowed_regions-sample",
+  "scc_signed": 0,
+  "scc_signed_at": 0,
+  "scc_version": "scc_version-sample"
+}

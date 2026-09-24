@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.approval_requirements.v1.json",
+  "approval_requirement_id": "approval_requirement_id-sample",
+  "applies_to_action": "applies_to_action-sample",
+  "threshold_minor": 0,
+  "currency": "currency-sample",
+  "approval_type": "approval_type-sample",
+  "approver_roles_json": "{}",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

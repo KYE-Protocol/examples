@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.dscsa_trace_gaps.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "batch_ref": "batch_ref-sample",
+  "transition_id": "transition_id-sample",
+  "gap_type": "gap_type-sample",
+  "expected_from": "expected_from-sample",
+  "detail": "detail-sample",
+  "detected_at": "detected_at-sample",
+  "signal_id": "signal_id-sample"
+}

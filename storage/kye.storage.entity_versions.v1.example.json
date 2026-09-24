@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.entity_versions.v1.json",
+  "entity_version_id": "entity_version_id-sample",
+  "entity_id": "entity_id-sample",
+  "version_no": 0,
+  "snapshot_json": "{}",
+  "previous_version_id": "previous_version_id-sample",
+  "audit_event_id": "audit_event_id-sample",
+  "created_at": "created_at-sample"
+}

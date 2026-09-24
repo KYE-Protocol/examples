@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.signals.v1.json",
+  "signal_id": "signal_id-sample",
+  "signal_type": "signal_type-sample",
+  "tenant_id": "tenant_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "emitted_at": "2026-09-23T00:00:00.000Z",
+  "payload_json": "payload_json-sample",
+  "_inserted_at": "2026-09-23T00:00:00.000Z"
+}

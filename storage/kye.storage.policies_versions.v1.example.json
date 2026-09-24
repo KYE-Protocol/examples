@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.policies_versions.v1.json",
+  "policy_version_id": "policy_version_id-sample",
+  "policy_id": "policy_id-sample",
+  "version": "version-sample",
+  "bundle_format": "bundle_format-sample",
+  "bundle_uri": "bundle_uri-sample",
+  "bundle_hash": "bundle_hash-sample",
+  "signed_by_credential_id": "signed_by_credential_id-sample",
+  "status": "status-sample",
+  "activated_at": "activated_at-sample",
+  "deactivated_at": "deactivated_at-sample",
+  "created_at": "created_at-sample"
+}

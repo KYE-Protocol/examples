@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.subscriptions.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "customer_kyeid": "customer_kyeid-sample",
+  "stripe_customer_id": "stripe_customer_id-sample",
+  "stripe_customer_email": "stripe_customer_email-sample",
+  "stripe_subscription_id": "stripe_subscription_id-sample",
+  "plan_tier": "plan_tier-sample",
+  "agents_governed": 0,
+  "workflows_count": 0,
+  "sla_tier": "sla_tier-sample",
+  "billing_cycle": "billing_cycle-sample",
+  "currency": "currency-sample",
+  "status": "status-sample",
+  "annual_fee_pence": 0,
+  "started_at": "started_at-sample",
+  "ended_at": "ended_at-sample",
+  "created_at": 0,
+  "updated_at": "updated_at-sample"
+}

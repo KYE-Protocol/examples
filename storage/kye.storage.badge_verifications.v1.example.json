@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.badge_verifications.v1.json",
+  "verification_id": "verification_id-sample",
+  "badge_id": "badge_id-sample",
+  "verified_at": "verified_at-sample",
+  "verifier_ip": "verifier_ip-sample",
+  "verifier_ua": "verifier_ua-sample",
+  "result": "result-sample"
+}

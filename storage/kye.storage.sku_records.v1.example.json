@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.sku_records.v1.json",
+  "sku_id": "sku_id-sample",
+  "version": "version-sample",
+  "state": "state-sample",
+  "stripe_price_id": "stripe_price_id-sample",
+  "published_at": "published_at-sample",
+  "deprecated_at": "deprecated_at-sample",
+  "retired_at": "retired_at-sample",
+  "updated_at": "updated_at-sample"
+}

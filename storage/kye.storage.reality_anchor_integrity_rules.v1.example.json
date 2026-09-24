@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.reality_anchor_integrity_rules.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "anchor_id": "anchor_id-sample",
+  "rule_kind": "rule_kind-sample",
+  "parameters_json": "{}",
+  "on_failure_effect": "on_failure_effect-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

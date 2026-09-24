@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-audit.admin_tenant_events.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "admin_actor_id": "admin_actor_id-sample",
+  "event_type": "event_type-sample",
+  "target_resource_id": "target_resource_id-sample",
+  "before_hash": "before_hash-sample",
+  "after_hash": "after_hash-sample",
+  "reason": "reason-sample",
+  "occurred_at": "occurred_at-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

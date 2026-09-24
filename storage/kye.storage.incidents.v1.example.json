@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.incidents.v1.json",
+  "incident_id": "incident_id-sample",
+  "component_id": "component_id-sample",
+  "severity": "severity-sample",
+  "title": "title-sample",
+  "summary": "summary-sample",
+  "impact": "impact-sample",
+  "started_at": "started_at-sample",
+  "resolved_at": "resolved_at-sample",
+  "resolution_summary": "resolution_summary-sample",
+  "source_event": "source_event-sample",
+  "workflow_run_id": "workflow_run_id-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

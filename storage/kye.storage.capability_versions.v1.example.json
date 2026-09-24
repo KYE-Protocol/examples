@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.capability_versions.v1.json",
+  "version_id": "version_id-sample",
+  "capability_id": "capability_id-sample",
+  "semver": "semver-sample",
+  "release_channel": "release_channel-sample",
+  "manifest_hash": "manifest_hash-sample",
+  "content_hash": "content_hash-sample",
+  "signature_ref": "signature_ref-sample",
+  "source_uri": "source_uri-sample",
+  "supersedes": "supersedes-sample",
+  "superseded_by": "superseded_by-sample",
+  "published_at": "published_at-sample"
+}

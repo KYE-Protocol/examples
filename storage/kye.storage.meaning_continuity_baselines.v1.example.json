@@ -1,0 +1,7 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.meaning_continuity_baselines.v1.json",
+  "operating_model_id": "operating_model_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "baseline_hash": "baseline_hash-sample",
+  "computed_at": "computed_at-sample"
+}

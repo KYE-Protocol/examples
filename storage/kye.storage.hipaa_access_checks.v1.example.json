@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.hipaa_access_checks.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "entity_ref": "entity_ref-sample",
+  "transition_id": "transition_id-sample",
+  "record_type": "record_type-sample",
+  "accessor_ref": "accessor_ref-sample",
+  "baa_present": 0,
+  "minimum_necessary": 0,
+  "access_granted": 0,
+  "deny_reason": "deny_reason-sample",
+  "checked_at": "checked_at-sample",
+  "signal_id": "signal_id-sample"
+}

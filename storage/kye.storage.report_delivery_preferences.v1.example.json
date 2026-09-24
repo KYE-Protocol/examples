@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.report_delivery_preferences.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "report_kind": "report_kind-sample",
+  "recipient": "recipient-sample",
+  "cadence": "cadence-sample",
+  "created_at": "created_at-sample",
+  "revoked_at": "revoked_at-sample"
+}

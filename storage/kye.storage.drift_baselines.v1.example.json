@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.drift_baselines.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "kind": "kind-sample",
+  "computed_at": "computed_at-sample",
+  "window_days": 0,
+  "metrics_json": "{}"
+}
