@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.entity_identifiers.v1.json",
+  "identifier_id": "identifier_id-sample",
+  "entity_id": "entity_id-sample",
+  "identifier_type": "identifier_type-sample",
+  "value_hash": "value_hash-sample",
+  "display_hint": "display_hint-sample",
+  "verified": 0,
+  "verification_basis": "verification_basis-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

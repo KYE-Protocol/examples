@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.webauthn_authenticators.v1.json",
+  "credential_id": "credential_id-sample",
+  "user_kye_id": "user_kye_id-sample",
+  "public_key": "public_key-sample",
+  "counter": 0,
+  "transports_json": "{}",
+  "rp_id": "rp_id-sample",
+  "origin": "origin-sample",
+  "registered_at": 0,
+  "aaguid": "aaguid-sample",
+  "device_type": "device_type-sample",
+  "backed_up": 0
+}

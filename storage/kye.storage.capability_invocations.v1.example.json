@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.capability_invocations.v1.json",
+  "invocation_id": "invocation_id-sample",
+  "request_id": "request_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "principal_entity_id": "principal_entity_id-sample",
+  "capability_id": "capability_id-sample",
+  "capability_version": "capability_version-sample",
+  "requested_action": "requested_action-sample",
+  "environment": "environment-sample",
+  "resource_type": "resource_type-sample",
+  "resource_id": "resource_id-sample",
+  "decision": "decision-sample",
+  "reason_code": "reason_code-sample",
+  "matched_grant_id": "matched_grant_id-sample",
+  "audit_event_id": "audit_event_id-sample",
+  "decided_at": "decided_at-sample",
+  "completed_at": "completed_at-sample"
+}

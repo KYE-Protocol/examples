@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.dsar_requests.v1.json",
+  "request_id": "request_id-sample",
+  "controller": "controller-sample",
+  "right_exercised": "right_exercised-sample",
+  "regime": "regime-sample",
+  "email_hash": "email_hash-sample",
+  "name": "name-sample",
+  "detail": "detail-sample",
+  "filed_at": "filed_at-sample",
+  "due_at": "due_at-sample",
+  "status": "status-sample",
+  "ip_hash": "ip_hash-sample",
+  "ua_hash": "ua_hash-sample",
+  "consent_accepted_at": "consent_accepted_at-sample"
+}

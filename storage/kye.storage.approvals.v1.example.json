@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.approvals.v1.json",
+  "approval_id": "approval_id-sample",
+  "subject_kind": "subject_kind-sample",
+  "subject_id": "subject_id-sample",
+  "status": "status-sample",
+  "required_by": "required_by-sample",
+  "approved_by_entity_id": "approved_by_entity_id-sample",
+  "decided_at": "decided_at-sample",
+  "created_at": "created_at-sample"
+}

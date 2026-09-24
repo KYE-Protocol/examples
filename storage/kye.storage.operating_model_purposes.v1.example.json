@@ -1,0 +1,6 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.operating_model_purposes.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "purpose_class_id": "purpose_class_id-sample",
+  "locked_at": "locked_at-sample"
+}

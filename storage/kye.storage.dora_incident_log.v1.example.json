@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.dora_incident_log.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "entity_ref": "entity_ref-sample",
+  "transition_id": "transition_id-sample",
+  "incident_ref": "incident_ref-sample",
+  "category": "category-sample",
+  "severity": "severity-sample",
+  "dora_classification": "dora_classification-sample",
+  "nis2_applicable": 0,
+  "notification_24h_due": "notification_24h_due-sample",
+  "notification_72h_due": "notification_72h_due-sample",
+  "notification_1mo_due": "notification_1mo_due-sample",
+  "draft_notification": "draft_notification-sample",
+  "opened_at": "opened_at-sample",
+  "logged_at": "logged_at-sample",
+  "signal_id": "signal_id-sample"
+}

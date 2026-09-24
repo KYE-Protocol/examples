@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.partner_certifications.v1.json",
+  "id": "id-sample",
+  "partner_id": "partner_id-sample",
+  "profile_id": "profile_id-sample",
+  "certification_level": "certification_level-sample",
+  "conformance_run_id": "conformance_run_id-sample",
+  "pack_uri": "pack_uri-sample",
+  "pack_sha256": "pack_sha256-sample",
+  "issued_at": "issued_at-sample",
+  "expires_at": "expires_at-sample",
+  "state": "state-sample",
+  "revocation_reason": "revocation_reason-sample",
+  "signed_by_kid": "signed_by_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

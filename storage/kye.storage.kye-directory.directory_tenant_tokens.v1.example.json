@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-directory.directory_tenant_tokens.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "index_name": "index_name-sample",
+  "api_key_kid": "api_key_kid-sample",
+  "search_rules_json": "{}",
+  "expires_at": "expires_at-sample",
+  "issued_at": "issued_at-sample",
+  "revoked_at": "revoked_at-sample",
+  "state": "state-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

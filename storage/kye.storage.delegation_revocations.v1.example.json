@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.delegation_revocations.v1.json",
+  "id": 0,
+  "tenant_id": "tenant_id-sample",
+  "grant_id": "grant_id-sample",
+  "cascade_id": "cascade_id-sample",
+  "cascaded_from": "cascaded_from-sample",
+  "reason": "reason-sample",
+  "revoked_at": "revoked_at-sample"
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.analytics_buffer.v1.json",
+  "id": "id-sample",
+  "kind": "kind-sample",
+  "tenant_id": "tenant_id-sample",
+  "payload_json": "{}",
+  "received_at": "received_at-sample",
+  "dispatched_at": "dispatched_at-sample",
+  "attempts": 0
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.operating_models.v1.json",
+  "operating_model_id": "operating_model_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "version": 0,
+  "canonical_body": "canonical_body-sample",
+  "canonical_hash": "canonical_hash-sample",
+  "rule_bundle_hash": "rule_bundle_hash-sample",
+  "signature_b64": "signature_b64-sample",
+  "signing_kid": "signing_kid-sample",
+  "created_at": "created_at-sample"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.document_enrichment_page.v1.json",
+  "enrichment_id": "enrichment_id-sample",
+  "extraction_id": "extraction_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "page": 0,
+  "text": "text-sample",
+  "chars": 0,
+  "evidence_pin_ref": "evidence_pin_ref-sample",
+  "epistemic_status": "epistemic_status-sample",
+  "created_at": "created_at-sample"
+}

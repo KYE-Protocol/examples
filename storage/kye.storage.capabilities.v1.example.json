@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.capabilities.v1.json",
+  "capability_id": "capability_id-sample",
+  "capability_type": "capability_type-sample",
+  "namespace": "namespace-sample",
+  "name": "name-sample",
+  "display_name": "display_name-sample",
+  "description": "description-sample",
+  "issuer_entity_id": "issuer_entity_id-sample",
+  "current_version": "current_version-sample",
+  "capability_state": "capability_state-sample",
+  "quality_state": "quality_state-sample",
+  "risk_state": "risk_state-sample",
+  "approval_state": "approval_state-sample",
+  "scope_json": "{}",
+  "runtime_json": "{}",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

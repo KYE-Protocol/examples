@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.derivation_conformance.v1.json",
+  "id": "id-sample",
+  "derivation_id": "derivation_id-sample",
+  "checked_at": "checked_at-sample",
+  "conformant": 0,
+  "violations": "violations-sample",
+  "signature": "signature-sample",
+  "kid": "kid-sample"
+}

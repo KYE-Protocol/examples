@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.transparency_statements.v1.json",
+  "statement_id": "statement_id-sample",
+  "subject_type": "subject_type-sample",
+  "subject_id": "subject_id-sample",
+  "issuer_entity_id": "issuer_entity_id-sample",
+  "statement_hash": "statement_hash-sample",
+  "payload_json": "{}",
+  "submitted_at": "submitted_at-sample"
+}

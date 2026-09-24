@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.status_subscriptions.v1.json",
+  "id": "id-sample",
+  "email": "email-sample",
+  "email_hash": "email_hash-sample",
+  "components_json": "{}",
+  "consent_marketing": 0,
+  "status": "status-sample",
+  "unsubscribed_at": "unsubscribed_at-sample",
+  "bounced_at": "bounced_at-sample",
+  "ip_hash": "ip_hash-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

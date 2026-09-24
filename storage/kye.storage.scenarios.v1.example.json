@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.scenarios.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "version": 0,
+  "name": "name-sample",
+  "description": "description-sample",
+  "run_mode": "run_mode-sample",
+  "target_object_id": "target_object_id-sample",
+  "target_object_schema": "target_object_schema-sample",
+  "inputs_json": "{}",
+  "stressors_json": "{}",
+  "validity_not_before": "validity_not_before-sample",
+  "validity_not_after": "validity_not_after-sample",
+  "tags_json": "{}",
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

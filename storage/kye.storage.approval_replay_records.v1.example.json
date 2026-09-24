@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.approval_replay_records.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "approval_evidence_pack_id": "approval_evidence_pack_id-sample",
+  "replayed_at": "replayed_at-sample",
+  "replayed_by": "replayed_by-sample",
+  "result": "result-sample",
+  "diff_summary": "diff_summary-sample",
+  "details_json": "{}",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

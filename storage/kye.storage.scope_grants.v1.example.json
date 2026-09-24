@@ -1,0 +1,6 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.scope_grants.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "scope_id": "scope_id-sample",
+  "granted_at": "granted_at-sample"
+}

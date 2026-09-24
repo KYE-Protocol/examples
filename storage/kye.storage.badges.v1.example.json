@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.badges.v1.json",
+  "badge_id": "badge_id-sample",
+  "certification_id": "certification_id-sample",
+  "level": "level-sample",
+  "label": "label-sample",
+  "product_name": "product_name-sample",
+  "product_version": "product_version-sample",
+  "issued_at": "issued_at-sample",
+  "expires_at": "expires_at-sample",
+  "status": "status-sample",
+  "badge_svg_url": "badge_svg_url-sample",
+  "verification_url": "verification_url-sample",
+  "registry_listing_url": "registry_listing_url-sample",
+  "created_at": "created_at-sample"
+}

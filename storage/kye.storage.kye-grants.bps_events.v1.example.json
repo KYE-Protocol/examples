@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.bps_events.v1.json",
+  "event_id": "event_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "customer_kyeid": "customer_kyeid-sample",
+  "action_kyeid": "action_kyeid-sample",
+  "action_class": "action_class-sample",
+  "transaction_value_pence": 0,
+  "bps_rate": 0,
+  "computed_fee_pence": 0,
+  "capped_at_pence": 0,
+  "floored_at_pence": 0,
+  "final_fee_pence": 0,
+  "currency": "currency-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "recorded_at": "recorded_at-sample",
+  "created_at": 0
+}

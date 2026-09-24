@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.conformance_runs.v1.json",
+  "run_id": "run_id-sample",
+  "implementation_id": "implementation_id-sample",
+  "implementation_name": "implementation_name-sample",
+  "implementation_version": "implementation_version-sample",
+  "test_suite_version": "test_suite_version-sample",
+  "profiles_under_test_json": "{}",
+  "started_at": "started_at-sample",
+  "completed_at": "completed_at-sample",
+  "result": "result-sample",
+  "summary_json": "{}",
+  "findings_json": "{}",
+  "evidence_pack_ref": "evidence_pack_ref-sample"
+}

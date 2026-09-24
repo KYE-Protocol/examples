@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.marketplace_listings.v1.json",
+  "listing_id": "listing_id-sample",
+  "rule_pack_id": "rule_pack_id-sample",
+  "publisher_tier": "publisher_tier-sample",
+  "status": "status-sample",
+  "document_json": "{}",
+  "updated_at": "updated_at-sample",
+  "created_at": "created_at-sample"
+}

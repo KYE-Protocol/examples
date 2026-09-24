@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.pilot_application_decisions.v1.json",
+  "id": "id-sample",
+  "application_id": "application_id-sample",
+  "decision": "decision-sample",
+  "reason": "reason-sample",
+  "tenant_id": "tenant_id-sample",
+  "decided_by": "decided_by-sample",
+  "decided_at": "decided_at-sample"
+}

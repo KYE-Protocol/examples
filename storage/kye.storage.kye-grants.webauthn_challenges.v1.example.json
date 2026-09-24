@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.webauthn_challenges.v1.json",
+  "user_kye_id": "user_kye_id-sample",
+  "challenge": "challenge-sample",
+  "purpose": "purpose-sample",
+  "issued_at": 0,
+  "expires_at": 0,
+  "allowed_credential_ids_json": "{}"
+}

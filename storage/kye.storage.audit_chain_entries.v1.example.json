@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.audit_chain_entries.v1.json",
+  "chain_id": "chain_id-sample",
+  "entry_index": 0,
+  "event_class": "event_class-sample",
+  "at": "at-sample",
+  "tenant_id": "tenant_id-sample",
+  "prev_hash": "prev_hash-sample",
+  "payload_hash": "payload_hash-sample",
+  "entry_hash": "entry_hash-sample",
+  "canonical_payload": "canonical_payload-sample"
+}

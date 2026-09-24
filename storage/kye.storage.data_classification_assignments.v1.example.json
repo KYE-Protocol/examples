@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.data_classification_assignments.v1.json",
+  "assignment_id": "assignment_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "asset_id": "asset_id-sample",
+  "classification": "classification-sample",
+  "classifier_kid": "classifier_kid-sample",
+  "rationale": "rationale-sample",
+  "detection_method": "detection_method-sample",
+  "confidence": 0,
+  "derived_from_json": "{}",
+  "effective_at": "effective_at-sample",
+  "superseded_at": "superseded_at-sample",
+  "signature_b64": "signature_b64-sample",
+  "evidence_pack_id": "evidence_pack_id-sample"
+}

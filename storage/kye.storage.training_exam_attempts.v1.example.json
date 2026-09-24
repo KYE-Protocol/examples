@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.training_exam_attempts.v1.json",
+  "attempt_id": "attempt_id-sample",
+  "enrollment_id": "enrollment_id-sample",
+  "score": 0,
+  "pass_threshold": 0,
+  "passed": 0,
+  "attempted_at": "attempted_at-sample"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.merchants.v1.json",
+  "merchant_id": "merchant_id-sample",
+  "entity_id": "entity_id-sample",
+  "merchant_category": "merchant_category-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

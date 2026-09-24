@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.trust_domains.v1.json",
+  "trust_domain_id": "trust_domain_id-sample",
+  "display_name": "display_name-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "metadata_json": "{}",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

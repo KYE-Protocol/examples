@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.engine_health_snapshots.v1.json",
+  "snapshot_id": "snapshot_id-sample",
+  "implementation_id": "implementation_id-sample",
+  "checked_at": "checked_at-sample",
+  "status": "status-sample",
+  "engines_json": "{}",
+  "warnings_json": "{}"
+}

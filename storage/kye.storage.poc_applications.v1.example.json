@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.poc_applications.v1.json",
+  "application_id": "application_id-sample",
+  "received_at": "received_at-sample",
+  "sku_id": "sku_id-sample",
+  "tier": "tier-sample",
+  "name": "name-sample",
+  "email": "email-sample",
+  "email_hash": "email_hash-sample",
+  "company": "company-sample",
+  "role": "role-sample",
+  "workflow": "workflow-sample",
+  "frameworks": "frameworks-sample",
+  "consent_mutual_evaluation": "consent_mutual_evaluation-sample",
+  "ip_hash": "ip_hash-sample",
+  "workflow_status": "workflow_status-sample",
+  "workflow_id": "workflow_id-sample"
+}

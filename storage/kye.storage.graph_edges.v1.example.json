@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.graph_edges.v1.json",
+  "edge_id": "edge_id-sample",
+  "edge_type": "edge_type-sample",
+  "source_node_id": "source_node_id-sample",
+  "target_node_id": "target_node_id-sample",
+  "state": "state-sample",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "authority_ref": "authority_ref-sample",
+  "scope_ref": "scope_ref-sample",
+  "policy_refs": "policy_refs-sample",
+  "evidence_refs": "evidence_refs-sample",
+  "metadata_json": "{}",
+  "created_at": "created_at-sample"
+}

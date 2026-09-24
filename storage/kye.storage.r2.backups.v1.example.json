@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.backups.v1.json",
+  "key": "backups/sample-key",
+  "body": {}
+}

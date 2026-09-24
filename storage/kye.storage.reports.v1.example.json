@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.reports.v1.json",
+  "report_id": "report_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "report_kind": "report_kind-sample",
+  "framework": "framework-sample",
+  "period_start": "period_start-sample",
+  "period_end": "period_end-sample",
+  "headline_verdict": "headline_verdict-sample",
+  "finding_count": 0,
+  "controls_pass": 0,
+  "controls_fail": 0,
+  "controls_exception": 0,
+  "r2_key": "r2_key-sample",
+  "assembler_kid": "assembler_kid-sample",
+  "sealed_at": "sealed_at-sample",
+  "signature_b64": "signature_b64-sample",
+  "envelope_sha256": "envelope_sha256-sample"
+}

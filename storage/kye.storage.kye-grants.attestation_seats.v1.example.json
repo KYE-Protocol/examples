@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.attestation_seats.v1.json",
+  "seat_id": "seat_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "customer_kyeid": "customer_kyeid-sample",
+  "framework": "framework-sample",
+  "framework_version": "framework_version-sample",
+  "year": 0,
+  "annual_fee_pence": 0,
+  "currency": "currency-sample",
+  "valid_from": "valid_from-sample",
+  "valid_to": "valid_to-sample",
+  "stripe_subscription_item_id": "stripe_subscription_item_id-sample",
+  "status": "status-sample",
+  "created_at": 0,
+  "updated_at": "updated_at-sample"
+}

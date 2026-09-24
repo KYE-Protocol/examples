@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_machines.v1.json",
+  "machine_id": "machine_id-sample",
+  "tenant_scope": "tenant_scope-sample",
+  "entity_class": "entity_class-sample",
+  "library_id": "library_id-sample",
+  "library_version": "library_version-sample",
+  "states_json": "{}",
+  "transitions_json": "{}",
+  "platform_locked_obligations_json": "{}",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "locked_at": "locked_at-sample",
+  "validated_at": "validated_at-sample"
+}

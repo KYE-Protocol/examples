@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.document_cited_extract.v1.json",
+  "cited_extract_id": "cited_extract_id-sample",
+  "extraction_id": "extraction_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "evidence_pin_ref": "evidence_pin_ref-sample",
+  "retrieval_basis": "retrieval_basis-sample",
+  "tree_node_path": "tree_node_path-sample",
+  "locator_page": 0,
+  "locator_char_start": 0,
+  "locator_char_end": 0,
+  "text_sha256": "text_sha256-sample",
+  "passage_excerpt": "passage_excerpt-sample",
+  "figure_page": 0,
+  "figure_index": 0,
+  "asset_sha256": "asset_sha256-sample",
+  "created_at": "created_at-sample"
+}

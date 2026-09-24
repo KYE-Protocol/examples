@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_policy_bindings.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "policy_id": "policy_id-sample",
+  "resource_urn": "resource_urn-sample",
+  "enabled": 0,
+  "created_at": "created_at-sample"
+}

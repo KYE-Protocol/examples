@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.aiact_conformity.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "entity_ref": "entity_ref-sample",
+  "transition_id": "transition_id-sample",
+  "model_ref": "model_ref-sample",
+  "state_name": "state_name-sample",
+  "risk_category": "risk_category-sample",
+  "art9_risk_assessment": "art9_risk_assessment-sample",
+  "art43_conformity": "art43_conformity-sample",
+  "art16_obligations": "art16_obligations-sample",
+  "art17_obligations": "art17_obligations-sample",
+  "overall_pass": 0,
+  "blocking_findings": "blocking_findings-sample",
+  "assessment_at": "assessment_at-sample",
+  "signal_id": "signal_id-sample"
+}

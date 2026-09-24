@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.cert_records.v1.json",
+  "key": "cert_records/sample-key",
+  "body": {}
+}

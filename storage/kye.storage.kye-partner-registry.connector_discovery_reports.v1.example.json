@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-partner-registry.connector_discovery_reports.v1.json",
+  "id": "id-sample",
+  "onboarding_id": "onboarding_id-sample",
+  "body_json": "{}",
+  "score": 0,
+  "overall": "overall-sample",
+  "issued_at": "issued_at-sample"
+}

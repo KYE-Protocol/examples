@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.attestations.v1.json",
+  "attestation_id": "attestation_id-sample",
+  "entity_id": "entity_id-sample",
+  "attestation_type": "attestation_type-sample",
+  "spiffe_id": "spiffe_id-sample",
+  "svid_type": "svid_type-sample",
+  "eat_format": "eat_format-sample",
+  "selector_set_json": "{}",
+  "platform_evidence_json": "{}",
+  "container_digest": "container_digest-sample",
+  "build_provenance_hash": "build_provenance_hash-sample",
+  "claims_json": "{}",
+  "issuer_entity_id": "issuer_entity_id-sample",
+  "status": "status-sample",
+  "issued_at": "issued_at-sample",
+  "expires_at": "expires_at-sample",
+  "revoked_at": "revoked_at-sample"
+}

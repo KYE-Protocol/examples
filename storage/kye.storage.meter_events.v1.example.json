@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.meter_events.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "meter_class": "meter_class-sample",
+  "value_in_pence": 0,
+  "at": "at-sample"
+}

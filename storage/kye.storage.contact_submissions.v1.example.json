@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.contact_submissions.v1.json",
+  "id": "id-sample",
+  "name": "name-sample",
+  "email": "email-sample",
+  "email_hash": "email_hash-sample",
+  "organisation": "organisation-sample",
+  "phone": "phone-sample",
+  "position": "position-sample",
+  "topic": "topic-sample",
+  "message_len": 0,
+  "ip_hash": "ip_hash-sample",
+  "ua_hash": "ua_hash-sample",
+  "provider_message_id": "provider_message_id-sample",
+  "accepted_at": "accepted_at-sample",
+  "received_at": "received_at-sample"
+}

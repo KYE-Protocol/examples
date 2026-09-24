@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_library_entries.v1.json",
+  "library_id": "library_id-sample",
+  "version": "version-sample",
+  "category": "category-sample",
+  "title": "title-sample",
+  "description": "description-sample",
+  "applies_to_entity_class": "applies_to_entity_class-sample",
+  "license": "license-sample",
+  "regulatory_alignment_json": "{}",
+  "states_count": 0,
+  "transitions_count": 0,
+  "machine_seal": "machine_seal-sample",
+  "signature_kid": "signature_kid-sample",
+  "body_json": "{}",
+  "published_at": "published_at-sample",
+  "deprecated_at": "deprecated_at-sample",
+  "supersedes": "supersedes-sample",
+  "platform_signature_b64": "platform_signature_b64-sample",
+  "platform_signature_kid": "platform_signature_kid-sample",
+  "platform_signed_at": "platform_signed_at-sample"
+}

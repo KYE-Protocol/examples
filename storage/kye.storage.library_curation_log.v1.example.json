@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.library_curation_log.v1.json",
+  "id": "id-sample",
+  "curated_at": "curated_at-sample",
+  "deprecated_count": 0,
+  "already_deprecated": 0,
+  "total_entries": 0,
+  "signature": "signature-sample",
+  "kid": "kid-sample"
+}

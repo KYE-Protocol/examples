@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.tenant_entitlements.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "sku_id": "sku_id-sample",
+  "capabilities_json": "{}",
+  "invoice_paid_at": "invoice_paid_at-sample",
+  "suspended_at": "suspended_at-sample",
+  "entitlement_start": "entitlement_start-sample",
+  "entitlement_end": "entitlement_end-sample",
+  "active": 0,
+  "updated_at": "updated_at-sample"
+}

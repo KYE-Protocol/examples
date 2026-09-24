@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.self_attestations.v1.json",
+  "attestation_id": "attestation_id-sample",
+  "organisation_entity_id": "organisation_entity_id-sample",
+  "implementation_name": "implementation_name-sample",
+  "implementation_version": "implementation_version-sample",
+  "attestation_type": "attestation_type-sample",
+  "kye_versions_json": "{}",
+  "claims_json": "{}",
+  "self_audit_run_ref": "self_audit_run_ref-sample",
+  "evidence_pack_ref": "evidence_pack_ref-sample",
+  "signed_by": "signed_by-sample",
+  "signature_algorithm": "signature_algorithm-sample",
+  "signature": "signature-sample",
+  "signed_by_credential_id": "signed_by_credential_id-sample",
+  "status": "status-sample",
+  "issued_at": "issued_at-sample",
+  "expires_at": "expires_at-sample"
+}

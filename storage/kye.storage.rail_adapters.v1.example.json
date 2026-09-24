@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.rail_adapters.v1.json",
+  "adapter_id": "adapter_id-sample",
+  "adapter_type": "adapter_type-sample",
+  "provider_entity_id": "provider_entity_id-sample",
+  "supported_rails_json": "{}",
+  "callback_mode": "callback_mode-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

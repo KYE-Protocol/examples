@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.diagnostic_quota_ledger.v1.json",
+  "id": "id-sample",
+  "account_id": "account_id-sample",
+  "year_month": "year_month-sample",
+  "delta": 0,
+  "reason": "reason-sample",
+  "diagnostic_run_id": "diagnostic_run_id-sample",
+  "recorded_at": "recorded_at-sample"
+}

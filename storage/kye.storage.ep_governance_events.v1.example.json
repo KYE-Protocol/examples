@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ep_governance_events.v1.json",
+  "event_id": "event_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "matter_id": "matter_id-sample",
+  "review_id": "review_id-sample",
+  "schema_name": "schema_name-sample",
+  "operation_id": "operation_id-sample",
+  "actor_urn": "actor_urn-sample",
+  "engagement_id": "engagement_id-sample",
+  "request_id": "request_id-sample",
+  "payload_json": "{}",
+  "emitted_at": "emitted_at-sample"
+}

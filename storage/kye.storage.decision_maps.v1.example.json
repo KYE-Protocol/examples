@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.decision_maps.v1.json",
+  "decision_map_id": "decision_map_id-sample",
+  "decision_id": "decision_id-sample",
+  "request_id": "request_id-sample",
+  "decision": "decision-sample",
+  "reason_code": "reason_code-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "principal_entity_id": "principal_entity_id-sample",
+  "capability_id": "capability_id-sample",
+  "requested_action": "requested_action-sample",
+  "nodes_json": "{}",
+  "edges_json": "{}",
+  "evidence_refs": "evidence_refs-sample",
+  "audit_ref": "audit_ref-sample",
+  "created_at": "created_at-sample",
+  "map_canonical_sha256": "map_canonical_sha256-sample",
+  "decision_map_jws": "decision_map_jws-sample",
+  "kid": "kid-sample"
+}

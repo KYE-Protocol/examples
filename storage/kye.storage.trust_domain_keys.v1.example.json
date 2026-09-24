@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.trust_domain_keys.v1.json",
+  "trust_domain_id": "trust_domain_id-sample",
+  "kid": "kid-sample",
+  "alg": "alg-sample",
+  "public_key_pem": "public_key_pem-sample",
+  "active": 0,
+  "registered_at": "registered_at-sample"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.signal_subscriptions.v1.json",
+  "subscription_id": "subscription_id-sample",
+  "signal_types": "signal_types-sample",
+  "target_entity_ids": "target_entity_ids-sample",
+  "delivered_seq": 0,
+  "acked_seq": 0,
+  "created_at": "created_at-sample"
+}

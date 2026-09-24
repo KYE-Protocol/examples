@@ -1,0 +1,7 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.scopes.v1.json",
+  "scope_id": "scope_id-sample",
+  "scope_json": "{}",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

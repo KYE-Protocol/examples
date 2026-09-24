@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-audit.consent_acceptances.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "form_id": "form_id-sample",
+  "subject_email_hash": "subject_email_hash-sample",
+  "ip_hash": "ip_hash-sample",
+  "ua_hash": "ua_hash-sample",
+  "policy_version_hash": "policy_version_hash-sample",
+  "accepted_clauses_json": "{}",
+  "accepted_at": "accepted_at-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "pilot_application_ref": "pilot_application_ref-sample",
+  "workflow_id": "workflow_id-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

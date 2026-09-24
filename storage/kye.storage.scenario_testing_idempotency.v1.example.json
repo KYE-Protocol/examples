@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.scenario_testing_idempotency.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "scope": "scope-sample",
+  "idempotency_key": "idempotency_key-sample",
+  "response_status": 0,
+  "response_body": "response_body-sample",
+  "created_at": "created_at-sample"
+}

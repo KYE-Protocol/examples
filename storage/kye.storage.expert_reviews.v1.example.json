@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.expert_reviews.v1.json",
+  "id": "id-sample",
+  "submitted_at": "submitted_at-sample",
+  "name": "name-sample",
+  "role": "role-sample",
+  "affiliation": "affiliation-sample",
+  "submitter_email": "submitter_email-sample",
+  "artefact": "artefact-sample",
+  "review_text": "review_text-sample",
+  "verdict": "verdict-sample",
+  "status": "status-sample",
+  "moderated_by": "moderated_by-sample",
+  "moderated_at": "moderated_at-sample",
+  "ip_hash": "ip_hash-sample",
+  "audit_event_id": "audit_event_id-sample",
+  "linkedin_url": "linkedin_url-sample"
+}

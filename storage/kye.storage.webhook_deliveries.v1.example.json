@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.webhook_deliveries.v1.json",
+  "delivery_id": "delivery_id-sample",
+  "webhook_id": "webhook_id-sample",
+  "signal_id": "signal_id-sample",
+  "signal_type": "signal_type-sample",
+  "attempt": 0,
+  "status": "status-sample",
+  "http_status": 0,
+  "error": "error-sample",
+  "attempted_at": "attempted_at-sample"
+}

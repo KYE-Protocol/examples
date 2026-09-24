@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.conformance_run_requests.v1.json",
+  "request_id": "request_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "trigger_kind": "trigger_kind-sample",
+  "triggered_at": "triggered_at-sample",
+  "completed_at": "completed_at-sample",
+  "result": "result-sample",
+  "conformance_run_id": "conformance_run_id-sample"
+}

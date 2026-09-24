@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.accounts.v1.json",
+  "account_id": "account_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "email": "email-sample",
+  "email_lc": "email_lc-sample",
+  "organisation": "organisation-sample",
+  "source": "source-sample",
+  "api_key_prefix": "api_key_prefix-sample",
+  "api_key_sha256": "api_key_sha256-sample",
+  "state": "state-sample",
+  "verification_token_sha256": "verification_token_sha256-sample",
+  "verified_at": "verified_at-sample",
+  "created_at": "created_at-sample",
+  "diagnostic_seals_per_month": 0
+}

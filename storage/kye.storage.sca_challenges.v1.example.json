@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.sca_challenges.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "entity_ref": "entity_ref-sample",
+  "transition_id": "transition_id-sample",
+  "payment_intent_id": "payment_intent_id-sample",
+  "amount": 0,
+  "currency": "currency-sample",
+  "cross_border": 0,
+  "risk_flagged": 0,
+  "challenge_status": "challenge_status-sample",
+  "sca_trigger_rule": "sca_trigger_rule-sample",
+  "initiated_at": "initiated_at-sample",
+  "signal_id": "signal_id-sample"
+}

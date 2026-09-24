@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_memories.v1.json",
+  "memory_id": "memory_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "agent_id": "agent_id-sample",
+  "principal_id": "principal_id-sample",
+  "conversation_id": "conversation_id-sample",
+  "memory_class": "memory_class-sample",
+  "content_json": "{}",
+  "classification": "classification-sample",
+  "retention_until": "retention_until-sample",
+  "caller_kid": "caller_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "created_at": "created_at-sample",
+  "superseded_at": "superseded_at-sample"
+}

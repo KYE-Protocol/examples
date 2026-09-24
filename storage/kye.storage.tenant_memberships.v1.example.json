@@ -1,0 +1,7 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.tenant_memberships.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "user_id": "user_id-sample",
+  "role": "role-sample",
+  "created_at": "created_at-sample"
+}

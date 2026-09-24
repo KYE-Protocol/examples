@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.checkout_sessions.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "customer_kyeid": "customer_kyeid-sample",
+  "sku_id": "sku_id-sample",
+  "product_id": "product_id-sample",
+  "stripe_checkout_session_id": "stripe_checkout_session_id-sample",
+  "stripe_price_id": "stripe_price_id-sample",
+  "stripe_customer_id": "stripe_customer_id-sample",
+  "checkout_url": "checkout_url-sample",
+  "currency": "currency-sample",
+  "status": "status-sample",
+  "success_url": "success_url-sample",
+  "cancel_url": "cancel_url-sample",
+  "created_at": 0,
+  "updated_at": "updated_at-sample"
+}

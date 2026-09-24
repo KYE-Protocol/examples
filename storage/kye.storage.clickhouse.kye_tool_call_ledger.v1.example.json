@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.clickhouse.kye_tool_call_ledger.v1.json",
+  "event_id": "event_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "actor_kyeid": "actor_kyeid-sample",
+  "callee_tool": "callee_tool-sample",
+  "tool_kind": "tool_kind-sample",
+  "purpose_permission_id": "purpose_permission_id-sample",
+  "decision_id": "decision_id-sample",
+  "input_hash": "input_hash-sample",
+  "output_hash": "output_hash-sample",
+  "cost_tokens": 0,
+  "cost_dollars_micro": 0,
+  "latency_ms": 0,
+  "outcome": "outcome-sample",
+  "rule_bundle_id": "rule_bundle_id-sample",
+  "model_name": "model_name-sample",
+  "started_at": "2026-09-23T00:00:00.000Z",
+  "ended_at": "2026-09-23T00:00:00.000Z"
+}

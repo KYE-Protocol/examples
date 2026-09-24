@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.observed_actions.v1.json",
+  "id": 0,
+  "tenant_id": "tenant_id-sample",
+  "at": "at-sample",
+  "agent_id": "agent_id-sample",
+  "action": "action-sample",
+  "off_hours": 0,
+  "source": "source-sample"
+}

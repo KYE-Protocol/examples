@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_transitions.v1.json",
+  "transition_id": "transition_id-sample",
+  "entity_id": "entity_id-sample",
+  "dimension": "dimension-sample",
+  "from_state": "from_state-sample",
+  "to_state": "to_state-sample",
+  "reason_code": "reason_code-sample",
+  "initiated_by": "initiated_by-sample",
+  "approved_by": "approved_by-sample",
+  "effective_at": "effective_at-sample",
+  "evidence_refs": "evidence_refs-sample",
+  "audit_hash": "audit_hash-sample"
+}

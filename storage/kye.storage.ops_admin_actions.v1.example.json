@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ops_admin_actions.v1.json",
+  "action_id": "action_id-sample",
+  "action": "action-sample",
+  "tenant_id": "tenant_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "actor_role": "actor_role-sample",
+  "rationale": "rationale-sample",
+  "at": "at-sample"
+}

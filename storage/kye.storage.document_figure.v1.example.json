@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.document_figure.v1.json",
+  "figure_row_id": "figure_row_id-sample",
+  "extraction_id": "extraction_id-sample",
+  "trust_domain_id": "trust_domain_id-sample",
+  "page": 0,
+  "figure_index": 0,
+  "pdf_object": 0,
+  "width": 0,
+  "height": 0,
+  "filter": "filter-sample",
+  "byte_length": 0,
+  "asset_sha256": "asset_sha256-sample",
+  "created_at": "created_at-sample"
+}

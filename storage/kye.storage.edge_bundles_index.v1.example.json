@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.edge_bundles_index.v1.json",
+  "bundle_id": "bundle_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "device_id": "device_id-sample",
+  "not_before": "not_before-sample",
+  "not_after": "not_after-sample",
+  "compiler_version": "compiler_version-sample",
+  "source_state_library_hash": "source_state_library_hash-sample",
+  "bundle_hash": "bundle_hash-sample",
+  "signing_kid": "signing_kid-sample",
+  "r2_object_key": "r2_object_key-sample",
+  "status": "status-sample",
+  "revoked_at": "revoked_at-sample",
+  "revoked_by": "revoked_by-sample",
+  "revoke_reason": "revoke_reason-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

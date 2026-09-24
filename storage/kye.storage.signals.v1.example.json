@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.signals.v1.json",
+  "signal_id": "signal_id-sample",
+  "signal_type": "signal_type-sample",
+  "target_entity_id": "target_entity_id-sample",
+  "payload_json": "{}",
+  "status": "status-sample",
+  "issued_at": "issued_at-sample"
+}

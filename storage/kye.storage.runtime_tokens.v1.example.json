@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.runtime_tokens.v1.json",
+  "token_id": "token_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "policy_decision_id": "policy_decision_id-sample",
+  "scope_id": "scope_id-sample",
+  "status": "status-sample",
+  "issued_at": "issued_at-sample",
+  "expires_at": "expires_at-sample"
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.relationship_orphans.v1.json",
+  "id": "id-sample",
+  "table_name": "table_name-sample",
+  "row_id": "row_id-sample",
+  "left_urn": "left_urn-sample",
+  "right_urn": "right_urn-sample",
+  "reason": "reason-sample",
+  "detected_at": "detected_at-sample"
+}

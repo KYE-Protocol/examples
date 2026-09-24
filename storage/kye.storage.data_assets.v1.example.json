@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.data_assets.v1.json",
+  "asset_id": "asset_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "owner": "owner-sample",
+  "asset_kind": "asset_kind-sample",
+  "location_system": "location_system-sample",
+  "location_address": "location_address-sample",
+  "location_jurisdiction": "location_jurisdiction-sample",
+  "classification": "classification-sample",
+  "pii_inventory_json": "{}",
+  "labels_json": "{}",
+  "default_retention_days": 0,
+  "data_subject_ref_field": "data_subject_ref_field-sample",
+  "lineage_parents_json": "{}",
+  "registered_at": "registered_at-sample",
+  "deprecated_at": "deprecated_at-sample"
+}

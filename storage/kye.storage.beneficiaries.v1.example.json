@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.beneficiaries.v1.json",
+  "beneficiary_id": "beneficiary_id-sample",
+  "entity_id": "entity_id-sample",
+  "beneficiary_class": "beneficiary_class-sample",
+  "approval_status": "approval_status-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "rail_types_json": "{}",
+  "bank_account_reference_entity_id": "bank_account_reference_entity_id-sample",
+  "created_at": "created_at-sample"
+}

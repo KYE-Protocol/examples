@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye_comms_suppression.v1.json",
+  "recipient_hash": "recipient_hash-sample",
+  "reason": "reason-sample",
+  "scope": "scope-sample",
+  "actor_id": "actor_id-sample",
+  "created_at": "created_at-sample"
+}

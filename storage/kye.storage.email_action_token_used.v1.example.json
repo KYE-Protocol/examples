@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.email_action_token_used.v1.json",
+  "token_hash": "token_hash-sample",
+  "workflow_id": "workflow_id-sample",
+  "workflow_domain": "workflow_domain-sample",
+  "action": "action-sample",
+  "used_at": "used_at-sample",
+  "used_by_ip_hash": "used_by_ip_hash-sample",
+  "used_by_ua_hash": "used_by_ua_hash-sample",
+  "result": "result-sample"
+}

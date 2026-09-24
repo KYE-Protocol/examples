@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-grants.invoices.v1.json",
+  "invoice_id": "invoice_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "customer_kyeid": "customer_kyeid-sample",
+  "stripe_invoice_id": "stripe_invoice_id-sample",
+  "body_json": "{}",
+  "subtotal_pence": 0,
+  "tax_pence": 0,
+  "total_pence": 0,
+  "currency": "currency-sample",
+  "status": "status-sample",
+  "period_start": "period_start-sample",
+  "period_end": "period_end-sample",
+  "issued_at": "issued_at-sample",
+  "paid_at": "paid_at-sample",
+  "stripe_hosted_invoice_url": "stripe_hosted_invoice_url-sample",
+  "created_at": 0,
+  "updated_at": "updated_at-sample"
+}

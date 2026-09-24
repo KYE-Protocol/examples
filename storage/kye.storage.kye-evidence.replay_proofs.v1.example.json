@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.replay_proofs.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "original_decision_id": "original_decision_id-sample",
+  "replay_decision_id": "replay_decision_id-sample",
+  "rules_bundle_id": "rules_bundle_id-sample",
+  "rules_bundle_version": "rules_bundle_version-sample",
+  "original_output_hash": "original_output_hash-sample",
+  "replay_output_hash": "replay_output_hash-sample",
+  "match": 0,
+  "divergence_reason": "divergence_reason-sample",
+  "r2_key": "r2_key-sample",
+  "proof_sha256": "proof_sha256-sample",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "replayed_at": "replayed_at-sample",
+  "body_json": "{}",
+  "created_at": 0
+}

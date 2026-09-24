@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.graph_nodes.v1.json",
+  "node_id": "node_id-sample",
+  "node_type": "node_type-sample",
+  "entity_ref": "entity_ref-sample",
+  "labels_json": "{}",
+  "state_json": "{}",
+  "metadata_json": "{}",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

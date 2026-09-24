@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kv.kye_rules_registry.v1.json",
+  "key": "registry-bundle-v1",
+  "body": {}
+}

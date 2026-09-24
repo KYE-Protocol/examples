@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.search_query_log.v1.json",
+  "query_id": "query_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "caller_kid": "caller_kid-sample",
+  "index_name": "index_name-sample",
+  "query_text": "query_text-sample",
+  "classification_floor": "classification_floor-sample",
+  "risk_tier_max": "risk_tier_max-sample",
+  "result_count": 0,
+  "result_envelope_signature_b64": "result_envelope_signature_b64-sample",
+  "served_at": "served_at-sample"
+}

@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kv.framework_obligations.v1.json",
+  "key": "framework_obligations/sample-key",
+  "body": {}
+}

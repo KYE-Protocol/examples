@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.behaviour_models.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "version": "version-sample",
+  "triggers_json": "{}",
+  "obligations_json": "{}",
+  "stop_conditions_json": "{}",
+  "drift_thresholds_json": "{}",
+  "state": "state-sample",
+  "published_at": "published_at-sample",
+  "retired_at": "retired_at-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

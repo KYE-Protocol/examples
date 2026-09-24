@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.quota_grants.v1.json",
+  "quota_id": "quota_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "principal_entity_id": "principal_entity_id-sample",
+  "authority_grant_id": "authority_grant_id-sample",
+  "metric_name": "metric_name-sample",
+  "limit": 0,
+  "unit": "unit-sample",
+  "window": "window-sample",
+  "current_consumed": 0,
+  "reserved": 0,
+  "state": "state-sample",
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "external_meter_id": "external_meter_id-sample",
+  "external_meter_provider": "external_meter_provider-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.transparency_receipts.v1.json",
+  "receipt_id": "receipt_id-sample",
+  "statement_id": "statement_id-sample",
+  "transparency_service_id": "transparency_service_id-sample",
+  "receipt_json": "{}",
+  "issued_at": "issued_at-sample"
+}

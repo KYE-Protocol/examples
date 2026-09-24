@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.transparency_log.v1.json",
+  "key": "${entryId}.json",
+  "body": {}
+}

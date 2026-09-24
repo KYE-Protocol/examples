@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.recovery_requests.v1.json",
+  "recovery_request_id": "recovery_request_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "recovery_kind": "recovery_kind-sample",
+  "requested_by": "requested_by-sample",
+  "on_behalf_of": "on_behalf_of-sample",
+  "reason_code": "reason_code-sample",
+  "evidence_refs": "evidence_refs-sample",
+  "policy_id": "policy_id-sample",
+  "state": "state-sample",
+  "requested_at": "requested_at-sample"
+}

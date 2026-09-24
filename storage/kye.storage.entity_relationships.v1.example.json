@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.entity_relationships.v1.json",
+  "relationship_id": "relationship_id-sample",
+  "source_entity_id": "source_entity_id-sample",
+  "relationship_type": "relationship_type-sample",
+  "target_entity_id": "target_entity_id-sample",
+  "evidence_json": "{}",
+  "confidence": 0,
+  "valid_from": "valid_from-sample",
+  "valid_until": "valid_until-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

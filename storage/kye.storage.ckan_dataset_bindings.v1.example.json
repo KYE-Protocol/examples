@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ckan_dataset_bindings.v1.json",
+  "binding_id": "binding_id-sample",
+  "portal_id": "portal_id-sample",
+  "ckan_dataset_id": "ckan_dataset_id-sample",
+  "ckan_dataset_name": "ckan_dataset_name-sample",
+  "title": "title-sample",
+  "publisher_org_id": "publisher_org_id-sample",
+  "resource_count": 0,
+  "tags_json": "{}",
+  "license_id": "license_id-sample",
+  "created_at": "created_at-sample",
+  "modified_at": "modified_at-sample",
+  "state": "state-sample",
+  "observed_at": "observed_at-sample"
+}

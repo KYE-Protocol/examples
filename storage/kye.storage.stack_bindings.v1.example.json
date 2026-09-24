@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.stack_bindings.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "vendor": "vendor-sample",
+  "runtime": "runtime-sample",
+  "region": "region-sample",
+  "bound_at": "bound_at-sample"
+}

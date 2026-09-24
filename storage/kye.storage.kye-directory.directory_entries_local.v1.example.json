@@ -1,0 +1,23 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-directory.directory_entries_local.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "index_name": "index_name-sample",
+  "entity_kyeid": "entity_kyeid-sample",
+  "entity_kind": "entity_kind-sample",
+  "display_name": "display_name-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "region": "region-sample",
+  "partner_tier": "partner_tier-sample",
+  "capabilities_csv": "capabilities_csv-sample",
+  "profile_ids_csv": "profile_ids_csv-sample",
+  "certification_level": "certification_level-sample",
+  "searchable_text": "searchable_text-sample",
+  "payload_sha256": "payload_sha256-sample",
+  "visible": 0,
+  "published_at": "published_at-sample",
+  "retired_at": "retired_at-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

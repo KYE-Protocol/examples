@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.taxonomies.v1.json",
+  "taxonomy_id": "taxonomy_id-sample",
+  "name": "name-sample",
+  "description": "description-sample",
+  "status": "status-sample",
+  "current_version": "current_version-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

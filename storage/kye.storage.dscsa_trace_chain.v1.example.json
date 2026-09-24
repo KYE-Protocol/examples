@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.dscsa_trace_chain.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "batch_ref": "batch_ref-sample",
+  "transition_id": "transition_id-sample",
+  "from_party_ref": "from_party_ref-sample",
+  "to_party_ref": "to_party_ref-sample",
+  "handoff_type": "handoff_type-sample",
+  "state_name": "state_name-sample",
+  "tamper_evident": 0,
+  "serial_number": "serial_number-sample",
+  "lot_number": "lot_number-sample",
+  "expiry_date": "expiry_date-sample",
+  "transaction_at": "transaction_at-sample",
+  "verified_at": "verified_at-sample"
+}

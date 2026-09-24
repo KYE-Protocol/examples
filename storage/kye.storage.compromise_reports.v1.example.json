@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.compromise_reports.v1.json",
+  "compromise_report_id": "compromise_report_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "kind": "kind-sample",
+  "severity": "severity-sample",
+  "reason_code": "reason_code-sample",
+  "evidence_refs": "evidence_refs-sample",
+  "reported_by": "reported_by-sample",
+  "reported_at": "reported_at-sample",
+  "auto_actions": "auto_actions-sample"
+}

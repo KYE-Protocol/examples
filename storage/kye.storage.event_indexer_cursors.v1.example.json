@@ -1,0 +1,7 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.event_indexer_cursors.v1.json",
+  "event_family_id": "event_family_id-sample",
+  "last_indexed_at": "last_indexed_at-sample",
+  "last_entry_id": "last_entry_id-sample",
+  "updated_at": "updated_at-sample"
+}

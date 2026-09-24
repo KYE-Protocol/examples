@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.consultant_lead_audit.v1.json",
+  "id": "id-sample",
+  "lead_id": "lead_id-sample",
+  "action": "action-sample",
+  "actor": "actor-sample",
+  "at": "at-sample",
+  "notes": "notes-sample"
+}

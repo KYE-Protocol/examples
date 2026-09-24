@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.authority_gaps.v1.json",
+  "id": 0,
+  "tenant_id": "tenant_id-sample",
+  "at": "at-sample",
+  "agent_id": "agent_id-sample",
+  "gap_class": "gap_class-sample",
+  "severity": "severity-sample",
+  "evidence_json": "{}",
+  "closed_at": "closed_at-sample"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.stripe_checkout_intents.v1.json",
+  "session_id": "session_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "user_id": "user_id-sample",
+  "email": "email-sample",
+  "price_id": "price_id-sample",
+  "created_at": "created_at-sample",
+  "completed_at": "completed_at-sample",
+  "stripe_customer_id": "stripe_customer_id-sample",
+  "stripe_subscription_id": "stripe_subscription_id-sample"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.wallets.v1.json",
+  "wallet_id": "wallet_id-sample",
+  "entity_id": "entity_id-sample",
+  "wallet_kind": "wallet_kind-sample",
+  "owner_entity_id": "owner_entity_id-sample",
+  "controller_entity_id": "controller_entity_id-sample",
+  "currencies_json": "{}",
+  "rail_types_json": "{}",
+  "custody_provider_entity_id": "custody_provider_entity_id-sample",
+  "program_id": "program_id-sample",
+  "status": "status-sample",
+  "created_at": "created_at-sample"
+}

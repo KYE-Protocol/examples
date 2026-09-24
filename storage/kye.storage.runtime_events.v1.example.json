@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.runtime_events.v1.json",
+  "runtime_event_id": "runtime_event_id-sample",
+  "actor_entity_id": "actor_entity_id-sample",
+  "principal_entity_id": "principal_entity_id-sample",
+  "subject_entity_id": "subject_entity_id-sample",
+  "resource_entity_id": "resource_entity_id-sample",
+  "action": "action-sample",
+  "credential_id": "credential_id-sample",
+  "delegation_id": "delegation_id-sample",
+  "policy_decision_id": "policy_decision_id-sample",
+  "outcome": "outcome-sample",
+  "input_hash": "input_hash-sample",
+  "output_hash": "output_hash-sample",
+  "context_json": "{}",
+  "occurred_at": "occurred_at-sample",
+  "recorded_at": "recorded_at-sample"
+}

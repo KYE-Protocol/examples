@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.signal_dlq.v1.json",
+  "id": "id-sample",
+  "original_incident_id": "original_incident_id-sample",
+  "idempotency_key": "idempotency_key-sample",
+  "payload": "payload-sample",
+  "created_at": "created_at-sample",
+  "replayed_at": "replayed_at-sample",
+  "replay_run_id": "replay_run_id-sample",
+  "error_detail": "error_detail-sample"
+}

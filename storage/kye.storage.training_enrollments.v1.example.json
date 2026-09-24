@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.training_enrollments.v1.json",
+  "enrollment_id": "enrollment_id-sample",
+  "learner_entity_id": "learner_entity_id-sample",
+  "pack_id": "pack_id-sample",
+  "state": "state-sample",
+  "enrolled_at": "enrolled_at-sample",
+  "completed_at": "completed_at-sample",
+  "certified_at": "certified_at-sample",
+  "badge_id": "badge_id-sample"
+}

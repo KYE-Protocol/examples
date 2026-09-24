@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_events.v1.json",
+  "event_id": "event_id-sample",
+  "entity_id": "entity_id-sample",
+  "machine_id": "machine_id-sample",
+  "from_state": "from_state-sample",
+  "to_state": "to_state-sample",
+  "transition_id": "transition_id-sample",
+  "decided_at": "decided_at-sample",
+  "decided_by": "decided_by-sample",
+  "evidence_refs_json": "{}",
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_value_b64": "signature_value_b64-sample",
+  "cascade_parent_event_id": "cascade_parent_event_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "entity_class": "entity_class-sample",
+  "reason": "reason-sample",
+  "agent": "agent-sample",
+  "occurred_at": "occurred_at-sample"
+}

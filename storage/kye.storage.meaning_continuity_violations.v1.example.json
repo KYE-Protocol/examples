@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.meaning_continuity_violations.v1.json",
+  "violation_id": "violation_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "operating_model_id": "operating_model_id-sample",
+  "baseline_hash": "baseline_hash-sample",
+  "live_hash": "live_hash-sample",
+  "drift_count": 0,
+  "detected_at": "detected_at-sample",
+  "schema_id": "schema_id-sample"
+}

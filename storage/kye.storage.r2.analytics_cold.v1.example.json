@@ -1,0 +1,5 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.r2.analytics_cold.v1.json",
+  "key": "analytics_cold/sample-key",
+  "body": {}
+}

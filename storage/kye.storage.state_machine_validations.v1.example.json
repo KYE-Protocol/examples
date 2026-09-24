@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.state_machine_validations.v1.json",
+  "id": "id-sample",
+  "machine_id": "machine_id-sample",
+  "validated_at": "validated_at-sample",
+  "valid": 0,
+  "errors": "errors-sample",
+  "signature": "signature-sample",
+  "kid": "kid-sample"
+}

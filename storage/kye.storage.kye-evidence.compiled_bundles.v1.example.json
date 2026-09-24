@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye-evidence.compiled_bundles.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "operating_model_id": "operating_model_id-sample",
+  "authority_model_id": "authority_model_id-sample",
+  "behaviour_model_id": "behaviour_model_id-sample",
+  "bundle_id": "bundle_id-sample",
+  "bundle_version": "bundle_version-sample",
+  "bundle_sha256": "bundle_sha256-sample",
+  "r2_key": "r2_key-sample",
+  "size_bytes": 0,
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_b64": "signature_b64-sample",
+  "compiled_at": "compiled_at-sample",
+  "state": "state-sample",
+  "body_json": "{}",
+  "created_at": 0,
+  "updated_at": 0
+}

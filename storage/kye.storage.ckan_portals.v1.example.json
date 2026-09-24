@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.ckan_portals.v1.json",
+  "portal_id": "portal_id-sample",
+  "base_url": "base_url-sample",
+  "site_title": "site_title-sample",
+  "version": "version-sample",
+  "observed_at": "observed_at-sample"
+}
