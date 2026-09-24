@@ -52,6 +52,7 @@
         "verdict": "validates",
         "rationale": "Confirms the declared-contract posture the estate already holds; nothing is built from it.",
         "basis": "excerpt",
+        "adoption_mode": "none",
         "assessed_by": "https://claude.ai/code/session_example",
         "on_behalf_of": "kye:identity:owner:example-owner",
         "assessed_at": "2026-09-06T10:05:00Z"
