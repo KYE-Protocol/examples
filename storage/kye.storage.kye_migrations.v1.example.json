@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.kye_migrations.v1.json",
+  "name": "name-sample",
+  "applied_at": "applied_at-sample",
+  "outcome": "outcome-sample",
+  "sha256": "sha256-sample",
+  "runner": "runner-sample"
+}
