@@ -1,0 +1,17 @@
+{
+  "schema_version": "kye.relationship.v1",
+  "id": "rel:profile__profile:kye-profile-conformance__kye-profile-core",
+  "relationship_type": "belongs-to",
+  "source_class": "profile",
+  "source_id": "kye-profile-conformance",
+  "target_class": "profile",
+  "target_id": "kye-profile-core",
+  "cardinality": "many-to-one",
+  "bidirectional": false,
+  "weight": 1,
+  "evidence_basis": "A specialised profile derives from exactly one parent profile; many profiles derive from the same parent.",
+  "effective_from": "2026-08-05",
+  "owners": ["KYE Runtime Authority"],
+  "status": "active",
+  "notes": "many-to-one: each source relates to at most one target, while one target may be related from many sources. Read from the target end the same relation is one-to-many, which is the cardinality its mirror entry carries when the relationship is bidirectional."
+}
