@@ -27,7 +27,6 @@
       "kind": "debt-ratchet",
       "count": 42,
       "gate": "test:example-canonical",
-      "decay_deadline": "2026-12-31",
       "target": 0,
       "previous_count": 50,
       "last_reduced_at": "2026-07-07",
@@ -52,7 +51,6 @@
       "kind": "hold-the-line",
       "count": 11,
       "gate": "test:example-canonical",
-      "decay_deadline": "2026-12-31",
       "owner": "platform-ops",
       "hold_reason": "Illustrative — the honest denominator is not yet measurable, so no numeric target is claimed. The count may not rise (that invariant is real and enforceable), but 11 is not asserted to be debt. A per-clause classification on the owning registry would make the denominator measurable; until it lands, asserting a reachable-looking 0 would be a §70 honesty failure dressed as automation.",
       "description": "Illustrative HOLD-THE-LINE — a non-increase invariant whose resting state is not yet knowable. A target is forbidden and hold_reason is required, which is what stops this kind becoming a silent escape from debt-ratchet's obligations. The decay_deadline here is a REVIEW date for the work that would make a target claimable, never a burn-down clock, so the stall check does not apply to it."
@@ -61,7 +59,6 @@
       "kind": "debt-ratchet",
       "count": 60,
       "gate": "test:example-canonical",
-      "decay_deadline": "2026-12-31",
       "target": 0,
       "previous_count": 55,
       "last_reduced_at": "2026-07-07",

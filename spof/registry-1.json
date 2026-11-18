@@ -25,7 +25,9 @@
       "fallback_ref": "internal",
       "criticality": "privileged-action",
       "severity_class": "S2",
-      "decay_deadline": "2026-08-25",
+      "path_to_full_deferred": {
+        "reason": "Illustrative: no closure design can be written until a second vendor is selected for this component."
+      },
       "review_owner": "Architecture",
       "notes": "Illustrative entry only — see internal for the canonical registry."
     }
