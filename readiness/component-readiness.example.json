@@ -12,7 +12,9 @@
     "built",
     "tested",
     "worm_audit",
-    "deploy_ready"
+    "deploy_ready",
+    "deployed",
+    "live_conformant"
   ],
   "external_exception": {
     "note": "The ONLY admissible incompleteness is a genuine third-party external (pentest, SOC 2 / ISO 27001, cyber-insurance, counsel/patent sign-off, or a live deploy credential not held in-repo) — declared honestly in the readiness ledger, never faked (§0.29 + §0.2).",
@@ -27,7 +29,49 @@
       "path": "runtime/example-edge-worker",
       "tested": true,
       "deploy_ready": true,
-      "blocked_external": false
+      "blocked_external": false,
+      "stages": {
+        "architected": {
+          "measured": "reached",
+          "evidence": "specs/agents/agent_manifest.json"
+        },
+        "implemented": {
+          "measured": "reached",
+          "evidence": "runtime/example-edge-worker/src/worker.ts"
+        },
+        "wired": {
+          "measured": "reached",
+          "evidence": "runtime/example-edge-worker/wrangler.toml"
+        },
+        "integrated": {
+          "measured": "reached",
+          "evidence": "runtime/example-edge-worker/wrangler.toml"
+        },
+        "built": {
+          "measured": "reached",
+          "evidence": ".github/workflows/deploy-workers-fleet.yml"
+        },
+        "tested": {
+          "measured": "reached",
+          "evidence": "runtime/example-edge-worker/test/worker.test.ts"
+        },
+        "worm_audit": {
+          "measured": "reached",
+          "evidence": "runtime/example-edge-worker/src/worker.ts"
+        },
+        "deploy_ready": {
+          "measured": "reached",
+          "evidence": "runtime/example-edge-worker/wrangler.toml"
+        },
+        "deployed": {
+          "measured": "open",
+          "reason": "no reconciled Worker for this component in the deployed-estate snapshot"
+        },
+        "live_conformant": {
+          "measured": "open",
+          "reason": "no retained evidence of a conformance run against the deployed Worker"
+        }
+      }
     },
     {
       "component_id": "example-batch-worker",
@@ -37,7 +81,49 @@
       "tested": false,
       "deploy_ready": true,
       "blocked_external": false,
-      "notes": "Illustrative: a deployed worker still awaiting its unit + integration tests — counted in untested_worker_baseline until covered."
+      "notes": "Illustrative: a deployed worker still awaiting its unit + integration tests — counted in untested_worker_baseline until covered.",
+      "stages": {
+        "architected": {
+          "measured": "reached",
+          "evidence": "specs/agents/agent_manifest.json"
+        },
+        "implemented": {
+          "measured": "reached",
+          "evidence": "runtime/example-batch-worker/src/worker.ts"
+        },
+        "wired": {
+          "measured": "reached",
+          "evidence": "runtime/example-batch-worker/wrangler.toml"
+        },
+        "integrated": {
+          "measured": "reached",
+          "evidence": "runtime/example-batch-worker/wrangler.toml"
+        },
+        "built": {
+          "measured": "reached",
+          "evidence": ".github/workflows/deploy-workers-fleet.yml"
+        },
+        "tested": {
+          "measured": "open",
+          "reason": "no unit or integration test file under the component"
+        },
+        "worm_audit": {
+          "measured": "reached",
+          "evidence": "runtime/example-batch-worker/src/worker.ts"
+        },
+        "deploy_ready": {
+          "measured": "reached",
+          "evidence": "runtime/example-batch-worker/wrangler.toml"
+        },
+        "deployed": {
+          "measured": "open",
+          "reason": "no reconciled Worker for this component in the deployed-estate snapshot"
+        },
+        "live_conformant": {
+          "measured": "open",
+          "reason": "no retained evidence of a conformance run against the deployed Worker"
+        }
+      }
     }
   ]
 }
