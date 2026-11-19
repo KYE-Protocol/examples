@@ -6,7 +6,7 @@
   "adopted_at": "2026-09-03",
   "constitution_ref": "constitution/00-INDEX.md §0.37 + §0.3",
   "entity_class": "ledger",
-  "description": "Illustrative instance showing BOTH shapes the ledger carries: a merge that received its declared two-person quorum, and a merge that did not. The approved row is what a governed landing looks like — two DISTINCT approving principals and a sealed evidence pack id. The breach row cannot claim approval: retro_approved is pinned false by the schema, so an irreversible action performed without its approver can only be recorded, never retro-blessed.",
+  "description": "Illustrative instance showing BOTH shapes the ledger carries: a merge that received its declared two-person quorum, and a merge that did not. The approved row is what a governed landing looks like — two DISTINCT approving principals and a sealed evidence pack id. The breach row cannot claim approval: retro_approved is pinned false by the schema, so an irreversible action performed without its approver can only be recorded, never retro-blessed. The second approval row shows the promotion shape: a kye:action-class:deploy decision whose subject names one component, the digest of the artefact, the source and target environment class, the commit it was built from and the digest it supersedes. It is illustrative only — every digest in it is a placeholder.",
   "enforcement_boundary": {
     "enforced_from_date": "2026-09-03",
     "reason": "Illustrative boundary. Commits landing before the enforcement point existed are honestly out of scope rather than silently excluded.",
@@ -25,6 +25,28 @@
       "decided_at": "2026-09-03T10:00:00.000Z",
       "evidence_pack_id": "kye:evidence-pack:0000000000000000example01",
       "decision_id": "kye:decision:0000000000000000example01",
+      "entity_class": "devplane-approval"
+    },
+    {
+      "approval_id": "kye:devplane-approval:example-0002",
+      "action_class": "kye:action-class:deploy",
+      "pending_subject": {
+        "component_id": "kye:component:audit-chain-worker",
+        "artefact_digest": "sha256:000000000000000000000000000000000000000000000000000000000000000a",
+        "source_environment": "kye:environment-class:staging-surface",
+        "target_environment": "kye:environment-class:production-surface",
+        "head_sha": "0000000000000000000000000000000000000003",
+        "pr_number": 1,
+        "supersedes_digest": "sha256:000000000000000000000000000000000000000000000000000000000000000b",
+        "rollout_strategy": "instant"
+      },
+      "approval_mode": "single_approver",
+      "approvers": [
+        "kye:ent:kye-self:person:approver-a"
+      ],
+      "decided_at": "2026-09-03T11:00:00.000Z",
+      "evidence_pack_id": "kye:evidence-pack:0000000000000000example02",
+      "decision_id": "kye:decision:0000000000000000example02",
       "entity_class": "devplane-approval"
     }
   ],
