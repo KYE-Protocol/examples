@@ -8,7 +8,7 @@
     "Illustrative kye.smoke_manifest.v1 instance. The canonical full registry lives at internal"
   ],
   "host_map": {
-    "site": "kyeprotocol.com"
+    "site": "kye-protocol.pages.dev"
   },
   "auth_contract": {
     "sdk_ready_path": [
