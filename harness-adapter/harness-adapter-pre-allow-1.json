@@ -11,9 +11,10 @@
   "mcp_allow_list_checked": true,
   "mcp_allow_list_verdict": "allowed",
   "context_admissibility_verdict": null,
-  "evidence_pack_ref": null,
+  "decision_id": "kye:decision:d17e0a2f4d95e74bf72e3e59",
+  "evidence_pack_ref": "kye:evidence-pack:e239c0cdc0212f4558441a8c",
   "refusal_ref": null,
   "emitted_at": "2026-06-08T12:00:00.000Z",
   "harness_shape": "claude-code",
-  "notes": "Pre-hook ALLOW: mcp__github__create_pull_request is in the constitutional-amendment pattern allow-list."
+  "notes": "Pre-hook ALLOW: the decision engine decided the call and sealed its evidence pack; both are referenced here."
 }

@@ -11,9 +11,10 @@
   "mcp_allow_list_checked": true,
   "mcp_allow_list_verdict": "denied_not_in_list",
   "context_admissibility_verdict": null,
-  "evidence_pack_ref": null,
-  "refusal_ref": "kye:harness-adapt:refusal:b2c3d4e5-toolu_02DEF456",
+  "decision_id": "kye:decision:ee3f7d61d1192c6b94b94a93",
+  "evidence_pack_ref": "kye:evidence-pack:f7a0ad26c72c7350956118fe",
+  "refusal_ref": "kye:agent-refusal:6e12ab5255b04b75facf210072d2ae96",
   "emitted_at": "2026-06-08T12:01:00.000Z",
   "harness_shape": "claude-code",
-  "notes": "Pre-hook DENY: Cloudflare D1 MCP server is not in the content-author allow-list."
+  "notes": "Pre-hook DENY: the Cloudflare D1 MCP server is not in the content-author allow-list. The engine was still asked, so the refusal carries its decision id and evidence pack (§0.35)."
 }
