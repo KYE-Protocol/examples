@@ -11,9 +11,10 @@
   "mcp_allow_list_checked": false,
   "mcp_allow_list_verdict": null,
   "context_admissibility_verdict": "DENY",
-  "evidence_pack_ref": null,
-  "refusal_ref": "kye:harness-adapt:refusal:d4e5f6a7-toolu_04JKL012",
+  "decision_id": "kye:decision:be3941362a2de39e5a204d83",
+  "evidence_pack_ref": "kye:evidence-pack:6f9ff19355b8da357a539d4f",
+  "refusal_ref": "kye:agent-refusal:bd8c854011273952f5a92fa5f2ef4609",
   "emitted_at": "2026-06-08T12:03:00.000Z",
   "harness_shape": "claude-code",
-  "notes": "Pre-hook DENY via §63 context_admissibility: memory entry without lawful basis."
+  "notes": "Pre-hook DENY via §63 context_admissibility: memory entry without lawful basis. The engine was asked and its evidence is referenced (§0.35)."
 }

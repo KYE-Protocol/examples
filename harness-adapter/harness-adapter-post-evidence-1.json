@@ -11,9 +11,11 @@
   "mcp_allow_list_checked": true,
   "mcp_allow_list_verdict": "allowed",
   "context_admissibility_verdict": null,
-  "evidence_pack_ref": "kye:harness-adapt:c3d4e5f6-toolu_03GHI789",
+  "decision_id": "kye:decision:2d709b330b4c9f3bc078dfa9",
+  "evidence_pack_ref": "kye:evidence-pack:90b64fa3a7f66175f05d975c",
   "refusal_ref": null,
+  "tool_call_ref": "kye:tool-call:7e8f934e05e6a87acf3598e4d46d483c",
   "emitted_at": "2026-06-08T12:02:00.000Z",
   "harness_shape": "claude-code",
-  "notes": "Post-hook: Evidence pack sealed with canonical SHA-256 hash of tool call provenance."
+  "notes": "Post-hook: the kye.evidence.tool_call.v1 record binds the call's input and output hashes and outcome to the engine's decision; the evidence pack is the engine's, referenced, never minted by the adapter."
 }
