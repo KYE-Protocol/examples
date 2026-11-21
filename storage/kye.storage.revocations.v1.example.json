@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.revocations.v1.json",
+  "revocation_id": "revocation_id-sample",
+  "grant_id": "grant_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "reason": "reason-sample",
+  "initiator": "initiator-sample",
+  "cascade_status": "cascade_status-sample",
+  "downstream_cancelled": 0,
+  "notes": "notes-sample",
+  "initiated_by": "initiated_by-sample",
+  "revoked_at": "revoked_at-sample",
+  "cascade_sealed_at": "cascade_sealed_at-sample",
+  "created_at": "created_at-sample"
+}

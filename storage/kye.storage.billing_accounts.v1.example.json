@@ -1,0 +1,18 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.billing_accounts.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "legal_entity_id": "legal_entity_id-sample",
+  "stripe_customer_id": "stripe_customer_id-sample",
+  "default_payment_method_id": "default_payment_method_id-sample",
+  "billing_email": "billing_email-sample",
+  "billing_address_json": "{}",
+  "currency": "currency-sample",
+  "tax_id": "tax_id-sample",
+  "tax_exempt_status": "tax_exempt_status-sample",
+  "subscription_status": "subscription_status-sample",
+  "subscription_plan": "subscription_plan-sample",
+  "state": "state-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

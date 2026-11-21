@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.expert_action_token_used.v1.json",
+  "token_sig": "token_sig-sample",
+  "review_id": "review_id-sample",
+  "action": "action-sample",
+  "used_at": "used_at-sample",
+  "remote_ip": "remote_ip-sample",
+  "ua": "ua-sample"
+}

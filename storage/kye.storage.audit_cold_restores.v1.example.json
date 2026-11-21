@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.audit_cold_restores.v1.json",
+  "id": "id-sample",
+  "object_key": "object_key-sample",
+  "tenant_id": "tenant_id-sample",
+  "requested_by": "requested_by-sample",
+  "requested_at": "requested_at-sample",
+  "reason": "reason-sample",
+  "status": "status-sample",
+  "approved_by": "approved_by-sample",
+  "approved_at": "approved_at-sample",
+  "completed_at": "completed_at-sample"
+}

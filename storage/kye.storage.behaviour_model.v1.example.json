@@ -1,0 +1,9 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.behaviour_model.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "revision": 0,
+  "payload": "payload-sample",
+  "signed": 0,
+  "updated_at": "updated_at-sample",
+  "updated_by": "updated_by-sample"
+}

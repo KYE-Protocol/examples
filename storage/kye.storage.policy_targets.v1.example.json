@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.policy_targets.v1.json",
+  "id": "id-sample",
+  "policy_id": "policy_id-sample",
+  "target_class": "target_class-sample",
+  "target_id": "target_id-sample",
+  "scope_kind": "scope_kind-sample",
+  "scope_tenant_id": "scope_tenant_id-sample",
+  "scope_workspace_id": "scope_workspace_id-sample",
+  "scope_team_id": "scope_team_id-sample",
+  "scope_project_id": "scope_project_id-sample",
+  "effective_from": "effective_from-sample",
+  "effective_until": "effective_until-sample"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.team_members.v1.json",
+  "team_id": "team_id-sample",
+  "principal_id": "principal_id-sample",
+  "role": "role-sample",
+  "joined_at": "joined_at-sample",
+  "left_at": "left_at-sample"
+}

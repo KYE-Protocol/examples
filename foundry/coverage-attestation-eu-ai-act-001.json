@@ -19,7 +19,7 @@
     "pack_id": "kye:powered-pack:eu-ai-act:v1",
     "claim_count": 4,
     "bound_rule_packs": [
-      "kye:rule-pack:eu_ai_act"
+      "kye:rule-pack:eu-ai-act"
     ],
     "bound_dictionaries": [
       "kye:dictionary:eu-ai-act-foundry"

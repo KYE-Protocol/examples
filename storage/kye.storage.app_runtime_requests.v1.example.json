@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_runtime_requests.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "question_hash": "question_hash-sample",
+  "compilation_seal": "compilation_seal-sample",
+  "policy_set_id": "policy_set_id-sample",
+  "decision_id": "decision_id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "outcome": "outcome-sample",
+  "request_json": "{}",
+  "record_json": "{}",
+  "proposal_id": "proposal_id-sample",
+  "requested_by": "requested_by-sample",
+  "decided_at": "decided_at-sample"
+}

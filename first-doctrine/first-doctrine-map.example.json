@@ -1,12 +1,11 @@
 {
   "$schema": "https://kyeprotocol.com/schemas/kye.first_doctrine_map.v1.json",
   "kye_canonical": true,
-
   "schema": "kye.first_doctrine_map.v1",
   "registry_id": "kye:registry:first-doctrine-map",
   "adopted_at": "2026-07-12",
   "constitution_ref": "constitution/00-INDEX.md §0.45",
-  "description": "Constitution §0.45 The \"-First\" Doctrine — the ONE canonical declaration of KYE's build-order primacy law. CEO directive (2026-07-12): the entire KYE ecosystem must be agentic-first, api-first, ai-first, schema-first, machine-readable-first, callable-first, discoverable-by-agents-first, dictionary-first, manifest-first, cloudflare-first, stripe-first, entity-first, registry-first, governed-and-governable-first — all constitutional principles. §0.45 UNIFIES them (§0.10 graft, the §0.42/§0.44 pattern) into ONE ordered doctrine, NOT fourteen parallel clauses (which would be §0 + §0.10). At design time the canonical artefacts land FIRST, in order — schema -> dictionary -> registry -> manifest -> OpenAPI (api-first) — before the code that consumes them; and every artefact is agentic-first, callable-first, discoverable-by-agents-first, machine-readable-first, entity-first, cloudflare-first, stripe-first, and governed-and-governable-first. Every primitive binds the EXISTING chapter it projects + the EXISTING enforcing gate that already makes 'code without its canonical-first artefact' mechanically fail. Only api-first and the ordering framing are genuinely NEW named contributions; all other primitives are explicit graft-citations. Enforced by scripts/gates/first-doctrine-canonical.mjs. EXTENDED 2026-09-08 (CEO directive, thirty-five '-first' primitives named in one message: NAMESPACE-FIRST leads): namespace-first is build-order step 1 — the ID class, schema family or package registry an identifier lives in is declared before anything is named inside it; every primitive now records the ONE canonical root that owns its concept (`root`, resolved through canonical-paths) or declares the measured gap on the row (`root_gap`, §0.62(c)); decoupled-first (external systems are governed SUBJECTS, never hard-coded dependencies of the entity / estate / ledger) and bidirectional-first (the entity / estate / ledger never assumes communication is only inbound) are grafted onto §0.61 · §0.47 · §51 · §75 · §38 · §48. Still ONE ordered doctrine, not forty-three siloes.",
+  "description": "Constitution §0.45 The \"-First\" Doctrine — the ONE canonical declaration of KYE's build-order primacy law. CEO directive (2026-07-12): the entire KYE ecosystem must be agentic-first, api-first, ai-first, schema-first, machine-readable-first, callable-first, discoverable-by-agents-first, dictionary-first, manifest-first, cloudflare-first, stripe-first, entity-first, registry-first, governed-and-governable-first — all constitutional principles. §0.45 UNIFIES them (§0.10 graft, the §0.42/§0.44 pattern) into ONE ordered doctrine, NOT fourteen parallel clauses (which would be §0 + §0.10). At design time the canonical artefacts land FIRST, in order — schema -> dictionary -> registry -> manifest -> OpenAPI (api-first) — before the code that consumes them; and every artefact is agentic-first, callable-first, discoverable-by-agents-first, machine-readable-first, entity-first, cloudflare-first, stripe-first, and governed-and-governable-first. Every primitive binds the EXISTING chapter it projects + the EXISTING enforcing gate that already makes 'code without its canonical-first artefact' mechanically fail. Only api-first and the ordering framing are genuinely NEW named contributions; all other primitives are explicit graft-citations. Enforced by scripts/gates/first-doctrine-canonical.mjs. EXTENDED 2026-09-08 (CEO directive, thirty-five '-first' primitives named in one message: NAMESPACE-FIRST leads): namespace-first is build-order step 1 — the ID class, schema family or package registry an identifier lives in is declared before anything is named inside it; every primitive now records the ONE canonical root that owns its concept (`root`, resolved through canonical-paths) or declares the measured gap on the row (`root_gap`, §0.62(c)); decoupled-first (external systems are governed SUBJECTS, never hard-coded dependencies of the entity / estate / ledger) and bidirectional-first (the entity / estate / ledger never assumes communication is only inbound) are grafted onto §0.61 · §0.47 · §51 · §75 · §38 · §48. Still ONE ordered doctrine, not forty-three siloes. GRAFTED 2026-11-19 (owner: 'kye must be plane first, diff first, context aware/first as constitutional principles at t0', then runtime · workspace · steps · hand-off · object first, 'x first must all be x as code', t0-first across every sub-processor, and illumination in conjunction with lineage): six rows (plane · context · diff · workspace · hand-off · runtime), two aliases on existing rows (object-first on entity-first, steps-first on workflow-first), one doctrine-wide invariant (x-as-code, doctrine_invariants), the t=0 scope of t0-first declared per sub-processor (t0_crossings), and the illumination observer bound to the lineage stream on the lineage-first row.",
   "publication_rule": {
     "policy": "private",
     "rationale": "The doctrine (§0.45) is public; this map's enforcer wiring (which internal gate enforces each primitive) is operational self-governance metadata, kept internal like the §0.44 assurance-plane and §0.43 enforcer-scopes registries."
@@ -51,11 +50,31 @@
       "enforcing_gates": [
         "test:entity-id-canonical"
       ],
-      "note": "Posture primitive. §0.36: every concept + page carries exactly one kye:-ID (entity-id backbone). A net-new un-ID'd concept fails entity-id-canonical immediately.",
+      "note": "Posture primitive. §0.36: every concept + page carries exactly one kye:-ID (entity-id backbone). A net-new un-ID'd concept fails entity-id-canonical immediately. Carries object-first (owner 2026-11-19: 'object first (if not already)'): every thing acted on is a declared object with an identity before any action names it. Identity is this row, its contract is contract-first and the namespace it lives in is namespace-first, so object-first is an alias here and no fourth row was added beside them.",
       "root": "kye:dictionary:entity-id-classes",
       "ladder_rank": 2,
       "ladder_group": "identity",
-      "essentiality": "fundamental"
+      "essentiality": "fundamental",
+      "aliases": [
+        "object-first"
+      ]
+    },
+    {
+      "primitive_id": "plane-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Does every governed thing — an action, a component, a credential, an evidence stream — name the ONE governance plane it belongs to, from a vocabulary declared before the thing exists, so that which plane it is on is answered by a field and never inferred from where a file sits?",
+      "grafts": "§0.37 dev-plane interaction classes + §31 data_use plane + §12 / §61 / §68 rights planes + §69 Control-Plane MCP + §20 Analytics Plane + the plane category of kye:dictionary:action-classes (held byte-equal to kye.action_class.v1 by action-class-canonical since 2026-09-08) + owner 2026-11-19 (plane-first at t=0)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:action-class-canonical"
+      ],
+      "root": "kye:dictionary:action-classes",
+      "adopted_at": "2026-11-19",
+      "note": "Identity-group primitive, after entity-first: a thing's identity, then the one plane it lives on. The root is the plane category of the action-classes dictionary: eleven terms (dev · data · user · commerce · agent · legal · clinical · physical · governance · employment · benefits). It is the only plane vocabulary that claims to own the governance planes and the only one with an enforcer; its own description still says nine planes. What the bound gate enforces TODAY: action-class-canonical validates every row of the action-class registry (166 rows on 2026-11-19) against kye.action_class.v1, where plane is required and takes one value, and holds the schema's plane enum byte-equal to the dictionary's plane terms. So every ACTION resolves to exactly one declared plane. DECLARED GAP (measured 2026-11-19 by reading every schema property named plane under the schema tree and counting its values in the registries that carry it): the word names at least six different axes with disjoint vocabularies. (1) Governance plane: kye.action_class.v1, 11 terms, the root. (2) Functional plane on implementation concepts: kye.implementation_registry.v1, 15 terms; its dictionary rows read 'observed value of plane', so the vocabulary follows the data. (3) Entity-type axis plane: kye.entity_type_registry.v1, 7 terms (data · policy · runtime · surface · evidence · identity · structural). (4) The §33 IP/OSS line: private · public · hybrid, on the admission matrix, the coordinate index and kye.evidence.pack.v1 coordinate.plane. (5) The lineage planes: build · runtime, kye.lineage.v1. (6) The enforcer-axis plane: repo · live-estate, on the generated enforcer axes. The constitution's control plane, data plane, dev plane and analytics plane are a seventh usage with no field behind them. Components (kye:registry:component-readiness), credentials (kye:registry:secrets) and evidence streams (kye:registry:lineage-sources) carry no governance-plane field, so the invariant holds for actions only. Owed, contract-first: keep this dictionary as the one root for the word plane; rename the five other axes to names that do not collide, each with collision_reviewed recorded (the namespace rule for ID-class terms applied to field names); then a plane field on component, credential and stream rows whose enum is a projection of this root, asserted the way action-class-canonical asserts it for actions. The renames move fields that admission-control, the coordinate index and the evidence-pack contract read, so choosing the names is an owner decision and is not part of this graft.",
+      "ladder_group": "identity",
+      "essentiality": "fundamental",
+      "ladder_rank": 3
     },
     {
       "primitive_id": "canonical-first",
@@ -71,7 +90,7 @@
       "root": "kye:registry:canonical-concepts",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. canonical-first rejects a kye.<ns> reference with no declaration; check-canonical-references resolves every registry-bound noun and RIGHT_SIZED_EXCEPTION annotation; canonical-concepts-registry.json is the SOURCE every concept's {schema, dictionary, manifest, example, gate} triple is declared in.",
-      "ladder_rank": 3,
+      "ladder_rank": 4,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -90,7 +109,7 @@
       "root": "kye:dictionary:glossary",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive, the term-level half of dictionary-first (which binds the ARTEFACT slot). Worked cure at adoption 2026-09-08: kye.action_class.v1's plane enum carried `benefits` (20 registry rows) while kye:dictionary:action-classes — which claims to own the plane vocabulary — did not declare it; action-class-canonical now asserts every schema enum is a byte-equal projection of the dictionary's terms.",
-      "ladder_rank": 4,
+      "ladder_rank": 5,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -106,7 +125,7 @@
       ],
       "note": "Step 2. §0.18's {dictionary} slot; canonical-triple-coverage rejects a registered concept whose dictionary does not resolve.",
       "root": "kye:registry:canonical-concepts",
-      "ladder_rank": 5,
+      "ladder_rank": 6,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -123,7 +142,7 @@
       ],
       "note": "The schema is step 1 of the build order. §0.18's quintuple birth-contract already requires a schema in the same commit; canonical-first rejects a kye.<ns> reference with no landed declaration; canonical-triple-coverage rejects a registered concept whose {schema} slot does not resolve on disk.",
       "root": "kye:registry:schemas",
-      "ladder_rank": 6,
+      "ladder_rank": 7,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -142,7 +161,7 @@
       "root": "kye:registry:admission-matrix",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. The admission matrix declares per class WHERE instances live, WHICH key, WHICH id field and WHAT contract; generated-not-source verifies the ownership bijection against the build's own behaviour; the pre-commit t0-preview runs the contract-first rule (scripts/ci/t0-preview.mjs --require-declared) over every staged file.",
-      "ladder_rank": 7,
+      "ladder_rank": 8,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -159,7 +178,7 @@
       ],
       "note": "Step 3. §0.9 requires every multi-file-referenced noun to belong to a registry; §0.18 requires the registry to self-register in canonical-everything.json.",
       "root": "kye:registry:canonical-concepts",
-      "ladder_rank": 8,
+      "ladder_rank": 9,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -175,7 +194,7 @@
       ],
       "note": "Step 4. The manifest slot of the §0.18 triple; a manifest that does not resolve fails canonical-triple-coverage.",
       "root": "kye:registry:canonical-concepts",
-      "ladder_rank": 9,
+      "ladder_rank": 10,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -191,7 +210,7 @@
       ],
       "note": "Step 5, the last build-order artefact. openapi-functions-bijection is a RED-LINE gate (user 2026-05-19: 'nothing no component should be post facto in entire ecosystem'). §0.45's api-first framing declares this the api-first doctrine.",
       "root_gap": "No kye:registry id resolves for the OpenAPI document set (kye:registry:openapi and kye:registry:openapi-rails are not declared); openapi-functions-bijection is the enforcer and reads the documents from disk. Owed: a registry-first root for the OpenAPI surface set, declared at t=0 in the same change-set as the next OpenAPI document.",
-      "ladder_rank": 10,
+      "ladder_rank": 11,
       "ladder_group": "canon",
       "essentiality": "fundamental"
     },
@@ -210,7 +229,7 @@
       "root": "kye:dictionary:jurisdictions",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. kye:dictionary:jurisdictions is the vocabulary; sku-jurisdiction-canonical proves every SKU's jurisdictions resolve; jurisdiction-authority-canonical proves the §72 residency verdict is a graft, never a parallel engine.",
-      "ladder_rank": 11,
+      "ladder_rank": 12,
       "ladder_group": "regime",
       "essentiality": "fundamental"
     },
@@ -228,7 +247,7 @@
       "root": "kye:dictionary:regulators",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. regulatory-generators-canonical RUNS every declared regulatory generator (DPIA · ROPA · Art.22 · DORA register · SR 11-7); the regulator and regime vocabularies are dictionaries, never inline strings.",
-      "ladder_rank": 12,
+      "ladder_rank": 13,
       "ladder_group": "regime",
       "essentiality": "fundamental"
     },
@@ -246,7 +265,7 @@
       "root": "kye:registry:frameworks",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. kye:registry:frameworks is the ROOT the coverage registry, the per-requirement store, the §74 label map and the §59 engine all resolve to; framework-mapping-canonical proves each mapping state names its evidence.",
-      "ladder_rank": 13,
+      "ladder_rank": 14,
       "ladder_group": "regime",
       "essentiality": "fundamental"
     },
@@ -264,7 +283,7 @@
       "root": "kye:registry:conformance",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. Standards are rows of kye:registry:frameworks (§70 — 'frameworks / standards / jurisdictions' resolve to ONE root); the conformance registry declares the levels KYE itself is measured against; oscal-exports-canonical proves the OSCAL projection resolves.",
-      "ladder_rank": 14,
+      "ladder_rank": 15,
       "ladder_group": "regime",
       "essentiality": "fundamental"
     },
@@ -282,9 +301,27 @@
       "root": "kye:registry:regulatory-coverage",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. The CEO's 2026-09-08 ask for a 'compliance framework registry' resolves to TWO existing roots: kye:registry:frameworks (what exists) and kye:registry:regulatory-coverage (the honest tri-state of how far each is mapped). framework-coverage-bijection asserts the deep per-requirement store agrees with the coverage registry.",
-      "ladder_rank": 15,
+      "ladder_rank": 16,
       "ladder_group": "regime",
       "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "workspace-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is the isolated unit inside which work happens — an agent worktree, a CI runner, a session container, a sandbox, a staging or production surface, a tenant's workspace — DECLARED as a governed environment before any work starts in it, so isolation is a declared and decided property and never an arrangement someone made by hand?",
+      "grafts": "§0.11 Zero Contamination (every parallel sub-agent runs isolated; every tenant-scoped query carries its trust-domain predicate) + §0.37 environment classes (isolated is not ungoverned) + §0.30 governed labs + kye.entity.workspace.v1 (an environment or dataspace owned by a Tenant) + owner 2026-11-19 (workspace-first)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:total-citizenship-canonical",
+        "test:tenant-predicate-canonical"
+      ],
+      "root": "kye:registry:devplane-interaction-classes",
+      "adopted_at": "2026-11-19",
+      "note": "Boundary-group primitive, first in the group: the inside must be declared before anything can cross out of it. The root declares six environment classes (agent-worktree · ci-runner · remote-container · sandbox-surface · staging-surface · production-surface), each a citizen with a pre-finality governor. What the bound gates enforce TODAY: total-citizenship-canonical proves every environment class names a t0 governor that resolves on disk and is issued into the identity backbone; tenant-predicate-canonical scans every D1 query in the app and admin Pages Functions and refuses a query on a tenant-scoped table that does not carry the tenant predicate in the same statement (decreases-only on the legacy offenders, an annotated cross-tenant query exempt). The tenant's own workspace is the kye.entity.workspace.v1 contract. DECLARED GAP (measured 2026-11-19): declaring an environment class is not deciding a workspace instance — nothing decides the creation of a worktree or a container before work starts in it; the delegated agents of the session that adopted this row run in clones made by hand outside the repository, an isolation the estate does not record; the builder PEP's declared-write-scope rule applies only when KYE_AGENT_ID is set, which only the ralph loop sets, so an Agent-tool subagent's workspace has no declared scope; and a governed lab (§0.30: several governed agents, environments and workflows packaged together) has no environment-class term. The word workspace has two referents here, a dev-plane environment and a tenant's dataspace; this row names both and records the collision rather than merging them.",
+      "ladder_group": "boundary",
+      "essentiality": "fundamental",
+      "ladder_rank": 17
     },
     {
       "primitive_id": "decoupled-first",
@@ -302,7 +339,7 @@
       "root": "kye:registry:availability-evidence",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. air-gap-ability proves the verdict path carries zero network symbols; no-spof-coverage proves every vendor-locked path declares full / partial / none and a path-to-full; subprocessor-manifest-canonical proves every external party is a declared row; inter-project-isolation proves no sibling's name, domain or infrastructure is coupled into KYE canon. The root is the §51 SPOF registry — the declared list of what the estate depends on and what happens when each fails.",
-      "ladder_rank": 16,
+      "ladder_rank": 18,
       "ladder_group": "boundary",
       "essentiality": "fundamental"
     },
@@ -321,7 +358,7 @@
       "root": "kye:registry:follow-surfaces",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. inbound-outbound-governance proves every mutating inbound handler AND every outbound dispatch carries a KYE-ID and emits the §0.3 family; followability-canonical proves every class declares how an instance is REACHED (the outbound half of the contract); signal-sources-alive proves every declared inbound signal source has a live consumer. DECLARED GAP (task #88): the inbound / outbound / projection engines of the integration plane are not declared — the crossing is governed, the transport is not.",
-      "ladder_rank": 17,
+      "ladder_rank": 19,
       "ladder_group": "boundary",
       "essentiality": "fundamental"
     },
@@ -340,7 +377,7 @@
       "root": "kye:registry:events",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. kye:registry:events declares every event family with post_facto_forbidden; kye:registry:event-classes declares the 78 developer-facing classes. DECLARED GAP (task #86): event classes carry severity, not consequence_tier — an event's consequence is owed as a DERIVATION from the action class it reports, never a typed tier.",
-      "ladder_rank": 18,
+      "ladder_rank": 20,
       "ladder_group": "boundary",
       "essentiality": "fundamental"
     },
@@ -358,7 +395,7 @@
       "root": "kye:registry:worker-manifest",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. gateway-roles-canonical proves every gateway-like worker declares its gateway_role; builder-pep-canonical proves the builder's t=0 PEP is wired and live. DECLARED GAP (task #78): the gate chain's own admission gateway exists and does not yet gate — recorded, not claimed.",
-      "ladder_rank": 19,
+      "ladder_rank": 21,
       "ladder_group": "boundary",
       "essentiality": "fundamental"
     },
@@ -375,7 +412,7 @@
       "root": "kye:registry:governance-plurality",
       "adopted_at": "2026-11-18",
       "note": "Boundary-group primitive, placed BEFORE cross-x-governed-first because a crossing presupposes plurality: there is nothing to cross between until an axis holds more than one value. The root is the plurality registry — one row per axis naming its plurality form and the schema or record that proves it; governance-plurality-canonical re-derives the schema walk on every run and fails an undeclared arity cap on a governance-axis array. The test is EXPRESSIBILITY (can a contract carry N at once), never a census of singular-vs-plural field names. tenant and subject-identity are declared singular-by-design on their own rows: one governed thing lives in one tenant (§0.11), which is isolation, not a missing plurality.",
-      "ladder_rank": 20,
+      "ladder_rank": 22,
       "ladder_group": "boundary",
       "essentiality": "fundamental"
     },
@@ -395,9 +432,28 @@
       "root": "kye:registry:boundaries",
       "adopted_at": "2026-11-18",
       "note": "Boundary-group primitive. The root is the §0.39 boundary registry — every declared crossing, external and internal, bound to the existing enforcement point that decides it; boundary-governance-canonical proves each boundary's enforcement point, bindings and identity resolve; tenant-predicate-canonical proves a tenant-scoped query cannot cross tenants without the declared predicate; cross-jurisdiction-handoff-canonical proves a jurisdiction-to-jurisdiction handoff is a declared, governed act; inter-project-isolation proves no sibling project is coupled into canon. DECLARED GAP: the plurality registry (multi-x-first) and the boundary registry are not joined — no row states which declared boundary governs a crossing between two values of a given plurality axis, so 'every axis that is plural has a governed crossing' is true only by reading the two registries side by side and is not asserted mechanically; and jurisdiction and sibling-project crossings are enforced by their own gates rather than by a kye:boundary: row. The operator crossing and the declared-versus-actual counterparty reconciliation are owed in masterblueprint §11 rows S-59 and S-60.",
-      "ladder_rank": 21,
+      "ladder_rank": 23,
       "ladder_group": "boundary",
       "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "hand-off-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every transfer of CONTROL — principal to agent, agent to agent, a session to its subagent and back, a turn to the run it started, one session to the next — a DECLARED, evidenced hand-off that names what is handed over, under whose authority, and what comes back, never control that passes because one process ended and another began?",
+      "grafts": "§52 Constitutional Binding of Delegated Agents (task-start governance · completion · refusal envelopes, and §52 §17 kye.agent.exchange.v1: a hand-off is a consequential action decided under send-message · agent-handoff · agent-payment) + §21 Delegated Auditability + the agent-exchange boundary of the §0.39 boundary registry + the meaning-continuity handoff trace (handoff-trace.json) + CLAUDE.md 2026-09-15 (an owner interruption ends a TURN, never a RUN) + owner 2026-11-19 (hand-off-first)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:delegated-agent-binding-coverage",
+        "test:agent-envelope-vs-scope",
+        "test:boundary-governance-canonical"
+      ],
+      "root": "kye:schema:kye.agent.exchange.v1",
+      "adopted_at": "2026-11-19",
+      "note": "Boundary-group primitive, after cross-x-governed-first: a crossing between two values of an axis is governed there; a hand-off is the narrower act of handing CONTROL across one, and continuity of control is what this row adds. It is not carried by cross-x-governed-first because a session → subagent → session hand-back, or a turn → run, crosses no boundary in the registry. The jurisdictional hand-off of §57 (kye.handoff.envelope.v1) is a regulatory-recognition envelope and is a different concept. What the bound gates enforce TODAY: delegated-agent-binding-coverage holds the four §52 envelope contracts and their examples, the binding manifest's task patterns, and that every exchange fixture is decided under one of the three root action classes with an approval mode equal to or stricter than the class default; agent-envelope-vs-scope reconciles every completion envelope it finds against the declaring task pattern's paths and MCP allow-list; boundary-governance-canonical holds that the agent-exchange boundary carries a PEP that resolves on disk. DECLARED GAP (measured 2026-11-19): the hand-back of a Claude Code subagent and the hand-over from one session to the next carry no envelope at all; an Agent-tool subagent runs with KYE_AGENT_ID unset and emits no governance envelope, and agent-envelope-vs-scope passes on an empty corpus by design; a run that survives an interrupted turn is recorded by run-state, which is liveness, not a hand-off record; and the mcp-tool boundary's declared PEP (scripts/agent-governance/preflight.mjs) is invoked by no hook, workflow or npm script (git grep over .claude, .githooks, .github and package.json, 2026-11-19).",
+      "ladder_group": "boundary",
+      "essentiality": "fundamental",
+      "ladder_rank": 24
     },
     {
       "primitive_id": "policy-first",
@@ -413,7 +469,7 @@
       "root": "kye:registry:rule-packs",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. rule-pack-canonical proves every rule pack is registered with its tests; policy-points-canonical proves every policy point resolves to its dictionary. DECLARED GAP: om-compiler-determinism (the operating-model compile is pure) exists and is not wired into the chain — not bound here until it runs.",
-      "ladder_rank": 22,
+      "ladder_rank": 25,
       "ladder_group": "decision",
       "essentiality": "fundamental"
     },
@@ -430,7 +486,7 @@
       "root": "kye:registry:authority-invariants",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. The invariant registry declares each property across the three finality dimensions; governed-invariants-canonical makes the declaration honest and enforceable.",
-      "ladder_rank": 23,
+      "ladder_rank": 26,
       "ladder_group": "decision",
       "essentiality": "fundamental"
     },
@@ -448,15 +504,37 @@
       "root": "kye:registry:propagator",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. generator-determinism runs every propagator twice (real clock + fixed future clock) and asserts byte-identical output; air-gap-ability proves the governance spine reaches its verdict with zero network symbols. The propagator registry is the declared generator population.",
-      "ladder_rank": 24,
+      "ladder_rank": 27,
       "ladder_group": "decision",
       "essentiality": "fundamental"
+    },
+    {
+      "primitive_id": "context-first",
+      "entity_class": "doctrine-primitive",
+      "aliases": [
+        "context-aware-first"
+      ],
+      "question": "Is every decision taken under a NAMED, SEALED context — the inputs, rule bundle, model build and signal versions it was decided against — assembled from canon and recorded evidence rather than from a conversation, so the decision can be replayed and a decision whose context cannot be replayed is refused?",
+      "grafts": "§13 Replay (kye.replay.context_seal.v1: without the seal a decision cannot be replayed) + §0.3 evidence family (kye.evidence.pack.v1 requires replay_seal_ref) + §12 purpose request + §52 task-start governance envelope (a delegated agent's declared scope and allow-list) + §63 Memory Authority (memory is authority-bearing state) + §48 session-resume signal ingest + the reasoning-review discipline (chat is evidence, not authority) + CLAUDE.md 2026-09-22 (a grant that lives only in a conversation does not exist at t=0) + owner 2026-11-19 (context aware / context-first at t=0)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:evidence-pack-standalone-canonical",
+        "test:self-governance-coverage",
+        "test:delegated-agent-binding-coverage"
+      ],
+      "root": "kye:schema:kye.replay.context_seal.v1",
+      "adopted_at": "2026-11-19",
+      "note": "Decision-group primitive, after deterministic-first and before t0-first: a verdict that is a pure function of its input is replayable only if that input is sealed, and the t=0 decision is then taken under the sealed context. The root is the replay context seal: model build hash, rule bundle hash, per-signal versions, wall clock and RNG seed. What the bound gates enforce TODAY: kye.evidence.pack.v1 requires replay_seal_ref, and evidence-pack-standalone-canonical boots the reference evidence pack and proves its decision map, inputs and replay seal resolve from the file alone; self-governance-coverage refuses a watched privileged runtime path (rules gateway, decision engine, evidence engine and four more) whose source names none of decision_map, context_seal or evidence pack — it requires one of the three, so a path that emits a pack without a seal passes; delegated-agent-binding-coverage holds the §52 governance, refusal, completion and exchange envelope contracts and the binding manifest's task patterns, which are a delegated agent's declared working context. DECLARED GAP (measured 2026-11-19): no gate asserts that a LIVE decision's seal exists or replays — only the reference pack is booted. The dev-plane decisions every session takes through scripts/govern/devplane-pep.mjs are recorded in an untracked stream that carries request and response hashes but no action class, actor or target, so their context is a hash nobody can reopen. The builder PEP's rows carry no session id and no agent id. An Agent-tool subagent runs with KYE_AGENT_ID unset, so its declared scope never applies and no §52 governance envelope is emitted for it; agent-envelope-vs-scope passes on an empty corpus by design. An agent's working context is still assembled from the conversation: the rule that a grant held only in chat does not exist at t=0 is a CLAUDE.md discipline, not a mechanism. Owed, contract-first: a seal reference on every dev-plane ledger row and every builder-PEP row; the subagent launch path emitting the §52 governance envelope; a gate that replays a sample of live decisions from their seals.",
+      "ladder_group": "decision",
+      "essentiality": "fundamental",
+      "ladder_rank": 28
     },
     {
       "primitive_id": "t0-first",
       "entity_class": "doctrine-primitive",
       "question": "Is every consequential act DECIDED by the real engine before it happens — the decision id recorded with the content it authorised — never a decision that arrives after the content?",
-      "grafts": "§0.37 Total Citizenship & t=0 Governance + §0.34 Self-Run + the dev-plane interaction classes",
+      "grafts": "§0.37 Total Citizenship & t=0 Governance + §0.34 Self-Run + the dev-plane interaction classes + §0.39 Boundary-Agnostic Governance + owner 2026-11-19 (t0-first across disk, codebase, boundaries, GitHub, Cloudflare, Clerk, Stripe and every sub-processor)",
       "contribution": "graft",
       "build_order": null,
       "enforcing_gates": [
@@ -466,10 +544,168 @@
       ],
       "root": "kye:registry:devplane-interaction-classes",
       "adopted_at": "2026-09-08",
-      "note": "Posture primitive. total-citizenship-canonical proves every dev-plane interaction class names a t0_governor; t0-decision-recorded proves every commit in the range carries its decision; devplane-t0-enforced reconciles main's landings to the ledger row.",
-      "ladder_rank": 25,
+      "note": "Posture primitive. total-citizenship-canonical proves every dev-plane interaction class names a t0_governor; t0-decision-recorded proves every commit in the range carries its decision; devplane-t0-enforced reconciles main's landings to the ledger row. SCOPE WIDENED 2026-11-19 (owner: 't0 first must be constitutional principle across disk codebase boundaries github cloudflare clerk stripe etc all subprocessors'). The scope is declared, not sampled: t0_crossings carries one row per sub-processor and dev-time infrastructure row of kye:registry:subprocessors, the two internal crossings the owner named (disk, codebase), and every crossing found to a party the manifest does not declare. Each row names its boundary, its declared PEP and whether a t=0 decision actually precedes the crossing today, as a term of kye:dictionary:first-doctrine-primitives (t0-decided · t0-partial · t0-undecided · t0-no-crossing · t0-not-measured), with the gap stated on the row. first-doctrine-canonical holds the sub-processor rows bijective with the manifest, so a new sub-processor cannot be added without a t=0 row. Measured on adoption: no sub-processor is t0-decided end to end; GitHub and Cloudflare are partial; Clerk, Hugging Face (mirroring), the PageIndex MCP, the model provider behind every session and the undeclared Resend crossing are undecided.",
+      "ladder_rank": 29,
       "ladder_group": "decision",
-      "essentiality": "fundamental"
+      "essentiality": "fundamental",
+      "t0_crossings": [
+        {
+          "subject": "disk",
+          "subject_kind": "internal",
+          "boundary": null,
+          "pep": ".claude/hooks/govern-builder.mjs",
+          "t0": "t0-partial",
+          "gap": "Edit, Write and MultiEdit are decided before they land by the builder PEP, which is a rule function rather than the real engine: its rows carry no decision_id and no evidence pack. A Bash command is classified, but its writes are recognised only by redirect and verb heuristics. The read-only audit of 2026-11-19 counted 46 allow-on-pep-error rows from a null verdict during a live chain. No boundary row declares the working tree."
+        },
+        {
+          "subject": "codebase",
+          "subject_kind": "internal",
+          "boundary": null,
+          "pep": ".githooks/pre-commit",
+          "t0": "t0-partial",
+          "gap": "A commit is refused by the gate chain over its staged paths before it exists and carries a KYE-T0-Settled trailer naming its tree, but the real engine decides it only after the commit exists; t0-decision-recorded verifies the trailer at t=+1. A commit written through the GitHub MCP (push_files, create_or_update_file) runs no chain and carries no trailer. No boundary row declares the commit."
+        },
+        {
+          "subject": "github",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:git-api",
+          "pep": "scripts/govern/devplane-pep.mjs",
+          "t0": "t0-partial",
+          "gap": "Decided at t=0: push (the pre-push hook calls the PEP, which calls the real engine) and merge (the PEP decides and writes the ledger row; merge-authority, a required status check, refuses before finality). Undecided: every GitHub MCP write tool (merge_pull_request, push_files, create_or_update_file, delete_file, create_branch, actions_run_trigger), because the hook matcher in .claude/settings.json is Edit|Write|MultiEdit|NotebookEdit|Bash and no mcp__ call reaches a PEP; and a curl with the session's GitHub token from Bash, because the hook has no rule on network verbs or credentials. Also the dev-time source host and CI."
+        },
+        {
+          "subject": "cloudflare",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:infra-api",
+          "pep": "scripts/ci/govern-privileged-op.mjs",
+          "t0": "t0-partial",
+          "gap": "Decided at t=0: every Worker deploy step, whose decide phase refuses the deploy unless the ledger carries an admitted promotion row for the component's closure digest (workflow-governance-coverage). Undecided: 11 of the 66 workflows that reference secrets.CF_API_TOKEN do not use the governed-privileged-op action (measured 2026-11-19: diagnose-comms-chain, diagnose-email-clerk-dns, discover-email-api, fix-pages-onboarding-binding, inspect-and-fix-apex-dns, inspect-cf-full-stack, inspect-cf-pages-project, kye-cf-mcp-ops, provision-high-risk-bindings, provision-regional-data-plane, reconciliation; whether each mutates was not read); the kye-cloudflare MCP's generic cloudflare_api tool (no hook fires, no engine call); wrangler run from a session's Bash (classified deploy, never refused; the promotion factor runs only in CI); Pages deploys, which publish under a declared promotion gap. Cloudflare is also the mail provider: all 41 email delivery bindings name cf-email.primary, governed at the email-outbound boundary (not read here)."
+        },
+        {
+          "subject": "clerk",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-undecided",
+          "gap": "The declared PEP is a Node preload that nothing installs: scripts/lib/egress-gateway.preload.mjs is referenced only by its own module, the boundary and implementation registries, the cascade graph and one reconciliation note (git grep, 2026-11-19). A Pages Function calls the Clerk API with a raw fetch (public/admin/functions/_lib/idp-provider.js), a runtime where a Node preload never loads."
+        },
+        {
+          "subject": "stripe",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:payments-api",
+          "pep": "kye:worker:kye-gateway — billing handler",
+          "t0": "t0-not-measured",
+          "gap": "The declared PEP sits in the gateway worker's billing handler, and Stripe is called directly from at least six other sites: public/app/functions/api/v1/stripe/checkout-session.js, public/app/functions/api/v1/stripe/portal-session.js, public/app/functions/api/_lib/meter-events.js, public/site/functions/api/_lib/payments-provider.js, the kye-stripe-meter worker and scripts/stripe-sync-from-manifest.mjs. None was read for a decision that precedes the call, so this row claims nothing either way."
+        },
+        {
+          "subject": "clickhouse-cloud",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-not-measured",
+          "gap": "The declared PEP is the egress preload that nothing installs; the call sites that reach the warehouse were not read for any other decision that precedes them."
+        },
+        {
+          "subject": "huggingface",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-not-measured",
+          "gap": "The declared PEP is the egress preload that nothing installs; the two model and dataset read sites were not read for any other decision that precedes them."
+        },
+        {
+          "subject": "perplexity",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-not-measured",
+          "gap": "The declared PEP is the egress preload that nothing installs; the governed-research gather sites were not read for any other decision that precedes them."
+        },
+        {
+          "subject": "pageindex",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:mcp-tool",
+          "pep": "scripts/agent-governance/preflight.mjs",
+          "t0": "t0-undecided",
+          "gap": "Reached as a self-hosted MCP server; the manifest routes it through the outbound boundary while the crossing is an MCP tool call, and the mcp-tool boundary's PEP is invoked by no hook, workflow or npm script (git grep over .claude, .githooks, .github and package.json, 2026-11-19). The hook matcher does not include mcp__ tools."
+        },
+        {
+          "subject": "ckan",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-not-measured",
+          "gap": "A per-tenant counterparty whose host is resolved from its connection row at call time; the connector's call path was not read for a decision that precedes the read, and the declared egress PEP is installed by nothing."
+        },
+        {
+          "subject": "freestyle",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-not-measured",
+          "gap": "Planned; driven only by the sandbox smoke comparator, whose call path was not read for a decision that precedes it. The declared egress PEP is installed by nothing."
+        },
+        {
+          "subject": "anthropic",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-no-crossing",
+          "gap": "The manifest records no API call site in source (egress_absent_reason). The development traffic to the same provider is the separate dev-time row anthropic-dev-time."
+        },
+        {
+          "subject": "deepseek",
+          "subject_kind": "subprocessor",
+          "boundary": "kye:boundary:third-party-api-outbound",
+          "pep": "scripts/lib/egress-gateway.mjs",
+          "t0": "t0-no-crossing",
+          "gap": "Planned, with no live call site (egress_absent_reason): the references are a catalogue seed, a cost gate and a sandbox asset."
+        },
+        {
+          "subject": "hugging-face",
+          "subject_kind": "dev-time-infrastructure",
+          "boundary": null,
+          "pep": null,
+          "t0": "t0-undecided",
+          "gap": "OSS mirroring runs in .github/workflows/hf-mirror.yml with HF_TOKEN and no governed-privileged-op step (measured 2026-11-19). The same vendor is the sub-processor row huggingface: one vendor under two ids, a §0 collision in the manifest that this row records and does not resolve."
+        },
+        {
+          "subject": "anthropic-dev-time",
+          "subject_kind": "dev-time-infrastructure",
+          "boundary": "kye:boundary:owner-directive",
+          "pep": ".claude/hooks/govern-builder.mjs",
+          "t0": "t0-undecided",
+          "gap": "Every governed session's traffic to the model provider is made by the harness, and the estate takes no decision before it leaves: the owner-directive PEP records a prompt but has no rule that can refuse one, and the provider credential sits in the container environment."
+        },
+        {
+          "subject": "resend",
+          "subject_kind": "undeclared",
+          "boundary": null,
+          "pep": null,
+          "t0": "t0-undecided",
+          "gap": "The kye-reporting-worker posts to api.resend.com with a key chosen at deploy time, and Resend has no row in kye:registry:subprocessors and none in the secrets registry (git grep, 2026-11-19). An undeclared sub-processor is outside the population every other row is measured against; the cure is a manifest row or the removal of the call."
+        }
+      ]
+    },
+    {
+      "primitive_id": "diff-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every consequential change expressed as a DIFF against declared state — the exact before and after (base and head, superseded and promoted digest, from-state and to-state) — and decided against that diff BEFORE it is applied, never a whole-state overwrite whose effect nobody computed?",
+      "grafts": "§0.37 t=0 (a decision bound to content, not to a click) + §34 Reconciliation Engine (declared vs deployed) + §0.62 (governance state moves only by a governed transition from → to) + §0.60 (a merge driver that keeps one side wholesale loses the other side's rows) + the dev-plane ledger subjects (merge: head_sha against the first-parent base; promotion: artefact_digest against supersedes_digest) + owner 2026-11-19 (diff-first at t=0)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:merge-authority",
+        "test:devplane-t0-enforced",
+        "test:workflow-governance-coverage",
+        "test:lifecycle-state-canonical"
+      ],
+      "root_gap": "No one contract names the diff a consequential change applies. Measured 2026-11-19 by reading the dev-plane ledger contract, the two transition contracts and the merge driver: the diff is carried in four shapes and none is declared the shared one. (1) A merge decision names head_sha and leaves the base implicit: merge-authority accepts the PR head or its first parent (merge_subject of kye.devplane_action_ledger.v1). (2) A promotion names artefact_digest and, except for a component's first promotion, supersedes_digest (promotion_subject): the one shape that states both before and after. (3) A runtime state change is an edge from → to in TWO contracts, kye.state.transition.v1 (the State Engine) and kye.lifecycle_transitions.v1 (the lifecycle registry). (4) A schema rename is a row of kye.schema_migration_map.v1. Whole-state overwrites still exist and are recorded in CLAUDE.md: the merge=kye-derived driver writes one side of a file wholesale on the promise that a regeneration replaces it, and it dropped hand-written rows on forward merges (2026-08-22, 2026-09-04, 2026-09-06). Owed, contract-first: dictionary terms for the diff shapes → a before/after pair (base_ref and head_ref, or from_digest and to_digest) required on every pending_subject of the dev-plane ledger and on every lifecycle transition, with the two transition contracts reconciled to one → a reader that refuses a decision whose subject states only one side.",
+      "adopted_at": "2026-11-19",
+      "note": "Decision-group primitive, after t0-first: t0-first says the decision comes before the act; diff-first says what the decision is taken against — the change, not the resulting state. What the bound gates enforce TODAY, each for one shape: merge-authority, a required status check, refuses a merge unless the latest ledger row names the PR head or its first parent, so the decision covers exactly the content that lands; devplane-t0-enforced verifies every recorded promotion row (digest and superseded digest) through the module the door writes with; workflow-governance-coverage holds every Worker deploy step to a decide phase, run before the step, against the promotion of that component's closure digest; lifecycle-state-canonical boots every declared machine and fires a transition, so a state change is a declared from → to edge. None of them asserts that a change is computed and decided as a diff in general; that is the declared root gap.",
+      "ladder_group": "decision",
+      "essentiality": "fundamental",
+      "ladder_rank": 30
     },
     {
       "primitive_id": "concurrency-first",
@@ -490,7 +726,7 @@
       "root_gap": "No canonical root owns write-concurrency yet: kye.lease.v1 is the admission lease (a decision bounded in time) and carries no resource, holder, mode or fencing token; no dictionary declares lock modes; no registry declares a concurrency policy per resource class; nothing declares a fencing token, an ETag / If-Match or a 423 response (measured 2026-09-08 across the specs, the constitution and the runtime). Owed, contract-first (task #89): the lock-mode dictionary → the kye.lease.v1 extension (resource · holder · mode · fencing_token · session fingerprint) → one concurrency-policy registry (rows per resource class and sector pack: mode · lease TTL · override authority · fingerprint policy) → the lock action classes (acquire · renew · release · force-release · transfer) → the lock.* event family → the Lock Rail as one §40 concept on a per-resource Durable Object → the lease + fence check as one step of the existing PEP. The three gates bound here enforce the t=0, real-engine and WORM properties every lock event must already satisfy; the concurrency check itself is not yet enforced.",
       "adopted_at": "2026-09-08",
       "note": "Decision-group primitive. lock-first and lease-first FOLD here (one concept, two mechanisms — three rows would be the parallel-doctrine explosion §0.45 forbids). Pessimistic (exclusive lease, humans and long workflows) and optimistic (state_hash / If-Match → 409, agents and APIs) are two admissible policies of ONE primitive. A fencing token is issued by the resource's single-writer Durable Object, monotonic per resource, and travels INTO the ledger commit so replay can prove the write was fenced. Cerbos and any other policy engine remain a PORT into the KYE PDP (policy-engine-adapter-canonical), never the deciding step above the lock rail.",
-      "ladder_rank": 26,
+      "ladder_rank": 31,
       "ladder_group": "decision",
       "essentiality": "fundamental"
     },
@@ -506,7 +742,7 @@
       ],
       "note": "Posture primitive. §0.34 governed-inventory drives the real @kye/pdp DecisionPoint.decide() over every component; a net-new ungoverned component hard-fails governed-inventory-coverage.",
       "root": "kye:registry:component-readiness",
-      "ladder_rank": 27,
+      "ladder_rank": 32,
       "ladder_group": "decision",
       "essentiality": "fundamental"
     },
@@ -525,7 +761,7 @@
       "root": "kye:registry:enforcer-scopes",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. enforcer-scopes declares each enforcer's domain_root + forbidden_narrowings; no-blind-spots reads the enforcer's source against them; assurance-plane-canonical proves every assurance property binds a wired gate; canonical-triple-coverage proves every concept's gate slot resolves.",
-      "ladder_rank": 28,
+      "ladder_rank": 33,
       "ladder_group": "decision",
       "essentiality": "fundamental"
     },
@@ -543,7 +779,7 @@
       "root": "kye:registry:rails",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. kye:registry:rails is the ONE rail registry; coherent-integration-mandate proves every engine, worker and surface is referenced bidirectionally; execution-layers-canonical locks the 10-layer stack.",
-      "ladder_rank": 29,
+      "ladder_rank": 34,
       "ladder_group": "flow",
       "essentiality": "structural"
     },
@@ -560,10 +796,13 @@
       ],
       "root": "kye:registry:workflows",
       "adopted_at": "2026-09-08",
-      "note": "Flow primitive. workflow-registry-canonical proves every declared workflow resolves; workflow-governance-coverage proves every workflow's privileged steps are governed at t=0. The declared timeout of a step (kye.agent.workflow.v1 $defs/step/timeout_ms) is the same contract the finality lane needs for 'confirmation never arrived' — one concept, reused, never a second timer vocabulary.",
-      "ladder_rank": 30,
+      "note": "Flow primitive. workflow-registry-canonical proves every declared workflow resolves; workflow-governance-coverage proves every workflow's privileged steps are governed at t=0. The declared timeout of a step (kye.agent.workflow.v1 $defs/step/timeout_ms) is the same contract the finality lane needs for 'confirmation never arrived' — one concept, reused, never a second timer vocabulary. Carries steps-first (owner 2026-11-19): a run is a sequence of DECLARED steps. Declared steps, actors, timeouts and exits are this row; that each step is decided before it acts is t0-first; ordered generator steps, each consuming its declared source, are pipeline-first (governed-step-canonical). So steps-first is an alias here and no row was added beside them.",
+      "ladder_rank": 35,
       "ladder_group": "flow",
-      "essentiality": "structural"
+      "essentiality": "structural",
+      "aliases": [
+        "steps-first"
+      ]
     },
     {
       "primitive_id": "pipeline-first",
@@ -580,7 +819,7 @@
       "root": "kye:registry:propagator",
       "adopted_at": "2026-09-08",
       "note": "Flow primitive. The propagator registry's page_pipeline is the ONE declared derivation order (build-derived-all runs it; the read-back harness resolves its chain from it); governed-step-canonical proves each deriver consumes the whole of its declared source; gate-manifest-fresh proves the enforcement pipeline is derived, never hand-ordered.",
-      "ladder_rank": 31,
+      "ladder_rank": 36,
       "ladder_group": "flow",
       "essentiality": "structural"
     },
@@ -600,9 +839,45 @@
       "root": "kye:registry:devplane-action-ledger",
       "adopted_at": "2026-11-19",
       "note": "Flow-group primitive, after pipeline-first: a pipeline derives an artefact, a promotion moves it between environments. The root is the dev-plane action ledger — the estate's one record of dev-plane action instances and how each was governed — whose contract (kye.devplane_action_ledger.v1) carries a promotion subject since 2026-11-19: component · artefact digest · source and target environment class · head · superseded digest · rollout strategy, bound to kye:action-class:deploy in both directions. What the bound gates enforce TODAY: devplane-t0-enforced reads that ledger and selects by action class, so a promotion row is never counted as a merge; total-citizenship-canonical proves every environment class a promotion may name — production-surface among them — is a declared citizen with a pre-finality governor and an issued identity; ontology-dictionary-roundtrip holds the subject's rollout_strategy enum equal to the dictionary terms. (Instance validation against the contract — the live ledger and the example promotion row — runs in the schema-validation step of the chain, npm test:schemas, which is not a gates/ script and so is not bound on this row.) LANDED 2026-11-19, second change-set: the closure digest has one implementation and a door writes the row (devplane-pep.mjs deploy <component> --to <environment-class>; production admits only a digest already admitted into the class it declares promotes_from), and devplane-t0-enforced verifies every recorded promotion row through the module the door writes with. ENFORCED 2026-11-19, third change-set: the deployable population is every Worker a workflow deploys (102 rows of kye:registry:component-readiness — the root fleet Workers and the root-level worker.js packages among them — each naming the workflow, job and step that deploy it); the decide phase of every Worker deploy step computes a promotion factor and refuses the deploy unless the ledger on the checked-out ref carries an admitted row for that component's closure digest into production-surface, per matrix entry; the ref check is no longer waived for a dispatched run; the merge door refuses a head whose deployables owe a promotion, and one command records every row owed, each decided by the engine; workflow-governance-coverage holds every deploy step of every workflow to that shape and every row's deployed_by to what the workflows declare. DECLARED GAP (each owed in masterblueprint §11 S-65): the four Pages deploy steps publish under a declared promotion gap, because the published directory is assembled at build time and no closure names the bytes that ship; the deploy workflow checks the recorded decision and does not call the engine itself; no deploy step binds the provider's version id to the row; Workers have no pre-production stage, so a staging row is a decision and not a deployed build; and one account-wide provider credential means a deploy made outside the workflows can be detected, not prevented.",
-      "ladder_rank": 32,
+      "ladder_rank": 37,
       "ladder_group": "flow",
       "essentiality": "structural"
+    },
+    {
+      "primitive_id": "release-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every prerequisite a change introduces at a provider — a D1 migration, a secret on its holders, a service binding, a data bootstrap, a retired secret or hostname — declared as an ordered ACT of a deploy release in the same pull request, so that the merge is refused while a delta is uncovered and a production deploy is refused while an act gating it is not verified — never discovered after the deploy that needed it?",
+      "grafts": "§0.72 Release-First (kye.deploy_release.v1, kye:action-class:deploy-release-act) + §0.37 t=0 (each act transition is an engine decision written by the door) + §0.62 (an act's state is a governed transition row, never a field) + promotion-first (a promotion is one stage of the release lifecycle)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:devplane-t0-enforced"
+      ],
+      "root": "kye:registry:deploy-releases",
+      "adopted_at": "2026-11-20",
+      "note": "Flow-group primitive, after promotion-first: a promotion moves one artefact digest into an environment; a release orders everything that digest needs from the provider. The root is kye:registry:deploy-releases (kye.deploy_release.v1); act states live only as kye:action-class:deploy-release-act rows of the dev-plane ledger. What the bound gate enforces TODAY: devplane-t0-enforced invariant 5 resolves every act (its workflow job on disk taking the decide step, its required acts, the components and Pages projects it gates, its target's id class, its bootstrap script, a d1-migration's tree) and replays every recorded transition on the declared machine. The release factor in scripts/ci/govern-privileged-op.mjs refuses a production deploy of a Worker component, or of a Pages project named as release_subject, while an act gating it is unverified; the merge door refuses a pull request whose releaseDeltas() no act of a release naming it covers. Worked instance: kye:deploy-release:2026-11-20-ga-1 (PR #1685, 54 acts, 0 uncovered deltas).",
+      "ladder_rank": 38,
+      "ladder_group": "flow",
+      "essentiality": "structural"
+    },
+    {
+      "primitive_id": "runtime-first",
+      "entity_class": "doctrine-primitive",
+      "question": "Is every runtime — a Worker, a Pages Function, an engine, an agent runtime, a policy node — DECLARED as a component before it is built, and is what actually runs the canonical implementation, booted and answering, never a thin shell returning a constant while the real logic sits in a library nothing deploys?",
+      "grafts": "§0.29 Production-Completeness (the hollow-runtime anti-pattern) + §16 Edge Runtime + §0.58 runtime policy nodes (kye:registry:runtime-nodes) + §0.34 Self-Run + §34 declared vs deployed + owner 2026-11-19 (runtime-first)",
+      "contribution": "graft",
+      "build_order": null,
+      "enforcing_gates": [
+        "test:production-completeness",
+        "test:functional-inventory-coverage",
+        "test:deployed-estate-canonical"
+      ],
+      "root": "kye:registry:component-readiness",
+      "adopted_at": "2026-11-19",
+      "note": "Flow-group primitive, after promotion-first: a promotion moves an artefact into an environment; runtime-first holds that what then runs there is the declared, canonical, booting implementation. It is not carried by governed-and-governable-first (whether the real engine governs an action attributed to the component), by reconciliation-first (whether what is deployed matches what is declared) or by cloudflare-first (which platform it runs on): none of them asks whether the declared thing is real. The root is the component-readiness registry: one row per component with its lifecycle stage ledger and, since 2026-11-19, the workflow, job and step that deploy it. What the bound gates enforce TODAY: production-completeness derives the runtime population from every runtime directory on disk, refuses a net-new skeleton or unledgered runtime directory, and refuses a reached lifecycle stage that names no artefact on disk; functional-inventory-coverage reads the committed boot ledger and refuses one whose item set differs from the live inventory, with broken and unbootable items held decreases-only; deployed-estate-canonical reconciles every declared resource against the provider snapshot and governs orphans and dead-ends per entity. DECLARED GAP: the boot ledger boots each handler against a mock Cloudflare context and a D1 shim, not the deployed Worker (the §0.34 honest scope: a full boot of every Worker is a separate effort); the skeleton, unledgered and untested-deployable populations are still decreases-only counts rather than per-entity declarations (§0.62 c); and the six runtime policy nodes of kye:registry:runtime-nodes are declared apart from the component rows with no gate joining the two.",
+      "ladder_group": "flow",
+      "essentiality": "structural",
+      "ladder_rank": 39
     },
     {
       "primitive_id": "lifecycle-first",
@@ -619,7 +894,7 @@
       "root": "kye:registry:lifecycle-machines",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. lifecycle-machines is DERIVED from every schema declaring a state/status enum (176 machines); lifecycle-state-canonical proves each is canonical · mechanical · bootable · resolving · reconciling; entity-lifecycle-closed proves the nine-stage entity chain closes.",
-      "ladder_rank": 33,
+      "ladder_rank": 40,
       "ladder_group": "flow",
       "essentiality": "structural"
     },
@@ -638,7 +913,7 @@
       "root": "kye:schema:kye.evidence.pack.v1",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. decision-pack-bijection proves every decision writer produces a sealable row; evidence-pack-standalone-canonical proves the pack verifies offline; audit-chain-emission-coverage proves every privileged path emits the family. The root is the pack CONTRACT — evidence instances are runtime WORM rows (§30), never a static registry (§70 anti-inflation).",
-      "ladder_rank": 34,
+      "ladder_rank": 41,
       "ladder_group": "record",
       "essentiality": "fundamental"
     },
@@ -656,8 +931,8 @@
       ],
       "root": "kye:registry:lineage-sources",
       "adopted_at": "2026-11-19",
-      "note": "Record-group primitive, after evidence-first: evidence is the sealed record of one decision, lineage is the chain that joins records and artefacts end to end. The root is the lineage-sources registry (kye.lineage.v1): the build plane is the §53 cascade graph, the runtime plane is the declared streams, and the one resolver (run-cascade --lineage) derives its corpus from that file, so a stream enters a lineage answer only by being declared there. What the bound gates enforce TODAY: cascade-coverage proves the build-plane graph covers the artefacts it claims; admission-control admits the registry and its stream rows against their contract and reads each row's ephemeral flag through the shared path probe; universal-bindings-canonical proves no artefact stands without a typed edge. DECLARED GAP (measured 2026-11-18): no gate asserts the resolver's ANSWER (no gate reads kye.lineage or the sources registry by name); all three runtime streams are ephemeral, untracked files, so a lineage answer here is a fact about which runs happened on one machine; the committed dev-plane action ledger is not declared as a stream; there is no commit → build → artefact digest → live version edge, so a deployed artefact cannot be traced to its source; and production WORM streams are not queried.",
-      "ladder_rank": 35,
+      "note": "Record-group primitive, after evidence-first: evidence is the sealed record of one decision, lineage is the chain that joins records and artefacts end to end. The root is the lineage-sources registry (kye.lineage.v1): the build plane is the §53 cascade graph, the runtime plane is the declared streams, and the one resolver (run-cascade --lineage) derives its corpus from that file, so a stream enters a lineage answer only by being declared there. What the bound gates enforce TODAY: cascade-coverage proves the build-plane graph covers the artefacts it claims; admission-control admits the registry and its stream rows against their contract and reads each row's ephemeral flag through the shared path probe; universal-bindings-canonical proves no artefact stands without a typed edge. DECLARED GAP (measured 2026-11-18): no gate asserts the resolver's ANSWER (no gate reads kye.lineage or the sources registry by name); all three runtime streams are ephemeral, untracked files, so a lineage answer here is a fact about which runs happened on one machine; the committed dev-plane action ledger is not declared as a stream; there is no commit → build → artefact digest → live version edge, so a deployed artefact cannot be traced to its source; and production WORM streams are not queried. ILLUMINATION (owner 2026-11-19: 'the illumination engine must work in conjunction with lineage first'). The illumination engine is the §0.52 illumination observer — kye:observer:illumination, row 'illumination' of kye:registry:observers — implemented by scripts/build-coordinate-index.mjs through scripts/lib/coordinates.mjs and writing the coordinate index; kye.counterparty_handshake.v1 names it as what a counterparty uses to LOCATE and re-derive a proof from its EvidenceCoordinate. It exists as code. Bound here by declaration: illumination reads the lineage stream as its source — one stream, many projections (§0.10, §0.62) — the build plane being the §53 cascade graph both already read, and the runtime plane being the streams this row's root declares. MEASURED GAP (2026-11-19): coordinates.mjs reads the cascade graph (for connectivity) and the entity backbone, and reads neither kye:registry:lineage-sources nor any runtime stream (the word lineage occurs in neither file); the observer registry records it as an observer with a private corpus that holds counts in cells rather than entities (covers_population false, holds_entities_individually false); and it keeps no history — t names the map version, so where an entity sat at an earlier version cannot be replayed. The design input for that migration is recorded in private/roadmap/reconciliation/2026-09-30-trackeverything-and-the-illumination-observer.md (persistent identity, de-duplicated observations, endpoints for every entity and trajectories only for what moved, exact lineage kept after a merge). The build is owed, not done.",
+      "ladder_rank": 42,
       "ladder_group": "record",
       "essentiality": "fundamental"
     },
@@ -675,7 +950,7 @@
       "root": "kye:registry:retention-policy",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. audit-emission-canonical proves the emission path is canonical end to end (columns · event kinds · call sites); audit-worm-enforced proves the store is append-only. The root is the retention policy that declares every protected audit table.",
-      "ladder_rank": 36,
+      "ladder_rank": 43,
       "ladder_group": "record",
       "essentiality": "fundamental"
     },
@@ -693,7 +968,7 @@
       "root": "kye:registry:retention-policy",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. audit-retention-policy proves every protected table carries a framework_ref and a retention ≥ the framework's floor; audit-worm-enforced proves the append-only triggers exist.",
-      "ladder_rank": 37,
+      "ladder_rank": 44,
       "ladder_group": "record",
       "essentiality": "fundamental"
     },
@@ -711,7 +986,7 @@
       "root": "kye:registry:report-templates",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. compliance-attestation proves every gate emits the attestation envelope; kye:registry:report-templates is the ONE registry of report shapes (§14). The CEO's 2026-09-08 ask for a 'reporting registry' resolves HERE — a second one would be a §0 duplicate; a registry of report INSTANCES is the §35 streaming sink, never a spec registry.",
-      "ladder_rank": 38,
+      "ladder_rank": 45,
       "ladder_group": "record",
       "essentiality": "fundamental"
     },
@@ -729,7 +1004,7 @@
       "root": "kye:registry:purposes",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. HONEST REFERENT: the constitution does not use the word 'clearing'; the concept the CEO names is the §12 admissibility stage — purpose · scope · entitlement cleared before the decision. governed-inventory-coverage drives the real DecisionPoint.decide() (admissibility inside it) over every component; entitlement-trace proves every HTTP-perimeter worker is entitlement-gated. DECLARED GAP: purpose-admissibility-vectors (the conformance vectors of the ONE admit()) exists and is not wired into the chain.",
-      "ladder_rank": 39,
+      "ladder_rank": 46,
       "ladder_group": "finality",
       "essentiality": "fundamental"
     },
@@ -747,7 +1022,7 @@
       "root": "kye:registry:reconciliation",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. kye:registry:reconciliation declares the 22 reconcilers; deployed-estate-canonical reconciles the declared estate against what is deployed; generated-not-source reconciles the ownership bijection against the build's own write-set. DECLARED GAP (task #88): the runtime lane — external OBSERVATION → COMPARE → VARIANCE → RECONCILIATION → RESOLUTION over bank · chain · ERP facts — is not declared; it reuses this verdict envelope, never a second engine.",
-      "ladder_rank": 40,
+      "ladder_rank": 47,
       "ladder_group": "finality",
       "essentiality": "fundamental"
     },
@@ -765,7 +1040,7 @@
       "root": "kye:registry:cascade-graph",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. resolution-canonical asserts every typed edge of the cascade graph and the whole §49 engagement chain resolve end to end; class-must-resolve is the CSS-layer case of the same law.",
-      "ladder_rank": 41,
+      "ladder_rank": 48,
       "ladder_group": "finality",
       "essentiality": "fundamental"
     },
@@ -784,7 +1059,7 @@
       "root": "kye:registry:category-map",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. category-ownership-canonical proves the finality stage resolves to a real artefact; single-decision-seal proves a decision is sealed exactly once by @kye/crypto; settlement-agent-canonical proves the settlement lifecycle (trade-capture · netting · instruction · finality · fail/retry · reconciliation) is governed under KYE authority without KYE clearing, settling or moving any asset.",
-      "ladder_rank": 42,
+      "ladder_rank": 49,
       "ladder_group": "finality",
       "essentiality": "fundamental"
     },
@@ -803,7 +1078,7 @@
       "root": "kye:registry:relationships",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. kye:registry:relationships declares every M:N relationship instance; multidirectional-taxonomy proves no taxonomy is tree-locked; cascade-coverage proves every canonical node sits in the graph; universal-bindings-canonical proves no artefact stands alone.",
-      "ladder_rank": 43,
+      "ladder_rank": 50,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -821,7 +1096,7 @@
       "root": "kye:dictionary:relationships",
       "adopted_at": "2026-11-18",
       "note": "Projection-group primitive, directly after graph-first: graph-first asks whether the source-of-truth is a graph, topology-first asks what shape each edge family in it may take. The root is the relationships dictionary, where each cardinality term declares targets_per_source, sources_per_target and its inverse (kye.dictionary.v1 requires all three on a cardinality term); the kye.relationship.v1 enum is a projection of those terms and ontology-dictionary-roundtrip asserts the two sets equal; relationship-canonical asserts the vocabulary complete over the four combinations, every active entry uncontradicted by the rows on either side, and every bidirectional mirror carrying the inverse. A cardinality is a CONSTRAINT, never a description: a side declared many bounds nothing, so the gate proves that what is declared holds, not that the tightest true term was chosen. DECLARED GAP: no relationship verb declares which topologies it admits, so a hand-authored registry may still declare many-to-many where its referent is bounded on one side, and nothing refuses that declaration.",
-      "ladder_rank": 44,
+      "ladder_rank": 51,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -840,7 +1115,7 @@
       "root": "kye:registry:pages",
       "adopted_at": "2026-09-08",
       "note": "Posture primitive. The page manifest is the graph; content-graph-coverage proves every surface is tagged into it; menu-tree-canonical and derived-search-index-shape prove the nav tree and the search index are its derived projections.",
-      "ladder_rank": 45,
+      "ladder_rank": 52,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -856,7 +1131,7 @@
       ],
       "note": "Posture primitive. §43 §1 requires consumed artefacts to be machine-readable with a schema where practical; canonical-triple-coverage proves each canonical artefact has a resolving schema + example (the mechanical proof of machine-readability).",
       "root": "kye:registry:platform-meta-index",
-      "ladder_rank": 46,
+      "ladder_rank": 53,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -873,7 +1148,7 @@
       ],
       "note": "Posture primitive. §43 §4d (merged 2026-07-11) unifies agent-readability; §50 makes nav/search a query over the page-manifest graph. content-graph-coverage rejects a surface untagged above baseline.",
       "root": "kye:registry:pages",
-      "ladder_rank": 47,
+      "ladder_rank": 54,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -890,7 +1165,7 @@
       ],
       "note": "Posture primitive. A callable surface is declared (OpenAPI, bijection-enforced) and agent-callable as a first-class principal surface (§0.30). NOTE: the previously-cited roadmap agent-gateway spec (2026-07-11) does NOT exist in-repo; §15/§69 are the real callable canon.",
       "root": "kye:registry:tool-mcp-register",
-      "ladder_rank": 48,
+      "ladder_rank": 55,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -910,7 +1185,7 @@
       ],
       "note": "Posture primitive; folds ai-first (same concept: §0.30). A parallel agent identity schema is a §0 + §0.30 violation caught by agent-native-principal-canonical. agent-first (CEO 2026-09-08) folds here too: same §0.30 concept, one row (§0).",
       "root": "kye:registry:agent-manifest",
-      "ladder_rank": 49,
+      "ladder_rank": 56,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -928,7 +1203,7 @@
       "root_gap": "No canonical root owns a demand-side act. Measured 2026-11-18 by search of the spec tree, the constitution, the scripts and the runtime tree: zero occurrences of a reverse-marketplace, demand, request-for-quote or bid contract outside masterblueprint.md; the marketplace listing contracts carry supply-side fields only; the adjacent action classes (commit-terms · agent-handshake · agent-payment) govern the acts that FOLLOW a demand, not the demand. The two gates bound here enforce only what a demand act must already satisfy — agent-commerce-canonical holds that a PDP admit precedes every payment step, marketplace-listing-conformance holds that a listing is a signed, resolving contract — and neither enforces demand-first. Owed, contract-first: a dictionary of demand-act terms → one demand-act schema (who is asking, on whose authority, to what limit, admitted by which decision) → its registry → a gate that refuses a supply response to an undecided demand. S-29's regulatory line stands: KYE governs who set a limit and on what evidence; it does not compute or originate one.",
       "adopted_at": "2026-11-19",
       "note": "Projection-group primitive, after agentic-first: once an agent is a principal, the first commercial question is whether it may commit its principal and to what limit, and that question is asked by demand, not by a listing. RECORDED DISAGREEMENT, kept visible: masterblueprint §11 S-29 (2026-09-16) classed this term as a strategy invariant with no build order and no enforcing gate, to live in a strategy-doctrine registry with the other four (single-player-value · marketplace-as-byproduct · data-exhaust-compounds · zero-network-dependency) rather than on this ladder. The owner's directive of 2026-11-18 names it among the -First doctrines, so it is declared here as a row whose root is a measured gap; it carries no build_order, and its ladder_rank keeps the sequence contiguous. The strategy registry for the other four remains owed in S-29, and the falsifier S-29 requires of a strategy invariant is still owed for this term: nothing on disk states what would show KYE had built supply-first.",
-      "ladder_rank": 50,
+      "ladder_rank": 57,
       "ladder_group": "projection",
       "essentiality": "structural"
     },
@@ -944,7 +1219,7 @@
       ],
       "note": "Posture primitive. §16: 'the edge is the runtime — the origin is the slow path.' cf-resource-governance-coverage governs the declared Cloudflare resource surface.",
       "root": "kye:registry:worker-manifest",
-      "ladder_rank": 51,
+      "ladder_rank": 58,
       "ladder_group": "substrate",
       "essentiality": "substrate"
     },
@@ -960,7 +1235,7 @@
       ],
       "note": "Posture primitive (applies where the artefact is commercial). §27: no Clerk user/tenant/dashboard before Stripe fires invoice.paid. stripe-canonical locks the Stripe integration canon.",
       "root": "kye:registry:skus",
-      "ladder_rank": 52,
+      "ladder_rank": 59,
       "ladder_group": "substrate",
       "essentiality": "substrate"
     }
@@ -971,7 +1246,8 @@
       "meaning": "what a thing IS before it is shaped",
       "members": [
         "namespace-first",
-        "entity-first"
+        "entity-first",
+        "plane-first"
       ],
       "essentiality": "fundamental"
     },
@@ -1006,12 +1282,14 @@
       "group": "boundary",
       "meaning": "how it crosses, both ways, owned one way",
       "members": [
+        "workspace-first",
         "decoupled-first",
         "bidirectional-first",
         "event-first",
         "gateway-first",
         "multi-x-first",
-        "cross-x-governed-first"
+        "cross-x-governed-first",
+        "hand-off-first"
       ],
       "essentiality": "fundamental"
     },
@@ -1022,7 +1300,9 @@
         "policy-first",
         "invariant-first",
         "deterministic-first",
+        "context-first",
         "t0-first",
+        "diff-first",
         "concurrency-first",
         "governed-and-governable-first",
         "enforcer-first"
@@ -1037,6 +1317,8 @@
         "workflow-first",
         "pipeline-first",
         "promotion-first",
+        "release-first",
+        "runtime-first",
         "lifecycle-first"
       ],
       "essentiality": "structural"
@@ -1089,5 +1371,17 @@
       "essentiality": "substrate"
     }
   ],
-  "ladder_note": "LOCKED ORDER (2026-09-08, CEO: 'order at your complete discretion — lock what is needed / must have / essential / fundamental'; the CEO's own sequence of the same day was a sample of thinking aloud). Ten groups, each answering one question in the order the questions must be answered: IDENTITY (what a thing is: namespace · entity) → CANON (the artefacts that declare it, in landing order: canonical · vocabulary · dictionary · schema · contract · registry · manifest · api) → REGIME (the external law it binds to, stated honestly under §70: jurisdiction · regulatory · framework · standards · compliance) → BOUNDARY (how it crosses, both ways, owned one way: decoupled · bidirectional · event · gateway · multi-x · cross-x-governed) → DECISION (how authority is exercised over it: policy · invariant · deterministic · t0 · concurrency · governed-and-governable · enforcer) → FLOW (how it moves: rail · workflow · pipeline · promotion · lifecycle) → RECORD (what remains at emission: evidence · lineage · audit · worm · reporting) → FINALITY (how a fact becomes final: clearing · reconciliation · resolution · settlement) → PROJECTION (how it is seen and consumed: graph · topology · query · machine-readable · discoverable · callable · agentic · reverse-marketplace) → SUBSTRATE (cloudflare · stripe). Two deliberate departures from the sample: the dictionary lands before the schema (a schema enum is a projection of dictionary terms, asserted byte-equal by action-class-canonical — the 2026-09-08 `benefits` plane finding), and clearing precedes reconciliation → resolution → settlement (clearing is admissibility BEFORE the act; the other three are the post-observation order). Governing principle of the boundary group: BIDIRECTIONAL COMMUNICATION, UNIDIRECTIONAL AUTHORITY — every fact has exactly one authoritative source and one conflict rule; an observation never mutates canonical state; transport is governed at t=0 through an atomic ledger commit over state + outbound event (outbox → queue → connector worker). A declared timeout (kye.agent.workflow.v1 step.timeout_ms) is the one wait contract, reused by the finality lane for 'confirmation never arrived'. Essentiality: fundamental = identity · canon · regime · boundary · decision · record · finality; structural = flow · projection; substrate = cloudflare · stripe. GRAFTED 2026-11-18 (owner: relationship topologies, multi-x and cross-x first class and canonical, contract-first at t=0): multi-x-first and cross-x-governed-first close the boundary group in that order — plurality on every axis, then every crossing between the plural values governed — and topology-first follows graph-first in the projection group. The groups, their questions and the order of every prior primitive are unchanged; the three rows name roots that already existed (the plurality registry, the boundary registry, the relationships dictionary), so nothing was declared beside a canonical to make room for them. GRAFTED 2026-11-19 (owner 2026-11-18: promotion-first sandbox → production, lineage-first, reverse-marketplace-first): promotion-first follows pipeline-first in the flow group (a pipeline derives an artefact, a promotion moves it between environments); lineage-first follows evidence-first in the record group (evidence seals one decision, lineage joins records end to end); reverse-marketplace-first closes the projection group after agentic-first. Two name roots that already existed (the dev-plane action ledger, the lineage-sources registry) and declare their measured gaps on the row; the third declares that no root exists (root_gap) and records that masterblueprint §11 S-29 had classed it a strategy invariant. The groups, their questions and the order of every prior primitive are unchanged."
+  "ladder_note": "LOCKED ORDER (2026-09-08, CEO: 'order at your complete discretion — lock what is needed / must have / essential / fundamental'; the CEO's own sequence of the same day was a sample of thinking aloud). Ten groups, each answering one question in the order the questions must be answered: IDENTITY (what a thing is: namespace · entity) → CANON (the artefacts that declare it, in landing order: canonical · vocabulary · dictionary · schema · contract · registry · manifest · api) → REGIME (the external law it binds to, stated honestly under §70: jurisdiction · regulatory · framework · standards · compliance) → BOUNDARY (how it crosses, both ways, owned one way: decoupled · bidirectional · event · gateway · multi-x · cross-x-governed) → DECISION (how authority is exercised over it: policy · invariant · deterministic · t0 · concurrency · governed-and-governable · enforcer) → FLOW (how it moves: rail · workflow · pipeline · promotion · lifecycle) → RECORD (what remains at emission: evidence · lineage · audit · worm · reporting) → FINALITY (how a fact becomes final: clearing · reconciliation · resolution · settlement) → PROJECTION (how it is seen and consumed: graph · topology · query · machine-readable · discoverable · callable · agentic · reverse-marketplace) → SUBSTRATE (cloudflare · stripe). Two deliberate departures from the sample: the dictionary lands before the schema (a schema enum is a projection of dictionary terms, asserted byte-equal by action-class-canonical — the 2026-09-08 `benefits` plane finding), and clearing precedes reconciliation → resolution → settlement (clearing is admissibility BEFORE the act; the other three are the post-observation order). Governing principle of the boundary group: BIDIRECTIONAL COMMUNICATION, UNIDIRECTIONAL AUTHORITY — every fact has exactly one authoritative source and one conflict rule; an observation never mutates canonical state; transport is governed at t=0 through an atomic ledger commit over state + outbound event (outbox → queue → connector worker). A declared timeout (kye.agent.workflow.v1 step.timeout_ms) is the one wait contract, reused by the finality lane for 'confirmation never arrived'. Essentiality: fundamental = identity · canon · regime · boundary · decision · record · finality; structural = flow · projection; substrate = cloudflare · stripe. GRAFTED 2026-11-18 (owner: relationship topologies, multi-x and cross-x first class and canonical, contract-first at t=0): multi-x-first and cross-x-governed-first close the boundary group in that order — plurality on every axis, then every crossing between the plural values governed — and topology-first follows graph-first in the projection group. The groups, their questions and the order of every prior primitive are unchanged; the three rows name roots that already existed (the plurality registry, the boundary registry, the relationships dictionary), so nothing was declared beside a canonical to make room for them. GRAFTED 2026-11-19 (owner 2026-11-18: promotion-first sandbox → production, lineage-first, reverse-marketplace-first): promotion-first follows pipeline-first in the flow group (a pipeline derives an artefact, a promotion moves it between environments); lineage-first follows evidence-first in the record group (evidence seals one decision, lineage joins records end to end); reverse-marketplace-first closes the projection group after agentic-first. Two name roots that already existed (the dev-plane action ledger, the lineage-sources registry) and declare their measured gaps on the row; the third declares that no root exists (root_gap) and records that masterblueprint §11 S-29 had classed it a strategy invariant. The groups, their questions and the order of every prior primitive are unchanged. GRAFTED 2026-11-19 (owner: plane first, diff first, context aware/first at t0; runtime, workspace, steps, hand-off and object first; every x-first as code): plane-first closes the identity group (a thing's identity, then its one plane); workspace-first opens the boundary group (the inside is declared before anything crosses out of it) and hand-off-first closes it (control handed across, after the crossing is governed); context-first follows deterministic-first and diff-first follows t0-first in the decision group (a verdict is replayable only under a sealed context, and the t=0 decision is taken against the change, not the resulting state); runtime-first follows promotion-first in the flow group (what runs after a promotion is the declared, canonical, booting implementation). steps-first and object-first are carried by workflow-first and entity-first as aliases. x-as-code is a doctrine-wide invariant (doctrine_invariants), not a rung. Relative order of every prior primitive is unchanged; absolute ranks were renumbered to stay contiguous.",
+  "doctrine_invariants": [
+    {
+      "invariant_id": "x-as-code",
+      "statement": "Every '-first' primitive is itself AS CODE: its declaration is machine-readable, version-controlled and contract-bound — the row's root is a tracked JSON artefact that names a contract which resolves (or is itself a JSON Schema) — never a principle that lives only in prose. A row whose root is a declared gap (root_gap) is, by that declaration, a primitive that is not yet as code, and says what is owed.",
+      "grafts": "§43 Machine-Readable by Default + §0.18 Canonical-Absolute + §0.45 contract-first + §0.62(c) (a gap is declared on the entity) + owner 2026-11-19 ('x first must all be x as code')",
+      "enforced_by": [
+        "test:first-doctrine-canonical"
+      ],
+      "adopted_at": "2026-11-19",
+      "note": "A property of the whole doctrine, not a row of the ladder: it is asserted of every row. first-doctrine-canonical check 12 resolves each root through canonical-paths and requires the file to be tracked by git, to parse as JSON and to name a contract that resolves through the one contract probe admission-control uses (scripts/lib/admission.mjs probeSchema), or to be a schema itself. The counts are printed by the gate and are not restated here."
+    }
+  ]
 }

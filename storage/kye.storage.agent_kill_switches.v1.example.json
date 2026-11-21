@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_kill_switches.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "agent_ref": "agent_ref-sample",
+  "killed_at": "killed_at-sample",
+  "killed_by": "killed_by-sample",
+  "reason": "reason-sample",
+  "revived_at": "revived_at-sample",
+  "revived_by": "revived_by-sample"
+}

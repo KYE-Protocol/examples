@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.replay_proofs.v1.json",
+  "proof_id": "proof_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "decision_id": "decision_id-sample",
+  "original_decision_seal": "original_decision_seal-sample",
+  "replay_seal": "replay_seal-sample",
+  "equivalent": 0,
+  "r2_key": "r2_key-sample",
+  "canonical_hash": "canonical_hash-sample",
+  "created_at": "created_at-sample",
+  "re_evaluation": "re_evaluation-sample",
+  "replayed_decision_id": "replayed_decision_id-sample"
+}

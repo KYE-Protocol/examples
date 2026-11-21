@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.principals.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "principal_class": "principal_class-sample",
+  "subclass": "subclass-sample",
+  "display_name": "display_name-sample",
+  "state": "state-sample",
+  "human_json": "{}",
+  "system_json": "{}",
+  "agent_json": "{}",
+  "external_app_json": "{}",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

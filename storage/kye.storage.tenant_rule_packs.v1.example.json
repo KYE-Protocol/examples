@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.tenant_rule_packs.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "pack_id": "pack_id-sample",
+  "pack_kind": "pack_kind-sample",
+  "state": "state-sample",
+  "enabled_at": "enabled_at-sample",
+  "enabled_by": "enabled_by-sample",
+  "enable_decision_id": "enable_decision_id-sample",
+  "disabled_at": "disabled_at-sample",
+  "disabled_by": "disabled_by-sample",
+  "disable_decision_id": "disable_decision_id-sample"
+}

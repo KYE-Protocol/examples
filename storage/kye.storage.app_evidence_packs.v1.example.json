@@ -1,0 +1,22 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_evidence_packs.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "window": "window-sample",
+  "actions": 0,
+  "sealed_at": "sealed_at-sample",
+  "status": "status-sample",
+  "sha256": "sha256-sample",
+  "compilation_seal": "compilation_seal-sample",
+  "size_bytes": 0,
+  "signers": "signers-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample",
+  "signed_off_at": "signed_off_at-sample",
+  "window_start": "window_start-sample",
+  "window_end": "window_end-sample",
+  "manifest_json": "{}",
+  "seal_decision_id": "seal_decision_id-sample",
+  "seal_evidence_pack_id": "seal_evidence_pack_id-sample",
+  "sealed_by": "sealed_by-sample"
+}

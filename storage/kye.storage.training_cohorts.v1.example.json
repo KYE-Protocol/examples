@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.training_cohorts.v1.json",
+  "cohort_id": "cohort_id-sample",
+  "trainer_org_id": "trainer_org_id-sample",
+  "name": "name-sample",
+  "starts_at": "starts_at-sample",
+  "ends_at": "ends_at-sample",
+  "enrolled": 0,
+  "passed": 0,
+  "created_at": "created_at-sample"
+}

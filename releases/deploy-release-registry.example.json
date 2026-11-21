@@ -1,0 +1,44 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.deploy_release.v1.json",
+  "schema": "kye.deploy_release.v1",
+  "registry_id": "kye:registry:deploy-releases",
+  "adopted_at": "2026-11-20",
+  "constitution_ref": "constitution/00-INDEX.md §0.72",
+  "description": "Every declared deploy release of the estate: the ordered acts that take a change's component digests from merged to serving-and-verified. A release lands WITH the change it covers (it is declared at t=0, before merge) and its acts move through the dev-plane ledger, one governed decision per transition, written by `node scripts/govern/devplane-pep.mjs release <release-id> admit|record|verify|refuse|rollback <act>`. An act's state is read from those ledger rows, never stored here.",
+  "provenance": "source: the example IS the first real release of the registry (the release lifecycle change-set), copied so the example slot is not synthetic.",
+  "entity_class": "registry",
+  "default_scope": {
+    "kind": "no-prerequisite-acts",
+    "rule": "A merged change that introduces no prerequisite delta (no new secret row, service binding, D1 migration, internal-only Worker, retired secret or removed hostname — the deltas scripts/govern/_deploy-release.mjs releaseDeltas() reads from the range) belongs to no release and deploys on its promotion rows alone."
+  },
+  "releases": [
+    {
+      "release_id": "kye:deploy-release:2026-11-20-release-lifecycle",
+      "entity_class": "deploy-release",
+      "title": "The release lifecycle itself: contract, release factor, door and governed act operations, with no production behaviour change",
+      "change_scope": {
+        "kind": "pull-request",
+        "pull_requests": [
+          1687
+        ]
+      },
+      "acts": [
+        {
+          "act_id": "main-ci-green",
+          "class": "verification",
+          "target": "kye:deploy-release:2026-11-20-release-lifecycle",
+          "performed_by": {
+            "workflow": ".github/workflows/ci.yml",
+            "job": "test"
+          },
+          "requires": [],
+          "gates_deploy_of": [],
+          "verification": {
+            "evidence_kind": "workflow-run",
+            "proves": "The full test chain of ci.yml is green on main's squash of this change-set: the release factor, the door and the deploy-release-canonical gate run on the landed tree and admit every deploy exactly as before (this release gates no component)."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.training_completions.v1.json",
+  "completion_id": "completion_id-sample",
+  "trainer_org_id": "trainer_org_id-sample",
+  "cohort_id": "cohort_id-sample",
+  "partner_user_id": "partner_user_id-sample",
+  "verdict": "verdict-sample",
+  "score": 0,
+  "sealed_at": "sealed_at-sample",
+  "signed_by_kid": "signed_by_kid-sample"
+}

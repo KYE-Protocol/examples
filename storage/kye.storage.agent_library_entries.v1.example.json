@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_library_entries.v1.json",
+  "library_id": "library_id-sample",
+  "category": "category-sample",
+  "title": "title-sample",
+  "summary": "summary-sample",
+  "role": "role-sample",
+  "obligations_json": "{}",
+  "platform_locked_capabilities_json": "{}",
+  "compatible_state_machines_json": "{}",
+  "machine_seal": "machine_seal-sample",
+  "signature_kid": "signature_kid-sample",
+  "body_json": "{}",
+  "supersedes": "supersedes-sample",
+  "kye_version_min": "kye_version_min-sample"
+}

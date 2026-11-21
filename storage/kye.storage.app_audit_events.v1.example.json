@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_audit_events.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "seq": 0,
+  "event": "event-sample",
+  "actor": "actor-sample",
+  "summary": "summary-sample",
+  "at": "at-sample",
+  "prev_hash": "prev_hash-sample",
+  "hash": "hash-sample"
+}

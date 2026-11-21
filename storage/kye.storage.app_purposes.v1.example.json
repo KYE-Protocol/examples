@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_purposes.v1.json",
+  "purpose_id": "purpose_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "class": "class-sample",
+  "display_name": "display_name-sample",
+  "lawful_basis": "lawful_basis-sample",
+  "active_grants": 0,
+  "status": "status-sample",
+  "last_reconfirmed_at": "last_reconfirmed_at-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

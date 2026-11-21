@@ -9,7 +9,7 @@
     "kye:sector-pack:eu-ai-act"
   ],
   "bound_rule_pack_refs": [
-    "kye:rule-pack:eu_ai_act"
+    "kye:rule-pack:eu-ai-act"
   ],
   "bound_dictionary_refs": [
     "kye:dictionary:eu-ai-act-foundry"

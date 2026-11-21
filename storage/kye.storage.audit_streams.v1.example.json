@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.audit_streams.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "retention_days": 0,
+  "signing_kid": "signing_kid-sample",
+  "root_hash": "root_hash-sample",
+  "last_appended_at": "last_appended_at-sample",
+  "event_count": 0,
+  "anchor_chain_json": "{}",
+  "state": "state-sample",
+  "created_at": "created_at-sample"
+}

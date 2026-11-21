@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_evidence_imports.v1.json",
+  "import_id": "import_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "source_tool": "source_tool-sample",
+  "target_kind": "target_kind-sample",
+  "format": "format-sample",
+  "row_count": 0,
+  "mapped_count": 0,
+  "error_count": 0,
+  "imported_at": "imported_at-sample",
+  "imported_by": "imported_by-sample"
+}

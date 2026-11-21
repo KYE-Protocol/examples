@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_classifications.v1.json",
+  "classification_id": "classification_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "asset_id": "asset_id-sample",
+  "classification": "classification-sample",
+  "detection": "detection-sample",
+  "confidence": 0,
+  "signature_kid": "signature_kid-sample",
+  "effective_at": "effective_at-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

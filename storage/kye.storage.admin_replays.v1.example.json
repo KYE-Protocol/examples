@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.admin_replays.v1.json",
+  "id": "id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "requested_by": "requested_by-sample",
+  "verdict": "verdict-sample",
+  "divergences_json": "{}",
+  "replay_proof_id": "replay_proof_id-sample",
+  "replay_proof_at": "replay_proof_at-sample",
+  "notes": "notes-sample",
+  "created_at": "created_at-sample"
+}

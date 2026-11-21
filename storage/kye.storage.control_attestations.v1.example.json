@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.control_attestations.v1.json",
+  "id": "id-sample",
+  "control_id": "control_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "status": "status-sample",
+  "evidence_ref": "evidence_ref-sample",
+  "attested_by": "attested_by-sample",
+  "attested_at": "attested_at-sample",
+  "next_review_at": "next_review_at-sample"
+}

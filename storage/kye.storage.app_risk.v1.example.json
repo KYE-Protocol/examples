@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_risk.v1.json",
+  "assessment_id": "assessment_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "subject_id": "subject_id-sample",
+  "subject_class": "subject_class-sample",
+  "tier": "tier-sample",
+  "score": 0,
+  "reason_codes": "reason_codes-sample",
+  "framework_floor": "framework_floor-sample",
+  "effective_at": "effective_at-sample",
+  "assessed_by": "assessed_by-sample"
+}

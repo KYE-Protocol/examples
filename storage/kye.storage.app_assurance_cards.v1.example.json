@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_assurance_cards.v1.json",
+  "card_id": "card_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "framework": "framework-sample",
+  "controls": "controls-sample",
+  "scope": "scope-sample",
+  "status": "status-sample",
+  "attested_at": "attested_at-sample",
+  "expires_at": "expires_at-sample",
+  "verifier_url": "verifier_url-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}
