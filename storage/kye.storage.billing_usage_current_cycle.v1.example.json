@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.billing_usage_current_cycle.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "cycle_start": "cycle_start-sample",
+  "cycle_end": "cycle_end-sample",
+  "used_units": 0,
+  "bill_cents": 0,
+  "overage_units": 0,
+  "updated_at": "updated_at-sample"
+}

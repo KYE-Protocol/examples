@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.compliance_status.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "framework": "framework-sample",
+  "capability": "capability-sample",
+  "coverage": "coverage-sample",
+  "evidence_ref": "evidence_ref-sample",
+  "attested_by": "attested_by-sample",
+  "attested_at": "attested_at-sample"
+}

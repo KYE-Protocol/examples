@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.principal_workspaces.v1.json",
+  "principal_id": "principal_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "since": "since-sample",
+  "until": "until-sample",
+  "allowed_actions_json": "{}"
+}

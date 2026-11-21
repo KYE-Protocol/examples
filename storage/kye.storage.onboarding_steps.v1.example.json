@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.onboarding_steps.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "step": "step-sample",
+  "status": "status-sample",
+  "payload_json": "{}",
+  "updated_at": "updated_at-sample"
+}

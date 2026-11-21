@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.models.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "model_provider": "model_provider-sample",
+  "model_family": "model_family-sample",
+  "version": "version-sample",
+  "weights_hash": "weights_hash-sample",
+  "served_at": "served_at-sample",
+  "evals_passed_json": "{}",
+  "allowed_data_classes_json": "{}",
+  "risk_tier": "risk_tier-sample",
+  "banned_jurisdictions_json": "{}",
+  "state": "state-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

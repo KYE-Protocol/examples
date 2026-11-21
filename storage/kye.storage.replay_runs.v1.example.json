@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.replay_runs.v1.json",
+  "run_id": "run_id-sample",
+  "consultant_id": "consultant_id-sample",
+  "decision_id": "decision_id-sample",
+  "verdict": "verdict-sample",
+  "signer_kid": "signer_kid-sample",
+  "reason": "reason-sample",
+  "ran_at": "ran_at-sample"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.widgets.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "kind": "kind-sample",
+  "host": "host-sample",
+  "pages": 0,
+  "licence": "licence-sample",
+  "status": "status-sample",
+  "installed": "installed-sample",
+  "views_30d": 0,
+  "embed_key": "embed_key-sample",
+  "revoked_at": "revoked_at-sample"
+}

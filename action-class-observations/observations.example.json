@@ -1,0 +1,118 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.action_class_observations.v1.json",
+  "schema": "kye.action_class_observations.v1",
+  "registry_id": "kye:registry:action-class-observations",
+  "generated_by": "scripts/build-action-class-observations.mjs",
+  "population_role": "projection",
+  "constitution_ref": "constitution/00-INDEX.md §0.37",
+  "description": "Illustrative excerpt of the derived action-class observations projection (kye.action_class_observations.v1): two surfaces, two classes and one recorded unclassified action that a later policy classified.",
+  "sources": [
+    "kye:registry:action-classes",
+    "kye:registry:devplane-interaction-classes",
+    "kye:dictionary:action-classes",
+    "kye:registry:decision-rights",
+    "kye:registry:builder-policy",
+    "the dev-plane action ledger (approvals[] · breaches[] · sessions[])"
+  ],
+  "surfaces": [
+    {
+      "surface": "harness-tool",
+      "measured": true,
+      "pep": ".claude/hooks/govern-builder.mjs",
+      "binding": "bound-by-policy",
+      "entities": 42,
+      "resolved": 42,
+      "unresolved": 0,
+      "unresolved_entities": []
+    },
+    {
+      "surface": "workflow-capability",
+      "measured": true,
+      "pep": "scripts/ci/govern-privileged-op.mjs",
+      "binding": "gap",
+      "entities": 3,
+      "resolved": 0,
+      "unresolved": 3,
+      "unresolved_entities": [
+        "deployment.housekeep",
+        "kye:capability:cf-ops",
+        "kye:capability:clerk-invite"
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "kye:action-class:agent-handoff",
+      "plane": "agent",
+      "consequence_tier": "high",
+      "evidence_required": true,
+      "t0_governor": null,
+      "invocable_from": [
+        {
+          "surface": "harness-tool",
+          "entities": 3
+        }
+      ],
+      "decision_class": "kye:decision-class:subagent-spawn",
+      "rights_holders": [
+        "kye:agent:kye-self:claude-code-session"
+      ],
+      "peps": [
+        ".claude/hooks/govern-builder.mjs"
+      ],
+      "observed": {
+        "approvals": 0,
+        "breaches": 0,
+        "session_decisions": {
+          "allow": 0,
+          "deny": 0
+        }
+      }
+    },
+    {
+      "id": "kye:action-class:merge",
+      "plane": "dev",
+      "consequence_tier": "high",
+      "evidence_required": true,
+      "t0_governor": null,
+      "invocable_from": [
+        {
+          "surface": "devplane-cli",
+          "entities": 1
+        },
+        {
+          "surface": "harness-tool",
+          "entities": 2
+        }
+      ],
+      "decision_class": "kye:decision-class:merge",
+      "rights_holders": [
+        "kye:agent:kye-self:claude-code-session",
+        "kye:system:kye-self:ci-runner"
+      ],
+      "peps": [
+        ".claude/hooks/govern-builder.mjs",
+        "scripts/govern/_pdp-lib.mjs"
+      ],
+      "observed": {
+        "approvals": 115,
+        "breaches": 10,
+        "session_decisions": {
+          "allow": 0,
+          "deny": 0
+        }
+      }
+    }
+  ],
+  "unclassified_actions": [
+    {
+      "key": "tool:SendMessage",
+      "tool": "SendMessage",
+      "sessions": [
+        "00000000-0000-4000-8000-000000000001"
+      ],
+      "count": 2,
+      "status": "unclassified"
+    }
+  ]
+}

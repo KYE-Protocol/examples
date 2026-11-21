@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_connectors.v1.json",
+  "connector_id": "connector_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "kind": "kind-sample",
+  "profile_family": "profile_family-sample",
+  "display_name": "display_name-sample",
+  "status": "status-sample",
+  "last_harvest_at": "last_harvest_at-sample",
+  "events_24h": 0,
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

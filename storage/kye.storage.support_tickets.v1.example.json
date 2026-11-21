@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.support_tickets.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "title": "title-sample",
+  "body": "body-sample",
+  "severity": "severity-sample",
+  "status": "status-sample",
+  "owner": "owner-sample",
+  "opened_by": "opened_by-sample",
+  "opened_at": "opened_at-sample",
+  "claimed_at": "claimed_at-sample",
+  "closed_at": "closed_at-sample",
+  "resolution": "resolution-sample"
+}

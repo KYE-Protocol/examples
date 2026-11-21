@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_listings.v1.json",
+  "listing_id": "listing_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "listing_type": "listing_type-sample",
+  "title": "title-sample",
+  "status": "status-sample",
+  "views_30d": 0,
+  "submitted_at": "submitted_at-sample",
+  "published_at": "published_at-sample",
+  "removed_at": "removed_at-sample",
+  "updated_at": "updated_at-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

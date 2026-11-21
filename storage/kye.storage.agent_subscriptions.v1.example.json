@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_subscriptions.v1.json",
+  "subscription_id": "subscription_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "library_id": "library_id-sample",
+  "agent_local_id": "agent_local_id-sample",
+  "status": "status-sample",
+  "adopted_by": "adopted_by-sample",
+  "adopted_at": "adopted_at-sample",
+  "revoked_at": "revoked_at-sample"
+}

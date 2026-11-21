@@ -1,0 +1,7 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.tenant_settings.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "payload": "payload-sample",
+  "updated_at": "updated_at-sample",
+  "updated_by": "updated_by-sample"
+}

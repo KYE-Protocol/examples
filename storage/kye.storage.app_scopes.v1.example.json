@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_scopes.v1.json",
+  "scope_id": "scope_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "capability": "capability-sample",
+  "datasets": "datasets-sample",
+  "jurisdiction": "jurisdiction-sample",
+  "bound_purposes": 0,
+  "status": "status-sample",
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

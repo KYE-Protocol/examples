@@ -1,0 +1,20 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.projects.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "visible_in_workspaces_json": "{}",
+  "owning_team_id": "owning_team_id-sample",
+  "slug": "slug-sample",
+  "name": "name-sample",
+  "description": "description-sample",
+  "state": "state-sample",
+  "operating_model_fragment_id": "operating_model_fragment_id-sample",
+  "budget_usd_cents": 0,
+  "quota_decisions_per_month": 0,
+  "allowed_decision_classes_json": "{}",
+  "started_at": "started_at-sample",
+  "ended_at": "ended_at-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample"
+}

@@ -24,7 +24,7 @@
     {
       "entry_index": 1,
       "family": "rule-pack",
-      "pack_id": "kye:rule-pack:action_admissibility",
+      "pack_id": "kye:rule-pack:action-admissibility",
       "slug": "action-admissibility",
       "prev_hash": "sha384:5c332e2d93f8efe3b55c8d6846b17940bf6cead957db5eb48f17f704c2e271dbc41f5ce39861699101cba6f3d185584d",
       "payload_hash": "sha384:f914a89eba64138a90b4faef4411ed6c59aeafa6643300bcfacbb72154eca725697d353970936842293faf6e17fd6cc8",

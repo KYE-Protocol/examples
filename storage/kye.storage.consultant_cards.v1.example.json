@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.consultant_cards.v1.json",
+  "consultant_id": "consultant_id-sample",
+  "display_name": "display_name-sample",
+  "firm": "firm-sample",
+  "certification_level": "certification_level-sample",
+  "sectors_json": "{}",
+  "bio": "bio-sample",
+  "website": "website-sample",
+  "linkedin": "linkedin-sample",
+  "signed_by_kid": "signed_by_kid-sample",
+  "envelope_json": "{}",
+  "sealed_at": "sealed_at-sample",
+  "updated_at": "updated_at-sample"
+}

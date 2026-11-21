@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_run_dispositions.v1.json",
+  "disposition_id": "disposition_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "run_id": "run_id-sample",
+  "step_id": "step_id-sample",
+  "workflow_id": "workflow_id-sample",
+  "subject_ref": "subject_ref-sample",
+  "disposition": "disposition-sample",
+  "basis_hash": "basis_hash-sample",
+  "approvers_json": "{}",
+  "recorded_at": "recorded_at-sample"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.resources.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "workspace_id": "workspace_id-sample",
+  "visible_in_workspaces_json": "{}",
+  "owning_team_id": "owning_team_id-sample",
+  "kind": "kind-sample",
+  "name": "name-sample",
+  "uri": "uri-sample",
+  "data_classes_json": "{}",
+  "sensitivity": "sensitivity-sample",
+  "data_residency": "data_residency-sample",
+  "external_owner": "external_owner-sample",
+  "state": "state-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

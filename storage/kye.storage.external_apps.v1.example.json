@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.external_apps.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "partner_org_id": "partner_org_id-sample",
+  "vendor_name": "vendor_name-sample",
+  "connector_kind": "connector_kind-sample",
+  "oauth_subject": "oauth_subject-sample",
+  "oauth_scopes_json": "{}",
+  "risk_tier": "risk_tier-sample",
+  "dpa_reference": "dpa_reference-sample",
+  "state": "state-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.admin_policies.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "regime": "regime-sample",
+  "version": "version-sample",
+  "state": "state-sample",
+  "compilation_seal": "compilation_seal-sample",
+  "operating_model_id": "operating_model_id-sample",
+  "rule_count": 0,
+  "attestation_policy_ids_json": "{}",
+  "sub_processor_count": 0,
+  "signature_alg": "signature_alg-sample",
+  "signature_kid": "signature_kid-sample",
+  "signature_value_b64": "signature_value_b64-sample",
+  "activated_by": "activated_by-sample",
+  "activated_at": "activated_at-sample",
+  "created_at": "created_at-sample"
+}

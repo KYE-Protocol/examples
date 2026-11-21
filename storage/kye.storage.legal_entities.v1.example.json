@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.legal_entities.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "legal_name": "legal_name-sample",
+  "trading_name": "trading_name-sample",
+  "form": "form-sample",
+  "country_code": "country_code-sample",
+  "registration_authority": "registration_authority-sample",
+  "registration_number": "registration_number-sample",
+  "lei": "lei-sample",
+  "vat_number": "vat_number-sample",
+  "incorporated_at": "incorporated_at-sample",
+  "registered_address_json": "{}",
+  "ultimate_parent_id": "ultimate_parent_id-sample",
+  "regulator_relationships_json": "{}",
+  "state": "state-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

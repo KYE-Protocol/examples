@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agents.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "label": "label-sample",
+  "kind": "kind-sample",
+  "registered_at": "registered_at-sample",
+  "registered_by": "registered_by-sample",
+  "lifecycle_state": "lifecycle_state-sample",
+  "capability_id": "capability_id-sample"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.workspaces.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "slug": "slug-sample",
+  "name": "name-sample",
+  "env": "env-sample",
+  "region": "region-sample",
+  "kind": "kind-sample",
+  "data_residency": "data_residency-sample",
+  "policy_id": "policy_id-sample",
+  "state": "state-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

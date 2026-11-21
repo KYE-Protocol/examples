@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_apps.v1.json",
+  "app_id": "app_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "category": "category-sample",
+  "display_name": "display_name-sample",
+  "mode": "mode-sample",
+  "status": "status-sample",
+  "calls_24h": 0,
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

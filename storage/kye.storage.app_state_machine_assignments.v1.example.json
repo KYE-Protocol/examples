@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_state_machine_assignments.v1.json",
+  "assignment_id": "assignment_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "state_machine_id": "state_machine_id-sample",
+  "entity_id": "entity_id-sample",
+  "entity_class": "entity_class-sample",
+  "current_state": "current_state-sample",
+  "state_since": "state_since-sample",
+  "last_transition_at": "last_transition_at-sample",
+  "transitions_24h": 0,
+  "created_at": "created_at-sample",
+  "created_by": "created_by-sample"
+}

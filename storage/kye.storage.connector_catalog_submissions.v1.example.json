@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.connector_catalog_submissions.v1.json",
+  "submission_id": "submission_id-sample",
+  "proposed_kind": "proposed_kind-sample",
+  "profile_family": "profile_family-sample",
+  "submitter_partner_id": "submitter_partner_id-sample",
+  "submitter_email": "submitter_email-sample",
+  "conformance_score": 0,
+  "status": "status-sample",
+  "rejection_reason": "rejection_reason-sample",
+  "reviewed_by": "reviewed_by-sample",
+  "reviewed_at": "reviewed_at-sample",
+  "notes": "notes-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

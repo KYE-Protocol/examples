@@ -1,0 +1,14 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.evidence_index.v1.json",
+  "id": "id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "pack_class": "pack_class-sample",
+  "signing_kid": "signing_kid-sample",
+  "signed_by": "signed_by-sample",
+  "signed_at": "signed_at-sample",
+  "retain_until": "retain_until-sample",
+  "r2_object_key": "r2_object_key-sample",
+  "signature_ok": 0,
+  "created_at": "created_at-sample"
+}

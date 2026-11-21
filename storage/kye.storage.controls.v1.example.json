@@ -1,0 +1,8 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.controls.v1.json",
+  "id": "id-sample",
+  "framework": "framework-sample",
+  "control_ref": "control_ref-sample",
+  "title": "title-sample",
+  "category": "category-sample"
+}

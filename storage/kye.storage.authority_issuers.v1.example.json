@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.authority_issuers.v1.json",
+  "id": "id-sample",
+  "issuer_urn": "issuer_urn-sample",
+  "issuer_class": "issuer_class-sample",
+  "tenant_id": "tenant_id-sample",
+  "signing_kid": "signing_kid-sample",
+  "display_name": "display_name-sample",
+  "status": "status-sample",
+  "active_grants": 0,
+  "last_issued_at": "last_issued_at-sample",
+  "registered_by": "registered_by-sample",
+  "registered_at": "registered_at-sample",
+  "updated_at": "updated_at-sample",
+  "notes": "notes-sample"
+}

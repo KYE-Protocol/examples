@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.partners.v1.json",
+  "id": "id-sample",
+  "name": "name-sample",
+  "tier": "tier-sample",
+  "status": "status-sample",
+  "contact_email": "contact_email-sample",
+  "region": "region-sample",
+  "certifications_json": "{}",
+  "open_deals": 0,
+  "revshare_ytd_cents": 0,
+  "notes": "notes-sample",
+  "created_by": "created_by-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample",
+  "tenant_id": "tenant_id-sample",
+  "class": "class-sample",
+  "assurance": "assurance-sample",
+  "since": "since-sample",
+  "onboarded_by": "onboarded_by-sample"
+}

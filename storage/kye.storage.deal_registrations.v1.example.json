@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.deal_registrations.v1.json",
+  "deal_id": "deal_id-sample",
+  "partner_id": "partner_id-sample",
+  "customer": "customer-sample",
+  "stage": "stage-sample",
+  "expected_close": "expected_close-sample",
+  "expected_acv": 0,
+  "share_pct": 0,
+  "notes": "notes-sample",
+  "registered_at": "registered_at-sample",
+  "signed_by_kid": "signed_by_kid-sample"
+}

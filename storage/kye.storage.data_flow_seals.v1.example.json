@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.data_flow_seals.v1.json",
+  "seal_id": "seal_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "asset_count": 0,
+  "flow_count": 0,
+  "pii_assets": 0,
+  "sealed_at": "sealed_at-sample",
+  "signed_by_kid": "signed_by_kid-sample"
+}

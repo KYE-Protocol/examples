@@ -1,0 +1,6 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_live_runtime.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "last_polled_at": "last_polled_at-sample",
+  "updated_at": "updated_at-sample"
+}

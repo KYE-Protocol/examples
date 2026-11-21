@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.pilot_application_signin_invites.v1.json",
+  "id": "id-sample",
+  "application_id": "application_id-sample",
+  "recipient_email": "recipient_email-sample",
+  "clerk_user_id": "clerk_user_id-sample",
+  "token_sha256": "token_sha256-sample",
+  "expires_at": "expires_at-sample",
+  "sent_at": "sent_at-sample",
+  "sent_by": "sent_by-sample"
+}

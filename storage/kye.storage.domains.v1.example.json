@@ -1,0 +1,16 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.domains.v1.json",
+  "id": "id-sample",
+  "tenant_id": "tenant_id-sample",
+  "fqdn": "fqdn-sample",
+  "purpose_json": "{}",
+  "verification_method": "verification_method-sample",
+  "verification_token": "verification_token-sample",
+  "verified_at": "verified_at-sample",
+  "dkim_selector": "dkim_selector-sample",
+  "spf_status": "spf_status-sample",
+  "dmarc_status": "dmarc_status-sample",
+  "state": "state-sample",
+  "created_at": "created_at-sample",
+  "deleted_at": "deleted_at-sample"
+}

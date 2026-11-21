@@ -1,0 +1,17 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_runs.v1.json",
+  "run_id": "run_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "workflow_id": "workflow_id-sample",
+  "workflow_version": "workflow_version-sample",
+  "agent_ref": "agent_ref-sample",
+  "product_ref": "product_ref-sample",
+  "requested_by": "requested_by-sample",
+  "status": "status-sample",
+  "terminal_reason": "terminal_reason-sample",
+  "awaiting_step_id": "awaiting_step_id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "evidence_pack_r2_key": "evidence_pack_r2_key-sample",
+  "created_at": "created_at-sample",
+  "updated_at": "updated_at-sample"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_action_approval_decisions.v1.json",
+  "approval_id": "approval_id-sample",
+  "proposal_id": "proposal_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "approver_id": "approver_id-sample",
+  "approver_decision_right": "approver_decision_right-sample",
+  "approver_role": "approver_role-sample",
+  "decision": "decision-sample",
+  "comment": "comment-sample",
+  "channel": "channel-sample",
+  "decision_id": "decision_id-sample",
+  "evidence_pack_id": "evidence_pack_id-sample",
+  "decided_at": "decided_at-sample"
+}

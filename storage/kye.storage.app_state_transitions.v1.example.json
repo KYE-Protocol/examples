@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.app_state_transitions.v1.json",
+  "transition_id": "transition_id-sample",
+  "machine_id": "machine_id-sample",
+  "from_state": "from_state-sample",
+  "to_state": "to_state-sample",
+  "guards_json": "{}",
+  "actor_role_required": "actor_role_required-sample",
+  "effects_json": "{}",
+  "constitution_ref": "constitution_ref-sample"
+}

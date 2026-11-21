@@ -1,0 +1,11 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_derivations.v1.json",
+  "derivation_id": "derivation_id-sample",
+  "tenant_id": "tenant_id-sample",
+  "library_id": "library_id-sample",
+  "agent_local_id": "agent_local_id-sample",
+  "overrides_json": "{}",
+  "derived_at": "derived_at-sample",
+  "derived_by": "derived_by-sample",
+  "signature_json": "{}"
+}

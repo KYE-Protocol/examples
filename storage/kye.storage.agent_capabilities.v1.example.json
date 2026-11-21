@@ -1,0 +1,10 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.agent_capabilities.v1.json",
+  "agent_id": "agent_id-sample",
+  "used_id": "used_id-sample",
+  "used_kind": "used_kind-sample",
+  "allowed": 0,
+  "since": "since-sample",
+  "until": "until-sample",
+  "constraints_json": "{}"
+}

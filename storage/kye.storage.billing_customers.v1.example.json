@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.billing_customers.v1.json",
+  "tenant_id": "tenant_id-sample",
+  "stripe_customer_id": "stripe_customer_id-sample",
+  "stripe_subscription_id": "stripe_subscription_id-sample",
+  "plan": "plan-sample",
+  "commit_units": 0,
+  "currency": "currency-sample",
+  "state": "state-sample",
+  "dunning_attempts": 0,
+  "updated_at": "updated_at-sample"
+}

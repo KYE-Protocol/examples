@@ -1,0 +1,13 @@
+{
+  "$schema": "https://kyeprotocol.com/schemas/kye.storage.partner_marketplace_listings.v1.json",
+  "listing_id": "listing_id-sample",
+  "owner_id": "owner_id-sample",
+  "listing_kind": "listing_kind-sample",
+  "name": "name-sample",
+  "sectors_json": "{}",
+  "price": 0,
+  "share_pct": 0,
+  "status": "status-sample",
+  "published_at": "published_at-sample",
+  "updated_at": "updated_at-sample"
+}
